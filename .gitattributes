@@ -1,0 +1,8 @@
+* text=auto
+
+*.json text eol=lf
+*.mcmeta text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.snbt text eol=lf
+*.tsv text eol=lf

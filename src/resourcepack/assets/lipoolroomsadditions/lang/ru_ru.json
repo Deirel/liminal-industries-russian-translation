@@ -1,0 +1,17 @@
+{
+  "block.lipoolroomsadditions.oak_pool_chair_back": "Дубовое кресло для бассейна",
+  "block.lipoolroomsadditions.oak_pool_chair_front": "Дубовое кресло для бассейна",
+  "block.lipoolroomsadditions.oil_treated_oak_pool_chair_back": "Дубовое кресло для бассейна, пропитанное маслом",
+  "block.lipoolroomsadditions.oil_treated_oak_pool_chair_front": "Дубовое кресло для бассейна, пропитанное маслом",
+  "block.lipoolroomsadditions.pool_railing_bend_inner": "Внутренний угол ограждения бассейна",
+  "block.lipoolroomsadditions.pool_railing_bend_outer": "Внешний угол ограждения бассейна",
+  "block.lipoolroomsadditions.pool_railing_end_l": "Левый конец ограждения бассейна",
+  "block.lipoolroomsadditions.pool_railing_end_r": "Правый конец ограждения бассейна",
+  "block.lipoolroomsadditions.pool_railing_mid_i": "Прямое ограждение бассейна",
+  "block.lipoolroomsadditions.pool_railing_mid_t": "Т-образное ограждение бассейна",
+  "block.lipoolroomsadditions.white_painted_oak_pool_chair_back": "Белое дубовое кресло для бассейна",
+  "block.lipoolroomsadditions.white_painted_oak_pool_chair_front": "Белое дубовое кресло для бассейна",
+  "item.lipoolroomsadditions.oak_pool_chair": "Дубовое кресло для бассейна",
+  "item.lipoolroomsadditions.oil_treated_oak_pool_chair": "Дубовое кресло для бассейна, пропитанное маслом",
+  "item.lipoolroomsadditions.white_painted_oak_pool_chair": "Белое дубовое кресло для бассейна"
+}

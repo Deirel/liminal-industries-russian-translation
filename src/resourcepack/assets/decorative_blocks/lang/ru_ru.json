@@ -1,0 +1,14 @@
+{
+  "block.decorative_blocks.bamboo_palisade": "Бамбуковый частокол",
+  "block.decorative_blocks.bamboo_seat": "Бамбуковый стул",
+  "block.decorative_blocks.bamboo_support": "Бамбуковый кронштейн",
+  "block.decorative_blocks.cherry_beam": "Вишнёвый брус",
+  "block.decorative_blocks.cherry_palisade": "Вишнёвый частокол",
+  "block.decorative_blocks.cherry_seat": "Вишнёвый стул",
+  "block.decorative_blocks.cherry_support": "Вишнёвый кронштейн",
+  "block.decorative_blocks.mangrove_beam": "Мангровый брус",
+  "block.decorative_blocks.mangrove_palisade": "Мангровый частокол",
+  "block.decorative_blocks.mangrove_seat": "Мангровый стул",
+  "block.decorative_blocks.mangrove_support": "Мангровый кронштейн",
+  "item.decorative_blocks.blockstate_copy_item": "Копировщик состояния блока"
+}

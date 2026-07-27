@@ -1,0 +1,15 @@
+# Release artifacts are built locally and attached to GitHub Releases.
+/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
