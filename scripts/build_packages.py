@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Build deterministic client and server translation packages."""
+"""Build deterministic resource-pack and quest-config packages."""
 
 from __future__ import annotations
 
 import argparse
 import hashlib
-import io
 import json
 import re
 import shutil
@@ -128,35 +127,14 @@ def add_tree(
         )
 
 
-def resource_pack_bytes() -> bytes:
-    buffer = io.BytesIO()
-    with zipfile.ZipFile(
-        buffer, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
-    ) as archive:
-        add_tree(archive, RESOURCE_PACK, PurePosixPath())
-    return buffer.getvalue()
-
-
-def build_client(path: Path, packed_resources: bytes) -> None:
+def build_resource_pack(path: Path) -> None:
     with zipfile.ZipFile(
         path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
     ) as archive:
-        add_tree(
-            archive,
-            QUESTS,
-            PurePosixPath("config/ftbquests/quests"),
-        )
-        archive.writestr(
-            zip_info(
-                PurePosixPath(
-                    "resourcepacks/liminal-industries-russian-resources.zip"
-                )
-            ),
-            packed_resources,
-        )
+        add_tree(archive, RESOURCE_PACK, PurePosixPath())
 
 
-def build_server(path: Path) -> None:
+def build_quest_configs(path: Path) -> None:
     with zipfile.ZipFile(
         path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
     ) as archive:
@@ -190,18 +168,25 @@ def main() -> int:
     shutil.rmtree(DIST, ignore_errors=True)
     DIST.mkdir(parents=True)
 
-    client = DIST / f"liminal-industries-russian-client-{args.version}.zip"
-    server = DIST / f"liminal-industries-russian-server-{args.version}.zip"
-    build_client(client, resource_pack_bytes())
-    build_server(server)
+    resource_pack = (
+        DIST / f"liminal-industries-russian-resource-pack-{args.version}.zip"
+    )
+    quest_configs = (
+        DIST / f"liminal-industries-russian-quest-configs-{args.version}.zip"
+    )
+    build_resource_pack(resource_pack)
+    build_quest_configs(quest_configs)
 
     checksums = DIST / "SHA256SUMS"
     checksums.write_text(
-        "".join(f"{sha256(path)}  {path.name}\n" for path in (client, server)),
+        "".join(
+            f"{sha256(path)}  {path.name}\n"
+            for path in (resource_pack, quest_configs)
+        ),
         encoding="ascii",
     )
 
-    for path in (client, server, checksums):
+    for path in (resource_pack, quest_configs, checksums):
         print(path.relative_to(ROOT))
     return 0
 
