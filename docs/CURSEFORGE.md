@@ -25,9 +25,9 @@ Russian quest and item-name translation for Liminal Industries - Rescripted.
 
 An unofficial Russian translation for Liminal Industries - Rescripted.
 
-The Forge mod installs Russian item names and the translated FTB Quests book
-from one JAR. Before replacing a recognized original quest book, it creates a
-backup under `config/liminal_industries_ru/backups`.
+The client-side Forge mod adds Russian item names and displays Russian FTB
+Quests text from one JAR. Quest files stay untouched: translations are applied
+in memory only while Russian is selected.
 
 ## Compatibility
 
@@ -40,10 +40,15 @@ The latest supported version of Liminal Industries - Rescripted is **1.19.3 - 7 
 ## Installation
 
 1. Place the Forge mod JAR in the profile's `mods` folder.
-2. For a dedicated server, install the same JAR on both the server and client.
-3. Select Russian in Minecraft.
+2. Select Russian in Minecraft.
 
-The mod only replaces the exact supported original quest book.
+The mod is not required on a dedicated server. Each player who wants the
+translation installs it on their client.
+
+The translation is shown only for the exact supported quest book. Other
+languages and unsupported book versions keep their original text. Removing the
+mod immediately restores the original display because no quest files are
+modified.
 
 Source code and detailed installation instructions are available on GitHub:
 
@@ -64,6 +69,7 @@ Forge Mod - MC 1.20.1 - LI 1.19.3-7 (AE2 fix)
 Initial CurseForge Forge-mod release.
 
 - Added Russian item names and FTB Quests translations in one JAR.
-- Added exact quest-book compatibility checks and automatic backup.
-- Added client and dedicated-server support.
+- Added in-memory quest text replacement without modifying files.
+- Added exact quest-book compatibility checks.
+- Added client-only support for single-player and multiplayer.
 ```

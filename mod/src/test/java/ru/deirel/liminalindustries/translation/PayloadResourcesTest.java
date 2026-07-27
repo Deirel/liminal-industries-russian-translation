@@ -10,18 +10,17 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PayloadResourcesTest {
     private static final Path TRANSLATION_SOURCES = Path.of("..", "src");
     private static final Path RESOURCE_PACK = TRANSLATION_SOURCES.resolve("resourcepack");
     private static final Path QUESTS = TRANSLATION_SOURCES.resolve("quests");
-    private static final Path GENERATED_RESOURCES = Path.of("build", "resources", "main");
 
     @Test
     void languageFilesAreStrictJsonWithoutDuplicateKeys() throws IOException {
@@ -42,27 +41,28 @@ class PayloadResourcesTest {
     }
 
     @Test
-    void embeddedQuestsMatchManifestExactly() throws IOException {
-        Path manifestPath = GENERATED_RESOURCES.resolve(
-            "liminal_industries_ru/payload-manifest.json"
-        );
-        QuestManifest manifest;
-        try (Reader input = Files.newBufferedReader(manifestPath, StandardCharsets.UTF_8)) {
-            manifest = QuestManifest.read(input);
-        }
-
+    void embeddedQuestTranslationsAreIndexedAndParseable() throws IOException {
         assertTrue(Files.isRegularFile(QUESTS.resolve("data.snbt")));
         assertTrue(Files.isRegularFile(QUESTS.resolve("chapter_groups.snbt")));
         assertTrue(Files.isDirectory(QUESTS.resolve("chapters")));
-        assertFalse(manifest.originalFiles().isEmpty());
-        assertEquals(normalized(manifest.translatedFiles()), QuestDirectory.hashes(QUESTS));
-    }
 
-    private static Map<String, String> normalized(Map<String, String> hashes) {
-        return hashes.entrySet().stream().collect(java.util.stream.Collectors.toMap(
-            Map.Entry::getKey,
-            entry -> entry.getValue().toLowerCase(java.util.Locale.ROOT)
-        ));
+        QuestTranslationPayload payload = QuestTranslationPayload.load(
+            PayloadResourcesTest.class
+        );
+        assertEquals(1038, payload.objectIds().size());
+        assertTrue(payload.translationCount() > 250);
+
+        long firstQuestId = Long.parseUnsignedLong("74DC667B840746B0", 16);
+        QuestTranslation firstQuest = payload.translation(firstQuestId);
+        assertNotNull(firstQuest);
+        assertEquals("Ломаем стулья", firstQuest.title());
+        assertEquals("Добро пожаловать в Liminal Industries!", firstQuest.subtitle());
+        assertEquals(5, firstQuest.description().size());
+
+        assertTrue(payload.matchesObjectIds(payload.objectIds()));
+        Set<Long> incompleteIds = new HashSet<>(payload.objectIds());
+        incompleteIds.remove(firstQuestId);
+        assertFalse(payload.matchesObjectIds(incompleteIds));
     }
 
     private static void readValue(JsonReader json, Path source) throws IOException {

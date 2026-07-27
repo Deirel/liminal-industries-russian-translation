@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.deirel.liminalindustries.translation.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "QuestMixin",
+    "QuestObjectBaseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

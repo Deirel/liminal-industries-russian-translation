@@ -29,8 +29,5 @@ side = "BOTH"
 modId = "ftbquests"
 mandatory = true
 versionRange = "[2001.4.22]"
-ordering = "BEFORE"
-side = "BOTH"
-
-[features.${mod_id}]
-java_version = "[17,18)"
+ordering = "AFTER"
+side = "CLIENT"

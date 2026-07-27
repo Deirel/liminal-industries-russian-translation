@@ -5,10 +5,6 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0.36,6.2)'
 }
 
-import groovy.json.JsonOutput
-import groovy.json.JsonSlurper
-import java.security.MessageDigest
-
 version = modpack_version
 group = mod_group_id
 
@@ -23,11 +19,11 @@ java {
 def translationSources = layout.projectDirectory.dir('../src')
 def translationResourcePack = translationSources.dir('resourcepack')
 def translationQuests = translationSources.dir('quests')
-def generatedPayloadResources = layout.buildDirectory.dir('generated/payloadResources')
+def generatedTranslationResources = layout.buildDirectory.dir('generated/translationResources')
 
 sourceSets.main.resources {
     srcDir translationResourcePack
-    srcDir generatedPayloadResources
+    srcDir generatedTranslationResources
 }
 
 minecraft {
@@ -38,6 +34,8 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -53,52 +51,53 @@ minecraft {
 }
 
 repositories {
+    maven {
+        name = 'FTB'
+        url = 'https://maven.ftb.dev/releases'
+    }
+    maven {
+        name = 'Architectury'
+        url = 'https://maven.architectury.dev/'
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    implementation fg.deobf('dev.ftb.mods:ftb-quests-forge:2001.4.22')
+    implementation fg.deobf('dev.ftb.mods:ftb-library-forge:2001.2.9')
+    runtimeOnly fg.deobf('dev.ftb.mods:ftb-teams-forge:2001.3.0')
+    runtimeOnly fg.deobf('dev.architectury:architectury-forge:9.1.12')
 
     testImplementation platform('org.junit:junit-bom:5.10.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
-tasks.register('generatePayloadManifest') {
-    def manifestTemplate = layout.projectDirectory.file(
-        'src/main/payload/payload-manifest-template.json'
-    )
+tasks.register('generateQuestTranslationIndex') {
     def questFiles = fileTree(translationQuests) {
         include '**/*.snbt'
     }
-    def manifestOutput = generatedPayloadResources.map {
-        it.file('liminal_industries_ru/payload-manifest.json')
+    def indexOutput = generatedTranslationResources.map {
+        it.file('liminal_industries_ru/quest-files.list')
     }
 
-    inputs.file manifestTemplate
     inputs.files questFiles
-    outputs.file manifestOutput
+    outputs.file indexOutput
 
     doLast {
-        def manifest = new JsonSlurper().parse(manifestTemplate.asFile)
-        def translatedFiles = new TreeMap<String, String>()
-
-        questFiles.files.each { file ->
-            def relativePath = translationQuests.asFile.toPath()
+        def relativePaths = questFiles.files.collect { file ->
+            translationQuests.asFile.toPath()
                 .relativize(file.toPath())
                 .toString()
                 .replace(File.separator, '/')
-            def digest = MessageDigest.getInstance('SHA-256').digest(file.bytes)
-            translatedFiles[relativePath] = digest.encodeHex().toString()
-        }
-
-        manifest.translatedFiles = translatedFiles
-        def output = manifestOutput.get().asFile
+        }.sort()
+        def output = indexOutput.get().asFile
         output.parentFile.mkdirs()
-        output.setText(JsonOutput.prettyPrint(JsonOutput.toJson(manifest)) + '\n', 'UTF-8')
+        output.setText(relativePaths.join('\n') + '\n', 'UTF-8')
     }
 }
 
 tasks.named('processResources', ProcessResources).configure {
-    dependsOn 'generatePayloadManifest'
+    dependsOn 'generateQuestTranslationIndex'
 
     def properties = [
         minecraft_version: minecraft_version,
@@ -133,7 +132,8 @@ tasks.named('jar', Jar).configure {
             'Specification-Version': '1',
             'Implementation-Title': project.name,
             'Implementation-Version': archiveVersion,
-            'Implementation-Vendor': mod_authors
+            'Implementation-Vendor': mod_authors,
+            'MixinConfigs': 'liminal_industries_ru.mixins.json'
         ])
     }
     finalizedBy 'reobfJar'
