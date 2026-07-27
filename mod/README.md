@@ -19,7 +19,8 @@ Liminal Industries - Rescripted.
 ## Установка
 
 1. Соберите мод командой `./gradlew clean test build` или возьмите готовый JAR.
-2. Поместите `liminal-industries-russian-translation-1.0.0.jar` в каталог
+2. Поместите
+   `liminal-industries-russian-translation-1.19.3-7-ae2-fix.jar` в каталог
    `mods` профиля.
 3. Для перевода книги на выделенном сервере установите тот же JAR на сервер.
 4. Выберите русский язык в настройках Minecraft.

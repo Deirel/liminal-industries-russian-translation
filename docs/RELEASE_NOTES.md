@@ -12,8 +12,8 @@
 
 ## Файлы
 
-- `liminal-industries-russian-translation-1.0.0.jar` — Forge-мод с переводом
-  названий и безопасной установкой книги квестов
+- `liminal-industries-russian-translation-1.19.3-7-ae2-fix.jar` — Forge-мод
+  с переводом названий и безопасной установкой книги квестов
 - `liminal-industries-russian-resource-pack-1.19.3-7-ae2-fix.zip` — перевод
   названий предметов для ручной установки
 - `liminal-industries-russian-quest-configs-1.19.3-7-ae2-fix.zip` — перевод

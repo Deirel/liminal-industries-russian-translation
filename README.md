@@ -20,7 +20,8 @@
 
 ## Установка модом
 
-1. Скачайте `liminal-industries-russian-translation-1.0.0.jar`.
+1. Скачайте
+   `liminal-industries-russian-translation-1.19.3-7-ae2-fix.jar`.
 2. Поместите JAR в каталог `mods` профиля.
 3. Для перевода книги на выделенном сервере установите тот же JAR на сервер.
 4. Выберите русский язык в настройках Minecraft.

@@ -4,8 +4,8 @@
 
 В релиз входят:
 
-- `liminal-industries-russian-translation-1.0.0.jar` — Forge-мод, содержащий
-  оба вида перевода;
+- `liminal-industries-russian-translation-1.19.3-7-ae2-fix.jar` — Forge-мод,
+  содержащий оба вида перевода;
 - `liminal-industries-russian-resource-pack-1.19.3-7-ae2-fix.zip` — названия
   предметов для ручной установки;
 - `liminal-industries-russian-quest-configs-1.19.3-7-ae2-fix.zip` — книга
