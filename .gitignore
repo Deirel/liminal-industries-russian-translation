@@ -7,9 +7,30 @@ __pycache__/
 .venv/
 venv/
 
+# Gradle, Java, and Forge
+.gradle/
+build/
+bin/
+out/
+*.class
+eclipse/
+run/
+logs/
+forge*changelog.txt
+
+# Eclipse
+*.launch
+.settings/
+.metadata/
+.classpath
+.project
+
 # Editors and operating systems
 .DS_Store
 .idea/
 .vscode/
+*.ipr
+*.iws
+*.iml
 *.swp
 *~

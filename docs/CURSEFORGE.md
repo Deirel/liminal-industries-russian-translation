@@ -1,6 +1,6 @@
 # Тексты для CurseForge
 
-Оба файла публикуются в одном проекте.
+JAR и два файла для ручной установки публикуются в одном проекте.
 
 ## Проект
 
@@ -25,10 +25,12 @@ Russian quest and item-name translation for Liminal Industries - Rescripted.
 
 An unofficial Russian translation for Liminal Industries - Rescripted.
 
-This project provides two separate downloads:
+This project provides two installation options:
 
-- **Resource Pack** translates selected item names.
-- **Quest Configs** translates the FTB Quests chapters.
+- **Forge Mod** installs both parts from one JAR and backs up a recognized
+  original quest book before replacing it.
+- **Resource Pack** and **Quest Configs** provide the same translation for
+  manual installation.
 
 ## Compatibility
 
@@ -38,7 +40,16 @@ The latest supported version of Liminal Industries - Rescripted is **1.19.3 - 7 
 - Forge 47.4.13
 - FTB Quests 2001.4.22
 
-## Single-player installation
+## Forge Mod installation
+
+1. Place the Forge Mod JAR in the profile's `mods` folder.
+2. For a dedicated server, install the same JAR on the server.
+3. Select Russian in Minecraft.
+
+The mod only replaces the exact supported original quest book. Before doing so,
+it creates a backup under `config/liminal_industries_ru/backups`.
+
+## Manual single-player installation
 
 1. Download both files.
 2. Place the Resource Pack ZIP in the `resourcepacks` folder. Do not extract it.
@@ -48,7 +59,7 @@ The latest supported version of Liminal Industries - Rescripted is **1.19.3 - 7 
 6. Start the game and select Russian.
 7. Enable the resource pack in the Resource Packs menu.
 
-## Dedicated server installation
+## Manual dedicated server installation
 
 Server administrator:
 
@@ -67,6 +78,24 @@ The server sends the translated quests to players. The resource pack is installe
 Source code, checksums, and detailed installation instructions are available on GitHub:
 
 https://github.com/Deirel/liminal-industries-russian-translation
+```
+
+## Файл Forge Mod
+
+Имя:
+
+```text
+Forge Mod - MC 1.20.1 - LI 1.19.3-7 (AE2 fix)
+```
+
+Описание:
+
+```markdown
+Initial CurseForge Forge-mod release.
+
+- Added Russian item names and FTB Quests translations in one JAR.
+- Added exact quest-book compatibility checks and automatic backup.
+- Added client and dedicated-server support.
 ```
 
 ## Файл Resource Pack

@@ -1,0 +1,144 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0.36,6.2)'
+}
+
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
+import java.security.MessageDigest
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = 'liminal-industries-russian-translation'
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+def translationSources = layout.projectDirectory.dir('../src')
+def translationResourcePack = translationSources.dir('resourcepack')
+def translationQuests = translationSources.dir('quests')
+def generatedPayloadResources = layout.buildDirectory.dir('generated/payloadResources')
+
+sourceSets.main.resources {
+    srcDir translationResourcePack
+    srcDir generatedPayloadResources
+}
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        client {}
+        server {
+            args '--nogui'
+        }
+    }
+}
+
+repositories {
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+tasks.register('generatePayloadManifest') {
+    def manifestTemplate = layout.projectDirectory.file(
+        'src/main/payload/payload-manifest-template.json'
+    )
+    def questFiles = fileTree(translationQuests) {
+        include '**/*.snbt'
+    }
+    def manifestOutput = generatedPayloadResources.map {
+        it.file('liminal_industries_ru/payload-manifest.json')
+    }
+
+    inputs.file manifestTemplate
+    inputs.files questFiles
+    outputs.file manifestOutput
+
+    doLast {
+        def manifest = new JsonSlurper().parse(manifestTemplate.asFile)
+        def translatedFiles = new TreeMap<String, String>()
+
+        questFiles.files.each { file ->
+            def relativePath = translationQuests.asFile.toPath()
+                .relativize(file.toPath())
+                .toString()
+                .replace(File.separator, '/')
+            def digest = MessageDigest.getInstance('SHA-256').digest(file.bytes)
+            translatedFiles[relativePath] = digest.encodeHex().toString()
+        }
+
+        manifest.translatedFiles = translatedFiles
+        def output = manifestOutput.get().asFile
+        output.parentFile.mkdirs()
+        output.setText(JsonOutput.prettyPrint(JsonOutput.toJson(manifest)) + '\n', 'UTF-8')
+    }
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    dependsOn 'generatePayloadManifest'
+
+    def properties = [
+        minecraft_version: minecraft_version,
+        forge_version: forge_version,
+        mod_id: mod_id,
+        mod_name: mod_name,
+        mod_license: mod_license,
+        mod_version: mod_version,
+        mod_authors: mod_authors,
+        mod_description: mod_description
+    ]
+    inputs.properties properties
+
+    from(translationQuests) {
+        into 'liminal_industries_ru/quests'
+    }
+
+    filesMatching('META-INF/mods.toml') {
+        expand properties + [project: project]
+    }
+}
+
+tasks.named('test', Test).configure {
+    useJUnitPlatform()
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+            'Specification-Title': mod_id,
+            'Specification-Vendor': mod_authors,
+            'Specification-Version': '1',
+            'Implementation-Title': project.name,
+            'Implementation-Version': archiveVersion,
+            'Implementation-Vendor': mod_authors
+        ])
+    }
+    finalizedBy 'reobfJar'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

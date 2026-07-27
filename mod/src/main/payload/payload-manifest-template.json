@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "translationVersion": "1.0.0",
+  "modpackVersion": "1.19.3-7-ae2-fix",
+  "originalFiles": {
+    "chapter_groups.snbt": "6a5af7fa33f7c131ba827a8c8e8c61b999c78750c2d1a4cdf0815f034297542e",
+    "chapters/chapter_3b.snbt": "969c245cb1a5cc5404ee0fcde93184c10db5291c9b009d6f12723fae598a3cfd",
+    "chapters/escaping.snbt": "c2ef0533fb51af84a18eda9a9121903949597778d0a4c6634194fbdfe28081d1",
+    "chapters/sector_1.snbt": "a5abc9e38be1565a1a7c332ee6cbf8f9f4198a55948e79e485f38536d3cbb56c",
+    "chapters/sector_2.snbt": "a75a30bdeee75aee31bcc8c4f8619926593f67465bffa7f46ca32c926bbabb40",
+    "chapters/sector_21.snbt": "e3f9ea45a229ba0e5072d5905d796ad893507f8b803c8234aad17fab028a1f3c",
+    "chapters/sector_3.snbt": "88abb3526ea215e27dab4a7252693bb557139ace0cb422dfea2cd4a43688ad4a",
+    "chapters/sector_4.snbt": "8377245fefaf310a30bf278e627a9856a5111a1fa964f1c3bc2c43b2af01aafb",
+    "chapters/the_infinite_library.snbt": "c376704d11b8f997ebc7a67dfd7cbe59663f6bdbc7a2af450e766251c5261381",
+    "data.snbt": "ab517096aa8ffa5864b77d8e5470738dcc611b7b0a23b9509c7e86d206f19d2e"
+  }
+}
