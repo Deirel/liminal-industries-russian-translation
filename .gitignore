@@ -1,12 +1,3 @@
-# Release artifacts are built locally and attached to GitHub Releases.
-/dist/
-
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
 # Gradle, Java, and Forge
 .gradle/
 build/
