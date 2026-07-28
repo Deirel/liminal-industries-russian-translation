@@ -11,6 +11,8 @@ import mezz.jei.api.runtime.IIngredientManager;
 import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.language.ClientLanguage;
+import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -95,6 +97,12 @@ final class ItemTranslationAudit {
             minecraft.getResourceManager(),
             "en_us"
         );
+        Language runtimeRussian = Language.getInstance();
+        Language resourceEnglish = ClientLanguage.loadFrom(
+            minecraft.getResourceManager(),
+            List.of("en_us"),
+            false
+        );
         IIngredientManager ingredients = runtime.getIngredientManager();
         IIngredientHelper<ItemStack> helper = ingredients.getIngredientHelper(
             VanillaTypes.ITEM_STACK
@@ -119,14 +127,20 @@ final class ItemTranslationAudit {
         }
 
         List<AuditEntry> entries = candidates.values().stream()
-            .map(candidate -> inspect(candidate, russian, english))
+            .map(candidate -> inspect(
+                candidate,
+                russian,
+                english,
+                runtimeRussian,
+                resourceEnglish
+            ))
             .sorted(Comparator.comparing(AuditEntry::uid))
             .toList();
         int failures = (int) entries.stream().filter(AuditEntry::failure).count();
         boolean success = failures == 0 && russian.errors().isEmpty();
 
         JsonObject root = new JsonObject();
-        root.addProperty("schema", 1);
+        root.addProperty("schema", 2);
         root.addProperty("result", success ? "PASS" : "FAIL");
         root.addProperty("generated_at", Instant.now().toString());
         root.addProperty(
@@ -140,6 +154,7 @@ final class ItemTranslationAudit {
         root.addProperty("failures", failures);
         root.addProperty("russian_keys", russian.values().size());
         root.addProperty("english_keys", english.values().size());
+        root.addProperty("runtime_language_keys", runtimeRussian.getLanguageData().size());
 
         Map<AuditStatus, Long> statusCounts = entries.stream().collect(
             Collectors.groupingBy(AuditEntry::status, Collectors.counting())
@@ -199,21 +214,31 @@ final class ItemTranslationAudit {
     private static AuditEntry inspect(
         Candidate candidate,
         RussianLanguageIndex russian,
-        RussianLanguageIndex english
+        RussianLanguageIndex english,
+        Language runtimeRussian,
+        Language resourceEnglish
     ) {
         ItemStack stack = candidate.stack();
         ResourceLocation itemId = ForgeRegistries.ITEMS.getKey(stack.getItem());
         try {
             Component hoverName = stack.getHoverName();
             String displayName = hoverName.getString();
-            Set<String> keys = ComponentTranslationKeys.collect(hoverName);
+            Set<String> keys = ComponentTranslationKeys.collect(hoverName, runtimeRussian);
+            Set<String> verifiedRussianKeys = keys.stream()
+                .filter(key -> hasRussianTranslation(
+                    key,
+                    russian,
+                    runtimeRussian,
+                    resourceEnglish
+                ))
+                .collect(Collectors.toCollection(TreeSet::new));
             AuditStatus status = AuditClassifier.classify(
                 displayName,
                 keys,
-                russian.values().keySet()
+                verifiedRussianKeys
             );
             Set<String> missing = new TreeSet<>(keys);
-            missing.removeAll(russian.values().keySet());
+            missing.removeAll(verifiedRussianKeys);
             Set<String> sameAsEnglish = new TreeSet<>();
             for (String key : keys) {
                 if (russian.values().containsKey(key)
@@ -226,6 +251,11 @@ final class ItemTranslationAudit {
                 String pack = russian.sources().get(key);
                 if (pack != null) {
                     translationSources.put(key, pack);
+                } else if (verifiedRussianKeys.contains(key)
+                    && !runtimeRussian.getOrDefault(key).equals(
+                        resourceEnglish.getOrDefault(key)
+                    )) {
+                    translationSources.put(key, "<runtime>");
                 }
             }
             return new AuditEntry(
@@ -256,6 +286,19 @@ final class ItemTranslationAudit {
                 exception.toString()
             );
         }
+    }
+
+    private static boolean hasRussianTranslation(
+        String key,
+        RussianLanguageIndex russian,
+        Language runtimeRussian,
+        Language resourceEnglish
+    ) {
+        return TranslationCoverage.isTranslated(
+            russian.values().containsKey(key),
+            runtimeRussian.getOrDefault(key),
+            resourceEnglish.getOrDefault(key)
+        );
     }
 
     record Result(boolean success, String message) {

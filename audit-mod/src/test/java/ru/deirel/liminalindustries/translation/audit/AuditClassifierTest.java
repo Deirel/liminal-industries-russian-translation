@@ -34,6 +34,18 @@ class AuditClassifierTest {
     }
 
     @Test
+    void unusedNestedKeyDoesNotReachClassifier() {
+        assertEquals(
+            AuditStatus.TRANSLATED,
+            AuditClassifier.classify(
+                "Обработанные бамбуковые шипы",
+                Set.of("item.example.spikes"),
+                Set.of("item.example.spikes")
+            )
+        );
+    }
+
+    @Test
     void cyrillicLiteralPassesButLatinLiteralRequiresReview() {
         assertEquals(
             AuditStatus.CYRILLIC_LITERAL,
