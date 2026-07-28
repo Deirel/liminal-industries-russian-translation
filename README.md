@@ -32,8 +32,14 @@
 
 ## Работа над переводом
 
-Исходники лежат в `src/`. Как обновить перевод, читайте в
-[`docs/UPDATING.md`](docs/UPDATING.md). Как собрать и выпустить мод — в
+Полный процесс описан в
+[`TRANSLATION_METHODOLOGY.md`](TRANSLATION_METHODOLOGY.md). Утилиты находятся
+в `scripts/`, извлечённые тексты квестов в `translation-work/`, а каталоги
+названий предметов в `item-translation-work/`. Точная копия модпака нужна
+только как источник данных и среда для проверки.
+
+Как обновить готовый перевод, читайте в
+[`docs/UPDATING.md`](docs/UPDATING.md), а как собрать и выпустить мод — в
 [`docs/PACKAGING.md`](docs/PACKAGING.md).
 
 Исходный код Forge-мода находится в `mod/`. Его Gradle-сборка напрямую

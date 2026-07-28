@@ -1,0 +1,891 @@
+namespace	key	en_us	current_ru	proposed_ru	reason
+antiblocksrechiseled	block.antiblocksrechiseled.bright_black	Bright Black AntiBlock		Яркий чёрный антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_black_border	Bright Black Bordered AntiBlock		Яркий чёрный антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_blue	Bright Blue AntiBlock		Яркий синий антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_blue_border	Bright Blue Bordered AntiBlock		Яркий синий антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_cyan	Bright Cyan AntiBlock		Яркий бирюзовый антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_cyan_border	Bright Cyan Bordered AntiBlock		Яркий бирюзовый антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_green	Bright Green AntiBlock		Яркий зелёный антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_green_border	Bright Green Bordered AntiBlock		Яркий зелёный антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_magenta	Bright Magenta AntiBlock		Яркий пурпурный антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_magenta_border	Bright Magenta Bordered AntiBlock		Яркий пурпурный антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_orange	Bright Orange AntiBlock		Яркий оранжевый антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_orange_border	Bright Orange Bordered AntiBlock		Яркий оранжевый антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_red	Bright Red AntiBlock		Яркий красный антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_red_border	Bright Red Bordered AntiBlock		Яркий красный антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_white	Bright White AntiBlock		Яркий белый антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_white_border	Bright White Bordered AntiBlock		Яркий белый антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_yellow	Bright Yellow AntiBlock		Яркий жёлтый антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.bright_yellow_border	Bright Yellow Bordered AntiBlock		Яркий жёлтый антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_black	Bright Black AntiBlock Button		Кнопка из яркого чёрного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_blue	Bright Blue AntiBlock Button		Кнопка из яркого синего антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_cyan	Bright Cyan AntiBlock Button		Кнопка из яркого бирюзового антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_green	Bright Green AntiBlock Button		Кнопка из яркого зелёного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_magenta	Bright Magenta AntiBlock Button		Кнопка из яркого пурпурного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_orange	Bright Orange AntiBlock Button		Кнопка из яркого оранжевого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_red	Bright Red AntiBlock Button		Кнопка из яркого красного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_white	Bright White AntiBlock Button		Кнопка из яркого белого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_bright_yellow	Bright Yellow AntiBlock Button		Кнопка из яркого жёлтого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_blue	Wool Blue AntiBlock Button		Кнопка из синего шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_brown	Wool Brown AntiBlock Button		Кнопка из коричневого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_cyan	Wool Cyan AntiBlock Button		Кнопка из бирюзового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_gray	Wool Gray AntiBlock Button		Кнопка из серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_green	Wool Green AntiBlock Button		Кнопка из зелёного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_light_blue	Wool Light Blue AntiBlock Button		Кнопка из голубого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_light_gray	Wool Light Gray AntiBlock Button		Кнопка из светло-серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_lime	Wool Lime AntiBlock Button		Кнопка из лаймового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_magenta	Wool Magenta AntiBlock Button		Кнопка из пурпурного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_orange	Wool Orange AntiBlock Button		Кнопка из оранжевого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_pink	Wool Pink AntiBlock Button		Кнопка из розового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_purple	Wool Purple AntiBlock Button		Кнопка из фиолетового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_red	Wool Red AntiBlock Button		Кнопка из красного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_white	Wool White AntiBlock Button		Кнопка из белого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.button_wool_yellow	Wool Yellow AntiBlock Button		Кнопка из жёлтого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_black	Bright Black AntiBlock Pressure Plate		Нажимная плита из яркого чёрного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_blue	Bright Blue AntiBlock Pressure Plate		Нажимная плита из яркого синего антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_cyan	Bright Cyan AntiBlock Pressure Plate		Нажимная плита из яркого бирюзового антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_green	Bright Green AntiBlock Pressure Plate		Нажимная плита из яркого зелёного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_magenta	Bright Magenta AntiBlock Pressure Plate		Нажимная плита из яркого пурпурного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_orange	Bright Orange AntiBlock Pressure Plate		Нажимная плита из яркого оранжевого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_red	Bright Red AntiBlock Pressure Plate		Нажимная плита из яркого красного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_white	Bright White AntiBlock Pressure Plate		Нажимная плита из яркого белого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_bright_yellow	Bright Yellow AntiBlock Pressure Plate		Нажимная плита из яркого жёлтого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_blue	Wool Blue AntiBlock Pressure Plate		Нажимная плита из синего шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_brown	Wool Brown AntiBlock Pressure Plate		Нажимная плита из коричневого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_cyan	Wool Cyan AntiBlock Pressure Plate		Нажимная плита из бирюзового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_gray	Wool Gray AntiBlock Pressure Plate		Нажимная плита из серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_green	Wool Green AntiBlock Pressure Plate		Нажимная плита из зелёного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_light_blue	Wool Light Blue AntiBlock Pressure Plate		Нажимная плита из голубого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_light_gray	Wool Light Gray AntiBlock Pressure Plate		Нажимная плита из светло-серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_lime	Wool Lime AntiBlock Pressure Plate		Нажимная плита из лаймового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_magenta	Wool Magenta AntiBlock Pressure Plate		Нажимная плита из пурпурного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_orange	Wool Orange AntiBlock Pressure Plate		Нажимная плита из оранжевого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_pink	Wool Pink AntiBlock Pressure Plate		Нажимная плита из розового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_purple	Wool Purple AntiBlock Pressure Plate		Нажимная плита из фиолетового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_red	Wool Red AntiBlock Pressure Plate		Нажимная плита из красного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_white	Wool White AntiBlock Pressure Plate		Нажимная плита из белого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.pressure_plate_wool_yellow	Wool Yellow AntiBlock Pressure Plate		Нажимная плита из жёлтого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_black	Bright Black AntiBlock Slab		Плита из яркого чёрного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_blue_bright	Bright Blue AntiBlock Slab		Плита из яркого синего антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_blue_wool	Wool Blue AntiBlock Slab		Плита из синего шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_brown_wool	Wool Brown AntiBlock Slab		Плита из коричневого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_cyan_bright	Bright Cyan AntiBlock Slab		Плита из яркого бирюзового антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_cyan_wool	Wool Cyan AntiBlock Slab		Плита из бирюзового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_gray_wool	Wool Gray AntiBlock Slab		Плита из серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_green_bright	Bright Green AntiBlock Slab		Плита из яркого зелёного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_green_wool	Wool Green AntiBlock Slab		Плита из зелёного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_light_blue_wool	Wool Light Blue AntiBlock Slab		Плита из голубого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_light_gray_wool	Wool Light Gray AntiBlock Slab		Плита из светло-серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_lime_wool	Wool Lime AntiBlock Slab		Плита из лаймового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_magenta_bright	Bright Magenta AntiBlock Slab		Плита из яркого пурпурного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_magenta_wool	Wool Magenta AntiBlock Slab		Плита из пурпурного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_orange_bright	Bright Orange AntiBlock Slab		Плита из яркого оранжевого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_orange_wool	Wool Orange AntiBlock Slab		Плита из оранжевого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_pink_wool	Wool Pink AntiBlock Slab		Плита из розового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_purple_wool	Wool Purple AntiBlock Slab		Плита из фиолетового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_red_bright	Bright Red AntiBlock Slab		Плита из яркого красного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_red_wool	Wool Red AntiBlock Slab		Плита из красного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_white_bright	Bright White AntiBlock Slab		Плита из яркого белого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_white_wool	Wool White AntiBlock Slab		Плита из белого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_yellow_bright	Bright Yellow AntiBlock Slab		Плита из яркого жёлтого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.slab_yellow_wool	Wool Yellow AntiBlock Slab		Плита из жёлтого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_black	Bright Black AntiBlock Stair		Ступеньки из яркого чёрного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_blue_bright	Bright Blue AntiBlock Stair		Ступеньки из яркого синего антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_blue_wool	Wool Blue AntiBlock Stair		Ступеньки из синего шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_brown_wool	Wool Brown AntiBlock Stair		Ступеньки из коричневого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_cyan_bright	Bright Cyan AntiBlock Stair		Ступеньки из яркого бирюзового антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_cyan_wool	Wool Cyan AntiBlock Stair		Ступеньки из бирюзового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_gray_wool	Wool Gray AntiBlock Stair		Ступеньки из серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_green_bright	Bright Green AntiBlock Stair		Ступеньки из яркого зелёного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_green_wool	Wool Green AntiBlock Stair		Ступеньки из зелёного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_light_blue_wool	Wool Light Blue AntiBlock Stair		Ступеньки из голубого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_light_gray_wool	Wool Light Gray AntiBlock Stair		Ступеньки из светло-серого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_lime_wool	Wool Lime AntiBlock Stair		Ступеньки из лаймового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_magenta_bright	Bright Magenta AntiBlock Stair		Ступеньки из яркого пурпурного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_magenta_wool	Wool Magenta AntiBlock Stair		Ступеньки из пурпурного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_orange_bright	Bright Orange AntiBlock Stair		Ступеньки из яркого оранжевого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_orange_wool	Wool Orange AntiBlock Stair		Ступеньки из оранжевого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_pink_wool	Wool Pink AntiBlock Stair		Ступеньки из розового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_purple_wool	Wool Purple AntiBlock Stair		Ступеньки из фиолетового шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_red_bright	Bright Red AntiBlock Stair		Ступеньки из яркого красного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_red_wool	Wool Red AntiBlock Stair		Ступеньки из красного шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_white_bright	Bright White AntiBlock Stair		Ступеньки из яркого белого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_white_wool	Wool White AntiBlock Stair		Ступеньки из белого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_yellow_bright	Bright Yellow AntiBlock Stair		Ступеньки из яркого жёлтого антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.stair_yellow_wool	Wool Yellow AntiBlock Stair		Ступеньки из жёлтого шерстяного антиблока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_blue	Wool Blue AntiBlock		Синий шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_blue_border	Wool Blue Bordered AntiBlock		Синий шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_brown	Wool Brown AntiBlock		Коричневый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_brown_border	Wool Brown Bordered AntiBlock		Коричневый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_cyan	Wool Cyan AntiBlock		Бирюзовый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_cyan_border	Wool Cyan Bordered AntiBlock		Бирюзовый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_gray	Wool Gray AntiBlock		Серый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_gray_border	Wool Gray Bordered AntiBlock		Серый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_green	Wool Green AntiBlock		Зелёный шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_green_border	Wool Green Bordered AntiBlock		Зелёный шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_light_blue	Wool Light Blue AntiBlock		Голубой шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_light_blue_border	Wool Light Blue Bordered AntiBlock		Голубой шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_light_gray	Wool Light Gray AntiBlock		Светло-серый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_light_gray_border	Wool Light Gray Bordered AntiBlock		Светло-серый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_lime	Wool Lime AntiBlock		Лаймовый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_lime_border	Wool Lime Bordered AntiBlock		Лаймовый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_magenta	Wool Magenta AntiBlock		Пурпурный шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_magenta_border	Wool Magenta Bordered AntiBlock		Пурпурный шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_orange	Wool Orange AntiBlock		Оранжевый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_orange_border	Wool Orange Bordered AntiBlock		Оранжевый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_pink	Wool Pink AntiBlock		Розовый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_pink_border	Wool Pink Bordered AntiBlock		Розовый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_purple	Wool Purple AntiBlock		Фиолетовый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_purple_border	Wool Purple Bordered AntiBlock		Фиолетовый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_red	Wool Red AntiBlock		Красный шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_red_border	Wool Red Bordered AntiBlock		Красный шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_white	Wool White AntiBlock		Белый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_white_border	Wool White Bordered AntiBlock		Белый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_yellow	Wool Yellow AntiBlock		Жёлтый шерстяной антиблок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+antiblocksrechiseled	block.antiblocksrechiseled.wool_yellow_border	Wool Yellow Bordered AntiBlock		Жёлтый шерстяной антиблок с рамкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.arthropod	Arthropod		Членистоногое	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.baked_cave_carrot	Baked Cave Carrot		Запечённая пещерная морковь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.baked_cod_stew_cup	Baked Cod Stew Cup		Чашка похлёбки из запечённой трески	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.baked_squid	Baked Squid		Запечённый кальмар	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.baked_tentacles	Baked Tentacles		Запечённые щупальца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.bat_cookie	Bat Cookie		Печенье из летучей мыши	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.bat_rolls	Bat Rolls		Рулетики из летучей мыши	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.bat_soup	Bat Soup		Суп из летучей мыши	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.bat_soup_cup	Bat Soup Cup		Чашка супа из летучей мыши	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.bat_wing	Bat Wing		Крыло летучей мыши	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.beef_stew_cup	Beef Stew Cup		Чашка говяжьей похлёбки	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.beetroot_soup_cup	Beetroot Soup Cup		Чашка свекольного супа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.bone_broth_cup	Bone Broth Cup		Чашка костного бульона	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.bowl_of_stuffed_squid	Bowl Of Stuffed Squid		Миска с фаршированным кальмаром	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	block.miners_delight.cave_carrot_crate	Cave Carrot Crate		Ящик с пещерной морковью	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.cave_soup	Cave Soup		Пещерный суп	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.cave_soup_cup	Cave Soup Cup		Чашка пещерного супа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.chicken_soup_cup	Chicken Soup Cup		Чашка куриного супа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.cooked_arthropod	Cooked Arthropod		Жареное членистоногое	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.copper_carrot	Copper Carrot		Медная морковь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.copper_cup	Copper Cup		Медная чашка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.fish_stew_cup	Fish Stew Cup		Чашка рыбной похлёбки	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.glow_ink_pasta	Glow Ink Pasta		Паста со светящимися чернилами	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.glow_squid	Glow Squid		Светящийся кальмар	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	block.miners_delight.gossypium	Gossypium		Хлопчатник	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.improvised_barbecue_stick	Improvised Barbecue Stick		Самодельный шампур	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.insect_sandwich	Insect Sandwich		Бутерброд с насекомыми	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.insect_stew	Insect Stew		Похлёбка из насекомых	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.insect_stew_cup	Insect Stew Cup		Чашка похлёбки из насекомых	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.insect_wrap	Insect Wrap		Ролл с насекомыми	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.milk_cup	Milk Cup		Чашка молока	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.mushroom_stew_cup	Mushroom Stew Cup		Чашка грибной похлёбки	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.noodle_soup_cup	Noodle Soup Cup		Чашка супа с лапшой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.pasta_with_veggieballs	Pasta With Veggieballs		Паста с овощными фрикадельками	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.powder_snow_cup	Powder Snow Cup		Чашка рыхлого снега	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.pumpkin_soup_cup	Pumpkin Soup Cup		Чашка тыквенного супа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.rabbit_stew_cup	Rabbit Stew Cup		Чашка похлёбки из кролика	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.seasoned_arthropods	Seasoned Arthropods		Членистоногие с приправами	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.smoked_bat_wing	Smoked Bat Wing		Копчёное крыло летучей мыши	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.squid	Squid		Кальмар	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.squid_sandwich	Squid Sandwich		Бутерброд с кальмаром	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	block.miners_delight.sticky_basket	Sticky Basket		Липкая корзина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	block.miners_delight.stuffed_squid	Stuffed Squid		Фаршированный кальмар	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.takoyaki	Takoyaki		Такояки	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.tentacles	Tentacles		Щупальца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.vegan_hamburger	Vegan Hamburger		Веганский бургер	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.vegan_patty	Vegan Patty		Веганская котлета	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.vegan_steak_and_potatoes	Vegan Steak And Potatoes		Веганский стейк с картофелем	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.vegan_wrap	Vegan Wrap		Веганский ролл	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.vegetable_soup_cup	Vegetable Soup Cup		Чашка овощного супа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+miners_delight	item.miners_delight.water_cup	Water Cup		Чашка воды	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_allay	Allay Plushie		Плюшевая тихоня	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_armadillo	Armadillo Plushie		Плюшевый броненосец	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_bat	Bat Plushie		Плюшевая летучая мышь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_bee	Bee Plushie		Плюшевая пчела	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_breeze	Breeze Plushie		Плюшевый бриз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_camel	Camel Plushie		Плюшевый верблюд	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_cat	Cat Plushie		Плюшевая кошка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_cave_spider	Cave Spider Plushie		Плюшевый пещерный паук	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_chewie	Chewie Plushie		Плюшевый Чуи	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_chicken	Chicken Plushie		Плюшевая курица	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_cow	Cow Plushie		Плюшевая корова	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_creeper	Creeper Plushie		Плюшевый крипер	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_dan_rolo	Dan Rolo Plushie		Плюшевый Дан Роло	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_dark_father	Darth Vader Plushie		Плюшевый Дарт Вейдер	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_dolphin	Dolphin Plushie		Плюшевый дельфин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_donkey	Donkey Plushie		Плюшевый осёл	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_elder_guardian	Elder Guardian Plushie		Плюшевый древний страж	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_emperor	Emperor Plushie		Плюшевый Император	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_evoker	Evoker Plushie		Плюшевый заклинатель	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_fox	Fox Plushie		Плюшевая лиса	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_glow_squid	Glow Squid Plushie		Плюшевый светящийся спрут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_goat	Goat Plushie		Плюшевая коза	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_hoglin	Hoglin Plushie		Плюшевый хоглин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_horse	Horse Plushie		Плюшевая лошадь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_husk	Husk Plushie		Плюшевый кадавр	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_llama	Llama Plushie		Плюшевая лама	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_mooshroom	Mooshroom Plushie		Плюшевая грибная корова	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_mule	Mule Plushie		Плюшевый мул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_parrot	Parrot Plushie		Плюшевый попугай	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_peter	Peter Plushie		Плюшевый Питер	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_phantom	Phantom Plushie		Плюшевый фантом	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_pig	Pig Plushie		Плюшевая свинья	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_piglin	Piglin Plushie		Плюшевый пиглин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_piglin_brute	Piglin Brute Plushie		Плюшевый брутальный пиглин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_pillager	Pillager Plushie		Плюшевый разбойник	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_polar_bear	Polar Bear Plushie		Плюшевый белый медведь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_rabbit	Rabbit Plushie		Плюшевый кролик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_ravanger	Ravanger Plushie		Плюшевый разоритель	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_sheep	Sheep Plushie		Плюшевая овца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_shulker	Shulker Plushie		Плюшевый шалкер	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_skeleton	Skeleton Plushie		Плюшевый скелет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_skeleton_horse	Skeleton Horse Plushie		Плюшевая лошадь-скелет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_slime	Slime Plushie		Плюшевый слизень	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_spider	Spider Plushie		Плюшевый паук	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_squid	Squid Plushie		Плюшевый спрут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_storm_soldier	Storm Soldier Plushie		Плюшевый штурмовик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_stray	Stray Plushie		Плюшевый зимогор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_strider	Strider Plushie		Плюшевая лавомерка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_trader_lama	Trader Lama Plushie		Плюшевая лама торговца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_vex	Vex Plushie		Плюшевая вредина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_villager	Villager Plushie		Плюшевый крестьянин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_vindicator	Vindicator Plushie		Плюшевый поборник	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_wandering_trader	Wandering Trader Plushie		Плюшевый странствующий торговец	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_witch	Witch Plushie		Плюшевая ведьма	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_wolf	Wolf Plushie		Плюшевый волк	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_yoga	Yoda Plushie		Плюшевый Йода	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_zoglin	Zoglin Plushie		Плюшевый зоглин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_zombie	Zombie Plushie		Плюшевый зомби	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_zombie_villager	Zombie Villager Plushie		Плюшевый зомби-крестьянин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.plushie_zombified_piglin	Zombified Piglin Plushie		Плюшевый зомбифицированный пиглин	Короткое естественное название; согласовано с цветами, материалами и семейством.
+plushie_buddies	block.plushie_buddies.workbench	Sewing Machine		Швейная машинка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_basin	Acacia Basin		Акациевая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_bath	Acacia Bath		Акациевая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_chair	Acacia Chair		Акациевый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_crate	Acacia Crate		Акациевый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_cutting_board	Acacia Cutting Board		Акациевая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_dark_ceiling_fan	Acacia Dark Ceiling Fan		Тёмный акациевый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_desk	Acacia Desk		Акациевый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_drawer	Acacia Drawer		Акациевый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_hedge	Acacia Hedge		Акациевая живая изгородь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_kitchen_cabinetry	Acacia Kitchen Cabinetry		Акациевая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_kitchen_drawer	Acacia Kitchen Drawer		Акациевый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_kitchen_sink	Acacia Kitchen Sink		Акациевая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_kitchen_storage_cabinet	Acacia Kitchen Storage Cabinet		Акациевый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_lattice_fence	Acacia Lattice Fence		Акациевый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_lattice_fence_gate	Acacia Lattice Fence Gate		Акациевая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_light_ceiling_fan	Acacia Light Ceiling Fan		Светлый акациевый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_mail_box	Acacia Mailbox		Акациевый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_storage_cabinet	Acacia Storage Cabinet		Акациевый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_storage_jar	Acacia Storage Jar		Банка с акациевой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_table	Acacia Table		Акациевый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.acacia_toilet	Acacia Toilet		Акациевый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.andesite_stepping_stones	Andesite Stepping Stones		Андезитовые садовые камни	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.azalea_hedge	Azalea Hedge		Живая изгородь из азалии	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_basin	Birch Basin		Берёзовая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_bath	Birch Bath		Берёзовая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_chair	Birch Chair		Берёзовый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_crate	Birch Crate		Берёзовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_cutting_board	Birch Cutting Board		Берёзовая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_dark_ceiling_fan	Birch Dark Ceiling Fan		Тёмный берёзовый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_desk	Birch Desk		Берёзовый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_drawer	Birch Drawer		Берёзовый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_hedge	Birch Hedge		Берёзовая живая изгородь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_kitchen_cabinetry	Birch Kitchen Cabinetry		Берёзовая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_kitchen_drawer	Birch Kitchen Drawer		Берёзовый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_kitchen_sink	Birch Kitchen Sink		Берёзовая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_kitchen_storage_cabinet	Birch Kitchen Storage Cabinet		Берёзовый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_lattice_fence	Birch Lattice Fence		Берёзовый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_lattice_fence_gate	Birch Lattice Fence Gate		Берёзовая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_light_ceiling_fan	Birch Light Ceiling Fan		Светлый берёзовый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_mail_box	Birch Mailbox		Берёзовый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_storage_cabinet	Birch Storage Cabinet		Берёзовый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_storage_jar	Birch Storage Jar		Банка с берёзовой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_table	Birch Table		Берёзовый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.birch_toilet	Birch Toilet		Берёзовый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_basin	Black Basin		Чёрная раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_bath	Black Bath		Чёрная ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_cooler	Black Cooler		Чёрный термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_grill	Black Grill		Чёрный гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_kitchen_cabinetry	Black Kitchen Cabinetry		Чёрная кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_kitchen_drawer	Black Kitchen Drawer		Чёрный кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_kitchen_sink	Black Kitchen Sink		Чёрная кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_kitchen_storage_cabinet	Black Kitchen Storage Cabinet		Чёрный кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_lamp	Black Lamp		Чёрная лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_sofa	Black Sofa		Чёрный диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_stool	Black Stool		Чёрный табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_toilet	Black Toilet		Чёрный унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.black_trampoline	Black Trampoline		Чёрный батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_basin	Blue Basin		Синяя раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_bath	Blue Bath		Синяя ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_cooler	Blue Cooler		Синий термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_grill	Blue Grill		Синий гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_kitchen_cabinetry	Blue Kitchen Cabinetry		Синяя кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_kitchen_drawer	Blue Kitchen Drawer		Синий кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_kitchen_sink	Blue Kitchen Sink		Синяя кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_kitchen_storage_cabinet	Blue Kitchen Storage Cabinet		Синий кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_lamp	Blue Lamp		Синяя лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_sofa	Blue Sofa		Синий диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_stool	Blue Stool		Синий табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_toilet	Blue Toilet		Синий унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.blue_trampoline	Blue Trampoline		Синий батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.bread_slice	Bread Slice		Ломтик хлеба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_basin	Brown Basin		Коричневая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_bath	Brown Bath		Коричневая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_cooler	Brown Cooler		Коричневый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_grill	Brown Grill		Коричневый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_kitchen_cabinetry	Brown Kitchen Cabinetry		Коричневая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_kitchen_drawer	Brown Kitchen Drawer		Коричневый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_kitchen_sink	Brown Kitchen Sink		Коричневая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_kitchen_storage_cabinet	Brown Kitchen Storage Cabinet		Коричневый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_lamp	Brown Lamp		Коричневая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_sofa	Brown Sofa		Коричневый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_stool	Brown Stool		Коричневый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_toilet	Brown Toilet		Коричневый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.brown_trampoline	Brown Trampoline		Коричневый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.cheese	Cheese		Сыр	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.cheese_sandwich	Cheese Sandwich		Бутерброд с сыром	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.cheese_toastie	Grilled Cheese		Горячий бутерброд с сыром	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_basin	Cherry Basin		Вишнёвая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_bath	Cherry Bath		Вишнёвая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_chair	Cherry Chair		Вишнёвый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_crate	Cherry Crate		Вишнёвый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_cutting_board	Cherry Cutting Board		Вишнёвая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_dark_ceiling_fan	Cherry Dark Ceiling Fan		Тёмный вишнёвый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_desk	Cherry Desk		Вишнёвый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_drawer	Cherry Drawer		Вишнёвый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_hedge	Cherry Hedge		Вишнёвая живая изгородь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_kitchen_cabinetry	Cherry Kitchen Cabinetry		Вишнёвая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_kitchen_drawer	Cherry Kitchen Drawer		Вишнёвый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_kitchen_sink	Cherry Kitchen Sink		Вишнёвая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_kitchen_storage_cabinet	Cherry Kitchen Storage Cabinet		Вишнёвый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_lattice_fence	Cherry Lattice Fence		Вишнёвый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_lattice_fence_gate	Cherry Lattice Fence Gate		Вишнёвая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_light_ceiling_fan	Cherry Light Ceiling Fan		Светлый вишнёвый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_mail_box	Cherry Mailbox		Вишнёвый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_storage_cabinet	Cherry Storage Cabinet		Вишнёвый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_storage_jar	Cherry Storage Jar		Банка с вишнёвой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_table	Cherry Table		Вишнёвый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cherry_toilet	Cherry Toilet		Вишнёвый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.cooked_meatlovers_pizza	Cooked Meat Pizza		Мясная пицца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.cooked_vegetable_pizza	Cooked Vegetable Pizza		Овощная пицца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_basin	Crimson Basin		Багровая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_bath	Crimson Bath		Багровая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_chair	Crimson Chair		Багровый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_crate	Crimson Crate		Багровый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_cutting_board	Crimson Cutting Board		Багровая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_dark_ceiling_fan	Crimson Dark Ceiling Fan		Тёмный багровый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_desk	Crimson Desk		Багровый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_drawer	Crimson Drawer		Багровый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_kitchen_cabinetry	Crimson Kitchen Cabinetry		Багровая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_kitchen_drawer	Crimson Kitchen Drawer		Багровый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_kitchen_sink	Crimson Kitchen Sink		Багровая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_kitchen_storage_cabinet	Crimson Kitchen Storage Cabinet		Багровый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_lattice_fence	Crimson Lattice Fence		Багровый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_lattice_fence_gate	Crimson Lattice Fence Gate		Багровая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_light_ceiling_fan	Crimson Light Ceiling Fan		Светлый багровый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_mail_box	Crimson Mailbox		Багровый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_storage_cabinet	Crimson Storage Cabinet		Багровый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_storage_jar	Crimson Storage Jar		Банка с багровой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_table	Crimson Table		Багровый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.crimson_toilet	Crimson Toilet		Багровый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_basin	Cyan Basin		Бирюзовая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_bath	Cyan Bath		Бирюзовая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_cooler	Cyan Cooler		Бирюзовый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_grill	Cyan Grill		Бирюзовый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_kitchen_cabinetry	Cyan Kitchen Cabinetry		Бирюзовая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_kitchen_drawer	Cyan Kitchen Drawer		Бирюзовый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_kitchen_sink	Cyan Kitchen Sink		Бирюзовая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_kitchen_storage_cabinet	Cyan Kitchen Storage Cabinet		Бирюзовый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_lamp	Cyan Lamp		Бирюзовая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_sofa	Cyan Sofa		Бирюзовый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_stool	Cyan Stool		Бирюзовый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_toilet	Cyan Toilet		Бирюзовый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.cyan_trampoline	Cyan Trampoline		Бирюзовый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_ceiling_light	Dark Ceiling Light		Тёмный потолочный светильник	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_electricity_generator	Dark Electricity Generator		Тёмный электрогенератор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.dark_fridge	Dark Fridge		Тёмный холодильник	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_lightswitch	Dark Lightswitch		Тёмный выключатель	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_microwave	Dark Microwave		Тёмная микроволновка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_basin	Dark Oak Basin		Раковина из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_bath	Dark Oak Bath		Ванна из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_chair	Dark Oak Chair		Стул из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_crate	Dark Oak Crate		Ящик из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_cutting_board	Dark Oak Cutting Board		Разделочная доска из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_dark_ceiling_fan	Dark Oak Dark Ceiling Fan		Тёмный потолочный вентилятор из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_desk	Dark Oak Desk		Письменный стол из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_drawer	Dark Oak Drawer		Комод из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_hedge	Dark Oak Hedge		Живая изгородь из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_kitchen_cabinetry	Dark Oak Kitchen Cabinetry		Кухонная тумба из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_kitchen_drawer	Dark Oak Kitchen Drawer		Кухонный ящик из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_kitchen_sink	Dark Oak Kitchen Sink		Кухонная мойка из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_kitchen_storage_cabinet	Dark Oak Kitchen Storage Cabinet		Кухонный шкаф из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_lattice_fence	Dark Oak Lattice Fence		Решётчатый забор из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_lattice_fence_gate	Dark Oak Lattice Fence Gate		Решётчатая калитка из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_light_ceiling_fan	Dark Oak Light Ceiling Fan		Светлый потолочный вентилятор из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_mail_box	Dark Oak Mailbox		Почтовый ящик из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_storage_cabinet	Dark Oak Storage Cabinet		Шкаф из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_storage_jar	Dark Oak Storage Jar		Банка с крышкой из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_table	Dark Oak Table		Стол из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_oak_toilet	Dark Oak Toilet		Унитаз из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_range_hood	Dark Range Hood		Тёмная вытяжка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_stove	Dark Stove		Тёмная плита	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.dark_toaster	Dark Toaster		Тёмный тостер	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.deepslate_stepping_stones	Deepslate Stepping Stones		Глубинносланцевые садовые камни	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.diorite_stepping_stones	Diorite Stepping Stones		Диоритовые садовые камни	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.door_mat	Door Mat		Придверный коврик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.doorbell	Doorbell		Дверной звонок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.dough	Dough		Тесто	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.frying_pan	Frying Pan		Сковорода	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.glow_berry_jam	Glow Berry Jam		Варенье из светящихся ягод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.glow_berry_jam_toast	Glow Berry Jam Toast		Тост с вареньем из светящихся ягод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.granite_stepping_stones	Granite Stepping Stones		Гранитные садовые камни	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_basin	Gray Basin		Серая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_bath	Gray Bath		Серая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_cooler	Gray Cooler		Серый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_grill	Gray Grill		Серый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_kitchen_cabinetry	Gray Kitchen Cabinetry		Серая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_kitchen_drawer	Gray Kitchen Drawer		Серый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_kitchen_sink	Gray Kitchen Sink		Серая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_kitchen_storage_cabinet	Gray Kitchen Storage Cabinet		Серый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_lamp	Gray Lamp		Серая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_sofa	Gray Sofa		Серый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_stool	Gray Stool		Серый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_toilet	Gray Toilet		Серый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.gray_trampoline	Gray Trampoline		Серый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_basin	Green Basin		Зелёная раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_bath	Green Bath		Зелёная ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_cooler	Green Cooler		Зелёный термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_grill	Green Grill		Зелёный гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_kitchen_cabinetry	Green Kitchen Cabinetry		Зелёная кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_kitchen_drawer	Green Kitchen Drawer		Зелёный кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_kitchen_sink	Green Kitchen Sink		Зелёная кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_kitchen_storage_cabinet	Green Kitchen Storage Cabinet		Зелёный кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_lamp	Green Lamp		Зелёная лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_sofa	Green Sofa		Зелёный диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_stool	Green Stool		Зелёный табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_toilet	Green Toilet		Зелёный унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.green_trampoline	Green Trampoline		Зелёный батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_basin	Jungle Basin		Раковина из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_bath	Jungle Bath		Ванна из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_chair	Jungle Chair		Стул из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_crate	Jungle Crate		Ящик из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_cutting_board	Jungle Cutting Board		Разделочная доска из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_dark_ceiling_fan	Jungle Dark Ceiling Fan		Тёмный потолочный вентилятор из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_desk	Jungle Desk		Письменный стол из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_drawer	Jungle Drawer		Комод из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_hedge	Jungle Hedge		Живая изгородь из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_kitchen_cabinetry	Jungle Kitchen Cabinetry		Кухонная тумба из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_kitchen_drawer	Jungle Kitchen Drawer		Кухонный ящик из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_kitchen_sink	Jungle Kitchen Sink		Кухонная мойка из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_kitchen_storage_cabinet	Jungle Kitchen Storage Cabinet		Кухонный шкаф из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_lattice_fence	Jungle Lattice Fence		Решётчатый забор из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_lattice_fence_gate	Jungle Lattice Fence Gate		Решётчатая калитка из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_light_ceiling_fan	Jungle Light Ceiling Fan		Светлый потолочный вентилятор из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_mail_box	Jungle Mailbox		Почтовый ящик из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_storage_cabinet	Jungle Storage Cabinet		Шкаф из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_storage_jar	Jungle Storage Jar		Банка с крышкой из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_table	Jungle Table		Стол из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.jungle_toilet	Jungle Toilet		Унитаз из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.knife	Knife		Нож	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_basin	Light Blue Basin		Голубая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_bath	Light Blue Bath		Голубая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_cooler	Light Blue Cooler		Голубой термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_grill	Light Blue Grill		Голубой гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_kitchen_cabinetry	Light Blue Kitchen Cabinetry		Голубая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_kitchen_drawer	Light Blue Kitchen Drawer		Голубой кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_kitchen_sink	Light Blue Kitchen Sink		Голубая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_kitchen_storage_cabinet	Light Blue Kitchen Storage Cabinet		Голубой кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_lamp	Light Blue Lamp		Голубая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_sofa	Light Blue Sofa		Голубой диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_stool	Light Blue Stool		Голубой табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_toilet	Light Blue Toilet		Голубой унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_blue_trampoline	Light Blue Trampoline		Голубой батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_ceiling_light	Light Ceiling Light		Светлый потолочный светильник	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_basin	Light Gray Basin		Светло-серая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_bath	Light Gray Bath		Светло-серая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_cooler	Light Gray Cooler		Светло-серый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_grill	Light Gray Grill		Светло-серый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_kitchen_cabinetry	Light Gray Kitchen Cabinetry		Светло-серая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_kitchen_drawer	Light Gray Kitchen Drawer		Светло-серый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_kitchen_sink	Light Gray Kitchen Sink		Светло-серая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_kitchen_storage_cabinet	Light Gray Kitchen Storage Cabinet		Светло-серый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_lamp	Light Gray Lamp		Светло-серая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_sofa	Light Gray Sofa		Светло-серый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_stool	Light Gray Stool		Светло-серый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_toilet	Light Gray Toilet		Светло-серый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_gray_trampoline	Light Gray Trampoline		Светло-серый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_lightswitch	Light Lightswitch		Светлый выключатель	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_microwave	Light Microwave		Светлая микроволновка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_range_hood	Light Range Hood		Светлая вытяжка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.light_toaster	Light Toaster		Светлый тостер	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_basin	Lime Basin		Лаймовая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_bath	Lime Bath		Лаймовая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_cooler	Lime Cooler		Лаймовый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_grill	Lime Grill		Лаймовый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_kitchen_cabinetry	Lime Kitchen Cabinetry		Лаймовая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_kitchen_drawer	Lime Kitchen Drawer		Лаймовый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_kitchen_sink	Lime Kitchen Sink		Лаймовая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_kitchen_storage_cabinet	Lime Kitchen Storage Cabinet		Лаймовый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_lamp	Lime Lamp		Лаймовая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_sofa	Lime Sofa		Лаймовый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_stool	Lime Stool		Лаймовый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_toilet	Lime Toilet		Лаймовый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.lime_trampoline	Lime Trampoline		Лаймовый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_basin	Magenta Basin		Пурпурная раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_bath	Magenta Bath		Пурпурная ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_cooler	Magenta Cooler		Пурпурный термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_grill	Magenta Grill		Пурпурный гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_kitchen_cabinetry	Magenta Kitchen Cabinetry		Пурпурная кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_kitchen_drawer	Magenta Kitchen Drawer		Пурпурный кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_kitchen_sink	Magenta Kitchen Sink		Пурпурная кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_kitchen_storage_cabinet	Magenta Kitchen Storage Cabinet		Пурпурный кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_lamp	Magenta Lamp		Пурпурная лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_sofa	Magenta Sofa		Пурпурный диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_stool	Magenta Stool		Пурпурный табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_toilet	Magenta Toilet		Пурпурный унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.magenta_trampoline	Magenta Trampoline		Пурпурный батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_basin	Mangrove Basin		Мангровая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_bath	Mangrove Bath		Мангровая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_chair	Mangrove Chair		Мангровый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_crate	Mangrove Crate		Мангровый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_cutting_board	Mangrove Cutting Board		Мангровая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_dark_ceiling_fan	Mangrove Dark Ceiling Fan		Тёмный мангровый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_desk	Mangrove Desk		Мангровый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_drawer	Mangrove Drawer		Мангровый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_hedge	Mangrove Hedge		Мангровая живая изгородь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_kitchen_cabinetry	Mangrove Kitchen Cabinetry		Мангровая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_kitchen_drawer	Mangrove Kitchen Drawer		Мангровый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_kitchen_sink	Mangrove Kitchen Sink		Мангровая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_kitchen_storage_cabinet	Mangrove Kitchen Storage Cabinet		Мангровый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_lattice_fence	Mangrove Lattice Fence		Мангровый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_lattice_fence_gate	Mangrove Lattice Fence Gate		Мангровая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_light_ceiling_fan	Mangrove Light Ceiling Fan		Светлый мангровый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_mail_box	Mangrove Mailbox		Мангровый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_storage_cabinet	Mangrove Storage Cabinet		Мангровый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_storage_jar	Mangrove Storage Jar		Банка с мангровой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_table	Mangrove Table		Мангровый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.mangrove_toilet	Mangrove Toilet		Мангровый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.meatlovers_pizza_slice	Meat Pizza Slice		Кусок мясной пиццы	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_basin	Oak Basin		Дубовая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_bath	Oak Bath		Дубовая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_chair	Oak Chair		Дубовый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_crate	Oak Crate		Дубовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_cutting_board	Oak Cutting Board		Дубовая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_dark_ceiling_fan	Oak Dark Ceiling Fan		Тёмный дубовый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_desk	Oak Desk		Дубовый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_drawer	Oak Drawer		Дубовый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_hedge	Oak Hedge		Дубовая живая изгородь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_kitchen_cabinetry	Oak Kitchen Cabinetry		Дубовая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_kitchen_drawer	Oak Kitchen Drawer		Дубовый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_kitchen_sink	Oak Kitchen Sink		Дубовая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_kitchen_storage_cabinet	Oak Kitchen Storage Cabinet		Дубовый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_lattice_fence	Oak Lattice Fence		Дубовый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_lattice_fence_gate	Oak Lattice Fence Gate		Дубовая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_light_ceiling_fan	Oak Light Ceiling Fan		Светлый дубовый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_mail_box	Oak Mailbox		Дубовый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_storage_cabinet	Oak Storage Cabinet		Дубовый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_storage_jar	Oak Storage Jar		Банка с дубовой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_table	Oak Table		Дубовый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.oak_toilet	Oak Toilet		Дубовый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_basin	Orange Basin		Оранжевая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_bath	Orange Bath		Оранжевая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_cooler	Orange Cooler		Оранжевый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_grill	Orange Grill		Оранжевый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_kitchen_cabinetry	Orange Kitchen Cabinetry		Оранжевая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_kitchen_drawer	Orange Kitchen Drawer		Оранжевый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_kitchen_sink	Orange Kitchen Sink		Оранжевая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_kitchen_storage_cabinet	Orange Kitchen Storage Cabinet		Оранжевый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_lamp	Orange Lamp		Оранжевая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_sofa	Orange Sofa		Оранжевый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_stool	Orange Stool		Оранжевый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_toilet	Orange Toilet		Оранжевый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.orange_trampoline	Orange Trampoline		Оранжевый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.package	Package		Посылка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_basin	Pink Basin		Розовая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_bath	Pink Bath		Розовая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_cooler	Pink Cooler		Розовый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_grill	Pink Grill		Розовый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_kitchen_cabinetry	Pink Kitchen Cabinetry		Розовая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_kitchen_drawer	Pink Kitchen Drawer		Розовый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_kitchen_sink	Pink Kitchen Sink		Розовая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_kitchen_storage_cabinet	Pink Kitchen Storage Cabinet		Розовый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_lamp	Pink Lamp		Розовая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_sofa	Pink Sofa		Розовый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_stool	Pink Stool		Розовый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_toilet	Pink Toilet		Розовый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.pink_trampoline	Pink Trampoline		Розовый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.plate	Plate	Тарелка	Тарелка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.post_box	Post Box		Почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_basin	Purple Basin		Фиолетовая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_bath	Purple Bath		Фиолетовая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_cooler	Purple Cooler		Фиолетовый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_grill	Purple Grill		Фиолетовый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_kitchen_cabinetry	Purple Kitchen Cabinetry		Фиолетовая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_kitchen_drawer	Purple Kitchen Drawer		Фиолетовый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_kitchen_sink	Purple Kitchen Sink		Фиолетовая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_kitchen_storage_cabinet	Purple Kitchen Storage Cabinet		Фиолетовый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_lamp	Purple Lamp		Фиолетовая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_sofa	Purple Sofa		Фиолетовый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_stool	Purple Stool		Фиолетовый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_toilet	Purple Toilet		Фиолетовый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.purple_trampoline	Purple Trampoline		Фиолетовый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.raw_meatlovers_pizza	Raw Meat Pizza		Сырая мясная пицца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.raw_vegetable_pizza	Raw Vegetable Pizza		Сырая овощная пицца	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.recycle_bin	Recycle Bin		Бак для переработки	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_basin	Red Basin		Красная раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_bath	Red Bath		Красная ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_cooler	Red Cooler		Красный термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_grill	Red Grill		Красный гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_kitchen_cabinetry	Red Kitchen Cabinetry		Красная кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_kitchen_drawer	Red Kitchen Drawer		Красный кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_kitchen_sink	Red Kitchen Sink		Красная кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_kitchen_storage_cabinet	Red Kitchen Storage Cabinet		Красный кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_lamp	Red Lamp		Красная лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_sofa	Red Sofa		Красный диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_stool	Red Stool		Красный табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_toilet	Red Toilet		Красный унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.red_trampoline	Red Trampoline		Красный батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.sea_salt	Sea Salt		Морская соль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.spatula	Spatula		Лопатка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_basin	Spruce Basin		Еловая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_bath	Spruce Bath		Еловая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_chair	Spruce Chair		Еловый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_crate	Spruce Crate		Еловый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_cutting_board	Spruce Cutting Board		Еловая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_dark_ceiling_fan	Spruce Dark Ceiling Fan		Тёмный еловый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_desk	Spruce Desk		Еловый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_drawer	Spruce Drawer		Еловый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_hedge	Spruce Hedge		Еловая живая изгородь	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_kitchen_cabinetry	Spruce Kitchen Cabinetry		Еловая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_kitchen_drawer	Spruce Kitchen Drawer		Еловый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_kitchen_sink	Spruce Kitchen Sink		Еловая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_kitchen_storage_cabinet	Spruce Kitchen Storage Cabinet		Еловый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_lattice_fence	Spruce Lattice Fence		Еловый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_lattice_fence_gate	Spruce Lattice Fence Gate		Еловая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_light_ceiling_fan	Spruce Light Ceiling Fan		Светлый еловый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_mail_box	Spruce Mailbox		Еловый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_storage_cabinet	Spruce Storage Cabinet		Еловый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_storage_jar	Spruce Storage Jar		Банка с еловой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_table	Spruce Table		Еловый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.spruce_toilet	Spruce Toilet		Еловый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.stone_stepping_stones	Stone Stepping Stones		Каменные садовые камни	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.sweet_berry_jam	Sweet Berry Jam		Варенье из сладких ягод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.television_remote	Television Remote		Пульт от телевизора	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.toast	Toast		Тост	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.vegetable_pizza_slice	Vegetable Pizza Slice		Кусок овощной пиццы	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_basin	Warped Basin		Искажённая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_bath	Warped Bath		Искажённая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_chair	Warped Chair		Искажённый стул	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_crate	Warped Crate		Искажённый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_cutting_board	Warped Cutting Board		Искажённая разделочная доска	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_dark_ceiling_fan	Warped Dark Ceiling Fan		Тёмный искажённый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_desk	Warped Desk		Искажённый письменный стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_drawer	Warped Drawer		Искажённый комод	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_kitchen_cabinetry	Warped Kitchen Cabinetry		Искажённая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_kitchen_drawer	Warped Kitchen Drawer		Искажённый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_kitchen_sink	Warped Kitchen Sink		Искажённая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_kitchen_storage_cabinet	Warped Kitchen Storage Cabinet		Искажённый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_lattice_fence	Warped Lattice Fence		Искажённый решётчатый забор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_lattice_fence_gate	Warped Lattice Fence Gate		Искажённая решётчатая калитка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_light_ceiling_fan	Warped Light Ceiling Fan		Светлый искажённый потолочный вентилятор	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_mail_box	Warped Mailbox		Искажённый почтовый ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_storage_cabinet	Warped Storage Cabinet		Искажённый шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_storage_jar	Warped Storage Jar		Банка с искажённой крышкой	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_table	Warped Table		Искажённый стол	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.warped_toilet	Warped Toilet		Искажённый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.wheat_flour	Wheat Flour		Пшеничная мука	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_basin	White Basin		Белая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_bath	White Bath		Белая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_cooler	White Cooler		Белый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_grill	White Grill		Белый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_kitchen_cabinetry	White Kitchen Cabinetry		Белая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_kitchen_drawer	White Kitchen Drawer		Белый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_kitchen_sink	White Kitchen Sink		Белая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_kitchen_storage_cabinet	White Kitchen Storage Cabinet		Белый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_lamp	White Lamp		Белая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_sofa	White Sofa		Белый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_stool	White Stool		Белый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_toilet	White Toilet		Белый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.white_trampoline	White Trampoline		Белый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.workbench	Workbench		Верстак	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	item.refurbished_furniture.wrench	Wrench		Гаечный ключ	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_basin	Yellow Basin		Жёлтая раковина	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_bath	Yellow Bath		Жёлтая ванна	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_cooler	Yellow Cooler		Жёлтый термобокс	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_grill	Yellow Grill		Жёлтый гриль	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_kitchen_cabinetry	Yellow Kitchen Cabinetry		Жёлтая кухонная тумба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_kitchen_drawer	Yellow Kitchen Drawer		Жёлтый кухонный ящик	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_kitchen_sink	Yellow Kitchen Sink		Жёлтая кухонная мойка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_kitchen_storage_cabinet	Yellow Kitchen Storage Cabinet		Жёлтый кухонный шкаф	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_lamp	Yellow Lamp		Жёлтая лампа	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_sofa	Yellow Sofa		Жёлтый диван	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_stool	Yellow Stool		Жёлтый табурет	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_toilet	Yellow Toilet		Жёлтый унитаз	Короткое естественное название; согласовано с цветами, материалами и семейством.
+refurbished_furniture	block.refurbished_furniture.yellow_trampoline	Yellow Trampoline		Жёлтый батут	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.acacia_crafting_storage_shelf	Acacia Crafting Storage Shelf		Акациевая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.acacia_storage_shelf	Acacia Storage Shelf		Акациевая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.acacia_storage_shelf_1	Acacia Storage Shelf		Акациевая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.acacia_storage_shelf_2	Acacia Storage Shelf		Акациевая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.acacia_storage_shelf_3	Acacia Storage Shelf		Акациевая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.acacia_storage_shelf_large	Acacia Storage Shelf		Большая акациевая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.bamboo_crafting_storage_shelf	Bamboo Crafting Storage Shelf		Бамбуковая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.bamboo_storage_shelf	Bamboo Storage Shelf		Бамбуковая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.bamboo_storage_shelf_1	Bamboo Storage Shelf		Бамбуковая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.bamboo_storage_shelf_2	Bamboo Storage Shelf		Бамбуковая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.bamboo_storage_shelf_3	Bamboo Storage Shelf		Бамбуковая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.bamboo_storage_shelf_large	Bamboo Storage Shelf		Большая бамбуковая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.birch_crafting_storage_shelf	Birch Crafting Storage Shelf		Берёзовая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.birch_storage_shelf	Birch Storage Shelf		Берёзовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.birch_storage_shelf_1	Birch Storage Shelf		Берёзовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.birch_storage_shelf_2	Birch Storage Shelf		Берёзовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.birch_storage_shelf_3	Birch Storage Shelf		Берёзовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.birch_storage_shelf_large	Birch Storage Shelf		Большая берёзовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	item.storage_shelves.cardboard	Plywood		Фанера	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	item.storage_shelves.cardboard_box	Cardboard Box		Картонная коробка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cardboard_stack_1	Cardboard Stack 1		Стопка картона (1)	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cardboard_stack_2	Cardboard Stack 2		Стопка картона (2)	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cardboard_stack_3	Cardboard Stack 3		Стопка картона (3)	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cherry_crafting_storage_shelf	Cherry Crafting Storage Shelf		Вишнёвая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cherry_storage_shelf	Cherry Storage Shelf		Вишнёвая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cherry_storage_shelf_1	Cherry Storage Shelf		Вишнёвая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cherry_storage_shelf_2	Cherry Storage Shelf		Вишнёвая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cherry_storage_shelf_3	Cherry Storage Shelf		Вишнёвая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.cherry_storage_shelf_large	Cherry Storage Shelf		Большая вишнёвая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.crimson_crafting_storage_shelf	Crimson Crafting Storage Shelf		Багровая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.crimson_storage_shelf	Crimson Storage Shelf		Багровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.crimson_storage_shelf_1	Crimson Storage Shelf		Багровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.crimson_storage_shelf_2	Crimson Storage Shelf		Багровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.crimson_storage_shelf_3	Crimson Storage Shelf		Багровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.crimson_storage_shelf_large	Crimson Storage Shelf		Большая багровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.dark_oak_crafting_storage_shelf	Dark Oak Crafting Storage Shelf		Полка с верстаком из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.dark_oak_storage_shelf	Dark Oak Storage Shelf		Полка из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.dark_oak_storage_shelf_1	Dark Oak Storage Shelf		Полка из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.dark_oak_storage_shelf_2	Dark Oak Storage Shelf		Полка из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.dark_oak_storage_shelf_3	Dark Oak Storage Shelf		Полка из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.dark_oak_storage_shelf_large	Dark Oak Storage Shelf		Большая полка из тёмного дуба	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.jungle_crafting_storage_shelf	Jungle Crafting Storage Shelf		Полка с верстаком из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.jungle_storage_shelf	Jungle Storage Shelf		Полка из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.jungle_storage_shelf_1	Jungle Storage Shelf		Полка из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.jungle_storage_shelf_2	Jungle Storage Shelf		Полка из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.jungle_storage_shelf_3	Jungle Storage Shelf		Полка из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.jungle_storage_shelf_large	Jungle Storage Shelf		Большая полка из тропического дерева	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	item.storage_shelves.large_cardboard_box	Large Cardboard Box		Большая картонная коробка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.large_cardboard_box_stack	Large Cardboard Box Stack		Стопка больших картонных коробок	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.mangrove_crafting_storage_shelf	Mangrove Crafting Storage Shelf		Мангровая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.mangrove_storage_shelf	Mangrove Storage Shelf		Мангровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.mangrove_storage_shelf_1	Mangrove Storage Shelf		Мангровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.mangrove_storage_shelf_2	Mangrove Storage Shelf		Мангровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.mangrove_storage_shelf_3	Mangrove Storage Shelf		Мангровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.mangrove_storage_shelf_large	Mangrove Storage Shelf		Большая мангровая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.oak_crafting_storage_shelf	Oak Crafting Storage Shelf		Дубовая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.oak_storage_shelf	Oak Storage Shelf		Дубовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.oak_storage_shelf_1	Oak Storage Shelf		Дубовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.oak_storage_shelf_2	Oak Storage Shelf		Дубовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.oak_storage_shelf_3	Oak Storage Shelf		Дубовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.oak_storage_shelf_large	Oak Storage Shelf		Большая дубовая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.spruce_crafting_storage_shelf	Spruce Crafting Storage Shelf		Еловая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.spruce_storage_shelf	Spruce Storage Shelf		Еловая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.spruce_storage_shelf_1	Spruce Storage Shelf		Еловая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.spruce_storage_shelf_2	Spruce Storage Shelf		Еловая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.spruce_storage_shelf_3	Spruce Storage Shelf		Еловая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.spruce_storage_shelf_large	Spruce Storage Shelf		Большая еловая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.warped_crafting_storage_shelf	Warped Crafting Storage Shelf		Искажённая полка с верстаком	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.warped_storage_shelf	Warped Storage Shelf		Искажённая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.warped_storage_shelf_1	Warped Storage Shelf		Искажённая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.warped_storage_shelf_2	Warped Storage Shelf		Искажённая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.warped_storage_shelf_3	Warped Storage Shelf		Искажённая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storage_shelves	block.storage_shelves.warped_storage_shelf_large	Warped Storage Shelf		Большая искажённая полка	Короткое естественное название; согласовано с цветами, материалами и семейством.
+storagedrawers	item.storagedrawers.acacia_full_drawers_1			Акациевый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.acacia_full_drawers_2			Акациевый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.acacia_full_drawers_4			Акациевый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.acacia_half_drawers_1			Акациевый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.acacia_half_drawers_2			Акациевый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.acacia_half_drawers_4			Акациевый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.acacia_trim			Акациевая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.bamboo_full_drawers_1			Бамбуковый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.bamboo_full_drawers_2			Бамбуковый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.bamboo_full_drawers_4			Бамбуковый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.bamboo_half_drawers_1			Бамбуковый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.bamboo_half_drawers_2			Бамбуковый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.bamboo_half_drawers_4			Бамбуковый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.bamboo_trim			Бамбуковая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.birch_full_drawers_1			Берёзовый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.birch_full_drawers_2			Берёзовый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.birch_full_drawers_4			Берёзовый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.birch_half_drawers_1			Берёзовый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.birch_half_drawers_2			Берёзовый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.birch_half_drawers_4			Берёзовый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.birch_trim			Берёзовая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.cherry_full_drawers_1			Вишнёвый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.cherry_full_drawers_2			Вишнёвый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.cherry_full_drawers_4			Вишнёвый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.cherry_half_drawers_1			Вишнёвый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.cherry_half_drawers_2			Вишнёвый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.cherry_half_drawers_4			Вишнёвый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.cherry_trim			Вишнёвая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.controller_slave			Ведомый контроллер ящиков	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.crimson_full_drawers_1			Багровый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.crimson_full_drawers_2			Багровый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.crimson_full_drawers_4			Багровый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.crimson_half_drawers_1			Багровый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.crimson_half_drawers_2			Багровый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.crimson_half_drawers_4			Багровый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.crimson_trim			Багровая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.dark_oak_full_drawers_1			Ящик (1 секция) из тёмного дуба	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.dark_oak_full_drawers_2			Ящик (2 секции) из тёмного дуба	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.dark_oak_full_drawers_4			Ящик (4 секции) из тёмного дуба	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.dark_oak_half_drawers_1			Полуящик (1 секция) из тёмного дуба	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.dark_oak_half_drawers_2			Полуящик (2 секции) из тёмного дуба	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.dark_oak_half_drawers_4			Полуящик (4 секции) из тёмного дуба	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.dark_oak_trim			Отделка из тёмного дуба	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.detached_drawer_full			Отсоединённый ящик (полный)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.framed_full_drawers_1			Обрамлённый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.framed_full_drawers_2			Обрамлённый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.framed_full_drawers_4			Обрамлённый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.framed_half_drawers_1			Обрамлённый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.framed_half_drawers_2			Обрамлённый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.framed_half_drawers_4			Обрамлённый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.framed_trim			Обрамлённая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.jungle_full_drawers_1			Ящик (1 секция) из тропического дерева	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.jungle_full_drawers_2			Ящик (2 секции) из тропического дерева	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.jungle_full_drawers_4			Ящик (4 секции) из тропического дерева	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.jungle_half_drawers_1			Полуящик (1 секция) из тропического дерева	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.jungle_half_drawers_2			Полуящик (2 секции) из тропического дерева	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.jungle_half_drawers_4			Полуящик (4 секции) из тропического дерева	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.jungle_trim			Отделка из тропического дерева	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_drawer			Брелок с ключом от ящика	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_personal			Брелок с персональным ключом	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_personal_cofh			Брелок с персональным ключом CoFH	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_priority			Брелок с ключом приоритета	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_priority_n1			Брелок с ключом приоритета (-1)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_priority_n2			Брелок с ключом приоритета (-2)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_priority_p1			Брелок с ключом приоритета (+1)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_priority_p2			Брелок с ключом приоритета (+2)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_puller			Брелок со съёмником ящика	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_quantify			Брелок с ключом подсчёта	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.keyring_shroud			Брелок с ключом сокрытия	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.mangrove_full_drawers_1			Мангровый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.mangrove_full_drawers_2			Мангровый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.mangrove_full_drawers_4			Мангровый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.mangrove_half_drawers_1			Мангровый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.mangrove_half_drawers_2			Мангровый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.mangrove_half_drawers_4			Мангровый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.mangrove_trim			Мангровая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.oak_full_drawers_1			Дубовый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.oak_full_drawers_2			Дубовый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.oak_full_drawers_4			Дубовый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.oak_half_drawers_1			Дубовый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.oak_half_drawers_2			Дубовый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.oak_half_drawers_4			Дубовый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.oak_trim			Дубовая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.spruce_full_drawers_1			Еловый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.spruce_full_drawers_2			Еловый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.spruce_full_drawers_4			Еловый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.spruce_half_drawers_1			Еловый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.spruce_half_drawers_2			Еловый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.spruce_half_drawers_4			Еловый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.spruce_trim			Еловая отделка	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.warped_full_drawers_1			Искажённый ящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.warped_full_drawers_2			Искажённый ящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.warped_full_drawers_4			Искажённый ящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.warped_half_drawers_1			Искажённый полуящик (1 секция)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.warped_half_drawers_2			Искажённый полуящик (2 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.warped_half_drawers_4			Искажённый полуящик (4 секции)	Восстановлено по ID и согласовано с семейством.
+storagedrawers	item.storagedrawers.warped_trim			Искажённая отделка	Восстановлено по ID и согласовано с семейством.

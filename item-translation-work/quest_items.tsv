@@ -1,0 +1,418 @@
+item_id	translation_key	en_us	ru_ru	status
+actuallyadditions:atomic_reconstructor	block.actuallyadditions.atomic_reconstructor	Atomic Reconstructor	Атомный реконстрактор	HAS_RU
+actuallyadditions:empowerer	block.actuallyadditions.empowerer	Empowerer	Зарядник	HAS_RU
+ae2:calculation_processor	item.ae2.calculation_processor	Calculation Processor	Вычислительный процессор	HAS_RU
+ae2:calculation_processor_press	item.ae2.calculation_processor_press	Inscriber Calculation Press	Вычислительный печать для вырезателя	HAS_RU
+ae2:chest	block.ae2.chest	ME Chest	МЭ-сундук	HAS_RU
+ae2:condenser	block.ae2.condenser	Matter Condenser	Конденсатор материи	HAS_RU
+ae2:controller	block.ae2.controller	ME Controller	МЭ-регулятор	HAS_RU
+ae2:crafting_terminal	item.ae2.crafting_terminal	ME Crafting Terminal	МЭ терминал изготовления	HAS_RU
+ae2:drive	block.ae2.drive	ME Drive	МЭ-дисковод	HAS_RU
+ae2:ender_dust	item.ae2.ender_dust	Ender Dust	Эндер-пыль	HAS_RU
+ae2:energy_acceptor	block.ae2.energy_acceptor	Energy Acceptor	Приёмщик энергии	HAS_RU
+ae2:engineering_processor_press	item.ae2.engineering_processor_press	Inscriber Engineering Press	Инженерная печать для вырезателя	HAS_RU
+ae2:inscriber	block.ae2.inscriber	Inscriber	Вырезатель	HAS_RU
+ae2:logic_processor_press	item.ae2.logic_processor_press	Inscriber Logic Press	Логическая печать для вырезателя	HAS_RU
+ae2:quantum_entangled_singularity	item.ae2.quantum_entangled_singularity	Quantum Entangled Singularity	Сингулярность квантовой запутанности	HAS_RU
+ae2:silicon_press	item.ae2.silicon_press	Inscriber Silicon Press	Кремниевая печать для вырезателя	HAS_RU
+ae2:singularity	item.ae2.singularity	Singularity	Сингулярность	HAS_RU
+beachparty:beach_towel	block.beachparty.beach_towel	Beach Towel	Пляжное полотенце	HAS_RU
+beachparty:cocoa_cocktail	block.beachparty.cocoa_cocktail	Cocoa Cocktail	Коктейль с какао	HAS_RU
+beachparty:coconut	item.beachparty.coconut	Coconut	Кокос	HAS_RU
+beachparty:coconut_cocktail	block.beachparty.coconut_cocktail	Coconut Cocktail	Кокосовый коктейль	HAS_RU
+beachparty:coconut_open	item.beachparty.coconut_open	Open Coconut	Расколотый кокос	HAS_RU
+beachparty:floaty_boat	item.beachparty.floaty_boat	Floaty Boat	Надувная лодочка	HAS_RU
+beachparty:honey_cocktail	block.beachparty.honey_cocktail	Honey Cocktail	Медовый коктейль	HAS_RU
+beachparty:melon_cocktail	block.beachparty.melon_cocktail	Melon Cocktail	Арбузный коктейль	HAS_RU
+beachparty:message_in_a_bottle	block.beachparty.message_in_a_bottle	Message in a Bottle	Послание в бутылке	HAS_RU
+beachparty:mini_fridge	block.beachparty.mini_fridge	Mini Fridge	Мини-холодильник	HAS_RU
+beachparty:music_disc_beachparty	item.beachparty.music_disc_beachparty	Music Disc	Пластинка	HAS_RU
+beachparty:music_disc_caribbean_beach	item.beachparty.music_disc_caribbean_beach	Music Disc	Пластинка	HAS_RU
+beachparty:music_disc_pridelands	item.beachparty.music_disc_pridelands	Music Disc	Пластинка	HAS_RU
+beachparty:music_disc_vocalista	item.beachparty.music_disc_vocalista	Music Disc	Пластинка	HAS_RU
+beachparty:music_disc_wild_veins	item.beachparty.music_disc_wild_veins	Music Disc	Пластинка	HAS_RU
+beachparty:overgrown_disc	item.beachparty.overgrown_disc	Overgrown Disc	Заросшая пластинка	HAS_RU
+beachparty:palm_bar	block.beachparty.palm_bar	Palm Bar	Тики бар	HAS_RU
+beachparty:palm_sprout	block.beachparty.palm_sprout	Palm Sprout	Росток пальмы	HAS_RU
+beachparty:pumpkin_cocktail	block.beachparty.pumpkin_cocktail	Pumpkin Cocktail	Тыквенный коктейль	HAS_RU
+beachparty:radio	block.beachparty.radio	Radio	Радио	HAS_RU
+beachparty:raw_mussel_meat	item.beachparty.raw_mussel_meat	Raw Mussel Meat	Сырое мясо мидии	HAS_RU
+beachparty:seashell	item.beachparty.seashell	Seashell	Ракушка	HAS_RU
+beachparty:sweetberries_cocktail	block.beachparty.sweetberries_cocktail	Sweetberry Cocktail	Коктейль из сладких ягод	HAS_RU
+berry_good:sweet_berry_pips	item.berry_good.sweet_berry_pips	Sweet Berry Pips	Семена сладких ягод	HAS_RU
+botania:alchemy_catalyst	block.botania.alchemy_catalyst	Alchemy Catalyst	Алхимический катализатор	HAS_RU
+botania:alfheim_portal	block.botania.alfheim_portal	Elven Gateway Core	Ядро эльфийских врат	HAS_RU
+botania:apothecary_default	block.botania.apothecary_default	Petal Apothecary	Лепестковая чаша	HAS_RU
+botania:endoflame	block.botania.endoflame	Endoflame	Эндопламя	HAS_RU
+botania:fertilizer	item.botania.fertilizer	Floral Fertilizer	Цветочное удобрение	HAS_RU
+botania:flower_bag	item.botania.flower_bag	Flower Pouch	Мешочек для цветов	HAS_RU
+botania:kekimurus	block.botania.kekimurus	Kekimurus	Кекимурус	HAS_RU
+botania:lexicon	item.botania.lexicon	Lexica Botania	Лексикон Ботании	HAS_RU
+botania:livingwood	block.botania.livingwood	Livingwood	Жизнедерево	HAS_RU
+botania:mana_pool	block.botania.mana_pool	Mana Pool	Бассейн маны	HAS_RU
+botania:mana_spreader	block.botania.mana_spreader	Mana Spreader	Распространитель маны	HAS_RU
+botania:monocle	item.botania.monocle	Manaseer Monocle	Монокль созерцателя маны	HAS_RU
+botania:pure_daisy	block.botania.pure_daisy	Pure Daisy	Чистая маргаритка	HAS_RU
+botania:runic_altar	block.botania.runic_altar	Runic Altar	Рунический алтарь	HAS_RU
+botania:terra_plate	block.botania.terra_plate	Terrestrial Agglomeration Plate	Теллурическая агломерационная пластина	HAS_RU
+brewinandchewin:beer	item.brewinandchewin.beer	Beer	Пиво	HAS_RU
+brewinandchewin:coaster	block.brewinandchewin.coaster	Coaster	Подставка под кружку	HAS_RU
+brewinandchewin:heating_cask	block.brewinandchewin.heating_cask	Heating Cask	Нагревательная бочка	HAS_RU
+brewinandchewin:keg	block.brewinandchewin.keg	Keg	Бочонок	HAS_RU
+brewinandchewin:sweet_berry_jam	item.brewinandchewin.sweet_berry_jam	Liminal Jam	Сладкое ягодное варенье	HAS_RU
+ceramicbucket:ceramic_bucket	item.ceramicbucket.ceramic_bucket	Ceramic Bucket	Керамическое ведро	HAS_RU
+cfm_wap:light_circuit_breaker	block.cfm_wap.light_circuit_breaker	Light Circuit Breaker	Светлый автоматический выключатель	HAS_RU
+create:andesite_alloy	item.create.andesite_alloy	Ash Alloy	Зольный сплав	HAS_RU
+create:asurine	block.create.asurine	Asurine	Азурин	HAS_RU
+create:basin	block.create.basin	Basin	Чаша	HAS_RU
+create:belt_connector	item.create.belt_connector	Mechanical Belt	Механический ремень	HAS_RU
+create:blaze_burner	block.create.blaze_burner	Blaze Burner	Горелка всполоха	HAS_RU
+create:blaze_cake	item.create.blaze_cake	Blaze Cake	Всполоховый торт	HAS_RU
+create:brass_casing	block.create.brass_casing	Brass Casing	Латунный корпус	HAS_RU
+create:brass_ingot	item.create.brass_ingot	Brass Ingot	Латунный слиток	HAS_RU
+create:cardboard_sword	item.create.cardboard_sword	Cardboard Sword	Картонный меч	HAS_RU
+create:chain_conveyor	block.create.chain_conveyor	Chain Conveyor	Цепной конвейер	HAS_RU
+create:crushed_raw_copper	item.create.crushed_raw_copper	Crushed Raw Copper	Дроблёная рудная медь	HAS_RU
+create:crushing_wheel	block.create.crushing_wheel	Crushing Wheel	Дробильное колесо	HAS_RU
+create:deployer	block.create.deployer	Deployer	Автономный активатор	HAS_RU
+create:electron_tube	item.create.electron_tube	Electron Tube	Электронная лампа	HAS_RU
+create:empty_blaze_burner	item.create.empty_blaze_burner	Empty Blaze Burner	Пустая горелка всполоха	HAS_RU
+create:encased_fan	block.create.encased_fan	Encased Fan	Вентилятор в корпусе	HAS_RU
+create:experience_block	block.create.experience_block	Block of Experience	Блок опыта	HAS_RU
+create:filter	item.create.filter	List Filter	Фильтр предметов	HAS_RU
+create:fluid_pipe	block.create.fluid_pipe	Fluid Pipe	Жидкостная труба	HAS_RU
+create:goggles	item.create.goggles	Engineer's Goggles	Инженерные очки	HAS_RU
+create:hand_crank	block.create.hand_crank	Hand Crank	Рукоятка	HAS_RU
+create:mechanical_press	block.create.mechanical_press	Mechanical Press	Механический пресс	HAS_RU
+create:mechanical_pump	block.create.mechanical_pump	Mechanical Pump	Механическая помпа	HAS_RU
+create:package_frogport	block.create.package_frogport	Package Frogport	Квакопорт	HAS_RU
+create:packager	block.create.packager	Packager	Упаковщик	HAS_RU
+create:propeller	item.create.propeller	Propeller	Пропеллер	HAS_RU
+create:railway_casing	block.create.railway_casing	Train Casing	Железнодорожный корпус	HAS_RU
+create:shadow_steel	item.create.shadow_steel	Shadow Steel	Теневая сталь	HAS_RU
+create:smart_fluid_pipe	block.create.smart_fluid_pipe	Smart Fluid Pipe	Умная жидкостная труба	HAS_RU
+create:steam_engine	block.create.steam_engine	Steam Engine	Паровой двигатель	HAS_RU
+create:stock_link	block.create.stock_link	Stock Link	Складской передатчик	HAS_RU
+create:stock_ticker	block.create.stock_ticker	Stock Ticker	Складской тикер	HAS_RU
+create:sturdy_sheet	item.create.sturdy_sheet	Sturdy Sheet	Прочный лист	HAS_RU
+create:track_station	block.create.track_station	Train Station	Железнодорожная станция	HAS_RU
+create:veridium	block.create.veridium	Veridium	Веридий	HAS_RU
+create:wrench	item.create.wrench	Wrench	Гаечный ключ	HAS_RU
+create:zinc_ingot	item.create.zinc_ingot	Zinc Ingot	Цинковый слиток	HAS_RU
+create_enchantment_industry:disenchanter	block.create_enchantment_industry.disenchanter	Disenchanter	Чаросъёмник	HAS_RU
+createaddition:alternator	block.createaddition.alternator	Alternator	Генератор	HAS_RU
+createaddition:straw	item.createaddition.straw	Straw	Соломинка	HAS_RU
+createlowheated:basic_burner	block.createlowheated.basic_burner	Basic Burner	Горелка	HAS_RU
+eidolon:brazier	block.eidolon.brazier	Brazier	Жаровня	HAS_RU
+eidolon:codex	item.eidolon.codex	Ars Ecclesia	Ars Ecclesia	RU_EQUALS_EN
+eidolon:crucible	block.eidolon.crucible	Crucible	Тигель	HAS_RU
+eidolon:grape_candy	item.eidolon.grape_candy	Soul Candy	Конфета душ	HAS_RU
+eidolon:necrotic_focus	block.eidolon.necrotic_focus	Necrotic Focus	Некротическая линза	HAS_RU
+eidolon:red_candy	item.eidolon.red_candy	Soul Candy	Конфета душ	HAS_RU
+eidolon:shadow_gem_block	block.eidolon.shadow_gem_block	Shadow Gem Block	Блок теневых самоцветов	HAS_RU
+eidolon:soul_shard	item.eidolon.soul_shard	Soul Shard	Осколок души	HAS_RU
+eidolon:stone_hand	block.eidolon.stone_hand	Stone Hand	Каменная ладонь	HAS_RU
+eidolon:tattered_cloth	item.eidolon.tattered_cloth	Tattered Cloth	Изодранная ткань	HAS_RU
+eidolon:wooden_brewing_stand	block.eidolon.wooden_brewing_stand	Apothecary Stand	Аптекарская стойка	HAS_RU
+enderio:alloy_smelter	block.enderio.alloy_smelter	Alloy Smelter	Завод сплавов	HAS_RU
+enderio:ensouled_chassis	block.enderio.ensouled_chassis	Ensouled Chassis	Корпус механизма душ	HAS_RU
+enderio:guardian_diode	item.enderio.guardian_diode	Guardian Diode	Страж диод	HAS_RU
+enderio:item_conduit	item.enderio.item_conduit	Item Conduit	Предметная труба	HAS_RU
+enderio:sag_mill	block.enderio.sag_mill	SAG Mill	Дробитель	HAS_RU
+enderio:slice_and_splice	block.enderio.slice_and_splice	Slice'N'Splice	Отрубатель и сращиватель	HAS_RU
+enderio:soul_binder	block.enderio.soul_binder	Soul Binder	Связыватель душ	HAS_RU
+enderio:void_chassis	block.enderio.void_chassis	Void Chassis	Корпус механизма	HAS_RU
+exposure:black_and_white_film	item.exposure.black_and_white_film	Black and White Film	Чёрно-белая плёнка	HAS_RU
+exposure:camera	item.exposure.camera	Camera	Фотоаппарат	HAS_RU
+exposure:color_film	item.exposure.color_film	Color Film	Цветная плёнка	HAS_RU
+exposure:lightroom	block.exposure.lightroom	Lightroom	Фотолаборатория	HAS_RU
+exposure:photograph_frame	item.exposure.photograph_frame	Photograph Frame	Фоторамка	HAS_RU
+farmersdelight:brown_mushroom_colony	block.farmersdelight.brown_mushroom_colony	Brown Mushroom Colony	Колония коричневых грибов	HAS_RU
+farmersdelight:cabbage_seeds	item.farmersdelight.cabbage_seeds	Cabbage Seeds	Семена капусты	HAS_RU
+farmersdelight:cooking_pot	block.farmersdelight.cooking_pot	Cooking Pot	Кухонный котёл	HAS_RU
+farmersdelight:cutting_board	block.farmersdelight.cutting_board	Cutting Board	Разделочная доска	HAS_RU
+farmersdelight:fish_stew	item.farmersdelight.fish_stew	Fish Stew	Рыбная похлёбка	HAS_RU
+farmersdelight:red_mushroom_colony	block.farmersdelight.red_mushroom_colony	Red Mushroom Colony	Колония красных грибов	HAS_RU
+farmersdelight:sandy_shrub	block.farmersdelight.sandy_shrub	Sandy Shrub	Песчаный куст	HAS_RU
+farmersdelight:straw	item.farmersdelight.straw	Straw	Солома	HAS_RU
+farmersdelight:wild_beetroots	block.farmersdelight.wild_beetroots	Sea Beet	Морская свёкла	HAS_RU
+farmersdelight:wild_cabbages	block.farmersdelight.wild_cabbages	Wild Cabbage	Дикая капуста	HAS_RU
+farmersdelight:wild_carrots	block.farmersdelight.wild_carrots	Wild Carrot	Дикая морковь	HAS_RU
+farmersdelight:wild_onions	block.farmersdelight.wild_onions	Wild Onion	Дикий лук	HAS_RU
+farmersdelight:wild_potatoes	block.farmersdelight.wild_potatoes	Wild Potato	Дикий картофель	HAS_RU
+farmersdelight:wild_rice	block.farmersdelight.wild_rice	Wild Rice	Дикий рис	HAS_RU
+farmersdelight:wild_tomatoes	block.farmersdelight.wild_tomatoes	Tomato Shrub	Томатный куст	HAS_RU
+farmersdelight:wooden_basket	block.farmersdelight.wooden_basket	Basket	Корзина	HAS_RU
+immersiveengineering:alloybrick	block.immersiveengineering.alloybrick	Kiln Brick	Кирпич плавильной печи	HAS_RU
+immersiveengineering:arc_furnace	block.immersiveengineering.arc_furnace	Arc Furnace	Дуговая печь	HAS_RU
+immersiveengineering:blast_furnace	block.immersiveengineering.blast_furnace	Crude Blast Furnace	Доменная печь	HAS_RU
+immersiveengineering:blastbrick	block.immersiveengineering.blastbrick	Blast Brick	Кирпич доменной печи	HAS_RU
+immersiveengineering:blastbrick_reinforced	block.immersiveengineering.blastbrick_reinforced	Reinforced Blast Brick	Кирпич продвинутой доменной печи	HAS_RU
+immersiveengineering:coke_oven	block.immersiveengineering.coke_oven	Coke Oven	Коксовая печь	HAS_RU
+immersiveengineering:cokebrick	block.immersiveengineering.cokebrick	Coke Brick	Кирпич коксовой печи	HAS_RU
+immersiveengineering:component_electronic	item.immersiveengineering.component_electronic	Electronic Component	Электронный компонент	HAS_RU
+immersiveengineering:component_electronic_adv	item.immersiveengineering.component_electronic_adv	Advanced Electronic Component	Продвинутый электронный компонент	HAS_RU
+immersiveengineering:electron_tube	item.immersiveengineering.electron_tube	Vacuum Tube	Электронная лампа	HAS_RU
+immersiveengineering:fermenter	block.immersiveengineering.fermenter	Industrial Fermenter	Бродильный аппарат	HAS_RU
+immersiveengineering:fiberboard	block.immersiveengineering.fiberboard	Fiberboard	Древесноволокнистая плита	HAS_RU
+immersiveengineering:heavy_engineering	block.immersiveengineering.heavy_engineering	Heavy Engineering Block	Тяжёлый инженерный блок	HAS_RU
+immersiveengineering:ingot_steel	item.immersiveengineering.ingot_steel	Steel Ingot	Стальной слиток	HAS_RU
+immersiveengineering:light_engineering	block.immersiveengineering.light_engineering	Light Engineering Block	Лёгкий инженерный блок	HAS_RU
+immersiveengineering:manual	item.immersiveengineering.manual	Engineer's Manual	Руководство инженера	HAS_RU
+immersiveengineering:mixer	block.immersiveengineering.mixer	Mixer	Смеситель	HAS_RU
+immersiveengineering:plate_duroplast	item.immersiveengineering.plate_duroplast	Duroplast Sheet	Лист дюропласта	HAS_RU
+immersiveengineering:raw_aluminum	item.immersiveengineering.raw_aluminum	Raw Bauxite	Рудный алюминий	HAS_RU
+immersiveengineering:refinery	block.immersiveengineering.refinery	Refinery	Очиститель	HAS_RU
+immersiveengineering:rs_engineering	block.immersiveengineering.rs_engineering	Redstone Engineering Block	Редстоуновый инженерный блок	HAS_RU
+immersiveengineering:steel_fence	block.immersiveengineering.steel_fence	Steel Fence	Стальной забор	HAS_RU
+kubejs:acacia_flooring	item.kubejs.acacia_flooring		Акациевый настил	HAS_RU
+kubejs:ai	item.kubejs.ai		Искусственный интеллект	HAS_RU
+kubejs:almond_water_can	item.kubejs.almond_water_can		Миндальная вода	HAS_RU
+kubejs:basalz_cake	item.kubejs.basalz_cake		Торт базальца	HAS_RU
+kubejs:battery	item.kubejs.battery		Батарейка	HAS_RU
+kubejs:birch_flooring	item.kubejs.birch_flooring		Берёзовый настил	HAS_RU
+kubejs:blitz_cake	item.kubejs.blitz_cake		Торт блица	HAS_RU
+kubejs:blizz_cake	item.kubejs.blizz_cake		Торт близза	HAS_RU
+kubejs:blue_almond_water_can	item.kubejs.blue_almond_water_can		Кокосовая миндальная вода	HAS_RU
+kubejs:carpet_dust	item.kubejs.carpet_dust		Ковровая пыль	HAS_RU
+kubejs:carpet_fluid	item.kubejs.carpet_fluid		Ковровая жидкость	HAS_RU
+kubejs:cobblestone_bucket	item.kubejs.cobblestone_bucket		Ведро булыжника	HAS_RU
+kubejs:concrete_piece	item.kubejs.concrete_piece		Кусок бетона	HAS_RU
+kubejs:concrete_tile	item.kubejs.concrete_tile		Бетонная плитка	HAS_RU
+kubejs:copycat_alloy	item.kubejs.copycat_alloy		Копирующий сплав	HAS_RU
+kubejs:corrosive_fungi	item.kubejs.corrosive_fungi		Разъедающие грибы	HAS_RU
+kubejs:crowbar	item.kubejs.crowbar		Лом	HAS_RU
+kubejs:cut_carpet	item.kubejs.cut_carpet		Кусок ковра	HAS_RU
+kubejs:dark_casing	block.kubejs.dark_casing		Тёмный корпус	HAS_RU
+kubejs:dark_oak_flooring	item.kubejs.dark_oak_flooring		Настил из тёмного дуба	HAS_RU
+kubejs:data_chip1	item.kubejs.data_chip1		Чип данных	HAS_RU
+kubejs:data_chip_error	item.kubejs.data_chip_error		Сломанный чип данных	HAS_RU
+kubejs:data_chip_infinity	item.kubejs.data_chip_infinity		Модифицированный чип данных	HAS_RU
+kubejs:dimensional_package_depot	block.kubejs.dimensional_package_depot		Межпространственный склад посылок	HAS_RU
+kubejs:empty_compound_charge	block.kubejs.empty_compound_charge		Пустой заряд нестабильного соединения	HAS_RU
+kubejs:empty_wooden_silverfish_cage	block.kubejs.empty_wooden_silverfish_cage		Пустая деревянная клетка для чешуйниц	HAS_RU
+kubejs:error_item	item.kubejs.error_item		Ошибка	HAS_RU
+kubejs:fluorescent_tube	item.kubejs.fluorescent_tube		Люминесцентная лампа	HAS_RU
+kubejs:green_almond_water_can	item.kubejs.green_almond_water_can		Мятная миндальная вода	HAS_RU
+kubejs:half_frame_bottom	block.kubejs.half_frame_bottom		Нижняя половина каркаса механизма	HAS_RU
+kubejs:heavy_engineering_empty	block.kubejs.heavy_engineering_empty		Тяжёлый инженерный каркас	HAS_RU
+kubejs:hot_steel	item.kubejs.hot_steel		Раскалённая сталь	HAS_RU
+kubejs:jungle_flooring	item.kubejs.jungle_flooring		Настил из тропического дерева	HAS_RU
+kubejs:light_engineering_empty	block.kubejs.light_engineering_empty		Лёгкий инженерный каркас	HAS_RU
+kubejs:location_terminal	block.kubejs.location_terminal		Терминал местоположений	HAS_RU
+kubejs:moderate_soul_gem	item.kubejs.moderate_soul_gem		Средний самоцвет души	HAS_RU
+kubejs:oak_flooring	item.kubejs.oak_flooring		Дубовый настил	HAS_RU
+kubejs:overclocked_clock	item.kubejs.overclocked_clock		Разогнанные часы	HAS_RU
+kubejs:party_popper	item.kubejs.party_popper		Хлопушка	HAS_RU
+kubejs:pool_tile	item.kubejs.pool_tile		Плитка бассейна	HAS_RU
+kubejs:pool_tile_golden	item.kubejs.pool_tile_golden		Золотая плитка бассейна	HAS_RU
+kubejs:putty_knife	item.kubejs.putty_knife		Шпатель	HAS_RU
+kubejs:quantum_string	item.kubejs.quantum_string		Квантовая нить	HAS_RU
+kubejs:reality_charge	block.kubejs.reality_charge		Заряд реальности	HAS_RU
+kubejs:reality_charge_empty	block.kubejs.reality_charge_empty		Пустой заряд реальности	HAS_RU
+kubejs:reality_controller	block.kubejs.reality_controller		Контроллер реальности	HAS_RU
+kubejs:reality_frame	block.kubejs.reality_frame		Каркас реальности	HAS_RU
+kubejs:reality_spawner	block.kubejs.reality_spawner		Призыватель реальности	HAS_RU
+kubejs:red_almond_water_can	item.kubejs.red_almond_water_can		Клубничная миндальная вода	HAS_RU
+kubejs:red_location_card	item.kubejs.red_location_card		Красная карта местоположения	HAS_RU
+kubejs:rotten_wallpaper	item.kubejs.rotten_wallpaper		Гнилые обои	HAS_RU
+kubejs:sculk_scrubber	block.kubejs.sculk_scrubber		Скалковый очиститель	HAS_RU
+kubejs:sculked_sculk_scrubber	block.kubejs.sculked_sculk_scrubber		Заражённый скалковый очиститель	HAS_RU
+kubejs:spruce_flooring	item.kubejs.spruce_flooring		Еловый настил	HAS_RU
+kubejs:uncanny_shroom_seeds	item.kubejs.uncanny_shroom_seeds		Споры зловещего гриба	HAS_RU
+kubejs:unstable_compound	item.kubejs.unstable_compound		Нестабильное соединение	HAS_RU
+kubejs:wallpaper	item.kubejs.wallpaper		Обои	HAS_RU
+kubejs:wallpaper_green	item.kubejs.wallpaper_green		Зелёные обои	HAS_RU
+kubejs:wallpaper_lblue	item.kubejs.wallpaper_lblue		Голубые обои	HAS_RU
+kubejs:wallpaper_lime	item.kubejs.wallpaper_lime		Лаймовые обои	HAS_RU
+kubejs:wallpaper_orange	item.kubejs.wallpaper_orange		Оранжевые обои	HAS_RU
+kubejs:wallpaper_pink	item.kubejs.wallpaper_pink		Розовые обои	HAS_RU
+kubejs:wallpaper_purple	item.kubejs.wallpaper_purple		Фиолетовые обои	HAS_RU
+kubejs:wallpaper_red	item.kubejs.wallpaper_red		Красные обои	HAS_RU
+mekanism:advanced_control_circuit	item.mekanism.advanced_control_circuit	Advanced Control Circuit	Продвинутая схема управления	HAS_RU
+mekanism:antiprotonic_nucleosynthesizer	block.mekanism.antiprotonic_nucleosynthesizer	Antiprotonic Nucleosynthesizer	Антипротонный Нуклеосинтезатор	HAS_RU
+mekanism:basic_control_circuit	item.mekanism.basic_control_circuit	Basic Control Circuit	Базовая схема управления	HAS_RU
+mekanism:chemical_injection_chamber	block.mekanism.chemical_injection_chamber	Chemical Injection Chamber	Химическая инъекционная камера	HAS_RU
+mekanism:chemical_oxidizer	block.mekanism.chemical_oxidizer	Chemical Oxidizer	Химический окислитель	HAS_RU
+mekanism:combiner	block.mekanism.combiner	Combiner	Объединитель	HAS_RU
+mekanism:dimensional_stabilizer	block.mekanism.dimensional_stabilizer	Dimensional Stabilizer	Пространственный стабилизатор	HAS_RU
+mekanism:electrolytic_separator	block.mekanism.electrolytic_separator	Electrolytic Separator	Электролитический сепаратор	HAS_RU
+mekanism:elite_control_circuit	item.mekanism.elite_control_circuit	Elite Control Circuit	Элитная схема управления	HAS_RU
+mekanism:enrichment_chamber	block.mekanism.enrichment_chamber	Enrichment Chamber	Камера обогащения	HAS_RU
+mekanism:ingot_osmium	item.mekanism.ingot_osmium	Osmium Ingot	Осмиевый слиток	HAS_RU
+mekanism:metallurgic_infuser	block.mekanism.metallurgic_infuser	Metallurgic Infuser	Металлургический наполнитель	HAS_RU
+mekanism:osmium_compressor	block.mekanism.osmium_compressor	Osmium Compressor	Осмиевый компрессор	HAS_RU
+mekanism:pellet_antimatter	item.mekanism.pellet_antimatter	Antimatter Pellet	Гранула антиматерии	HAS_RU
+mekanism:pressurized_reaction_chamber	block.mekanism.pressurized_reaction_chamber	Pressurized Reaction Chamber	Герметичная реакционная камера	HAS_RU
+mekanism:purification_chamber	block.mekanism.purification_chamber	Purification Chamber	Камера очистки	HAS_RU
+mekanism:radioactive_waste_barrel	block.mekanism.radioactive_waste_barrel	Radioactive Waste Barrel	Бочка радиоактивных отходов	HAS_RU
+mekanism:steel_casing	block.mekanism.steel_casing	Steel Casing	Стальной корпус	HAS_RU
+mekanism:ultimate_control_circuit	item.mekanism.ultimate_control_circuit	Ultimate Control Circuit	Совершенная схема управления	HAS_RU
+minecraft:anvil	block.minecraft.anvil	Anvil	Наковальня	HAS_RU
+minecraft:bamboo	block.minecraft.bamboo	Bamboo	Бамбук	HAS_RU
+minecraft:bamboo_block	block.minecraft.bamboo_block	Block of Bamboo	Блок бамбука	HAS_RU
+minecraft:barrel	block.minecraft.barrel	Barrel	Бочка	HAS_RU
+minecraft:beehive	block.minecraft.beehive	Beehive	Улей	HAS_RU
+minecraft:beetroot_seeds	item.minecraft.beetroot_seeds	Beetroot Seeds	Семена свёклы	HAS_RU
+minecraft:black_dye	item.minecraft.black_dye	Black Dye	Чёрный краситель	HAS_RU
+minecraft:bone	item.minecraft.bone	Bone	Кость	HAS_RU
+minecraft:bone_meal	item.minecraft.bone_meal	Bone Meal	Костная мука	HAS_RU
+minecraft:bricks	block.minecraft.bricks	Bricks	Кирпичи	HAS_RU
+minecraft:bucket	item.minecraft.bucket	Bucket	Ведро	HAS_RU
+minecraft:cake	block.minecraft.cake	Cake	Торт	HAS_RU
+minecraft:cauldron	item.minecraft.cauldron	Cauldron	Котёл	HAS_RU
+minecraft:charcoal	item.minecraft.charcoal	Charcoal	Древесный уголь	HAS_RU
+minecraft:chorus_flower	block.minecraft.chorus_flower	Chorus Flower	Цветок хоруса	HAS_RU
+minecraft:chorus_fruit	item.minecraft.chorus_fruit	Chorus Fruit	Плод хоруса	HAS_RU
+minecraft:clay_ball	item.minecraft.clay_ball	Clay Ball	Комок глины	HAS_RU
+minecraft:coal	item.minecraft.coal	Coal	Уголь	HAS_RU
+minecraft:cobblestone	block.minecraft.cobblestone	Cobblestone	Булыжник	HAS_RU
+minecraft:cod	item.minecraft.cod	Raw Cod	Сырая треска	HAS_RU
+minecraft:crafting_table	block.minecraft.crafting_table	Crafting Table	Верстак	HAS_RU
+minecraft:diamond	item.minecraft.diamond	Diamond	Алмаз	HAS_RU
+minecraft:dirt	block.minecraft.dirt	Dirt	Земля	HAS_RU
+minecraft:dragon_breath	item.minecraft.dragon_breath	Dragon's Breath	Дыхание дракона	HAS_RU
+minecraft:dragon_egg	block.minecraft.dragon_egg	Dragon Egg	Яйцо дракона	HAS_RU
+minecraft:echo_shard	item.minecraft.echo_shard	Echo Shard	Осколок эха	HAS_RU
+minecraft:emerald	item.minecraft.emerald	Emerald	Изумруд	HAS_RU
+minecraft:enchanted_book	item.minecraft.enchanted_book	Enchanted Book	Чародейская книга	HAS_RU
+minecraft:experience_bottle	item.minecraft.experience_bottle	Bottle o' Enchanting	Пузырёк опыта	HAS_RU
+minecraft:furnace	block.minecraft.furnace	Furnace	Печь	HAS_RU
+minecraft:glass_bottle	item.minecraft.glass_bottle	Glass Bottle	Бутылочка	HAS_RU
+minecraft:gold_ingot	item.minecraft.gold_ingot	Gold Ingot	Золотой слиток	HAS_RU
+minecraft:gold_nugget	item.minecraft.gold_nugget	Gold Nugget	Кусочек золота	HAS_RU
+minecraft:gunpowder	item.minecraft.gunpowder	Gunpowder	Порох	HAS_RU
+minecraft:honeycomb	item.minecraft.honeycomb	Honeycomb	Пчелиные соты	HAS_RU
+minecraft:hopper	block.minecraft.hopper	Hopper	Воронка	HAS_RU
+minecraft:iron_ingot	item.minecraft.iron_ingot	Iron Ingot	Железный слиток	HAS_RU
+minecraft:jukebox	block.minecraft.jukebox	Jukebox	Проигрыватель	HAS_RU
+minecraft:lapis_lazuli	item.minecraft.lapis_lazuli	Lapis Lazuli	Лазурит	HAS_RU
+minecraft:lava_bucket	item.minecraft.lava_bucket	Lava Bucket	Ведро лавы	HAS_RU
+minecraft:melon_seeds	item.minecraft.melon_seeds	Melon Seeds	Семена арбуза	HAS_RU
+minecraft:mud	block.minecraft.mud	Mud	Грязь	HAS_RU
+minecraft:music_disc_5	item.minecraft.music_disc_5	Music Disc	Пластинка	HAS_RU
+minecraft:music_disc_far	item.minecraft.music_disc_far	Music Disc	Пластинка	HAS_RU
+minecraft:music_disc_otherside	item.minecraft.music_disc_otherside	Music Disc	Пластинка	HAS_RU
+minecraft:music_disc_pigstep	item.minecraft.music_disc_pigstep	Music Disc	Пластинка	HAS_RU
+minecraft:music_disc_relic	item.minecraft.music_disc_relic	Music Disc	Пластинка	HAS_RU
+minecraft:music_disc_strad	item.minecraft.music_disc_strad	Music Disc	Пластинка	HAS_RU
+minecraft:nether_bricks	block.minecraft.nether_bricks	Nether Bricks	Незерские кирпичи	HAS_RU
+minecraft:nether_star	item.minecraft.nether_star	Nether Star	Звезда Незера	HAS_RU
+minecraft:netherite_upgrade_smithing_template	item.minecraft.netherite_upgrade_smithing_template		Кузнечный шаблон	HAS_RU
+minecraft:oak_sapling	block.minecraft.oak_sapling	Oak Sapling	Саженец дуба	HAS_RU
+minecraft:ochre_froglight	block.minecraft.ochre_froglight	Ochre Froglight	Охристая квампа	HAS_RU
+minecraft:phantom_membrane	item.minecraft.phantom_membrane	Phantom Membrane	Мембрана фантома	HAS_RU
+minecraft:pitcher_plant	item.minecraft.pitcher_plant	Pitcher Plant	Кувшинница	HAS_RU
+minecraft:powder_snow_bucket	item.minecraft.powder_snow_bucket	Powder Snow Bucket	Ведро с рыхлым снегом	HAS_RU
+minecraft:prismarine	block.minecraft.prismarine	Prismarine	Призмарин	HAS_RU
+minecraft:prismarine_shard	item.minecraft.prismarine_shard	Prismarine Shard	Осколок призмарина	HAS_RU
+minecraft:pumpkin_seeds	item.minecraft.pumpkin_seeds	Pumpkin Seeds	Семена тыквы	HAS_RU
+minecraft:quartz	item.minecraft.quartz	Nether Quartz	Незерский кварц	HAS_RU
+minecraft:raw_gold	item.minecraft.raw_gold	Raw Gold	Рудное золото	HAS_RU
+minecraft:raw_iron	item.minecraft.raw_iron	Raw Iron	Рудное железо	HAS_RU
+minecraft:rotten_flesh	item.minecraft.rotten_flesh	Rotten Flesh	Гнилая плоть	HAS_RU
+minecraft:sand	block.minecraft.sand	Sand	Песок	HAS_RU
+minecraft:shulker_shell	item.minecraft.shulker_shell	Shulker Shell	Панцирь шалкера	HAS_RU
+minecraft:slime_ball	item.minecraft.slime_ball	Slimeball	Сгусток слизи	HAS_RU
+minecraft:small_dripleaf	block.minecraft.small_dripleaf	Small Dripleaf	Маленькая бросянка	HAS_RU
+minecraft:sniffer_egg	block.minecraft.sniffer_egg	Sniffer Egg	Яйцо нюхача	HAS_RU
+minecraft:soul_sand	block.minecraft.soul_sand	Soul Sand	Песок душ	HAS_RU
+minecraft:sponge	block.minecraft.sponge	Sponge	Губка	HAS_RU
+minecraft:string	item.minecraft.string	String	Нить	HAS_RU
+minecraft:sugar	item.minecraft.sugar	Sugar	Сахар	HAS_RU
+minecraft:sugar_cane	block.minecraft.sugar_cane	Sugar Cane	Сахарный тростник	HAS_RU
+minecraft:sweet_berries	item.minecraft.sweet_berries	Sweet Berries	Сладкие ягоды	HAS_RU
+minecraft:torchflower	block.minecraft.torchflower	Torchflower	Факельник	HAS_RU
+minecraft:wet_sponge	block.minecraft.wet_sponge	Wet Sponge	Мокрая губка	HAS_RU
+minecraft:wheat_seeds	item.minecraft.wheat_seeds	Wheat Seeds	Семена пшеницы	HAS_RU
+minecraft:wither_skeleton_skull	block.minecraft.wither_skeleton_skull	Wither Skeleton Skull	Череп визер-скелета	HAS_RU
+miners_delight:cave_carrot	item.miners_delight.cave_carrot	Cave Carrot	Пещерная морковь	HAS_RU
+miners_delight:copper_pot	block.miners_delight.copper_pot	Copper Pot	Медный котёл	HAS_RU
+miners_delight:moss	item.miners_delight.moss	Moss	Мох	HAS_RU
+miners_delight:silverfish_eggs	item.miners_delight.silverfish_eggs	Silverfish Eggs	Яйца чешуйницы	HAS_RU
+miners_delight:weird_caviar	item.miners_delight.weird_caviar	Weird Caviar	Странная икра	HAS_RU
+miners_delight:wild_cave_carrots	block.miners_delight.wild_cave_carrots	Wild Cave Carrots	Дикая пещерная морковь	HAS_RU
+musketmod:cartridge	item.musketmod.cartridge	Paper Cartridge	Бумажный патрон	HAS_RU
+neapolitan:strawberry_pips	item.neapolitan.strawberry_pips	Strawberry Pips	Зёрнышки клубники	HAS_RU
+neapolitan:vanilla_pods	item.neapolitan.vanilla_pods	Vanilla Pods	Стручки ванили	HAS_RU
+plushie_buddies:plushie_axolotl	block.plushie_buddies.plushie_axolotl	Axolotl Plushie	Плюшевый аксолотль	HAS_RU
+plushie_buddies:plushie_blaze	block.plushie_buddies.plushie_blaze	Blaze Plushie	Плюшевый всполох	HAS_RU
+plushie_buddies:plushie_drowned	block.plushie_buddies.plushie_drowned	Drowned Plushie	Плюшевый утопленник	HAS_RU
+plushie_buddies:plushie_frog	block.plushie_buddies.plushie_frog	Frog Plushie	Плюшевая лягушка	HAS_RU
+plushie_buddies:plushie_ghast	block.plushie_buddies.plushie_ghast	Ghast Plushie	Плюшевый гаст	HAS_RU
+plushie_buddies:plushie_guardian	block.plushie_buddies.plushie_guardian	Guardian Plushie	Плюшевый страж	HAS_RU
+plushie_buddies:plushie_iron_golem	block.plushie_buddies.plushie_iron_golem	Iron Golem Plushie	Плюшевый железный голем	HAS_RU
+plushie_buddies:plushie_magma_cube	block.plushie_buddies.plushie_magma_cube	Magma Cube Plushie	Плюшевый магмовый куб	HAS_RU
+plushie_buddies:plushie_panda	block.plushie_buddies.plushie_panda	Panda Plushie	Плюшевая панда	HAS_RU
+plushie_buddies:plushie_pufferfish	block.plushie_buddies.plushie_pufferfish	Pufferfish Plushie	Плюшевый иглобрюх	HAS_RU
+plushie_buddies:plushie_sniffer	block.plushie_buddies.plushie_sniffer	Sniffer Plushie	Плюшевый нюхач	HAS_RU
+plushie_buddies:plushie_turtle	block.plushie_buddies.plushie_turtle	Turtle Plushie	Плюшевая черепаха	HAS_RU
+plushie_buddies:plushie_warden	block.plushie_buddies.plushie_warden	Warden Plushie	Плюшевый хранитель	HAS_RU
+plushie_buddies:plushie_wither	block.plushie_buddies.plushie_wither	Wither Plushie	Плюшевый иссушитель	HAS_RU
+plushie_buddies:plushie_wither_skeleton	block.plushie_buddies.plushie_wither_skeleton	Wither Skeleton Plushie	Плюшевый визер-скелет	HAS_RU
+refurbished_furniture:computer	block.refurbished_furniture.computer	Computer	Компьютер	HAS_RU
+refurbished_furniture:light_electricity_generator	block.refurbished_furniture.light_electricity_generator	Light Electricity Generator	Светлый электрогенератор	HAS_RU
+refurbished_furniture:light_fridge	item.refurbished_furniture.light_fridge	Light Fridge	Светлый холодильник	HAS_RU
+refurbished_furniture:light_stove	block.refurbished_furniture.light_stove	Light Stove	Светлая плита	HAS_RU
+refurbished_furniture:sweet_berry_jam_toast	item.refurbished_furniture.sweet_berry_jam_toast	Sweet Berry Jam Toast	Тост с вареньем из сладких ягод	HAS_RU
+refurbished_furniture:television	block.refurbished_furniture.television	Television	Телевизор	HAS_RU
+snad:red_snad	block.snad.red_snad	Red Snad	Красный Snad	HAS_RU
+snad:snad	block.snad.snad	Snad	Snad	RU_EQUALS_EN
+snad:suol_snad	block.snad.suol_snad	Suol Snad	Suol Snad	RU_EQUALS_EN
+sophisticatedbackpacks:advanced_jukebox_upgrade	item.sophisticatedbackpacks.advanced_jukebox_upgrade	Advanced Jukebox Upgrade	Продвинутое улучшение «Проигрыватель»	HAS_RU
+sophisticatedbackpacks:backpack	item.sophisticatedbackpacks.backpack	Backpack	Рюкзак	HAS_RU
+sophisticatedbackpacks:deposit_upgrade	item.sophisticatedbackpacks.deposit_upgrade	Deposit Upgrade	Улучшение «Разгрузка»	HAS_RU
+sophisticatedbackpacks:pickup_upgrade	item.sophisticatedbackpacks.pickup_upgrade	Pickup Upgrade	Улучшение «Подбор»	HAS_RU
+supplementaries:ash	item.supplementaries.ash	Ash	Пепел	HAS_RU
+supplementaries:bellows	block.supplementaries.bellows	Bellows	Мехи	HAS_RU
+supplementaries:cannonball	block.supplementaries.cannonball	Cannonball	Пушечное ядро	HAS_RU
+supplementaries:checker_block	block.supplementaries.checker_block	Checker Block	Шахматная плитка	HAS_RU
+supplementaries:clock_block	block.supplementaries.clock_block	Clock Block	Часовой блок	HAS_RU
+supplementaries:confetti_popper	item.supplementaries.confetti_popper	Confetti Popper	Хлопушка	HAS_RU
+supplementaries:music_disc_heave_ho	item.supplementaries.music_disc_heave_ho	Music Disc	Пластинка	HAS_RU
+supplementaries:pancake	block.supplementaries.pancake	Pancake	Блинчик	HAS_RU
+supplementaries:sack	block.supplementaries.sack	Sack	Мешок	HAS_RU
+supplementaries:soap	item.supplementaries.soap	Soap	Мыло	HAS_RU
+supplementaries:speaker_block	block.supplementaries.speaker_block	Speaker Block	Динамик	HAS_RU
+supplementaries:wild_flax	block.supplementaries.wild_flax	Wild Flax	Дикий лён	HAS_RU
+tconstruct:husk_head	block.tconstruct.husk_head	Husk Head	Голова кадавра	HAS_RU
+tconstruct:magma_bucket	item.tconstruct.magma_bucket	Magma Bucket	Ведро магмы	HAS_RU
+tconstruct:molten_silver_bucket	item.tconstruct.molten_silver_bucket	Molten Silver Bucket	Ведро расплавленного серебра	HAS_RU
+tconstruct:seared_drain	block.tconstruct.seared_drain	Seared Drain	Обожжённый слив	HAS_RU
+tconstruct:seared_faucet	block.tconstruct.seared_faucet	Seared Faucet	Обожжённый кран	HAS_RU
+tconstruct:seared_fuel_tank	block.tconstruct.seared_fuel_tank	Seared Fuel Tank	Обожжённый топливный резервуар	HAS_RU
+tconstruct:seared_table	block.tconstruct.seared_table	Seared Casting Table	Обожжённый литейный стол	HAS_RU
+tconstruct:smeltery_controller	block.tconstruct.smeltery_controller	Smeltery Controller	Контроллер плавильни	HAS_RU
+thermal:area_radius_augment	item.thermal.area_radius_augment		Улучшение радиуса	HAS_RU
+thermal:blizz_rod	item.thermal.blizz_rod		Куб близза	HAS_RU
+thermal:charcoal_block	block.thermal.charcoal_block		Блок древесного угля	HAS_RU
+thermal:crude_oil_bucket	item.thermal.crude_oil_bucket		Ведро сырой нефти	HAS_RU
+thermal:device_collector	block.thermal.device_collector		Ваккумулятор	HAS_RU
+thermal:device_rock_gen	block.thermal.device_rock_gen		Магматический экструдер	HAS_RU
+thermal:explosive_grenade	item.thermal.explosive_grenade		Граната	HAS_RU
+thermal:glowstone_mushroom_spores	item.thermal.glowstone_mushroom_spores		Споры гриба с мерцающей шляпкой	HAS_RU
+thermal:gunpowder_mushroom_spores	item.thermal.gunpowder_mushroom_spores		Споры взрывогриба	HAS_RU
+thermal:lead_dust	item.thermal.lead_dust	Lead Dust	Свинцовая пыль	HAS_RU
+thermal:lead_ingot	item.thermal.lead_ingot	Lead Ingot	Свинцовый слиток	HAS_RU
+thermal:machine_bottler	block.thermal.machine_bottler		Жидкостный наполнитель	HAS_RU
+thermal:machine_centrifuge	block.thermal.machine_centrifuge		Центробежный сепаратор	HAS_RU
+thermal:machine_chiller	block.thermal.machine_chiller		Шоковый охладитель	HAS_RU
+thermal:machine_crystallizer	block.thermal.machine_crystallizer		Кристаллизатор	HAS_RU
+thermal:machine_frame	block.thermal.machine_frame		Каркас механизма	HAS_RU
+thermal:machine_insolator	block.thermal.machine_insolator		Фитогенный облучатель	HAS_RU
+thermal:machine_press	block.thermal.machine_press		Мультисерво-пресс	HAS_RU
+thermal:machine_pyrolyzer	block.thermal.machine_pyrolyzer		Пиролизёр	HAS_RU
+thermal:machine_refinery	block.thermal.machine_refinery		Фракционный дистиллятор	HAS_RU
+thermal:machine_smelter	block.thermal.machine_smelter		Индукционная плавильня	HAS_RU
+thermal:redstone_mushroom_spores	item.thermal.redstone_mushroom_spores		Споры флюсозуба	HAS_RU
+thermal:ruby	item.thermal.ruby	Ruby	Рубин	HAS_RU
+thermal:ruby_block	block.thermal.ruby_block	Block of Ruby	Рубиновый блок	HAS_RU
+thermal:slime_mushroom_spores	item.thermal.slime_mushroom_spores		Споры слизнегриба	HAS_RU
+thermal:tar	item.thermal.tar		Гудрон	HAS_RU
+thermal:tinker_bench	block.thermal.tinker_bench		Верстак мастера	HAS_RU
+waystones:portstone	block.waystones.portstone	Portstone	Портовый обелиск	HAS_RU
+waystones:warp_dust	item.waystones.warp_dust	Warp Dust	Пыль перемещения	HAS_RU
+woodenhopper:wooden_hopper	block.woodenhopper.wooden_hopper	Wooden Hopper	Деревянная воронка	HAS_RU
+xercapaint:item_canvas	item.xercapaint.item_canvas	Canvas	Холст	HAS_RU
+xercapaint:item_easel	item.xercapaint.item_easel	Easel	Мольберт	HAS_RU
+xercapaint:item_palette	item.xercapaint.item_palette	Palette	Палитра	HAS_RU

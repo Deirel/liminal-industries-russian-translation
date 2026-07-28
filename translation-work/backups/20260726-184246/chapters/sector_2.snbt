@@ -1,0 +1,1946 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sector_2"
+	group: "7A1E9C4F2B8D036E"
+	icon: "immersiveengineering:component_electronic"
+	id: "296F2DB9D43A576E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["552D47F0044BE5E4"]
+			description: [
+				"The Blast furnace can produce Hot Steel. In order to cool the ingots down, you need to right-click the Hot Steel on a cauldron filled with water."
+				""
+				"Do note that there is a 10% chance for the steel to crack. Cracked Steel can be reheated in the blast furnace to turn it into new Hot Steel."
+			]
+			icon: "immersiveengineering:blast_furnace"
+			id: "5D74C2FDCBAA0FC7"
+			rewards: [
+				{
+					id: "0ACF2091E9C6462E"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5A7FCED1C34D7441"
+					item: "kubejs:hot_steel"
+					type: "item"
+				}
+				{
+					id: "56D0668DF2159E47"
+					item: {
+						Count: 1
+						id: "immersiveengineering:stick_steel"
+						tag: {
+							display: {
+								Lore: ["{\"text\":\"Don't drop this\"}"]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Channel you inner Dwarf"
+			tasks: [
+				{
+					count: 27L
+					id: "087711302DC22977"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+				{
+					id: "7ED67EAC65F83528"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EACEFEF6E611EA7"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "3E10BCAC02463ECC"
+					item: "kubejs:hot_steel"
+					type: "item"
+				}
+				{
+					id: "269E5421B2ECA371"
+					item: "immersiveengineering:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Forge it while its Hot"
+			x: 0.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["7C0EE6F4BEE559C3"]
+			description: ["The Heavy Engineering Frame marks the start of the construction of the heavier machines. They will form the foundation for the megafactory that is being constructed."]
+			icon: "immersiveengineering:heavy_engineering"
+			id: "78F13758BBD911A0"
+			rewards: [
+				{
+					id: "02BFF400B3F054FC"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "6F5FF24398F4C5B1"
+					item: "minecraft:music_disc_far"
+					type: "item"
+				}
+				{
+					id: "440F6A60E2C8E59D"
+					item: "plushie_buddies:plushie_sniffer"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Foundation of the megafactory"
+			tasks: [
+				{
+					id: "56E8E33407531F61"
+					item: "kubejs:heavy_engineering_empty"
+					type: "item"
+				}
+				{
+					id: "71B37BC5508CF8E6"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+			]
+			title: "Heavy Engineering Frame"
+			x: 0.0d
+			y: 43.0d
+		}
+		{
+			dependencies: ["2ABD7837E63FB024"]
+			description: [
+				"It is time to get some power generation going. "
+				""
+				"You can connect your machines using the wires from Immersive Engineering, but you can also use the Fluxducts from Thermal Expansion."
+			]
+			icon: "createaddition:alternator"
+			id: "54E961EC3F8CC4D9"
+			rewards: [
+				{
+					id: "0904620D92482BE4"
+					item: {
+						Count: 1
+						id: "fairylights:hanging_lights"
+						tag: {
+							pattern: [{
+								Count: 1b
+								id: "fairylights:fairy_light"
+								tag: {
+									color: 11546150
+								}
+							}]
+							string: "fairylights:black_string"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E19D660F03AEA05"
+					item: {
+						Count: 1
+						id: "fairylights:hanging_lights"
+						tag: {
+							pattern: [{
+								Count: 1b
+								id: "fairylights:fairy_light"
+								tag: {
+									color: 8439583
+								}
+							}]
+							string: "fairylights:black_string"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "34FDB159A047C6AF"
+					item: {
+						Count: 1
+						id: "fairylights:hanging_lights"
+						tag: {
+							pattern: [{
+								Count: 1b
+								id: "fairylights:fairy_light"
+								tag: {
+									color: 3847130
+								}
+							}]
+							string: "fairylights:black_string"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Unlimited Raw Power"
+			tasks: [
+				{
+					id: "61F8174A1CFB3963"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7D32B24C8848AF38"
+					item: { Count: 6, id: "thermal:energy_duct" }
+					type: "item"
+				}
+			]
+			title: "Alternating"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["151585622A7F23C3"]
+			description: ["Dirt can be created by fermenting carpet in a keg combined with sugar."]
+			id: "4CB1AA5F6B49AC6E"
+			rewards: [{
+				id: "5293BEA140994846"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Dirty carpet secrets"
+			tasks: [{
+				id: "51829F68D3AF175F"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "Making Dirt"
+			x: 5.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["5D74C2FDCBAA0FC7"]
+			description: [
+				"The Advanced Blast Furnace is a lot faster. It can use powered preheaters to make the steel-making process even faster."
+				""
+				"Additionally, it supports automatic inputs and outputs. Just make sure you have a chest placed in front of its output, and the hot steel will be dropped automatically in there."
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "296A0E8602688002"
+			shape: "gear"
+			tasks: [
+				{
+					count: 27L
+					id: "1FC459CD33FD1ECE"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "1DC6BFDE623305D5"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "1C65D863F7664744"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "60EBAD5C2D5D5929"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+			]
+			title: "Advanced Blast Furnace"
+			x: -2.5d
+			y: 27.0d
+		}
+		{
+			dependencies: [
+				"65D2BC79CD4D885B"
+				"070593BCE7387349"
+			]
+			id: "7C0EE6F4BEE559C3"
+			subtitle: "Alternating current"
+			tasks: [{
+				id: "0432357F061847C7"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "Electron Tube"
+			x: 0.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["4CB1AA5F6B49AC6E"]
+			description: ["All kinds of different seeds and vegetables can be obtained by brushing Dirt, Mud and carpet Dust on a Cutting Board."]
+			icon: "farmersdelight:cabbage_seeds"
+			id: "6FDBD3A1B63D8498"
+			rewards: [{
+				id: "730B47494A746DA5"
+				item: {
+					Count: 1
+					id: "farmersdelight:stuffed_pumpkin_block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Welcome to Flavortown"
+			tasks: [
+				{
+					id: "5A9303D98226924D"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "5DC7826E04DE7664"
+					item: "minecraft:beetroot_seeds"
+					type: "item"
+				}
+				{
+					id: "3512AC32C9D42551"
+					item: "farmersdelight:cabbage_seeds"
+					type: "item"
+				}
+				{
+					id: "4669083C49751A5E"
+					item: "minecraft:pumpkin_seeds"
+					type: "item"
+				}
+				{
+					id: "1A61A9C6B91D2702"
+					item: "minecraft:melon_seeds"
+					type: "item"
+				}
+				{
+					id: "310DD3FAECB91729"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+			]
+			title: "Liminal Chef"
+			x: 5.0d
+			y: 37.0d
+		}
+		{
+			dependencies: ["32A38D7CD715768D"]
+			description: [
+				"Using bamboo, you can now make infinite wood without having to rely on your local chairs."
+				""
+				"A block of bamboo can also be turned into charcoal. This should help with feeding the fuel-hungry steam engine."
+				""
+				"Remember the plant can grow on snad and that, therefore, you don't need to build a megafarm in order to obtain a moderate amount of bamboo."
+			]
+			icon: "minecraft:bamboo"
+			id: "55B7C4D0E5890406"
+			rewards: [
+				{
+					id: "4A2B7E4AF189B3D7"
+					item: {
+						Count: 1
+						id: "supplementaries:flute"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12E6D7EC29E1C443"
+					item: "plushie_buddies:plushie_panda"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7BC4E73E77237AC6"
+					item: "minecraft:bamboo"
+					type: "item"
+				}
+				{
+					id: "578D74826E819116"
+					item: "minecraft:bamboo_block"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B7CA2A3659AF27D"
+					item: { Count: 4, id: "minecraft:bamboo_planks" }
+					type: "item"
+				}
+			]
+			title: "Renewable Wood"
+			x: 8.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["151585622A7F23C3"]
+			icon: "thermal:redstone_mushroom_spores"
+			id: "38A6BDA2AE2D13BE"
+			tasks: [
+				{
+					id: "793219F0CD6EC931"
+					item: "brewinandchewin:keg"
+					type: "item"
+				}
+				{
+					id: "475BE19954A2E3C6"
+					item: "brewinandchewin:heating_cask"
+					type: "item"
+				}
+				{
+					id: "031A4CF7CABFE500"
+					item: "thermal:redstone_mushroom_spores"
+					type: "item"
+				}
+				{
+					id: "57AEEE1F6F3B0E2E"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "2C80CE1AFC1E72EB"
+					item: { Count: 4, id: "minecraft:redstone" }
+					type: "item"
+				}
+			]
+			title: "Renewable Redstone"
+			x: 12.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["3DB2E63B62BA0311"]
+			icon: "refurbished_furniture:light_stove"
+			id: "3F5758647B93803C"
+			tasks: [
+				{
+					id: "77AE8111728C33E8"
+					item: "refurbished_furniture:light_stove"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0623A2305E415BF9"
+					item: "refurbished_furniture:light_fridge"
+					optional_task: true
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "tconstruct:molten_iron"
+					id: "1EB33E4B44C9B0E8"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "01A2A395789E1158"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Collecting Rust"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["74A40C27F67C1627"]
+			description: [
+				"Throwing bombs at the ceiling lamps will destroy them. "
+				""
+				"The tubes you acquire will be important components for the upcoming industrial revolution."
+			]
+			icon: "kubejs:fluorescent_tube"
+			id: "3EEB10E1DC378F7A"
+			rewards: [{
+				id: "3E255FA21D8DABBF"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Lights Out"
+			tasks: [{
+				id: "6EFC9A269934A311"
+				item: "kubejs:fluorescent_tube"
+				type: "item"
+			}]
+			title: "Vandalism 2.0"
+			x: 8.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"3F5758647B93803C"
+				"3EEB10E1DC378F7A"
+			]
+			icon: "immersiveengineering:light_engineering"
+			id: "2ABD7837E63FB024"
+			rewards: [{
+				id: "29F4FC7294559F98"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1B95EA560303C40B"
+					item: "kubejs:light_engineering_empty"
+					type: "item"
+				}
+				{
+					id: "4732C386C8438230"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+			]
+			title: "Light Engineering"
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["2ABD7837E63FB024"]
+			description: [
+				"The Igneous Extruder can be used to generate a lot of different items."
+				"The machine must always be next to lava, other adjacent blocks will decide the output."
+				""
+				"The most noteworthy for now resources are:"
+				""
+				"&lCobblestone&r"
+				"Lava and Water"
+				""
+				"&lGlue&r"
+				"Lava and Stripped Wallpaper"
+				""
+				"These recipes can also be found in JEI."
+			]
+			id: "451A79187DD84C9A"
+			rewards: [{
+				id: "1255D30274AF3021"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Lava decides the output"
+			tasks: [{
+				id: "1119B1A5274105BD"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			title: "Rock Generator"
+			x: 5.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["451A79187DD84C9A"]
+			icon: "thermal:rubber"
+			id: "32A38D7CD715768D"
+			tasks: [
+				{
+					count: 5L
+					id: "3E253DA1738337F3"
+					item: { Count: 5, id: "thermal:rubber" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0930B403FA9BCB2C"
+					item: { Count: 5, id: "thermal:cured_rubber" }
+					type: "item"
+				}
+			]
+			title: "Glue Extractor"
+			x: 5.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["0D7F62210B243747"]
+			description: [
+				"Soulshards can be obtained by performing a soul crystallization ritual near undead mobs. Skulked Husks are probably your best option for this."
+				""
+				"Bonemeal will be needed for the ritual. It can be obtained by crushing bones dropped by husks, or by using the composter."
+				""
+				"You can consult the Ars Ecclesia for more detailed information."
+			]
+			icon: "eidolon:soul_shard"
+			id: "0E75315018995DB6"
+			subtitle: "Crystallise the Undead"
+			tasks: [
+				{
+					id: "201B8879CE0612C5"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "75602215F1FD6138"
+					item: { Count: 2, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					id: "0318EDC1E7C05032"
+					item: "eidolon:soul_shard"
+					type: "item"
+				}
+			]
+			title: "Soul Shards"
+			x: -7.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7946525AFF6543C5"]
+			description: [
+				"The Brazier Circle can do all kinds of rituals."
+				""
+				"One of the most noteworthy is the abillity to summon mobs."
+				"Consult the \"Ars Eccelecia\" and \"Summoning 101\" for more information."
+			]
+			icon: "eidolon:brazier"
+			id: "0D7F62210B243747"
+			rewards: [
+				{
+					id: "222C7887F9BCF5E4"
+					item: {
+						Count: 1
+						id: "eidolon:warlock_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "195840ED0E077703"
+					item: "eidolon:codex"
+					type: "item"
+				}
+				{
+					id: "17EE00E6021F0E6D"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "patchouli:summoning"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "My Friend Thinks he is a Wizard"
+			tasks: [
+				{
+					id: "0035CE29CA1EB46B"
+					item: "eidolon:brazier"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7A68BA5A7F59A962"
+					item: "eidolon:stone_hand"
+					type: "item"
+				}
+			]
+			title: "Enter the Circle"
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0E75315018995DB6"
+				"78D4CF60C217CDED"
+				"68DFDA75DA5FB0E9"
+			]
+			description: [
+				"The Crucible requires quite a bit of precision. "
+				""
+				"It is highly recommended that you read the entry on it in the Ars Ecclesia to have enough information to get the crafting method correct."
+				""
+				"It might be tough to get the crafting process right straight away. So make sure you always make some extra ingredients as a backup."
+			]
+			id: "33C923AD98680D89"
+			rewards: [{
+				id: "516A4E464708EAA3"
+				item: {
+					Count: 1
+					id: "kubejs:sentimental_thaumium"
+					tag: {
+						display: {
+							Lore: ["{\"text\":\"Warning: Sentimental use only!\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}"]
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Read the Ars Ecclesia first"
+			tasks: [{
+				id: "31C9D3FC5640E0FF"
+				item: "eidolon:crucible"
+				type: "item"
+			}]
+			title: "Crucible"
+			x: -5.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["3DB2E63B62BA0311"]
+			icon: "cfm_wap:light_circuit_breaker"
+			id: "68905617A5751CBB"
+			tasks: [
+				{
+					id: "3313F83A86A4A453"
+					item: "cfm_wap:light_circuit_breaker"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D3C3DC1266DB43F"
+					item: "refurbished_furniture:light_electricity_generator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "tconstruct:molten_gold"
+					id: "4A60BF6D235E4AB4"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "64AB24251302FBE0"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			title: "Not all that Glitters"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3DB2E63B62BA0311"]
+			icon: "supplementaries:cannonball"
+			id: "7946525AFF6543C5"
+			rewards: [{
+				id: "2EAB1CA316871D80"
+				item: "supplementaries:music_disc_heave_ho"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "549F9AED12167295"
+					item: "supplementaries:cannonball"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "318F6B148DA52DFF"
+					item: "mekanism:radioactive_waste_barrel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "tconstruct:molten_lead"
+					id: "3119D4A74C9F7686"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "3FA9BA8E63582EE5"
+					item: "thermal:lead_ingot"
+					type: "item"
+				}
+			]
+			title: "Ya-harr!"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0D7F62210B243747"
+				"0E75315018995DB6"
+			]
+			description: [
+				"Cod can be summoned using a summoning ritual."
+				""
+				"Consult \"Summoning 101\" for more information."
+			]
+			id: "68DFDA75DA5FB0E9"
+			rewards: [
+				{
+					id: "2FE3FB4DBD842CC5"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+				{
+					id: "2D5ED9CD9E61BCA0"
+					item: "plushie_buddies:plushie_pufferfish"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0D228A8CB5F03B89"
+				item: "minecraft:cod"
+				type: "item"
+			}]
+			title: "Summoning Cod"
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["33C923AD98680D89"]
+			description: [
+				"Using the wand, you can create soulfire on carpet. "
+				""
+				"Some blocks can also be converted into their nether variant, such as bricks."
+			]
+			icon: {
+				Count: 1
+				id: "eidolon:soulfire_wand"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "552D47F0044BE5E4"
+			rewards: [
+				{
+					count: 3
+					id: "34DB1B9236A4AC09"
+					item: "eidolon:grape_candy"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7949329F4499DD9D"
+					item: "eidolon:red_candy"
+					type: "item"
+				}
+			]
+			subtitle: "Carpet on fire"
+			tasks: [
+				{
+					id: "40C6AB291E6B2779"
+					item: {
+						Count: 1
+						id: "eidolon:soulfire_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E9A2F93A63C1A31"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					id: "3E5B680B59E44AF3"
+					item: "minecraft:nether_bricks"
+					type: "item"
+				}
+			]
+			title: "Soulfire Wand"
+			x: -5.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"3F5758647B93803C"
+				"02553A61954B8BE9"
+			]
+			description: [
+				"With your newly generated mana you can now use a Runic Altar. Simply redirect the stored mana in the manapool towards the Runic Altar using a Mana Spreader."
+				""
+				"In the Lexa Botania you can read more on how to make runes with the Runic Altar."
+			]
+			id: "78D4CF60C217CDED"
+			rewards: [{
+				id: "56F4E334743C0ACE"
+				item: "botania:monocle"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Redirect the mana"
+			tasks: [{
+				id: "466F9C2A77810A9B"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			title: "Runic Altar"
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["60DCFFC671BBD126"]
+			id: "3DB2E63B62BA0311"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Forge it while its Hot"
+			tasks: [{
+				id: "56D5F49C5A7C9543"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			title: "Smeltery Controller"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68905617A5751CBB"]
+			description: [
+				"Using the endoflame, mana spreader and mana pool you can generate mana."
+				""
+				"If you are confused on how this works then consult the Lexa Botania for more information on mana generation."
+			]
+			icon: "botania:diluted_pool"
+			id: "02553A61954B8BE9"
+			subtitle: "Endoflame and spreaders"
+			tasks: [
+				{
+					id: "44A460D746D06546"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "491A9F59FE3D8858"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					id: "25CF7B8717C2E919"
+					item: "botania:endoflame"
+					type: "item"
+				}
+			]
+			title: "Mana Pool"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["65D2BC79CD4D885B"]
+			description: ["An early ME system might be quite rewarding to set up. Remember that systems without an ME Controller can only have up to 8 devices, so use your channels sparingly."]
+			icon: "ae2:chest"
+			id: "754899C65C2540E0"
+			rewards: [
+				{
+					count: 3
+					id: "589DB142A8826676"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7EB46B543ACD25F3"
+					item: {
+						Count: 1
+						id: "fairylights:hanging_lights"
+						tag: {
+							pattern: [{
+								Count: 1b
+								id: "fairylights:meteor_light"
+								tag: {
+									color: 8991416
+								}
+							}]
+							string: "fairylights:black_string"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Eight channels only"
+			tasks: [
+				{
+					id: "1757AE495DF47591"
+					item: "ae2:chest"
+					type: "item"
+				}
+				{
+					id: "44FDCBE4D6095982"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+			]
+			title: "ME Chest"
+			x: -5.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["54E961EC3F8CC4D9"]
+			description: [
+				"The Crystalliser can grow an array of important crystals."
+				""
+				"The most important outputs are:"
+				""
+				"- Certus Quartz"
+				"- Fluix Crystals"
+				"- Rose Quartz"
+				"- Lesser Soulgems"
+			]
+			id: "65D2BC79CD4D885B"
+			rewards: [{
+				id: "2645D7612D10923C"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Growing crystals"
+			tasks: [{
+				id: "6F98C2499AF89ACB"
+				item: "thermal:machine_crystallizer"
+				type: "item"
+			}]
+			title: "Crystalliser"
+			x: -5.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["754899C65C2540E0"]
+			id: "628045C24DB98BFA"
+			subtitle: "Eight channels only"
+			tasks: [{
+				id: "570D1D22D6CC1C91"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			title: "Crafting Terminal"
+			x: -5.0d
+			y: 37.0d
+		}
+		{
+			dependencies: ["2ABD7837E63FB024"]
+			description: [
+				"In order for the Sculk Scrubber to function, it must be placed above a block of Sculk."
+				""
+				"When you have done this correctly, it can be right-clicked in order to activate the machine."
+				""
+				"Upon activation it will start absorbing the sculk, leaving a strange but safe porous stone behind."
+				""
+				"It should be noted that nothing can be placed directly on the sculk, not even the sculk scrubber. In order to get it in the right position, you need to place it on the side of a non-sculk block. "
+			]
+			icon: "kubejs:sculk_scrubber"
+			id: "21DFDC2132AC4257"
+			rewards: [{
+				id: "7A73EC2D4CEF3362"
+				item: "plushie_buddies:plushie_warden"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Echoes in the Dark"
+			tasks: [{
+				id: "31E4E088F9C965B0"
+				item: "kubejs:sculk_scrubber"
+				type: "item"
+			}]
+			title: "Sculk Scrubber"
+			x: 8.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["32A38D7CD715768D"]
+			description: [
+				"Using the Keg, you can farm up a lot of the special spores. These spores can be turned into very useful resources."
+				""
+				"Fully automating the keg might be a really good idea since the process can be quite slow when having to move the spores manually over and over again."
+				""
+				"Of course it also allows you to get completely drunk on alcoholic beverages."
+			]
+			id: "151585622A7F23C3"
+			rewards: [
+				{
+					count: 3
+					id: "4EE86A0EE5C577FB"
+					item: "brewinandchewin:beer"
+					type: "item"
+				}
+				{
+					id: "794DC08A03224A03"
+					item: "brewinandchewin:coaster"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0846CF42BA14F3FF"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			title: "Fermentation for Intoxication"
+			x: 5.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["151585622A7F23C3"]
+			icon: "thermal:glowstone_mushroom_spores"
+			id: "0BC818BEB9B40456"
+			tasks: [
+				{
+					id: "72B9A67B2FA4505A"
+					item: "brewinandchewin:keg"
+					type: "item"
+				}
+				{
+					id: "42700DDDCF9B82EB"
+					item: "brewinandchewin:heating_cask"
+					type: "item"
+				}
+				{
+					id: "496D8CF97564C6D3"
+					item: "thermal:glowstone_mushroom_spores"
+					type: "item"
+				}
+				{
+					id: "06B595F27DA9CAC4"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6B84E1ED56613810"
+					item: { Count: 3, id: "minecraft:glowstone_dust" }
+					type: "item"
+				}
+			]
+			title: "Renewable Glowstone"
+			x: 12.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["5D74C2FDCBAA0FC7"]
+			description: [
+				"The Industrial Mixer can be used to produce Redstone Acid. This acid is essential in the chemical reaction to make Rose Quartz."
+				""
+				"Make sure to filter the output of the machine since the input water can be extracted from the output if no Redstone Acid is being made."
+			]
+			icon: "immersiveengineering:mixer"
+			id: "070593BCE7387349"
+			rewards: [{
+				id: "6C9106C9AA3F0750"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Mix Harder!"
+			tasks: [
+				{
+					count: 3L
+					id: "5A24676899E82150"
+					item: { Count: 3, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5CC5D7386F78DB87"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1B52E21927CBE21E"
+					item: { Count: 4, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "66FD822DC7B78754"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2F594FB3B759A01B"
+					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					id: "135E21D9D67DE410"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					id: "3528212ACDCED90B"
+					item: "immersiveengineering:mixer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "711D42BB677A521F"
+					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "09006B2354632FAA"
+					item: "create:filter"
+					type: "item"
+				}
+			]
+			title: "Industrial Mixer"
+			x: 0.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["7946525AFF6543C5"]
+			icon: {
+				Count: 1
+				id: "musketmod:musket"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "57888898128E9621"
+			rewards: [
+				{
+					count: 5
+					id: "5B61ABF899977AF9"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "2FBAAE0DC87B9BA6"
+					item: "musketmod:cartridge"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "40E07B7EFA506284"
+					item: {
+						Count: 1
+						id: "musketmod:musket"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "201B3005107B9ACA"
+					item: { Count: 3, id: "musketmod:cartridge" }
+					type: "item"
+				}
+			]
+			title: "The Boarding Party is Here"
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3F5758647B93803C"]
+			icon: {
+				Count: 1
+				id: "simpleradio:transceiver"
+				tag: { }
+			}
+			id: "7208B78FDAE62026"
+			tasks: [{
+				id: "4C48ECBA75F58706"
+				item: {
+					Count: 1
+					id: "simpleradio:transceiver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Walkie-Talkie"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D7F62210B243747"]
+			description: [
+				"Summoning mobs with magic is essential since they will not spawn naturally."
+				"JEI is not super clear about this, but luckily there is this handy guidebook to point you in the right direction."
+				""
+				"Simply put the ingedients down as discribed and ignite the charcoal on the brazier in order to start the summoning process."
+			]
+			icon: "eidolon:research_notes"
+			id: "07122161E18E96C1"
+			rewards: [{
+				id: "41FA113A05A6DF2A"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:summoning"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "50A47622AC51ADE4"
+				title: "I have acquired knowledge"
+				type: "checkmark"
+			}]
+			title: "Summoning 101"
+			x: -3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5D74C2FDCBAA0FC7"]
+			icon: "minecraft:echo_shard"
+			id: "0D675FF9AB9EB351"
+			rewards: [{
+				id: "593F3814AD0A52FF"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2672C94C5A741F77"
+					item: "kubejs:sculked_sculk_scrubber"
+					type: "item"
+				}
+				{
+					id: "2450765960E83D07"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+			]
+			title: "Echoes in the Dark"
+			x: 1.5d
+			y: 29.5d
+		}
+		{
+			dependencies: [
+				"151585622A7F23C3"
+				"5D74C2FDCBAA0FC7"
+			]
+			description: [
+				"The Forged Eye can be created after you unlock the Keg and the blast furnace. "
+				""
+				"It is highly recommended you wait until mid- to late-game with making it since it requires a lot of resources to forge."
+			]
+			id: "6C0922865829A7FE"
+			shape: "hexagon"
+			subtitle: "Highly recommended to wait"
+			tasks: [{
+				id: "5E262A9B18586176"
+				item: {
+					Count: 1
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Nether Eye"
+			x: 2.5d
+			y: 27.0d
+		}
+		{
+			dependencies: ["0D675FF9AB9EB351"]
+			icon: "thermal:device_collector"
+			id: "2294336C340C6F4F"
+			rewards: [{
+				count: 10
+				id: "5657946C643B13AB"
+				item: "kubejs:carpet_dust"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "18BA54F9B03AEEBF"
+					item: "thermal:device_collector"
+					type: "item"
+				}
+				{
+					id: "3F8AC0A331D175B8"
+					item: "thermal:device_rock_gen"
+					type: "item"
+				}
+				{
+					id: "56FEF910A74B621E"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			title: "This place could use some Automated Sweeping"
+			x: 1.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["151585622A7F23C3"]
+			id: "7F2474F2049B94FB"
+			tasks: [{
+				id: "29602F8BEDB11497"
+				item: "thermal:slime_mushroom_spores"
+				type: "item"
+			}]
+			title: "Renewable Slimeballs"
+			x: 10.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["3F5758647B93803C"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "thermal:flux_drill"
+				tag: { }
+			}
+			id: "18E6448D80D029CF"
+			rewards: [{
+				count: 3
+				id: "32386DE88F6BB26D"
+				item: "thermal:area_radius_augment"
+				type: "item"
+			}]
+			subtitle: "Bzzzzzzz"
+			tasks: [
+				{
+					id: "6A6A8D6820D9F7F0"
+					item: "thermal:tinker_bench"
+					type: "item"
+				}
+				{
+					id: "4B753E9930F1E423"
+					item: {
+						Count: 1
+						id: "thermal:flux_saw"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5738C60A01394398"
+					item: {
+						Count: 1
+						id: "thermal:flux_drill"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Powertools"
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"3F5758647B93803C"
+				"68905617A5751CBB"
+			]
+			description: ["Using the package system from Create is optional. It can be a very convenient way of managing your items. "]
+			icon: "create:stock_ticker"
+			id: "1FF2EB0F973B393B"
+			rewards: [
+				{
+					count: 3
+					id: "3254AA6971D2536E"
+					item: "create:package_frogport"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "03459D979FD40382"
+					item: "create:packager"
+					type: "item"
+				}
+				{
+					id: "4E09369B05C3E6AF"
+					item: {
+						Count: 1
+						id: "create:cardboard_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E735BA4698396CC"
+					item: {
+						Count: 1
+						id: "create:cardboard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "438F139B1438EB18"
+					item: {
+						Count: 1
+						id: "create:cardboard_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "435076DC961A4666"
+					item: {
+						Count: 1
+						id: "create:cardboard_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "249623175590E64A"
+					item: "create:cardboard_sword"
+					type: "item"
+				}
+			]
+			subtitle: "Cardboard Warrior"
+			tasks: [
+				{
+					id: "603BFEA945910111"
+					item: "create:stock_ticker"
+					type: "item"
+				}
+				{
+					id: "4D638B682A873D02"
+					item: "create:stock_link"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5F736D17BA264163"
+					item: { Count: 8, id: "create:item_vault" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7863309E105F364B"
+					item: { Count: 2, id: "create:packager" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0DA24FE16EDFBED2"
+					item: { Count: 2, id: "create:package_frogport" }
+					type: "item"
+				}
+				{
+					id: "64B10E127AA07FD3"
+					item: "create:chain_conveyor"
+					type: "item"
+				}
+			]
+			title: "Starting a Post Office"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3EEB10E1DC378F7A"]
+			description: [
+				"You can restore the lights you have broken by right-clicking broken ceiling lamps with fluorescent tubes."
+				""
+				"I sounds like a waste of resources, but turning the lights back on might not be so bad."
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "240D7B64E63FCE4F"
+			rewards: [{
+				id: "2AD015705A260632"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "Redemption Arc"
+			tasks: [{
+				id: "77BA9C13CBC2B1B7"
+				item: "kubejs:fluorescent_tube"
+				type: "item"
+			}]
+			title: "Restoring The Backrooms 2.0"
+			x: 10.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["070593BCE7387349"]
+			description: [
+				"Wallpaper can be dissolved in Redstone Acid to yield the poisonous lead dust within."
+				""
+				"For this you will need to automate Wallpaper. "
+				"Luckily for you, stripped wallpaper magically regrows its wallpaper back over time..."
+			]
+			icon: "thermal:lead_ingot"
+			id: "69C338CC94D0129F"
+			subtitle: "Turning Poison Back Into Lead"
+			tasks: [
+				{
+					id: "4320019E3B2DD7EE"
+					title: "I have automated the Lead"
+					type: "checkmark"
+				}
+				{
+					id: "32874CED3C00136F"
+					item: "thermal:lead_dust"
+					type: "item"
+				}
+			]
+			title: "Renewable Lead"
+			x: 2.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["3F5758647B93803C"]
+			description: [
+				"The putty knife can remove wallpaper from the walls without losing durability."
+				""
+				"Now it is up to you to invent a contraption to automate this task."
+			]
+			icon: "kubejs:putty_knife"
+			id: "383ABAC05F6FC6F0"
+			subtitle: "Automate the wallpaper"
+			tasks: [{
+				id: "313AC7881A8B9B53"
+				item: "kubejs:putty_knife"
+				type: "item"
+			}]
+			title: "Putty Knife"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["451A79187DD84C9A"]
+			description: ["The Alloy Klin can't be automated but there is another way to make infinite lava using Buckets filled with Cobblestone. This is entirely optional but something to keep in mind for when you find yourself running out of fuel all the time."]
+			icon: "kubejs:cobblestone_bucket"
+			id: "3A9977E34730F5AB"
+			rewards: [{
+				count: 3
+				id: "639FB2F7E2B9EAE7"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6F8E7944297490E6"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "035866028DEFF9CF"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "01BE9593EA428489"
+					item: "kubejs:cobblestone_bucket"
+					type: "item"
+				}
+				{
+					id: "5A5A6055E95E2FF3"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			title: "Endless Cobblestone into Endless Lava"
+			x: 8.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["3DB2E63B62BA0311"]
+			icon: "minecraft:jukebox"
+			id: "5D6B1E47B0B431EF"
+			subtitle: "Diamonds - The Boxer Rebellion"
+			tasks: [
+				{
+					id: "15ADEA9F69B2672C"
+					item: "minecraft:jukebox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AE7F6506A734389"
+					item: "refurbished_furniture:computer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "tconstruct:molten_diamond"
+					id: "17653A58B8E4D93F"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "059CBB7422A9BF95"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Shine Bright"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55B7C4D0E5890406"]
+			description: [
+				"Blocks of Bamboo can be turned into Charcoal using the coke oven."
+				""
+				"This also makes Coal Coke fully renewable."
+			]
+			icon: "minecraft:charcoal"
+			id: "68E4B9DBC0F448C7"
+			tasks: [
+				{
+					id: "5E63774D79DBDB55"
+					item: "minecraft:bamboo_block"
+					type: "item"
+				}
+				{
+					id: "2E6E916680E55D7D"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+			]
+			title: "Renewable Carbon"
+			x: 11.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["5D74C2FDCBAA0FC7"]
+			description: [
+				"With a Crowbar you can open the Drains that you might have been coming across underneath the carpet..."
+				""
+				"If you ever wanted to close it back up, you can do so with the drain grate that you get when opening it."
+			]
+			icon: "kubejs:drain"
+			id: "62905CF8D9082304"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Take the Plunge..."
+			tasks: [{
+				id: "7F5CD57C58A33F9F"
+				item: "kubejs:crowbar"
+				type: "item"
+			}]
+			title: "Entering the Poolrooms"
+			x: -1.5d
+			y: 29.5d
+		}
+		{
+			dependencies: ["3F5758647B93803C"]
+			description: [
+				"The gunpowder used to make explosions can be found within the backrooms."
+				""
+				"However, if you don't happen to find any, there's several ways to get it instead."
+			]
+			id: "74A40C27F67C1627"
+			tasks: [{
+				id: "5F5D4B7CE1DB6F4B"
+				item: "thermal:explosive_grenade"
+				type: "item"
+			}]
+			title: "Bombs Away!"
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["74A40C27F67C1627"]
+			description: [
+				"You may have noticed in your exploration, a block that looks like bone, blocking the way to certain avenues. You cannot mine it with normal tools."
+				""
+				"Explosions however..."
+			]
+			icon: "kubejs:sculk_carapace"
+			id: "50858DFFCE79528A"
+			subtitle: "But it has a weakness"
+			tasks: [{
+				id: "2FE3454D0C9EE40C"
+				title: "Sculk Carapace"
+				type: "checkmark"
+			}]
+			title: "Tougher Than Bone"
+			x: 10.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["33C923AD98680D89"]
+			description: [
+				"The Apothecary Stand can brew potions without the need for blaze powder, instead only needed to be placed above a boiling crucible."
+				""
+				"It can only make weak potions, however."
+			]
+			icon: "eidolon:wooden_brewing_stand"
+			id: "474B4A4FF8860514"
+			tasks: [
+				{
+					id: "0896CDFBC6B35B39"
+					item: "eidolon:wooden_brewing_stand"
+					type: "item"
+				}
+				{
+					id: "2DD2E5412ADBF32B"
+					item: "eidolon:crucible"
+					type: "item"
+				}
+			]
+			title: "Budget Brewing"
+			x: -8.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0E75315018995DB6"]
+			description: [
+				"You can summon wraiths for cloth."
+				""
+				"You can also automate cloth by crushing stray heads. But you can't summon a stray, can you?"
+			]
+			icon: "kubejs:dark_casing"
+			id: "27DACCD7E67E35D2"
+			subtitle: "Cold to the touch"
+			tasks: [
+				{
+					id: "680319E7FE3F0275"
+					item: "kubejs:dark_casing"
+					type: "item"
+				}
+				{
+					id: "2192D718EAAF48CE"
+					item: "eidolon:tattered_cloth"
+					type: "item"
+				}
+			]
+			title: "Darkwood"
+			x: -9.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["33C923AD98680D89"]
+			description: [
+				"Certain fungal colonies can be grown on rotten wallpaper."
+				""
+				"You can graft a piece of rotten wallpaper onto existing wallpaper that has been stripped."
+			]
+			icon: "kubejs:rotten_wallpaper"
+			id: "5CD6E4AE62E3AD72"
+			tasks: [
+				{
+					id: "54D4CF8287686F82"
+					item: "kubejs:rotten_wallpaper"
+					type: "item"
+				}
+				{
+					id: "30B128932A30D3BB"
+					item: "kubejs:uncanny_shroom_seeds"
+					type: "item"
+				}
+				{
+					id: "599F49C0AD0D244F"
+					item: "miners_delight:cave_carrot"
+					type: "item"
+				}
+			]
+			title: "Wallpaper Mycologist"
+			x: -8.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["151585622A7F23C3"]
+			icon: "thermal:gunpowder_mushroom_spores"
+			id: "5BFFC43EC6EF2C1A"
+			tasks: [
+				{
+					id: "0A966FAE1159B8C2"
+					item: "brewinandchewin:keg"
+					type: "item"
+				}
+				{
+					id: "09399D69F23D0B0E"
+					item: "brewinandchewin:heating_cask"
+					type: "item"
+				}
+				{
+					id: "05022ED16DEC0574"
+					item: "thermal:gunpowder_mushroom_spores"
+					type: "item"
+				}
+				{
+					id: "5A3F3DF13F088D51"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "4D2DC6D7D824A007"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+			]
+			title: "Renewable Gunpowder"
+			x: 10.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["5CD6E4AE62E3AD72"]
+			description: [
+				"You may or may not have discovered Strange Bricks hidden away in certain rooms. These rooms ususally contain ancient treasures."
+				""
+				"Although extremely tough, these bricks have a weakness to the corrosion effect of a specific fungi."
+				""
+				"After chipping the bricks with a pickaxe and infesting the wall, it will become weak enough to break."
+			]
+			icon: "kubejs:strange_bricks"
+			id: "7BCE1818E6CC4553"
+			subtitle: "Open The Tomb"
+			tasks: [{
+				id: "7D3F4DD517660ED5"
+				item: "kubejs:corrosive_fungi"
+				type: "item"
+			}]
+			title: "Sealed Chambers"
+			x: -11.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["27DACCD7E67E35D2"]
+			description: [
+				"You can summon an allay by using soulcoal on dark casing."
+				""
+				"Some of the allays however, may not be so nice."
+			]
+			icon: "plushie_buddies:plushie_allay"
+			id: "78FFF7B6AA4A1AE7"
+			tasks: [{
+				id: "2C317F8B6940C011"
+				title: "Summon Allay"
+				type: "checkmark"
+			}]
+			title: "A Helping Hand"
+			x: -11.0d
+			y: 9.0d
+		}
+	]
+	title: "Chapter 3"
+}

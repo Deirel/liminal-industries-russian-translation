@@ -1,0 +1,1226 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sector_1"
+	group: "7A1E9C4F2B8D036E"
+	icon: "refurbished_furniture:oak_chair"
+	id: "14F820A255718CC8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0ABA2F30CF283A8E"]
+			description: [
+				"Щётками можно выметать из ковра Carpet Dust."
+				""
+				"&oПримечание: последствия длительного воздействия Carpet Dust неизвестны."
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:straw_brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7FAC527C8C32346A"
+			rewards: [{
+				id: "43FFE9CB5D73ACA9"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			subtitle: "Не вдыхайте это..."
+			tasks: [
+				{
+					id: "2A319853160BB950"
+					item: {
+						Count: 1
+						id: "kubejs:straw_brush"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4BA91CCF072559E1"
+					item: { Count: 5, id: "kubejs:carpet_dust" }
+					type: "item"
+				}
+			]
+			title: "Здесь не помешало бы прибраться"
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"307781E736AB9A56"
+				"03026FA82293D305"
+			]
+			description: ["Если вы не знаете, как построить Плавильную печь, обратитесь к Руководству инженера."]
+			icon: "immersiveengineering:alloy_smelter"
+			id: "7A0ECC4384FC5F3C"
+			rewards: [
+				{
+					id: "0B9AE7D401935AC9"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "1C1137CC8210E5E9"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Всегда найдётся печь побольше"
+			tasks: [
+				{
+					id: "6BB57F03AEAB3265"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+				{
+					id: "2FD327C931FA41F4"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Печь чуть побольше"
+			x: 0.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["74DC667B840746B0"]
+			description: ["Деревянные инструменты необходимы для успеха. Сначала вам понадобятся нож и кирка."]
+			icon: {
+				Count: 1
+				id: "kubejs:wooden_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2FD58013123EFE42"
+			rewards: [{
+				id: "547E5FE35878E38A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "Всё необходимое для успеха"
+			tasks: [
+				{
+					id: "45A5F6CD9D1D337B"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A7EF93254E01F56"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26B355D7CA8A10C7"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "Деревянные инструменты"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"Если вы ещё не привыкли к своему новому лиминальному окружению, не волнуйтесь: давайте обустроим собственную базу и сделаем её немного уютнее."
+				""
+				"Случайно разбросанную по Backrooms мебель наверняка можно разобрать на доски, чтобы повысить свои шансы на выживание. "
+				""
+				"Начнём с верстака. Для начала переработайте стул в доски."
+			]
+			icon: "refurbished_furniture:oak_chair"
+			id: "74DC667B840746B0"
+			rewards: [{
+				id: "7124A7E7D06B3B8A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			size: 3.0d
+			subtitle: "Добро пожаловать в Liminal Industries!"
+			tasks: [{
+				id: "06B5515FE776BEBA"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Ломаем стулья"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A8C680427F1464B"]
+			description: ["Глину можно получить, промывая Carpet Dust с помощью Вентилятора в корпусе и губки."]
+			id: "307781E736AB9A56"
+			rewards: [{
+				id: "1CB3AA5AC0E7C60B"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "5D105029246CD738"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "Получение глины"
+			x: 0.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["7A0ECC4384FC5F3C"]
+			icon: {
+				Count: 1
+				id: "ceramicbucket:ceramic_bucket"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "minecraft:lava"
+					}
+				}
+			}
+			id: "10FD77A896677B61"
+			tasks: [
+				{
+					id: "56F24057B479494A"
+					item: "ceramicbucket:ceramic_bucket"
+					type: "item"
+				}
+				{
+					id: "51C12C0C1E46DF26"
+					item: "kubejs:concrete_piece"
+					type: "item"
+				}
+				{
+					id: "5A6717B82D728127"
+					item: {
+						Count: 1
+						id: "ceramicbucket:ceramic_bucket"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "minecraft:lava"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Жидкий камень"
+			x: 0.0d
+			y: 25.5d
+		}
+		{
+			dependencies: [
+				"10FD77A896677B61"
+				"7B8E3CF8E588CD0B"
+			]
+			id: "203FC15B09EAA27F"
+			rewards: [
+				{
+					id: "3D1642878BF69221"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "0AEBC47A7574DDF2"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+				{
+					id: "691106A4CBAFB25D"
+					item: "minecraft:music_disc_relic"
+					type: "item"
+				}
+				{
+					id: "5CD3D9B9A1806778"
+					item: "plushie_buddies:plushie_turtle"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Вступление в каменный век"
+			tasks: [{
+				id: "405232540EBBD06E"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "Генератор булыжника"
+			x: 0.0d
+			y: 28.0d
+		}
+		{
+			dependencies: [
+				"6C636EA05BA437ED"
+				"307781E736AB9A56"
+			]
+			description: [
+				"Из мокрой губки можно выжать воду в вёдра."
+				""
+				"Если, присев, нажать ПКМ по сухому ковру ведром воды, ковёр намокнет, как от использования губки."
+			]
+			id: "7B8E3CF8E588CD0B"
+			rewards: [{
+				id: "1D89190EDA333497"
+				item: "plushie_buddies:plushie_axolotl"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CBFA3B1AD14A479"
+				item: {
+					Count: 1
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "minecraft:water"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "Жидкая вода"
+			x: -5.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["0ABA2F30CF283A8E"]
+			description: [
+				"Воду можно собрать, нажав ПКМ по Soggy Carpet с губкой в руке."
+				""
+				"Soggy Carpet встречается по всему Backrooms. Он немного темнее обычного ковра."
+				""
+				"Примечание: сухой ковёр можно превратить в Soggy Carpet, нажав по нему ПКМ мокрой губкой."
+				"Позже это станет важнее."
+				""
+				"{image:kubejs:textures/quests/wet_carpet.png width:192 height:102 align:center}"
+			]
+			icon: "minecraft:wet_sponge"
+			id: "6C636EA05BA437ED"
+			subtitle: "Мне нравится Soggy Carpet"
+			tasks: [
+				{
+					id: "4F9338A63C2CC4A7"
+					item: "minecraft:sponge"
+					type: "item"
+				}
+				{
+					id: "492AA34CC5EF690C"
+					item: "minecraft:wet_sponge"
+					type: "item"
+				}
+			]
+			title: "Сбор воды"
+			x: -5.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2FD58013123EFE42"]
+			description: [
+				"Ковёр можно разрезать ножом, открыв под ним странные блоки Concrete Tile."
+				""
+				"Деревянной киркой можно разбить обнаруженные блоки Concrete Tile и получить небольшие кусочки бетона."
+				""
+				"{image:kubejs:textures/quests/cut_carpet.png width:192 height:102 align:center}"
+			]
+			icon: "kubejs:concrete_piece"
+			id: "23E590694FAB22A1"
+			rewards: [{
+				id: "0B9871D2537F0514"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "Ха-ха, сломалось"
+			tasks: [
+				{
+					id: "636C89317E81121C"
+					item: "kubejs:cut_carpet"
+					type: "item"
+				}
+				{
+					id: "57B69BC191EAC23F"
+					item: "kubejs:concrete_piece"
+					type: "item"
+				}
+			]
+			title: "Вандализм"
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["23E590694FAB22A1"]
+			description: ["Из кусочков бетона можно сделать печь для любых нужд, связанных с плавкой."]
+			id: "03026FA82293D305"
+			subtitle: "Всегда найдётся печь побольше"
+			tasks: [{
+				id: "76DA42855E8AC469"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Печь"
+			x: 5.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["2FD58013123EFE42"]
+			description: ["Дополнительную древесину можно получить, положив деревянную мебель на разделочную доску и разрубив её топором."]
+			icon: "farmersdelight:cutting_board"
+			id: "4E7AB902FFF70225"
+			subtitle: "Столяр наоборот"
+			tasks: [
+				{
+					id: "7856BB129C2D3B9F"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3260495F3102A868"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "Больше древесины благодаря аккуратной рубке"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7FAC527C8C32346A"]
+			description: [
+				"Возможно, вы уже узнали об обитателях ковра. Выпадающие из них яйца служат хорошим источником белка."
+				""
+				"&lЕсли убить их ножом, выпадет больше яиц."
+				""
+				"Правда, вкус у них на любителя..."
+			]
+			icon: "miners_delight:weird_caviar"
+			id: "77AB8365642DA7B1"
+			rewards: [{
+				count: 3
+				id: "7C33CC0B13E640BC"
+				item: "miners_delight:weird_caviar"
+				type: "item"
+			}]
+			subtitle: "Режь клинком: так сока больше"
+			tasks: [
+				{
+					count: 3L
+					id: "4224B9A58EF2ECFE"
+					item: "miners_delight:silverfish_eggs"
+					type: "item"
+				}
+				{
+					id: "38CA0C9EF7F7B17D"
+					item: "miners_delight:weird_caviar"
+					type: "item"
+				}
+			]
+			title: "Формально это еда"
+			x: 2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7A8C680427F1464B"]
+			description: [
+				"Семенам, найденным в ковре, можно найти хорошее применение."
+				"Их можно посадить на Soggy Carpet."
+				""
+				"Сухой ковёр можно превратить в Soggy Carpet, нажав по нему ПКМ мокрой губкой."
+				""
+				"Учтите, что для роста им нужно достаточно света. Поэтому тщательно выбирайте место."
+				"Клубнику выращивать сложнее всего: для роста источник света должен находиться прямо над ней. Зато съеденная клубника восстановит вам здоровье."
+			]
+			icon: "neapolitan:strawberries"
+			id: "4D215AD91B14D558"
+			rewards: [
+				{
+					count: 3
+					id: "3DEF8223CD209F1C"
+					item: {
+						Count: 1
+						id: "fairylights:hanging_lights"
+						tag: {
+							pattern: [{
+								Count: 1b
+								id: "fairylights:paper_lantern"
+								tag: {
+									color: 11546150
+								}
+							}]
+							string: "fairylights:black_string"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BDDF9846CA7A790"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Open: 0b
+								SelectedSlot: 0b
+								Size: 6
+							}
+						}
+						id: "supplementaries:lunch_basket"
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Создаём ферму"
+			tasks: [
+				{
+					id: "39C33E62CB0181AE"
+					item: "neapolitan:strawberry_pips"
+					type: "item"
+				}
+				{
+					id: "7AD08D080F0FBA11"
+					item: "berry_good:sweet_berry_pips"
+					type: "item"
+				}
+			]
+			title: "Ягодная удача"
+			x: -2.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"6C636EA05BA437ED"
+				"7FAC527C8C32346A"
+			]
+			description: [
+				"Вентилятор в корпусе можно создать, нажав ПКМ по бочке с пропеллером в руке."
+				""
+				"Мокрые губки можно использовать для промывания. "
+				"Поток воздуха от вентилятора пройдёт прямо сквозь губку."
+				""
+				""
+				"{image:kubejs:textures/quests/wet_sponge.png width:222 height:128 align:center}"
+			]
+			icon: "create:propeller"
+			id: "7A8C680427F1464B"
+			rewards: [
+				{
+					id: "7A074F2DE3649347"
+					item: {
+						Count: 1
+						id: "supplementaries:bubble_blower"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7CAD2E1B6E914F0C"
+					item: "supplementaries:soap"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Лиминальное промывание"
+			tasks: [
+				{
+					id: "15725A51724F494F"
+					item: "create:propeller"
+					type: "item"
+				}
+				{
+					id: "4AACB45E50D46CC0"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+				{
+					id: "5909FBFE17750276"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "669F07A8B29FAEAC"
+					item: "minecraft:wet_sponge"
+					type: "item"
+				}
+				{
+					id: "660E81FF3900602F"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			title: "Деревянный пропеллер"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0ABA2F30CF283A8E"]
+			description: ["Wallpaper со стен можно соскоблить любым топором. Полученных ресурсов хватит на небольшой рюкзак."]
+			icon: "supplementaries:sack"
+			id: "09DBA6DD7E5621CB"
+			rewards: [{
+				id: "7F9ADDE8A4AD0E6A"
+				item: "supplementaries:sack"
+				type: "item"
+			}]
+			subtitle: "Мы отправляемся в приключение!"
+			tasks: [
+				{
+					count: 7L
+					id: "4BFF046AE790BB32"
+					item: "kubejs:wallpaper"
+					type: "item"
+				}
+				{
+					id: "3F2AC8263C94EB4F"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "477A5773CAFC846F"
+					item: "supplementaries:sack"
+					type: "item"
+				}
+			]
+			title: "Собирайте вещи"
+			x: -2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["74DC667B840746B0"]
+			description: [
+				"Некоторые части этих комнат, похоже, заражены скалком. Наверное, лучше держаться от него как можно дальше."
+				""
+				"Коридоры, ведущие в заражённые комнаты, тоже стоит забаррикадировать."
+				""
+				"Берегите себя!"
+			]
+			icon: "kubejs:explantion2_sign"
+			id: "49C5EB9D0E33ACA4"
+			rewards: [
+				{
+					id: "57A755D10FFCEF9A"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "08EE601EEA31A722"
+					item: "exposure:photograph_frame"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "Увидели скалк — разворачивайтесь"
+			tasks: [{
+				id: "7CC2D7594F90E20C"
+				title: "Что может пойти не так?"
+				type: "checkmark"
+			}]
+			title: "Будьте осторожны"
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["74DC667B840746B0"]
+			icon: {
+				Count: 1
+				id: "eccentrictome:tome"
+				tag: {
+					Enchantments: [ ]
+					"eccentrictome:mods": {
+						actuallyadditions: {
+							0: {
+								Count: 1b
+								id: "actuallyadditions:booklet"
+							}
+						}
+						ae2: {
+							0: {
+								Count: 1b
+								id: "ae2:guide"
+								tag: {
+									Enchantments: [ ]
+								}
+							}
+						}
+						botania: {
+							0: {
+								Count: 1b
+								id: "botania:lexicon"
+							}
+						}
+						eidolon: {
+							0: {
+								Count: 1b
+								id: "eidolon:codex"
+								tag: {
+									Enchantments: [ ]
+								}
+							}
+						}
+						ftbquests: {
+							0: {
+								Count: 1b
+								id: "ftbquests:book"
+								tag: {
+									Enchantments: [ ]
+								}
+							}
+						}
+						immersiveengineering: {
+							0: {
+								Count: 1b
+								id: "immersiveengineering:manual"
+							}
+						}
+						patchouli: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "patchouli:summoning"
+								}
+							}
+							1: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									Enchantments: [ ]
+									"patchouli:book": "patchouli:reality_frame"
+								}
+							}
+						}
+						tconstruct: {
+							0: {
+								Count: 1b
+								id: "tconstruct:materials_and_you"
+							}
+						}
+					}
+					"eccentrictome:version": 1
+				}
+			}
+			id: "32CA69C5AF2D65AA"
+			rewards: [{
+				id: "407CE8F83560743E"
+				item: {
+					Count: 1
+					id: "eccentrictome:tome"
+					tag: {
+						Enchantments: [ ]
+						"eccentrictome:mods": {
+							actuallyadditions: {
+								0: {
+									Count: 1b
+									id: "actuallyadditions:booklet"
+								}
+							}
+							ae2: {
+								0: {
+									Count: 1b
+									id: "ae2:guide"
+									tag: {
+										Enchantments: [ ]
+									}
+								}
+							}
+							botania: {
+								0: {
+									Count: 1b
+									id: "botania:lexicon"
+								}
+							}
+							eidolon: {
+								0: {
+									Count: 1b
+									id: "eidolon:codex"
+									tag: {
+										Enchantments: [ ]
+									}
+								}
+							}
+							ftbquests: {
+								0: {
+									Count: 1b
+									id: "ftbquests:book"
+									tag: {
+										Enchantments: [ ]
+									}
+								}
+							}
+							immersiveengineering: {
+								0: {
+									Count: 1b
+									id: "immersiveengineering:manual"
+								}
+							}
+							patchouli: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "patchouli:summoning"
+									}
+								}
+								1: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										Enchantments: [ ]
+										"patchouli:book": "patchouli:reality_frame"
+									}
+								}
+							}
+							tconstruct: {
+								0: {
+									Count: 1b
+									id: "tconstruct:materials_and_you"
+								}
+							}
+						}
+						"eccentrictome:version": 1
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Я жажду знаний"
+			tasks: [{
+				id: "7FCD69F562A86552"
+				title: "Я жажду знаний"
+				type: "checkmark"
+			}]
+			title: "Чудаковатый Фолиант"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["307781E736AB9A56"]
+			description: [
+				"Если не хочется заблудиться, стоит сделать несколько мелков."
+				""
+				"Мелком можно рисовать стрелки где угодно."
+				""
+				"Если, удерживая Shift, нажать ПКМ мелком по блоку, можно нарисовать символы, которые подскажут, куда идти, а от каких мест держаться как можно дальше."
+			]
+			icon: {
+				Count: 1
+				id: "chalk:white_chalk"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45184889D2E53FD7"
+			rewards: [
+				{
+					id: "5C2242D1481A6833"
+					item: {
+						Count: 1
+						id: "chalk:white_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BFC470C354E39D6"
+					item: {
+						Count: 1
+						id: "chalk:yellow_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3324BF857CE03536"
+					item: {
+						Count: 1
+						id: "chalk:red_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1009688A1B1A308B"
+					item: {
+						Count: 1
+						id: "chalk:black_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1DB11CD33CFD4CF5"
+				item: {
+					Count: 1
+					id: "chalk:white_chalk"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Как найти дорогу назад"
+			x: 2.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["74DC667B840746B0"]
+			description: [
+				"Неплохо было бы запечатлеть это лиминальное место на снимках. "
+				""
+				"Снимки можно делать фотоаппаратом и проявлять в Фотолаборатории."
+			]
+			icon: "exposure:camera"
+			id: "154EA3B6DA433B32"
+			rewards: [
+				{
+					id: "03E415941CBD3D4A"
+					item: "exposure:camera"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3AC4CECD61426E04"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4EBE7A2EA5A1643B"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0E509EC8B2D4C13E"
+					item: "minecraft:black_dye"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "03E25024C524F14D"
+					item: "exposure:photograph_frame"
+					type: "item"
+				}
+			]
+			subtitle: "Скажите «сы-ы-ыр»!"
+			tasks: [{
+				id: "77163A3019953861"
+				item: "exposure:lightroom"
+				type: "item"
+			}]
+			title: "Позируйте для фотоаппарата!"
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["74DC667B840746B0"]
+			description: [
+				"Очень важно автоматизировать как можно больше задач. После главы 2 автоматизация становится практически обязательной для эффективного развития."
+				""
+				"Время, потраченное на автоматизацию задачи и создание дополнительных специализированных машин, почти всегда окупается по сравнению с ручной работой."
+				""
+				"Технически всё можно делать вручную, но это далеко не лучший подход и займёт очень много времени."
+			]
+			icon: "thermal:iron_gear"
+			id: "43F1C034FE7AFD77"
+			rewards: [{
+				id: "326C52E81EE8CCF7"
+				item: {
+					Count: 1
+					id: "botania:tiny_potato"
+					tag: {
+						display: {
+							Lore: ["{\"text\":\"Tiny Potato believes you can do it!\"}"]
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Да, абсолютно всё"
+			tasks: [{
+				id: "19C7F5178EA21585"
+				title: "Лиминальность уступит место автоматизации"
+				type: "checkmark"
+			}]
+			title: "Автоматизируйте всё!"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["23E590694FAB22A1"]
+			description: [
+				"Если резать ковёр на разделочной доске, есть шанс получить солому. Дальнейшая переработка соломы даст нить."
+				""
+				"Солому также можно получить, срезая ножом пучки ковровой травы."
+			]
+			icon: "minecraft:string"
+			id: "0ABA2F30CF283A8E"
+			tasks: [
+				{
+					id: "0C23AB07D738248F"
+					item: "farmersdelight:straw"
+					type: "item"
+				}
+				{
+					id: "157778EA215FD457"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			title: "Ковровые волокна"
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["7A0ECC4384FC5F3C"]
+			description: [
+				"Из Copycat Alloy можно делать блоки-копии."
+				""
+				"Они отлично подходят для декора: могут перенять текстуру почти любого блока и бывают всевозможных форм и размеров!"
+			]
+			icon: "copycats:copycat_block"
+			id: "1F1F80FD52F95ECA"
+			subtitle: "Безграничный декор"
+			tasks: [{
+				id: "5667EB09212B1427"
+				item: "kubejs:copycat_alloy"
+				type: "item"
+			}]
+			title: "Не копируй меня!"
+			x: 2.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["7FAC527C8C32346A"]
+			description: [
+				"Если нажать ПКМ пустой Wooden Silverfish Cage рядом с чешуйницей, она окажется внутри."
+				""
+				"Чешуйница внутри Wooden Silverfish Cage будет понемногу выметать из ковра пыль или откалывать кусочки бетона — в зависимости от блока, на котором стоит клетка."
+				""
+				"Если покормить её любимым лакомством — ковром или Wallpaper, — работа может пойти быстрее."
+			]
+			id: "7DBFB12C0BD84C50"
+			subtitle: "Пускаем жуков в дело"
+			tasks: [{
+				id: "0FF5640A7583F3A4"
+				item: "kubejs:empty_wooden_silverfish_cage"
+				type: "item"
+			}]
+			title: "Строительная бригада"
+			x: 1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0ABA2F30CF283A8E"]
+			description: ["На ранних этапах корзины можно использовать для сбора предметов, подобно воронкам, причём устанавливать их можно в любом направлении."]
+			id: "76BAA0060B7750A5"
+			subtitle: "Агрессивное всасывание"
+			tasks: [{
+				id: "4AFCC2BD5DB1A400"
+				item: "farmersdelight:wooden_basket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["23E590694FAB22A1"]
+			description: [
+				"Сорвав ковёр, пол Backrooms можно заменить некоторыми другими материалами."
+				""
+				"Любое деревянное покрытие снимается топором. "
+				""
+				"Любое каменное покрытие снимается киркой."
+			]
+			icon: "kubejs:dark_oak_flooring"
+			id: "21E96772C20BED6F"
+			rewards: [{
+				id: "1EA644EBE5ADD3E1"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3422941F13C50C08"
+					item: "kubejs:oak_flooring"
+					type: "item"
+				}
+				{
+					id: "76E7A7AEDFC94EAC"
+					item: "kubejs:spruce_flooring"
+					type: "item"
+				}
+				{
+					id: "00EE18E3E5557614"
+					item: "kubejs:birch_flooring"
+					type: "item"
+				}
+				{
+					id: "14D82F8D8A214AE0"
+					item: "kubejs:jungle_flooring"
+					type: "item"
+				}
+				{
+					id: "1CF43A45CBA3086D"
+					item: "kubejs:acacia_flooring"
+					type: "item"
+				}
+				{
+					id: "3A858FFCEC95596F"
+					item: "kubejs:dark_oak_flooring"
+					type: "item"
+				}
+			]
+			title: "Роскошный пол"
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["23E590694FAB22A1"]
+			description: [
+				"Если вам нравится вид Concrete Tile, нажмите по ним ПКМ с Concrete Tile в руке, чтобы превратить пол в полноценные блоки. Кроме того, ковёр больше не сможет отрасти на этих плитках."
+				""
+				"Это также пригодится для создания бетонной фермы с Wooden Silverfish Cage."
+			]
+			id: "1B943ED457DADCB1"
+			rewards: [{
+				id: "00E10F8A7115FB86"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "15EA3A46DDB78067"
+				item: "kubejs:concrete_tile"
+				type: "item"
+			}]
+			title: "Бетонный пол"
+			x: 7.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["23E590694FAB22A1"]
+			description: [
+				"Ущерб, нанесённый Backrooms, можно исправить:"
+				""
+				"- Нажмите ПКМ по напольной плитке с ковром в руке"
+				""
+				"- Нажмите ПКМ по Stripped Wallpaper с Wallpaper в руке"
+				""
+				"- Нажмите ПКМ по Деревянному каркасу с Wallpaper в руке, чтобы создать Fake Wallpaper"
+				""
+				"Деревянные бордюры на блоках Wallpaper также можно устанавливать и снимать Молотом инженера."
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "26480EAA7918E559"
+			rewards: [{
+				id: "676D35E487147407"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "Путь к искуплению"
+			tasks: [
+				{
+					id: "15DCBA653AE79AB9"
+					item: "kubejs:cut_carpet"
+					type: "item"
+				}
+				{
+					id: "220FF0BE3BCB1D5B"
+					item: "kubejs:wallpaper"
+					type: "item"
+				}
+				{
+					id: "54F5542319748D39"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Восстановление Backrooms"
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["49C5EB9D0E33ACA4"]
+			description: [
+				"Если вы всё же решите исследовать скалк, внутри можно найти множество сокровищ, например компьютеры."
+				""
+				"Но помните: скалк ЕДКИЙ, а активированные спавнеры скалка способны быстро призывать сильных врагов, пока не исчерпают свой запас."
+				""
+				"Свет на скалк не действует, поэтому даже не пытайтесь. Чтобы обезвредить спавнер, нужно исчерпать его запас и перекрыть блок над ним."
+			]
+			icon: "kubejs:sculk_spawner"
+			id: "233003E16FFD2808"
+			subtitle: "Риск и награда"
+			tasks: [{
+				id: "260B931B7678CE19"
+				title: "Риск и награда"
+				type: "checkmark"
+			}]
+			title: "Испытания скалка"
+			x: -7.5d
+			y: 3.5d
+		}
+	]
+	title: "Глава 1"
+}

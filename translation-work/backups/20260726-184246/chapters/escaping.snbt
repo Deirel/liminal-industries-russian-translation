@@ -1,0 +1,313 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "escaping"
+	group: "7A1E9C4F2B8D036E"
+	icon: "ae2:quantum_entangled_singularity"
+	id: "0AB22B8732D34B8D"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"28FD2F25F3A3D432"
+				"33C688A963B8FBF9"
+				"35A57599FB9A7E5B"
+				"229B08F0B29117B0"
+				"091F72AFE305BBD3"
+				"00890E05CBC407AE"
+				"7785043DD739D542"
+				"7226884848AD49CD"
+				"7CE6AA241BA3ED5A"
+				"094715E56FE38460"
+				"1B93D99B01B813DE"
+				"7176C957BE2530E0"
+				"3F8914FD4DDDA6D4"
+			]
+			description: [
+				"In order to get back to the overworld, all 12 eyes must be collected and placed in the portal frame. "
+				""
+				"&lThis means you can skip one of the 13 available eyes."
+				""
+				"Only a single room is generated with a portal frame. The room has 4 entrances and an ominous heartbeat echoing from within."
+				""
+				"If you are ever confused, look back in the questbook on how to obtain the different eyes."
+			]
+			icon: "endrem:ancient_portal_frame"
+			id: "54C2818EE0D113D9"
+			min_required_dependencies: 12
+			shape: "hexagon"
+			size: 5.0d
+			subtitle: "Opening the Portal"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "461BF68B1EB33759"
+				type: "dimension"
+			}]
+			title: "Portal to the Overworld"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["245653B3451C76FA"]
+			id: "7785043DD739D542"
+			shape: "hexagon"
+			subtitle: "Sweet as honey"
+			tasks: [{
+				id: "1B07BA2FD827B2F6"
+				item: {
+					Count: 1
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Magical Eye"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D6D27D8FBF358F3"]
+			id: "091F72AFE305BBD3"
+			shape: "hexagon"
+			subtitle: "It watches back"
+			tasks: [{
+				id: "7E5DE4238F17E555"
+				item: {
+					Count: 1
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Evil Eye"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["557617650FFA7BF8"]
+			id: "7176C957BE2530E0"
+			shape: "hexagon"
+			subtitle: "Tripple the trouble"
+			tasks: [{
+				id: "136DBDC7EB41D734"
+				item: {
+					Count: 1
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Wither Eye"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["12F6EDB7B3074DBA"]
+			id: "00890E05CBC407AE"
+			shape: "hexagon"
+			subtitle: "Hidden within the library"
+			tasks: [{
+				id: "4A4A235C5027D080"
+				item: {
+					Count: 1
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Lost Eye"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["542DAE1D5B46EAE6"]
+			id: "1B93D99B01B813DE"
+			shape: "hexagon"
+			subtitle: "Risen once more"
+			tasks: [{
+				id: "700932197E8B59FB"
+				item: {
+					Count: 1
+					id: "endrem:undead_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Undead Eye"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["115CD04307C62ED7"]
+			id: "33C688A963B8FBF9"
+			shape: "hexagon"
+			subtitle: "Chill to the bone"
+			tasks: [{
+				id: "7B43D149F64FA014"
+				item: {
+					Count: 1
+					id: "endrem:cold_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Cold Eye"
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7C74C4D1572E5A39"]
+			id: "35A57599FB9A7E5B"
+			shape: "hexagon"
+			subtitle: "Absorbing Knowledge"
+			tasks: [{
+				id: "780B92ED31AF9FEB"
+				item: {
+					Count: 1
+					id: "endrem:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Cryptic Eye"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["218587C0C569873D"]
+			id: "28FD2F25F3A3D432"
+			shape: "hexagon"
+			subtitle: "Staring into the void"
+			tasks: [{
+				id: "3C48E1E6DE8290DE"
+				item: {
+					Count: 1
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Black Eye"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C0922865829A7FE"]
+			id: "7226884848AD49CD"
+			shape: "hexagon"
+			subtitle: "Forged in fire"
+			tasks: [{
+				id: "1F9893D01747EA5F"
+				item: {
+					Count: 1
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Nether Eye"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["665DBC2127655305"]
+			id: "229B08F0B29117B0"
+			shape: "hexagon"
+			subtitle: "Do not blink"
+			tasks: [{
+				id: "5060BD1F5390A685"
+				item: {
+					Count: 1
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Cursed Eye"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["28DF9CE983663C3C"]
+			id: "7CE6AA241BA3ED5A"
+			shape: "hexagon"
+			subtitle: "Time keeps ticking"
+			tasks: [{
+				id: "3EB7F41BA70C8BA8"
+				item: {
+					Count: 1
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Old Eye"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["269181DBEA37A739"]
+			id: "094715E56FE38460"
+			shape: "hexagon"
+			subtitle: "Off the beaten path"
+			tasks: [{
+				id: "1C24C74FC3F3D482"
+				item: {
+					Count: 1
+					id: "endrem:rogue_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Rogue Eye"
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["66819437F5CE0687"]
+			id: "3F8914FD4DDDA6D4"
+			shape: "hexagon"
+			subtitle: "Where is Atlantis?"
+			tasks: [{
+				id: "77F46C0817C7629C"
+				item: {
+					Count: 1
+					id: "endrem:exotic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Exotic Eye"
+			x: 0.0d
+			y: 6.5d
+		}
+	]
+	title: "Escaping"
+}

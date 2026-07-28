@@ -1,0 +1,417 @@
+translation_key	source_display_name	ru_name
+block.kubejs.acacia_flooring_block	Acacia Flooring	Акациевый настил
+block.kubejs.arrow1_sign	sign	Знак
+block.kubejs.arrow2_sign	sign	Знак
+block.kubejs.asphalt_floor	Asphalt Floor	Асфальтовый пол
+block.kubejs.asphalt_floor_slab	Asphalt Floor Slab	Асфальтовая плита
+block.kubejs.asphalt_floor_stairs	Asphalt Floor Stairs	Асфальтовые ступеньки
+block.kubejs.backrooms_speaker	Backrooms Speaker	Динамик Backrooms
+block.kubejs.backup_generator	Backup Generator	Резервный генератор
+block.kubejs.ball_pit	Ball Pit	Бассейн с шариками
+block.kubejs.bamboo_flooring_block	Bamboo Flooring	Бамбуковый настил
+block.kubejs.batteries	Batteries	Батарейки
+block.kubejs.birch_flooring_block	Birch Flooring	Берёзовый настил
+block.kubejs.black_hole	Mini Black Hole	Миниатюрная чёрная дыра
+block.kubejs.box_sign	sign	Знак
+block.kubejs.brittle_porous_stone	Brittle Porous Stone	Хрупкий пористый камень
+block.kubejs.brittle_porous_stone_dark	Brittle Dark Porous Stone	Хрупкий тёмный пористый камень
+block.kubejs.cardboard_flooring_block	Cardboard Flooring	Картонный настил
+block.kubejs.carpet	Carpet	Ковёр
+block.kubejs.carpet_dust_block	Block of Carpet Dust	Блок ковровой пыли
+block.kubejs.carpet_grass	Carpet Grass	Ковровая трава
+block.kubejs.carpet_slab	Carpet Slab	Ковровая плита
+block.kubejs.carpet_soft	Carpet	Ковёр
+block.kubejs.carpet_stairs	Carpet Stairs	Ковровые ступеньки
+block.kubejs.ceilling	Ceiling	Потолок
+block.kubejs.ceilling_edge	Ceiling Edge	Край потолка
+block.kubejs.ceilling_frame	Ceiling Frame	Потолочный каркас
+block.kubejs.ceilling_frame2	Ceiling Frame (White)	Белый потолочный каркас
+block.kubejs.ceilling_lamp	Ceiling Lamp	Потолочный светильник
+block.kubejs.ceilling_lamp_blinking	Ceiling Lamp (Blinking)	Потолочный светильник (мигает)
+block.kubejs.ceilling_lamp_breaking	Ceiling Lamp (Breaking)	Потолочный светильник (ломается)
+block.kubejs.ceilling_lamp_broken	Ceiling Lamp (Broken)	Потолочный светильник (сломан)
+block.kubejs.ceilling_lamp_dying	Ceiling Lamp (Dying)	Потолочный светильник (гаснет)
+block.kubejs.ceilling_lamp_off	Ceiling Lamp (Off)	Потолочный светильник (выключен)
+block.kubejs.ceilling_lamp_red	Red Ceiling Lamp	Красный потолочный светильник
+block.kubejs.ceilling_lamp_red_blinking	Red Ceiling Lamp (Blinking)	Красный потолочный светильник (мигает)
+block.kubejs.ceilling_lamp_red_breaking	Red Ceiling Lamp (Breaking)	Красный потолочный светильник (ломается)
+block.kubejs.ceilling_lamp_red_broken	Red Ceiling Lamp (Broken)	Красный потолочный светильник (сломан)
+block.kubejs.ceilling_lamp_red_dying	Red Ceiling Lamp (Dying)	Красный потолочный светильник (гаснет)
+block.kubejs.ceilling_lamp_red_off	Red Ceiling Lamp (Off)	Красный потолочный светильник (выключен)
+block.kubejs.ceilling_lamp2	White Ceiling Lamp	Белый потолочный светильник
+block.kubejs.ceilling_lamp2_blinking	White Ceiling Lamp (Blinking)	Белый потолочный светильник (мигает)
+block.kubejs.ceilling_lamp2_breaking	White Ceiling Lamp (Breaking)	Белый потолочный светильник (ломается)
+block.kubejs.ceilling_lamp2_broken	White Ceiling Lamp (Broken)	Белый потолочный светильник (сломан)
+block.kubejs.ceilling_lamp2_dying	White Ceiling Lamp (Dying)	Белый потолочный светильник (гаснет)
+block.kubejs.ceilling_lamp2_off	White Ceiling Lamp (Off)	Белый потолочный светильник (выключен)
+block.kubejs.ceilling_red	Ceiling	Потолок
+block.kubejs.ceilling_slab	Ceiling Slab	Потолочная плита
+block.kubejs.ceilling_stairs	Ceiling Stairs	Потолочные ступеньки
+block.kubejs.ceilling2	Ceiling (White)	Белый потолок
+block.kubejs.ceilling2_slab	Ceiling Slab (White)	Белая потолочная плита
+block.kubejs.ceilling2_stairs	Ceiling Stairs (White)	Белые потолочные ступеньки
+block.kubejs.checker_flooring_block	Checker Flooring	Шахматный настил
+block.kubejs.cherry_flooring_block	Cherry Flooring	Вишнёвый настил
+block.kubejs.closet	Closet	Шкаф
+block.kubejs.closet_small	Small Closet	Маленький шкаф
+block.kubejs.compound_charge	Compound Charge	Заряд нестабильного соединения
+block.kubejs.compound_sponge	Compound Soaked Sponge	Губка, пропитанная нестабильным соединением
+block.kubejs.controller_wallpaper	Controller Wallpaper	Обои с контроллером
+block.kubejs.controller_wallpaper_dead	Dead Controller Wallpaper	Обои с неактивным контроллером
+block.kubejs.crimson_flooring_block	Crimson Flooring	Багровый настил
+block.kubejs.cross_sign	sign	Знак
+block.kubejs.cryptic_block	Cryptic Block	Загадочный блок
+block.kubejs.dark_casing	Dark Casing	Тёмный корпус
+block.kubejs.dark_oak_flooring_block	Dark Oak Flooring	Настил из тёмного дуба
+block.kubejs.dead_room_node_block	Dead Room Node Block	Неактивный узел комнаты
+block.kubejs.dead_room_node_connector	Dead Room Node Connector	Неактивный соединитель комнат
+block.kubejs.dimensional_package_depot	Dimensional Package Depot	Межпространственный склад посылок
+block.kubejs.drain	Drain (Permanent)	Водосток (постоянный)
+block.kubejs.drain_breakable	Drain	Водосток
+block.kubejs.empty_compound_charge	Empty Compound Charge	Пустой заряд нестабильного соединения
+block.kubejs.empty_wooden_silverfish_cage	Wooden Silverfish Cage (Empty)	Пустая деревянная клетка для чешуйниц
+block.kubejs.error	Divided by Zero	Деление на ноль
+block.kubejs.error_carpet	Divided by Zero	Деление на ноль
+block.kubejs.error_wallpaper	Divided by Zero	Деление на ноль
+block.kubejs.event_room_node_block	Event Room Node Block	Событийный узел комнаты
+block.kubejs.exit_sign	sign	Знак
+block.kubejs.exit_sign2	sign	Знак
+block.kubejs.exotic_eye	Exotic Eye	Экзотическое Око
+block.kubejs.explantion1_sign	sign	Знак
+block.kubejs.explantion2_sign	sign	Знак
+block.kubejs.exposed_controller_wallpaper	Exposed Controller Wallpaper	Обои с открытым контроллером
+block.kubejs.feature_node	Feature Node	Узел декорации
+block.kubejs.floor_tiles	Floor Tiles	Напольная плитка
+block.kubejs.floor_tiles_full	Floor Tiles	Напольная плитка
+block.kubejs.floor_tiles_infinite	Floor Tiles	Напольная плитка
+block.kubejs.half_frame_bottom	Bottom of a Machine Frame	Нижняя половина каркаса механизма
+block.kubejs.half_frame_top	Top of a Machine Frame	Верхняя половина каркаса механизма
+block.kubejs.heavy_engineering_empty	Heavy Engineering Frame	Тяжёлый инженерный каркас
+block.kubejs.holographic_bedrock	Holographic Bedrock	Голографический бедрок
+block.kubejs.holographic_wallpaper	Holographic Wallpaper	Голографические обои
+block.kubejs.infected_strange_bricks	Infected Strange Bricks	Заражённые странные кирпичи
+block.kubejs.infinity_sign	sign	Знак
+block.kubejs.inkblod_sign	sign	Знак
+block.kubejs.jungle_flooring_block	Jungle Flooring	Настил из тропического дерева
+block.kubejs.layered_room_node_block	Layered Room Node Block	Многоуровневый узел комнаты
+block.kubejs.left_arrow_sign	sign	Знак
+block.kubejs.light_engineering_empty	Light Engineering Frame	Лёгкий инженерный каркас
+block.kubejs.liminal_warning	sign	Знак
+block.kubejs.liminal_warning2	sign	Знак
+block.kubejs.liminalstone	Liminalstone	Лиминальный камень
+block.kubejs.liminalstone_poolrooms	Liminalstone	Лиминальный камень
+block.kubejs.lithium_ion_batteries	Lithium-Ion Batteries	Литий-ионные батарейки
+block.kubejs.loaded_closet	Closet	Шкаф
+block.kubejs.location_terminal	Location Terminal	Терминал местоположений
+block.kubejs.locker_sculkling	Pool Locker	Шкафчик у бассейна
+block.kubejs.long_pool_tiles	Pool Tiles (Long)	Длинная плитка бассейна
+block.kubejs.long_pool_tiles_slab	Pool Tiles Slab (Long)	Длинная плита из плитки бассейна
+block.kubejs.long_pool_tiles_soft	Pool Tiles (Long)	Длинная плитка бассейна
+block.kubejs.long_pool_tiles_stairs	Pool Tiles Stairs (Long)	Длинные ступеньки из плитки бассейна
+block.kubejs.long_range_wall_destroyer	Long-Range Wall Piercer	Дальнобойный пробойник стен
+block.kubejs.lost_eye	Lost Eye	Потерянное Око
+block.kubejs.mangrove_flooring_block	Mangrove Flooring	Мангровый настил
+block.kubejs.metal_ceilling	Metal Ceilling	Металлический потолок
+block.kubejs.metal_ceilling_slab	Metal Ceiling Slab	Металлическая потолочная плита
+block.kubejs.metal_ceilling_stairs	Metal Ceiling Slab	Металлические потолочные ступеньки
+block.kubejs.metal_frame	Metal Frame	Металлический каркас
+block.kubejs.missing_tiles_empty	Missing Pool Tiles	Плитка бассейна с пропусками
+block.kubejs.missing_tiles_empty_perm	Missing Pool Tiles (Permanent)	Плитка бассейна с пропусками (постоянная)
+block.kubejs.missing_tiles_half	Missing Pool Tiles	Плитка бассейна с пропусками
+block.kubejs.missing_tiles_half_perm	Missing Pool Tiles (Permanent)	Плитка бассейна с пропусками (постоянная)
+block.kubejs.monolith_sign	sign	Знак
+block.kubejs.nowhere_sign	sign	Знак
+block.kubejs.oak_flooring_block	Oak Flooring	Дубовый настил
+block.kubejs.oil_carpet	Crude Oil Soaked Carpet	Ковёр, пропитанный сырой нефтью
+block.kubejs.oil_sponge	Oil Soaked Sponge	Губка, пропитанная нефтью
+block.kubejs.old_concrete	Old Concrete	Старый бетон
+block.kubejs.old_concrete_bordered	Old Concrete Bordered	Старый бетон с окантовкой
+block.kubejs.old_concrete_plated	Old Concrete Plated	Старый бетон с панелями
+block.kubejs.old_concrete_plated_pillar	Old Concrete Plated Pillar	Колонна из старого бетона с панелями
+block.kubejs.open_pool_locker_double	Pool Locker	Открытый шкафчик у бассейна
+block.kubejs.open_pool_locker_single	Pool Locker	Открытый шкафчик у бассейна
+block.kubejs.plywood_block	Plywood Block	Блок фанеры
+block.kubejs.polished_wood_floor	Polished Wood Floor	Полированный деревянный пол
+block.kubejs.polished_wood_floor_slab	Polished Wood Floor Slab	Плита из полированного дерева
+block.kubejs.polished_wood_floor_stairs	Polished Wood Floor Stairs	Ступеньки из полированного дерева
+block.kubejs.polished_wood_flooring_block	Polished Wood Flooring	Полированный деревянный настил
+block.kubejs.pool_locker_double	Pool Locker	Шкафчик у бассейна
+block.kubejs.pool_locker_single	Pool Locker	Шкафчик у бассейна
+block.kubejs.pool_tiles	Pool Tiles	Плитка бассейна
+block.kubejs.pool_tiles_fake	Fake Pool Tiles	Поддельная плитка бассейна
+block.kubejs.pool_tiles_golden	Golden Pool Tiles	Золотая плитка бассейна
+block.kubejs.pool_tiles_golden_fake	Fake Pool Tiles Golden	Поддельная золотая плитка бассейна
+block.kubejs.pool_tiles_golden_half	Golden Pool Tiles	Золотая плитка бассейна
+block.kubejs.pool_tiles_golden_half_fake	Fake Pool Tiles Golden Half	Поддельная половина золотой плитки бассейна
+block.kubejs.pool_tiles_missing_fake	Fake Missing Pool Tiles	Поддельная плитка бассейна с пропусками
+block.kubejs.pool_tiles_sky	Pool Tiles	Плитка бассейна
+block.kubejs.pool_tiles_slab	Pool Tiles Slab	Плита из плитки бассейна
+block.kubejs.pool_tiles_soft	Pool Tiles	Плитка бассейна
+block.kubejs.pool_tiles_stairs	Pool Tiles Stairs	Ступеньки из плитки бассейна
+block.kubejs.pool_tiles_wet	Wet Pool Tiles	Мокрая плитка бассейна
+block.kubejs.poolrooms_portal	Poolrooms Entrance	Вход в Poolrooms
+block.kubejs.porous_stone	Porous Stone	Пористый камень
+block.kubejs.reality_charge	Reality Charge	Заряд реальности
+block.kubejs.reality_charge_empty	Empty Reality Charge	Пустой заряд реальности
+block.kubejs.reality_chest	Reality Chest	Сундук реальности
+block.kubejs.reality_controller	Reality Controller	Контроллер реальности
+block.kubejs.reality_controller_running	Reality Controller (Active)	Контроллер реальности (активный)
+block.kubejs.reality_core	Active Reality Core	Активное ядро реальности
+block.kubejs.reality_frame	Reality Frame	Каркас реальности
+block.kubejs.reality_spawner	Reality Spawner	Призыватель реальности
+block.kubejs.red_carpet	Carpet (Red)	Красный ковёр
+block.kubejs.red_carpet_slab	Carpet Slab (Red)	Красная ковровая плита
+block.kubejs.red_carpet_soft	Carpet (Red)	Красный ковёр
+block.kubejs.red_carpet_stairs	Carpet Stairs (Red)	Красные ковровые ступеньки
+block.kubejs.red_oil_carpet	Crude Oil Soaked Carpet (Red)	Красный ковёр, пропитанный сырой нефтью
+block.kubejs.red_soggy_carpet	Soggy Carpet (Red)	Красный мокрый ковёр
+block.kubejs.red_tape	Red Tape	Красная лента
+block.kubejs.redstone_room_node_block	Redstone Room Node Block	Редстоуновый узел комнаты
+block.kubejs.right_arrow_sign	sign	Знак
+block.kubejs.room_node_block	Room Node Block	Узел комнаты
+block.kubejs.room_node_block_spawn	Room Node Block Spawn	Начальный узел комнаты
+block.kubejs.room_node_connector	Room Node Connector	Соединитель комнат
+block.kubejs.rotten_wallpaper_block	Rotten Wallpaper Block	Блок гнилых обоев
+block.kubejs.sculk_carapace	Sculk Carapace	Скалковый панцирь
+block.kubejs.sculk_scrubber	Sculk Scrubber	Скалковый очиститель
+block.kubejs.sculk_shroom	Sculk Shroom	Скалковый гриб
+block.kubejs.sculk_slab	Sculk Slab	Скалковая плита
+block.kubejs.sculk_spawner	Sculk Spawner	Скалковый рассадник
+block.kubejs.sculk_stairs	Sculk Stairs	Скалковые ступеньки
+block.kubejs.sculk_tendrils	Sculk Tendrils	Скалковые усики
+block.kubejs.sculked_sculk_scrubber	Sculked Sculk Scrubber	Заражённый скалковый очиститель
+block.kubejs.shop_terminal	Shop Terminal	Терминал магазина мебели
+block.kubejs.skull_sign	sign	Знак
+block.kubejs.sky_day_block	Day Sky Block	Блок дневного неба
+block.kubejs.sky_morning_block	Morning Sky Block	Блок утреннего неба
+block.kubejs.sky_night_block	Night Sky Block	Блок ночного неба
+block.kubejs.sky_sunset_block	Sunset Sky Block	Блок закатного неба
+block.kubejs.soggy_carpet	Soggy Carpet	Мокрый ковёр
+block.kubejs.soul_carpet	Soul Carpet	Ковёр душ
+block.kubejs.soulcoal_block	Soulcoal Block	Блок угля душ
+block.kubejs.spruce_flooring_block	Spruce Flooring	Еловый настил
+block.kubejs.stop_sign	sign	Знак
+block.kubejs.strange_bricks	Strange Bricks	Странные кирпичи
+block.kubejs.stripped_wallpaper	Stripped Wallpaper	Ободранные обои
+block.kubejs.stripped_wallpaper_perm	Stripped Wallpaper (Permanent)	Ободранные обои (постоянные)
+block.kubejs.stripped_wallpaper2	Stripped Wallpaper	Ободранные обои
+block.kubejs.stripped_wallpaper2_perm	Stripped Wallpaper (Permanent)	Ободранные обои (постоянные)
+block.kubejs.stripped_wallpaper3	Stripped Wallpaper	Ободранные обои
+block.kubejs.stripped_wallpaper3_perm	Stripped Wallpaper (Permanent)	Ободранные обои (постоянные)
+block.kubejs.stripped_wallpaper4	Stripped Wallpaper	Ободранные обои
+block.kubejs.stripped_wallpaper4_perm	Stripped Wallpaper (Permanent)	Ободранные обои (постоянные)
+block.kubejs.stripped_wallpaper5	Stripped Wallpaper	Ободранные обои
+block.kubejs.stripped_wallpaper5_perm	Stripped Wallpaper (Permanent)	Ободранные обои (постоянные)
+block.kubejs.stripped_wallpaper6	Stripped Wallpaper	Ободранные обои
+block.kubejs.stripped_wallpaper6_perm	Stripped Wallpaper (Permanent)	Ободранные обои (постоянные)
+block.kubejs.stripped_wallpaper7	Stripped Wallpaper	Ободранные обои
+block.kubejs.stripped_wallpaper7_perm	Stripped Wallpaper (Permanent)	Ободранные обои (постоянные)
+block.kubejs.structure_foam_expanding	Expanding Structure Foam	Расширяющаяся строительная пена
+block.kubejs.structure_foam_placeholder	Placeholder Structure Foam	Заглушка строительной пены
+block.kubejs.tiles_blue_block	Blue Tiles	Синяя плитка
+block.kubejs.traffic_pole	sign	Знак
+block.kubejs.treated_wood_flooring_block	Treated Wood Flooring	Настил из обработанной древесины
+block.kubejs.tripple_sign	sign	Знак
+block.kubejs.turn_back_sign	sign	Знак
+block.kubejs.uncanny_shroom_crop	Uncanny Shroom	Зловещий гриб
+block.kubejs.unknown1	sign	Знак
+block.kubejs.unstable_room_node_block	Unstable Room Node Block	Нестабильный узел комнаты
+block.kubejs.wall_cave_carrot_crop	Cave Carrots	Пещерная морковь
+block.kubejs.wall_destroyer	Wall Piercer	Пробойник стен
+block.kubejs.wallpaper_blue_block	Blue Wallpaper	Синие обои
+block.kubejs.wallpaper_concrete_pillar_dark_hazard1	Old Concrete Pillar (Dark)	Тёмная колонна из старого бетона
+block.kubejs.wallpaper_concrete_pillar1	Old Concrete Pillar	Колонна из старого бетона
+block.kubejs.wallpaper_concrete1	Old Concrete	Старый бетон
+block.kubejs.wallpaper_concrete2	Old Concrete	Старый бетон
+block.kubejs.wallpaper_concrete2_dark	Old Concrete (Dark)	Старый тёмный бетон
+block.kubejs.wallpaper_fake	Fake Wallpaper	Поддельные обои
+block.kubejs.wallpaper_green_block	Green Wallpaper	Зелёные обои
+block.kubejs.wallpaper_lblue_block	Light Blue Wallpaper	Голубые обои
+block.kubejs.wallpaper_lime_block	Lime Wallpaper	Лаймовые обои
+block.kubejs.wallpaper_manila_fake	Fake Wallpaper (Manila)	Поддельные манильские обои
+block.kubejs.wallpaper_manila1	Wallpaper (Manila)	Манильские обои
+block.kubejs.wallpaper_manila2	Wallpaper (Manila, Depricated)	Манильские обои (устаревшие)
+block.kubejs.wallpaper_manila3	Wallpaper (Manila, Depricated)	Манильские обои (устаревшие)
+block.kubejs.wallpaper_nest	Wallpaper Nest	Гнездо в обоях
+block.kubejs.wallpaper_nest_perm	Wallpaper Nest (Permanent)	Гнездо в обоях (постоянное)
+block.kubejs.wallpaper_orange_block	Orange Wallpaper	Оранжевые обои
+block.kubejs.wallpaper_pink_block	Pink Wallpaper	Розовые обои
+block.kubejs.wallpaper_purple_block	Purple Wallpaper	Фиолетовые обои
+block.kubejs.wallpaper_red_block	Red Wallpaper	Красные обои
+block.kubejs.wallpaper_soft	Wallpaper	Обои
+block.kubejs.wallpaper1	Wallpaper	Обои
+block.kubejs.wallpaper1_slab	Wallpaper Slab	Плита из обоев
+block.kubejs.wallpaper1_stairs	Wallpaper Stairs	Ступеньки из обоев
+block.kubejs.wallpaper2	Wallpaper (Large Dots)	Обои в крупный горошек
+block.kubejs.wallpaper2_fake	Fake Wallpaper (Large Dots)	Поддельные обои в крупный горошек
+block.kubejs.wallpaper2_slab	Wallpaper Slab (Large Dots)	Плита из обоев в крупный горошек
+block.kubejs.wallpaper2_stairs	Wallpaper Stairs (Large Dots)	Ступеньки из обоев в крупный горошек
+block.kubejs.wallpaper3	Wallpaper (Small Dots)	Обои в мелкий горошек
+block.kubejs.wallpaper3_fake	Fake Wallpaper (Small Dots)	Поддельные обои в мелкий горошек
+block.kubejs.wallpaper3_slab	Wallpaper Slab (Small Dots)	Плита из обоев в мелкий горошек
+block.kubejs.wallpaper3_stairs	Wallpaper Stairs (Small Dots)	Ступеньки из обоев в мелкий горошек
+block.kubejs.wallpaper4	Wallpaper (Plain)	Однотонные обои
+block.kubejs.wallpaper4_fake	Fake Wallpaper (Plain)	Поддельные однотонные обои
+block.kubejs.wallpaper4_slab	Wallpaper Slab (Plain)	Плита из однотонных обоев
+block.kubejs.wallpaper4_stairs	Wallpaper Stairs (Plain)	Ступеньки из однотонных обоев
+block.kubejs.wallpaper5	Wallpaper (Hotel)	Гостиничные обои
+block.kubejs.wallpaper5_fake	Fake Wallpaper (Hotel)	Поддельные гостиничные обои
+block.kubejs.wallpaper5_slab	Wallpaper Slab (Hotel)	Плита из гостиничных обоев
+block.kubejs.wallpaper5_stairs	Wallpaper Stairs (Hotel)	Ступеньки из гостиничных обоев
+block.kubejs.wallpaper6	Wallpaper (Striped)	Полосатые обои
+block.kubejs.wallpaper6_fake	Fake Wallpaper (Striped)	Поддельные полосатые обои
+block.kubejs.wallpaper6_slab	Wallpaper Slab (Striped)	Плита из полосатых обоев
+block.kubejs.wallpaper6_stairs	Wallpaper Stairs (Striped)	Ступеньки из полосатых обоев
+block.kubejs.wallpaper7	Wallpaper (Pink)	Розовые обои
+block.kubejs.wallpaper7_fake	Fake Wallpaper (Pink)	Поддельные розовые обои
+block.kubejs.wallpaper7_slab	Wallpaper Slab (Pink)	Плита из розовых обоев
+block.kubejs.wallpaper7_stairs	Wallpaper Stairs (Pink)	Ступеньки из розовых обоев
+block.kubejs.warped_flooring_block	Warped Flooring	Искажённый настил
+block.kubejs.weird_chair	Weird Chair (Oak)	Странный дубовый стул
+block.kubejs.weird_chair_acacia	Weird Chair (Acacia)	Странный акациевый стул
+block.kubejs.weird_chair_birch	Weird Chair (Birch)	Странный берёзовый стул
+block.kubejs.weird_chair_cherry	Weird Chair (Cherry)	Странный вишнёвый стул
+block.kubejs.weird_chair_crimson	Weird Chair (Crimson)	Странный багровый стул
+block.kubejs.weird_chair_dark_oak	Weird Chair (Dark Oak)	Странный стул из тёмного дуба
+block.kubejs.weird_chair_jungle	Weird Chair (Jungle)	Странный стул из тропического дерева
+block.kubejs.weird_chair_mangrove	Weird Chair (Mangrove)	Странный мангровый стул
+block.kubejs.weird_chair_spruce	Weird Chair (Spruce)	Странный еловый стул
+block.kubejs.weird_chair_warped	Weird Chair (Warped)	Странный искажённый стул
+block.kubejs.wet_asphalt_floor	Wet Asphalt Floor	Мокрый асфальтовый пол
+block.kubejs.wet_pool_tiles_fake	Fake Pool Tiles (Wet)	Поддельная мокрая плитка бассейна
+block.kubejs.witahdigroi_sign	sign	Знак
+block.kubejs.wooden_silverfish_cage	Wooden Silverfish Cage (Filled)	Деревянная клетка с чешуйницами
+fluid.kubejs.almond_water	Almond Water	Миндальная вода
+fluid.kubejs.ball_pit	Ball Pit	Бассейн с шариками
+fluid.kubejs.carpet_fluid	Carpet Fluid	Ковровая жидкость
+fluid.kubejs.flowing_almond_water	Almond Water	Миндальная вода
+fluid.kubejs.flowing_ball_pit	Ball Pit	Бассейн с шариками
+fluid.kubejs.flowing_carpet_fluid	Carpet Fluid	Ковровая жидкость
+fluid.kubejs.flowing_liquid_pain	Liquid Pain	Жидкая боль
+fluid.kubejs.flowing_liquid_time	The Flow of Time	Поток времени
+fluid.kubejs.flowing_unstable_compound	Unstable Compound	Нестабильное соединение
+fluid.kubejs.liquid_pain	Liquid Pain	Жидкая боль
+fluid.kubejs.liquid_time	The Flow of Time	Поток времени
+fluid.kubejs.unstable_compound	Unstable Compound	Нестабильное соединение
+item.kubejs.acacia_flooring	Acacia Flooring	Акациевый настил
+item.kubejs.ai	Artificial Intelligence	Искусственный интеллект
+item.kubejs.almond_water_can	Almond Water	Миндальная вода
+item.kubejs.ball_pit_bucket	Ball Pit	Бассейн с шариками
+item.kubejs.bamboo_flooring	Bamboo Flooring	Бамбуковый настил
+item.kubejs.basalz_cake	Basalz Cake	Торт базальца
+item.kubejs.battery	Battery	Батарейка
+item.kubejs.birch_flooring	Birch Flooring	Берёзовый настил
+item.kubejs.black_location_card	Black Location Card	Чёрная карта местоположения
+item.kubejs.blitz_cake	Blitz Cake	Торт блица
+item.kubejs.blizz_cake	Blizz Cake	Торт близза
+item.kubejs.blue_almond_water_can	Coconut Almond Water	Кокосовая миндальная вода
+item.kubejs.blue_location_card	Blue Location Card	Синяя карта местоположения
+item.kubejs.blue_moth_jelly	Blue Moth Jelly	Синее желе мотылька
+item.kubejs.brown_location_card	Brown Location Card	Коричневая карта местоположения
+item.kubejs.carpet_dust	Carpet Dust	Ковровая пыль
+item.kubejs.carpet_fluid	Carpet Fluid	Ковровая жидкость
+item.kubejs.checker_flooring	Checker Flooring	Шахматный настил
+item.kubejs.cherry_flooring	Cherry Flooring	Вишнёвый настил
+item.kubejs.cinder_dough	Cinder Dough	Пепельное тесто
+item.kubejs.cobblestone_bucket	Bucket of Cobblestone	Ведро булыжника
+item.kubejs.concrete_brick	Concrete Brick	Бетонный кирпич
+item.kubejs.concrete_piece	Piece of Concrete	Кусок бетона
+item.kubejs.concrete_tile	Concrete Tile	Бетонная плитка
+item.kubejs.copycat_alloy	Copycat Alloy	Копирующий сплав
+item.kubejs.corrosive_fungi	Corrosive Fungi	Разъедающие грибы
+item.kubejs.cracked_steel	Cracked Steel	Треснувшая сталь
+item.kubejs.crimson_flooring	Crimson Flooring	Багровый настил
+item.kubejs.crowbar	Crowbar	Лом
+item.kubejs.cut_carpet	Cut Carpet	Кусок ковра
+item.kubejs.cyan_location_card	Cyan Location Card	Бирюзовая карта местоположения
+item.kubejs.dark_oak_flooring	Dark Oak Flooring	Настил из тёмного дуба
+item.kubejs.data_chip_error	Broken Data Chip	Сломанный чип данных
+item.kubejs.data_chip_infinity	Modified Data Chip	Модифицированный чип данных
+item.kubejs.data_chip1	Data Chip	Чип данных
+item.kubejs.data_chip10	Data Chip	Чип данных
+item.kubejs.data_chip2	Data Chip	Чип данных
+item.kubejs.data_chip3	Data Chip	Чип данных
+item.kubejs.data_chip4	Data Chip	Чип данных
+item.kubejs.data_chip5	Data Chip	Чип данных
+item.kubejs.data_chip6	Data Chip	Чип данных
+item.kubejs.data_chip7	Data Chip	Чип данных
+item.kubejs.data_chip8	Data Chip	Чип данных
+item.kubejs.data_chip9	Data Chip	Чип данных
+item.kubejs.diamond_brush	Diamond Brush	Алмазная щётка
+item.kubejs.drain_item	Drain Grate	Решётка водостока
+item.kubejs.empty_almond_water_can	Almond Water (Empty)	Пустая банка миндальной воды
+item.kubejs.empty_fuse	Empty Fuse	Пустой предохранитель
+item.kubejs.error_item	Error	Ошибка
+item.kubejs.fluorescent_tube	Fluorescent Tube	Люминесцентная лампа
+item.kubejs.furniture_catalogue	Furniture Catalogue	Каталог мебели
+item.kubejs.gold_moth_jelly	Gold Moth Jelly	Золотое желе мотылька
+item.kubejs.gray_location_card	Gray Location Card	Серая карта местоположения
+item.kubejs.green_almond_water_can	Mint Almond Water	Мятная миндальная вода
+item.kubejs.green_location_card	Green Location Card	Зелёная карта местоположения
+item.kubejs.green_moth_jelly	Green Moth Jelly	Зелёное желе мотылька
+item.kubejs.heated_concrete	Heated Concrete	Раскалённый бетон
+item.kubejs.hot_steel	Hot Steel	Раскалённая сталь
+item.kubejs.ice_cold_almond_water_can	Almond Water (Ice Cold)	Ледяная миндальная вода
+item.kubejs.ice_cold_blue_almond_water_can	Coconut Almond Water (Ice Cold)	Ледяная кокосовая миндальная вода
+item.kubejs.ice_cold_green_almond_water_can	Mint Almond Water (Ice Cold)	Ледяная мятная миндальная вода
+item.kubejs.ice_cold_red_almond_water_can	Strawberry Almond Water (Ice Cold)	Ледяная клубничная миндальная вода
+item.kubejs.incomplete_component_electronic	Incomplete Electronic Component	Незавершённый электронный компонент
+item.kubejs.incomplete_component_electronic_adv	Incomplete Advanced Electronic Component	Незавершённый продвинутый электронный компонент
+item.kubejs.jungle_flooring	Jungle Flooring	Настил из тропического дерева
+item.kubejs.light_blue_location_card	Light Blue Location Card	Голубая карта местоположения
+item.kubejs.light_gray_location_card	Light Gray Location Card	Светло-серая карта местоположения
+item.kubejs.lime_location_card	Lime Location Card	Лаймовая карта местоположения
+item.kubejs.liminal_jam	Liminal Jam	Сладкое ягодное варенье
+item.kubejs.liquid_pain_can_hidden	Almond Water (Tampered)	Миндальная вода с примесью
+item.kubejs.liquid_time_bucket	The Flow of Time	Поток времени
+item.kubejs.lithium_ion_battery	Lithium-Ion Battery	Литий-ионная батарейка
+item.kubejs.magenta_location_card	Magenta Location Card	Пурпурная карта местоположения
+item.kubejs.mangrove_flooring	Mangrove Flooring	Мангровый настил
+item.kubejs.moderate_soul_gem	Moderate Soul Gem	Средний самоцвет души
+item.kubejs.oak_flooring	Oak Flooring	Дубовый настил
+item.kubejs.orange_location_card	Orange Location Card	Оранжевая карта местоположения
+item.kubejs.orange_moth_jelly	Orange Moth Jelly	Оранжевое желе мотылька
+item.kubejs.overclocked_clock	Overclocked Clock	Разогнанные часы
+item.kubejs.party_popper	Party Popper	Хлопушка
+item.kubejs.perfectly_stablised_compound	Perfectly Stable Compound	Идеально стабильное соединение
+item.kubejs.pink_location_card	Pink Location Card	Розовая карта местоположения
+item.kubejs.pink_moth_jelly	Pink Moth Jelly	Розовое желе мотылька
+item.kubejs.polished_wood_flooring	Polished Wood Flooring	Полированный деревянный настил
+item.kubejs.pool_tile	Pool Tile	Плитка бассейна
+item.kubejs.pool_tile_golden	Golden Pool Tile	Золотая плитка бассейна
+item.kubejs.power_box	Power Box	Распределительная коробка
+item.kubejs.purple_location_card	Purple Location Card	Фиолетовая карта местоположения
+item.kubejs.purple_moth_jelly	Purple Moth Jelly	Фиолетовое желе мотылька
+item.kubejs.putty_knife	Putty Knife	Шпатель
+item.kubejs.quantum_string	Quantum String	Квантовая нить
+item.kubejs.reality_alloy	Reality Alloy	Сплав реальности
+item.kubejs.reality_storage_cell1	Reality Storage Cell	Ячейка хранения реальности
+item.kubejs.reality_storage_empty	Empty Reality Storage Cell	Пустая ячейка хранения реальности
+item.kubejs.red_almond_water_can	Strawberry Almond Water	Клубничная миндальная вода
+item.kubejs.red_location_card	Red Location Card	Красная карта местоположения
+item.kubejs.red_moth_jelly	Red Moth Jelly	Красное желе мотылька
+item.kubejs.rotten_wallpaper	Rotten Wallpaper	Гнилые обои
+item.kubejs.scrap	Scrap	Металлолом
+item.kubejs.sentimental_thaumium	Sentimental Thaumium	Сентиментальный таумий
+item.kubejs.soul_fuse	Soul Fuse	Предохранитель душ
+item.kubejs.soulcoal	Soulcoal	Уголь душ
+item.kubejs.spruce_flooring	Spruce Flooring	Еловый настил
+item.kubejs.straw_brush	Straw Brush	Соломенная щётка
+item.kubejs.tiles_blue	Blue Tile	Синяя плитка
+item.kubejs.treated_wood_flooring	Treated Wood Flooring	Настил из обработанной древесины
+item.kubejs.uncanny_shroom	Uncanny Shroom	Зловещий гриб
+item.kubejs.uncanny_shroom_seeds	Uncanny Shroom Seeds	Споры зловещего гриба
+item.kubejs.unstable_compound	Unstable Compound	Нестабильное соединение
+item.kubejs.wallpaper	Wallpaper	Обои
+item.kubejs.wallpaper_blue	Blue Wallpaper	Синие обои
+item.kubejs.wallpaper_green	Green Wallpaper	Зелёные обои
+item.kubejs.wallpaper_lblue	Light Blue Wallpaper	Голубые обои
+item.kubejs.wallpaper_lime	Lime Wallpaper	Лаймовые обои
+item.kubejs.wallpaper_orange	Orange Wallpaper	Оранжевые обои
+item.kubejs.wallpaper_pink	Pink Wallpaper	Розовые обои
+item.kubejs.wallpaper_purple	Purple Wallpaper	Фиолетовые обои
+item.kubejs.wallpaper_red	Red Wallpaper	Красные обои
+item.kubejs.warped_flooring	Warped Flooring	Искажённый настил
+item.kubejs.white_location_card	White Location Card	Белая карта местоположения
+item.kubejs.wooden_knife	Wooden Knife	Деревянный нож
+item.kubejs.yellow_location_card	Yellow Location Card	Жёлтая карта местоположения

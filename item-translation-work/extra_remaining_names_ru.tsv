@@ -1,0 +1,658 @@
+namespace	key	en_us	current_ru	proposed_ru	reason
+advanced_ae	item.advanced_ae.advanced_io_bus_part	ME Advanced IO Bus	ME Advanced IO Bus	Продвинутая шина ввода-вывода МЭ	В ru_ru оставлено переводимое английское название.
+advanced_ae	item.advanced_ae.quantum_crafter_terminal	Quantum Crafter Terminal	Quantum Crafter Terminal	Квантовый терминал изготовления	В ru_ru оставлено переводимое английское название.
+advanced_ae	block.advanced_ae.quantum_structure	Quantum Computer Structural Glass	Quantum Computer Structural Glass	Структурное стекло квантового компьютера	В ru_ru оставлено переводимое английское название.
+ae2	block.ae2.crystal_resonance_generator	Crystal Resonance Generator		Генератор кристаллического резонанса	Русское название отсутствует.
+beachparty	item.beachparty.beach_ball	Beach Ball	Beach Ball	Пляжный мяч	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.beach_chair	Beach Chair	Beach Chair	Пляжное кресло	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.beach_goal	Beach Goal	Beach Goal	Пляжные ворота	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.beachparty_banner	Completionist Banner: §eBeachparty	Completionist Banner: §eBeachparty	Знамя мастера: §eBeachparty	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_bar_stool	Palm Bar Stool	Palm Bar Stool	Пальмовый барный стул	В ru_ru оставлено переводимое английское название.
+beachparty	item.beachparty.palm_boat	Palm Boat	Palm Boat	Пальмовая лодка	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_button	Palm Button	Palm Button	Пальмовая кнопка	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_cabinet	Palm Cabinet	Palm Cabinet	Пальмовый шкафчик	В ru_ru оставлено переводимое английское название.
+beachparty	item.beachparty.palm_chest_boat	Palm Chest Boat	Palm Chest Boat	Грузовая пальмовая лодка	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_door	Palm Door	Palm Door	Пальмовая дверь	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_fence	Palm Fence	Palm Fence	Пальмовый забор	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_fence_gate	Palm Fence Gate	Palm Fence Gate	Пальмовая калитка	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_floorboard	Palm Floorboard	Palm Floorboard	Пальмовый настил	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_glass	Palm Glass	Palm Glass	Пальмовое стекло	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_glass_pane	Palm Glass Pane	Palm Glass Pane	Панель из пальмового стекла	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_hanging_sign	Palm Hanging Sign	Palm Hanging Sign	Пальмовая подвесная табличка	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_leaves	Palm Leaves	Palm Leaves	Пальмовые листья	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_log	Palm Log	Palm Log	Пальмовое бревно	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_planks	Palm Planks	Palm Planks	Пальмовые доски	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_pressure_plate	Palm Pressure Plate	Palm Pressure Plate	Пальмовая нажимная плита	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_sign	Palm Sign	Palm Sign	Пальмовая табличка	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_slab	Palm Slab	Palm Slab	Пальмовая плита	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_stairs	Palm Stairs	Palm Stairs	Пальмовые ступеньки	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_table	Palm Table	Palm Table	Пальмовый стол	В ru_ru оставлено переводимое английское название.
+beachparty	item.beachparty.palm_torch_item	Palm Torch Item		Пальмовый факел	Русское название отсутствует; en_us восстановлен по ID.
+beachparty	block.beachparty.palm_trapdoor	Palm Trapdoor	Palm Trapdoor	Пальмовый люк	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.palm_wood	Palm Wood	Palm Wood	Пальмовая древесина	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.sand_bucket_filled	Filled Sand Bucket	Filled Sand Bucket	Ведёрко с песком	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.stripped_palm_log	Stripped Palm Log	Stripped Palm Log	Обтёсанное пальмовое бревно	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.stripped_palm_wood	Stripped Palm Wood	Stripped Palm Wood	Обтёсанная пальмовая древесина	В ru_ru оставлено переводимое английское название.
+beachparty	block.beachparty.wet_hay_block	Wet Hay Block	Wet Hay Block	Мокрый блок сена	В ru_ru оставлено переводимое английское название.
+berry_good	block.berry_good.glow_berry_basket	Basket of Glow Berries		Корзина светящихся ягод	Русское название отсутствует.
+berry_good	block.berry_good.sweet_berry_basket	Basket of Sweet Berries		Корзина сладких ягод	Русское название отсутствует.
+blockofsky	block.blockofsky.sky_block	Block of Sky		Блок неба	Русское название отсутствует.
+blockofsky	block.blockofsky.void_block	Block of Void		Блок пустоты	Русское название отсутствует.
+cfm_circuit_breaker	item.cfm_circuit_breaker.circuit_breaker	Circuit Breaker		Автоматический выключатель	Русское название отсутствует; en_us восстановлен по ID.
+chimes	block.chimes.amethyst_chimes	Amethyst Wind Chime		Аметистовая музыка ветра	Русское название отсутствует.
+chimes	block.chimes.bamboo_chimes	Bamboo Wind Chime		Бамбуковая музыка ветра	Русское название отсутствует.
+chimes	block.chimes.carved_bamboo_chimes	Carved Bamboo Wind Chime		Резная бамбуковая музыка ветра	Русское название отсутствует.
+chimes	block.chimes.copper_chimes	Copper Wind Chime		Медная музыка ветра	Русское название отсутствует.
+chimes	block.chimes.glass_bells	Glass Wind Bell		Стеклянный колокольчик ветра	Русское название отсутствует.
+chimes	block.chimes.iron_chimes	Iron Wind Chime		Железная музыка ветра	Русское название отсутствует.
+citadel	item.citadel.citadel_book	Citadel Book		Книга Citadel	Русское название отсутствует.
+citadel	item.citadel.debug	Citadel Debugger		Отладчик Citadel	Русское название отсутствует.
+citadel	item.citadel.effect_item	Potion Effect		Эффект зелья	Русское название отсутствует.
+citadel	item.citadel.fancy_item	Fancy Item		Красивый предмет	Русское название отсутствует.
+citadel	item.citadel.icon_item	Icon Item		Значок	Русское название отсутствует.
+corrosive_sculk	block.corrosive_sculk.woven_sculk	Woven Sculk		Сплетённый скалк	Русское название отсутствует.
+corrosive_sculk	block.corrosive_sculk.woven_sculk_vein	Woven Sculk Vein		Жила сплетённого скалка	Русское название отсутствует.
+create	item.create.cardboard_package_10x12	Cardboard Package 10x12		Картонная посылка 10×12	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.cardboard_package_10x8	Cardboard Package 10x8		Картонная посылка 10×8	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.cardboard_package_12x10	Cardboard Package 12x10		Картонная посылка 12×10	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.cardboard_package_12x12	Cardboard Package 12x12		Картонная посылка 12×12	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_creeper_package	Rare Creeper Package		Редкая посылка: Creeper	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_darcy_package	Rare Darcy Package		Редкая посылка: Darcy	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_evan_package	Rare Evan Package		Редкая посылка: Evan	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_jinx_package	Rare Jinx Package		Редкая посылка: Jinx	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_kryppers_package	Rare Kryppers Package		Редкая посылка: Kryppers	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_simi_package	Rare Simi Package		Редкая посылка: Simi	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_starlotte_package	Rare Starlotte Package		Редкая посылка: Starlotte	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_thunder_package	Rare Thunder Package		Редкая посылка: Thunder	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_up_package	Rare Up Package		Редкая посылка: Up	Русское название отсутствует; en_us восстановлен по ID.
+create	item.create.rare_vector_package	Rare Vector Package		Редкая посылка: Vector	Русское название отсутствует; en_us восстановлен по ID.
+create_central_kitchen	item.create_central_kitchen.creative_tab_icon	CreativeTabIcon		Значок вкладки творчества	Русское название отсутствует.
+create_central_kitchen	item.create_central_kitchen.incomplete_neapolitan_ice_cream_chocolate	Incomplete Neapolitan Ice Cream		Незавершённое неаполитанское мороженое	Русское название отсутствует.
+create_central_kitchen	item.create_central_kitchen.incomplete_neapolitan_ice_cream_strawberry	Incomplete Neapolitan Ice Cream		Незавершённое неаполитанское мороженое	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.bamboo_palisade	Bamboo Palisade		Бамбуковый частокол	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.bamboo_seat	Bamboo Seat		Бамбуковый стул	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.bamboo_support	Bamboo Support		Бамбуковый кронштейн	Русское название отсутствует.
+decorative_blocks	item.decorative_blocks.blockstate_copy_item	Blockstate Copy Item		Копировщик состояния блока	Русское название отсутствует; en_us восстановлен по ID.
+decorative_blocks	block.decorative_blocks.cherry_beam	Cherry Beam		Вишнёвый брус	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.cherry_palisade	Cherry Palisade		Вишнёвый частокол	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.cherry_seat	Cherry Seat		Вишнёвый стул	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.cherry_support	Cherry Support		Вишнёвый кронштейн	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.mangrove_beam	Mangrove Beam		Мангровый брус	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.mangrove_palisade	Mangrove Palisade		Мангровый частокол	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.mangrove_seat	Mangrove Seat		Мангровый стул	Русское название отсутствует.
+decorative_blocks	block.decorative_blocks.mangrove_support	Mangrove Support		Мангровый кронштейн	Русское название отсутствует.
+dtneapolitan	block.dtneapolitan.banana_branch	Banana Plant		Банановое растение	Русское название отсутствует.
+dtneapolitan	item.dtneapolitan.banana_seed	Banana Sucker		Отросток банана	Русское название отсутствует.
+dynamictrees	item.dynamictrees.azalea_seed	Azalea Seed		Семя азалии	Русское название отсутствует.
+dynamictrees	block.dynamictrees.cherry_branch	Cherry Tree		Вишнёвое дерево	Русское название отсутствует.
+dynamictrees	item.dynamictrees.cherry_seed	Cherry Blossom Pit		Вишнёвая косточка	Русское название отсутствует.
+dynamictrees	item.dynamictrees.cocoa_seed	Cocoa Pod		Плод какао	Русское название отсутствует.
+dynamictrees	item.dynamictrees.dendro_potion	Dendro Potion		Дендрозелье	Русское название отсутствует; en_us восстановлен по ID.
+dynamictrees	block.dynamictrees.mangrove_branch	Mangrove Tree		Мангровое дерево	Русское название отсутствует.
+dynamictrees	block.dynamictrees.mangrove_roots	Mangrove Tree		Корни мангрового дерева	Русское название отсутствует.
+dynamictrees	item.dynamictrees.mangrove_seed	Mangrove Propagule		Мангровый отросток	Русское название отсутствует.
+dynamictrees	item.dynamictrees.mega_crimson_seed	Mega Crimson Cap		Гигантская багровая шляпка	Русское название отсутствует.
+dynamictrees	item.dynamictrees.mega_jungle_seed	Mega Jungle Pod		Гигантский тропический плод	Русское название отсутствует.
+dynamictrees	item.dynamictrees.mega_spruce_seed	Mega Spruce Cone		Гигантская еловая шишка	Русское название отсутствует.
+dynamictrees	item.dynamictrees.mega_warped_seed	Mega Warped Cap		Гигантская искажённая шляпка	Русское название отсутствует.
+eidolon	item.eidolon.illwood_sign	Illwood Sign		Табличка из иллвуда	Русское название отсутствует; en_us восстановлен по ID.
+eidolon	item.eidolon.polished_sign	Polished Sign		Табличка из гладких досок	Русское название отсутствует; en_us восстановлен по ID.
+enderchests	item.enderchests.ender_bag	Ender Bag		Эндер-мешок	Русское название отсутствует; en_us восстановлен по ID.
+enderchests	item.enderchests.ender_chest	Ender Chest		Эндер-сундук	Русское название отсутствует; en_us восстановлен по ID.
+endertanks	item.endertanks.ender_bucket	Ender Bucket		Эндер-ведро	Русское название отсутствует; en_us восстановлен по ID.
+endertanks	item.endertanks.ender_tank	Ender Tank		Эндер-резервуар	Русское название отсутствует; en_us восстановлен по ID.
+fairylights	block.fairylights.candle_lantern	Candle Lantern		Свечной фонарь	Русское название отсутствует.
+fairylights	block.fairylights.candle_lantern_light	Candle Lantern Light		Огонёк свечного фонаря	Русское название отсутствует.
+fairylights	block.fairylights.flower_light	Flower Light		Цветочный фонарик	Русское название отсутствует.
+fairylights	item.fairylights.garland	Vine Garland		Гирлянда из лиан	Русское название отсутствует.
+fairylights	block.fairylights.ghost_light	Ghost Light		Фонарик-призрак	Русское название отсутствует.
+fairylights	block.fairylights.heart_light	Heart Light		Фонарик-сердце	Русское название отсутствует.
+fairylights	block.fairylights.icicle_lights	Icicle Lights		Гирлянда из сосулек	Русское название отсутствует.
+fairylights	block.fairylights.incandescent_light	Incandescent Light		Лампа накаливания	Русское название отсутствует.
+fairylights	block.fairylights.jack_o_lantern	Jack o'Lantern		Светильник Джека	Русское название отсутствует.
+fairylights	item.fairylights.letter_bunting	Letter Bunting		Гирлянда с буквами	Русское название отсутствует.
+fairylights	block.fairylights.moon_light	Moon Light		Фонарик-луна	Русское название отсутствует.
+fairylights	block.fairylights.oil_lantern	Oil Lantern		Масляный фонарь	Русское название отсутствует.
+fairylights	block.fairylights.oil_lantern_light	Oil Lantern Light		Огонёк масляного фонаря	Русское название отсутствует.
+fairylights	block.fairylights.orb_lantern	Orb Lantern		Шарообразный фонарь	Русское название отсутствует.
+fairylights	item.fairylights.pennant_bunting	Pennant Bunting		Гирлянда из флажков	Русское название отсутствует.
+fairylights	block.fairylights.skull_light	Skull Light		Фонарик-череп	Русское название отсутствует.
+fairylights	block.fairylights.snowflake_light	Snowflake Light		Фонарик-снежинка	Русское название отсутствует.
+fairylights	item.fairylights.spearhead_pennant	Spearhead Pennant		Остроконечный флажок	Русское название отсутствует.
+fairylights	block.fairylights.spider_light	Spider Light		Фонарик-паук	Русское название отсутствует.
+fairylights	item.fairylights.square_pennant	Square Pennant		Квадратный флажок	Русское название отсутствует.
+fairylights	block.fairylights.star_light	Star Light		Фонарик-звезда	Русское название отсутствует.
+fairylights	item.fairylights.swallowtail_pennant	Swallowtail Pennant		Раздвоенный флажок	Русское название отсутствует.
+fairylights	item.fairylights.tinsel	Tinsel Garland		Гирлянда из мишуры	Русское название отсутствует.
+fairylights	item.fairylights.triangle_pennant	Triangle Pennant		Треугольный флажок	Русское название отсутствует.
+fairylights	block.fairylights.witch_light	Witch Light		Ведьмин фонарик	Русское название отсутствует.
+farmersdelight	item.farmersdelight.basket	Basket		Корзина	Русское название отсутствует; en_us восстановлен по ID.
+guideme	item.guideme.guide	Guide		Справочник	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.acetaldehyde_bucket	Bucket of Acetaldehyde		Ведро ацетальдегида	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.armor_piercing	Armor Piercing		Бронебойный патрон	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.buckshot	Buckshot		Патрон с картечью	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.bulwark_spawn_egg	Bulwark Spawn Egg		Яйцо призыва бастиона	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.casull	Casull		Патрон «Касулл»	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	block.immersiveengineering.clinker_brick	Clinker Bricks		Клинкерные кирпичи	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.clinker_brick_quoin	Clinker Brick Quoin		Угловой клинкерный кирпич	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.clinker_brick_sill	Clinker Brick Sill		Клинкерный подоконник	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.commando_spawn_egg	Commando Spawn Egg		Яйцо призыва коммандос	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.concrete_brick	Concrete Brick		Бетонные кирпичи	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.concrete_brick_cracked	Cracked Concrete Brick		Потрескавшиеся бетонные кирпичи	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.concrete_chiseled	Chiseled Concrete		Резной бетон	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.concrete_pillar	Concrete Pillar		Бетонная колонна	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.dragons_breath	Dragons Breath		Патрон «Дыхание дракона»	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	block.immersiveengineering.duroplast	Duroplast Block		Блок дуропласта	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.electromagnet	Electromagnet		Электромагнит	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.ersatz_leather	Ersatz Leather		Искусственная кожа	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.fake_icon_birthday	Fake Icon Birthday		Значок дня рождения	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.fake_icon_bttf	Fake Icon Bttf		Значок путешествия во времени	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.fake_icon_drillbreak	Fake Icon Drillbreak		Значок сломанного бура	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.fake_icon_fried	Fake Icon Fried		Значок перегрева	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.fake_icon_lucky	Fake Icon Lucky		Счастливый значок	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.fake_icon_ravenholm	Fake Icon Ravenholm		Значок Рейвенхольма	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.firework	Firework		Фейерверочный патрон	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.flare	Flare		Сигнальный патрон	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.fusilier_spawn_egg	Fusilier Spawn Egg		Яйцо призыва фузилёра	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.glider	Collapsible Glider		Складной планер	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.grindingdisk	Grinding Disk		Шлифовальный диск	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.grit_sand	Grit Sand		Крупнозернистый песок	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.he	HE		Фугасный патрон	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	block.immersiveengineering.hempcrete_brick	Hempcrete Brick		Кирпичи из пенькобетона	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.hempcrete_brick_cracked	Cracked Hempcrete Brick		Потрескавшиеся кирпичи из пенькобетона	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.hempcrete_chiseled	Chiseled Hempcrete		Резной пенькобетон	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.hempcrete_pillar	Hempcrete Pillar		Колонна из пенькобетона	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.homing	Homing		Самонаводящийся патрон	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	item.immersiveengineering.light_bulb	Incandescent Light Bulb		Лампа накаливания	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.phenolic_resin_bucket	Bucket of Phenolic Resin		Ведро фенольной смолы	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.silver	Silver		Серебряный патрон	Русское название отсутствует; en_us восстановлен по ID.
+immersiveengineering	block.immersiveengineering.slab_clinker_brick	Clinker Brick Slab		Плита из клинкерных кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.slab_concrete_brick	Concrete Brick Slab		Плита из бетонных кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.slab_hempcrete_brick	Hempcrete Brick Slab		Плита из пенькобетонных кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.slab_slag_brick	Slag Brick Slab		Плита из шлаковых кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.slag_brick	Slag Bricks		Шлаковые кирпичи	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.slag_glass	Slag Glass		Шлаковое стекло	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.slag_gravel	Slag Gravel		Шлаковый гравий	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.stairs_clinker_brick	Clinker Brick Stairs		Ступеньки из клинкерных кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.stairs_concrete_brick	Concrete Brick Stairs		Ступеньки из бетонных кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.stairs_hempcrete_brick	Hempcrete Brick Stairs		Ступеньки из пенькобетонных кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.stairs_slag_brick	Slag Brick Stairs		Ступеньки из шлаковых кирпичей	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.toolupgrade_drill_fortune	Rock Softening Acid		Кислота для размягчения породы	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.toolupgrade_powerpack_antenna	Charging Antenna		Зарядная антенна	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.toolupgrade_powerpack_induction	Induction Charger		Индукционное зарядное устройство	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.toolupgrade_powerpack_magnet	Portable Electromagnet		Переносной электромагнит	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.toolupgrade_powerpack_tesla	Miniaturized Tesla Coil		Миниатюрная катушка Теслы	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.wall_clinker_brick	Clinker Brick Wall		Ограда из клинкерных кирпичей	Русское название отсутствует.
+immersiveengineering	block.immersiveengineering.wall_slag_brick	Slag Brick Wall		Ограда из шлаковых кирпичей	Русское название отсутствует.
+immersiveengineering	item.immersiveengineering.wolfpack	Wolfpack		Патрон «Волчья стая»	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.battery_bowl	Battery Bowl		Чаша с батарейками	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.chapter_1_star	Chapter 1 Star		Звезда главы 1	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.chapter_2_star	Chapter 2 Star		Звезда главы 2	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.chapter_3_star	Chapter 3 Star		Звезда главы 3	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.chapter_4_star	Chapter 4 Star		Звезда главы 4	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.chapter_5_star	Chapter 5 Star		Звезда главы 5	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.clean_energy	Clean Energy		Чистая энергия	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.explantion2_sign_red	Explantion2 Sign Red		Красный поясняющий знак	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.red_locker_double	Red Locker Double		Красный двойной шкафчик	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.red_locker_single	Red Locker Single		Красный шкафчик	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.traffic_pole_red	Traffic Pole Red		Красный дорожный столб	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.transparent_bedrock	Transparent Bedrock		Прозрачный бедрок	Русское название отсутствует; en_us восстановлен по ID.
+kubejs	item.kubejs.wallpaper1_red	Wallpaper1 Red		Красные обои	Русское название отсутствует; en_us восстановлен по ID.
+lipoolroomsadditions	item.lipoolroomsadditions.oak_pool_chair	Oak Pool Chair		Дубовое кресло для бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.oak_pool_chair_back	Oak Pool Chair		Дубовое кресло для бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.oak_pool_chair_front	Oak Pool Chair		Дубовое кресло для бассейна	Русское название отсутствует.
+lipoolroomsadditions	item.lipoolroomsadditions.oil_treated_oak_pool_chair	Oil Treated Oak Pool Chair		Дубовое кресло для бассейна, пропитанное маслом	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.oil_treated_oak_pool_chair_back	Oil Treated Oak Pool Chair		Дубовое кресло для бассейна, пропитанное маслом	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.oil_treated_oak_pool_chair_front	Oil Treated Oak Pool Chair		Дубовое кресло для бассейна, пропитанное маслом	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.pool_railing_bend_inner	Pool Railing Bend Inner		Внутренний угол ограждения бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.pool_railing_bend_outer	Pool Railing Bend Outer		Внешний угол ограждения бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.pool_railing_end_l	Pool Railing End L		Левый конец ограждения бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.pool_railing_end_r	Pool Railing End L		Правый конец ограждения бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.pool_railing_mid_i	Pool Railing Mid I		Прямое ограждение бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.pool_railing_mid_t	Pool Railing Mid T		Т-образное ограждение бассейна	Русское название отсутствует.
+lipoolroomsadditions	item.lipoolroomsadditions.white_painted_oak_pool_chair	White Painted Oak Pool Chair		Белое дубовое кресло для бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.white_painted_oak_pool_chair_back	White Painted Oak Pool Chair		Белое дубовое кресло для бассейна	Русское название отсутствует.
+lipoolroomsadditions	block.lipoolroomsadditions.white_painted_oak_pool_chair_front	White Painted Oak Pool Chair		Белое дубовое кресло для бассейна	Русское название отсутствует.
+mekanism	item.mekanism.module_attack_amplification_unit	Module Attack Amplification Unit		Модуль усиления атаки	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_blasting_unit	Module Blasting Unit		Модуль взрывных работ	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_charge_distribution_unit	Module Charge Distribution Unit		Модуль распределения заряда	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_color_modulation_unit	Module Color Modulation Unit		Модуль изменения цвета	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_dosimeter_unit	Module Dosimeter Unit		Модуль дозиметра	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_electrolytic_breathing_unit	Module Electrolytic Breathing Unit		Модуль электролитического дыхания	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_elytra_unit	Module Elytra Unit		Модуль элитр	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_energy_unit	Module Energy Unit		Энергетический модуль	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_excavation_escalation_unit	Module Excavation Escalation Unit		Модуль ускорения добычи	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_farming_unit	Module Farming Unit		Модуль земледелия	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_fortune_unit	Module Fortune Unit		Модуль удачи	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_frost_walker_unit	Module Frost Walker Unit		Модуль ледохода	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_geiger_unit	Module Geiger Unit		Модуль счётчика Гейгера	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_gravitational_modulating_unit	Module Gravitational Modulating Unit		Модуль управления гравитацией	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_gyroscopic_stabilization_unit	Module Gyroscopic Stabilization Unit		Модуль гироскопической стабилизации	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_hydraulic_propulsion_unit	Module Hydraulic Propulsion Unit		Модуль гидравлического ускорения	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_hydrostatic_repulsor_unit	Module Hydrostatic Repulsor Unit		Модуль гидростатического отталкивания	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_inhalation_purification_unit	Module Inhalation Purification Unit		Модуль очистки воздуха	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_jetpack_unit	Module Jetpack Unit		Модуль реактивного ранца	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_laser_dissipation_unit	Module Laser Dissipation Unit		Модуль рассеивания лазера	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_locomotive_boosting_unit	Module Locomotive Boosting Unit		Модуль ускорения движения	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_magnetic_attraction_unit	Module Magnetic Attraction Unit		Модуль магнитного притяжения	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_motorized_servo_unit	Module Motorized Servo Unit		Модуль моторизованного сервопривода	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_nutritional_injection_unit	Module Nutritional Injection Unit		Модуль автопитания	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_radiation_shielding_unit	Module Radiation Shielding Unit		Модуль радиационной защиты	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_shearing_unit	Module Shearing Unit		Модуль стрижки	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_silk_touch_unit	Module Silk Touch Unit		Модуль шёлкового касания	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_teleportation_unit	Module Teleportation Unit		Модуль телепортации	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_vein_mining_unit	Module Vein Mining Unit		Модуль жильной добычи	Русское название отсутствует; en_us восстановлен по ID.
+mekanism	item.mekanism.module_vision_enhancement_unit	Module Vision Enhancement Unit		Модуль улучшения зрения	Русское название отсутствует; en_us восстановлен по ID.
+mekanismgenerators	item.mekanismgenerators.module_geothermal_generator_unit	Module Geothermal Generator Unit		Модуль геотермального генератора	Русское название отсутствует; en_us восстановлен по ID.
+mekanismgenerators	item.mekanismgenerators.module_solar_recharging_unit	Module Solar Recharging Unit		Модуль солнечной зарядки	Русское название отсутствует; en_us восстановлен по ID.
+moonlight	item.moonlight.placeable_item	Placeable Item		Размещаемый предмет	Русское название отсутствует; en_us восстановлен по ID.
+moyai	block.moyai.moyai	Moyai		Моаи	Русское название отсутствует.
+neapolitan	item.neapolitan.banana_frond	Banana Frond		Банановый лист	Русское название отсутствует.
+neapolitan	block.neapolitan.chimpanzee_head	Chimpanzee Head		Голова шимпанзе	Русское название отсутствует.
+neapolitan	item.neapolitan.primal_armor_trim_smithing_template	Primal Armor Trim Smithing Template		Кузнечный шаблон «Первобытная отделка»	Русское название отсутствует; en_us восстановлен по ID.
+neapolitan	item.neapolitan.reflection_pottery_sherd	Reflection Pottery Sherd		Керамический осколок «Отражение»	Русское название отсутствует.
+neapolitan	item.neapolitan.scream_pottery_sherd	Scream Pottery Sherd		Керамический осколок «Крик»	Русское название отсутствует.
+neapolitan	item.neapolitan.snack_pottery_sherd	Snack Pottery Sherd		Керамический осколок «Закуска»	Русское название отсутствует.
+neapolitan	item.neapolitan.spider_pottery_sherd	Spider Pottery Sherd		Керамический осколок «Паук»	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.block_of_resin	Block of Resin		Блок смолы	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.chiseled_resin_bricks	Chiseled Resin Bricks		Резные смоляные кирпичи	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.closed_eyeblossom	Closed Eyeblossom		Закрытый глазоцвет	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.creaking_heart	Creaking Heart		Сердце скрипуна	Русское название отсутствует.
+palegardenbackport	item.palegardenbackport.creaking_spawn_egg	Creaking Spawn Egg		Яйцо призыва скрипуна	Русское название отсутствует.
+palegardenbackport	item.palegardenbackport.mod_icon	Mod Icon		Значок мода	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.open_eyeblossom	Open Eyeblossom		Открытый глазоцвет	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_hanging_moss	Pale Hanging Moss		Бледный свисающий мох	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_moss_block	Pale Moss Block		Блок бледного мха	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_moss_carpet	Pale Moss Carpet		Ковёр из бледного мха	Русское название отсутствует.
+palegardenbackport	item.palegardenbackport.pale_oak_boat	Pale Oak Boat		Лодка из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_button	Pale Oak Button		Кнопка из бледного дуба	Русское название отсутствует.
+palegardenbackport	item.palegardenbackport.pale_oak_chest_boat	Pale Oak Chest Boat		Грузовая лодка из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_door	Pale Oak Door		Дверь из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_fence	Pale Oak Fence		Забор из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_fence_gate	Pale Oak Fence Gate		Калитка из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_hanging_sign	Pale Oak Hanging Sign		Подвесная табличка из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_leaves	Pale Oak Leaves		Листья бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_log	Pale Oak Log		Бревно бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_planks	Pale Oak Planks		Доски из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_pressure_plate	Pale Oak Pressure Plate		Нажимная плита из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_sapling	Pale Oak Sapling		Саженец бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_sign	Pale Oak Sign		Табличка из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_slab	Pale Oak Slab		Плита из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_stairs	Pale Oak Stairs		Ступеньки из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_trapdoor	Pale Oak Trapdoor		Люк из бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.pale_oak_wood	Pale Oak Wood		Бледный дуб	Русское название отсутствует.
+palegardenbackport	item.palegardenbackport.resin_brick	Resin Brick		Смоляной кирпич	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.resin_brick_slab	Resin Brick Slab		Плита из смоляных кирпичей	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.resin_brick_stairs	Resin Brick Stairs		Ступеньки из смоляных кирпичей	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.resin_brick_wall	Resin Brick Wall		Ограда из смоляных кирпичей	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.resin_bricks	Resin Bricks		Смоляные кирпичи	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.resin_clump	Resin Clump		Комок смолы	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.stripped_pale_oak_log	Stripped Pale Oak Log		Обтёсанное бревно бледного дуба	Русское название отсутствует.
+palegardenbackport	block.palegardenbackport.stripped_pale_oak_wood	Stripped Pale Oak Wood		Обтёсанный бледный дуб	Русское название отсутствует.
+parcool	block.parcool.iron_zipline_hook	Iron Zipline Hook		Железный крюк для зиплайна	Русское название отсутствует.
+parcool	block.parcool.wooden_zipline_hook	Wooden Zipline Hook		Деревянный крюк для зиплайна	Русское название отсутствует.
+parcool	item.parcool.zipline_rope	Zipline Rope		Трос зиплайна	Русское название отсутствует.
+supplementaries	item.supplementaries.beachparty/sign_post_palm	Beachparty sign Post Palm		Указатель из пальмы	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.botania/sign_post_dreamwood	Botania sign Post Dreamwood		Указатель из дерева мечтаний	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.botania/sign_post_livingwood	Botania sign Post Livingwood		Указатель из жизнедерева	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.eidolon/sign_post_illwood	Eidolon sign Post Illwood		Указатель из иллвуда	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.palegardenbackport/sign_post_pale_oak	Palegardenbackport sign Post Pale Oak		Указатель из бледного дуба	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_acacia	Sign Post Acacia		Указатель из акации	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_bamboo	Sign Post Bamboo		Указатель из бамбука	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_birch	Sign Post Birch		Указатель из берёзы	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_cherry	Sign Post Cherry		Указатель из вишни	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_crimson	Sign Post Crimson		Указатель из багрового дерева	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_dark_oak	Sign Post Dark Oak		Указатель из тёмного дуба	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_jungle	Sign Post Jungle		Указатель из тропического дерева	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_mangrove	Sign Post Mangrove		Указатель из мангрового дерева	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_oak	Sign Post Oak		Указатель из дуба	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_spruce	Sign Post Spruce		Указатель из ели	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.sign_post_warped	Sign Post Warped		Указатель из искажённого дерева	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.tconstruct/sign_post_bloodshroom	Tconstruct sign Post Bloodshroom		Указатель из кровавого гриба	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.tconstruct/sign_post_enderbark	Tconstruct sign Post Enderbark		Указатель из эндербарка	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.tconstruct/sign_post_greenheart	Tconstruct sign Post Greenheart		Указатель из зелёного сердца	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.tconstruct/sign_post_skyroot	Tconstruct sign Post Skyroot		Указатель из небесного корня	Русское название отсутствует; en_us восстановлен по ID.
+supplementaries	item.supplementaries.thermal/sign_post_rubberwood	Thermal sign Post Rubberwood		Указатель из каучукового дерева	Русское название отсутствует; en_us восстановлен по ID.
+tempad	item.tempad.he_who_remains_tempad	§6Tempad		§6Темпад Того, кто остаётся	Русское название отсутствует.
+tempad	item.tempad.location_card	Location Card		Карта местоположения	Русское название отсутствует.
+thermal	item.thermal.amaranth	Amaranth		Амарант	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.amaranth_block	Amaranth Block		Блок амаранта	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.amaranth_seeds	Amaranth Seeds		Семена амаранта	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.apatite	Apatite		Апатит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.apatite_block	Apatite Block		Блок апатита	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.apatite_dust	Apatite Dust		Апатитовая пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.apple_block	Apple Block		Блок яблок	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.aquachow	Aquachow		Корм для рыб	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.barley	Barley		Ячмень	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.barley_block	Barley Block		Блок ячменя	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.barley_seeds	Barley Seeds		Семена ячменя	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.basalz_powder	Basalz Powder		Порошок базальца	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.basalz_rod	Basalz Rod		Стержень базальца	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.basalz_spawn_egg	Basalz Spawn Egg		Яйцо призыва базальца	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.beekeeper_boots	Beekeeper Boots		Ботинки пчеловода	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.beekeeper_chestplate	Beekeeper Chestplate		Куртка пчеловода	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.beekeeper_fabric	Beekeeper Fabric		Ткань пчеловода	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.beekeeper_helmet	Beekeeper Helmet		Шляпа пчеловода	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.beekeeper_leggings	Beekeeper Leggings		Штаны пчеловода	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.beetroot_block	Beetroot Block		Блок свёклы	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.bell_pepper	Bell Pepper		Сладкий перец	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.bell_pepper_block	Bell Pepper Block		Блок сладкого перца	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.bell_pepper_seeds	Bell Pepper Seeds		Семена сладкого перца	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.bitumen_block	Bitumen Block		Блок битума	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.black_rockwool	Black Rockwool		Чёрная минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.blitz_powder	Blitz Powder		Порошок блица	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.blitz_rod	Blitz Rod		Стержень блица	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.blitz_spawn_egg	Blitz Spawn Egg		Яйцо призыва блица	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.blizz_powder	Blizz Powder		Порошок близза	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.blizz_spawn_egg	Blizz Spawn Egg		Яйцо призыва близза	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.blue_rockwool	Blue Rockwool		Синяя минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.brown_rockwool	Brown Rockwool		Коричневая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.carrot_block	Carrot Block		Блок моркови	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.carrot_cake	Carrot Cake		Морковный торт	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.charge_bench	Charge Bench		Зарядный стол	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cheese_wedge	Cheese Wedge		Кусочек сыра	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cheese_wheel	Cheese Wheel		Головка сыра	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.chiller_ball_cast	Chiller Ball Cast		Форма для шара	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.chiller_ingot_cast	Chiller Ingot Cast		Форма для слитка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.chiller_rod_cast	Chiller Rod Cast		Форма для стержня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.chiseled_rich_slag	Chiseled Rich Slag		Резной обогащённый шлак	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.chiseled_slag	Chiseled Slag		Резной шлак	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.chocolate_cake	Chocolate Cake		Шоколадный торт	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cinnabar	Cinnabar		Киноварь	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cinnabar_block	Cinnabar Block		Блок киновари	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cinnabar_dust	Cinnabar Dust		Пыль киновари	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.coal_coke	Coal Coke		Коксовый уголь	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.coal_coke_block	Coal Coke Block		Блок коксового угля	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.coffee	Coffee		Кофе	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.coffee_block	Coffee Block		Блок кофе	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.coffee_seeds	Coffee Seeds		Семена кофе	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.compost	Compost		Компост	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cooked_corn	Cooked Corn		Жареная кукуруза	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cooked_eggplant	Cooked Eggplant		Жареный баклажан	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cooked_mushroom	Cooked Mushroom		Жареный гриб	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.copper_coin	Copper Coin		Медная монета	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.copper_dust	Copper Dust		Медная пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.copper_gear	Copper Gear		Медная шестерня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.copper_nugget	Copper Nugget		Кусочек меди	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.copper_plate	Copper Plate		Медная пластина	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.corn	Corn		Кукуруза	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.corn_block	Corn Block		Блок кукурузы	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.corn_seeds	Corn Seeds		Семена кукурузы	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cracked_rich_slag_bricks	Cracked Rich Slag Bricks		Потрескавшиеся кирпичи из обогащённого шлака	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.cracked_slag_bricks	Cracked Slag Bricks		Потрескавшиеся шлаковые кирпичи	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.creosote_bucket	Creosote Bucket		Ведро креозота	Русское название отсутствует; en_us восстановлен по ID.
+thermal	block.thermal.cured_rubber_block	Block of Cured Glue		Блок затвердевшего клея	Русское название отсутствует.
+thermal	item.thermal.cyan_rockwool	Cyan Rockwool		Бирюзовая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.deep_aquachow	Deep Aquachow		Глубинный корм для рыб	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.detonator	Detonator		Детонатор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_composter	Device Composter		Механический компостер	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_fisher	Device Fisher		Водный уловитель	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_hive_extractor	Device Hive Extractor		Улей-экстрактор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_nullifier	Device Nullifier		Уничтожитель предметов	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_potion_diffuser	Device Potion Diffuser		Распылитель зелий	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_soil_infuser	Device Soil Infuser		Обогатитель почвы	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_tree_extractor	Device Tree Extractor		Древесный экстрактор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_water_gen	Device Water Gen		Водный накопитель	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.device_xp_condenser	Device XP Condenser		Конденсатор опыта	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.diamond_dust	Diamond Dust		Алмазная пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.diamond_gear	Diamond Gear		Алмазная шестерня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.drill_head	Drill Head		Буровая головка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_compression	Dynamo Compression		Компрессионный генератор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_disenchantment	Dynamo Disenchantment		Генератор снятия чар	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_fuel_augment	Dynamo Fuel Augment		Топливный катализатор генератора	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_gourmand	Dynamo Gourmand		Гурманский генератор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_lapidary	Dynamo Lapidary		Генератор на самоцветах	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_magmatic	Dynamo Magmatic		Магматический генератор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_numismatic	Dynamo Numismatic		Генератор на монетах	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_output_augment	Dynamo Output Augment		Распределитель энергии генератора	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_stirling	Dynamo Stirling		Генератор Стирлинга	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.dynamo_throttle_augment	Dynamo Throttle Augment		Регулятор генератора	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.earth_charge	Earth Charge		Земляной заряд	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.earth_grenade	Earth Grenade		Земляная граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.earth_tnt	Earth TNT		Земляной динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.eggplant	Eggplant		Баклажан	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.eggplant_block	Eggplant Block		Блок баклажана	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.eggplant_seeds	Eggplant Seeds		Семена баклажана	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.emerald_dust	Emerald Dust		Изумрудная пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.emerald_gear	Emerald Gear		Изумрудная шестерня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.ender_bucket	Ender Bucket		Эндер-ведро	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.ender_grenade	Ender Grenade		Эндерная граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.ender_pearl_dust	Ender Pearl Dust		Пыль эндер-жемчуга	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.ender_tnt	Ender TNT		Эндерный динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_block	Enderium Block		Блок эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_coin	Enderium Coin		Монета из эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_dust	Enderium Dust		Пыль эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_gear	Enderium Gear		Шестерня из эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_glass	Enderium Glass		Стекло из эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_ingot	Enderium Ingot		Слиток эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_nugget	Enderium Nugget		Кусочек эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.enderium_plate	Enderium Plate		Пластина из эндерия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.energy_cell	Energy Cell		Энергетическая ячейка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.energy_cell_frame	Energy Cell Frame		Каркас энергетической ячейки	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.energy_limiter_attachment	Attachment: Redstone Flux Limiter		Насадка: ограничитель RF	Русское название отсутствует.
+thermal	item.thermal.filter_attachment	Attachment: Filter		Насадка: фильтр	Русское название отсутствует.
+thermal	item.thermal.fire_grenade	Fire Grenade		Огненная граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.fire_tnt	Fire TNT		Огненный динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.flax	Flax		Лён	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.flax_block	Flax Block		Блок льна	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.flax_seeds	Flax Seeds		Семена льна	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.florb	Florb		Флорб	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.fluid_cell	Fluid Cell		Жидкостная ячейка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.fluid_cell_frame	Fluid Cell Frame		Каркас жидкостной ячейки	Русское название отсутствует; en_us восстановлен по ID.
+thermal	block.thermal.fluid_duct	Fluiduct		Жидкостная труба	Русское название отсутствует.
+thermal	block.thermal.fluid_duct_windowed	Fluiduct (Windowed)		Жидкостная труба с окном	Русское название отсутствует.
+thermal	item.thermal.fluid_filter_augment	Fluid Filter Augment		Фильтр жидкости	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.fluid_reservoir	Fluid Reservoir		Переносной резервуар	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.fluid_tank_augment	Fluid Tank Augment		Расширитель резервуара	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.fluid_tank_creative_augment	Fluid Tank Creative Augment		Бесконечный резервуар	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.flux_capacitor	Flux Capacitor		Потоковый конденсатор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.flux_magnet	Flux Magnet		Потоковый магнит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.frost_melon	Frost Melon		Морозная дыня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.frost_melon_seeds	Frost Melon Seeds		Семена морозной дыни	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.frost_melon_slice	Frost Melon Slice		Ломтик морозной дыни	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.glowstone_bucket	Glowstone Bucket		Ведро жидкого светокамня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.glowstone_grenade	Glowstone Grenade		Светокаменная граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.glowstone_tnt	Glowstone TNT		Светокаменный динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.gold_coin	Gold Coin		Золотая монета	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.gold_dust	Gold Dust		Золотая пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.gold_gear	Gold Gear		Золотая шестерня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.gold_plate	Gold Plate		Золотая пластина	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.gray_rockwool	Gray Rockwool		Серая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.green_bean	Green Bean		Стручковая фасоль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.green_bean_block	Green Bean Block		Блок стручковой фасоли	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.green_bean_pie	Green Bean Pie		Пирог со стручковой фасолью	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.green_bean_seeds	Green Bean Seeds		Семена стручковой фасоли	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.green_rockwool	Green Rockwool		Зелёная минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.gunpowder_block	Gunpowder Block		Блок пороха	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hazmat_boots	Hazmat Boots		Ботинки химзащиты	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hazmat_chestplate	Hazmat Chestplate		Костюм химзащиты	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hazmat_fabric	Hazmat Fabric		Ткань химзащиты	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hazmat_helmet	Hazmat Helmet		Капюшон химзащиты	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hazmat_leggings	Hazmat Leggings		Штаны химзащиты	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hearty_stew	Hearty Stew		Сытное рагу	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.heavy_oil_bucket	Heavy Oil Bucket		Ведро тяжёлой нефти	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hops	Hops		Хмель	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hops_block	Hops Block		Блок хмеля	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.hops_seeds	Hops Seeds		Семена хмеля	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.ice_charge	Ice Charge		Ледяной заряд	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.ice_grenade	Ice Grenade		Ледяная граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.ice_tnt	Ice TNT		Ледяной динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.iron_coin	Iron Coin		Железная монета	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.iron_dust	Iron Dust		Железная пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.iron_plate	Iron Plate		Железная пластина	Русское название отсутствует; en_us восстановлен по ID.
+thermal	block.thermal.item_buffer	Logistical Item Buffer		Буфер предметов	Русское название отсутствует.
+thermal	item.thermal.item_filter_augment	Item Filter Augment		Фильтр предметов	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.jar	Jar		Банка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.jelly	Jelly		Желе	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.junk_net	Junk Net		Сеть для мусора	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lapis_dust	Lapis Dust		Лазуритовая пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lapis_gear	Lapis Gear		Лазуритовая шестерня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.laser_diode	Laser Diode		Лазерный диод	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.latex_bucket	Latex Bucket		Ведро латекса	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.light_blue_rockwool	Light Blue Rockwool		Голубая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.light_gray_rockwool	Light Gray Rockwool		Светло-серая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.light_oil_bucket	Light Oil Bucket		Ведро лёгкой нефти	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lightning_charge	Lightning Charge		Грозовой заряд	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lightning_grenade	Lightning Grenade		Грозовая граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lightning_tnt	Lightning TNT		Грозовой динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lime_rockwool	Lime Rockwool		Лаймовая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lock	Lock		Замок	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_block	Lumium Block		Блок люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_coin	Lumium Coin		Монета из люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_dust	Lumium Dust		Пыль люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_gear	Lumium Gear		Шестерня из люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_glass	Lumium Glass		Стекло из люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_ingot	Lumium Ingot		Слиток люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_nugget	Lumium Nugget		Кусочек люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.lumium_plate	Lumium Plate		Пластина из люмия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_brewer	Machine Brewer		Зельеварочная машина	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_catalyst_augment	Machine Catalyst Augment		Катализатор машины	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_catalyst_creative_augment	Machine Catalyst Creative Augment		Бесконечный катализатор машины	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_crafter	Machine Crafter		Автоматический верстак	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_crucible	Machine Crucible		Магмовый тигель	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_cycle_augment	Machine Cycle Augment		Циклическая обработка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_efficiency_augment	Machine Efficiency Augment		Повышение эффективности	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_efficiency_creative_augment	Machine Efficiency Creative Augment		Безграничная эффективность	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_furnace	Machine Furnace		Механическая печь	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_null_augment	Machine Null Augment		Отмена обработки	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_output_augment	Machine Output Augment		Распределитель продукции	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_sawmill	Machine Sawmill		Лесопилка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.machine_speed_augment	Machine Speed Augment		Повышение скорости	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.magenta_rockwool	Magenta Rockwool		Пурпурная минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.netherite_coin	Netherite Coin		Незеритовая монета	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.netherite_dust	Netherite Dust		Незеритовая пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.netherite_gear	Netherite Gear		Незеритовая шестерня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.netherite_nugget	Netherite Nugget		Кусочек незерита	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.netherite_plate	Netherite Plate		Незеритовая пластина	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.niter	Niter		Селитра	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.niter_block	Niter Block		Блок селитры	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.nuke_grenade	Nuke Grenade		Ядерная граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.nuke_tnt	Nuke TNT		Ядерный динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.obsidian_glass	Obsidian Glass		Обсидиановое стекло	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.onion	Onion		Лук	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.onion_block	Onion Block		Блок лука	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.onion_seeds	Onion Seeds		Семена лука	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.orange_rockwool	Orange Rockwool		Оранжевая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.pbj_sandwich	Pbj Sandwich		Сэндвич с арахисовой пастой и вареньем	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.peanut	Peanut		Арахис	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.peanut_block	Peanut Block		Блок арахиса	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.peanut_butter	Peanut Butter		Арахисовая паста	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.peanut_seeds	Peanut Seeds		Семена арахиса	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.phyto_grenade	Phyto Grenade		Фитограната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.phyto_tnt	Phyto TNT		Фитодинамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.phytogro	Phytogro		Фитогро	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.phytosoil	Phytosoil		Фитопочва	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.phytosoil_tilled	Phytosoil Tilled		Вспаханная фитопочва	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.pink_rockwool	Pink Rockwool		Розовая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.polished_rich_slag	Polished Rich Slag		Полированный обогащённый шлак	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.polished_slag	Polished Slag		Полированный шлак	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.potato_block	Potato Block		Блок картофеля	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.potion_amplifier_augment	Potion Amplifier Augment		Усилитель зелий	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.potion_cake	Potion Cake		Торт с зельем	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.potion_duration_augment	Potion Duration Augment		Продление действия зелий	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.potion_infuser	Potion Infuser		Насыщатель зелий	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.potion_quiver	Potion Quiver		Колчан с зельями	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.press_coin_die	Press Coin Die		Штамп для монет	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.press_gear_die	Press Gear Die		Штамп для шестерней	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.press_packing_2x2_die	Press Packing 2x2 Die		Упаковочный штамп 2×2	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.press_packing_3x3_die	Press Packing 3x3 Die		Упаковочный штамп 3×3	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.press_unpacking_die	Press Unpacking Die		Распаковочный штамп	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.purple_rockwool	Purple Rockwool		Фиолетовая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.quartz_dust	Quartz Dust		Кварцевая пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.quartz_gear	Quartz Gear		Кварцевая шестерня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.radish	Radish		Редис	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.radish_block	Radish Block		Блок редиса	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.radish_seeds	Radish Seeds		Семена редиса	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.raw_lead_block	Raw Lead Block		Блок рудного свинца	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.raw_nickel_block	Raw Nickel Block		Блок рудного никеля	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.raw_silver_block	Raw Silver Block		Блок рудного серебра	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.raw_tin_block	Raw Tin Block		Блок рудного олова	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.red_rockwool	Red Rockwool		Красная минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.redprint	Redprint		Редпринт	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.redstone_bucket	Redstone Bucket		Ведро жидкого редстоуна	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.redstone_grenade	Redstone Grenade		Редстоуновая граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.redstone_servo	Redstone Servo		Редстоуновый сервопривод	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.redstone_tnt	Redstone TNT		Редстоуновый динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.resin_bucket	Resin Bucket		Ведро смолы	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rf_coil	RF Coil		Катушка RF	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rf_coil_augment	RF Coil Augment		Усиленная катушка RF	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rf_coil_creative_augment	RF Coil Creative Augment		Бесконечная катушка RF	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rf_coil_storage_augment	RF Coil Storage Augment		Накопительная катушка RF	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rf_coil_xfer_augment	RF Coil Xfer Augment		Передающая катушка RF	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rf_potato	RF Potato		RF-картошка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rice	Rice		Рис	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rice_block	Rice Block		Блок риса	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rice_seeds	Rice Seeds		Семена риса	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rich_slag	Rich Slag		Обогащённый шлак	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rich_slag_block	Rich Slag Block		Блок обогащённого шлака	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rich_slag_bricks	Rich Slag Bricks		Кирпичи из обогащённого шлака	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rosin	Rosin		Канифоль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rosin_block	Rosin Block		Блок канифоли	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.rs_control_augment	Rs Control Augment		Редстоуновое управление	Русское название отсутствует; en_us восстановлен по ID.
+thermal	block.thermal.rubber_block	Block of Glue		Блок клея	Русское название отсутствует.
+thermal	item.thermal.sadiroot	Sadiroot		Садикорень	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sadiroot_block	Sadiroot Block		Блок садикорня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sadiroot_seeds	Sadiroot Seeds		Семена садикорня	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sap_bucket	Sap Bucket		Ведро древесного сока	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.satchel	Satchel		Сумка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.saw_blade	Saw Blade		Пильный диск	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sawdust	Sawdust		Опилки	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sawdust_block	Sawdust Block		Блок опилок	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.servo_attachment	Attachment: Servo		Насадка: сервопривод	Русское название отсутствует.
+thermal	item.thermal.side_config_augment	Side Config Augment		Настройка сторон	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_block	Signalum Block		Блок сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_coin	Signalum Coin		Монета из сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_dust	Signalum Dust		Пыль сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_gear	Signalum Gear		Шестерня из сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_glass	Signalum Glass		Стекло из сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_ingot	Signalum Ingot		Слиток сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_nugget	Signalum Nugget		Кусочек сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.signalum_plate	Signalum Plate		Пластина из сигналия	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.slag	Slag		Шлак	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.slag_block	Slag Block		Блок шлака	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.slag_bricks	Slag Bricks		Шлаковые кирпичи	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.slime_grenade	Slime Grenade		Слизневая граната	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.slime_tnt	Slime TNT		Слизневый динамит	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.slot_seal	Slot Seal		Заглушка слота	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.spice_cake	Spice Cake		Пряный торт	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.spinach	Spinach		Шпинат	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.spinach_block	Spinach Block		Блок шпината	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.spinach_seeds	Spinach Seeds		Семена шпината	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.spring_salad	Spring Salad		Весенний салат	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.strawberry	Strawberry		Клубника	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.strawberry_block	Strawberry Block		Блок клубники	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.strawberry_seeds	Strawberry Seeds		Семена клубники	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.stuffed_pepper	Stuffed Pepper		Фаршированный перец	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.stuffed_pumpkin	Stuffed Pumpkin		Фаршированная тыква	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sugar_cane_block	Sugar Cane Block		Блок сахарного тростника	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sulfur	Sulfur		Сера	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sulfur_block	Sulfur Block		Блок серы	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sulfur_dust	Sulfur Dust		Серная пыль	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.sushi_maki	Sushi Maki		Маки-суши	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.syrup_bottle	Syrup Bottle		Бутылка сиропа	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.syrup_bucket	Syrup Bucket		Ведро сиропа	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tar_block	Tar Block		Блок гудрона	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tea	Tea		Чай	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tea_block	Tea Block		Блок чая	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tea_seeds	Tea Seeds		Семена чая	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tomato	Tomato		Помидор	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tomato_block	Tomato Block		Блок помидоров	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tomato_sauce	Tomato Sauce		Томатный соус	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tomato_seeds	Tomato Seeds		Семена помидоров	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.tree_oil_bucket	Tree Oil Bucket		Ведро древесного масла	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.turbo_servo_attachment	Attachment: Turbo-Servo		Насадка: турбосервопривод	Русское название отсутствует.
+thermal	item.thermal.upgrade_augment_1	Upgrade Augment 1		Закалённое интегральное улучшение	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.upgrade_augment_2	Upgrade Augment 2		Усиленное интегральное улучшение	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.upgrade_augment_3	Upgrade Augment 3		Резонирующее интегральное улучшение	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.watering_can	Watering Can		Лейка	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.white_rockwool	White Rockwool		Белая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.wrench	Wrench		Гаечный ключ	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.xp_crystal	XP Crystal		Кристалл опыта	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.xp_stew	XP Stew		Рагу опыта	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.xp_storage_augment	XP Storage Augment		Накопитель опыта	Русское название отсутствует; en_us восстановлен по ID.
+thermal	item.thermal.yellow_rockwool	Yellow Rockwool		Жёлтая минеральная вата	Русское название отсутствует; en_us восстановлен по ID.
+uppers	block.uppers.upper	Upper		Верхняя воронка	Русское название отсутствует.
+waystones	block.waystones.blackstone_waystone	Black Waystone		Чернокаменный путевой камень	Русское название отсутствует.
+waystones	item.waystones.crumbling_attuned_shard	Crumbling Attuned Shard		Рассыпающийся настроенный осколок	Русское название отсутствует.
+waystones	block.waystones.deepslate_waystone	Deepslate Waystone		Глубинносланцевый путевой камень	Русское название отсутствует.
+waystones	block.waystones.end_stone_waystone	Ender Waystone		Эндерняковый путевой камень	Русское название отсутствует.

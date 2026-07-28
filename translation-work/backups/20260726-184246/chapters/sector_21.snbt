@@ -1,0 +1,885 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sector_21"
+	group: "7A1E9C4F2B8D036E"
+	icon: "create:steam_engine"
+	id: "63270855244ED0BB"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["541234B688B98E86"]
+			description: [
+				"Ashes can be obtained by lighting anything that can catch fire. After the block burns up, it will make ash that can be picked up using a shovel."
+				""
+				"What to burn is entirely up to you. Wood is not super easy to come by in big quantities and the carpet and wallpaper are somehow resistant to the flames. But perhaps you can find something made out of cardboard..."
+			]
+			icon: "supplementaries:ash"
+			id: "22FF287969C58B70"
+			rewards: [{
+				count: 10
+				id: "0F48B1CD708333BF"
+				item: "supplementaries:ash"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "Dust to Dust"
+			tasks: [
+				{
+					id: "4560621272125845"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09BE5840BA51E445"
+					item: {
+						Count: 1
+						id: "minecraft:stone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2A98592022F3D424"
+					item: { Count: 5, id: "supplementaries:ash" }
+					type: "item"
+				}
+			]
+			title: "Ashes to Ashes"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"22FF287969C58B70"
+				"541234B688B98E86"
+			]
+			id: "14AF78F1E790FC36"
+			rewards: [{
+				id: "61B8EB29939587CB"
+				item: "create:wrench"
+				type: "item"
+			}]
+			subtitle: "Under Pressure"
+			tasks: [{
+				id: "08A7B6A04AE342A6"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Andesite Alloy"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["594A42AEFA0A83BA"]
+			icon: "create:crushing_wheel"
+			id: "1A5679134A610FF2"
+			shape: "gear"
+			tasks: [
+				{
+					count: 2L
+					id: "64279A17589CDD10"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+				{
+					id: "15D4A57CED9E7327"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			title: "Become Dust"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1BFE1926B47FD92D"
+				"06DADC2BB0854FB1"
+			]
+			description: [
+				"There is no wind in the Backrooms."
+				""
+				"But luckily for you, you can now make your first steam engine."
+				""
+				"All it needs is some fuel in the basic burners and a good supply of water."
+				""
+				"Water can be pumped out of an infinite water source, as shown in the image below."
+				""
+				"The steam engine will need to pump its own water; you just need to kickstart it with a Hand Crank."
+				""
+				"It should be noted that campfires do not have enough heat to power the engine."
+				""
+				"{image:kubejs:textures/quests/steam_engine.png width:200 height:100 align:center}"
+			]
+			icon: "create:steam_engine"
+			id: "594A42AEFA0A83BA"
+			rewards: [
+				{
+					id: "7B9FF4CD15F22D1F"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "528BBD2E556BE484"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Under Pressure"
+			tasks: [
+				{
+					id: "0D13D3BFC3429D9F"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "55E3F0676C10222E"
+					item: { Count: 4, id: "create:fluid_tank" }
+					type: "item"
+				}
+				{
+					id: "73D70B8AE2F77131"
+					item: "createlowheated:basic_burner"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "549465DA939C6347"
+					item: { Count: 3, id: "create:fluid_pipe" }
+					type: "item"
+				}
+				{
+					id: "19DAB05B45BD6463"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "596D8CE6FF67748D"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			title: "Entering the Steam Age"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0D014F9EC35B1333"
+				"06DADC2BB0854FB1"
+			]
+			icon: "create:copper_nugget"
+			id: "1BFE1926B47FD92D"
+			tasks: [
+				{
+					count: 3L
+					id: "6715118D2D6FBD2F"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "43E74BE23E369443"
+					item: { Count: 5, id: "create:copper_nugget" }
+					type: "item"
+				}
+			]
+			title: "Getting Copper"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["14AF78F1E790FC36"]
+			icon: "create:mechanical_press"
+			id: "0D014F9EC35B1333"
+			rewards: [{
+				count: 3
+				id: "61B2C6D2D4F2269B"
+				item: "supplementaries:pancake"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Under Pressure"
+			tasks: [
+				{
+					id: "2EBC0F856411C837"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "3CB05BDB2BF3E53A"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "Mechanical Press"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["14AF78F1E790FC36"]
+			id: "06DADC2BB0854FB1"
+			rewards: [{
+				id: "62470CB9E64072BC"
+				item: "woodenhopper:wooden_hopper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3933B16D8B5B8473"
+				item: "createlowheated:basic_burner"
+				type: "item"
+			}]
+			title: "Burner without Blaze"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["14AF78F1E790FC36"]
+			icon: "immersiveengineering:coke_oven"
+			id: "5782203B2280911B"
+			rewards: [{
+				id: "62D66E5C5A3009C5"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Endless Charcoal"
+			tasks: [
+				{
+					id: "5542F176D47F2C41"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6757C61362897546"
+					item: { Count: 8, id: "immersiveengineering:treated_wood_horizontal" }
+					type: "item"
+				}
+				{
+					id: "15B8F415ACA758A5"
+					item: "immersiveengineering:coke_oven"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Big Furnace"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5782203B2280911B"]
+			description: [
+				"A lot of furniture can be turned into Blocks of Charcoal."
+				""
+				"That should be a good source of fuel for the upcoming steamage."
+			]
+			icon: "thermal:charcoal_block"
+			id: "2301997FBD95F04C"
+			tasks: [{
+				id: "72317B15FCD063EC"
+				item: "thermal:charcoal_block"
+				type: "item"
+			}]
+			title: "Making Better Fuel"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5CB40F1DE52A4841"]
+			description: [
+				"It seems you mishandled the compound and it exploded in your face! You fell unconscious and noclipped into a realm beyond time."
+				""
+				"A new chapter! You should learn about where you are now."
+			]
+			id: "021C50BEE88E0B07"
+			rewards: [
+				{
+					id: "36AFB541A92C8E45"
+					item: "minecraft:music_disc_pigstep"
+					type: "item"
+				}
+				{
+					id: "375270AFB42E4609"
+					item: "plushie_buddies:plushie_ghast"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Explosive Accident"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "29B5E3BFD5FBF7D5"
+				title: "Visit the Infinite Library"
+				type: "dimension"
+			}]
+			title: "Realm Beyond Time"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"571118233A7F0DA3"
+				"6673DDE009655B63"
+			]
+			description: [
+				"The critical quartz component found within this technology seems to be a really rare find within the backrooms."
+				""
+				"Maybe explore other quests in hopes of finding another way?"
+			]
+			id: "5A988566BC220234"
+			subtitle: "Metallurgy"
+			tasks: [{
+				id: "16C2A7EC029D4146"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			title: "Electronic Component"
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["203FC15B09EAA27F"]
+			id: "541234B688B98E86"
+			size: 3.0d
+			tasks: [{
+				id: "55DF6C1569B150BA"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "Cobblestone Generator"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"5A988566BC220234"
+				"1A5679134A610FF2"
+			]
+			description: ["Metal furniture can be melted to gain all kinds of metals."]
+			icon: "tconstruct:smeltery_controller"
+			id: "60DCFFC671BBD126"
+			rewards: [
+				{
+					id: "30C8C255AB9470AB"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "61BCAF221BCCC746"
+					item: "minecraft:music_disc_otherside"
+					type: "item"
+				}
+				{
+					id: "3CA71AF2DF9FE03B"
+					item: "refurbished_furniture:light_fridge"
+					type: "item"
+				}
+				{
+					id: "236EAA963388D69D"
+					item: "plushie_buddies:plushie_iron_golem"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Metallurgy"
+			tasks: [
+				{
+					id: "18D0C2E2D411293A"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "5D1A844F35BC20F7"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "139972A5FE7888B0"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "1D1994D0F7461108"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "7D740EBC95632C6F"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "Building a Smeltery"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["541234B688B98E86"]
+			description: [""]
+			id: "1773F3D3ECBC4923"
+			rewards: [{
+				id: "04F52658209EF665"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Time to bring some more life to this place"
+			tasks: [{
+				id: "0E093878C6AA093A"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			title: "Apothecary"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["495E194ACEFD9CD7"]
+			id: "2B462CBD198F53F7"
+			subtitle: "Time to bring some more life to this place"
+			tasks: [{
+				id: "0BE20FD7C74DA1E5"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			title: "Pure Daisy"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5782203B2280911B"
+				"2B462CBD198F53F7"
+			]
+			description: ["You can turn Treated wood into Livingwood using the pure daisy."]
+			icon: "botania:livingwood"
+			id: "4EFCB9F8F9EDC5EB"
+			tasks: [{
+				count: 8L
+				id: "1CC0DB91848B0BFC"
+				item: "botania:livingwood"
+				type: "item"
+			}]
+			title: "Reviving wood"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4EFCB9F8F9EDC5EB"]
+			id: "571118233A7F0DA3"
+			shape: "gear"
+			subtitle: "Metallurgy"
+			tasks: [{
+				id: "177001536B1F99A0"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Deployer"
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["495E194ACEFD9CD7"]
+			description: ["Fluxtooth spores have the properties of redstone. Creating dust out of them could be useful for circuitry"]
+			id: "60885F74323E143A"
+			subtitle: "Taste the Rainbow"
+			tasks: [{
+				id: "1258CCBED9626C98"
+				item: "thermal:redstone_mushroom_spores"
+				type: "item"
+			}]
+			title: "Redstone Mushroom Spores"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1773F3D3ECBC4923"
+				"22FF287969C58B70"
+			]
+			description: [
+				"Soggy carpet can be used in combination with Floral Fertiliser to bring some colour to this monochrome place."
+				""
+				"Any dye can be used to make it in the Petal Apothecary. Yellow dye is the easiest to obtain since it can be extracted from wallpaper by washing it with an Encased Fan."
+			]
+			icon: "botania:fertilizer"
+			id: "495E194ACEFD9CD7"
+			rewards: [
+				{
+					count: 5
+					id: "582C501AB1860969"
+					item: "botania:fertilizer"
+					type: "item"
+				}
+				{
+					id: "75C4CA1A7F3D3F42"
+					item: "botania:flower_bag"
+					type: "item"
+				}
+			]
+			subtitle: "Taste the Rainbow"
+			tasks: [
+				{
+					id: "6C87F9E5B39111AD"
+					item: "berry_good:sweet_berry_pips"
+					type: "item"
+				}
+				{
+					id: "0B2ABB2BB3C850AC"
+					item: "supplementaries:ash"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "04772AEB0EDB9BB5"
+					item: { Count: 2, id: "minecraft:yellow_dye" }
+					type: "item"
+				}
+				{
+					id: "1D8D76EAA77D721A"
+					item: "botania:fertilizer"
+					type: "item"
+				}
+			]
+			title: "Floral Fertilizer"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5CB40F1DE52A4841"]
+			description: [
+				"Snad not only allows for faster growth, but if a block of Snad is updated by redstone it will force the plant on top of it to grow."
+				""
+				"Snad can also be created by right clicking a sand block with unstable compound."
+			]
+			icon: "snad:snad"
+			id: "2A93ADA6EAA0C7EB"
+			subtitle: "Can this be exploited?"
+			tasks: [
+				{
+					id: "391152D4E83414B7"
+					item: "snad:snad"
+					type: "item"
+				}
+				{
+					id: "7239BC1114F6735C"
+					item: "snad:red_snad"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "63907886E073C5B1"
+					item: "snad:suol_snad"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Forceful Growth"
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1BFE1926B47FD92D"]
+			description: [
+				"You can turn sweet berries into Liminal Jam."
+				""
+				"Sweet berries and honey can be turned into sugar."
+			]
+			icon: "brewinandchewin:sweet_berry_jam"
+			id: "347FB9BA17B5C66C"
+			rewards: [
+				{
+					count: 3
+					id: "5FC9403C7D55E44E"
+					item: "brewinandchewin:sweet_berry_jam"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "17A1A221FE5B4639"
+					item: "brewinandchewin:coaster"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "263E3E78F0C20DD0"
+					item: "refurbished_furniture:sweet_berry_jam_toast"
+					type: "item"
+				}
+			]
+			subtitle: "Smooth with Limited Taste"
+			tasks: [
+				{
+					id: "225D62380594BB5A"
+					item: "miners_delight:copper_pot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "26EC23B48D974895"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+				{
+					id: "77F4A59277554934"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "7566EDF33A22D38E"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "33C7B97B21FB8994"
+					item: "brewinandchewin:sweet_berry_jam"
+					type: "item"
+				}
+			]
+			title: "Liminal Jam"
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4EFCB9F8F9EDC5EB"]
+			description: [
+				"You can turn Livingwood into Charcoal using the coke oven."
+				"After that, Charcoal can be turned into Coal Coke."
+				""
+				"Which means that every plank can, in theory, be turned into Coal Coke with the right setup."
+			]
+			icon: "immersiveengineering:coal_coke"
+			id: "2138ADDDF2575A11"
+			tasks: [{
+				id: "15D84F269B0AF727"
+				title: "Completed"
+				type: "checkmark"
+			}]
+			title: "Renewable Coal Coke"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["495E194ACEFD9CD7"]
+			description: [
+				"With Mystical Flowers you can make all the dyes. "
+				""
+				"This will allow you to start painting with other colours than just yellow."
+				""
+				"You can add dyes to your palette by crafting the palette and dyes together on a crafting table."
+				""
+				"It is now also possible to develop colour film in the Lightroom."
+			]
+			icon: "xercapaint:item_easel"
+			id: "63B870600FBEBB1D"
+			rewards: [
+				{
+					count: 3
+					id: "5789C0B118C49A62"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "2B756AE011DB6C24"
+					item: "xercapaint:item_palette"
+					type: "item"
+				}
+			]
+			subtitle: "Taste the Rainbow!"
+			tasks: [
+				{
+					id: "4C1121ADF7D94181"
+					item: "xercapaint:item_easel"
+					type: "item"
+				}
+				{
+					id: "180A2276E1F5CB5C"
+					item: "xercapaint:item_canvas"
+					type: "item"
+				}
+			]
+			title: "Time to Paint"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["60885F74323E143A"]
+			description: [
+				"A bottle of carpet fluid can be obtained by clicking on soggy carpet with an empty bottle."
+				""
+				"Combining it with with Fluxtooth Spores can make a useful, but unstable compound. "
+				""
+				"Misuse and contact with the substance is known to cause noclipping."
+			]
+			icon: "kubejs:unstable_compound"
+			id: "5CB40F1DE52A4841"
+			subtitle: "Explosive Experiment"
+			tasks: [
+				{
+					id: "71D79BCF9162EB8A"
+					item: "kubejs:carpet_fluid"
+					type: "item"
+				}
+				{
+					id: "408D2BBC86200696"
+					item: "thermal:redstone_mushroom_spores"
+					type: "item"
+				}
+			]
+			title: "Don't Craft This"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["517B51043572C1C3"]
+			description: [
+				"Drinking almond water can give temporary immunity to damage from stepping on sculk. "
+				""
+				"However, too much of it can make you sick and woozy, even to the point of being deadly."
+				""
+				"Other flavours can be made to provide minor beneficial effects."
+			]
+			icon: "kubejs:almond_water_can"
+			id: "4F2591E2772C9EA1"
+			subtitle: "Drink in moderation"
+			tasks: [
+				{
+					id: "2A76C84B0E92168C"
+					item: "kubejs:almond_water_can"
+					type: "item"
+				}
+				{
+					id: "0BFE52C8B6B860FC"
+					item: "kubejs:blue_almond_water_can"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0729BB9496937557"
+					item: "kubejs:green_almond_water_can"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "55D3E3F6EA0FBCBA"
+					item: "kubejs:red_almond_water_can"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Almond Water"
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["021C50BEE88E0B07"]
+			description: ["Luck may be on your side! A much needed material should now be obtainable to you due to your noclipping."]
+			id: "6673DDE009655B63"
+			subtitle: "Critical Component"
+			tasks: [{
+				id: "6D53FBA73B89D651"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1773F3D3ECBC4923"]
+			description: [
+				"Vanilla pods can be placed and grown on soggy carpet."
+				""
+				"Interestingly, their vines can grow in any direction."
+				""
+				"Remember, the sugar used to make these can be obtained from sweet berries."
+			]
+			id: "517B51043572C1C3"
+			subtitle: "Simply vanilla"
+			tasks: [{
+				id: "022BB16532FD5D77"
+				item: "neapolitan:vanilla_pods"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["495E194ACEFD9CD7"]
+			description: ["Wallpaper that you strip can be replaced with a coloured variant. Each variant has a unique texture."]
+			icon: "kubejs:wallpaper_red"
+			id: "21A8A41332493085"
+			tasks: [
+				{
+					id: "389128631626F850"
+					item: "kubejs:wallpaper_red"
+					type: "item"
+				}
+				{
+					id: "05263A11A8ED7971"
+					item: "kubejs:wallpaper_orange"
+					type: "item"
+				}
+				{
+					id: "2C70AE344EF83CCA"
+					item: "kubejs:wallpaper_lime"
+					type: "item"
+				}
+				{
+					id: "13DFC92568BCA9EA"
+					item: "kubejs:wallpaper_green"
+					type: "item"
+				}
+				{
+					id: "0FB25A905AC1B9FE"
+					item: "kubejs:wallpaper_lblue"
+					type: "item"
+				}
+				{
+					id: "7D3C05569836C64A"
+					item: "kubejs:wallpaper_pink"
+					type: "item"
+				}
+				{
+					id: "39AA80CDF9FB4527"
+					item: "kubejs:wallpaper_purple"
+					type: "item"
+				}
+			]
+			title: "Dyed Wallpaper"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["517B51043572C1C3"]
+			description: ["Sugar cane needs to be planted next to water. It grows fastest on snad, but will also grow on sand and dirt."]
+			id: "4ED3976F3A8067BE"
+			tasks: [{
+				id: "3BAA280A9F9615FC"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -5.5d
+		}
+	]
+	title: "Chapter 2"
+}

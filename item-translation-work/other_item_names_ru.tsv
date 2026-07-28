@@ -1,0 +1,58 @@
+namespace	key	en_us	current_ru	proposed_ru	reason
+beachparty	item.beachparty.coconut	Coconut	Coconut	Кокос	В ru_ru оставлено английское название.
+beachparty	item.beachparty.floaty_boat	Floaty Boat	Floaty Boat	Надувная лодочка	В ru_ru оставлено английское название; простой игровой вариант передаёт предмет.
+beachparty	item.beachparty.music_disc_beachparty	Music Disc		Пластинка	Ключ отсутствует в ru_ru.
+beachparty	item.beachparty.music_disc_caribbean_beach	Music Disc		Пластинка	Ключ отсутствует в ru_ru.
+beachparty	item.beachparty.music_disc_pridelands	Music Disc		Пластинка	Ключ отсутствует в ru_ru.
+beachparty	item.beachparty.music_disc_vocalista	Music Disc		Пластинка	Ключ отсутствует в ru_ru.
+beachparty	item.beachparty.music_disc_wild_veins	Music Disc		Пластинка	Ключ отсутствует в ru_ru.
+beachparty	block.beachparty.palm_sprout	Palm Sprout	Palm Sprout	Росток пальмы	В ru_ru оставлено английское название.
+beachparty	block.beachparty.cocoa_cocktail	Cocoa Cocktail	Какао коктейль	Коктейль с какао	Текущее название грамматически неестественно.
+beachparty	item.beachparty.coconut_open	Open Coconut	Вскрытый кокос	Расколотый кокос	«Вскрытый» звучит технически; кокос обычно раскалывают.
+beachparty	block.beachparty.sweetberries_cocktail	Sweetberry Cocktail	Сладко-ягодный коктейль	Коктейль из сладких ягод	Текущее сложное прилагательное звучит неестественно и не совпадает с названием сладких ягод.
+cfm_wap	block.cfm_wap.light_circuit_breaker	Light Circuit Breaker		Светлый автоматический выключатель	Ключ отсутствует в ru_ru; это светлый вариант автоматического выключателя, а не электрощиток.
+fairylights	block.fairylights.fairy_light	Fairy Light		Волшебный фонарик	Ключ отсутствует в ru_ru.
+fairylights	item.fairylights.hanging_lights	Hanging Lights		Подвесная гирлянда	Ключ отсутствует в ru_ru.
+fairylights	block.fairylights.meteor_light	Meteor Light		Фонарик «Метеор»	Ключ отсутствует в ru_ru.
+fairylights	block.fairylights.paper_lantern	Paper Lantern		Бумажный фонарик	Ключ отсутствует в ru_ru.
+miners_delight	item.miners_delight.cave_carrot	Cave Carrot		Пещерная морковь	В моде нет ru_ru; предмет используется в квестах.
+miners_delight	block.miners_delight.copper_pot	Copper Pot		Медный котёл	В моде нет ru_ru; предмет используется в квестах.
+miners_delight	item.miners_delight.moss	Moss		Мох	В моде нет ru_ru; предмет используется в квестах.
+miners_delight	item.miners_delight.silverfish_eggs	Silverfish Eggs		Яйца чешуйницы	В моде нет ru_ru; предмет используется в квестах.
+miners_delight	item.miners_delight.weird_caviar	Weird Caviar		Странная икра	В моде нет ru_ru; предмет используется в квестах.
+miners_delight	block.miners_delight.wild_cave_carrots	Wild Cave Carrots		Дикая пещерная морковь	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_axolotl	Axolotl Plushie		Плюшевый аксолотль	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_blaze	Blaze Plushie		Плюшевый всполох	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_drowned	Drowned Plushie		Плюшевый утопленник	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_enderdragon	Enderdragon Plushie		Плюшевый эндер-дракон	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_enderman	Enderman Plushie		Плюшевый эндермен	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_frog	Frog Plushie		Плюшевая лягушка	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_ghast	Ghast Plushie		Плюшевый гаст	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_guardian	Guardian Plushie		Плюшевый страж	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_iron_golem	Iron Golem Plushie		Плюшевый железный голем	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_magma_cube	Magma Cube Plushie		Плюшевый магмовый куб	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_panda	Panda Plushie		Плюшевая панда	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_pufferfish	Pufferfish Plushie		Плюшевый иглобрюх	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_sniffer	Sniffer Plushie		Плюшевый нюхач	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_turtle	Turtle Plushie		Плюшевая черепаха	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_warden	Warden Plushie		Плюшевый хранитель	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_wither	Wither Plushie		Плюшевый иссушитель	В моде нет ru_ru; предмет используется в квестах.
+plushie_buddies	block.plushie_buddies.plushie_wither_skeleton	Wither Skeleton Plushie		Плюшевый визер-скелет	В моде нет ru_ru; предмет используется в квестах.
+refurbished_furniture	block.refurbished_furniture.computer	Computer		Компьютер	В моде нет ru_ru; предмет используется в квестах.
+refurbished_furniture	block.refurbished_furniture.plate	Plate		Тарелка	В моде нет ru_ru; предмет доступен игроку.
+refurbished_furniture	block.refurbished_furniture.light_electricity_generator	Light Electricity Generator		Светлый электрогенератор	В моде нет ru_ru; предмет используется в квестах.
+refurbished_furniture	item.refurbished_furniture.light_fridge	Light Fridge		Светлый холодильник	В моде нет ru_ru; предмет используется в квестах.
+refurbished_furniture	block.refurbished_furniture.light_fridge	Light Fridge		Светлый холодильник	В моде нет ru_ru; предмет используется в квестах.
+refurbished_furniture	block.refurbished_furniture.light_stove	Light Stove		Светлая плита	В моде нет ru_ru; предмет используется в квестах.
+refurbished_furniture	item.refurbished_furniture.sweet_berry_jam_toast	Sweet Berry Jam Toast		Тост с вареньем из сладких ягод	В моде нет ru_ru; предмет используется в квестах.
+refurbished_furniture	block.refurbished_furniture.television	Television		Телевизор	В моде нет ru_ru; предмет используется в квестах.
+snad	block.snad.red_snad	Red Snad		Красный Snad	Ключ отсутствует в ru_ru; название Snad сохранено как термин мода.
+snad	block.snad.snad	Snad		Snad	Название-перевёртыш и имя мода сохраняются без перевода.
+snad	block.snad.suol_snad	Suol Snad		Suol Snad	Название-перевёртыш и имя мода сохраняются без перевода.
+tempad	item.tempad.tempad	§6Tempad		§6Темпад	Ключ отсутствует в ru_ru; сохранён цветовой код.
+tiab	item.tiab.time_in_a_bottle	Time in a bottle		Время в бутылке	Ключ отсутствует в ru_ru.
+berry_good	item.berry_good.sweet_berry_pips	Sweet Berry Pips	Косточки сладких ягод	Семена сладких ягод	Косточки здесь служат семенами; текущее название вводит в заблуждение.
+brewinandchewin	block.brewinandchewin.coaster	Coaster	Подстаканник	Подставка под кружку	Coaster — подставка под посуду, а не подстаканник-держатель.
+eccentrictome	item.eccentrictome.tome	Eccentric Tome	Чудаковатый Фолиант	Чудаковатый фолиант	Ненужная прописная буква внутри обычного названия предмета.
+farmersdelight	item.farmersdelight.fish_stew	Fish Stew	Тушёная рыба	Рыбная похлёбка	Stew — жидкое блюдо; текущее название означает другой способ приготовления.
+supplementaries	item.supplementaries.bubble_blower	Bubble Blower	Выдуватель пузырей	Палочка для мыльных пузырей	Текущий буквальный перевод звучит как название механизма.
