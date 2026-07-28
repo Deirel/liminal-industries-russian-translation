@@ -127,7 +127,10 @@ def build_quests(
 
 
 def build_items(
-    manifest: dict[str, Any], catalog: dict[str, Any], output: Path
+    manifest: dict[str, Any],
+    catalog: dict[str, Any],
+    runtime_overrides: dict[str, dict[str, str]],
+    output: Path,
 ) -> int:
     assets = output / "assets"
     if assets.exists():
@@ -142,6 +145,13 @@ def build_items(
         if previous is not None and previous != value:
             raise ValueError(f"{key}: conflicting output translations")
         by_namespace[record["namespace"]][key] = value
+
+    for namespace, values in sorted(runtime_overrides.items()):
+        for key, value in sorted(values.items()):
+            previous = by_namespace[namespace].get(key)
+            if previous is not None and previous != value:
+                raise ValueError(f"{key}: runtime audit override conflicts with catalog")
+            by_namespace[namespace][key] = value
 
     for namespace, values in sorted(by_namespace.items()):
         target = assets / namespace / "lang/ru_ru.json"
@@ -182,6 +192,30 @@ def main() -> int:
         raise ValueError("manifest version does not match requested version")
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     validate_catalog(catalog)
+    runtime_overrides_path = version_root / "runtime-audit-overrides.json"
+    runtime_overrides: dict[str, dict[str, str]] = {}
+    if runtime_overrides_path.exists():
+        runtime_overrides_document = json.loads(
+            runtime_overrides_path.read_text(encoding="utf-8")
+        )
+        runtime_overrides_value = runtime_overrides_document.get("translations")
+        if (
+            runtime_overrides_document.get("schema") != 1
+            or not isinstance(runtime_overrides_value, dict)
+            or any(
+                not isinstance(namespace, str)
+                or not isinstance(values, dict)
+                or any(
+                    not isinstance(key, str)
+                    or not isinstance(value, str)
+                    or not value
+                    for key, value in values.items()
+                )
+                for namespace, values in runtime_overrides_value.items()
+            )
+        ):
+            raise ValueError("invalid runtime audit overrides")
+        runtime_overrides = runtime_overrides_value
 
     destination = args.output.resolve()
     with tempfile.TemporaryDirectory(prefix="liminal-translation-") as temp:
@@ -193,7 +227,7 @@ def main() -> int:
         quest_count = build_quests(
             manifest, catalog, args.instance_root.resolve(), generated / "quests"
         )
-        item_count = build_items(manifest, catalog, resourcepack)
+        item_count = build_items(manifest, catalog, runtime_overrides, resourcepack)
         if args.check:
             if snapshot(generated) != snapshot(destination):
                 raise ValueError("generated resources are not current")
@@ -217,6 +251,9 @@ def main() -> int:
         "errors": 0,
         "output_quest_strings": quest_count,
         "output_item_translation_keys": item_count,
+        "runtime_audit_translation_keys": sum(
+            len(values) for values in runtime_overrides.values()
+        ),
     }
     report_path = version_root / "build-report.json"
     if args.check:

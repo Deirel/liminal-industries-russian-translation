@@ -6,5 +6,6 @@
   "item.simpleradio.diamond_module": "Алмазный модуль: %1$s",
   "item.simpleradio.gold_module": "Золотой модуль: %1$s",
   "item.simpleradio.iron_module": "Железный модуль: %1$s",
-  "item.simpleradio.netherite_module": "Незеритовый модуль: %1$s"
+  "item.simpleradio.netherite_module": "Незеритовый модуль: %1$s",
+  "module.simpleradio.empty": "Пусто"
 }

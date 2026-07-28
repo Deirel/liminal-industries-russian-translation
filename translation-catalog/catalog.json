@@ -21819,7 +21819,7 @@
       {
         "source_hash": "sha256:1a2b61269d0eb4e72bed0957e96dd05b9afb8ef121f74fd418e1a2cd9592365f",
         "source": "Summoning 101",
-        "translation": "Summoning 101"
+        "translation": "Основы призывания"
       }
     ],
     "quest:08AA2EDF465DE029:description:0": [
@@ -22041,7 +22041,7 @@
       {
         "source_hash": "sha256:d1606ce45e8a6b8519d862ece5f0547704e2039a92eeda690ae64f3107305f75",
         "source": "Consult the \"Ars Eccelecia\" and \"Summoning 101\" for more information.",
-        "translation": "Подробности можно узнать из «Ars Ecclesia» и «Summoning 101»."
+        "translation": "Подробности можно узнать из «Ars Ecclesia» и «Основ призывания»."
       }
     ],
     "quest:0D7F62210B243747:subtitle": [
@@ -26309,7 +26309,7 @@
       {
         "source_hash": "sha256:b21caebc2f5c255d25ae91cc7e4c973cb7254a5d077e4a4ff31caf684f019af5",
         "source": "Consult \"Summoning 101\" for more information.",
-        "translation": "Подробности можно узнать из «Summoning 101»."
+        "translation": "Подробности можно узнать из «Основ призывания»."
       }
     ],
     "quest:68DFDA75DA5FB0E9:title": [

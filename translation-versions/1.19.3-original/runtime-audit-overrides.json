@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "translations": {
+    "actuallyadditions": {
+      "fluid_type.actuallyadditions.canola_oil": "Рапсовое масло",
+      "fluid_type.actuallyadditions.crystallized_oil": "Кристаллизованное масло",
+      "fluid_type.actuallyadditions.empowered_oil": "Насыщенное масло",
+      "fluid_type.actuallyadditions.refined_canola_oil": "Очищенное рапсовое масло"
+    },
+    "ceramicbucket": {
+      "item.ceramicbucket.ceramic_bucket.filled": "Керамическое ведро: %s"
+    },
+    "decorative_blocks": {
+      "item.decorative_blocks.blockstate_copy_item": "Копировщик состояния блока"
+    },
+    "fairylights": {
+      "color.fairylights.black": "Чёрный",
+      "color.fairylights.blue": "Синий",
+      "color.fairylights.brown": "Коричневый",
+      "color.fairylights.cyan": "Бирюзовый",
+      "color.fairylights.gray": "Серый",
+      "color.fairylights.green": "Зелёный",
+      "color.fairylights.light_blue": "Голубой",
+      "color.fairylights.light_gray": "Светло-серый",
+      "color.fairylights.lime": "Лаймовый",
+      "color.fairylights.magenta": "Пурпурный",
+      "color.fairylights.orange": "Оранжевый",
+      "color.fairylights.pink": "Розовый",
+      "color.fairylights.purple": "Фиолетовый",
+      "color.fairylights.red": "Красный",
+      "color.fairylights.white": "Белый",
+      "color.fairylights.yellow": "Жёлтый",
+      "format.fairylights.colored": "%2$s (%1$s)",
+      "format.fairylights.dyed_colored": "Повторная окраска: %1$s"
+    },
+    "immersiveengineering": {
+      "fluid_type.immersiveengineering.acetaldehyde": "Ацетальдегид",
+      "fluid_type.immersiveengineering.biodiesel": "Биодизель",
+      "fluid_type.immersiveengineering.concrete": "Жидкий бетон",
+      "fluid_type.immersiveengineering.creosote": "Креозотовое масло",
+      "fluid_type.immersiveengineering.ethanol": "Этанол",
+      "fluid_type.immersiveengineering.herbicide": "Гербицид",
+      "fluid_type.immersiveengineering.phenolic_resin": "Фенольная смола",
+      "fluid_type.immersiveengineering.plantoil": "Растительное масло",
+      "fluid_type.immersiveengineering.redstone_acid": "Редстоуновая кислота",
+      "item.immersiveengineering.fake_icon_birthday": "День рождения",
+      "item.immersiveengineering.fake_icon_bttf": "Назад в будущее",
+      "item.immersiveengineering.fake_icon_drillbreak": "Сломанный бур",
+      "item.immersiveengineering.fake_icon_fried": "Поджарено",
+      "item.immersiveengineering.fake_icon_lucky": "Счастливчик",
+      "item.immersiveengineering.fake_icon_ravenholm": "Рейвенхольм",
+      "item.immersiveengineering.shader.name.acepride": "Ас",
+      "item.immersiveengineering.shader.name.bipride": "Люблю обоих",
+      "item.immersiveengineering.shader.name.enbypride": "НБ",
+      "item.immersiveengineering.shader.name.gaypride": "Парни любят парней",
+      "item.immersiveengineering.shader.name.lesbianpride": "Девушки любят девушек",
+      "item.immersiveengineering.shader.name.transpride": "Сломай цис-тему"
+    },
+    "kubejs": {
+      "fluid.kubejs.ball_pit": "Шариковый бассейн",
+      "fluid.kubejs.liquid_time": "Поток времени"
+    },
+    "minecraft": {
+      "item.minecraft.lingering_potion.effect.haste": "Туманное зелье спешки",
+      "item.minecraft.lingering_potion.effect.long_haste": "Туманное зелье спешки",
+      "item.minecraft.lingering_potion.effect.long_mining_fatigue": "Туманное зелье утомления",
+      "item.minecraft.lingering_potion.effect.mining_fatigue": "Туманное зелье утомления",
+      "item.minecraft.lingering_potion.effect.strong_haste": "Туманное зелье спешки",
+      "item.minecraft.lingering_potion.effect.strong_mining_fatigue": "Туманное зелье утомления",
+      "item.minecraft.lingering_potion.effect.tconstruct.enderference": "Туманное зелье эндерференции",
+      "item.minecraft.lingering_potion.effect.tconstruct.experienced": "Туманное зелье опыта",
+      "item.minecraft.lingering_potion.effect.tconstruct.levitation": "Туманное зелье левитации",
+      "item.minecraft.lingering_potion.effect.tconstruct.ricochet": "Туманное зелье рикошета",
+      "item.minecraft.potion.effect.haste": "Зелье спешки",
+      "item.minecraft.potion.effect.long_haste": "Зелье спешки",
+      "item.minecraft.potion.effect.long_mining_fatigue": "Зелье утомления",
+      "item.minecraft.potion.effect.mining_fatigue": "Зелье утомления",
+      "item.minecraft.potion.effect.strong_haste": "Зелье спешки",
+      "item.minecraft.potion.effect.strong_mining_fatigue": "Зелье утомления",
+      "item.minecraft.potion.effect.tconstruct.enderference": "Зелье эндерференции",
+      "item.minecraft.potion.effect.tconstruct.experienced": "Зелье опыта",
+      "item.minecraft.potion.effect.tconstruct.levitation": "Зелье левитации",
+      "item.minecraft.potion.effect.tconstruct.ricochet": "Зелье рикошета",
+      "item.minecraft.splash_potion.effect.haste": "Взрывное зелье спешки",
+      "item.minecraft.splash_potion.effect.long_haste": "Взрывное зелье спешки",
+      "item.minecraft.splash_potion.effect.long_mining_fatigue": "Взрывное зелье утомления",
+      "item.minecraft.splash_potion.effect.mining_fatigue": "Взрывное зелье утомления",
+      "item.minecraft.splash_potion.effect.strong_haste": "Взрывное зелье спешки",
+      "item.minecraft.splash_potion.effect.strong_mining_fatigue": "Взрывное зелье утомления",
+      "item.minecraft.splash_potion.effect.tconstruct.enderference": "Взрывное зелье эндерференции",
+      "item.minecraft.splash_potion.effect.tconstruct.experienced": "Взрывное зелье опыта",
+      "item.minecraft.splash_potion.effect.tconstruct.levitation": "Взрывное зелье левитации",
+      "item.minecraft.splash_potion.effect.tconstruct.ricochet": "Взрывное зелье рикошета",
+      "item.minecraft.tipped_arrow.effect.haste": "Стрела спешки",
+      "item.minecraft.tipped_arrow.effect.long_haste": "Стрела спешки",
+      "item.minecraft.tipped_arrow.effect.long_mining_fatigue": "Стрела утомления",
+      "item.minecraft.tipped_arrow.effect.mining_fatigue": "Стрела утомления",
+      "item.minecraft.tipped_arrow.effect.strong_haste": "Стрела спешки",
+      "item.minecraft.tipped_arrow.effect.strong_mining_fatigue": "Стрела утомления",
+      "item.minecraft.tipped_arrow.effect.tconstruct.enderference": "Стрела эндерференции",
+      "item.minecraft.tipped_arrow.effect.tconstruct.experienced": "Стрела опыта",
+      "item.minecraft.tipped_arrow.effect.tconstruct.levitation": "Стрела левитации",
+      "item.minecraft.tipped_arrow.effect.tconstruct.ricochet": "Стрела рикошета"
+    },
+    "moonlight": {
+      "x": "Служебный предмет"
+    },
+    "neapolitan": {
+      "block.neapolitan.magic_beans": "Волшебные бобы"
+    },
+    "patchouli": {
+      "Building a Reality Frame": "Создание каркаса реальности",
+      "Summoning 101": "Основы призывания"
+    },
+    "plushie_buddies": {
+      "block.plushie_buddies.workbench": "Верстак для плюшевых игрушек"
+    },
+    "simpleradio": {
+      "module.simpleradio.empty": "Пусто"
+    },
+    "tconstruct": {
+      "fluid.tconstruct.beetroot_soup": "Свекольный суп",
+      "fluid.tconstruct.honey": "Мёд",
+      "fluid.tconstruct.ichor": "Ихор",
+      "fluid.tconstruct.meat_soup": "Мясной суп",
+      "fluid.tconstruct.molten_cinderslime": "Расплавленная зольная слизь",
+      "fluid.tconstruct.mushroom_stew": "Тушёные грибы",
+      "fluid.tconstruct.rabbit_stew": "Тушёный кролик",
+      "item.tconstruct.potion_bucket.contents": "%s в ведре",
+      "item.tconstruct.slime_helmet.material.tconstruct.darkthread": "Слизневый череп пещерного паука",
+      "item.tconstruct.slime_helmet.material.tconstruct.glass": "Слизневый череп крипера",
+      "item.tconstruct.slime_helmet.material.tconstruct.string": "Слизневый череп паука",
+      "item.tconstruct.slime_helmet.material.tconstruct.venombone": "Слизневый череп зимогора",
+      "item.tconstruct.tool.format": "%2$s (%1$s)",
+      "item.tconstruct.tool.material_separator": "%s, %s",
+      "material.tconstruct.bamboo": "Бамбук",
+      "material.tconstruct.blazewood": "Огненное дерево",
+      "material.tconstruct.cinderslime": "Зольная слизь",
+      "material.tconstruct.glass": "Стекло",
+      "material.tconstruct.invar": "Инвар",
+      "material.tconstruct.slimeskin": "Слизневая кожа",
+      "material.tconstruct.treated_wood": "Обработанная древесина",
+      "material.tconstruct.venombone": "Ядовитая кость"
+    }
+  }
+}
