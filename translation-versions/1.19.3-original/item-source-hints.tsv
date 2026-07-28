@@ -1,0 +1,29 @@
+item_id	translation_key	source
+enderchests:ender_chest	item.enderchests.ender_chest	Ender Chest
+table_top_craft:chess	item.table_top_craft.chess	Chess
+thermal:area_radius_augment	item.thermal.area_radius_augment	Radial Enhancement
+thermal:blizz_rod	item.thermal.blizz_rod	Blizz Cube
+thermal:charcoal_block	block.thermal.charcoal_block	Block of Charcoal
+thermal:crude_oil_bucket	item.thermal.crude_oil_bucket	Crude Oil Bucket
+thermal:cured_rubber	item.thermal.cured_rubber	Cured Glue
+thermal:device_collector	block.thermal.device_collector	Vacuumulator
+thermal:device_rock_gen	block.thermal.device_rock_gen	Igneous Extruder
+thermal:flux_drill	item.thermal.flux_drill	Fluxbore
+thermal:flux_saw	item.thermal.flux_saw	Fluxsaw
+thermal:glowstone_mushroom_spores	item.thermal.glowstone_mushroom_spores	Glimmercap Spores
+thermal:machine_bottler	block.thermal.machine_bottler	Fluid Encapsulator
+thermal:machine_centrifuge	block.thermal.machine_centrifuge	Centrifugal Separator
+thermal:machine_chiller	block.thermal.machine_chiller	Blast Chiller
+thermal:machine_crystallizer	block.thermal.machine_crystallizer	Crystallizer
+thermal:machine_frame	block.thermal.machine_frame	Machine Frame
+thermal:machine_insolator	block.thermal.machine_insolator	Phytogenic Insolator
+thermal:machine_press	block.thermal.machine_press	Multiservo Press
+thermal:machine_pulverizer	block.thermal.machine_pulverizer	Pulverizer
+thermal:machine_pyrolyzer	block.thermal.machine_pyrolyzer	Pyrolyzer
+thermal:machine_refinery	block.thermal.machine_refinery	Fractionating Still
+thermal:machine_smelter	block.thermal.machine_smelter	Induction Smelter
+thermal:redstone_mushroom_spores	item.thermal.redstone_mushroom_spores	Fluxtooth Spores
+thermal:rubber	item.thermal.rubber	Glue
+thermal:slime_mushroom_spores	item.thermal.slime_mushroom_spores	Slitake Spores
+thermal:tar	item.thermal.tar	Tar
+thermal:tinker_bench	block.thermal.tinker_bench	Tinker's Workbench

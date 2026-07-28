@@ -17,14 +17,21 @@
 python3 scripts/build_version_delta.py \
   --instance-root "$HOME/Library/Application Support/sklauncher/instances/liminal-industries" \
   --sklauncher-manifest "$HOME/Library/Application Support/sklauncher/manifests/liminal-industries.json" \
+  --item-hints translation-versions/1.19.3-original/item-source-hints.tsv \
   --version-slug 1.19.3-original
 ```
 
-В оригинальной сборке нет ProbeJS, поэтому реестр предметов восстанавливается
-по моделям предметов из Minecraft, модов и KubeJS. Это отмечено в
-`migration-report.json` как `registry_source: item_models`.
+В оригинальной сборке нет ProbeJS. Реестр восстанавливается по моделям,
+имеющим фактический языковой ключ, предметным ссылкам из квестов и объявлениям
+KubeJS из startup-скриптов. Так в реестр входят динамические предметы без
+отдельной модели, но не попадают вспомогательные модели брони, кабелей и
+состояний предметов. Динамические английские имена CoFH, которых нет в
+статических lang-файлах, закреплены в `item-source-hints.tsv` после проверки
+по редакторскому каталогу. Источник отмечен в `migration-report.json` как
+`registry_source: language_models+quest_refs+kubejs_startup+reviewed_hints`.
 
-Первичный перевод новых квестовых строк находится в
-`work/quest-translations.tsv`. До добавления в глобальный каталог он должен
-пройти независимое ревью. Новые названия предметов остаются в
-`work/pending.tsv`.
+Переводы новых квестовых строк и названий предметов находятся в
+`work/quest-translations.tsv` и `work/item-translations.tsv`. Они проверены
+против манифеста и добавлены в глобальный каталог только операцией
+`scripts/approve_version_translations.py`. Готовые ресурсы собраны из
+пересечения манифеста этой версии и каталога.

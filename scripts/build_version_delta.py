@@ -30,6 +30,27 @@ from extract_item_names import (
 
 SCHEMA_VERSION = 1
 FTB_QUESTS_RE = re.compile(r"ftb-quests-forge-([0-9.]+)\.jar$")
+KUBEJS_REGISTRY_RE = re.compile(
+    r"StartupEvents\.registry\(\s*(['\"])(block|item|fluid)\1"
+)
+KUBEJS_CREATE_RE = re.compile(
+    r"event\.create\(\s*(['\"])([a-z0-9_./-]+)\1[^)]*\)"
+    r"\s*\.displayName\(\s*(['\"])(.*?)\3\s*\)",
+    re.DOTALL,
+)
+KUBEJS_HELPER_RE = re.compile(
+    r"(?:let|const|var)\s+([a-zA-Z_$][\w$]*)\s*=\s*"
+    r"\(\s*id(?:\s*,\s*name)?\s*\)\s*=>\s*\{(?P<body>.*?)^\s*\}",
+    re.DOTALL | re.MULTILINE,
+)
+KUBEJS_HELPER_CALL_RE = re.compile(
+    r"^\s*([a-zA-Z_$][\w$]*)\(\s*(['\"])([a-z0-9_./-]+)\2"
+    r"(?:\s*,\s*(['\"])(.*?)\4)?\s*\)",
+    re.MULTILINE,
+)
+QUEST_ITEM_RE = re.compile(
+    r"\b(?:id|item):\s*\"([a-z0-9_.-]+:[a-z0-9_./-]+)\""
+)
 
 
 def json_bytes(value: Any) -> bytes:
@@ -205,8 +226,91 @@ def fallback_name(item_id: str) -> str:
     return item_id.split(":", 1)[1].replace("_", " ").replace("/", " ").title()
 
 
+def load_kubejs_registry(kubejs_root: Path) -> dict[str, tuple[str, str]]:
+    """Extract deterministic KubeJS registry names from the pack's startup scripts."""
+    result: dict[str, tuple[str, str]] = {}
+    for path in sorted(kubejs_root.glob("startup_scripts/**/*.js")):
+        source = path.read_text(encoding="utf-8-sig")
+        sections = list(KUBEJS_REGISTRY_RE.finditer(source))
+        for index, section in enumerate(sections):
+            kind = section.group(2)
+            key_prefix = "block" if kind == "block" else "item"
+            id_suffix = "_bucket" if kind == "fluid" else ""
+            end = sections[index + 1].start() if index + 1 < len(sections) else len(source)
+            body = source[section.end() : end]
+            for match in KUBEJS_CREATE_RE.finditer(body):
+                item_path = f"{match.group(2)}{id_suffix}"
+                item_id = f"kubejs:{item_path}"
+                result[item_id] = (
+                    f"{key_prefix}.kubejs.{item_path}",
+                    match.group(4),
+                )
+
+            helpers: dict[str, str | None] = {}
+            for helper in KUBEJS_HELPER_RE.finditer(body):
+                create = re.search(
+                    r"event\.create\(\s*id\s*\)\s*"
+                    r"\.displayName\(\s*(name|(['\"])(.*?)\2)\s*\)",
+                    helper.group("body"),
+                    re.DOTALL,
+                )
+                if create:
+                    helpers[helper.group(1)] = (
+                        None if create.group(1) == "name" else create.group(3)
+                    )
+            for call in KUBEJS_HELPER_CALL_RE.finditer(body):
+                if call.group(1) not in helpers:
+                    continue
+                display_name = call.group(5) or helpers[call.group(1)]
+                if display_name is None:
+                    raise ValueError(
+                        f"{path}: helper {call.group(1)} call has no display name"
+                    )
+                item_path = f"{call.group(3)}{id_suffix}"
+                item_id = f"kubejs:{item_path}"
+                result[item_id] = (
+                    f"{key_prefix}.kubejs.{item_path}",
+                    display_name,
+                )
+    return result
+
+
+def load_quest_item_ids(quests_root: Path) -> set[str]:
+    item_ids: set[str] = set()
+    for path in sorted(quests_root.rglob("*.snbt")):
+        item_ids.update(QUEST_ITEM_RE.findall(path.read_text(encoding="utf-8")))
+    return item_ids
+
+
+def load_item_hints(path: Path | None) -> dict[str, tuple[str, str]]:
+    if path is None:
+        return {}
+    result: dict[str, tuple[str, str]] = {}
+    with path.open(encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        if not {"item_id", "translation_key", "source"} <= set(
+            reader.fieldnames or ()
+        ):
+            raise ValueError(
+                f"{path}: expected item_id, translation_key, source columns"
+            )
+        for line, row in enumerate(reader, start=2):
+            item_id = row["item_id"]
+            value = (row["translation_key"], row["source"])
+            if not item_id or not all(value):
+                raise ValueError(f"{path}:{line}: blank item hint")
+            if item_id in result and result[item_id] != value:
+                raise ValueError(f"{path}:{line}: conflicting hint for {item_id}")
+            result[item_id] = value
+    return result
+
+
 def extract_item_records(
-    instance_root: Path, launcher_root: Path
+    instance_root: Path,
+    launcher_root: Path,
+    quest_item_ids: set[str],
+    item_hints: dict[str, tuple[str, str]],
+    item_hints_path: Path | None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, str]], dict[str, Any]]:
     mods_root = instance_root / "mods"
     kubejs_root = instance_root / "kubejs"
@@ -233,28 +337,60 @@ def extract_item_records(
 
     registry_ids = load_probe_item_ids(kubejs_root)
     registry_source = "probejs"
+    kubejs_registry: dict[str, tuple[str, str]] = {}
     if not registry_ids:
         archives = sorted(mods_root.glob("*.jar"))
         minecraft_jar = launcher_root / "versions/1.20.1/1.20.1.jar"
         if minecraft_jar.exists():
             archives.append(minecraft_jar)
-        registry_ids = load_item_model_ids(archives, kubejs_root)
-        registry_source = "item_models"
+        model_ids = load_item_model_ids(archives, kubejs_root)
+        kubejs_registry = load_kubejs_registry(kubejs_root)
+        registry_ids = {
+            item_id
+            for item_id in model_ids
+            if any(
+                key in en_us or key in native_ru
+                for key in candidate_keys(item_id)
+            )
+        }
+        registry_ids.update(kubejs_registry)
+        registry_ids.update(quest_item_ids)
+        registry_source = "language_models+quest_refs+kubejs_startup"
+        if item_hints:
+            registry_source += "+reviewed_hints"
     if not registry_ids:
         raise ValueError("could not build an item registry")
 
     records: list[dict[str, Any]] = []
     by_key: dict[str, str] = {}
     for item_id in sorted(registry_ids):
-        key = next(
-            (candidate for candidate in candidate_keys(item_id) if candidate in en_us),
-            candidate_keys(item_id)[0],
+        kubejs_entry = kubejs_registry.get(item_id)
+        item_hint = item_hints.get(item_id)
+        key = (
+            item_hint[0]
+            if item_hint
+            else kubejs_entry[0]
+            if kubejs_entry
+            else next(
+                (
+                    candidate
+                    for candidate in candidate_keys(item_id)
+                    if candidate in en_us or candidate in native_ru
+                ),
+                candidate_keys(item_id)[0],
+            )
         )
         previous = by_key.get(key)
         if previous and previous != item_id:
             raise ValueError(f"translation key {key} maps to {previous} and {item_id}")
         by_key[key] = item_id
-        source = en_us.get(key) or fallback_name(item_id)
+        source = en_us.get(key) or (
+            item_hint[1]
+            if item_hint
+            else kubejs_entry[1]
+            if kubejs_entry
+            else fallback_name(item_id)
+        )
         records.append(
             {
                 "id": f"item:{key}",
@@ -266,7 +402,13 @@ def extract_item_records(
                 "translation_key": key,
                 "native_ru_present": key in native_ru,
                 "source_origin": (
-                    "effective_en_us" if key in en_us else "runtime_generated"
+                    "effective_en_us"
+                    if key in en_us
+                    else "reviewed_hint"
+                    if item_hint
+                    else "kubejs_startup"
+                    if kubejs_entry
+                    else "runtime_generated"
                 ),
             }
         )
@@ -278,6 +420,8 @@ def extract_item_records(
     minecraft_jar = launcher_root / "versions/1.20.1/1.20.1.jar"
     if minecraft_jar.exists():
         source_paths.append(minecraft_jar)
+    if item_hints_path is not None:
+        source_paths.append(item_hints_path)
     source_files = [
         {
             "path": (
@@ -295,6 +439,12 @@ def extract_item_records(
         "native_ru_items": sum(record["native_ru_present"] for record in records),
         "generated_english_names": sum(
             record["source_origin"] == "runtime_generated" for record in records
+        ),
+        "reviewed_hint_names": sum(
+            record["source_origin"] == "reviewed_hint" for record in records
+        ),
+        "kubejs_startup_names": sum(
+            record["source_origin"] == "kubejs_startup" for record in records
         ),
     }
     return records, source_files, report
@@ -352,7 +502,11 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
         args.instance_root / "config/ftbquests/quests"
     )
     item_records, item_sources, item_report = extract_item_records(
-        args.instance_root, args.launcher_root
+        args.instance_root,
+        args.launcher_root,
+        load_quest_item_ids(args.instance_root / "config/ftbquests/quests"),
+        load_item_hints(args.item_hints),
+        args.item_hints,
     )
     records = sorted(quest_records + item_records, key=lambda item: item["id"])
     duplicate_ids = [
@@ -434,6 +588,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-root", type=Path, default=root / "translation-versions"
     )
+    parser.add_argument("--item-hints", type=Path)
     return parser.parse_args()
 
 
@@ -443,6 +598,8 @@ def main() -> int:
     args.launcher_root = args.launcher_root.resolve()
     args.sklauncher_manifest = args.sklauncher_manifest.resolve()
     args.catalog = args.catalog.resolve()
+    if args.item_hints is not None:
+        args.item_hints = args.item_hints.resolve()
     output = args.output_root.resolve() / args.version_slug
     try:
         manifest, report, pending = build(args)

@@ -1,5 +1,15 @@
 {
+  "item.create_central_kitchen.aloe_gel_bucket": "Ведро геля алоэ",
   "item.create_central_kitchen.creative_tab_icon": "Значок вкладки творчества",
+  "item.create_central_kitchen.incomplete_chorus_flower_pie": "Незавершённый пирог из цветков хоруса",
+  "item.create_central_kitchen.incomplete_chorus_fruit_pie": "Незавершённый пирог из плодов хоруса",
+  "item.create_central_kitchen.incomplete_lime_pie": "Незавершённый лаймовый пирог",
   "item.create_central_kitchen.incomplete_neapolitan_ice_cream_chocolate": "Незавершённое неаполитанское мороженое",
-  "item.create_central_kitchen.incomplete_neapolitan_ice_cream_strawberry": "Незавершённое неаполитанское мороженое"
+  "item.create_central_kitchen.incomplete_neapolitan_ice_cream_strawberry": "Незавершённое неаполитанское мороженое",
+  "item.create_central_kitchen.incomplete_portobello_burger": "Незавершённый бургер с портобелло",
+  "item.create_central_kitchen.incomplete_portobello_quiche": "Незавершённый киш с портобелло",
+  "item.create_central_kitchen.incomplete_portobello_wrap": "Незавершённый ролл с портобелло",
+  "item.create_central_kitchen.mulberry_jam_bucket": "Ведро тутового варенья",
+  "item.create_central_kitchen.sap_bucket": "Ведро древесного сока",
+  "item.create_central_kitchen.syrup_bucket": "Ведро сиропа"
 }

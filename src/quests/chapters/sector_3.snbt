@@ -2,35 +2,31 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "sector_3"
-	group: "7A1E9C4F2B8D036E"
+	group: ""
 	icon: "immersiveengineering:component_electronic_adv"
 	id: "7E0E4762C458A275"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["18FCA774852345F8"]
 			id: "0E01584B3867E3B0"
-			subtitle: "Более прочная древесина"
 			tasks: [{
 				id: "0BB038DF7488CDC1"
 				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
-			title: "Лист дюропласта"
 			x: 8.0d
 			y: 28.5d
 		}
 		{
 			dependencies: ["796F86181DD720D0"]
 			id: "6AEF6DE7C47568AE"
-			subtitle: "Более прочная древесина"
 			tasks: [{
 				id: "1D7A5CBEFD079A58"
 				item: "immersiveengineering:electron_tube"
 				type: "item"
 			}]
-			title: "Электронная лампа"
 			x: 4.0d
 			y: 28.5d
 		}
@@ -104,7 +100,6 @@
 				""
 				"Это можно сделать вручную или автоматизировать."
 			]
-			icon: "thermal:machine_frame"
 			id: "246A2048B0070B20"
 			rewards: [{
 				id: "394C3843B38C8450"
@@ -137,13 +132,11 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Промышленный бочонок"
 			tasks: [{
 				id: "4455C5CDD263A976"
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			title: "Шоковый охладитель"
 			x: 8.0d
 			y: 24.0d
 		}
@@ -164,19 +157,21 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Промышленный бочонок"
 			tasks: [{
 				id: "5F2057FCC8BA543A"
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			title: "Индукционная плавильня"
 			x: 4.0d
 			y: 24.0d
 		}
 		{
 			dependencies: ["64C1F773CA05847E"]
-			description: ["Возобновляемый источник меди можно получить, создавая и дробя веридий."]
+			description: [
+				"С этой установкой можно бесконечно производить медь."
+				""
+				"Стоит проложить железнодорожную сеть через Незер и обратно в Backrooms для сбора веридия."
+			]
 			icon: "create:veridium"
 			id: "53563EF68FA374A9"
 			rewards: [{
@@ -220,7 +215,6 @@
 				item: "immersiveengineering:fiberboard"
 				type: "item"
 			}]
-			title: "Древесноволокнистая плита"
 			x: -4.0d
 			y: 11.0d
 		}
@@ -237,13 +231,11 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Равноценный обмен"
 			tasks: [{
 				id: "058898199C73A780"
 				item: "actuallyadditions:atomic_reconstructor"
 				type: "item"
 			}]
-			title: "Атомный реконстрактор"
 			x: 0.0d
 			y: 17.0d
 		}
@@ -251,13 +243,11 @@
 			dependencies: ["78F13758BBD911A0"]
 			id: "73CAD8D4E107FD6A"
 			size: 3.0d
-			subtitle: "Основа мегафабрики"
 			tasks: [{
 				id: "7338F79D61FFF9E2"
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "Тяжёлое машиностроение"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -298,13 +288,11 @@
 				"45A3201920266E62"
 			]
 			id: "7D9AAE5AF42E626B"
-			subtitle: "Ещё более прочные кристаллы"
 			tasks: [{
 				id: "2F7CE8923AB85116"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "Латунный слиток"
 			x: 4.0d
 			y: 11.0d
 		}
@@ -360,7 +348,6 @@
 					type: "item"
 				}
 			]
-			title: "Пустая горелка всполоха"
 			x: 4.0d
 			y: 8.0d
 		}
@@ -378,13 +365,11 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "Более прочная древесина"
 			tasks: [{
 				id: "466ACC5C7344D413"
 				item: "immersiveengineering:component_electronic_adv"
 				type: "item"
 			}]
-			title: "Продвинутый электронный компонент"
 			x: 0.0d
 			y: 32.0d
 		}
@@ -397,13 +382,11 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Промышленный бочонок"
 			tasks: [{
 				id: "4F415897434A12F8"
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			title: "Фитогенный облучатель"
 			x: -8.5d
 			y: 36.0d
 		}
@@ -476,13 +459,11 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Под давлением"
 			tasks: [{
 				id: "47484DF07E9AE61D"
 				item: "thermal:machine_press"
 				type: "item"
 			}]
-			title: "Мультисерво-пресс"
 			x: 0.0d
 			y: 36.0d
 		}
@@ -655,13 +636,11 @@
 				"1C6DE105C85C708E"
 			]
 			id: "6F3B77AB45A5D8CF"
-			subtitle: "Загружаем то, чего не видим"
 			tasks: [{
 				id: "4C38D6A4E0A22AF9"
 				item: "ae2:calculation_processor"
 				type: "item"
 			}]
-			title: "Вычислительный процессор"
 			x: 0.0d
 			y: 40.0d
 		}
@@ -683,13 +662,11 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Главный приз"
 			tasks: [{
 				id: "580A5A5349AAED1F"
 				item: "ae2:controller"
 				type: "item"
 			}]
-			title: "МЭ-регулятор"
 			x: 0.0d
 			y: 44.0d
 		}
@@ -702,7 +679,6 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Промышленный бочонок"
 			tasks: [{
 				id: "571487D0A3489C6E"
 				item: {
@@ -735,7 +711,6 @@
 				}
 				type: "item"
 			}]
-			title: "Измельчитель"
 			x: 4.0d
 			y: 36.0d
 		}
@@ -752,7 +727,6 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "Похищение Обычного мира"
 			tasks: [
 				{
 					id: "07A18CB85EEBDCA2"
@@ -765,7 +739,6 @@
 					type: "item"
 				}
 			]
-			title: "Пустой заряд реальности"
 			x: -4.0d
 			y: 44.0d
 		}
@@ -778,13 +751,11 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Промышленный бочонок"
 			tasks: [{
 				id: "088E3F28A15B75D8"
 				item: "thermal:machine_bottler"
 				type: "item"
 			}]
-			title: "Жидкостный наполнитель"
 			x: 8.0d
 			y: 36.0d
 		}
@@ -813,7 +784,6 @@
 				item: "botania:alchemy_catalyst"
 				type: "item"
 			}]
-			title: "Алхимический катализатор"
 			x: 0.0d
 			y: 8.0d
 		}
@@ -841,9 +811,8 @@
 				"7DB91F364892F863"
 			]
 			description: [
-				"Ковёр, пропитанный сырой нефтью, — бесконечный источник сырой нефти. Нажмите по нему ПКМ пустой рукой, чтобы нефть хлынула наружу и её можно было собрать."
-				""
-				"Или нажмите по ковру ПКМ с губкой в руке, чтобы впитать сырую нефть."
+				"Ковёр, пропитанный сырой нефтью, — бесконечный источник нефти. Нажмите по нему ПКМ с губкой в руке."
+				"Из ковра хлынет сырая нефть, которую можно собрать."
 				""
 				"Рекомендуется автоматизировать этот процесс."
 				""
@@ -884,7 +853,6 @@
 		{
 			dependencies: ["246A2048B0070B20"]
 			description: ["Зарядник нужно окружить четырьмя Выставочными стендами по сторонам света. При нужном количестве энергии устройство сможет заряжать всевозможные кристаллы, необходимые на поздних этапах игры."]
-			icon: "actuallyadditions:empowerer"
 			id: "7BC25405C23D7BDF"
 			rewards: [{
 				id: "30A070C3FE269357"
@@ -907,7 +875,6 @@
 					type: "item"
 				}
 			]
-			title: "Зарядник"
 			x: 0.0d
 			y: 26.0d
 		}
@@ -921,13 +888,11 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Ещё более прочные кристаллы"
 			tasks: [{
 				id: "08FB63673650683C"
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			title: "Теллурическая агломерационная пластина"
 			x: -8.5d
 			y: 44.0d
 		}
@@ -945,13 +910,11 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Чёрное золото"
 			tasks: [{
 				id: "1D2EC5F6CB2C5D41"
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			title: "Фракционный дистиллятор"
 			x: -4.0d
 			y: 24.0d
 		}
@@ -969,22 +932,20 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Чёрное золото"
 			tasks: [{
 				id: "4CEDF492E888799C"
 				item: "thermal:machine_pyrolyzer"
 				type: "item"
 			}]
-			title: "Пиролизёр"
 			x: -8.5d
 			y: 24.0d
 		}
 		{
 			dependencies: ["64C1F773CA05847E"]
 			description: [
-				"Возобновляемый источник железа можно получить, создавая и дробя кримзит."
+				"С этой установкой можно бесконечно производить железо."
 				""
-				"Красный ковёр изредка встречается как в самом Backrooms, так и в других измерениях, куда вы, возможно, уже проваливались."
+				"Стоит проложить через Незер железнодорожную сеть для сбора кримзита."
 			]
 			icon: "create:crimsite"
 			id: "0FFB86B741255547"
@@ -1005,6 +966,11 @@
 					count: 3L
 					id: "59ABD128B4FF3B4C"
 					item: { Count: 3, id: "create:crushed_raw_iron" }
+					type: "item"
+				}
+				{
+					id: "109BC18BBA5F82E5"
+					item: "immersiveengineering:raw_aluminum"
 					type: "item"
 				}
 			]
@@ -1047,9 +1013,10 @@
 			]
 			title: "Эхо в пустоте"
 			x: -8.5d
-			y: 26.5d
+			y: 28.5d
 		}
 		{
+			can_repeat: true
 			description: ["В руководстве по строительству каркаса реальности есть удобный визуализатор, который поможет собрать мультиблок."]
 			icon: {
 				Count: 1
@@ -1149,13 +1116,12 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "Похищение Обычного мира"
+			subtitle: "Загрузка того, за чем вы не наблюдаете"
 			tasks: [{
 				id: "0A20E8A634C43C40"
 				item: "mekanism:dimensional_stabilizer"
 				type: "item"
 			}]
-			title: "Пространственный стабилизатор"
 			x: 4.0d
 			y: 17.0d
 		}
@@ -1233,24 +1199,20 @@
 			dependencies: ["73CAD8D4E107FD6A"]
 			description: ["МЭ-дисковод вмещает несколько ячеек хранения и заметно улучшит вашу сеть."]
 			id: "3E01F081825DD473"
-			subtitle: "Загружаем то, чего не видим"
 			tasks: [{
 				id: "44B44F23F764B849"
 				item: "ae2:drive"
 				type: "item"
 			}]
-			title: "МЭ-дисковод"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["551FF2C69915C03A"]
+			dependencies: ["5CE78F3B9E2BDC0F"]
 			description: [
-				"С помощью перегретой Горелки всполоха лёгкую нефть можно превратить в очищенное топливо."
+				"Лёгкую нефть можно превратить в очищенное топливо."
 				""
-				"Если установить на Горелку всполоха Соломинку, в неё можно закачивать жидкое топливо. Очищенное топливо горит гораздо дольше Всполохового торта."
-				""
-				"Биоэтанол — ещё одно хорошее жидкое топливо, которое теперь можно производить."
+				"Дайте всполоху соломинку и закачайте в него очищенное топливо, чтобы перегреть его. После этого огонь Парового двигателя станет намного жарче."
 			]
 			icon: "thermal:refined_fuel_bucket"
 			id: "641ACE318273962A"
@@ -1272,24 +1234,17 @@
 					optional_task: true
 					type: "fluid"
 				}
-				{
-					amount: 1000L
-					fluid: "createaddition:bioethanol"
-					id: "4C3162637ECA6BCA"
-					optional_task: true
-					type: "fluid"
-				}
 			]
-			title: "Жидкое топливо"
-			x: -7.0d
-			y: 31.0d
+			title: "Очищенное топливо"
+			x: -2.0d
+			y: 28.5d
 		}
 		{
 			dependencies: ["64C1F773CA05847E"]
 			description: [
-				"Возобновляемый источник цинка можно получить, создавая и дробя азурин."
+				"С этой установкой можно бесконечно производить цинк."
 				""
-				"Чтобы получить пористый камень, очистите скалк в скалковом очистителе."
+				"Стоит проложить через Незер железнодорожную сеть для сбора азурина."
 			]
 			icon: "create:asurine"
 			id: "7B6D55B255237469"
@@ -1315,46 +1270,6 @@
 			title: "Возобновляемый цинк"
 			x: 1.0d
 			y: 10.5d
-		}
-		{
-			dependencies: ["5FD115F71D4F8E01"]
-			description: ["Время в бутылке позволяет ускорять отдельные блоки за счёт времени, которое бутылка провела в вашем инвентаре."]
-			id: "54A8A17145E7BBD0"
-			subtitle: "Лучший предмет в сборке"
-			tasks: [{
-				id: "1B4B79A0B1BA4478"
-				item: {
-					Count: 1
-					id: "tiab:time_in_a_bottle"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "Идеально зацикленное время"
-			x: -4.0d
-			y: 17.0d
-		}
-		{
-			dependencies: ["5CE78F3B9E2BDC0F"]
-			description: [
-				"Всполох перегреется, если дать ему Всполоховый торт. "
-				""
-				"Благодаря этому ваш Паровой двигатель запылает гораздо ярче."
-			]
-			id: "551FF2C69915C03A"
-			rewards: [{
-				id: "777AA502415B3BBB"
-				item: "minecraft:cake"
-				type: "item"
-			}]
-			tasks: [{
-				id: "59250F5B830F4ACB"
-				item: "create:blaze_cake"
-				type: "item"
-			}]
-			title: "Почему так остро???"
-			x: -4.0d
-			y: 31.0d
 		}
 	]
 	title: "Глава 4"

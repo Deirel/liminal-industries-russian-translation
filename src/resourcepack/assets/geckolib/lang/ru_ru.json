@@ -1,0 +1,21 @@
+{
+  "block.geckolib.fertilizer": "Удобрение",
+  "block.geckolib.gecko_habitat": "Террариум для геккона",
+  "item.geckolib.bat_spawn_egg": "Яйцо призыва летучей мыши",
+  "item.geckolib.bike_spawn_egg": "Яйцо призыва велосипеда",
+  "item.geckolib.cool_kid_spawn_egg": "Яйцо призыва крутого парня",
+  "item.geckolib.fake_glass_spawn_egg": "Яйцо призыва фальшивого стекла",
+  "item.geckolib.gecko_armor_boots": "Гекконьи ботинки",
+  "item.geckolib.gecko_armor_chestplate": "Гекконий нагрудник",
+  "item.geckolib.gecko_armor_helmet": "Гекконий шлем",
+  "item.geckolib.gecko_armor_leggings": "Гекконьи поножи",
+  "item.geckolib.gremlin_spawn_egg": "Яйцо призыва гремлина",
+  "item.geckolib.jack_in_the_box": "Чёртик из табакерки",
+  "item.geckolib.mutant_zombie_spawn_egg": "Яйцо призыва зомби-мутанта",
+  "item.geckolib.parasite_spawn_egg": "Яйцо призыва паразита",
+  "item.geckolib.race_car_spawn_egg": "Яйцо призыва гоночной машины",
+  "item.geckolib.wolf_armor_boots": "Волчьи ботинки",
+  "item.geckolib.wolf_armor_chestplate": "Волчий нагрудник",
+  "item.geckolib.wolf_armor_helmet": "Волчий шлем",
+  "item.geckolib.wolf_armor_leggings": "Волчьи поножи"
+}

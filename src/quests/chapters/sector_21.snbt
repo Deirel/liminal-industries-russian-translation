@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "sector_21"
-	group: "7A1E9C4F2B8D036E"
+	group: ""
 	icon: "create:steam_engine"
 	id: "63270855244ED0BB"
 	order_index: 1
@@ -70,13 +70,12 @@
 				item: "create:wrench"
 				type: "item"
 			}]
-			subtitle: "Под давлением"
+			subtitle: "Возродитесь из пепла"
 			tasks: [{
 				id: "08A7B6A04AE342A6"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			title: "Андезитовый сплав"
 			x: -5.0d
 			y: -3.0d
 		}
@@ -214,7 +213,6 @@
 			}]
 			shape: "gear"
 			size: 1.0d
-			subtitle: "Под давлением"
 			tasks: [
 				{
 					id: "2EBC0F856411C837"
@@ -227,7 +225,6 @@
 					type: "item"
 				}
 			]
-			title: "Механический пресс"
 			x: -8.5d
 			y: 1.0d
 		}
@@ -302,11 +299,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5CB40F1DE52A4841"]
 			description: [
-				"Похоже, вы неосторожно обращались с нестабильным соединением, и оно взорвалось прямо у вас перед лицом! Вы потеряли сознание и провалились ноклипом в мир вне времени."
+				"Портал можно создать из десяти вёдер лавы и одного ведра воды."
 				""
-				"Новая глава! Стоит узнать побольше о месте, в котором вы оказались."
+				"Через Незер можно быстро добираться в разные места Backrooms. Учтите: портал всегда нужно строить из Backrooms в Незер."
 			]
 			id: "021C50BEE88E0B07"
 			rewards: [
@@ -322,35 +318,100 @@
 				}
 			]
 			shape: "square"
-			subtitle: "Взрывоопасная случайность"
+			subtitle: "Ожидали чего-то другого?"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "29B5E3BFD5FBF7D5"
-				title: "Посетите Бесконечную библиотеку"
+				title: "Посетите Незер"
 				type: "dimension"
 			}]
-			title: "Мир вне времени"
-			x: 10.5d
-			y: 4.5d
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["021C50BEE88E0B07"]
+			icon: "supplementaries:checker_block"
+			id: "780450B76916CDB7"
+			rewards: [{
+				id: "4A625113C256BB24"
+				item: {
+					Count: 1
+					id: "table_top_craft:oak_chess"
+					tag: {
+						BlockEntityTag: {
+							ChessValues: {
+								AttackMoveColor: "255/1/1/100"
+								BlackCheckMate: 0b
+								BlackPiecesColor: "51/51/51/255"
+								BlackTilesColor: "139/86/57/255"
+								BoardFEN: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 0"
+								CastleMoveColor: "125/1/255/100"
+								DisplayParticles: 1
+								FirstMoves: "0/1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63"
+								HumanMovedPiece: -1
+								InvalidMoveColor: "255/255/1/100"
+								IsBlackCastled: 0b
+								IsWhiteCastled: 0b
+								LegalMoveColor: "1/255/1/100"
+								MoveLog: [ ]
+								PieceSet: 1
+								PlayPieceAnimations: 1
+								PreviousMoveColor: "1/150/125/100"
+								PromotionCoordinate: -1b
+								ShowAvailableMoves: 0
+								ShowPreviousMove: 0
+								ShowTileInfo: 0
+								SourceTile: -1
+								TileInfoColor: "255/255/255/255"
+								UseCustomPlate: 0
+								WaitingForPromotion: 0
+								WhiteCheckMate: 0b
+								WhitePiecesColor: "210/188/161/255"
+								WhiteTilesColor: "208/177/141/255"
+							}
+							ForgeCaps: { }
+							id: "table_top_craft:chess"
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Время сыграть в шахматы"
+			tasks: [
+				{
+					id: "2936C3ED16FB1828"
+					item: "supplementaries:checker_block"
+					type: "item"
+				}
+				{
+					id: "29EF2A8D122D178C"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "3AA0551231908748"
+					item: "actuallyadditions:black_quartz"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
+				"780450B76916CDB7"
 				"571118233A7F0DA3"
-				"6673DDE009655B63"
-			]
-			description: [
-				"Похоже, важнейший кварцевый компонент этой технологии — крайне редкая находка в Backrooms."
-				""
-				"Может, стоит изучить другие задания в надежде найти иной путь?"
 			]
 			id: "5A988566BC220234"
-			subtitle: "Металлургия"
 			tasks: [{
 				id: "16C2A7EC029D4146"
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			title: "Электронный компонент"
 			x: 5.0d
 			y: 13.0d
 		}
@@ -448,20 +509,17 @@
 				item: "botania:apothecary_default"
 				type: "item"
 			}]
-			title: "Лепестковая чаша"
 			x: 5.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["495E194ACEFD9CD7"]
 			id: "2B462CBD198F53F7"
-			subtitle: "Пора вдохнуть в это место немного жизни"
 			tasks: [{
 				id: "0BE20FD7C74DA1E5"
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			title: "Чистая маргаритка"
 			x: 5.0d
 			y: 3.0d
 		}
@@ -487,29 +545,32 @@
 			dependencies: ["4EFCB9F8F9EDC5EB"]
 			id: "571118233A7F0DA3"
 			shape: "gear"
-			subtitle: "Металлургия"
 			tasks: [{
 				id: "177001536B1F99A0"
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "Автономный активатор"
 			x: 5.0d
 			y: 7.5d
 		}
 		{
-			dependencies: ["495E194ACEFD9CD7"]
-			description: ["Споры флюсозуба обладают свойствами редстоуна. Если перемолоть их в пыль, она пригодится для создания схем."]
+			dependencies: ["1773F3D3ECBC4923"]
 			id: "60885F74323E143A"
-			subtitle: "Попробуйте радугу"
-			tasks: [{
-				id: "1258CCBED9626C98"
-				item: "thermal:redstone_mushroom_spores"
-				type: "item"
-			}]
-			title: "Споры флюсозуба"
-			x: 8.0d
-			y: -1.0d
+			tasks: [
+				{
+					id: "1258CCBED9626C98"
+					item: "thermal:redstone_mushroom_spores"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "47FA42D7346B3C5F"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -565,44 +626,41 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5CB40F1DE52A4841"]
+			dependencies: ["1A5679134A610FF2"]
 			description: [
-				"Snad не только ускоряет рост: если обновить блок Snad сигналом редстоуна, растение на нём мгновенно вырастет."
+				"На Snad сахарный тростник растёт гораздо быстрее. "
 				""
-				"Snad также можно создать, нажав ПКМ по блоку песка с нестабильным соединением в руке."
+				"Можно ли этим злоупотребить? Решать вам."
+				""
+				"Snad не только ускоряет рост: если обновить блок Snad сигналом редстоуна, растение на нём мгновенно вырастет."
 			]
-			icon: "snad:snad"
+			icon: "minecraft:sugar_cane"
 			id: "2A93ADA6EAA0C7EB"
-			subtitle: "Можно ли этим воспользоваться?"
 			tasks: [
 				{
+					id: "1D1B056BCACA1685"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					count: 5L
 					id: "391152D4E83414B7"
-					item: "snad:snad"
-					type: "item"
-				}
-				{
-					id: "7239BC1114F6735C"
-					item: "snad:red_snad"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "63907886E073C5B1"
-					item: "snad:suol_snad"
-					optional_task: true
+					item: { Count: 5, id: "snad:snad" }
 					type: "item"
 				}
 			]
-			title: "Принудительный рост"
-			x: 13.5d
-			y: 1.5d
+			x: -2.5d
+			y: 10.0d
 		}
 		{
-			dependencies: ["1BFE1926B47FD92D"]
+			dependencies: [
+				"1BFE1926B47FD92D"
+				"2A93ADA6EAA0C7EB"
+			]
 			description: [
 				"Из сладких ягод можно приготовить сладкое ягодное варенье."
 				""
-				"Из сладких ягод и мёда можно получить сахар."
+				"Сначала добудьте сахарный тростник с помощью Лепестковой чаши."
 			]
 			icon: "brewinandchewin:sweet_berry_jam"
 			id: "347FB9BA17B5C66C"
@@ -657,7 +715,35 @@
 			]
 			title: "Сладкое ягодное варенье"
 			x: -5.0d
-			y: 8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["021C50BEE88E0B07"]
+			description: [
+				"Где-то в Бесконечной библиотеке покоится забытое Око. "
+				"Оно взирает на бесконечные книги."
+				""
+				"Ищите на вершинах огромных книжных завалов и среди прочего затерянного хлама."
+				""
+				""
+				"{image:kubejs:textures/quests/lost_eye.png width:200 height:100 align:center}"
+			]
+			id: "12F6EDB7B3074DBA"
+			shape: "hexagon"
+			subtitle: "Спрятано в Бесконечной библиотеке"
+			tasks: [{
+				id: "0E50ED4115F134D3"
+				item: {
+					Count: 1
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4EFCB9F8F9EDC5EB"]
@@ -718,167 +804,47 @@
 				}
 			]
 			title: "Пора рисовать"
-			x: 8.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["60885F74323E143A"]
-			description: [
-				"Чтобы получить бутылочку ковровой жидкости, возьмите пустую бутылочку и нажмите ПКМ по мокрому ковру."
-				""
-				"Если смешать ковровую жидкость со спорами флюсозуба, получится полезное нестабильное соединение. "
-				""
-				"Будьте осторожны: при неумелом обращении или прямом контакте это вещество может отправить вас в ноклип."
-			]
-			icon: "kubejs:unstable_compound"
-			id: "5CB40F1DE52A4841"
-			subtitle: "Взрывоопасный эксперимент"
-			tasks: [
-				{
-					id: "71D79BCF9162EB8A"
-					item: "kubejs:carpet_fluid"
-					type: "item"
-				}
-				{
-					id: "408D2BBC86200696"
-					item: "thermal:redstone_mushroom_spores"
-					type: "item"
-				}
-			]
-			title: "Не создавайте это"
-			x: 10.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["517B51043572C1C3"]
-			description: [
-				"Если выпить миндальную воду, она временно защитит от урона при ходьбе по скалку. "
-				""
-				"Однако если выпить слишком много, можно почувствовать тошноту и головокружение — вплоть до смертельного исхода."
-				""
-				"Другие вкусы дают небольшие полезные эффекты."
-			]
-			icon: "kubejs:almond_water_can"
-			id: "4F2591E2772C9EA1"
-			subtitle: "Пейте умеренно"
-			tasks: [
-				{
-					id: "2A76C84B0E92168C"
-					item: "kubejs:almond_water_can"
-					type: "item"
-				}
-				{
-					id: "0BFE52C8B6B860FC"
-					item: "kubejs:blue_almond_water_can"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0729BB9496937557"
-					item: "kubejs:green_almond_water_can"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "55D3E3F6EA0FBCBA"
-					item: "kubejs:red_almond_water_can"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Миндальная вода"
-			x: 13.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["021C50BEE88E0B07"]
-			description: ["Похоже, удача на вашей стороне! Благодаря ноклипу теперь вы сможете добыть крайне необходимый материал."]
-			id: "6673DDE009655B63"
-			subtitle: "Важнейший компонент"
-			tasks: [{
-				id: "6D53FBA73B89D651"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["1773F3D3ECBC4923"]
-			description: [
-				"Стручки ванили можно посадить на мокрый ковёр и выращивать там."
-				""
-				"Что любопытно, их лозы могут расти в любом направлении."
-				""
-				"Помните: сахар для их приготовления можно получить из сладких ягод."
-			]
-			id: "517B51043572C1C3"
-			subtitle: "Просто ваниль"
-			tasks: [{
-				id: "022BB16532FD5D77"
-				item: "neapolitan:vanilla_pods"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["495E194ACEFD9CD7"]
-			description: ["Снятые обои можно заменить цветным вариантом. У каждого варианта своя уникальная текстура."]
-			icon: "kubejs:wallpaper_red"
-			id: "21A8A41332493085"
-			tasks: [
-				{
-					id: "389128631626F850"
-					item: "kubejs:wallpaper_red"
-					type: "item"
-				}
-				{
-					id: "05263A11A8ED7971"
-					item: "kubejs:wallpaper_orange"
-					type: "item"
-				}
-				{
-					id: "2C70AE344EF83CCA"
-					item: "kubejs:wallpaper_lime"
-					type: "item"
-				}
-				{
-					id: "13DFC92568BCA9EA"
-					item: "kubejs:wallpaper_green"
-					type: "item"
-				}
-				{
-					id: "0FB25A905AC1B9FE"
-					item: "kubejs:wallpaper_lblue"
-					type: "item"
-				}
-				{
-					id: "7D3C05569836C64A"
-					item: "kubejs:wallpaper_pink"
-					type: "item"
-				}
-				{
-					id: "39AA80CDF9FB4527"
-					item: "kubejs:wallpaper_purple"
-					type: "item"
-				}
-			]
-			title: "Окрашенные обои"
-			x: 8.0d
+			x: 7.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["517B51043572C1C3"]
-			description: ["Сахарный тростник нужно сажать рядом с водой. Быстрее всего он растёт на Snad, но также может расти на песке и земле."]
-			id: "4ED3976F3A8067BE"
-			tasks: [{
-				id: "3BAA280A9F9615FC"
-				item: "minecraft:sugar_cane"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -5.5d
+			dependencies: ["021C50BEE88E0B07"]
+			description: ["Рюкзаки можно изготовить из кожи, полученной при переработке книг."]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "20CA5E31A6BC6960"
+			rewards: [
+				{
+					id: "469EB7AEC1EE8012"
+					item: "sophisticatedbackpacks:advanced_jukebox_upgrade"
+					type: "item"
+				}
+				{
+					id: "448C208C5E454147"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+				{
+					id: "355706B93C7F1166"
+					item: "sophisticatedbackpacks:deposit_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "4EF694C2C87272F0"
+					item: { Count: 3, id: "minecraft:leather" }
+					type: "item"
+				}
+				{
+					id: "01DCD5B62C93BBD5"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			title: "Кожа для рюкзаков"
+			x: 7.5d
+			y: 5.0d
 		}
 	]
 	title: "Глава 2"

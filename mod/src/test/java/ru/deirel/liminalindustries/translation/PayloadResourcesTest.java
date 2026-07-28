@@ -49,8 +49,8 @@ class PayloadResourcesTest {
         QuestTranslationPayload payload = QuestTranslationPayload.load(
             PayloadResourcesTest.class
         );
-        assertEquals(1038, payload.objectIds().size());
-        assertTrue(payload.translationCount() > 250);
+        assertEquals(826, payload.objectIds().size());
+        assertEquals(165, payload.translationCount());
 
         long firstQuestId = Long.parseUnsignedLong("74DC667B840746B0", 16);
         QuestTranslation firstQuest = payload.translation(firstQuestId);

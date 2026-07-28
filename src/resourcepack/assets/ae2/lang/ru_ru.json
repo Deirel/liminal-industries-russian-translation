@@ -1,3 +1,5 @@
 {
-  "block.ae2.crystal_resonance_generator": "Генератор кристаллического резонанса"
+  "block.ae2.crystal_resonance_generator": "Генератор кристаллического резонанса",
+  "item.ae2.creative_storage_cell": "Творческая ячейка хранения ME",
+  "item.ae2.missing_content": "Отсутствующее содержимое"
 }

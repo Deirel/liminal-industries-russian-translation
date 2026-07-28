@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "sector_2"
-	group: "7A1E9C4F2B8D036E"
+	group: ""
 	icon: "immersiveengineering:component_electronic"
 	id: "296F2DB9D43A576E"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -88,7 +88,6 @@
 		{
 			dependencies: ["7C0EE6F4BEE559C3"]
 			description: ["Тяжёлый инженерный каркас станет первым шагом к строительству более тяжёлых машин. Именно они станут основой вашей мегафабрики."]
-			icon: "immersiveengineering:heavy_engineering"
 			id: "78F13758BBD911A0"
 			rewards: [
 				{
@@ -108,7 +107,6 @@
 				}
 			]
 			size: 3.0d
-			subtitle: "Основа мегафабрики"
 			tasks: [
 				{
 					id: "56E8E33407531F61"
@@ -121,7 +119,6 @@
 					type: "item"
 				}
 			]
-			title: "Тяжёлый инженерный каркас"
 			x: 0.0d
 			y: 43.0d
 		}
@@ -220,13 +217,11 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "Грязные секреты ковра"
 			tasks: [{
 				id: "51829F68D3AF175F"
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			title: "Создание земли"
 			x: 5.0d
 			y: 35.0d
 		}
@@ -280,13 +275,11 @@
 				"070593BCE7387349"
 			]
 			id: "7C0EE6F4BEE559C3"
-			subtitle: "Переменный ток"
 			tasks: [{
 				id: "0432357F061847C7"
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			title: "Электронная лампа"
 			x: 0.0d
 			y: 35.0d
 		}
@@ -426,7 +419,7 @@
 				}
 			]
 			title: "Возобновляемый редстоун"
-			x: 12.0d
+			x: 8.0d
 			y: 27.0d
 		}
 		{
@@ -464,12 +457,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["74A40C27F67C1627"]
-			description: [
-				"Брошенная в потолочный светильник бомба разрушит его. "
-				""
-				"Добытые люминесцентные лампы станут важными компонентами грядущей промышленной революции."
-			]
+			description: ["Если бросать кирпичи в потолочные светильники, из них могут выпасть важные детали для грядущей промышленной революции."]
 			icon: "kubejs:fluorescent_tube"
 			id: "3EEB10E1DC378F7A"
 			rewards: [{
@@ -479,11 +467,19 @@
 			}]
 			shape: "square"
 			subtitle: "Свет погас"
-			tasks: [{
-				id: "6EFC9A269934A311"
-				item: "kubejs:fluorescent_tube"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 3L
+					id: "074AA5AE3A6FFA7A"
+					item: "minecraft:brick"
+					type: "item"
+				}
+				{
+					id: "6EFC9A269934A311"
+					item: "kubejs:fluorescent_tube"
+					type: "item"
+				}
+			]
 			title: "Вандализм 2.0"
 			x: 8.0d
 			y: 13.0d
@@ -493,7 +489,6 @@
 				"3F5758647B93803C"
 				"3EEB10E1DC378F7A"
 			]
-			icon: "immersiveengineering:light_engineering"
 			id: "2ABD7837E63FB024"
 			rewards: [{
 				id: "29F4FC7294559F98"
@@ -541,19 +536,16 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Лава определяет результат"
 			tasks: [{
 				id: "1119B1A5274105BD"
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			title: "Генератор камня"
 			x: 5.0d
 			y: 20.0d
 		}
 		{
 			dependencies: ["451A79187DD84C9A"]
-			icon: "thermal:rubber"
 			id: "32A38D7CD715768D"
 			tasks: [
 				{
@@ -604,7 +596,7 @@
 				}
 			]
 			title: "Осколки души"
-			x: -7.0d
+			x: -3.5d
 			y: 10.5d
 		}
 		{
@@ -695,24 +687,22 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Сначала прочитайте Ars Ecclesia"
 			tasks: [{
 				id: "31C9D3FC5640E0FF"
 				item: "eidolon:crucible"
 				type: "item"
 			}]
-			title: "Тигель"
 			x: -5.0d
 			y: 13.0d
 		}
 		{
 			dependencies: ["3DB2E63B62BA0311"]
-			icon: "cfm_wap:light_circuit_breaker"
+			icon: "cfm_circuit_breaker:circuit_breaker"
 			id: "68905617A5751CBB"
 			tasks: [
 				{
 					id: "3313F83A86A4A453"
-					item: "cfm_wap:light_circuit_breaker"
+					item: "cfm_circuit_breaker:circuit_breaker"
 					optional_task: true
 					type: "item"
 				}
@@ -807,16 +797,12 @@
 				type: "item"
 			}]
 			title: "Призыв трески"
-			x: -3.0d
+			x: -6.5d
 			y: 10.5d
 		}
 		{
 			dependencies: ["33C923AD98680D89"]
-			description: [
-				"С помощью жезла можно создать Огонь душ на ковре. "
-				""
-				"Некоторые блоки, например кирпичи, также можно превратить в их незерские варианты."
-			]
+			description: ["Жезл превращает Кирпичи в Незерские кирпичи. Бросьте Кирпичи на пол и выстрелите в них из жезла."]
 			icon: {
 				Count: 1
 				id: "eidolon:soulfire_wand"
@@ -839,7 +825,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Ковёр в огне"
+			subtitle: "Авада-а-а-а..."
 			tasks: [
 				{
 					id: "40C6AB291E6B2779"
@@ -853,17 +839,16 @@
 					type: "item"
 				}
 				{
-					id: "1E9A2F93A63C1A31"
-					item: "minecraft:bricks"
+					id: "29E2CC8D9FCF3039"
+					item: "minecraft:brick"
 					type: "item"
 				}
 				{
-					id: "3E5B680B59E44AF3"
-					item: "minecraft:nether_bricks"
+					id: "101CF0343C1D1EAB"
+					item: "minecraft:nether_brick"
 					type: "item"
 				}
 			]
-			title: "Жезл пламени душ"
 			x: -5.0d
 			y: 20.0d
 		}
@@ -885,13 +870,11 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Перенаправьте ману"
 			tasks: [{
 				id: "466F9C2A77810A9B"
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			title: "Рунический алтарь"
 			x: 0.0d
 			y: 13.0d
 		}
@@ -900,13 +883,11 @@
 			id: "3DB2E63B62BA0311"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Куйте, пока горячо"
 			tasks: [{
 				id: "56D5F49C5A7C9543"
 				item: "tconstruct:smeltery_controller"
 				type: "item"
 			}]
-			title: "Контроллер плавильни"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -919,7 +900,6 @@
 			]
 			icon: "botania:diluted_pool"
 			id: "02553A61954B8BE9"
-			subtitle: "Эндопламя и распространители"
 			tasks: [
 				{
 					id: "44A460D746D06546"
@@ -937,7 +917,6 @@
 					type: "item"
 				}
 			]
-			title: "Бассейн маны"
 			x: 0.0d
 			y: 8.0d
 		}
@@ -975,7 +954,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Всего восемь каналов"
+			subtitle: "Цифровое хранилище"
 			tasks: [
 				{
 					id: "1757AE495DF47591"
@@ -988,7 +967,6 @@
 					type: "item"
 				}
 			]
-			title: "МЭ-сундук"
 			x: -5.0d
 			y: 35.0d
 		}
@@ -1011,26 +989,22 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Выращивание кристаллов"
 			tasks: [{
 				id: "6F98C2499AF89ACB"
 				item: "thermal:machine_crystallizer"
 				type: "item"
 			}]
-			title: "Кристаллизатор"
 			x: -5.0d
 			y: 27.0d
 		}
 		{
 			dependencies: ["754899C65C2540E0"]
 			id: "628045C24DB98BFA"
-			subtitle: "Всего восемь каналов"
 			tasks: [{
 				id: "570D1D22D6CC1C91"
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			title: "МЭ терминал изготовления"
 			x: -5.0d
 			y: 37.0d
 		}
@@ -1053,13 +1027,12 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Эхо во тьме"
+			subtitle: "Симулятор уборки"
 			tasks: [{
 				id: "31E4E088F9C965B0"
 				item: "kubejs:sculk_scrubber"
 				type: "item"
 			}]
-			title: "Скалковый очиститель"
 			x: 8.0d
 			y: 15.5d
 		}
@@ -1130,7 +1103,7 @@
 				}
 			]
 			title: "Возобновляемый светокамень"
-			x: 12.0d
+			x: 8.0d
 			y: 29.0d
 		}
 		{
@@ -1250,7 +1223,7 @@
 			]
 			title: "Абордажная команда уже здесь"
 			x: -8.0d
-			y: 5.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3F5758647B93803C"]
@@ -1270,10 +1243,11 @@
 				type: "item"
 			}]
 			title: "Рация"
-			x: 6.5d
-			y: 3.0d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0D7F62210B243747"]
 			description: [
 				"Призыв существ с помощью магии необходим, поскольку сами по себе они не появляются."
@@ -1341,7 +1315,6 @@
 			]
 			id: "6C0922865829A7FE"
 			shape: "hexagon"
-			subtitle: "Настоятельно рекомендуем подождать"
 			tasks: [{
 				id: "5E262A9B18586176"
 				item: {
@@ -1353,7 +1326,6 @@
 				}
 				type: "item"
 			}]
-			title: "Око Ада"
 			x: 2.5d
 			y: 27.0d
 		}
@@ -1389,6 +1361,24 @@
 			y: 31.0d
 		}
 		{
+			dependencies: ["33C923AD98680D89"]
+			description: ["Время в бутылке позволяет ускорять отдельные блоки за счёт времени, которое бутылка провела в вашем инвентаре."]
+			id: "54A8A17145E7BBD0"
+			subtitle: "Лучший предмет в сборке"
+			tasks: [{
+				id: "1B4B79A0B1BA4478"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Идеально зацикленное время"
+			x: -8.0d
+			y: 13.0d
+		}
+		{
 			dependencies: ["151585622A7F23C3"]
 			id: "7F2474F2049B94FB"
 			tasks: [{
@@ -1396,9 +1386,8 @@
 				item: "thermal:slime_mushroom_spores"
 				type: "item"
 			}]
-			title: "Возобновляемые сгустки слизи"
-			x: 10.0d
-			y: 30.0d
+			x: 8.0d
+			y: 31.0d
 		}
 		{
 			dependencies: ["3F5758647B93803C"]
@@ -1442,8 +1431,8 @@
 				}
 			]
 			title: "Электроинструменты"
-			x: 8.5d
-			y: 5.5d
+			x: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1557,11 +1546,53 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["552D47F0044BE5E4"]
+			description: [
+				"С помощью жезла душ Пустые предохранители можно превратить в Предохранители душ."
+				""
+				"Просто бросьте Пустые предохранители на землю и ударьте по ним жезлом душ."
+			]
+			icon: "kubejs:soul_fuse"
+			id: "34E24CF953EB8B77"
+			rewards: [{
+				id: "34F121CFF1CAB083"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "Пойманные души"
+			tasks: [
+				{
+					id: "495CA98D59DAA689"
+					item: "kubejs:empty_fuse"
+					type: "item"
+				}
+				{
+					id: "62E627900291E0D3"
+					item: "kubejs:soul_fuse"
+					type: "item"
+				}
+			]
+			title: "Предохранитель душ"
+			x: -5.0d
+			y: 23.5d
+		}
+		{
 			dependencies: ["3EEB10E1DC378F7A"]
 			description: [
-				"Сломанные светильники можно восстановить, щёлкнув по ним правой кнопкой мыши с люминесцентной лампой в руке."
+				"Вы также можете устранить нанесённый Backrooms ущерб:"
 				""
-				"Это кажется пустой тратой ресурсов, но включить свет снова может быть не так уж плохо."
+				"- Возьмите ковёр и нажмите ПКМ по напольной плитке"
+				""
+				"- Возьмите обои и нажмите ПКМ по ободранным обоям"
+				""
+				"- Возьмите люминесцентную лампу и нажмите ПКМ по сломанному потолочному светильнику"
+				""
+				"- Возьмите обои и нажмите ПКМ по Деревянному каркасу, чтобы создать поддельные обои"
+				""
+				"Если вам нравится вид бетонных плиток, нажмите по ним ПКМ с куском бетона, чтобы превратить их в цельные блоки. После этого ковёр на них больше не вырастет."
+				""
+				""
+				"Всё это может показаться безумной затеей, но снова включить свет не так уж плохо."
 			]
 			icon: {
 				Count: 1
@@ -1571,20 +1602,27 @@
 				}
 			}
 			id: "240D7B64E63FCE4F"
-			rewards: [{
-				id: "2AD015705A260632"
-				item: "supplementaries:confetti_popper"
-				type: "item"
-			}]
 			subtitle: "Путь к искуплению"
-			tasks: [{
-				id: "77BA9C13CBC2B1B7"
-				item: "kubejs:fluorescent_tube"
-				type: "item"
-			}]
-			title: "Восстановление Backrooms 2.0"
-			x: 10.5d
-			y: 13.0d
+			tasks: [
+				{
+					id: "77BA9C13CBC2B1B7"
+					item: "kubejs:fluorescent_tube"
+					type: "item"
+				}
+				{
+					id: "0EFA283BF071CBDF"
+					item: "kubejs:cut_carpet"
+					type: "item"
+				}
+				{
+					id: "2FEB48503476AD71"
+					item: "kubejs:wallpaper"
+					type: "item"
+				}
+			]
+			title: "Восстановление Backrooms"
+			x: 11.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["070593BCE7387349"]
@@ -1622,15 +1660,13 @@
 			]
 			icon: "kubejs:putty_knife"
 			id: "383ABAC05F6FC6F0"
-			subtitle: "Автоматизируйте добычу обоев"
 			tasks: [{
 				id: "313AC7881A8B9B53"
 				item: "kubejs:putty_knife"
 				type: "item"
 			}]
-			title: "Шпатель"
 			x: 8.0d
-			y: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["451A79187DD84C9A"]
@@ -1731,11 +1767,7 @@
 		}
 		{
 			dependencies: ["5D74C2FDCBAA0FC7"]
-			description: [
-				"Ломом можно открыть водостоки, которые вы могли встречать под ковром..."
-				""
-				"Чтобы снова закрыть водосток, установите решётку, которая выпала при его открытии."
-			]
+			description: ["Ломом можно открыть водостоки, которые вы могли встречать под ковром..."]
 			icon: "kubejs:drain"
 			id: "62905CF8D9082304"
 			shape: "square"
@@ -1749,197 +1781,6 @@
 			title: "Вход в Poolrooms"
 			x: -1.5d
 			y: 29.5d
-		}
-		{
-			dependencies: ["3F5758647B93803C"]
-			description: [
-				"Порох для взрывчатки можно найти в Backrooms."
-				""
-				"Однако если найти его не удалось, есть ещё несколько способов его получить."
-			]
-			id: "74A40C27F67C1627"
-			tasks: [{
-				id: "5F5D4B7CE1DB6F4B"
-				item: "thermal:explosive_grenade"
-				type: "item"
-			}]
-			title: "Бомбы пошли!"
-			x: 8.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["74A40C27F67C1627"]
-			description: [
-				"Во время вылазок вам мог попасться похожий на кость блок, который преграждает некоторые проходы. Обычными инструментами его не добыть."
-				""
-				"А вот взрывами..."
-			]
-			icon: "kubejs:sculk_carapace"
-			id: "50858DFFCE79528A"
-			subtitle: "Но у него есть слабость"
-			tasks: [{
-				id: "2FE3454D0C9EE40C"
-				title: "Скалковый панцирь"
-				type: "checkmark"
-			}]
-			title: "Прочнее кости"
-			x: 10.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["33C923AD98680D89"]
-			description: [
-				"Аптекарская стойка позволяет варить зелья без огненного порошка: достаточно поставить её над кипящим тиглем."
-				""
-				"Однако с её помощью можно получать только слабые зелья."
-			]
-			icon: "eidolon:wooden_brewing_stand"
-			id: "474B4A4FF8860514"
-			tasks: [
-				{
-					id: "0896CDFBC6B35B39"
-					item: "eidolon:wooden_brewing_stand"
-					type: "item"
-				}
-				{
-					id: "2DD2E5412ADBF32B"
-					item: "eidolon:crucible"
-					type: "item"
-				}
-			]
-			title: "Бюджетное зельеварение"
-			x: -8.5d
-			y: 13.0d
-		}
-		{
-			dependencies: ["0E75315018995DB6"]
-			description: [
-				"Призраков можно призывать ради ткани."
-				""
-				"Ткань также можно получать автоматически, измельчая головы Зимогоров. Но призвать Зимогора ведь нельзя, правда?"
-			]
-			icon: "kubejs:dark_casing"
-			id: "27DACCD7E67E35D2"
-			subtitle: "Холодный на ощупь"
-			tasks: [
-				{
-					id: "680319E7FE3F0275"
-					item: "kubejs:dark_casing"
-					type: "item"
-				}
-				{
-					id: "2192D718EAAF48CE"
-					item: "eidolon:tattered_cloth"
-					type: "item"
-				}
-			]
-			title: "Darkwood"
-			x: -9.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["33C923AD98680D89"]
-			description: [
-				"Некоторые грибковые колонии можно выращивать на гнилых обоях."
-				""
-				"Кусок гнилых обоев можно привить к существующим ободранным обоям."
-			]
-			icon: "kubejs:rotten_wallpaper"
-			id: "5CD6E4AE62E3AD72"
-			tasks: [
-				{
-					id: "54D4CF8287686F82"
-					item: "kubejs:rotten_wallpaper"
-					type: "item"
-				}
-				{
-					id: "30B128932A30D3BB"
-					item: "kubejs:uncanny_shroom_seeds"
-					type: "item"
-				}
-				{
-					id: "599F49C0AD0D244F"
-					item: "miners_delight:cave_carrot"
-					type: "item"
-				}
-			]
-			title: "Миколог по обоям"
-			x: -8.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["151585622A7F23C3"]
-			icon: "thermal:gunpowder_mushroom_spores"
-			id: "5BFFC43EC6EF2C1A"
-			tasks: [
-				{
-					id: "0A966FAE1159B8C2"
-					item: "brewinandchewin:keg"
-					type: "item"
-				}
-				{
-					id: "09399D69F23D0B0E"
-					item: "brewinandchewin:heating_cask"
-					type: "item"
-				}
-				{
-					id: "05022ED16DEC0574"
-					item: "thermal:gunpowder_mushroom_spores"
-					type: "item"
-				}
-				{
-					id: "5A3F3DF13F088D51"
-					item: "minecraft:sugar"
-					type: "item"
-				}
-				{
-					id: "4D2DC6D7D824A007"
-					item: "minecraft:gunpowder"
-					type: "item"
-				}
-			]
-			title: "Возобновляемый порох"
-			x: 10.0d
-			y: 25.5d
-		}
-		{
-			dependencies: ["5CD6E4AE62E3AD72"]
-			description: [
-				"Возможно, вам уже попадались странные кирпичи, скрытые в некоторых комнатах. В таких помещениях обычно хранятся древние сокровища."
-				""
-				"Эти кирпичи чрезвычайно прочны, но один вид грибка способен их разъесть."
-				""
-				"Надколите кирпичи киркой и заразите стену — после этого она ослабеет настолько, что её можно будет разрушить."
-			]
-			icon: "kubejs:strange_bricks"
-			id: "7BCE1818E6CC4553"
-			subtitle: "Откройте гробницу"
-			tasks: [{
-				id: "7D3F4DD517660ED5"
-				item: "kubejs:corrosive_fungi"
-				type: "item"
-			}]
-			title: "Запечатанные покои"
-			x: -11.0d
-			y: 15.5d
-		}
-		{
-			dependencies: ["27DACCD7E67E35D2"]
-			description: [
-				"Чтобы призвать Тихоню, возьмите уголь душ и нажмите ПКМ по тёмному корпусу."
-				""
-				"Однако некоторые Тихони могут оказаться не такими уж дружелюбными."
-			]
-			icon: "plushie_buddies:plushie_allay"
-			id: "78FFF7B6AA4A1AE7"
-			tasks: [{
-				id: "2C317F8B6940C011"
-				title: "Призовите Тихоню"
-				type: "checkmark"
-			}]
-			title: "Рука помощи"
-			x: -11.0d
-			y: 9.0d
 		}
 	]
 	title: "Глава 3"

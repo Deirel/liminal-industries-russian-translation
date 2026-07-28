@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "sector_4"
-	group: "7A1E9C4F2B8D036E"
+	group: ""
 	icon: "kubejs:reality_controller_running"
 	id: "1EC448FE2169EFF9"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -24,13 +24,11 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "Теперь ваши руды — мои"
 			tasks: [{
 				id: "4E23BA1760FD6CF1"
 				item: "mekanism:ingot_osmium"
 				type: "item"
 			}]
-			title: "Осмиевый слиток"
 			x: -3.0d
 			y: 20.0d
 		}
@@ -84,15 +82,13 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "11EEA87ABB4EA12E"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			title: "Металлургический наполнитель"
 			x: -3.0d
-			y: 29.5d
+			y: 32.5d
 		}
 		{
 			dependencies: [
@@ -100,15 +96,13 @@
 				"5F3345E00BDA38CF"
 			]
 			id: "1F3DF761E4C0D011"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "419E9FBF53B1B06D"
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			title: "Базовая схема управления"
 			x: 0.0d
-			y: 32.5d
+			y: 36.5d
 		}
 		{
 			dependencies: [
@@ -117,13 +111,11 @@
 				"5FA33D2B4072B54F"
 			]
 			id: "4D4A26DE9CDBAA45"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "5DB2D38D7E10209B"
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			title: "Продвинутая схема управления"
 			x: 0.0d
 			y: 62.0d
 		}
@@ -131,13 +123,11 @@
 			dependencies: ["08AA2EDF465DE029"]
 			id: "528C282937D0FA29"
 			size: 2.0d
-			subtitle: "Достойная жертва"
 			tasks: [{
 				id: "7E1E18A64CA3022E"
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			title: "Корпус механизма душ"
 			x: 0.0d
 			y: 47.0d
 		}
@@ -151,13 +141,11 @@
 			}]
 			shape: "circle"
 			size: 2.0d
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "0DE1A48509E4D7CD"
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			title: "Стальной корпус"
 			x: 0.0d
 			y: 57.0d
 		}
@@ -208,13 +196,11 @@
 		{
 			dependencies: ["020D04D0081B0376"]
 			id: "6991AF4506CB5086"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "7D07E48E6B48F53A"
 				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
-			title: "Элитная схема управления"
 			x: 0.0d
 			y: 75.0d
 		}
@@ -249,13 +235,11 @@
 			dependencies: ["0469BCAF1F2A490F"]
 			id: "5FA33D2B4072B54F"
 			shape: "gear"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "01F6003F94884B88"
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
-			title: "Электролитический сепаратор"
 			x: 1.5d
 			y: 59.5d
 		}
@@ -263,13 +247,11 @@
 			dependencies: ["0469BCAF1F2A490F"]
 			id: "2CDEB4F4349A736A"
 			shape: "gear"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "1FDA23A516726877"
 				item: "mekanism:purification_chamber"
 				type: "item"
 			}]
-			title: "Камера очистки"
 			x: -1.5d
 			y: 59.5d
 		}
@@ -282,26 +264,22 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "6D4C065958B697C3"
 				item: "mekanism:osmium_compressor"
 				type: "item"
 			}]
-			title: "Осмиевый компрессор"
 			x: 0.0d
 			y: 66.5d
 		}
 		{
 			dependencies: ["4A2B6760346C34A6"]
 			id: "2CE95C36B45CCF4B"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "24B41054897943FA"
 				item: "mekanism:combiner"
 				type: "item"
 			}]
-			title: "Объединитель"
 			x: 0.0d
 			y: 86.5d
 		}
@@ -313,13 +291,11 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "57D514C6452FA443"
 				item: "mekanism:chemical_injection_chamber"
 				type: "item"
 			}]
-			title: "Химическая инъекционная камера"
 			x: 0.0d
 			y: 77.5d
 		}
@@ -388,13 +364,11 @@
 		{
 			dependencies: ["6474DAB2246BD65F"]
 			id: "4A2B6760346C34A6"
-			subtitle: "Силы за гранью вашего понимания"
 			tasks: [{
 				id: "072E76906C94A4B7"
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
-			title: "Совершенная схема управления"
 			x: 0.0d
 			y: 84.0d
 		}
@@ -410,15 +384,13 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "Достойная жертва"
 			tasks: [{
 				id: "2B20EB659ED6EC20"
 				item: "enderio:void_chassis"
 				type: "item"
 			}]
-			title: "Корпус механизма"
 			x: 0.0d
-			y: 25.0d
+			y: 29.0d
 		}
 		{
 			dependencies: ["39C823B4B448FB39"]
@@ -430,36 +402,32 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Почему оно острое???"
 			tasks: [{
 				id: "7571AB375D47B099"
 				item: "enderio:alloy_smelter"
 				type: "item"
 			}]
-			title: "Завод сплавов"
 			x: 0.0d
-			y: 29.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["39C823B4B448FB39"]
 			id: "5AD5455845B236FA"
 			shape: "gear"
-			subtitle: "Почему оно острое???"
 			tasks: [{
 				id: "4DA9E2D52C072E9A"
 				item: "enderio:sag_mill"
 				type: "item"
 			}]
-			title: "Дробитель"
 			x: 3.0d
-			y: 28.0d
+			y: 32.5d
 		}
 		{
-			dependencies: ["039CB42DD79DCEA3"]
+			dependencies: ["5EE912358F2227BA"]
 			description: [
 				"Для призыва более сложных существ нужно запастись средними самоцветами души."
 				""
-				"Чтобы завершить ритуал, придётся пожертвовать здоровьем."
+				"Чтобы завершить ритуал, придётся пожертвовать здоровьем любого моба. Если рядом нет других мобов, ритуал отнимет здоровье у ближайшего игрока."
 			]
 			icon: "kubejs:moderate_soul_gem"
 			id: "08AA2EDF465DE029"
@@ -470,12 +438,19 @@
 				type: "item"
 			}]
 			subtitle: "Достойная жертва"
-			tasks: [{
-				count: 2L
-				id: "20B52DBF82A26666"
-				item: "kubejs:moderate_soul_gem"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "13641B3DF8F4318F"
+					item: "eidolon:necrotic_focus"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "20B52DBF82A26666"
+					item: "kubejs:moderate_soul_gem"
+					type: "item"
+				}
+			]
 			title: "Умеренный призыв"
 			x: 0.0d
 			y: 42.5d
@@ -557,13 +532,11 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Ещё более мощные кристаллы"
 			tasks: [{
 				id: "67A860BBD22A2AFE"
 				item: "botania:alfheim_portal"
 				type: "item"
 			}]
-			title: "Портал в Альфхейм"
 			x: 0.0d
 			y: 71.0d
 		}
@@ -573,13 +546,11 @@
 			id: "16BED30DF56C2600"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Теперь ваши руды — мои"
 			tasks: [{
 				id: "7DAFF95C2AEEACC0"
 				item: "kubejs:reality_controller"
 				type: "item"
 			}]
-			title: "Контроллер реальности"
 			x: 0.0d
 			y: 16.0d
 		}
@@ -587,27 +558,23 @@
 			dependencies: ["1F3DF761E4C0D011"]
 			id: "5EE912358F2227BA"
 			shape: "gear"
-			subtitle: "Достойная жертва"
 			tasks: [{
 				id: "02BE4FD8E554635B"
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			title: "Камера обогащения"
 			x: 0.0d
-			y: 35.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["528C282937D0FA29"]
 			id: "20BB0A14D35143A3"
 			shape: "gear"
-			subtitle: "Достойная жертва"
 			tasks: [{
 				id: "3A885038F49FDBEA"
 				item: "enderio:soul_binder"
 				type: "item"
 			}]
-			title: "Связыватель душ"
 			x: 2.5d
 			y: 49.5d
 		}
@@ -615,13 +582,11 @@
 			dependencies: ["528C282937D0FA29"]
 			id: "6869825F195DBB12"
 			shape: "gear"
-			subtitle: "Достойная жертва"
 			tasks: [{
 				id: "19DAB8A38A0E190C"
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			title: "Отрубатель и сращиватель"
 			x: 0.0d
 			y: 49.5d
 		}
@@ -676,14 +641,8 @@
 				"020D04D0081B0376"
 				"71B9B26E6BA141F3"
 			]
-			description: [
-				"Для Магического Ока нужен постоянный запас мёда и пчелиных сот."
-				""
-				"Сначала обустройте улей — без пчёл не обойтись."
-			]
 			id: "245653B3451C76FA"
 			shape: "hexagon"
-			subtitle: "Сладко, как мёд"
 			tasks: [{
 				id: "50556F28F4B6EB20"
 				item: {
@@ -695,7 +654,6 @@
 				}
 				type: "item"
 			}]
-			title: "Магическое Око"
 			x: 3.0d
 			y: 75.0d
 		}
@@ -703,7 +661,6 @@
 			dependencies: ["20BB0A14D35143A3"]
 			id: "269181DBEA37A739"
 			shape: "hexagon"
-			subtitle: "В стороне от проторённых дорог"
 			tasks: [{
 				id: "17A2A0AAC8632E97"
 				item: {
@@ -715,7 +672,6 @@
 				}
 				type: "item"
 			}]
-			title: "Око Изгоя"
 			x: 5.0d
 			y: 52.0d
 		}
@@ -728,13 +684,11 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "Накормите сингулярность"
 			tasks: [{
 				id: "6183DBD92D769449"
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
-			title: "Герметичная реакционная камера"
 			x: 3.0d
 			y: 66.5d
 		}
@@ -759,11 +713,41 @@
 			y: 20.0d
 		}
 		{
+			dependencies: ["16BED30DF56C2600"]
+			description: ["В некоторых чипах данных есть незерак. Из него можно сделать Всполоховые торты."]
+			icon: "create:blaze_cake"
+			id: "7321D8BB155B472C"
+			rewards: [{
+				id: "1C5EB1F56CF89BFC"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4B3A4C0351DCB132"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "1AD583DD19B53866"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "55D0877F7ACFE0EA"
+					item: "create:blaze_cake"
+					type: "item"
+				}
+			]
+			title: "Почему так остро???"
+			x: 6.0d
+			y: 20.0d
+		}
+		{
 			dependencies: ["2C65A876EF00F270"]
 			id: "1D6D27D8FBF358F3"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Оно смотрит в ответ"
 			tasks: [{
 				id: "4111747B9EE22203"
 				item: {
@@ -775,7 +759,6 @@
 				}
 				type: "item"
 			}]
-			title: "Зловещее Око"
 			x: 3.0d
 			y: 92.5d
 		}
@@ -787,7 +770,6 @@
 			id: "665DBC2127655305"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Не моргайте"
 			tasks: [{
 				id: "168F40207A0E9C9C"
 				item: {
@@ -799,7 +781,6 @@
 				}
 				type: "item"
 			}]
-			title: "Проклятое Око"
 			x: -3.0d
 			y: 92.5d
 		}
@@ -820,7 +801,7 @@
 			y: 66.5d
 		}
 		{
-			dependencies: ["16BED30DF56C2600"]
+			dependencies: ["7321D8BB155B472C"]
 			description: ["Если нажать ПКМ хроматическим соединением по блоку теневых самоцветов, он превратится в теневую сталь."]
 			icon: "create:shadow_steel"
 			id: "26F8FABDCAB3E581"
@@ -858,14 +839,13 @@
 				}
 			]
 			title: "Тёмная магия"
-			x: 6.5d
-			y: 20.0d
+			x: 6.0d
+			y: 23.5d
 		}
 		{
 			dependencies: ["20BB0A14D35143A3"]
 			id: "115CD04307C62ED7"
 			shape: "hexagon"
-			subtitle: "Холод до костей"
 			tasks: [{
 				id: "280C1DCE4A2D9D8D"
 				item: {
@@ -877,7 +857,6 @@
 				}
 				type: "item"
 			}]
-			title: "Ледяное Око"
 			x: 2.5d
 			y: 53.5d
 		}
@@ -962,7 +941,6 @@
 					type: "item"
 				}
 			]
-			title: "Конденсатор материи"
 			x: -3.0d
 			y: 66.5d
 		}
@@ -970,7 +948,6 @@
 			dependencies: ["46BDA25C56FAA3E0"]
 			id: "218587C0C569873D"
 			shape: "hexagon"
-			subtitle: "Вглядываясь в пустоту"
 			tasks: [{
 				id: "77DC77A35BFEC582"
 				item: {
@@ -982,22 +959,19 @@
 				}
 				type: "item"
 			}]
-			title: "Чёрное Око"
 			x: -3.0d
 			y: 71.0d
 		}
 		{
 			dependencies: ["03AF09793F287C2A"]
 			id: "33647CB39EC6757F"
-			subtitle: "Создание чёрной дыры"
 			tasks: [{
 				id: "294C38C784B4977B"
 				item: "enderio:item_conduit"
 				type: "item"
 			}]
-			title: "Предметная труба"
 			x: 3.0d
-			y: 32.0d
+			y: 36.5d
 		}
 		{
 			dependencies: ["1C652ACF84E2883C"]
@@ -1055,7 +1029,6 @@
 			dependencies: ["08AA2EDF465DE029"]
 			id: "542DAE1D5B46EAE6"
 			shape: "hexagon"
-			subtitle: "Восставшее вновь"
 			tasks: [{
 				id: "736139562FDD8E3B"
 				item: {
@@ -1067,19 +1040,25 @@
 				}
 				type: "item"
 			}]
-			title: "Око Нежити"
 			x: -4.0d
 			y: 47.0d
 		}
 		{
-			description: [
-				"Пчёлы на удивление полезны в этих местах."
-				""
-				"Для создания Магического Ока понадобятся мёд и пчелиные соты."
-			]
 			icon: "minecraft:beehive"
 			id: "71B9B26E6BA141F3"
-			subtitle: "Сладко, как мёд"
+			rewards: [
+				{
+					count: 3
+					id: "7848A53424C8FE3D"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "26F231581A052D0B"
+					item: "plushie_buddies:plushie_bee"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "7B480A6A299153B2"
@@ -1092,319 +1071,8 @@
 					type: "item"
 				}
 			]
-			title: "Пчелиное хозяйство"
 			x: 3.0d
 			y: 71.0d
-		}
-		{
-			dependencies: ["6474DAB2246BD65F"]
-			description: [
-				"Съев плод хоруса, вы телепортируетесь к точке появления в мире. Возможно, стоит выращивать эти плоды для мгновенных перемещений."
-				""
-				"Но выбирайте место осторожно: иначе вместо точки появления можно угодить в лимб."
-			]
-			icon: "minecraft:chorus_fruit"
-			id: "4ECED89E0795DE4E"
-			subtitle: "Мгновенное перемещение"
-			tasks: [
-				{
-					id: "3433EA4128704100"
-					item: "minecraft:chorus_flower"
-					type: "item"
-				}
-				{
-					id: "36543B0DB910CB0F"
-					item: "minecraft:chorus_fruit"
-					type: "item"
-				}
-			]
-			title: "Плод перемещения"
-			x: 3.5d
-			y: 80.5d
-		}
-		{
-			dependencies: ["6474DAB2246BD65F"]
-			id: "0C7DA8EC7BA497C4"
-			subtitle: "Всё ещё не вылупляется"
-			tasks: [{
-				id: "2CBCBC7337EF96CC"
-				item: "minecraft:dragon_egg"
-				type: "item"
-			}]
-			title: "Яйцо дракона"
-			x: -3.5d
-			y: 80.5d
-		}
-		{
-			dependencies: ["16BED30DF56C2600"]
-			description: [
-				"Используйте один из четырёх стихийных тортов на призывателе реальности, чтобы призвать стихийного стража. "
-				""
-				"С одним из них вы уже встречались."
-			]
-			icon: "kubejs:reality_spawner"
-			id: "40A4569854F44B8F"
-			subtitle: "Не из этого мира"
-			tasks: [
-				{
-					id: "3B71C6F55D04CDE7"
-					item: "kubejs:reality_spawner"
-					type: "item"
-				}
-				{
-					id: "129C8FB5432CB919"
-					item: "create:blaze_cake"
-					type: "item"
-				}
-				{
-					id: "56C74A2A496FFDAD"
-					item: "kubejs:basalz_cake"
-					type: "item"
-				}
-				{
-					id: "32C3961822FF90F0"
-					item: "kubejs:blizz_cake"
-					type: "item"
-				}
-				{
-					id: "6175F6DFAA00EB88"
-					item: "kubejs:blitz_cake"
-					type: "item"
-				}
-			]
-			title: "Призыв стихийных существ"
-			x: 7.5d
-			y: 17.0d
-		}
-		{
-			dependencies: ["4ECED89E0795DE4E"]
-			id: "3591A3E7EC3B06C1"
-			tasks: [{
-				id: "12BA3D64037920C1"
-				item: "waystones:warp_dust"
-				type: "item"
-			}]
-			title: "Возобновляемая пыль перемещения"
-			x: 6.0d
-			y: 80.5d
-		}
-		{
-			dependencies: ["5EE912358F2227BA"]
-			description: [
-				"Некротическая линза позволяет во время ритуала забирать здоровье у существа поблизости. Благодаря этому в некоторых ритуалах призыва можно обойтись более дешёвыми самоцветами души."
-				""
-				"Если поблизости нет другого существа, ритуал заберёт здоровье у ближайшего игрока."
-			]
-			id: "039CB42DD79DCEA3"
-			shape: "rsquare"
-			subtitle: "Скидка, за которую придётся заплатить"
-			tasks: [{
-				id: "749A9F6E079611D6"
-				item: "eidolon:necrotic_focus"
-				type: "item"
-			}]
-			title: "Кровавые деньги"
-			x: 0.0d
-			y: 39.0d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_zombie.png width:192 height:108 align:center}"]
-			icon: "minecraft:zombie_head"
-			id: "5F88829588D034F1"
-			tasks: [
-				{
-					id: "755A59F828934750"
-					item: "minecraft:rotten_flesh"
-					type: "item"
-				}
-				{
-					id: "61A9FD815F093BF4"
-					item: "minecraft:charcoal"
-					type: "item"
-				}
-				{
-					id: "5F48BEC2023AA105"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать зомби"
-			x: -3.0d
-			y: 37.0d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_skeleton.png width:192 height:108 align:center}"]
-			icon: "minecraft:skeleton_skull"
-			id: "00335ADEB7E86EC2"
-			tasks: [
-				{
-					id: "01A42C36746D65A7"
-					item: "minecraft:bone"
-					type: "item"
-				}
-				{
-					id: "1654BCD7F675EC18"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать скелета"
-			x: -5.5d
-			y: 38.0d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_wither_skeleton.png width:192 height:108 align:center}"]
-			icon: "minecraft:wither_skeleton_skull"
-			id: "5829EB74396CFC68"
-			tasks: [
-				{
-					id: "02FB8ABA9CCECFDB"
-					item: "minecraft:bone"
-					type: "item"
-				}
-				{
-					id: "2C2B495A29094C7E"
-					item: "minecraft:soul_sand"
-					type: "item"
-				}
-				{
-					id: "7C6D3CFE828F8D5E"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать визер-скелета"
-			x: -5.5d
-			y: 40.5d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_husk.png width:192 height:108 align:center}"]
-			icon: "tconstruct:husk_head"
-			id: "0492863EB2F9F566"
-			tasks: [
-				{
-					icon: "minecraft:rotten_flesh"
-					id: "130FB62A2D5D25FD"
-					item: "tconstruct:husk_head"
-					type: "item"
-				}
-				{
-					id: "7EDEA0F11D69099C"
-					item: "minecraft:sand"
-					type: "item"
-				}
-				{
-					id: "7F7BF36E74D9FA83"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать кадавра"
-			x: 3.0d
-			y: 37.0d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_stray.png width:192 height:108 align:center}"]
-			icon: "tconstruct:stray_head"
-			id: "7FA7C184C69930EA"
-			tasks: [
-				{
-					id: "068E3A4862E4CCC4"
-					item: "minecraft:bone"
-					type: "item"
-				}
-				{
-					id: "45674EBCA07CB248"
-					item: "minecraft:string"
-					type: "item"
-				}
-				{
-					id: "1FFA63100C693C1E"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать зимогора"
-			x: 5.5d
-			y: 38.0d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_phantom.png width:192 height:108 align:center}"]
-			icon: "plushie_buddies:plushie_phantom"
-			id: "3FC2A47A43670CC9"
-			tasks: [
-				{
-					id: "487B219030E3EF63"
-					item: "minecraft:phantom_membrane"
-					type: "item"
-				}
-				{
-					id: "260CA6A2EC22B533"
-					item: "minecraft:phantom_membrane"
-					type: "item"
-				}
-				{
-					id: "706D0DC38B13E2B5"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать фантома"
-			x: 3.0d
-			y: 41.5d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_drowned.png width:192 height:108 align:center}"]
-			icon: "tconstruct:drowned_head"
-			id: "574DDFF6CCB567EB"
-			tasks: [
-				{
-					id: "796C07453D96250E"
-					item: "minecraft:rotten_flesh"
-					type: "item"
-				}
-				{
-					id: "0314CFEC49C7F47D"
-					item: "minecraft:prismarine_shard"
-					type: "item"
-				}
-				{
-					id: "1E95584A2F52960F"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать утопленника"
-			x: 5.5d
-			y: 40.5d
-		}
-		{
-			dependencies: ["039CB42DD79DCEA3"]
-			description: ["{image:kubejs:textures/quests/lesser_wraith.png width:192 height:108 align:center}"]
-			icon: "eidolon:wraith_heart"
-			id: "65D6501EAE957753"
-			tasks: [
-				{
-					id: "3912EA14CA3A444E"
-					item: "eidolon:tattered_cloth"
-					type: "item"
-				}
-				{
-					id: "3FB659877C9BC32C"
-					item: "eidolon:soul_shard"
-					type: "item"
-				}
-			]
-			title: "Призвать призрака"
-			x: -3.0d
-			y: 41.5d
 		}
 	]
 	title: "Глава 5"

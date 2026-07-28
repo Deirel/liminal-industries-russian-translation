@@ -64,7 +64,7 @@ def load_item_model_ids(archives: list[Path], kubejs_dir: Path) -> set[str]:
         for path in base.glob("assets/*/models/item/**/*.json"):
             relative = path.relative_to(base / "assets")
             namespace = relative.parts[0]
-            item_path = Path(*relative.parts[2:]).with_suffix("").as_posix()
+            item_path = Path(*relative.parts[3:]).with_suffix("").as_posix()
             ids.add(f"{namespace}:{item_path}")
     return ids
 

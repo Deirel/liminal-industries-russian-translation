@@ -6,7 +6,7 @@
 ## Подготовка
 
 1. Скачайте с
-   [CurseForge](https://www.curseforge.com/minecraft/modpacks/liminal-industries-rescripted/files)
+   [CurseForge](https://www.curseforge.com/minecraft/modpacks/liminal-industries/files)
    клиентский архив новой версии.
 2. Запишите точное имя версии. Сверьте версии Minecraft, Forge и FTB Quests.
 3. Распакуйте старую и новую версии в разные временные папки. Не добавляйте

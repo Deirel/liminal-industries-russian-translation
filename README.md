@@ -1,17 +1,17 @@
-# Русский перевод Liminal Industries - Rescripted
+# Русский перевод Liminal Industries
 
 Перевод квестов и названий предметов для модпака
-[Liminal Industries - Rescripted](https://www.curseforge.com/minecraft/modpacks/liminal-industries-rescripted).
+[Liminal Industries](https://www.curseforge.com/minecraft/modpacks/liminal-industries).
 
 Последняя поддерживаемая версия:
 
-- Liminal Industries - Rescripted `1.19.3 - 7 (AE2 fix)`
+- Liminal Industries `1.19.3`
 - Minecraft `1.20.1`
 - Forge `47.4.13`
-- FTB Quests `2001.4.22`
+- FTB Quests `2001.4.13`
 
 Скачать файлы можно на странице [последнего релиза](../../releases/latest).
-Часть `1.19.3-7-ae2-fix` в имени файла — это версия модпака, а не Minecraft.
+Часть `1.19.3-original` в имени файла — это версия модпака, а не Minecraft.
 
 Перевод распространяется одним клиентским Forge-модом. Названия предметов
 загружаются как обычные ресурсы, а русский текст квестов подставляется только
@@ -20,7 +20,7 @@
 ## Установка
 
 1. Скачайте
-   `liminal-industries-russian-translation-1.19.3-7-ae2-fix.jar`.
+   `liminal-industries-russian-translation-1.19.3-original.jar`.
 2. Поместите JAR в каталог `mods` профиля.
 3. Выберите русский язык в настройках Minecraft.
 

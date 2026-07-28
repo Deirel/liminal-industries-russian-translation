@@ -1,6 +1,832 @@
 {
   "schema_version": 1,
   "entries": {
+    "item:block.actuallyadditions.atomic_reconstructor": [
+      {
+        "source_hash": "sha256:da45cb68b0f3ada9b00ff26d4ae4bb617d1c5198c22cc498e5c60a522ee111a9",
+        "source": "Atomic Reconstructor",
+        "translation": "Атомный реконстрактор"
+      }
+    ],
+    "item:block.actuallyadditions.battery_box": [
+      {
+        "source_hash": "sha256:25ccd0bb507799dfadf59609a9fa8b57e453e18913cb923ad7202483b7ed3265",
+        "source": "Battery Box",
+        "translation": "Батарейный блок"
+      }
+    ],
+    "item:block.actuallyadditions.bio_reactor": [
+      {
+        "source_hash": "sha256:285d043d7f3432a58f93c3bec3fcf38b960594784a444b2e2a7b2edebedc523f",
+        "source": "Bio Reactor",
+        "translation": "Биореактор"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_block": [
+      {
+        "source_hash": "sha256:6c6a3786feea25256f23418700d8a5d868a4ba2eb64227397796683990c7f1d4",
+        "source": "Block of Black Quartz",
+        "translation": "Блок чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_brick_block": [
+      {
+        "source_hash": "sha256:700c39a5489d5bf6e49c04eec75830a9e640e44f7b577e149a2d77000de49168",
+        "source": "Black Quartz Bricks",
+        "translation": "Черные кварцевые кирпичи"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_brick_slab": [
+      {
+        "source_hash": "sha256:897291069a07798fb0ce0346b41669fd9fba1e4828b4ad4a50f0ca7626bd7c05",
+        "source": "Black Quartz Brick Slab",
+        "translation": "Плита из черного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_brick_stair": [
+      {
+        "source_hash": "sha256:1e552d89ad544f0c2f8766290904c8e84782e7551f224f6a8a3ee8b5f5f9278f",
+        "source": "Black Quartz Brick Stairs",
+        "translation": "Супеньки из черного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_brick_wall": [
+      {
+        "source_hash": "sha256:adeb60c666c65ad2d2742c6e56b2302a9b93fa4b52c095d25869b749243930ea",
+        "source": "Black Quartz Brick Wall",
+        "translation": "Ограда из черного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_ore": [
+      {
+        "source_hash": "sha256:87cfc6771910b45e0c1878288a84e5b1048bff08ab5ea4565db67e9609b3c7b7",
+        "source": "Black Quartz Ore",
+        "translation": "Руда чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_pillar_block": [
+      {
+        "source_hash": "sha256:ba377419f1b08f9431f22c12383b06dfe689e87047da49d6dc813cf7274f200e",
+        "source": "Pillar of Black Quartz",
+        "translation": "Колонна из черного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_pillar_slab": [
+      {
+        "source_hash": "sha256:d063c1611adfab62b7ea79c9d325f98cadb84fb652bd5a488a43d9f8eb83ed7a",
+        "source": "Black Quartz Pillar Slab",
+        "translation": "Плита из черного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_pillar_stair": [
+      {
+        "source_hash": "sha256:1e60066c038516b4c0f58636335452ecc5f4836e23eb7b5970d82c6881f9760a",
+        "source": "Black Quartz Pillar Stairs",
+        "translation": "Лестница из черного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_pillar_wall": [
+      {
+        "source_hash": "sha256:dd4107b49b46b4dfa1afa6157bea2227925a4a76f6a0f0a6da0705ccd9939171",
+        "source": "Black Quartz Pillar Wall",
+        "translation": "Ограда из черного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_slab": [
+      {
+        "source_hash": "sha256:9ec37e05d2d01f899fb3fa8daf9a99027ccdef8a67203d7b0923fb94c213c887",
+        "source": "Black Quartz Slab",
+        "translation": "Плита из чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_stair": [
+      {
+        "source_hash": "sha256:60df2131a2e32f2461ac02a95ef12dc708f06b2ae47861cbb6ca2d676ec80df2",
+        "source": "Black Quartz Stairs",
+        "translation": "Ступеньки из чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.black_quartz_wall": [
+      {
+        "source_hash": "sha256:cd56078e0df6293e66d667cc2e7d1a3883dbc50de46557405e31f54d9b3bea91",
+        "source": "Black Quartz Wall",
+        "translation": "Ограда из чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.breaker": [
+      {
+        "source_hash": "sha256:44fdb8735d1f60874687df3819dc1f57b0efca435fab18eb66b071e38e7c99e3",
+        "source": "Auto-Breaker",
+        "translation": "Авто-разрушитель"
+      }
+    ],
+    "item:block.actuallyadditions.canola_press": [
+      {
+        "source_hash": "sha256:dc5534408864296bb52d470f660a4cbe4a62fb93fa9cd01ba04702221b5a3f61",
+        "source": "Canola Press",
+        "translation": "Каноловый пресс"
+      }
+    ],
+    "item:block.actuallyadditions.chiseled_black_quartz_block": [
+      {
+        "source_hash": "sha256:62f85196149f0c52a1bfe4c021fbc5b87e852658997dcdec17b6b5204b66ee1a",
+        "source": "Chiseled Black Quartz",
+        "translation": "Резной блок чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.chiseled_black_quartz_slab": [
+      {
+        "source_hash": "sha256:695eaf9ad498be4f29eca4ad13fc8454947c0ce604437533010b1e0ffd755aa3",
+        "source": "Chiseled Black Quartz Slab",
+        "translation": "Плита из резного чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.chiseled_black_quartz_stair": [
+      {
+        "source_hash": "sha256:f1849c67ad4b75437cbe8197bb28678853613fc9aec98d45aa7ba664b44763e3",
+        "source": "Chiseled Black Quartz Stairs",
+        "translation": "Ступеньки из резного чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.chiseled_black_quartz_wall": [
+      {
+        "source_hash": "sha256:059b1becd8d38ac085bc75a972880be4edc9606097e15dfca6966518fd0b851a",
+        "source": "Chiseled Black Quartz Wall",
+        "translation": "Ограда из резного чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.coal_generator": [
+      {
+        "source_hash": "sha256:1229ae8437819bc9b40b6d730c7ec36f6e741dae369eb7f1fe567805fb1aeaa2",
+        "source": "Coal Generator",
+        "translation": "Угольный генератор"
+      }
+    ],
+    "item:block.actuallyadditions.coffee_machine": [
+      {
+        "source_hash": "sha256:a7c9ac52a64b790c620e98caa9c13932bd37b2c279b2463df647423d78a3ad5e",
+        "source": "Coffee Maker",
+        "translation": "Кофеварка"
+      }
+    ],
+    "item:block.actuallyadditions.crate_small": [
+      {
+        "source_hash": "sha256:ca69d0c71690c4dba759f9a615569286196b660013e0b037d11d19f08069a306",
+        "source": "Small Storage Crate (WIP)",
+        "translation": "Маленький ящик для хранения (WIP)"
+      }
+    ],
+    "item:block.actuallyadditions.crusher": [
+      {
+        "source_hash": "sha256:3ae914d990c70171b46a3d1ad70755d54344b2ddfc9c04cca14bb26f708f76fc",
+        "source": "Crusher",
+        "translation": "Дробитель"
+      }
+    ],
+    "item:block.actuallyadditions.crusher_double": [
+      {
+        "source_hash": "sha256:4e9875f6897a00105834bfae17ec428249e58c6634e93fd2575ba18258432cd8",
+        "source": "Double Crusher",
+        "translation": "Двойной дробитель"
+      }
+    ],
+    "item:block.actuallyadditions.diamatine_crystal_block": [
+      {
+        "source_hash": "sha256:4943738ad1a756c5f880cf911d30b2c49b8da509f8e272c298452a456265805c",
+        "source": "Diamatine Crystal Block",
+        "translation": "Кристальный блок Диаматина"
+      }
+    ],
+    "item:block.actuallyadditions.diamatine_crystal_cluster": [
+      {
+        "source_hash": "sha256:2b3b19330700bb5b1c9d288cce284c545a6de5ad6f8da4e72e9a60012e6ca604",
+        "source": "Light Blue Crystal Cluster",
+        "translation": "Светло-синее кристаллическое скопление"
+      }
+    ],
+    "item:block.actuallyadditions.display_stand": [
+      {
+        "source_hash": "sha256:2cbcf3fdbef40458a8c46937d9f4f35dff7bdb7e63803bd7d966ca410dc7c0f2",
+        "source": "Display Stand",
+        "translation": "Выставочный стенд"
+      }
+    ],
+    "item:block.actuallyadditions.dropper": [
+      {
+        "source_hash": "sha256:1fbf03bc573a3022eba01c592fe5db0173b25ff8bd51702a894e63b5839e58f4",
+        "source": "Automatic Precision Dropper",
+        "translation": "Автоматический точный выбрасыватель"
+      }
+    ],
+    "item:block.actuallyadditions.emeradic_crystal_block": [
+      {
+        "source_hash": "sha256:13fca80be6a38e29a46fbb3cc3cc4692afea2dd0ef88cfe118d577d99563951a",
+        "source": "Emeradic Crystal Block",
+        "translation": "Кристальный блок Эмерадиса"
+      }
+    ],
+    "item:block.actuallyadditions.emeradic_crystal_cluster": [
+      {
+        "source_hash": "sha256:ca247c53ac53e147af380f2da2829eb635f893334d11ad6c5d081c92b94d1057",
+        "source": "Green Crystal Cluster",
+        "translation": "Зелёное кристаллическое скопление"
+      }
+    ],
+    "item:block.actuallyadditions.empowered_diamatine_crystal_block": [
+      {
+        "source_hash": "sha256:f341a5d297c39260204fed1c8abf15d4640ebfe0ad20c41a434e0d75ace05327",
+        "source": "Empowered Diamatine Crystal Block",
+        "translation": "Усиленный кристальный Диаматина"
+      }
+    ],
+    "item:block.actuallyadditions.empowered_emeradic_crystal_block": [
+      {
+        "source_hash": "sha256:d90dac9a8b5635483200290dd7c3757751159f27050ff60eb8bc080e6f8bbdf9",
+        "source": "Empowered Emeradic Crystal Block",
+        "translation": "Усиленный кристальный Эмерадиса"
+      }
+    ],
+    "item:block.actuallyadditions.empowered_enori_crystal_block": [
+      {
+        "source_hash": "sha256:cdbac93d73ca28572a5323d2bd0ff832e9567f1d7646065395d94ea874c9aa8b",
+        "source": "Empowered Enori Crystal Block",
+        "translation": "Усиленный кристальный блок Энори"
+      }
+    ],
+    "item:block.actuallyadditions.empowered_palis_crystal_block": [
+      {
+        "source_hash": "sha256:c6abd7b0231c232a5bee07fe7cf2b38b712c0bafeb9f0dace04a3ef6fc880990",
+        "source": "Empowered Palis Crystal Block",
+        "translation": "Усиленный кристальный Палиса"
+      }
+    ],
+    "item:block.actuallyadditions.empowered_restonia_crystal_block": [
+      {
+        "source_hash": "sha256:d4e8b2506ce6591c52b2008c88a75b186ed3af8d265ca48f64a0866dfe5040c6",
+        "source": "Empowered Restonia Crystal Block",
+        "translation": "Усиленный кристальный Рестонии"
+      }
+    ],
+    "item:block.actuallyadditions.empowered_void_crystal_block": [
+      {
+        "source_hash": "sha256:7bc102a32954e0c02e39dbab7360f35a97516b4dd1c705a0f2e836b5fa9ab0e6",
+        "source": "Empowered Void Crystal Block",
+        "translation": "Усиленный кристальный Пустоты"
+      }
+    ],
+    "item:block.actuallyadditions.empowerer": [
+      {
+        "source_hash": "sha256:7a933c5548b8e3914213945a6121166ee957d38fd4afc71ee44709ff559db304",
+        "source": "Empowerer",
+        "translation": "Зарядник"
+      }
+    ],
+    "item:block.actuallyadditions.ender_casing": [
+      {
+        "source_hash": "sha256:fd35196685a17d2177ddb86799c8bfba2b9bd3d079de3029683eb6f29279e6d2",
+        "source": "Ender Casing",
+        "translation": "Эндер-корпус"
+      }
+    ],
+    "item:block.actuallyadditions.energizer": [
+      {
+        "source_hash": "sha256:fa052ebab05f3550a8ed77c931847f1d9cbe3c99a91ed0e6d484c0c92ed8ab69",
+        "source": "Energizer",
+        "translation": "Энерджайзер"
+      }
+    ],
+    "item:block.actuallyadditions.enervator": [
+      {
+        "source_hash": "sha256:c6022388fea841d4d9b00dd49e4b2d65508b0fe56c2d186f299399952a631c6e",
+        "source": "Enervator",
+        "translation": "Энерватор"
+      }
+    ],
+    "item:block.actuallyadditions.enori_crystal_block": [
+      {
+        "source_hash": "sha256:522dde91cec7b10e2a3f6004ee1ff7b65b458a6a8285af5aeb00b8430175557a",
+        "source": "Enori Crystal Block",
+        "translation": "Кристальный блок Энори"
+      }
+    ],
+    "item:block.actuallyadditions.enori_crystal_cluster": [
+      {
+        "source_hash": "sha256:68a29f1a4185fdb11f1eeda132f7efaa2a54a021d8c6a6f6d2d7bbaff84a6066",
+        "source": "White Crystal Cluster",
+        "translation": "Белое кристаллическое скопление"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_green_block": [
+      {
+        "source_hash": "sha256:3d7f5a3b563acac764da1bdd012399c20e4d476651144055e5cf268bd46ccc17",
+        "source": "Ethetic Green Quartz",
+        "translation": "Декоративный зелёный кварц"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_green_slab": [
+      {
+        "source_hash": "sha256:cecf80a26c6e09823dad9933728c11c33aad957f9c40d2051d3634e902477821",
+        "source": "Ethetic Green Quartz Slab",
+        "translation": "Плита декоративного зелёного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_green_stairs": [
+      {
+        "source_hash": "sha256:d20cd69bed71ddc00b07314de0987918ff1d3253e27c8168072819360ed981cd",
+        "source": "Ethetic Green Quartz Stairs",
+        "translation": "Декоративная лестница зелёный кварц"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_green_wall": [
+      {
+        "source_hash": "sha256:31a30c0739f4e91885e96f63d4fcb431aa22d185e98809ed32ef5b09ab6a1223",
+        "source": "Ethetic Green Quartz Wall",
+        "translation": "Декоративная зелёная кварцевая стена"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_white_block": [
+      {
+        "source_hash": "sha256:7fcac5b8cb737f1cd9366db3fef8d36c3c4efc45c8388cd32bfe91b98759c0a5",
+        "source": "Ethetic Quartz",
+        "translation": "Декоративный кварц"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_white_slab": [
+      {
+        "source_hash": "sha256:1078c2f9795fb1425b2a221c12561c7311ab91e1fbd7e48cdd25736fab5177e9",
+        "source": "Ethetic Quartz Slab",
+        "translation": "Плита декоративного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_white_stairs": [
+      {
+        "source_hash": "sha256:2d13b0c2ca60648b622981e286f7c4d9ad0f3398c2476c5e88d7c022f05ff449",
+        "source": "Ethetic Quartz Stairs",
+        "translation": "Декоративная лестница кварц"
+      }
+    ],
+    "item:block.actuallyadditions.ethetic_white_wall": [
+      {
+        "source_hash": "sha256:c7b73b86b3cd577a2396156ac44f4082ac1faf98a926133285ca8298454a5268",
+        "source": "Ethetic Quartz Wall",
+        "translation": "Декоративная кварцевая стена"
+      }
+    ],
+    "item:block.actuallyadditions.farmer": [
+      {
+        "source_hash": "sha256:dc01da548cb3a5f7fd6792e758f25ade4e9ff2b1e1f3d12e3a282a57cc69bb9a",
+        "source": "Farmer",
+        "translation": "Фермер"
+      }
+    ],
+    "item:block.actuallyadditions.feeder": [
+      {
+        "source_hash": "sha256:6dd609d623c49b6cb2a3888af95cd505eb4d179eda6f9e29adc1b07b70348140",
+        "source": "Automatic Feeder",
+        "translation": "Автоматическая кормушка"
+      }
+    ],
+    "item:block.actuallyadditions.fermenting_barrel": [
+      {
+        "source_hash": "sha256:5db5ee0da40cb2c2ebd8cbc04d6c755e58bc16e74a7cfdc151f28c4ccc4edebd",
+        "source": "Fermenting Barrel",
+        "translation": "Ферментирующая бочка"
+      }
+    ],
+    "item:block.actuallyadditions.firework_box": [
+      {
+        "source_hash": "sha256:b0f5b4897e242864e554a2fe944a9de5201c423fdc0694ce11ba147bfe3afd15",
+        "source": "Firework Box",
+        "translation": "Ящик фейрверков"
+      }
+    ],
+    "item:block.actuallyadditions.fluid_collector": [
+      {
+        "source_hash": "sha256:642f10a9b78507978385714844dd41fa2dad4fac7f8bfc82ee52461853d34bd3",
+        "source": "Fluid Collector",
+        "translation": "Жидкостный собиратель"
+      }
+    ],
+    "item:block.actuallyadditions.fluid_placer": [
+      {
+        "source_hash": "sha256:caa4af78483af307baa2ec74060f9945fd49ee3f2358883c275b7dd78ac746fb",
+        "source": "Fluid Placer",
+        "translation": "Жидкостный разместитель"
+      }
+    ],
+    "item:block.actuallyadditions.greenhouse_glass": [
+      {
+        "source_hash": "sha256:c24c36cc595e834855d42d6a6ceca94fb7891a19099d5581fbbe08c0383f8b1e",
+        "source": "Greenhouse Glass",
+        "translation": "Тепличное стекло"
+      }
+    ],
+    "item:block.actuallyadditions.heat_collector": [
+      {
+        "source_hash": "sha256:7ac87b27409e878aa022132f6b89d842edf2feb18ed45060ade421b58cee872a",
+        "source": "Heat Collector",
+        "translation": "Тепловой коллектор"
+      }
+    ],
+    "item:block.actuallyadditions.hopping_item_interface": [
+      {
+        "source_hash": "sha256:00de9a299fd042ff617caa30389ad8594bf338b2cab9a10a712aa780b574d0d0",
+        "source": "Hopping Item Interface",
+        "translation": "Интерфейс предметной воронки"
+      }
+    ],
+    "item:block.actuallyadditions.iron_casing": [
+      {
+        "source_hash": "sha256:e8aacb6a31b4dc2398119510b915b52d38b22d5dfdfbf2e7d063ef0012986546",
+        "source": "Iron Casing",
+        "translation": "Железный корпус"
+      }
+    ],
+    "item:block.actuallyadditions.item_interface": [
+      {
+        "source_hash": "sha256:bcff9b36750d871af70ab0f5aa288192e2e6be2e77a428a0f4db0c8a3f12478e",
+        "source": "Item Interface",
+        "translation": "Интерфейс предмета"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_black": [
+      {
+        "source_hash": "sha256:9da415ce5ce2f1f259e1dd87cfc28d70ccd3489c29b34a698e4ba2dfdb627f60",
+        "source": "Black Lamp",
+        "translation": "Чёрная лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_blue": [
+      {
+        "source_hash": "sha256:e2105d7e78df339c49a491f77e1affd1e86e645a48f046677466593a86275a98",
+        "source": "Blue Lamp",
+        "translation": "Синяя лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_brown": [
+      {
+        "source_hash": "sha256:53e3ff80ad34dca511fb9bf003bacabc4ef2be366e741b489fa927ede9c59fac",
+        "source": "Brown Lamp",
+        "translation": "Коричневая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_controller": [
+      {
+        "source_hash": "sha256:9d6acd5af44c2dbe4941e4c87fec739ba74d908deb484084b316bc4693ccf7f6",
+        "source": "Lamp Controller (WIP)",
+        "translation": "Контроллер лампы (WIP)"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_cyan": [
+      {
+        "source_hash": "sha256:b1e2b47ecb024a7c0266b376bf3c34f94e61ff37728902806ce6369778317d48",
+        "source": "Cyan Lamp",
+        "translation": "Голубая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_gray": [
+      {
+        "source_hash": "sha256:4837d1f7cf21fa4e13223165502c35c24bc98b500aaf8b8c517f822be8f3950e",
+        "source": "Gray Lamp",
+        "translation": "Серая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_green": [
+      {
+        "source_hash": "sha256:742fb335a48574b3c1288cf766f80278ec77b667d240578d8c3985af1456341f",
+        "source": "Green Lamp",
+        "translation": "Зелёная лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_light_blue": [
+      {
+        "source_hash": "sha256:bc8c0e589597882685766a324263286f71a826d7309c1df807b1e90ba7de4b4e",
+        "source": "Light Blue Lamp",
+        "translation": "Светло-синяя лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_light_gray": [
+      {
+        "source_hash": "sha256:8b5a9c7191f67c84efc16c506e694ad5bc12e68a07f71257719c0d1c958f9583",
+        "source": "Light Gray Lamp",
+        "translation": "Светло-серая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_lime": [
+      {
+        "source_hash": "sha256:ac07233a06b1d25b778c4623d77a8e5df44065fdb2eaef5784c878579c3f0dc3",
+        "source": "Lime Lamp",
+        "translation": "Лаймовая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_magenta": [
+      {
+        "source_hash": "sha256:621f87486bcabd5916ff99f84d32f2b27f76f7288f51634df5d78796c69a0cf1",
+        "source": "Magenta Lamp",
+        "translation": "Пурпурная лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_orange": [
+      {
+        "source_hash": "sha256:7bd3d77a00ef392a11f02c78a5f63cfee11471ec5e2956f80da887caa548e946",
+        "source": "Orange Lamp",
+        "translation": "Оранжевая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_pink": [
+      {
+        "source_hash": "sha256:c14285309bab5f383152424ff8f02a05eaa087e5563fe9ead0a0e176d8a25770",
+        "source": "Pink Lamp",
+        "translation": "Розовая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_purple": [
+      {
+        "source_hash": "sha256:0eea96a0ad3607f6345d44521a0213be5053fd423cf3670cf7c77ae7713c28ee",
+        "source": "Purple Lamp",
+        "translation": "Фиолетовая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_red": [
+      {
+        "source_hash": "sha256:3cdbfe9374b394343fc79ae725ff73bb8ce65834a7a2a92f8b3a96ae5c89a41e",
+        "source": "Red Lamp",
+        "translation": "Красная лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_white": [
+      {
+        "source_hash": "sha256:cc56ed20b735e03344ea2361e4c361411c216738bf294047e238a6a6179cb104",
+        "source": "White Lamp",
+        "translation": "Белая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.lamp_yellow": [
+      {
+        "source_hash": "sha256:65c6c89a7d65d31e846afc8379fdb0e09d8363b623d0076bf1425bb4914052c1",
+        "source": "Yellow Lamp",
+        "translation": "Жёлтая лампа"
+      }
+    ],
+    "item:block.actuallyadditions.laser_relay": [
+      {
+        "source_hash": "sha256:c4f7c3d29ba982a554fa99b8c1efe62588bb1ad999be72faf060104e78f425cb",
+        "source": "Energy Laser Relay",
+        "translation": "Энергетическое лазерное реле"
+      }
+    ],
+    "item:block.actuallyadditions.laser_relay_advanced": [
+      {
+        "source_hash": "sha256:161e46dfff8015a2d5eb6642ab1ce23e909b9b9eede64fe094caa309ae3473bb",
+        "source": "Advanced Energy Laser Relay",
+        "translation": "Продвинутое энергетическое лазерное реле"
+      }
+    ],
+    "item:block.actuallyadditions.laser_relay_extreme": [
+      {
+        "source_hash": "sha256:be454fe1d19f07157d4b559cf481388b959af82021c66ceef11bc74a63e1969c",
+        "source": "Extreme Energy Laser Relay",
+        "translation": "Экстремальное энергетическое лазерное реле"
+      }
+    ],
+    "item:block.actuallyadditions.laser_relay_fluids": [
+      {
+        "source_hash": "sha256:280ecf73eba3babe641ee9912639dd4cbef4807a8971036869c2df97bb6df65e",
+        "source": "Fluid Laser Relay",
+        "translation": "Жидкостное лазерное реле"
+      }
+    ],
+    "item:block.actuallyadditions.laser_relay_item": [
+      {
+        "source_hash": "sha256:c97f20b500004a1c898ab9d4109e58517beaab09d43e3688141e70ba970131f0",
+        "source": "Item Laser Relay",
+        "translation": "Предметное лазерное реле"
+      }
+    ],
+    "item:block.actuallyadditions.laser_relay_item_advanced": [
+      {
+        "source_hash": "sha256:cd3fda840aa5fa80c70e9aede4d3322e9380eee7754a3751c839b3b601e6cc96",
+        "source": "Advanced Item Laser Relay",
+        "translation": "Продвинутое предметное лазерное реле"
+      }
+    ],
+    "item:block.actuallyadditions.lava_factory_casing": [
+      {
+        "source_hash": "sha256:3849104680ed1d0b3cead12433c30c50c948b2ace78c1a75fd7ed25801121361",
+        "source": "Lava Factory Casing",
+        "translation": "Корпус лавовой фабрики"
+      }
+    ],
+    "item:block.actuallyadditions.lava_factory_controller": [
+      {
+        "source_hash": "sha256:93ce778de8c8e568b14bd6dd0768efae0ba19c24604b7e3894d17a7ae0b108f7",
+        "source": "Lava Factory Controller",
+        "translation": "Контроллер лавовой фабрики"
+      }
+    ],
+    "item:block.actuallyadditions.leaf_generator": [
+      {
+        "source_hash": "sha256:4ccb7e85bfc81448ad11c3a0f1103d89dc4410f85ac945c6cf20aebca435ba6c",
+        "source": "Leaf-Eating Generator",
+        "translation": "Листовой генератор"
+      }
+    ],
+    "item:block.actuallyadditions.long_range_breaker": [
+      {
+        "source_hash": "sha256:479daf8f7adbe2707bb5f8ce58b76a8eb6334285ec4fb282a5e2655a8ee7c6b9",
+        "source": "Long-Range Breaker",
+        "translation": "Разрушитель дальнего действия"
+      }
+    ],
+    "item:block.actuallyadditions.oil_generator": [
+      {
+        "source_hash": "sha256:d889631a2f4c5bf9f938e4ab7469486cc782e95a95cec818797b04a2aa392a88",
+        "source": "Oil Generator",
+        "translation": "Масляный генератор"
+      }
+    ],
+    "item:block.actuallyadditions.palis_crystal_block": [
+      {
+        "source_hash": "sha256:b4522fd7da3496fd28a4f078d231866ab603d2f1f48ff657a96bbdfc5cb0303f",
+        "source": "Palis Crystal Block",
+        "translation": "Кристальный блок Палиса"
+      }
+    ],
+    "item:block.actuallyadditions.palis_crystal_cluster": [
+      {
+        "source_hash": "sha256:625d5421956800544a3b8d8bc42900d012b66ed4101ab3b07a4eec96af635315",
+        "source": "Blue Crystal Cluster",
+        "translation": "Синее кристаллическое скопление"
+      }
+    ],
+    "item:block.actuallyadditions.phantom_booster": [
+      {
+        "source_hash": "sha256:b8e7100c7c1301803e37a1b1097f3b9ceed997423daa8fc65d53d47aafdbf668",
+        "source": "Range Booster",
+        "translation": "Фантомный ускоритель"
+      }
+    ],
+    "item:block.actuallyadditions.phantom_breaker": [
+      {
+        "source_hash": "sha256:234e85759e0e018beba7b0dfba1e250c807d5d9746359512df1c8dfb3f0318be",
+        "source": "Phantom Breaker",
+        "translation": "Фантомный разрушитель"
+      }
+    ],
+    "item:block.actuallyadditions.phantom_energyface": [
+      {
+        "source_hash": "sha256:5a21ce0020c42f074e848168ba82b4081864182a97c8eeebe93ee7423b726ade",
+        "source": "Phantom Energyface",
+        "translation": "Энерго-фантом"
+      }
+    ],
+    "item:block.actuallyadditions.phantom_itemface": [
+      {
+        "source_hash": "sha256:8455af2759d21ef075ad00aeb9e8a243d1b7c393815869e4a5cb8167662b1316",
+        "source": "Phantom Itemface",
+        "translation": "Фантомный интерфейс"
+      }
+    ],
+    "item:block.actuallyadditions.phantom_liquiface": [
+      {
+        "source_hash": "sha256:898d4a9164c403abd93f2081df725e5136243cf7366b89bf6e9fae92d6256b08",
+        "source": "Phantom Liquiface",
+        "translation": "Жидкостный фантом"
+      }
+    ],
+    "item:block.actuallyadditions.phantom_placer": [
+      {
+        "source_hash": "sha256:dd947489c2cce03284389ec276c65fd0769cbba995a234ab11a47f8f478b00c5",
+        "source": "Phantom Placer",
+        "translation": "Фантомный разместитель"
+      }
+    ],
+    "item:block.actuallyadditions.phantom_redstoneface": [
+      {
+        "source_hash": "sha256:f36fa4c60a405313348f1a059d0cfb38ceb44beed26fae111b2f46fd2081ad9b",
+        "source": "Phantom Redstoneface",
+        "translation": "Редстоун фантом"
+      }
+    ],
+    "item:block.actuallyadditions.placer": [
+      {
+        "source_hash": "sha256:960c43f6093a434186dc113faa5be545f29bac7e60c02eb5d03c4e69f2524c51",
+        "source": "Auto-Placer",
+        "translation": "Авто-разместитель"
+      }
+    ],
+    "item:block.actuallyadditions.player_interface": [
+      {
+        "source_hash": "sha256:5619a40c2c760b2825423010ca61976876d6e5464628af4a10729a57f5f51e85",
+        "source": "Player Interface",
+        "translation": "Интерфейс игрока"
+      }
+    ],
+    "item:block.actuallyadditions.powered_furnace": [
+      {
+        "source_hash": "sha256:1b3ce3ba82a2e0a7f6a3548fd04a80742550536f2c68268bcfe47a0ab799192c",
+        "source": "Powered Furnace",
+        "translation": "Усиленная печь"
+      }
+    ],
+    "item:block.actuallyadditions.ranged_collector": [
+      {
+        "source_hash": "sha256:e0d2477b14bf454d8e719ea11ba344e97613e00ba9f5a9bcf74f95eacd651a9e",
+        "source": "Ranged Collector",
+        "translation": "Диапазонный собиратель"
+      }
+    ],
+    "item:block.actuallyadditions.restonia_crystal_block": [
+      {
+        "source_hash": "sha256:7065fd965ab328f9e8f9e832b8e3eda2bd238466017fcfc3e8b0829c6e9497b6",
+        "source": "Restonia Crystal Block",
+        "translation": "Кристальный блок Рестонии"
+      }
+    ],
+    "item:block.actuallyadditions.restonia_crystal_cluster": [
+      {
+        "source_hash": "sha256:9a4fdff6bf20a2dfc691d62f2ec7c0154410dd0131f38adbffbdbe38cba51253",
+        "source": "Red Crystal Cluster",
+        "translation": "Красное кристаллическое скопление"
+      }
+    ],
+    "item:block.actuallyadditions.shock_suppressor": [
+      {
+        "source_hash": "sha256:794b8bf68db53ee546236d66a149b6f2e70b7280aa4d35775964105a829b9783",
+        "source": "Shock Absorber",
+        "translation": "Амортизатор"
+      }
+    ],
+    "item:block.actuallyadditions.smooth_black_quartz_block": [
+      {
+        "source_hash": "sha256:7abf6cfa1d8a2e746a9beeac55f62654a4bc56e48094066cca8eb353aad13469",
+        "source": "Smooth Black Quartz",
+        "translation": "Гладкий черный кварц"
+      }
+    ],
+    "item:block.actuallyadditions.smooth_black_quartz_slab": [
+      {
+        "source_hash": "sha256:3c3628bcfb1829672ce7a8d4d53551b1c28f75b3832e8957cb3447c6b00d41cb",
+        "source": "Smooth Black Quartz Slab",
+        "translation": "Плита из гладкого кварца"
+      }
+    ],
+    "item:block.actuallyadditions.smooth_black_quartz_stair": [
+      {
+        "source_hash": "sha256:458ef49c378fe2f04e7407ab496c1572ca3da665456de155173260ed489dce88",
+        "source": "Smooth Black Quartz Stairs",
+        "translation": "Ступеньки из гладкого кварца"
+      }
+    ],
+    "item:block.actuallyadditions.smooth_black_quartz_wall": [
+      {
+        "source_hash": "sha256:d63f8990fa6b96452e669511c28f8e3e3f6ab963bb85116df0a1d56d16f87746",
+        "source": "Smooth Black Quartz Wall",
+        "translation": "Ограда из гладкогоо чёрного кварца"
+      }
+    ],
+    "item:block.actuallyadditions.tiny_torch": [
+      {
+        "source_hash": "sha256:b6477ad00714723b7da77707e9b6a8cbfaf6307feee0633ba351b8932c83cbcc",
+        "source": "Tiny Torch",
+        "translation": "Крошечный факел"
+      }
+    ],
+    "item:block.actuallyadditions.vertical_digger": [
+      {
+        "source_hash": "sha256:387035d69a41ed5256ddc79fefd510cf3b6802ac09b35bdb96dacce0e49f348a",
+        "source": "Vertical Digger",
+        "translation": "Вертикальный копатель"
+      }
+    ],
+    "item:block.actuallyadditions.void_crystal_block": [
+      {
+        "source_hash": "sha256:080df8720da0d7e1aee078bc4e590033c67594a5334e877728e6fab58165a91b",
+        "source": "Void Crystal Block",
+        "translation": "Кристальный блок Пустоты"
+      }
+    ],
+    "item:block.actuallyadditions.void_crystal_cluster": [
+      {
+        "source_hash": "sha256:7b0b05c9162ae064de18604395357e81c58374f9c46b2adcf7c7e252496dccc3",
+        "source": "Black Crystal Cluster",
+        "translation": "Чёрное кристаллическое скопление"
+      }
+    ],
+    "item:block.actuallyadditions.wood_casing": [
+      {
+        "source_hash": "sha256:f29352fbee3f4eab70fae5bb82a324b8430952f1089a01ac22ca84b5b22ecc33",
+        "source": "Wood Casing",
+        "translation": "Деревянный корпус"
+      }
+    ],
+    "item:block.actuallyadditions.xp_solidifier": [
+      {
+        "source_hash": "sha256:54b63b2ca96bf0965df9c47e8390c3dbabe95d6caf3129aaeede418bc20421a3",
+        "source": "Experience Solidifier",
+        "translation": "Затвердитель опыта"
+      }
+    ],
     "item:block.advanced_ae.quantum_structure": [
       {
         "source_hash": "sha256:a6e3a3fa3ae5b51495d9796dc92f8016127865dcc0c5f88f90ae6f529aa593f5",
@@ -1268,6 +2094,13 @@
         "translation": "Подставка под кружку"
       }
     ],
+    "item:block.cfm_circuit_breaker.circuit_breaker": [
+      {
+        "source_hash": "sha256:a316128169a55f5b8afb8e25bf1fc1f3046a3034e1f14aeac703c77bc6643a8c",
+        "source": "Circuit Breaker",
+        "translation": "Автоматический выключатель"
+      }
+    ],
     "item:block.chimes.amethyst_chimes": [
       {
         "source_hash": "sha256:fb781bc76d82bf7d10e9c3bc8fe024e64ec530bff0dfedfdc81e7f9dd954696e",
@@ -1322,6 +2155,34 @@
         "source_hash": "sha256:ad955f9a3bda7081e341f183279b5f956c9c6b966f267d14d973054da6e7d87f",
         "source": "Woven Sculk Vein",
         "translation": "Жила сплетённого скалка"
+      }
+    ],
+    "item:block.createaddition.biomass_pellet_block": [
+      {
+        "source_hash": "sha256:b7a57cdcba1963f883b2f1d6c3b6b03af241f8f43996adc1a471bbed3d901654",
+        "source": "Biomass Pallet",
+        "translation": "Блок пеллет из биомассы"
+      }
+    ],
+    "item:block.createaddition.electrum_block": [
+      {
+        "source_hash": "sha256:c93a537dd097f426ea06c55bcabae033a46260c3b0f531ab1ac0e3fcb6a5a75e",
+        "source": "Electrum Block",
+        "translation": "Блок электрума"
+      }
+    ],
+    "item:block.createaddition.small_light_connector": [
+      {
+        "source_hash": "sha256:5648b7af65d31dca62b855cafaded83a8d85f6d12392306b276f7a50d2fed66e",
+        "source": "Small Connector With Light",
+        "translation": "Малый светящийся соединитель"
+      }
+    ],
+    "item:block.createlowheated.basic_burner": [
+      {
+        "source_hash": "sha256:ed0e0d3581133e61ff07bb3cf31cf5eeb8957c4ef4a77d479d73d25fbd6b25e1",
+        "source": "Basic Burner",
+        "translation": "Горелка"
       }
     ],
     "item:block.decorative_blocks.bamboo_palisade": [
@@ -1679,6 +2540,20 @@
         "source_hash": "sha256:b9eca7cfe9cf8c5ad14df3d112c443a9ee7d3d6a7cb1529b28eea717651e9fcb",
         "source": "Witch Light",
         "translation": "Ведьмин фонарик"
+      }
+    ],
+    "item:block.geckolib.fertilizer": [
+      {
+        "source_hash": "sha256:43de6e38b916955cf044c077b89111b6bd880a34431f20d0d510b0f7b9293ff1",
+        "source": "Fertilizer",
+        "translation": "Удобрение"
+      }
+    ],
+    "item:block.geckolib.gecko_habitat": [
+      {
+        "source_hash": "sha256:adb003e67c32f7d8e440a395440948e4d99b0c429c18e4f54c0c9d4468edcc02",
+        "source": "Gecko Habitat",
+        "translation": "Террариум для геккона"
       }
     ],
     "item:block.immersiveengineering.clinker_brick": [
@@ -2040,12 +2915,22 @@
     ],
     "item:block.kubejs.ceilling2": [
       {
+        "source_hash": "sha256:685394345b4000bbbdc30d2bacf891fe9461c2d4cde9843375c745ba336d19f2",
+        "source": "Ceiling",
+        "translation": "Белый потолок"
+      },
+      {
         "source_hash": "sha256:78eff2d8798c048bc760311453c25893b9909c7d1635a7c92905cd14f12de1b3",
         "source": "Ceiling (White)",
         "translation": "Белый потолок"
       }
     ],
     "item:block.kubejs.ceilling_edge": [
+      {
+        "source_hash": "sha256:685394345b4000bbbdc30d2bacf891fe9461c2d4cde9843375c745ba336d19f2",
+        "source": "Ceiling",
+        "translation": "Край потолка"
+      },
       {
         "source_hash": "sha256:d770c7233693bf7c28a6c975969e188c93efbf8f63665a7101d6baf1e20be065",
         "source": "Ceiling Edge",
@@ -2070,6 +2955,11 @@
       {
         "source_hash": "sha256:a719728c17d3e6add867f3cbd7a5f9fa77af74be214791e03afa10963367bc37",
         "source": "White Ceiling Lamp",
+        "translation": "Белый потолочный светильник"
+      },
+      {
+        "source_hash": "sha256:d8afd715c4e7dc36d64557907c48361cc671ff169295ea5fdaddcd3e900fb8e2",
+        "source": "Ceiling Lamp",
         "translation": "Белый потолочный светильник"
       }
     ],
@@ -2140,6 +3030,11 @@
       {
         "source_hash": "sha256:cc7cbf75adb280989752055a1d56963f5201bea497adb0f04ad64189bbf2e260",
         "source": "Ceiling Lamp (Off)",
+        "translation": "Потолочный светильник (выключен)"
+      },
+      {
+        "source_hash": "sha256:d8afd715c4e7dc36d64557907c48361cc671ff169295ea5fdaddcd3e900fb8e2",
+        "source": "Ceiling Lamp",
         "translation": "Потолочный светильник (выключен)"
       }
     ],
@@ -2322,6 +3217,11 @@
       {
         "source_hash": "sha256:021847c415affc3369528d0f4a3754cbc53b97fe0dd5cde15d001e4b0a6a484f",
         "source": "Drain (Permanent)",
+        "translation": "Водосток (постоянный)"
+      },
+      {
+        "source_hash": "sha256:795b048ba2164e50aed17f86797f1f03add5a66df9c18b37013058c8c0115749",
+        "source": "Drain",
         "translation": "Водосток (постоянный)"
       }
     ],
@@ -2575,9 +3475,19 @@
         "source_hash": "sha256:140cb1811868196d681447f2b1eba726408012dd35fc78df50cbb88f97f0fc04",
         "source": "Pool Tiles (Long)",
         "translation": "Длинная плитка бассейна"
+      },
+      {
+        "source_hash": "sha256:4b4b5f102d82a6e736dd91b56e6782aa8b9a99708119c71559ca15e887a7886d",
+        "source": "Pool Tiles",
+        "translation": "Длинная плитка бассейна"
       }
     ],
     "item:block.kubejs.long_pool_tiles_slab": [
+      {
+        "source_hash": "sha256:f6f7c026fc682b85743844ef2d9ffb5cd82918f46a69d211a78aebb34771e1f7",
+        "source": "Pool Tiles Slab",
+        "translation": "Длинная плита из плитки бассейна"
+      },
       {
         "source_hash": "sha256:fb2aee60189d5c66202a3d9d8d94f060703a71a31777f7f65e7fef3c9bb37fcc",
         "source": "Pool Tiles Slab (Long)",
@@ -2589,12 +3499,22 @@
         "source_hash": "sha256:140cb1811868196d681447f2b1eba726408012dd35fc78df50cbb88f97f0fc04",
         "source": "Pool Tiles (Long)",
         "translation": "Длинная плитка бассейна"
+      },
+      {
+        "source_hash": "sha256:4b4b5f102d82a6e736dd91b56e6782aa8b9a99708119c71559ca15e887a7886d",
+        "source": "Pool Tiles",
+        "translation": "Длинная плитка бассейна"
       }
     ],
     "item:block.kubejs.long_pool_tiles_stairs": [
       {
         "source_hash": "sha256:347dc514d0a21f6cefb121dfccd95cf90b879986b3feaf69307e5160cb50baa6",
         "source": "Pool Tiles Stairs (Long)",
+        "translation": "Длинные ступеньки из плитки бассейна"
+      },
+      {
+        "source_hash": "sha256:ebf0a57b5621c09f83f3cb506a2e7eff61bb88d1223df928771c403c5b1957b6",
+        "source": "Pool Tiles Stairs",
         "translation": "Длинные ступеньки из плитки бассейна"
       }
     ],
@@ -2885,6 +3805,13 @@
         "translation": "Пористый камень"
       }
     ],
+    "item:block.kubejs.power_house": [
+      {
+        "source_hash": "sha256:fed678cdbf1f7b96b833fdce753e427803166a8479f88f40f510d6d2c7329ffe",
+        "source": "Power House",
+        "translation": "Энергетический модуль"
+      }
+    ],
     "item:block.kubejs.reality_charge": [
       {
         "source_hash": "sha256:6b7d64800323373fced06d090b69e39b5c1905d1f86b85b05ea5b74151317769",
@@ -2915,6 +3842,11 @@
     ],
     "item:block.kubejs.reality_controller_running": [
       {
+        "source_hash": "sha256:6316a3d818024627fbaab5a9e36672e94e59693364bf0b7e48662a0613bd876d",
+        "source": "Reality Controller",
+        "translation": "Контроллер реальности (активный)"
+      },
+      {
         "source_hash": "sha256:829f8a2fe73ece17a85459b1c43ff29746c82c6a1ab523e94528516050aafc29",
         "source": "Reality Controller (Active)",
         "translation": "Контроллер реальности (активный)"
@@ -2943,6 +3875,11 @@
     ],
     "item:block.kubejs.red_carpet": [
       {
+        "source_hash": "sha256:7259c2f0b3c2fd506e7128bb261a188e3ef8f994ecc567a9e61e70846f38038c",
+        "source": "Red Carpet",
+        "translation": "Красный ковёр"
+      },
+      {
         "source_hash": "sha256:8eab64a963e0b1c66527065ff8ec37d9c803bf6f6a9a0ec46a48a104a6a0d8ee",
         "source": "Carpet (Red)",
         "translation": "Красный ковёр"
@@ -2950,12 +3887,22 @@
     ],
     "item:block.kubejs.red_carpet_slab": [
       {
+        "source_hash": "sha256:18d7258033ae1bca011ec9cceb307269f7c79f3ec46225e73d8638b9811ca5cb",
+        "source": "Red Carpet Slab",
+        "translation": "Красная ковровая плита"
+      },
+      {
         "source_hash": "sha256:420a388c4d68b34a22dd6a209e01935743bd91485c472c6f90ead6c7ed280435",
         "source": "Carpet Slab (Red)",
         "translation": "Красная ковровая плита"
       }
     ],
     "item:block.kubejs.red_carpet_stairs": [
+      {
+        "source_hash": "sha256:1c045d0cca86d014406a97b066c19d51ad20a6e9a6d34f1a7fc2ac3b38f8a095",
+        "source": "Red Carpet Stairs",
+        "translation": "Красные ковровые ступеньки"
+      },
       {
         "source_hash": "sha256:8a7d018440ded4b123f4fdf7579067fd9db9d2adae3f1061d06a0c8af2a94cd3",
         "source": "Carpet Stairs (Red)",
@@ -3314,6 +4261,11 @@
     ],
     "item:block.kubejs.wallpaper2": [
       {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Обои в крупный горошек"
+      },
+      {
         "source_hash": "sha256:be2e4a17c7a422646c51da6967d57622597fbaca2e83380962c375fd35791d9d",
         "source": "Wallpaper (Large Dots)",
         "translation": "Обои в крупный горошек"
@@ -3324,12 +4276,22 @@
         "source_hash": "sha256:815564c358c9dad8f8bcc77ed02693c08e28506bab29a870e4b6aa6aef5ff53c",
         "source": "Wallpaper (Small Dots)",
         "translation": "Обои в мелкий горошек"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Обои в мелкий горошек"
       }
     ],
     "item:block.kubejs.wallpaper4": [
       {
         "source_hash": "sha256:1dc3d0a4d338f660e1873c634a6f684e17ab4dd58d9b98407cdf71565f559655",
         "source": "Wallpaper (Plain)",
+        "translation": "Однотонные обои"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
         "translation": "Однотонные обои"
       }
     ],
@@ -3338,12 +4300,22 @@
         "source_hash": "sha256:0707512c4278206f4d7d3248850acf1e0370bdfc6592d30f1f6652ea59561e1c",
         "source": "Wallpaper (Hotel)",
         "translation": "Гостиничные обои"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Гостиничные обои"
       }
     ],
     "item:block.kubejs.wallpaper5_slab": [
       {
         "source_hash": "sha256:59c3c39cdd7d5c9e3ca88f0e0b8038ed762c8ef0b40420c8b6d5d0ed414bd985",
         "source": "Wallpaper Slab (Hotel)",
+        "translation": "Плита из гостиничных обоев"
+      },
+      {
+        "source_hash": "sha256:8951ae39dfadf199cd462a21c252020d676287dae56549d4dca429e881e91c6b",
+        "source": "Hotel Wall Slab",
         "translation": "Плита из гостиничных обоев"
       }
     ],
@@ -3352,9 +4324,19 @@
         "source_hash": "sha256:236e8eb6ea2d2c7f2a9a3e722f8386aca10c89064948ed9c59bb5c54a792210b",
         "source": "Wallpaper (Striped)",
         "translation": "Полосатые обои"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Полосатые обои"
       }
     ],
     "item:block.kubejs.wallpaper7": [
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Розовые обои"
+      },
       {
         "source_hash": "sha256:b66e418b8d457f483af631bd6d9b75b8f44f5ab3ff6397bf3b0c582663928e1d",
         "source": "Wallpaper (Pink)",
@@ -7512,6 +8494,27 @@
         "translation": "Жёлтый батут"
       }
     ],
+    "item:block.simpleradio.insulator": [
+      {
+        "source_hash": "sha256:c41984704627032f7803d53f0d975442d59d49158ad0a115bfdfd439890dbf7c",
+        "source": "Insulator",
+        "translation": "Опора провода"
+      }
+    ],
+    "item:block.simpleradio.receiver": [
+      {
+        "source_hash": "sha256:86cec081a5288000ddb804c24ac70de62a5060e5b4f4068b01a01f9f29dddacc",
+        "source": "Receiver",
+        "translation": "Приёмник"
+      }
+    ],
+    "item:block.simpleradio.transmitter": [
+      {
+        "source_hash": "sha256:e35e1d86195035d8fdd2de7693a3dba63ce341cc5f0e2475fa68b741a0e5086d",
+        "source": "Transmitter",
+        "translation": "Передатчик"
+      }
+    ],
     "item:block.snad.red_snad": [
       {
         "source_hash": "sha256:feca14ffea1e8deb40cd71bb19fcd73a0232c7ce475daa9aeefc9c567b2f692c",
@@ -8023,6 +9026,321 @@
         "translation": "Большая искажённая полка"
       }
     ],
+    "item:block.storagedrawers.framed_compacting_drawers_2": [
+      {
+        "source_hash": "sha256:a0089ce592789935ab66b775c74dff2d8718ba3520c187132765cc7af73632e6",
+        "source": "Framed Compacting Drawers (2-Tier)",
+        "translation": "Обрамлённый спрессовывающий ящик (2 уровня)"
+      }
+    ],
+    "item:block.storagedrawers.framed_compacting_drawers_3": [
+      {
+        "source_hash": "sha256:187e6c05911d4d57f23295f2d864252497d4b21840f12d2fa03522b00e6877fc",
+        "source": "Framed Compacting Drawers (3-Tier)",
+        "translation": "Обрамлённый спрессовывающий ящик (3 уровня)"
+      }
+    ],
+    "item:block.storagedrawers.framed_compacting_half_drawers_2": [
+      {
+        "source_hash": "sha256:c5246b64d02dfab04b4db45a162167fa3b0346228b193e10d085d661fdc90da3",
+        "source": "Framed Compacting Half Drawers (2-Tier)",
+        "translation": "Обрамлённый спрессовывающий полуящик (2-уровень)"
+      }
+    ],
+    "item:block.storagedrawers.framed_compacting_half_drawers_3": [
+      {
+        "source_hash": "sha256:92fe1443acb6872bbe871e519ec32f45e748c6596e13d0e5277a3959f0f97c74",
+        "source": "Framed Compacting Half Drawers (3-Tier)",
+        "translation": "Обрамлённый спрессовывающий полуящик (3 уровня)"
+      }
+    ],
+    "item:block.storagedrawers.framed_controller": [
+      {
+        "source_hash": "sha256:a06e51153c708eeb1c547973f6a3c5dcaaa6043c18e6d9bde0d0de6ef0083b08",
+        "source": "Framed Drawer Controller",
+        "translation": "Обрамлённый контроллер ящиков"
+      }
+    ],
+    "item:block.storagedrawers.framed_controller_io": [
+      {
+        "source_hash": "sha256:f19104e845fdee2e5c91722a885df0fd828ad269e93ff5d1c4c732bc4980bb32",
+        "source": "Framed Drawer Controller Slave",
+        "translation": "Обрамлённый контроллер ввода-вывода ящиков"
+      }
+    ],
+    "item:block.storagedrawers.framing_table": [
+      {
+        "source_hash": "sha256:42e3b573fecff7897cfa3404567891cb301838e9d04eaa404df21bc58ec4ede1",
+        "source": "Framing Table",
+        "translation": "Стол для обрамления"
+      }
+    ],
+    "item:block.tconstruct.blazewood_fence": [
+      {
+        "source_hash": "sha256:20d3259563060e7b35ee9c982713f7e7d2cfe1827e2bf576e71bb3bd754b8d7e",
+        "source": "Blazewood Fence",
+        "translation": "Забор из огненного дерева"
+      }
+    ],
+    "item:block.tconstruct.bloodshroom_hanging_sign": [
+      {
+        "source_hash": "sha256:13007c85e1ebdc26b11ae275be66605960283fd31f41ca9274fdd161271bf554",
+        "source": "Bloodshroom Hanging Sign",
+        "translation": "Подвесная табличка из кровавого гриба"
+      }
+    ],
+    "item:block.tconstruct.cheese_block": [
+      {
+        "source_hash": "sha256:c8ab7f45f6105e9fbe771f4459c44eeb6255c92b1dc9117c2b966b040ff87c26",
+        "source": "Cheese Block",
+        "translation": "Сырный блок"
+      }
+    ],
+    "item:block.tconstruct.cinderslime_block": [
+      {
+        "source_hash": "sha256:9f1ce5a5d2d586b8ba7585507c4198c1c6d12d8c4b2d688a1e765a0d544f27c2",
+        "source": "Block of Cinderslime",
+        "translation": "Блок зольной слизи"
+      }
+    ],
+    "item:block.tconstruct.earth_enderbark_roots": [
+      {
+        "source_hash": "sha256:e7edb2c879ee752fdea85392eb64770a4e8f731ae175ef96310a68bcd641e109",
+        "source": "Slimy Enderbark Roots",
+        "translation": "Земные слизневые корни эндербарка"
+      }
+    ],
+    "item:block.tconstruct.ender_enderbark_roots": [
+      {
+        "source_hash": "sha256:e7edb2c879ee752fdea85392eb64770a4e8f731ae175ef96310a68bcd641e109",
+        "source": "Slimy Enderbark Roots",
+        "translation": "Эндер-слизневые корни эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_button": [
+      {
+        "source_hash": "sha256:1a405ccab95b4e88b23c1bd11f7d8893184f2275ce131d0c77b3daa5b02706fd",
+        "source": "Enderbark Button",
+        "translation": "Кнопка из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_door": [
+      {
+        "source_hash": "sha256:18d2e25e012385254aa0c9f85cfde980a67f1497fcfb93517d83e493a945fa03",
+        "source": "Enderbark Door",
+        "translation": "Дверь из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_fence": [
+      {
+        "source_hash": "sha256:22add6d8844afdf8165d1f9d3882dbff794e99d7a64dc330ba9338544681524b",
+        "source": "Enderbark Fence",
+        "translation": "Забор из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_fence_gate": [
+      {
+        "source_hash": "sha256:c6a868232423025ed51525d03211b62e031bdd32360dd002ef72e23682820616",
+        "source": "Enderbark Fence Gate",
+        "translation": "Калитка из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_hanging_sign": [
+      {
+        "source_hash": "sha256:6a5845d150968aa357988322b9c764ec9ae7f7c84ed48b561b192fd5a5d1bef6",
+        "source": "Enderbark Hanging Sign",
+        "translation": "Подвесная табличка из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_log": [
+      {
+        "source_hash": "sha256:144b03799921b5111a91e89bc54c4e9775da6a300d568d4c70c720a3a2620604",
+        "source": "Enderbark Log",
+        "translation": "Бревно эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_planks": [
+      {
+        "source_hash": "sha256:3d87c629b95036f26c1806b7fda58cf34d0ac04dd37ab6365d6f0f13a3e74845",
+        "source": "Enderbark Planks",
+        "translation": "Доски из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_planks_slab": [
+      {
+        "source_hash": "sha256:613d567c20fca1f5bb6e8463af82fe42d5718e5b02477891553fa2b1076ef3a3",
+        "source": "Enderbark Slab",
+        "translation": "Плита из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_planks_stairs": [
+      {
+        "source_hash": "sha256:a2740de65ed596a9fab3f3ac433f5e9abb54e698878d2884d08cd21630a68a2c",
+        "source": "Enderbark Stairs",
+        "translation": "Ступеньки из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_pressure_plate": [
+      {
+        "source_hash": "sha256:0d063c763adc35e30611247527c54671399fe828ad7341c4570103e74efb8ecd",
+        "source": "Enderbark Pressure Plate",
+        "translation": "Нажимная плита из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_roots": [
+      {
+        "source_hash": "sha256:fb950e81c762fcf843c38923d7c64098a1ea24169519c4f3a2714ad71077594c",
+        "source": "Enderbark Roots",
+        "translation": "Корни эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_sign": [
+      {
+        "source_hash": "sha256:407d0584517fbf4e1af186c2c0b64d92253adaa283ff80aef7f354d4eff69de0",
+        "source": "Enderbark Sign",
+        "translation": "Табличка из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_trapdoor": [
+      {
+        "source_hash": "sha256:6c8e04bae9c852f481ff2bef6dbd9156f7dc55d810f26be70f359be203206c45",
+        "source": "Enderbark Trapdoor",
+        "translation": "Люк из эндербарка"
+      }
+    ],
+    "item:block.tconstruct.enderbark_wood": [
+      {
+        "source_hash": "sha256:19df56625f78907fa16cc00483212b3827730c9b2bb5bc8ae4c01239e3a211a0",
+        "source": "Enderbark Wood",
+        "translation": "Древесина эндербарка"
+      }
+    ],
+    "item:block.tconstruct.greenheart_hanging_sign": [
+      {
+        "source_hash": "sha256:d09e82473ca5ea5393586ae1c96c9fefbf435ffa0823e0c37685f8b0c0f1b4e3",
+        "source": "Greenheart Hanging Sign",
+        "translation": "Подвесная табличка из зелёного сердца"
+      }
+    ],
+    "item:block.tconstruct.ichor_enderbark_roots": [
+      {
+        "source_hash": "sha256:e7edb2c879ee752fdea85392eb64770a4e8f731ae175ef96310a68bcd641e109",
+        "source": "Slimy Enderbark Roots",
+        "translation": "Ихоровые слизневые корни эндербарка"
+      }
+    ],
+    "item:block.tconstruct.modifier_worktable": [
+      {
+        "source_hash": "sha256:dead182429e72c29f4253a0767969055e98b75116c9f6c389cd4b19b51a56539",
+        "source": "Modifier Worktable",
+        "translation": "Рабочий стол для модификаторов"
+      }
+    ],
+    "item:block.tconstruct.scorched_fluid_cannon": [
+      {
+        "source_hash": "sha256:8c3dbdff8217ea0f18b5f8631c0e355b771d97e31eaacdb1d3096eb4fb4ade45",
+        "source": "Cobalt Fluid Cannon",
+        "translation": "Кобальтовая жидкостная пушка"
+      }
+    ],
+    "item:block.tconstruct.scorched_proxy_tank": [
+      {
+        "source_hash": "sha256:acb278044265758bc1cedd5e5863b2946ed561cf5b627edd5976309c6788281a",
+        "source": "Scorched Tinker Tank",
+        "translation": "Выжженный литейный резервуар"
+      }
+    ],
+    "item:block.tconstruct.scorched_soul_glass": [
+      {
+        "source_hash": "sha256:6caaf985a04bdd404a20848679a9ab6061d3b286a53d2399396ab421bd4b1a5d",
+        "source": "Scorched Soul Glass",
+        "translation": "Выжженное стекло душ"
+      }
+    ],
+    "item:block.tconstruct.scorched_soul_glass_pane": [
+      {
+        "source_hash": "sha256:b44430430c5f84228d135e34d43e96c80bb8b569c8e03c6fbb07ae78435b74de",
+        "source": "Scorched Soul Glass Pane",
+        "translation": "Выжженная стеклянная панель душ"
+      }
+    ],
+    "item:block.tconstruct.scorched_tinted_glass": [
+      {
+        "source_hash": "sha256:aa6b7b0b461c3404827afaeca6c99fbf3613aa80fe969e45bdb64186de7535b3",
+        "source": "Tinted Scorched Glass",
+        "translation": "Тонированное выжженное стекло"
+      }
+    ],
+    "item:block.tconstruct.seared_casting_tank": [
+      {
+        "source_hash": "sha256:5fca3cb3f7b1787a1788de0e6280b410db15c6cb3943dbb711a9e2a6a418bda5",
+        "source": "Casting Tank",
+        "translation": "Литейный резервуар"
+      }
+    ],
+    "item:block.tconstruct.seared_fluid_cannon": [
+      {
+        "source_hash": "sha256:d36c056869f63358f3850fa2b3e01b71ea8faca42cdcbf054352229147eaed72",
+        "source": "Copper Fluid Cannon",
+        "translation": "Медная жидкостная пушка"
+      }
+    ],
+    "item:block.tconstruct.seared_soul_glass": [
+      {
+        "source_hash": "sha256:b19d1a38af975695b0367e3b3c2a682f319c67b6059bd65cc22b1f1ac8e84be2",
+        "source": "Seared Soul Glass",
+        "translation": "Обожжённое стекло душ"
+      }
+    ],
+    "item:block.tconstruct.seared_soul_glass_pane": [
+      {
+        "source_hash": "sha256:c855d3f37eec9d1b053c41d9e77142751eff682c4a07793ef8bdf020be2c1cd2",
+        "source": "Seared Soul Glass Pane",
+        "translation": "Обожжённая стеклянная панель душ"
+      }
+    ],
+    "item:block.tconstruct.seared_tinted_glass": [
+      {
+        "source_hash": "sha256:d3be3916d97de44ecfad8fcedd56b80803be97d0ebb180b0a00ddc118a604249",
+        "source": "Tinted Seared Glass",
+        "translation": "Тонированное обожжённое стекло"
+      }
+    ],
+    "item:block.tconstruct.sky_enderbark_roots": [
+      {
+        "source_hash": "sha256:e7edb2c879ee752fdea85392eb64770a4e8f731ae175ef96310a68bcd641e109",
+        "source": "Slimy Enderbark Roots",
+        "translation": "Небесные слизневые корни эндербарка"
+      }
+    ],
+    "item:block.tconstruct.skyroot_hanging_sign": [
+      {
+        "source_hash": "sha256:01ce05925417a75755f756d4591ae3a8b42bfaab0d252711957b8573a3411cdc",
+        "source": "Skyroot Hanging Sign",
+        "translation": "Подвесная табличка из небесного корня"
+      }
+    ],
+    "item:block.tconstruct.steel_block": [
+      {
+        "source_hash": "sha256:092d833ceaecf5c3bd8d1fc5e7ad41d6669119c3b9ef151863e065140c3f52f2",
+        "source": "Block of Steel",
+        "translation": "Стальной блок"
+      }
+    ],
+    "item:block.tconstruct.stripped_enderbark_log": [
+      {
+        "source_hash": "sha256:9c331d69735bc2af20cef3d37dbc583f604f00146b63ab4441114bda0fe80f25",
+        "source": "Stripped Enderbark Log",
+        "translation": "Обтёсанное бревно эндербарка"
+      }
+    ],
+    "item:block.tconstruct.stripped_enderbark_wood": [
+      {
+        "source_hash": "sha256:575060e467110c8b2f37928c493b9dae3c1cfb845af49ab7687d7824d805c45b",
+        "source": "Stripped Enderbark Wood",
+        "translation": "Обтёсанная древесина эндербарка"
+      }
+    ],
     "item:block.thermal.charcoal_block": [
       {
         "source_hash": "sha256:2b78e9927f7f9d5c55aa20759a43d78a851e37f914c7c42849cdb45ef507e90f",
@@ -8198,11 +9516,809 @@
         "translation": "Эндерняковый путевой камень"
       }
     ],
+    "item:item.actuallyadditions.advanced_coil": [
+      {
+        "source_hash": "sha256:4485ec9d58fe0f7d55db534e458a62dc900ac15e63eaa37522e2c9ae4894504e",
+        "source": "Advanced Coil",
+        "translation": "Продвинутая катушка"
+      }
+    ],
+    "item:item.actuallyadditions.advanced_leaf_blower": [
+      {
+        "source_hash": "sha256:e27564591622836ef8de71bd3dc8282e454a22997932ec121c6ec666a606b028",
+        "source": "Advanced Leaf Blower",
+        "translation": "Продвинутый воздуходув"
+      }
+    ],
+    "item:item.actuallyadditions.basic_coil": [
+      {
+        "source_hash": "sha256:1438ec1b3e0470c4fb2d3457360efa1f2222c84ac88b3a762e5245be7ffa335a",
+        "source": "Basic Coil",
+        "translation": "Базовая катушка"
+      }
+    ],
+    "item:item.actuallyadditions.bats_wing": [
+      {
+        "source_hash": "sha256:0e6c692540c90a7821fbeccd22fa866c877bce311c799ea46e3f2a7a6ccbd16a",
+        "source": "Bat's Wing",
+        "translation": "Мышиные крылья"
+      }
+    ],
+    "item:item.actuallyadditions.black_quartz": [
+      {
+        "source_hash": "sha256:b33242309cff552c561268044c4d110451d7c15880775f0a4a894aacfa95917c",
+        "source": "Black Quartz",
+        "translation": "Чёрный кварц"
+      }
+    ],
+    "item:item.actuallyadditions.book_pattern": [
+      {
+        "source_hash": "sha256:19a83599bd65544dddeede0cc8c2748b9fafa2bb1258520526f9587b7c057d8b",
+        "source": "Banner Pattern",
+        "translation": "Узор для баннера"
+      }
+    ],
     "item:item.actuallyadditions.booklet": [
       {
         "source_hash": "sha256:67106ebf0ae9a1ec5470b594e497acec3e1bf817a996d3c7626301a5685469a9",
         "source": "Actually Additions Manual (WIP)",
         "translation": "Руководство Actually Additions (в разработке)"
+      }
+    ],
+    "item:item.actuallyadditions.canola": [
+      {
+        "source_hash": "sha256:f9af9c6bb8a7359808dce6a7ea5028516113402c1fc3e73ebd06c3cbd53caaf4",
+        "source": "Canola",
+        "translation": "Канола"
+      }
+    ],
+    "item:item.actuallyadditions.canola_oil_bucket": [
+      {
+        "source_hash": "sha256:0defb2864a84fd24a246c363516d4b2c06b850665cd17f8f8542c99006c5da7e",
+        "source": "Canola Oil Bucket",
+        "translation": "Ведро масла канолы"
+      }
+    ],
+    "item:item.actuallyadditions.canola_seeds": [
+      {
+        "source_hash": "sha256:e1bca84c2156e21e32b9f32816e7308bc3d6736f77d45d38147548d539633833",
+        "source": "Canola Seeds",
+        "translation": "Семена канолы"
+      }
+    ],
+    "item:item.actuallyadditions.coffee_beans": [
+      {
+        "source_hash": "sha256:2374ae15d4b173eb4b497fdc4036908412951a1f6c8b7ebffb3c943f26ff69f9",
+        "source": "Coffee Beans",
+        "translation": "Бобы кофе"
+      }
+    ],
+    "item:item.actuallyadditions.coffee_cup": [
+      {
+        "source_hash": "sha256:8561f0d5bed38e4f3a2cc94e76bc96ebe74e170d3642c21d1f92beaf2f44ad86",
+        "source": "Cup with Coffee",
+        "translation": "Кружка кофе"
+      }
+    ],
+    "item:item.actuallyadditions.crafter_on_a_stick": [
+      {
+        "source_hash": "sha256:33570096f6cce83bfb6d78981dac33beecd70ec9c5443b9a63c161541f091e3c",
+        "source": "Crafting Table On A Stick",
+        "translation": "Верстак на палке"
+      }
+    ],
+    "item:item.actuallyadditions.crate_keeper": [
+      {
+        "source_hash": "sha256:17d81e697a9238e324f10678f815f6f5ef7acf85b21844b3918ed2ce309d5a83",
+        "source": "Storage Crate Keeper (WIP)",
+        "translation": "Хранилище ящиков (WIP)"
+      }
+    ],
+    "item:item.actuallyadditions.crystallized_canola_seed": [
+      {
+        "source_hash": "sha256:8ab7c3ed6f6a5cf4ee9e3a04ab294cdc7f69b2d3d64632bdc3b228e780095cc7",
+        "source": "Crystallized Canola Seeds",
+        "translation": "Кристаллизированые семена канолы"
+      }
+    ],
+    "item:item.actuallyadditions.crystallized_oil_bucket": [
+      {
+        "source_hash": "sha256:f5d1e10fd007448387e0860d411e1b978422960acc2457eb44b83191a76fe6d5",
+        "source": "Crystallized Oil Bucket",
+        "translation": "Ведро кристаллизованного масла"
+      }
+    ],
+    "item:item.actuallyadditions.diamatine_crystal": [
+      {
+        "source_hash": "sha256:95706d2f5d7abc3a5e4cd4950d0cae9d0f837405b432c370d12b938315b78f30",
+        "source": "Diamatine Crystal",
+        "translation": "Кристалл Диаматина"
+      }
+    ],
+    "item:item.actuallyadditions.diamatine_crystal_shard": [
+      {
+        "source_hash": "sha256:768f1ccdbbcf7edd764f7cda8bd3e445d22932ae079eb40a6d7cfb03e416bc67",
+        "source": "Light Blue Crystal Shard",
+        "translation": "Светло-синий осколок кристалла"
+      }
+    ],
+    "item:item.actuallyadditions.diamond_aiot": [
+      {
+        "source_hash": "sha256:e09859f5ed7d6ce5fff1ec39cc6d506059307d77578cddeb076df16f632f2f41",
+        "source": "Diamond AIOT",
+        "translation": "Алмазный мультиинструмент"
+      }
+    ],
+    "item:item.actuallyadditions.double_battery": [
+      {
+        "source_hash": "sha256:77e104f34f5db6f782e1456bf5dbadb39e4d669e7dc6c8cb6f202220927bd91d",
+        "source": "Double Battery",
+        "translation": "Двойная батарейка"
+      }
+    ],
+    "item:item.actuallyadditions.drill_black": [
+      {
+        "source_hash": "sha256:a14bf232e8de0b0b791afa31db11201f6ac8dc15870b6b50e6b6f07b081efe8b",
+        "source": "Black Drill",
+        "translation": "Чёрная дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_blue": [
+      {
+        "source_hash": "sha256:74792662ed994476867cde65ed9f15ecdec6a3a5b097e197ba85467d317fadef",
+        "source": "Blue Drill",
+        "translation": "Синяя дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_brown": [
+      {
+        "source_hash": "sha256:3cbb1f43ad613e683e608b484252b43a961d6e3d8448b5bb95c54a124d5a4eb7",
+        "source": "Brown Drill",
+        "translation": "Коричневая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_core": [
+      {
+        "source_hash": "sha256:92a9a45fafbbb01f4a1d32f6f151f3c8711c7e775ea1682ef0774bc31ae0539d",
+        "source": "Drill Core",
+        "translation": "Ядро дрели"
+      }
+    ],
+    "item:item.actuallyadditions.drill_cyan": [
+      {
+        "source_hash": "sha256:4645c0d0e2edec4e84878c130d57e5c11b40a30175927a6c45b6d491be547d54",
+        "source": "Cyan Drill",
+        "translation": "Голубая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_gray": [
+      {
+        "source_hash": "sha256:d55dc2b1c5df2e6f3de71fbf25d0c60f6443aaa1b546d7e8b200f1e0181c3122",
+        "source": "Gray Drill",
+        "translation": "Серая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_green": [
+      {
+        "source_hash": "sha256:24eebbad23e270f9fcc46fb0f6ef73c28c45e04b33e5262b366db1f65f662e3a",
+        "source": "Green Drill",
+        "translation": "Зеленая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_light_blue": [
+      {
+        "source_hash": "sha256:a9ebea0ca61ebf391f49c48edfa8bb677d7268ed22508f109843185252465a1e",
+        "source": "Light Blue Drill",
+        "translation": "Светло- синяя дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_light_gray": [
+      {
+        "source_hash": "sha256:9bbad0b7ae39828815a621102f0609d53b9c1e8e3ec4fd3081ff5cdea827b0c8",
+        "source": "Light Gray Drill",
+        "translation": "Светло-серая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_lime": [
+      {
+        "source_hash": "sha256:0a114aa48847a01cf0880319ee8c0d760a33e4f873f2604a66f475aaa3644173",
+        "source": "Lime Drill",
+        "translation": "Лаймовая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_magenta": [
+      {
+        "source_hash": "sha256:5bfffe9fba90e13457be58781ca3a6a8f8523e88fa532f365397a6372e6c51ba",
+        "source": "Magenta Drill",
+        "translation": "Пурпурная дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_orange": [
+      {
+        "source_hash": "sha256:9679ffe3db919ba9a2dc1f5a14a29dfe6115a420eaf103094c219fe58621516a",
+        "source": "Orange Drill",
+        "translation": "Оранжевая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_pattern": [
+      {
+        "source_hash": "sha256:19a83599bd65544dddeede0cc8c2748b9fafa2bb1258520526f9587b7c057d8b",
+        "source": "Banner Pattern",
+        "translation": "Узор для баннера"
+      }
+    ],
+    "item:item.actuallyadditions.drill_pink": [
+      {
+        "source_hash": "sha256:8d2a3607236057d0fb3cd053bf0f78fcd2b91b4ff3317c48641416070435fb54",
+        "source": "Pink Drill",
+        "translation": "Розовая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_purple": [
+      {
+        "source_hash": "sha256:ea6d0256367af89008b9e862fb39409861c03d47c53502c7734dceed5a577b59",
+        "source": "Purple Drill",
+        "translation": "Фиолетовая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_red": [
+      {
+        "source_hash": "sha256:127aa79dfae04e922ec40b9e0231163366e7f09d3ab08fa83f8030aaf3fce6b0",
+        "source": "Red Drill",
+        "translation": "Красная дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_block_placing": [
+      {
+        "source_hash": "sha256:26c2271e1fcf5a33558c7520175d1361c926373388612b1650aeb2d0e4bf1953",
+        "source": "Drill Block Placing Augment",
+        "translation": "Улучшение дрели: Разместитель блоков"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_five_by_five": [
+      {
+        "source_hash": "sha256:c43849d321bfedcab96d2c2147d913f71f271f5ed4843b282bb57835bc0e161f",
+        "source": "Drill Area Augment II",
+        "translation": "Улучшение дрели: Добыча II"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_fortune": [
+      {
+        "source_hash": "sha256:60ea8ac0a4dd8dc5dc0896baf6838b874db2661c1c679dfc9b09484fa0be36e0",
+        "source": "Drill Fortune Augment I",
+        "translation": "Улучшение дрели: Удача I"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_fortune_ii": [
+      {
+        "source_hash": "sha256:aa4a65f332d6caf549eb3ba2ebe03179cfa2a4f629e974188ecac5e5d630f747",
+        "source": "Drill Fortune Augment II (Gives Fortune III!)",
+        "translation": "Улучшение дрели: Удача III"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_silk_touch": [
+      {
+        "source_hash": "sha256:a24bd223867f227e073a1069ec886ee051a855be57d0ea11b77185c23123a46a",
+        "source": "Drill Silk Touch Augment",
+        "translation": "Улучшение дрели: Шёлковое касание"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_speed": [
+      {
+        "source_hash": "sha256:0134e15b55ce56f2b786482573e68ce5a751665e30f00372753fd6dcaeb5c369",
+        "source": "Drill Speed Augment",
+        "translation": "Улучшение дрели: Скорость I"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_speed_ii": [
+      {
+        "source_hash": "sha256:73f4683d94f005ba1978cbfe802d4195b0f3f8fd6c90de144b948820a52bf815",
+        "source": "Drill Speed Augment II",
+        "translation": "Улучшение дрели: Скорость II"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_speed_iii": [
+      {
+        "source_hash": "sha256:46b6db42da4625a73114ad17e244b0cdd5f27a10fa91053e4361815559b8ed31",
+        "source": "Drill Speed Augment III",
+        "translation": "Улучшение дрели: Скорость III"
+      }
+    ],
+    "item:item.actuallyadditions.drill_upgrade_three_by_three": [
+      {
+        "source_hash": "sha256:695d9a94d382740445f0686b016cffd14a0274fbacafa96214c7956d461c4094",
+        "source": "Drill Area Augment I",
+        "translation": "Улучшение дрели: Добыча I"
+      }
+    ],
+    "item:item.actuallyadditions.drill_white": [
+      {
+        "source_hash": "sha256:83b211aafbeb5282b8601da5f499265a03478d10d5bf21a0c5323d28eb7a3aa6",
+        "source": "White Drill",
+        "translation": "Белая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.drill_yellow": [
+      {
+        "source_hash": "sha256:8fe685cc2293634a0aa124142c7d8a4d2a85cccce62e3ea32279fc3ea25e1bfd",
+        "source": "Yellow Drill",
+        "translation": "Желтая дрель"
+      }
+    ],
+    "item:item.actuallyadditions.emeradic_crystal": [
+      {
+        "source_hash": "sha256:a5ddf844dfcc0fb7203c746c5b4865d243e5cfa0738c37ca362f84dac38b9d64",
+        "source": "Emeradic Crystal",
+        "translation": "Кристалл Эмерадиса"
+      }
+    ],
+    "item:item.actuallyadditions.emeradic_crystal_shard": [
+      {
+        "source_hash": "sha256:6bde12347028e87a800589da8594b591224c49e679bc3e9abd7f7a27218bcf76",
+        "source": "Green Crystal Shard",
+        "translation": "Зелёный осколок кристалла"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_canola_seed": [
+      {
+        "source_hash": "sha256:4f6d779615125c97a599fd7df1a12114baad5033ea1b3ad5275567ad84944c4a",
+        "source": "Empowered Canola Seeds",
+        "translation": "Усиленные семена канолы"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_diamatine_crystal": [
+      {
+        "source_hash": "sha256:13229d9b92eb148d44a2b441965f2d073df50f17e7a2efadf652021bb1083244",
+        "source": "Empowered Diamatine Crystal",
+        "translation": "Усиленный кристалл Диаматина"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_emeradic_crystal": [
+      {
+        "source_hash": "sha256:a397da52b0ac9b813c8bbd6440410e5166e6ab0dda526067b9aa96eff1e58881",
+        "source": "Empowered Emeradic Crystal",
+        "translation": "Усиленный кристалл Эмерадиса"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_enori_crystal": [
+      {
+        "source_hash": "sha256:0f06356842b44caee667a857a5e55d637bdf3981e5132e3df4ca076198b03562",
+        "source": "Empowered Enori Crystal",
+        "translation": "Усиленный кристалл Энори"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_oil_bucket": [
+      {
+        "source_hash": "sha256:be6bd3793edcfb1e8eed4a6c50fa08e27ce74359de9cc73a91cf6949ba9337e4",
+        "source": "Empowered Oil Bucket",
+        "translation": "Ведро обогащённого масла"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_palis_crystal": [
+      {
+        "source_hash": "sha256:58df5298270196475b2e76d60ff4f144f847c427da46a5ad7d51fda9ed9ee306",
+        "source": "Empowered Palis Crystal",
+        "translation": "Усиленный кристалл Палиса"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_restonia_crystal": [
+      {
+        "source_hash": "sha256:6249173ffe11d5c2430ea66f0fd97a7a56088450faca553f3e78703bd18fb555",
+        "source": "Empowered Restonia Crystal",
+        "translation": "Усиленный кристалл Рестонии"
+      }
+    ],
+    "item:item.actuallyadditions.empowered_void_crystal": [
+      {
+        "source_hash": "sha256:5157cf121b86276f1f0f0758b03ba36e0608fac1605286bd8378a7ebe8c51490",
+        "source": "Empowered Void Crystal",
+        "translation": "Усиленный кристалл Пустоты"
+      }
+    ],
+    "item:item.actuallyadditions.empty_cup": [
+      {
+        "source_hash": "sha256:c01ab4e05d05b5e134c9317c936e050369da775955a8b895e0149d9aaeec6137",
+        "source": "Empty Cup",
+        "translation": "Пустая кружка"
+      }
+    ],
+    "item:item.actuallyadditions.ender_star": [
+      {
+        "source_hash": "sha256:d279f4fcee0c6a66ec2bf0e73a6fc1b8fbc68dca78c657160ecbf68bca39496f",
+        "source": "Ender Star",
+        "translation": "Звезда Края"
+      }
+    ],
+    "item:item.actuallyadditions.engineers_goggles": [
+      {
+        "source_hash": "sha256:3373e840d5e51999e59cab09aabb31bc23764243b203b86aec256edd2aaeb27e",
+        "source": "Engineer's Goggles",
+        "translation": "Очки инженера"
+      }
+    ],
+    "item:item.actuallyadditions.engineers_goggles_advanced": [
+      {
+        "source_hash": "sha256:664e439ea532d9889a48db7b0b2b3ee700d5eb815ef6542d7092a6a00306c901",
+        "source": "Engineer's Infrared Goggles",
+        "translation": "Инфракрасные очки инженера"
+      }
+    ],
+    "item:item.actuallyadditions.enori_crystal": [
+      {
+        "source_hash": "sha256:7b851ee27129db8ca6bd3585ffd9cf488863b4a3e43ef9e67ae5ff2411481844",
+        "source": "Enori Crystal",
+        "translation": "Кристалл Энори"
+      }
+    ],
+    "item:item.actuallyadditions.enori_crystal_shard": [
+      {
+        "source_hash": "sha256:10026d2447e58a1d9e8dd8dcbccfe29c29b8e28137adc0199c95053e890dd0e4",
+        "source": "White Crystal Shard",
+        "translation": "Белый осколок кристалла"
+      }
+    ],
+    "item:item.actuallyadditions.filter": [
+      {
+        "source_hash": "sha256:a309ac7295c734769ec1044aaba398db67123159f8c731a1eb52f434f449bdc1",
+        "source": "Item Filter",
+        "translation": "Предметный фильтр"
+      }
+    ],
+    "item:item.actuallyadditions.flax_seeds": [
+      {
+        "source_hash": "sha256:1e54f0d4cef3996d99f159aad83e86bb567cae9b9a4eb8220d12d0519bd26f19",
+        "source": "Flax Seeds",
+        "translation": "Семена льна"
+      }
+    ],
+    "item:item.actuallyadditions.gold_aiot": [
+      {
+        "source_hash": "sha256:adea44b0c7abbf214d4aaa876b9d61f582fcd2f7a7385c3ac3aa67dd787d4446",
+        "source": "Golden AIOT",
+        "translation": "Золотой мультиинструмент"
+      }
+    ],
+    "item:item.actuallyadditions.handheld_filler": [
+      {
+        "source_hash": "sha256:1fb48f046ed7d3ff92bb3a33f5e3e3706283988e1756d2064174dbe26d892098",
+        "source": "Handheld Filler",
+        "translation": "Ручной наполнитель"
+      }
+    ],
+    "item:item.actuallyadditions.iron_aiot": [
+      {
+        "source_hash": "sha256:0e68eebe8f705f9c1f49b2c8f17d5a9f97c9c31f8c654c278af15694b389d5e5",
+        "source": "Iron AIOT",
+        "translation": "Железный мультиинструмент"
+      }
+    ],
+    "item:item.actuallyadditions.item_tag": [
+      {
+        "source_hash": "sha256:12c0d37473c4cadcdf39bec215fef4cb392ce3b9859717c5081b4f0a55ea1c36",
+        "source": "Item Tag",
+        "translation": "Предметный тег"
+      }
+    ],
+    "item:item.actuallyadditions.laser_upgrade_invisibility": [
+      {
+        "source_hash": "sha256:40900362a8f0dd37d0173ff78c62766059ee6594b2778f1b0ad7d7aa263f78e5",
+        "source": "Laser Relay Modifier: Invisibility (WIP)",
+        "translation": "Модификатор лазерного реле: Невидимость (WIP)"
+      }
+    ],
+    "item:item.actuallyadditions.laser_upgrade_range": [
+      {
+        "source_hash": "sha256:f6f8e8309b9bd9c93abf11b8d4d465ba900a7ce1e55098cd6cd44409308e18a7",
+        "source": "Laser Relay Modifier: Range (WIP)",
+        "translation": "Модификатор лазерного реле: Дальность (WIP)"
+      }
+    ],
+    "item:item.actuallyadditions.laser_wrench": [
+      {
+        "source_hash": "sha256:c87d17b864ae20cbb34662e14c1b12de8960590869836b1c16b07db414761c71",
+        "source": "Laser Wrench",
+        "translation": "Лазерный ключ"
+      }
+    ],
+    "item:item.actuallyadditions.leaf_blo_pattern": [
+      {
+        "source_hash": "sha256:19a83599bd65544dddeede0cc8c2748b9fafa2bb1258520526f9587b7c057d8b",
+        "source": "Banner Pattern",
+        "translation": "Узор для баннера"
+      }
+    ],
+    "item:item.actuallyadditions.leaf_blower": [
+      {
+        "source_hash": "sha256:9eedaf60eed06afedf3cef74783c9b195a8a7539bb73aa8be2fd2ad3c2b9e0a0",
+        "source": "Leaf Blower",
+        "translation": "Воздуходув"
+      }
+    ],
+    "item:item.actuallyadditions.lens": [
+      {
+        "source_hash": "sha256:4317a99a9ceae2936c786aed194204195bbc99e08d1516034313a02837f68b1b",
+        "source": "Lens",
+        "translation": "Линза"
+      }
+    ],
+    "item:item.actuallyadditions.lens_of_certain_death": [
+      {
+        "source_hash": "sha256:60ac4ac31d089fd0478b7c1f0f4c409a1dcf9a9c54e8a24fbe5c90496f03009e",
+        "source": "Lens of Certain Death",
+        "translation": "Линза смерти"
+      }
+    ],
+    "item:item.actuallyadditions.lens_of_color": [
+      {
+        "source_hash": "sha256:5591bf4337cdc9f602faa71e0f59f21da33d413d050948c8d799d1bf7f45420c",
+        "source": "Lens of Color",
+        "translation": "Линза цвета"
+      }
+    ],
+    "item:item.actuallyadditions.lens_of_detonation": [
+      {
+        "source_hash": "sha256:f975d137265a3f932cb470589b5927786c2b39808e6d5fa78240adcba0eb3004",
+        "source": "Lens of Detonation",
+        "translation": "Линза детонации"
+      }
+    ],
+    "item:item.actuallyadditions.lens_of_disenchanting": [
+      {
+        "source_hash": "sha256:405657db0ee42b5714a22168013fbdef30f6c68a3cd75933f359471de76b5913",
+        "source": "Lens of Disenchanting",
+        "translation": "Линза разочарования"
+      }
+    ],
+    "item:item.actuallyadditions.lens_of_disruption": [
+      {
+        "source_hash": "sha256:5e0adfe4cec74393f363159e63d9ed346e92f67997388894d8de9d17763dcd57",
+        "source": "Lens of Disruption",
+        "translation": "Линза разрушения"
+      }
+    ],
+    "item:item.actuallyadditions.lens_of_the_killer": [
+      {
+        "source_hash": "sha256:2ae667699effe31456af1f0089bc15bb65474cf9fce98d0d309a8c282e3f0f38",
+        "source": "Lens of the Killer (WIP)",
+        "translation": "Линза убийцы (WIP)"
+      }
+    ],
+    "item:item.actuallyadditions.lens_of_the_miner": [
+      {
+        "source_hash": "sha256:86b47bb28192aed4bcd679ad023f2502c03300dd70136da8ef28013ce67746c2",
+        "source": "Lens of the Miner",
+        "translation": "Линза шахтёра"
+      }
+    ],
+    "item:item.actuallyadditions.netherite_aiot": [
+      {
+        "source_hash": "sha256:d55a75da8699ef1d2af510ff9779a1cb3f664ef1356c2484993c44b29379cbed",
+        "source": "Netherite AIOT",
+        "translation": "Незеритовый мультиинструмент"
+      }
+    ],
+    "item:item.actuallyadditions.palis_crystal": [
+      {
+        "source_hash": "sha256:c8be4cf8a9093ed00e953e9cab80e6c9288ef7592c54280c7cebe24dd488335f",
+        "source": "Palis Crystal",
+        "translation": "Кристалл Палиса"
+      }
+    ],
+    "item:item.actuallyadditions.palis_crystal_shard": [
+      {
+        "source_hash": "sha256:41b7edc6c284886c3357f6aef49ba770d9e5df42baeb1630a95ef25df35f5568",
+        "source": "Blue Crystal Shard",
+        "translation": "Синий осколок кристалла"
+      }
+    ],
+    "item:item.actuallyadditions.phan_con_pattern": [
+      {
+        "source_hash": "sha256:19a83599bd65544dddeede0cc8c2748b9fafa2bb1258520526f9587b7c057d8b",
+        "source": "Banner Pattern",
+        "translation": "Узор для баннера"
+      }
+    ],
+    "item:item.actuallyadditions.phantom_connector": [
+      {
+        "source_hash": "sha256:70509efc8cb9ebba6e38c2702fd6f97f372244bfe92a4347696811c6d29035dc",
+        "source": "Phantom Connector",
+        "translation": "Призрачный соединитель"
+      }
+    ],
+    "item:item.actuallyadditions.player_probe": [
+      {
+        "source_hash": "sha256:95bbc53470f016c856125394ada946afa566455ff0f9262d5b61cd5e720b1f79",
+        "source": "Player Probe",
+        "translation": "Зонд игрока"
+      }
+    ],
+    "item:item.actuallyadditions.quadruple_battery": [
+      {
+        "source_hash": "sha256:4cf3bb5829b2a818fa93732596d8ae5f0b5672cd955a90ba2bb0743a51082a0c",
+        "source": "Quadruple Battery",
+        "translation": "Четверная батарейка"
+      }
+    ],
+    "item:item.actuallyadditions.quintuple_battery": [
+      {
+        "source_hash": "sha256:3e907de460103661a4e40e2b2a22860f7d48b3cf9b5df6dee507237f1a3c3830",
+        "source": "Quintuple Battery",
+        "translation": "Пятерная батарейка"
+      }
+    ],
+    "item:item.actuallyadditions.refined_canola_oil_bucket": [
+      {
+        "source_hash": "sha256:70f5ab36b4880397fcf2e8f937f7f0d88cd611636a2c2f57a5f5cbe9885a3fbe",
+        "source": "Refined Canola Oil Bucket",
+        "translation": "Ведро рафинированного масла канолы"
+      }
+    ],
+    "item:item.actuallyadditions.restonia_crystal": [
+      {
+        "source_hash": "sha256:472a11f18dcaedf3bd12452198c644ef71b67b67d38e3dce0e87bba34828c0f9",
+        "source": "Restonia Crystal",
+        "translation": "Кристалл Рестонии"
+      }
+    ],
+    "item:item.actuallyadditions.restonia_crystal_shard": [
+      {
+        "source_hash": "sha256:a02c47d56e4aced2ae5d04b8d94518df058247f46296ec7c64cd574e29b603c4",
+        "source": "Red Crystal Shard",
+        "translation": "Красный осколок кристалла"
+      }
+    ],
+    "item:item.actuallyadditions.rice": [
+      {
+        "source_hash": "sha256:1b9bc7b7376e6c5c0f1042dfdd42ac68017d8cee72988967d7c670d40c466c85",
+        "source": "Rice",
+        "translation": "Рис"
+      }
+    ],
+    "item:item.actuallyadditions.rice_dough": [
+      {
+        "source_hash": "sha256:e59ef1720a9290a699fd26923d3a91a49c58f94c29e9f3b106a3f8e934d1dd6b",
+        "source": "Rice Dough",
+        "translation": "Рисовое тесто"
+      }
+    ],
+    "item:item.actuallyadditions.rice_seeds": [
+      {
+        "source_hash": "sha256:ec184f31cff94dc6a98c7861f1bcbe15500d8e207cc35ddf4474d7ecb1128ac7",
+        "source": "Rice Seeds",
+        "translation": "Рисовые семена"
+      }
+    ],
+    "item:item.actuallyadditions.rice_slimeball": [
+      {
+        "source_hash": "sha256:24b02c528bf4aefd4839638c7565d5c0dd21681c6445d663851673952f8eb7f1",
+        "source": "Rice Slimeball",
+        "translation": "Рисовый слизнешар"
+      }
+    ],
+    "item:item.actuallyadditions.ring": [
+      {
+        "source_hash": "sha256:b3f952e8b6787ce08c5b04c6969fa74919a86c47008d9130cce38483541337b1",
+        "source": "Ring",
+        "translation": "Кольцо"
+      }
+    ],
+    "item:item.actuallyadditions.ring_of_growth": [
+      {
+        "source_hash": "sha256:549ed4b1899a27cba160370ee7b5d8f63142c140e550901155232a951bc53caa",
+        "source": "Ring of Growth",
+        "translation": "Кольцо роста"
+      }
+    ],
+    "item:item.actuallyadditions.ring_of_magnetizing": [
+      {
+        "source_hash": "sha256:0e8010005c41de71b14d2b165c7b403c7b9bfad857b25e8d595855605b85c5ac",
+        "source": "Ring of Magnetizing",
+        "translation": "Кольцо намагничивания"
+      }
+    ],
+    "item:item.actuallyadditions.single_battery": [
+      {
+        "source_hash": "sha256:98d7ed7119a24b792994aad31e46fe7cd71e3ee6a374b3d50dcd84dac9a97a9c",
+        "source": "Single Battery",
+        "translation": "Одиночная батарейка"
+      }
+    ],
+    "item:item.actuallyadditions.solidified_experience": [
+      {
+        "source_hash": "sha256:ade86cb3b763401a0c3009230219657c44b38610592b93541837e7b8c21a9749",
+        "source": "Solidified Experience",
+        "translation": "Затвердевший опыт"
+      }
+    ],
+    "item:item.actuallyadditions.stone_aiot": [
+      {
+        "source_hash": "sha256:f7e4cf113bc3aba78ab9917809a25786cf7aa51478ced45aa751e97f0c47e39a",
+        "source": "Stone AIOT",
+        "translation": "Каменный мультиинструмент"
+      }
+    ],
+    "item:item.actuallyadditions.teleport_staff": [
+      {
+        "source_hash": "sha256:fbf617998d11d3e5e515de8d534c3da995f6cde60c501fde628ac82e5defeed5",
+        "source": "Teleport Staff",
+        "translation": "Посох телепортации"
+      }
+    ],
+    "item:item.actuallyadditions.tiny_charcoal": [
+      {
+        "source_hash": "sha256:81d5e7ac433d669ac7b5c6a2ba3e2b643e91a644e6e21d8c5514ba15bb48b62d",
+        "source": "Tiny Charcoal",
+        "translation": "Мелкий древесный уголь"
+      }
+    ],
+    "item:item.actuallyadditions.tiny_coal": [
+      {
+        "source_hash": "sha256:6ed22512a1c4e10df2eeb6e58116b78d8c5605de01b015e521bb798a37adbf07",
+        "source": "Tiny Coal",
+        "translation": "Мелкий уголь"
+      }
+    ],
+    "item:item.actuallyadditions.travelers_sack": [
+      {
+        "source_hash": "sha256:2d1ba5b1c67690c5b12fe9eff63f35e7b84dfc9453e55f1af911b345b33b6b88",
+        "source": "Traveler's Sack",
+        "translation": "Мешок путешественника"
+      }
+    ],
+    "item:item.actuallyadditions.triple_battery": [
+      {
+        "source_hash": "sha256:2d51e4cedf6c6d88fe5ac3c60d1b1d18ff9e22795803c86de3a7fd910fc6db4e",
+        "source": "Triple Battery",
+        "translation": "Тройная батарейка"
+      }
+    ],
+    "item:item.actuallyadditions.void_crystal": [
+      {
+        "source_hash": "sha256:b0eda8aa654645514db5970775744a7de1fd3601597f5b8ea86a2d4bb73f5ec6",
+        "source": "Void Crystal",
+        "translation": "Кристалл Пустоты"
+      }
+    ],
+    "item:item.actuallyadditions.void_crystal_shard": [
+      {
+        "source_hash": "sha256:36d2649e6e91ad08661e87b32b0f07374a6df09fb554ac9ecf452ccafd4db07e",
+        "source": "Black Crystal Shard",
+        "translation": "Чёрный осколок кристалла"
+      }
+    ],
+    "item:item.actuallyadditions.void_sack": [
+      {
+        "source_hash": "sha256:671317c0dc0437559838cb1191063cfa6cb1954ae6587b37b40aafc3c13aa23c",
+        "source": "Void Sack",
+        "translation": "Пустотный мешок"
+      }
+    ],
+    "item:item.actuallyadditions.water_bowl": [
+      {
+        "source_hash": "sha256:dfd25c46eb3871b9da63cf15a36c4b928671dcebfe532f0ce586184e1674f3ac",
+        "source": "Bowl of Water",
+        "translation": "Миска с водой"
+      }
+    ],
+    "item:item.actuallyadditions.wings_of_the_bats": [
+      {
+        "source_hash": "sha256:f63dcd43d77731c08403349b01acbb2a75f8b250c162f8c1b46082db9c3679a5",
+        "source": "Wings Of The Bats (WIP)",
+        "translation": "Крылья летучей мыши (WIP)"
+      }
+    ],
+    "item:item.actuallyadditions.wooden_aiot": [
+      {
+        "source_hash": "sha256:24aa115e11486521cefd4b3b7686155951668edf77d64410816b7b7fd0035d10",
+        "source": "Wooden AIOT",
+        "translation": "Деревянный мультиинструмент"
+      }
+    ],
+    "item:item.actuallyadditions.worm": [
+      {
+        "source_hash": "sha256:cb1c3d2360fbf924f91bff0cf9dafcd4cf7e837a2e7e32914b1b9892e65c1d70",
+        "source": "Worm",
+        "translation": "Червь"
       }
     ],
     "item:item.advanced_ae.advanced_io_bus_part": [
@@ -8217,6 +10333,20 @@
         "source_hash": "sha256:279b5c555e0e985265670917e7444ae77a782c88e744fd1633df1259acf6661a",
         "source": "Quantum Crafter Terminal",
         "translation": "Квантовый терминал изготовления"
+      }
+    ],
+    "item:item.ae2.creative_storage_cell": [
+      {
+        "source_hash": "sha256:c83441a63267782b947c25abf05204f1c3da416b5d0ea2f42edad64cabbff28a",
+        "source": "Creative ME Storage Cell",
+        "translation": "Творческая ячейка хранения ME"
+      }
+    ],
+    "item:item.ae2.missing_content": [
+      {
+        "source_hash": "sha256:4bb62f2df3b1f26b0e06c9c2b75037dfcc0c6402158080dcf86e7cf191eb983c",
+        "source": "Missing Content",
+        "translation": "Отсутствующее содержимое"
       }
     ],
     "item:item.beachparty.beach_ball": [
@@ -8457,11 +10587,39 @@
         "translation": "Редкая посылка: Vector"
       }
     ],
+    "item:item.create_central_kitchen.aloe_gel_bucket": [
+      {
+        "source_hash": "sha256:c2a1cf468300389b8325f66aeef4c3be9d7c1488808f640ca3f22e4903899a16",
+        "source": "Aloe Gel Bucket",
+        "translation": "Ведро геля алоэ"
+      }
+    ],
     "item:item.create_central_kitchen.creative_tab_icon": [
       {
         "source_hash": "sha256:3ff39ca6c65552681901ea11a36a4d7d91c582540f5a93dcb14358ec06c9bd3d",
         "source": "CreativeTabIcon",
         "translation": "Значок вкладки творчества"
+      }
+    ],
+    "item:item.create_central_kitchen.incomplete_chorus_flower_pie": [
+      {
+        "source_hash": "sha256:f50cefe7269ec9fd7b25b52d9b88ea35354068886ce3066ba6b5291135f41ca7",
+        "source": "Incomplete Chorus Flower Pie",
+        "translation": "Незавершённый пирог из цветков хоруса"
+      }
+    ],
+    "item:item.create_central_kitchen.incomplete_chorus_fruit_pie": [
+      {
+        "source_hash": "sha256:796ebbdf30e2ac2983991eb06a074f6b3e2677b565de1acccd24b80c30730222",
+        "source": "Incomplete Chorus Fruit Pie",
+        "translation": "Незавершённый пирог из плодов хоруса"
+      }
+    ],
+    "item:item.create_central_kitchen.incomplete_lime_pie": [
+      {
+        "source_hash": "sha256:a24f4563188910bdb1f681b48a7ff72757e123c130bab24f662fb42a84652892",
+        "source": "Incomplete Lime Pie",
+        "translation": "Незавершённый лаймовый пирог"
       }
     ],
     "item:item.create_central_kitchen.incomplete_neapolitan_ice_cream_chocolate": [
@@ -8476,6 +10634,48 @@
         "source_hash": "sha256:adbc0a50a06cd495f34d95fcc03e045397960afd67874d8d7e4bd360525e7260",
         "source": "Incomplete Neapolitan Ice Cream",
         "translation": "Незавершённое неаполитанское мороженое"
+      }
+    ],
+    "item:item.create_central_kitchen.incomplete_portobello_burger": [
+      {
+        "source_hash": "sha256:4a61056d6fb61fcafabfda659817684a8e531fe4b5b9640ec492d534bd899320",
+        "source": "Incomplete Portobello Burger",
+        "translation": "Незавершённый бургер с портобелло"
+      }
+    ],
+    "item:item.create_central_kitchen.incomplete_portobello_quiche": [
+      {
+        "source_hash": "sha256:7f80a0ebcace6c7a9297ff585ac2834912fc2f9915fbddfd4560a922d10a28d3",
+        "source": "Incomplete Portobello Quiche",
+        "translation": "Незавершённый киш с портобелло"
+      }
+    ],
+    "item:item.create_central_kitchen.incomplete_portobello_wrap": [
+      {
+        "source_hash": "sha256:cbe9b6aeee00724d98b17a09c75b2478a04a0d31ac0c6d0a520ed2a36daa459e",
+        "source": "Incomplete Portobello Wrap",
+        "translation": "Незавершённый ролл с портобелло"
+      }
+    ],
+    "item:item.create_central_kitchen.mulberry_jam_bucket": [
+      {
+        "source_hash": "sha256:01fff3cffcb18258f60977a50cb11e30303113f057eb50e45b10be46edfd4a72",
+        "source": "Mulberry Jam Bucket",
+        "translation": "Ведро тутового варенья"
+      }
+    ],
+    "item:item.create_central_kitchen.sap_bucket": [
+      {
+        "source_hash": "sha256:eba28660b8fbbdd52deeb21f936bf8069c6e1a0650f3e0886de100598247de35",
+        "source": "Sap Bucket",
+        "translation": "Ведро древесного сока"
+      }
+    ],
+    "item:item.create_central_kitchen.syrup_bucket": [
+      {
+        "source_hash": "sha256:65557fbfa540468ac6b471d4e0f73707e980b444a1c3e1d9050e662179e01071",
+        "source": "Syrup Bucket",
+        "translation": "Ведро сиропа"
       }
     ],
     "item:item.decorative_blocks.blockstate_copy_item": [
@@ -13140,6 +15340,132 @@
         "translation": "Рыбная похлёбка"
       }
     ],
+    "item:item.ftblibrary.fluid_container": [
+      {
+        "source_hash": "sha256:fa8321b45cd14a93d33a3b37c5f72d2fe131430279747df8dba64e484ab3aeea",
+        "source": "Fluid Container",
+        "translation": "Контейнер для жидкости"
+      }
+    ],
+    "item:item.geckolib.bat_spawn_egg": [
+      {
+        "source_hash": "sha256:a32ae52b17c7ef3e14f5b4bfea3891e97f56b0fd4bf0f66b40d3efbbff8496ed",
+        "source": "Bat Spawn Egg",
+        "translation": "Яйцо призыва летучей мыши"
+      }
+    ],
+    "item:item.geckolib.bike_spawn_egg": [
+      {
+        "source_hash": "sha256:2f7398186b6a796811e7cd73c08c9e250d379217038bb4e85265aa9c12396187",
+        "source": "Bike Spawn Egg",
+        "translation": "Яйцо призыва велосипеда"
+      }
+    ],
+    "item:item.geckolib.cool_kid_spawn_egg": [
+      {
+        "source_hash": "sha256:92fbcdb8f65328f3463bc04a513a7f335375f608f06966892f7ec008c11dc708",
+        "source": "Cool Kid Spawn Egg",
+        "translation": "Яйцо призыва крутого парня"
+      }
+    ],
+    "item:item.geckolib.fake_glass_spawn_egg": [
+      {
+        "source_hash": "sha256:41d82ad8cd03e9066e123e429d513449291a2d4f61662bfa4dc3adb5e1b97f69",
+        "source": "Fake Glass Spawn Egg",
+        "translation": "Яйцо призыва фальшивого стекла"
+      }
+    ],
+    "item:item.geckolib.gecko_armor_boots": [
+      {
+        "source_hash": "sha256:215ce2baa3ffa91064ac66268162a4161576a6ce8e87c7df4be3a90016f88cfe",
+        "source": "Gecko Armor Boots",
+        "translation": "Гекконьи ботинки"
+      }
+    ],
+    "item:item.geckolib.gecko_armor_chestplate": [
+      {
+        "source_hash": "sha256:7ff7d9f1d19d683ba18125fc126435a45c6d9b2af5590241d8d72357977c346d",
+        "source": "Gecko Armor Chestplate",
+        "translation": "Гекконий нагрудник"
+      }
+    ],
+    "item:item.geckolib.gecko_armor_helmet": [
+      {
+        "source_hash": "sha256:e760d2f6f1d96c6016cc46c1b446b9fbcf85ae33b19c11cf2c5625c19d3533c4",
+        "source": "Gecko Armor Helmet",
+        "translation": "Гекконий шлем"
+      }
+    ],
+    "item:item.geckolib.gecko_armor_leggings": [
+      {
+        "source_hash": "sha256:e6012975e5f00f9b8f2b870177d5e547d8d01519037a971146bd0e8ae06cb1f1",
+        "source": "Gecko Armor Leggings",
+        "translation": "Гекконьи поножи"
+      }
+    ],
+    "item:item.geckolib.gremlin_spawn_egg": [
+      {
+        "source_hash": "sha256:85e3df92daf9f17476666c2479a6ea2db296aa98df4a70afdb58c0ee1ebc8e68",
+        "source": "Gremlin Spawn Egg",
+        "translation": "Яйцо призыва гремлина"
+      }
+    ],
+    "item:item.geckolib.jack_in_the_box": [
+      {
+        "source_hash": "sha256:1bcb932e9a58d20d139e472daa5c9b3b3cc5676130a6ae6eb2e848c6daad82ff",
+        "source": "Jack-in-the-Box",
+        "translation": "Чёртик из табакерки"
+      }
+    ],
+    "item:item.geckolib.mutant_zombie_spawn_egg": [
+      {
+        "source_hash": "sha256:1c4481c0aef6d9917867b3bf75e3830fb623e36ffe46dfd41e601e52e48dc593",
+        "source": "Mutant Zombie Spawn Egg",
+        "translation": "Яйцо призыва зомби-мутанта"
+      }
+    ],
+    "item:item.geckolib.parasite_spawn_egg": [
+      {
+        "source_hash": "sha256:f89ab75906ce194ed84328ac65983be2f92befd2965b11c2568fc9bc287d7766",
+        "source": "Parasite Spawn Egg",
+        "translation": "Яйцо призыва паразита"
+      }
+    ],
+    "item:item.geckolib.race_car_spawn_egg": [
+      {
+        "source_hash": "sha256:ff23d8602d0c2c643e37b6563a26bc68bcf17ffb4f74c27ae878a656047a3624",
+        "source": "Race Car Spawn Egg",
+        "translation": "Яйцо призыва гоночной машины"
+      }
+    ],
+    "item:item.geckolib.wolf_armor_boots": [
+      {
+        "source_hash": "sha256:0ee378e1b3e8e4f0b6c652a3431845708da62054525837b84b9386dd64005c4f",
+        "source": "Wolf Armor Boots",
+        "translation": "Волчьи ботинки"
+      }
+    ],
+    "item:item.geckolib.wolf_armor_chestplate": [
+      {
+        "source_hash": "sha256:67e920d5164014af7b64b8aceef246d1fcec419812f5d40def888893e275696c",
+        "source": "Wolf Armor Chestplate",
+        "translation": "Волчий нагрудник"
+      }
+    ],
+    "item:item.geckolib.wolf_armor_helmet": [
+      {
+        "source_hash": "sha256:5e592b08975f8343539d1904994eabb45770503fff22ca3bc181d35ed24fa4b7",
+        "source": "Wolf Armor Helmet",
+        "translation": "Волчий шлем"
+      }
+    ],
+    "item:item.geckolib.wolf_armor_leggings": [
+      {
+        "source_hash": "sha256:d45ea16520af72bf5b311bec621acc5017451a26571ccfbd2277556860ac2fd5",
+        "source": "Wolf Armor Leggings",
+        "translation": "Волчьи поножи"
+      }
+    ],
     "item:item.guideme.guide": [
       {
         "source_hash": "sha256:8dd65d0952ed144ccf6e76ebf8aa45644afb2b9236762c414d07e813d42f588e",
@@ -15023,7 +17349,61 @@
         "translation": "Гаечный ключ"
       }
     ],
+    "item:item.simpleradio.copper_wire": [
+      {
+        "source_hash": "sha256:f6516ae207e795cab3817bf2d9e72575a81f7e928ce9be8dd7a531f88be5fd50",
+        "source": "Copper Wire",
+        "translation": "Медный провод"
+      }
+    ],
+    "item:item.simpleradio.diamond_module": [
+      {
+        "source_hash": "sha256:faaa4fdc445273acb17a2cb7f0f43a1e288009300bf6d6ac3cfeaf57f41ebe74",
+        "source": "Diamond %1$s Module",
+        "translation": "Алмазный модуль: %1$s"
+      }
+    ],
+    "item:item.simpleradio.gold_module": [
+      {
+        "source_hash": "sha256:fe0b828a628e618c2f5ed9b4af98fd1beb105bc276bd5b0fefa4220a0fe5ac88",
+        "source": "Gold %1$s Module",
+        "translation": "Золотой модуль: %1$s"
+      }
+    ],
+    "item:item.simpleradio.iron_module": [
+      {
+        "source_hash": "sha256:fe7d7a5f7613e23a146b010649d683b35bed2dc6e4f35e038677f8752e118ae9",
+        "source": "Iron %1$s Module",
+        "translation": "Железный модуль: %1$s"
+      }
+    ],
+    "item:item.simpleradio.netherite_module": [
+      {
+        "source_hash": "sha256:76c9ed7d18a502b3c8bf116b891dd4ac00da61dfe5ecd8a120a5ef801e43941c",
+        "source": "Netherite %1$s Module",
+        "translation": "Незеритовый модуль: %1$s"
+      }
+    ],
+    "item:item.sophisticatedbackpacks.advanced_alchemy_upgrade": [
+      {
+        "source_hash": "sha256:e6c87999a6b5c0d7bdd2be78c7d79e1b2a21a7ba0ccda9217b5387932ce1fbe4",
+        "source": "Advanced Alchemy Upgrade",
+        "translation": "Продвинутое улучшение «Алхимия»"
+      }
+    ],
+    "item:item.sophisticatedbackpacks.alchemy_upgrade": [
+      {
+        "source_hash": "sha256:84308cdbf7509f15807194d220bfd6e485f9643b456faf56be14774927c948ba",
+        "source": "Alchemy Upgrade",
+        "translation": "Улучшение «Алхимия»"
+      }
+    ],
     "item:item.storage_shelves.cardboard": [
+      {
+        "source_hash": "sha256:4c5895c2638fb90c71a1e40976542fb64fce70c43d23b3d3c6ea6dc503bceb79",
+        "source": "Cardboard",
+        "translation": "Картон"
+      },
       {
         "source_hash": "sha256:7aaa37a14e7695bc36a41ebb16508b4aba780436fa8a30cbe8afd5d28830eee1",
         "source": "Plywood",
@@ -15875,6 +18255,559 @@
         "source_hash": "sha256:cd7dc68b0cb27fedd22c937ee5d5c8fdfb6cfa29679383756196bc79b1e96585",
         "source": "Thermal sign Post Rubberwood",
         "translation": "Указатель из каучукового дерева"
+      }
+    ],
+    "item:item.table_top_craft.chess": [
+      {
+        "source_hash": "sha256:c1aade8253979ee2f3959f043676c44454925643d62f6baef75a45afc170b666",
+        "source": "Chess",
+        "translation": "Шахматы"
+      }
+    ],
+    "item:item.tconstruct.adze_head": [
+      {
+        "source_hash": "sha256:834dd36709fc2e51e753e1c1b328d30623795e4fee6575a64abca2ca5fb5a483",
+        "source": "Adze Head",
+        "translation": "Наконечник тесла"
+      }
+    ],
+    "item:item.tconstruct.adze_head_cast": [
+      {
+        "source_hash": "sha256:578fcd14c5ca4b03e6f67ffb78f925389a6b35a4f68b818db99865f4d095d912",
+        "source": "Adze Head Gold Cast",
+        "translation": "Золотая литейная форма: Наконечник тесла"
+      }
+    ],
+    "item:item.tconstruct.adze_head_red_sand_cast": [
+      {
+        "source_hash": "sha256:d5b2d8c3ff5c5602b5b528bd5b1a21e6a7bff77786237a08468e8ccca722f7d7",
+        "source": "Adze Head Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Наконечник тесла"
+      }
+    ],
+    "item:item.tconstruct.adze_head_sand_cast": [
+      {
+        "source_hash": "sha256:f6acc87548e7ce9fde31d72ca8b37dedadbd4dd654660b9fab38ca41dbd9a7b2",
+        "source": "Adze Head Sand Cast",
+        "translation": "Песочная литейная форма: Наконечник тесла"
+      }
+    ],
+    "item:item.tconstruct.battlesign": [
+      {
+        "source_hash": "sha256:2a7a76831562018cad78267e3998e3fbf3af0958ecbf586b932535b0f58d73a1",
+        "source": "Battlesign",
+        "translation": "Боевая табличка"
+      }
+    ],
+    "item:item.tconstruct.beetroot_soup_bucket": [
+      {
+        "source_hash": "sha256:7f8097f38bfd8fea68a6469862e3204ebc000425f6e4f7368b05ed21f5397595",
+        "source": "Beetroot Soup Bucket",
+        "translation": "Ведро свекольного супа"
+      }
+    ],
+    "item:item.tconstruct.boots_plating": [
+      {
+        "source_hash": "sha256:f4de7766e9a1c0ecca55f1ca867d41de9434514e8437d77d8597749d0b0af463",
+        "source": "Boot Plating",
+        "translation": "Покрытие ботинок"
+      }
+    ],
+    "item:item.tconstruct.boots_plating_cast": [
+      {
+        "source_hash": "sha256:dc7d3749240e0fec035c5e72840dced3ac50d4694b553917d50e7c57b1b1c086",
+        "source": "Boot Plating Gold Cast",
+        "translation": "Золотая литейная форма: Покрытие ботинок"
+      }
+    ],
+    "item:item.tconstruct.boots_plating_dummy": [
+      {
+        "source_hash": "sha256:c28aefaa4751a984a785689e926019560cddc9ffca56d888a94d64368e22b45e",
+        "source": "Stone Boot Plating",
+        "translation": "Каменное покрытие ботинок"
+      }
+    ],
+    "item:item.tconstruct.boots_plating_red_sand_cast": [
+      {
+        "source_hash": "sha256:ca68f35138fe6cd642e8d608bfd2ed8bfd323e49ce6a2d8ddbb98d82d83bcd63",
+        "source": "Boot Plating Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Покрытие ботинок"
+      }
+    ],
+    "item:item.tconstruct.boots_plating_sand_cast": [
+      {
+        "source_hash": "sha256:d853fddcdd2237a11ed2f61e9b77f85895d08930d9559c3fb77189dad397f892",
+        "source": "Boot Plating Sand Cast",
+        "translation": "Песочная литейная форма: Покрытие ботинок"
+      }
+    ],
+    "item:item.tconstruct.bow_grip": [
+      {
+        "source_hash": "sha256:f9b218036cb5cab506e3c07ec4d9b4f9b086df76a308fcb0b9b3efb2ee54f129",
+        "source": "Bow Grip",
+        "translation": "Рукоятка лука"
+      }
+    ],
+    "item:item.tconstruct.bow_grip_cast": [
+      {
+        "source_hash": "sha256:fe5a83d36bd9c6b4e3517fe2ac7785acbe6956798ac7eedc79b7a5417154f911",
+        "source": "Bow Grip Gold Cast",
+        "translation": "Золотая литейная форма: Рукоятка лука"
+      }
+    ],
+    "item:item.tconstruct.bow_grip_red_sand_cast": [
+      {
+        "source_hash": "sha256:efb32ec4106a5362807af70347f26ef5dd3279838ae5f91348dccedeb70adccb",
+        "source": "Bow Grip Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Рукоятка лука"
+      }
+    ],
+    "item:item.tconstruct.bow_grip_sand_cast": [
+      {
+        "source_hash": "sha256:3dffb325812b8284b1d75e3f8a51b2ed06797dbd446cb1d987dd311a08434e83",
+        "source": "Bow Grip Sand Cast",
+        "translation": "Песочная литейная форма: Рукоятка лука"
+      }
+    ],
+    "item:item.tconstruct.bow_limb": [
+      {
+        "source_hash": "sha256:4da067b7ed7727d3a67eb1790e391f2f8248eecb42e03478bf59896af898c3da",
+        "source": "Bow Limb",
+        "translation": "Плечо лука"
+      }
+    ],
+    "item:item.tconstruct.bowstring": [
+      {
+        "source_hash": "sha256:a5b77233388f56f34f8eb1675130d36c83e88a7e9ab9f313287f0a2f9ddc89d2",
+        "source": "Bowstring",
+        "translation": "Тетива лука"
+      }
+    ],
+    "item:item.tconstruct.cheese_ingot": [
+      {
+        "source_hash": "sha256:6e5a59d4fd56f798e609d28e3d6300b2d80bfbb76d27711c0c24006a129d4e17",
+        "source": "Cheese",
+        "translation": "Сыр"
+      }
+    ],
+    "item:item.tconstruct.chestplate_plating": [
+      {
+        "source_hash": "sha256:33c3c3a263c738a79aa4ff4f807d8d2856da1067f0c41c57784499a42d2b52b8",
+        "source": "Chest Plating",
+        "translation": "Покрытие нагрудника"
+      }
+    ],
+    "item:item.tconstruct.chestplate_plating_cast": [
+      {
+        "source_hash": "sha256:cbdb61bf22e3a6a25a412d229cc25dbacf764a8e5efdaf7e873d50dc920dd90f",
+        "source": "Chest Plating Gold Cast",
+        "translation": "Золотая литейная форма: Покрытие нагрудника"
+      }
+    ],
+    "item:item.tconstruct.chestplate_plating_dummy": [
+      {
+        "source_hash": "sha256:6c2dbe0452c58f8d8a252a8dce0f093f7f30ed9e949bd055ef6ea8f1b560de03",
+        "source": "Stone Chest Plating",
+        "translation": "Каменное покрытие нагрудника"
+      }
+    ],
+    "item:item.tconstruct.chestplate_plating_red_sand_cast": [
+      {
+        "source_hash": "sha256:99280b88451a18666a2017f492936ae0ededd4085cd479b6b0f79602c2034a82",
+        "source": "Chest Plating Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Покрытие нагрудника"
+      }
+    ],
+    "item:item.tconstruct.chestplate_plating_sand_cast": [
+      {
+        "source_hash": "sha256:baef05629a34b81cac107e319bcce621d910324e913a757f1b3b886f33e7b31f",
+        "source": "Chest Plating Sand Cast",
+        "translation": "Песочная литейная форма: Покрытие нагрудника"
+      }
+    ],
+    "item:item.tconstruct.cinderslime_ingot": [
+      {
+        "source_hash": "sha256:520af63b29bfe1b2ed514734bd10c86f99388df26965f6a535a4f1abaabc0aec",
+        "source": "Cinderslime Ingot",
+        "translation": "Слиток зольной слизи"
+      }
+    ],
+    "item:item.tconstruct.cinderslime_nugget": [
+      {
+        "source_hash": "sha256:d551addb3ddf50182a756c441c29103e016d1454f03171559e49d8e6b2739a83",
+        "source": "Cinderslime Nugget",
+        "translation": "Кусочек зольной слизи"
+      }
+    ],
+    "item:item.tconstruct.crossbow": [
+      {
+        "source_hash": "sha256:44f05d34905904b1f30acedd9cecd321b5b0e88f95dff561c54524716f50ed3c",
+        "source": "Crossbow",
+        "translation": "Арбалет"
+      }
+    ],
+    "item:item.tconstruct.crystalshot": [
+      {
+        "source_hash": "sha256:746a03330a4f801748dd3d49380b30d45e144108ec4cda468b0e6f8d95658028",
+        "source": "Crystalshot",
+        "translation": "Аметистовый выстрел"
+      }
+    ],
+    "item:item.tconstruct.earth_slime_bottle": [
+      {
+        "source_hash": "sha256:6b3ea52342f4e5e1219d0eac5cad7a7dd9b4c83b3fef508340464f464a2ad1b7",
+        "source": "Earthslime Bottle",
+        "translation": "Бутылочка земной слизи"
+      }
+    ],
+    "item:item.tconstruct.earth_slime_spawn_egg": [
+      {
+        "source_hash": "sha256:ed66c531cef86434113c9c45fd32a64535fa49cef3207923c3befdcd29a228f2",
+        "source": "Earthslime Spawn Egg",
+        "translation": "Яйцо призыва земного слизня"
+      }
+    ],
+    "item:item.tconstruct.earth_staff": [
+      {
+        "source_hash": "sha256:4ed18cdbd9c3fb83c2772fa3451a69846e715e8c61052b2e3600c51f10889fa1",
+        "source": "Earthslime Staff",
+        "translation": "Посох из земной слизи"
+      }
+    ],
+    "item:item.tconstruct.ender_slime_bottle": [
+      {
+        "source_hash": "sha256:21322e9154e7c5f2ec54c8e6f36350cd0fa6d044dc935af9e01ceef59934f7bd",
+        "source": "Enderslime Bottle",
+        "translation": "Бутылочка эндер-слизи"
+      }
+    ],
+    "item:item.tconstruct.ender_staff": [
+      {
+        "source_hash": "sha256:a1b8a566e5dea30f93f31edb226526cfd4147b894a68829e9beb82848307da0f",
+        "source": "Enderslime Staff",
+        "translation": "Посох из эндер-слизи"
+      }
+    ],
+    "item:item.tconstruct.helmet_plating": [
+      {
+        "source_hash": "sha256:742c792b1c9f63726639509b387a93a849a7bc0f1a734b2e8ce931b8e2ecc684",
+        "source": "Helmet Plating",
+        "translation": "Покрытие шлема"
+      }
+    ],
+    "item:item.tconstruct.helmet_plating_cast": [
+      {
+        "source_hash": "sha256:833f74f279ef869cc7438fe0b17539c4a6199fc67b492160c60946d92b7f9312",
+        "source": "Helmet Plating Gold Cast",
+        "translation": "Золотая литейная форма: Покрытие шлема"
+      }
+    ],
+    "item:item.tconstruct.helmet_plating_dummy": [
+      {
+        "source_hash": "sha256:4284e77051cb7503fce36d7e7aed490bf1b412b47967f0a4ad11b31ada6a21a4",
+        "source": "Stone Helmet Plating",
+        "translation": "Каменное покрытие шлема"
+      }
+    ],
+    "item:item.tconstruct.helmet_plating_red_sand_cast": [
+      {
+        "source_hash": "sha256:b4b6fdea426ee6ad258260a39ccad4fe97a9c8604f36d8a373c376811bf4132f",
+        "source": "Helmet Plating Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Покрытие шлема"
+      }
+    ],
+    "item:item.tconstruct.helmet_plating_sand_cast": [
+      {
+        "source_hash": "sha256:3b9768d403301e6881f1fb1474b5e277a6b2ad07e7626f273eb7cc4d63e5f0b3",
+        "source": "Helmet Plating Sand Cast",
+        "translation": "Песочная литейная форма: Покрытие шлема"
+      }
+    ],
+    "item:item.tconstruct.honey_bucket": [
+      {
+        "source_hash": "sha256:29dc59dba4f9df593c0bc9fe99b2f2c37724c809a706a3d2eb8d9e4d7ac37043",
+        "source": "Honey Bucket",
+        "translation": "Ведро мёда"
+      }
+    ],
+    "item:item.tconstruct.ichor_bucket": [
+      {
+        "source_hash": "sha256:cbb2e10201027ff2e73e67e4ea3f7f656d47b1f55ce64616fee22cc48a74fc68",
+        "source": "Ichor Bucket",
+        "translation": "Ведро ихора"
+      }
+    ],
+    "item:item.tconstruct.ichor_slime_bottle": [
+      {
+        "source_hash": "sha256:4f84dfb1465349d3d69d5b69dc40c160dc6296b2bc966d852319fdb585517f00",
+        "source": "Ichor Bottle",
+        "translation": "Бутылочка ихора"
+      }
+    ],
+    "item:item.tconstruct.ichor_staff": [
+      {
+        "source_hash": "sha256:dff521c5d6707e9bc9d80ae61fad0f0de65d805ee27c3c3908ad262b99a7e5db",
+        "source": "Ichor Staff",
+        "translation": "Ихоровый посох"
+      }
+    ],
+    "item:item.tconstruct.leggings_plating": [
+      {
+        "source_hash": "sha256:5db221320e1cf4a5ae863cceb14e892dc5a4048bef90751f13d0e937fba9a9c3",
+        "source": "Leg Plating",
+        "translation": "Покрытие поножей"
+      }
+    ],
+    "item:item.tconstruct.leggings_plating_cast": [
+      {
+        "source_hash": "sha256:95f6ccb4c15b321652d59516e802da5e61a59969f9ff4a294ef6cf6e032aeeba",
+        "source": "Leg Plating Gold Cast",
+        "translation": "Золотая литейная форма: Покрытие поножей"
+      }
+    ],
+    "item:item.tconstruct.leggings_plating_dummy": [
+      {
+        "source_hash": "sha256:46acd8c6de3663405af5654ed40f63c8cc6997b44687c563daa9a4e622ee95d8",
+        "source": "Stone Leg Plating",
+        "translation": "Каменное покрытие поножей"
+      }
+    ],
+    "item:item.tconstruct.leggings_plating_red_sand_cast": [
+      {
+        "source_hash": "sha256:c901f199bbb3782aedcdb13ca5e0fe17a05ab75d08b6f90468e8b49213e20ccc",
+        "source": "Leg Plating Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Покрытие поножей"
+      }
+    ],
+    "item:item.tconstruct.leggings_plating_sand_cast": [
+      {
+        "source_hash": "sha256:ad51cfa39780fb0d483d9c26b1130b80cc1228793e373a33aa8f2764dfbf8a39",
+        "source": "Leg Plating Sand Cast",
+        "translation": "Песочная литейная форма: Покрытие поножей"
+      }
+    ],
+    "item:item.tconstruct.lingering_bottle": [
+      {
+        "source_hash": "sha256:0ca004e079be16dc4b3abe4828b6e6d34d002a777a8a79663f81e71c853c36ee",
+        "source": "Lingering Bottle",
+        "translation": "Туманная бутылочка"
+      }
+    ],
+    "item:item.tconstruct.longbow": [
+      {
+        "source_hash": "sha256:31b2fb624d3698dffd5bbe3001d40405e3a867822425811d7917863db0ab5615",
+        "source": "Longbow",
+        "translation": "Длинный лук"
+      }
+    ],
+    "item:item.tconstruct.magma_bottle": [
+      {
+        "source_hash": "sha256:a0d2d8a0076f6feba557a4533eefcd0024c8c3518b904d86b5f6c6bc2935db0b",
+        "source": "Magma Bottle",
+        "translation": "Бутылочка магмы"
+      }
+    ],
+    "item:item.tconstruct.maille": [
+      {
+        "source_hash": "sha256:971a4b4268ddb9ceeafb9aebb70164cc63f9c8107cbb543ff55c1db5fcdbdbac",
+        "source": "Maille",
+        "translation": "Кольчуга"
+      }
+    ],
+    "item:item.tconstruct.maille_cast": [
+      {
+        "source_hash": "sha256:8e87fd41eb0fd3b4bdb7aa081ad50ec5c321d80cbf9301130c0b7669af552ea8",
+        "source": "Maille Gold Cast",
+        "translation": "Золотая литейная форма: Кольчуга"
+      }
+    ],
+    "item:item.tconstruct.maille_red_sand_cast": [
+      {
+        "source_hash": "sha256:cd11dbc9e8e00355b9e0634ccfca308e8139b3c247546fe92fe67e0ab86fa189",
+        "source": "Maille Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Кольчуга"
+      }
+    ],
+    "item:item.tconstruct.maille_sand_cast": [
+      {
+        "source_hash": "sha256:2041cf14a7f416b4ec26a13c111f06ba5353bd00aedfcd055ab44a0acb82773f",
+        "source": "Maille Sand Cast",
+        "translation": "Песочная литейная форма: Кольчуга"
+      }
+    ],
+    "item:item.tconstruct.meat_soup": [
+      {
+        "source_hash": "sha256:060905aa32408a08a7f61080128caffb4f8661864d039f1e3546604c3fab27c8",
+        "source": "Meat Soup",
+        "translation": "Мясной суп"
+      }
+    ],
+    "item:item.tconstruct.meat_soup_bucket": [
+      {
+        "source_hash": "sha256:15cbaafb71725fe6cf464268cf1a40dceaa5b18a214d02ce910c0d8ab0e9db4a",
+        "source": "Meat Soup Bucket",
+        "translation": "Ведро мясного супа"
+      }
+    ],
+    "item:item.tconstruct.melting_pan": [
+      {
+        "source_hash": "sha256:23d1be83de426dce10300ec71ad6bd99ab9281690cfb55927fbf515c7984df3c",
+        "source": "Melting Pan",
+        "translation": "Сковородка"
+      }
+    ],
+    "item:item.tconstruct.modifier_crystal": [
+      {
+        "source_hash": "sha256:cd0628fe827c58c34030673457d5a13cb61238ec0f20e684321aa06644d92c95",
+        "source": "Modifier Crystal",
+        "translation": "Кристалл модификатора"
+      }
+    ],
+    "item:item.tconstruct.molten_cinderslime_bucket": [
+      {
+        "source_hash": "sha256:91e36d1ddbc6af793f821db305ab007b14eb6d2693c30b43428e2b146469aded",
+        "source": "Molten Cinderslime Bucket",
+        "translation": "Ведро расплавленной зольной слизи"
+      }
+    ],
+    "item:item.tconstruct.mushroom_stew_bucket": [
+      {
+        "source_hash": "sha256:081c5af0b70f4ceba80c5fc534dd90146b51bf81fc7ad64740c53dc46f15a79e",
+        "source": "Mushroom Stew Bucket",
+        "translation": "Ведро тушёных грибов"
+      }
+    ],
+    "item:item.tconstruct.obsidian_reinforcement": [
+      {
+        "source_hash": "sha256:c9f4d1f669b779cd85cad1708ab71fe141117bf29fd7f62755c83882f2750a5d",
+        "source": "Obsidian Reinforcement",
+        "translation": "Обсидиановое укрепление"
+      }
+    ],
+    "item:item.tconstruct.plate_shield": [
+      {
+        "source_hash": "sha256:fb1dd52a72ad71be40438795e11faeba53f0217a6fe6a3fcde6fbd8c10377c56",
+        "source": "Plate Shield",
+        "translation": "Пластинчатый щит"
+      }
+    ],
+    "item:item.tconstruct.potion_bucket": [
+      {
+        "source_hash": "sha256:bc85c414a639d67dec9f50d72139cc63bde1d769146716f750e78a2344f47e95",
+        "source": "Uncraftable Potion Bucket",
+        "translation": "Несоздаваемое зелье в ведре"
+      }
+    ],
+    "item:item.tconstruct.rabbit_stew_bucket": [
+      {
+        "source_hash": "sha256:0abe68539d4c6583bdfc4eb713d2e7d9c2b7fb5c42c19897e3510ec83ab8ffaf",
+        "source": "Rabbit Stew Bucket",
+        "translation": "Ведро тушёного кролика"
+      }
+    ],
+    "item:item.tconstruct.shield_core": [
+      {
+        "source_hash": "sha256:0d1211f1e566afaa4fc2477d4a455fb863e771656b7f6648bd73673c53ee03f7",
+        "source": "Shield Core",
+        "translation": "Ядро щита"
+      }
+    ],
+    "item:item.tconstruct.sky_slime_bottle": [
+      {
+        "source_hash": "sha256:3ea8ddf60565405104eee2832063c7805087f70249a868dda55a9c912c9643fa",
+        "source": "Skyslime Bottle",
+        "translation": "Бутылочка небесной слизи"
+      }
+    ],
+    "item:item.tconstruct.sky_staff": [
+      {
+        "source_hash": "sha256:35c00cdc1d7a45535176e003532a018eb81c1e08fd119b3166b6c5b000211b9e",
+        "source": "Skyslime Staff",
+        "translation": "Посох из небесной слизи"
+      }
+    ],
+    "item:item.tconstruct.splash_bottle": [
+      {
+        "source_hash": "sha256:9ef8a1cf0e42862cc4aa6b080fc226a5b3ccaa6bd6e04807c968f284f5c8c7f1",
+        "source": "Splash Bottle",
+        "translation": "Взрывная бутылочка"
+      }
+    ],
+    "item:item.tconstruct.steel_ingot": [
+      {
+        "source_hash": "sha256:de4a6957b0b605985981303d85d526d03abb8848512e4b0c6849917a27aa4a4e",
+        "source": "Steel Ingot",
+        "translation": "Стальной слиток"
+      }
+    ],
+    "item:item.tconstruct.steel_nugget": [
+      {
+        "source_hash": "sha256:467d903bb1d68216baf14dc87c55b9c861545982736062c8740f8f54cfcf5749",
+        "source": "Steel Nugget",
+        "translation": "Кусочек стали"
+      }
+    ],
+    "item:item.tconstruct.swasher": [
+      {
+        "source_hash": "sha256:a727a023a97cb3fae01c9a6946d48216f428f334e642bdaed755534cc0a734f6",
+        "source": "Swasher",
+        "translation": "Свашер"
+      }
+    ],
+    "item:item.tconstruct.tough_binding": [
+      {
+        "source_hash": "sha256:75b4e8b1209461f32dacca39175e40a03c7aef7fc8201c5340cf2c39c8c36810",
+        "source": "Tough Collar",
+        "translation": "Жёсткий поясок"
+      }
+    ],
+    "item:item.tconstruct.tough_binding_cast": [
+      {
+        "source_hash": "sha256:39171650a2c9741151cd4dbd583e90e077ed30f1eca55d41dfe08649dcb2d65f",
+        "source": "Tough Collar Gold Cast",
+        "translation": "Золотая литейная форма: Жёсткий поясок"
+      }
+    ],
+    "item:item.tconstruct.tough_binding_red_sand_cast": [
+      {
+        "source_hash": "sha256:c56260135fdd537b87f10153d349655aaf74e4895b94af5c55af573f35af5d1d",
+        "source": "Tough Collar Red Sand Cast",
+        "translation": "Красная песочная литейная форма: Жёсткий поясок"
+      }
+    ],
+    "item:item.tconstruct.tough_binding_sand_cast": [
+      {
+        "source_hash": "sha256:41a4c7d720f24fdec89bdd18907d98cb2b1abd1f6445fc51614a40af507dc2c3",
+        "source": "Tough Collar Sand Cast",
+        "translation": "Песочная литейная форма: Жёсткий поясок"
+      }
+    ],
+    "item:item.tconstruct.travelers_shield": [
+      {
+        "source_hash": "sha256:68b1d6518da57412bd5984d449a7ca6c0adb15354ef95efcca7964b821cab2bd",
+        "source": "Traveler's Shield",
+        "translation": "Щит путешественника"
+      }
+    ],
+    "item:item.tconstruct.venom_bottle": [
+      {
+        "source_hash": "sha256:5b11876b9fa382f1a67b452a5e6df7d1974898c1333094adc606c628295c9db1",
+        "source": "Venom Bottle",
+        "translation": "Бутылочка яда"
+      }
+    ],
+    "item:item.tconstruct.venombone": [
+      {
+        "source_hash": "sha256:e4039f31513b6ec64a0f06d4b1fc2a188726ee3c8a4a8c2a625e67b1c4c83954",
+        "source": "Venombone",
+        "translation": "Ядовитая кость"
+      }
+    ],
+    "item:item.tconstruct.war_pick": [
+      {
+        "source_hash": "sha256:e9e8161760ab0a350da379565392ed03b2453272e88b068b0d39b0d1963ade34",
+        "source": "War Pick",
+        "translation": "Боевая кирка"
       }
     ],
     "item:item.tempad.he_who_remains_tempad": [
@@ -18451,9 +21384,19 @@
         "source_hash": "sha256:69df83f3b6859c0db4858dcb8720a394f5bac3bc4f3df048ddc1b44567087079",
         "source": "Visit the Infinite Library",
         "translation": "Посетите Бесконечную библиотеку"
+      },
+      {
+        "source_hash": "sha256:72c1a821752bc4f2c9f3bcc489058cf00804ac9cfa4fa91bd487347f40904c66",
+        "source": "Visit the Nether",
+        "translation": "Посетите Незер"
       }
     ],
     "quest-task:07122161E18E96C1:50A47622AC51ADE4:title": [
+      {
+        "source_hash": "sha256:2c3a22743c8dc74d99e8afd079666a60a65238ba2ae351838b9dcf35485fb38b",
+        "source": "I have acquired knowlege",
+        "translation": "Я обрёл знание"
+      },
       {
         "source_hash": "sha256:3d594126e7788cf60c57d91afff69a33eb394f4cc80c54eecb820d2f15d7a02d",
         "source": "I have acquired knowledge",
@@ -18492,6 +21435,11 @@
       {
         "source_hash": "sha256:0bcd27bd8a93e56070ef89ffd2de2748e52e2439ece8f357438064fe707ee2a3",
         "source": "I wish for knowledge",
+        "translation": "Я жажду знаний"
+      },
+      {
+        "source_hash": "sha256:4b2c1ebe994d3779e767b60a3ecb1253368c6d174191e3ae45b3fe43a7cb9ff6",
+        "source": "I wish for knowlege",
         "translation": "Я жажду знаний"
       }
     ],
@@ -18609,6 +21557,11 @@
     ],
     "quest:021C50BEE88E0B07:description:0": [
       {
+        "source_hash": "sha256:646fed75836278b3c9289c34303230260041312e81424e9975c26271fb0a1d03",
+        "source": "You can cast a portal with ten buckets of lava and one bucket of water.",
+        "translation": "Портал можно создать из десяти вёдер лавы и одного ведра воды."
+      },
+      {
         "source_hash": "sha256:6ace24fbd9abb241ae07005e69f2ef353e504164ad34876b6ca295de381d15db",
         "source": "It seems you mishandled the compound and it exploded in your face! You fell unconscious and noclipped into a realm beyond time.",
         "translation": "Похоже, вы неосторожно обращались с нестабильным соединением, и оно взорвалось прямо у вас перед лицом! Вы потеряли сознание и провалились ноклипом в мир вне времени."
@@ -18619,9 +21572,19 @@
         "source_hash": "sha256:e829889b0b07c610634aadf9b687f8583780ba305964accd15f68bdbc585b043",
         "source": "A new chapter! You should learn about where you are now.",
         "translation": "Новая глава! Стоит узнать побольше о месте, в котором вы оказались."
+      },
+      {
+        "source_hash": "sha256:e9a2aebbe8e82f5fd835af709bae56301acab01998061ec6def422ec2a6a2ce7",
+        "source": "The nether can be used as a shortcut to diffrent places in the backrooms. Do note that a portal must always be constructed from the Backrooms to the Nether.",
+        "translation": "Через Незер можно быстро добираться в разные места Backrooms. Учтите: портал всегда нужно строить из Backrooms в Незер."
       }
     ],
     "quest:021C50BEE88E0B07:subtitle": [
+      {
+        "source_hash": "sha256:6d529d8a3c544b572b67d9ceb4e9bf45344a4b1a52e5726700bc049095c6574f",
+        "source": "Expected Something Else?",
+        "translation": "Ожидали чего-то другого?"
+      },
       {
         "source_hash": "sha256:c1cf33c96d3637abad3b02b85d5843be466ce95fad2352e521f4b533b2d97102",
         "source": "Explosive Accident",
@@ -18867,6 +21830,11 @@
       }
     ],
     "quest:08AA2EDF465DE029:description:2": [
+      {
+        "source_hash": "sha256:4faf0605bbb85688004fa5a3d434c81286ec48bc806f1c0b9869dfb62338ad21",
+        "source": "A health sacrifice must be made to complete the ritual. Health from any mob can be used. If no other mob is nearby then the health will be taken from the nearest player instead.",
+        "translation": "Чтобы завершить ритуал, придётся пожертвовать здоровьем любого моба. Если рядом нет других мобов, ритуал отнимет здоровье у ближайшего игрока."
+      },
       {
         "source_hash": "sha256:c6ceccf346a170327122e56f9c8d34c4730e9cfb7252000e48a77003286d7fc2",
         "source": "A health sacrifice must be made to complete the ritual.",
@@ -19214,9 +22182,19 @@
         "source_hash": "sha256:2758d54651100023da329379d9db5788ad97639d624b3dbf2ce0d4dbbf79cf76",
         "source": "You can have a source of renewable iron by creating and crushing crimsite.",
         "translation": "Возобновляемый источник железа можно получить, создавая и дробя кримзит."
+      },
+      {
+        "source_hash": "sha256:cfc9edc95fa148564e20daf785eeb8a0322642c50f4c1f404713baf90ed0200e",
+        "source": "With this setup you can make renewable iron.",
+        "translation": "С этой установкой можно бесконечно производить железо."
       }
     ],
     "quest:0FFB86B741255547:description:2": [
+      {
+        "source_hash": "sha256:6d35c46afa735424fb6a549899e0816ce085bed8374855512360600e748c9c3e",
+        "source": "It might be recommended to make a train network through the nether to pick up the Crimsite.",
+        "translation": "Стоит проложить через Незер железнодорожную сеть для сбора кримзита."
+      },
       {
         "source_hash": "sha256:cd2ef731b41fc820898e21d064f1a6562928dbe3624b174af3ba047d6ec1a48f",
         "source": "Red carpet can be found rarely within the backrooms itself, as well as other dimensions you may have already fallen into.",
@@ -19316,6 +22294,11 @@
     ],
     "quest:12F6EDB7B3074DBA:subtitle": [
       {
+        "source_hash": "sha256:340fc51c3ba6e2dc9f2f15e178339c99a05bd5325fc8aaf8fb08461ec1943f76",
+        "source": "Hidden within an Infinite Library",
+        "translation": "Спрятано в Бесконечной библиотеке"
+      },
+      {
         "source_hash": "sha256:ab8286f0dea38f7d84d35f5c6fb1090fab0467b2d5e02409db5cc72390be4e93",
         "source": "Hidden within the library",
         "translation": "Спрятано в библиотеке"
@@ -19361,6 +22344,11 @@
         "source_hash": "sha256:55b6a304f050f11ff894d764bc7210f4bbed433627ff37bd4a189b8e16af020a",
         "source": "Under Pressure",
         "translation": "Под давлением"
+      },
+      {
+        "source_hash": "sha256:7eb1dd8efb885e078e4bd5f770397047a9ec24d4f5fc6f928b76d8ef2052d776",
+        "source": "Be reborn from the ashes",
+        "translation": "Возродитесь из пепла"
       }
     ],
     "quest:14AF78F1E790FC36:title": [
@@ -19872,6 +22860,11 @@
         "source_hash": "sha256:69ca3cf57e0e820667964947d084448de5051b0cba61907802fd17a0e0e4eb41",
         "source": "Echoes in the Dark",
         "translation": "Эхо во тьме"
+      },
+      {
+        "source_hash": "sha256:6d8a953de33739e6e37d4a4c970dfe14d04463211fdb8a441cb69431bff36420",
+        "source": "Cleaning Simulator",
+        "translation": "Симулятор уборки"
       }
     ],
     "quest:21DFDC2132AC4257:title": [
@@ -20075,6 +23068,25 @@
         "source_hash": "sha256:0bbbbc4b2a4ae2f4479ebf0a79860d4d9a7baf9a4511149dc3bc29057144ee0e",
         "source": "You can restore the lights you have broken by right-clicking broken ceiling lamps with fluorescent tubes.",
         "translation": "Сломанные светильники можно восстановить, щёлкнув по ним правой кнопкой мыши с люминесцентной лампой в руке."
+      },
+      {
+        "source_hash": "sha256:1c458e226dd89e991410cffa1fb88d133e957bed5fd5772a38a5e85c5347ac59",
+        "source": "You can also restore the damage you have brought to the backrooms by:",
+        "translation": "Вы также можете устранить нанесённый Backrooms ущерб:"
+      }
+    ],
+    "quest:240D7B64E63FCE4F:description:10": [
+      {
+        "source_hash": "sha256:362036a6f86519f44c1b1a4f3cb298ebe4906839655cf715b2249426091263ef",
+        "source": "If you like the aesthetic of the concrete tiles you can also turn the concrete tiles into full blocks by right-clicking them with a piece of concrete. This will also prevent the tiles from growing their carpet back.",
+        "translation": "Если вам нравится вид бетонных плиток, нажмите по ним ПКМ с куском бетона, чтобы превратить их в цельные блоки. После этого ковёр на них больше не вырастет."
+      }
+    ],
+    "quest:240D7B64E63FCE4F:description:13": [
+      {
+        "source_hash": "sha256:7aed2fd478636d13d89177521658362fc7150259d73747ff12fea3bb0598b0af",
+        "source": "All of this may sound like an insane idea, but turning the lights back on might not be so bad.",
+        "translation": "Всё это может показаться безумной затеей, но снова включить свет не так уж плохо."
       }
     ],
     "quest:240D7B64E63FCE4F:description:2": [
@@ -20082,6 +23094,32 @@
         "source_hash": "sha256:35a1e1d9b7205d4f236eb06ec53383bba6808eea0b539e6cd5ee1c792351ef3a",
         "source": "I sounds like a waste of resources, but turning the lights back on might not be so bad.",
         "translation": "Это кажется пустой тратой ресурсов, но включить свет снова может быть не так уж плохо."
+      },
+      {
+        "source_hash": "sha256:ddd9e13ece276bf1f0458b940ba804c7f71040cbfa884ecbe56e2b20c759a22d",
+        "source": "- Right-clicking floor tiles with carpet",
+        "translation": "- Возьмите ковёр и нажмите ПКМ по напольной плитке"
+      }
+    ],
+    "quest:240D7B64E63FCE4F:description:4": [
+      {
+        "source_hash": "sha256:5a57f9e761f6f14b876193ffacc73aaa03adf801a34aa039a7667bee61e0b9d5",
+        "source": "- Right-clicking stripped wallpaper with wallpaper",
+        "translation": "- Возьмите обои и нажмите ПКМ по ободранным обоям"
+      }
+    ],
+    "quest:240D7B64E63FCE4F:description:6": [
+      {
+        "source_hash": "sha256:62ebd723faae4550baad0a4d5179f38baf3c31bbd8643c8e9ef2b905a1400bf6",
+        "source": "- Right-clicking broken ceiling lamps with fluorescent tubes",
+        "translation": "- Возьмите люминесцентную лампу и нажмите ПКМ по сломанному потолочному светильнику"
+      }
+    ],
+    "quest:240D7B64E63FCE4F:description:8": [
+      {
+        "source_hash": "sha256:dad5c5284e63c18dbcefba2d3d0afad0d14143088eafd452c6297712a21cd389",
+        "source": "- Right-clicking Timber Frames with wallpaper will create Fake Wallpaper",
+        "translation": "- Возьмите обои и нажмите ПКМ по Деревянному каркасу, чтобы создать поддельные обои"
       }
     ],
     "quest:240D7B64E63FCE4F:subtitle": [
@@ -20092,6 +23130,11 @@
       }
     ],
     "quest:240D7B64E63FCE4F:title": [
+      {
+        "source_hash": "sha256:56bc2a4d4c1a5509295449640bd4f0450221213985bfff30765df5af798bcffe",
+        "source": "Restoring The Backrooms",
+        "translation": "Восстановление Backrooms"
+      },
       {
         "source_hash": "sha256:dab5937d24d79c5c8065ef2ffaedea7fc7f9f5ac5c38e3c2a26d5fd31b651635",
         "source": "Restoring The Backrooms 2.0",
@@ -20232,6 +23275,13 @@
       }
     ],
     "quest:25DBA9EE127F3CE4:description:6": [
+      {
+        "source_hash": "sha256:ca4bd36368a1d2d4429f9341ba565c80d1f6a82ce3d138d14425e98453779154",
+        "source": "{image:kubejs:textures/quests/poolrooms_exit.png width:192 height:108 align:center}",
+        "translation": "{image:kubejs:textures/quests/poolrooms_exit.png width:192 height:108 align:center}"
+      }
+    ],
+    "quest:25DBA9EE127F3CE4:description:7": [
       {
         "source_hash": "sha256:ca4bd36368a1d2d4429f9341ba565c80d1f6a82ce3d138d14425e98453779154",
         "source": "{image:kubejs:textures/quests/poolrooms_exit.png width:192 height:108 align:center}",
@@ -20523,6 +23573,11 @@
         "source_hash": "sha256:75dd5f9496823f4eb9aa52e5f5040e28988e455fbb4116a3d0f49beee33516b4",
         "source": "Snad not only allows for faster growth, but if a block of Snad is updated by redstone it will force the plant on top of it to grow.",
         "translation": "Snad не только ускоряет рост: если обновить блок Snad сигналом редстоуна, растение на нём мгновенно вырастет."
+      },
+      {
+        "source_hash": "sha256:9873d550beb49a2ce7abd09ee301e544bfb1c369850a0bd8167bd6b121a9e081",
+        "source": "Sugarcane grows ways faster on snad. ",
+        "translation": "На Snad сахарный тростник растёт гораздо быстрее. "
       }
     ],
     "quest:2A93ADA6EAA0C7EB:description:2": [
@@ -20530,6 +23585,18 @@
         "source_hash": "sha256:618d90c39b9340eaf86baeffce21b2df1e605ad221a56d99971b3161f9cb1dfc",
         "source": "Snad can also be created by right clicking a sand block with unstable compound.",
         "translation": "Snad также можно создать, нажав ПКМ по блоку песка с нестабильным соединением в руке."
+      },
+      {
+        "source_hash": "sha256:6d7c5e59a00256f0fd3aa25bd0a5be34adc783f78dce0af61f616ced9c62682c",
+        "source": "Can this be exploited?, you be the judge.",
+        "translation": "Можно ли этим злоупотребить? Решать вам."
+      }
+    ],
+    "quest:2A93ADA6EAA0C7EB:description:4": [
+      {
+        "source_hash": "sha256:853432c55bdebd42eab5d320698ad50c040486a4b8ed05f5bbef104c5883160b",
+        "source": "Snad not only allows for faster growth. If a block of Snad is updated by redstone it will force the plant on top of it to grow.",
+        "translation": "Snad не только ускоряет рост: если обновить блок Snad сигналом редстоуна, растение на нём мгновенно вырастет."
       }
     ],
     "quest:2A93ADA6EAA0C7EB:subtitle": [
@@ -20649,6 +23716,11 @@
         "source_hash": "sha256:9256dc09e4b7f18ca902ebda03d0e26980826058743422671babe0f3a8094ae4",
         "source": "Wooden tools are essential to your success. The first two you'll need, is a knife and a pickaxe.",
         "translation": "Без деревянных инструментов не обойтись. Сначала сделайте нож и кирку."
+      },
+      {
+        "source_hash": "sha256:ba35cac49b875544143c6c482abfeea319b7b5945c5fd0191a87c28f88ef36a9",
+        "source": "Wooden tools are essential to your succes. You can use knifes to cut up the carpet, revealing the concrete tiles underneath...",
+        "translation": "Без деревянных инструментов не обойтись. Ножом можно разрезать ковёр и добраться до бетонных плиток под ним..."
       }
     ],
     "quest:2FD58013123EFE42:subtitle": [
@@ -20775,6 +23847,11 @@
         "source_hash": "sha256:ec19b228ade40d6e8972b75d9e1b019c343a1b9f0e7c252ef82b322d49f846a7",
         "source": "Sweet berries and honey can be turned into sugar.",
         "translation": "Из сладких ягод и мёда можно получить сахар."
+      },
+      {
+        "source_hash": "sha256:fc54cdb832df3e5b878bebb682d7d11c2c6eda7414f9029990d44d46491bab00",
+        "source": "Before you can do this you need to obtain Sugar Cane from the Petal Apothecary",
+        "translation": "Сначала добудьте сахарный тростник с помощью Лепестковой чаши."
       }
     ],
     "quest:347FB9BA17B5C66C:subtitle": [
@@ -20831,6 +23908,34 @@
         "source_hash": "sha256:f5cf63452432722659a0bab2d94a2aedfb3cb18b70e61c0531d28ccbf0fb5fee",
         "source": "Towelytra",
         "translation": "Полотнолёт"
+      }
+    ],
+    "quest:34E24CF953EB8B77:description:0": [
+      {
+        "source_hash": "sha256:cde987e61b49c9d98b9af9ff66e0d87201479a835887f3432b5dc3148ff25e12",
+        "source": "You can convert Empty Fuses into Soul Fuses using the soul wand.",
+        "translation": "С помощью жезла душ Пустые предохранители можно превратить в Предохранители душ."
+      }
+    ],
+    "quest:34E24CF953EB8B77:description:2": [
+      {
+        "source_hash": "sha256:97e8ccfdf64176737125897b0245455b8802224ce54079a974abb799f3449bd8",
+        "source": "Simply drop the Empty Fuses on the ground and hit them with the soul wand.",
+        "translation": "Просто бросьте Пустые предохранители на землю и ударьте по ним жезлом душ."
+      }
+    ],
+    "quest:34E24CF953EB8B77:subtitle": [
+      {
+        "source_hash": "sha256:4ddcd520b39f2d8f038a32426b41aeb04c43fdd46a36c86be2ff5f0ed0840b4c",
+        "source": "Trapped Souls",
+        "translation": "Пойманные души"
+      }
+    ],
+    "quest:34E24CF953EB8B77:title": [
+      {
+        "source_hash": "sha256:21269a4342f86594d435a01f2ec9188e40448c00b296eb5fef1011ce30595512",
+        "source": "Soul Fuse",
+        "translation": "Предохранитель душ"
       }
     ],
     "quest:3591A3E7EC3B06C1:title": [
@@ -21023,6 +24128,11 @@
       }
     ],
     "quest:3EEB10E1DC378F7A:description:0": [
+      {
+        "source_hash": "sha256:5295c39e362ebedb75153d96197868dc31389acb2f51b6d94e2a2a3e58426c68",
+        "source": "Throwing bricks at the ceiling lamps might yield some important compontens for the upcomming industrial revolution.",
+        "translation": "Если бросать кирпичи в потолочные светильники, из них могут выпасть важные детали для грядущей промышленной революции."
+      },
       {
         "source_hash": "sha256:e122075ecd2b5920348d39820dbca6aa3ad48b53fc2d66ff704bec1425d85af2",
         "source": "Throwing bombs at the ceiling lamps will destroy them. ",
@@ -21899,9 +25009,21 @@
     ],
     "quest:53563EF68FA374A9:description:0": [
       {
+        "source_hash": "sha256:e2a5da284f195508eab51cab7b875a9848ed3ba2abb15ffd1271f16cb9fa41b9",
+        "source": "With this setup you can make renewable copper.",
+        "translation": "С этой установкой можно бесконечно производить медь."
+      },
+      {
         "source_hash": "sha256:e6e39d8a4ada3cd29bd29bdbb95f6b0a067ef61000c8fae0d8be6a82e30ed808",
         "source": "You can have a source of renewable copper by creating and crushing veridium.",
         "translation": "Возобновляемый источник меди можно получить, создавая и дробя веридий."
+      }
+    ],
+    "quest:53563EF68FA374A9:description:2": [
+      {
+        "source_hash": "sha256:6397ffb25a51e7f6350da067407be70788211041560fdea7b775dce9c366f27d",
+        "source": "It might be recommended to make a train network through the nether and then back into the backrooms to pick up the Veridium.",
+        "translation": "Стоит проложить железнодорожную сеть через Незер и обратно в Backrooms для сбора веридия."
       }
     ],
     "quest:53563EF68FA374A9:title": [
@@ -22070,6 +25192,11 @@
         "source_hash": "sha256:0d25d18236e0b16ab3d036aed6e69d198d19a9192b19a71330fdcd22feb17a9f",
         "source": "Using the wand, you can create soulfire on carpet. ",
         "translation": "С помощью жезла можно создать Огонь душ на ковре. "
+      },
+      {
+        "source_hash": "sha256:cf7df050cfbe6bfd10d24d38d0517dbd0463a9fe56c91076ca3126063e30cab5",
+        "source": "Using the wand you can turn Bricks into Netherbricks by firing the wand at bricks that are on the floor in item form.",
+        "translation": "Жезл превращает Кирпичи в Незерские кирпичи. Бросьте Кирпичи на пол и выстрелите в них из жезла."
       }
     ],
     "quest:552D47F0044BE5E4:description:2": [
@@ -22080,6 +25207,11 @@
       }
     ],
     "quest:552D47F0044BE5E4:subtitle": [
+      {
+        "source_hash": "sha256:9f5057c65825c5871b2936120a4dd3794cdec124b0d8dadea444b54ffd221b1b",
+        "source": "Avadaaaaa...",
+        "translation": "Авада-а-а-а..."
+      },
       {
         "source_hash": "sha256:ffb372544b8b0dcd7efe3d2340cde62c828c2c61b16f51dd55d8e8f8e78548a0",
         "source": "Carpet on fire",
@@ -22108,6 +25240,11 @@
       }
     ],
     "quest:557617650FFA7BF8:title": [
+      {
+        "source_hash": "sha256:21e21a06ba33ecda48de2c97580de80fa4b6d3fbf10accf3c56f5e9f9f49fba2",
+        "source": "Tripple Skulls",
+        "translation": "Тройные черепа"
+      },
       {
         "source_hash": "sha256:dbda727d00426c4b34cf58b24abcf5f0ab5f5901f585f367798edc827b22b9bd",
         "source": "Triple Skulls",
@@ -22403,9 +25540,21 @@
     ],
     "quest:5CE78F3B9E2BDC0F:description:0": [
       {
+        "source_hash": "sha256:178a7e21972a5fd025328bb5e7cc0c720e72035750e147af58b533c94143e24a",
+        "source": "Oil can be tapped out of Crude Oil Soaked Carpet endlessly by right-clicking it with a sponge.",
+        "translation": "Ковёр, пропитанный сырой нефтью, — бесконечный источник нефти. Нажмите по нему ПКМ с губкой в руке."
+      },
+      {
         "source_hash": "sha256:c91e03b1b9275835072e18a1461114eb7f29a94c4c60df484a87974def311f9d",
         "source": "Oil can be tapped out of Crude Oil Soaked Carpet endlessly by right-clicking it with an empty hand. Upon doing so, Crude Oil will erupt from the carpet, ready to be picked up.",
         "translation": "Ковёр, пропитанный сырой нефтью, — бесконечный источник сырой нефти. Нажмите по нему ПКМ пустой рукой, чтобы нефть хлынула наружу и её можно было собрать."
+      }
+    ],
+    "quest:5CE78F3B9E2BDC0F:description:1": [
+      {
+        "source_hash": "sha256:6ce9ff21ae8843f86d9c5ff74eea8f64ae97f68b455872f04001c51e45340ffc",
+        "source": "Uppon right-clicking Crude Oil will erupt from the carpet, ready to be picked up.",
+        "translation": "Из ковра хлынет сырая нефть, которую можно собрать."
       }
     ],
     "quest:5CE78F3B9E2BDC0F:description:2": [
@@ -22415,11 +25564,25 @@
         "translation": "Или нажмите по ковру ПКМ с губкой в руке, чтобы впитать сырую нефть."
       }
     ],
+    "quest:5CE78F3B9E2BDC0F:description:3": [
+      {
+        "source_hash": "sha256:635791774c6b7f7c5da54497c29363ab782ade6d413bc16f68ea41a61ad23bfb",
+        "source": "It is recommended that you automate this process.",
+        "translation": "Рекомендуется автоматизировать этот процесс."
+      }
+    ],
     "quest:5CE78F3B9E2BDC0F:description:4": [
       {
         "source_hash": "sha256:635791774c6b7f7c5da54497c29363ab782ade6d413bc16f68ea41a61ad23bfb",
         "source": "It is recommended that you automate this process.",
         "translation": "Рекомендуется автоматизировать этот процесс."
+      }
+    ],
+    "quest:5CE78F3B9E2BDC0F:description:6": [
+      {
+        "source_hash": "sha256:201d8b4d742d5d79e428c46bf10e7bae071b6abeb28ce40ca0d3773b6ed90597",
+        "source": "{image:kubejs:textures/quests/oil_carpet.png width:192 height:102 align:center}",
+        "translation": "{image:kubejs:textures/quests/oil_carpet.png width:192 height:102 align:center}"
       }
     ],
     "quest:5CE78F3B9E2BDC0F:description:7": [
@@ -22781,6 +25944,11 @@
     ],
     "quest:641ACE318273962A:description:0": [
       {
+        "source_hash": "sha256:489f22414252ae7c2e9b936b313e28c1224d3718090126a9d09244e5fbbc8094",
+        "source": "You can turn Light Oil into Refined Fuel.",
+        "translation": "Лёгкую нефть можно превратить в очищенное топливо."
+      },
+      {
         "source_hash": "sha256:fdeafd1221178657e9d1c9ff89b72c11bf1305bbc62790fe659af9c50d756804",
         "source": "With a superheated Blaze Burner, you can turn Light Oil into Refined Fuel.",
         "translation": "С помощью перегретой Горелки всполоха лёгкую нефть можно превратить в очищенное топливо."
@@ -22791,6 +25959,11 @@
         "source_hash": "sha256:56192088ea34bf5dba4c588e92a9aa122609c9c8e0556fba06d9caaf62824982",
         "source": "Blaze Burners can have liquid fuels pumped into them when given a straw. Refined Fuel burns a lot longer than a blaze cake.",
         "translation": "Если установить на Горелку всполоха Соломинку, в неё можно закачивать жидкое топливо. Очищенное топливо горит гораздо дольше Всполохового торта."
+      },
+      {
+        "source_hash": "sha256:e0b33e3545223c95b03d40c77cfab7cc4a3d0c8cd2aa57c7d941774c43718ded",
+        "source": "Blazes will get superheated when you give them a straw and pump Refined Fuel into them. This will make your steam engine burn a whole lot brighter.",
+        "translation": "Дайте всполоху соломинку и закачайте в него очищенное топливо, чтобы перегреть его. После этого огонь Парового двигателя станет намного жарче."
       }
     ],
     "quest:641ACE318273962A:description:4": [
@@ -22801,6 +25974,11 @@
       }
     ],
     "quest:641ACE318273962A:title": [
+      {
+        "source_hash": "sha256:9dd12b5229d8106e423b024d3ddedad9625f270df544aa99a5196740f5e58a61",
+        "source": "Refined Fuel",
+        "translation": "Очищенное топливо"
+      },
       {
         "source_hash": "sha256:ec9a756c3fbe544168f898a00381379ab365cc85f455dcdcffe920b39a08c720",
         "source": "Liquid Fuels",
@@ -23068,6 +26246,11 @@
     ],
     "quest:6762380EB7B4FB9A:description:0": [
       {
+        "source_hash": "sha256:0196a039f2b779e6876e4943d19e6c9c3e22dea38116a6ae40073fd5911dafb1",
+        "source": "The Fractionating Still can turn Crude Oil into Bitumen leading to the creation of Tar when using this machine in combination with the Pyroliser.",
+        "translation": "Фракционный дистиллятор перерабатывает сырую нефть в битум. Затем из битума можно получить дёготь с помощью пиролизёра."
+      },
+      {
         "source_hash": "sha256:f100ee64629b8cefdadc9fea2f5aa80d04d7ea74e6ff57c69e4935bb37b8b64a",
         "source": "The Fractionating Still can turn Crude Oil into Bitumen leading to the creation of Tar when using this machine in combination with the Pyrolizer.",
         "translation": "Фракционный дистиллятор перерабатывает сырую нефть в битум. Затем из битума можно получить дёготь с помощью пиролизёра."
@@ -23232,6 +26415,11 @@
         "source_hash": "sha256:793dbcd5cbc697b90f0226afdfb5275f47bb408f1a59feec9a1276e7123ca1b4",
         "source": "Abducting the Overworld",
         "translation": "Похищение Обычного мира"
+      },
+      {
+        "source_hash": "sha256:87294a35be789dc5fb7d90e28aecffac9237a0ab882fab50be3e0f977095f096",
+        "source": "Loading what you are not observing",
+        "translation": "Загрузка того, за чем вы не наблюдаете"
       }
     ],
     "quest:6A05A3E430180A39:title": [
@@ -23340,6 +26528,11 @@
       }
     ],
     "quest:6DA0C1A9A1E1AC7B:description:0": [
+      {
+        "source_hash": "sha256:61d93797870e46370dbe4746fbc05e96fd6246fab14497a6a7fa558a53ba80f3",
+        "source": "One of the Reality Chips will generate Endstone. The Endstone can be crushed to yeild Ender Dust.",
+        "translation": "Один из чипов данных создаёт эндерняк. Его можно раздробить и получить эндер-пыль."
+      },
       {
         "source_hash": "sha256:fa449152443e9bc59af0c2c3cf19568fc083bc208caa1adb5f2a62a2108be17c",
         "source": "One of the Reality Chips will generate Endstone. The Endstone can be crushed to yield Ender Dust.",
@@ -23528,6 +26721,20 @@
         "translation": "Искусственный интеллект"
       }
     ],
+    "quest:7321D8BB155B472C:description:0": [
+      {
+        "source_hash": "sha256:1f5bb1407f34d8be7275db2fbe97347f88dc91eef2008a9397592dfa0f661977",
+        "source": "A few Reality Chips have Netherrack in them. This can be used to make Blaze Cakes.",
+        "translation": "В некоторых чипах данных есть незерак. Из него можно сделать Всполоховые торты."
+      }
+    ],
+    "quest:7321D8BB155B472C:title": [
+      {
+        "source_hash": "sha256:1bcf9dcdb45a4eb894293aee6d35365cdb41a7180af37fc03777ede783e070ae",
+        "source": "Why is it Spicy???",
+        "translation": "Почему так остро???"
+      }
+    ],
     "quest:73BD1576E930B0E2:subtitle": [
       {
         "source_hash": "sha256:802189ee2f6fc5cd7e1e7c4af95386d06c810407362ab4bc470e1ea848aad93d",
@@ -23620,6 +26827,11 @@
       }
     ],
     "quest:754899C65C2540E0:subtitle": [
+      {
+        "source_hash": "sha256:6606d56a1bd30f10a2fdce987ac5391496106e1db67fd840b32e5ac9921ad9ac",
+        "source": "Digital Storage",
+        "translation": "Цифровое хранилище"
+      },
       {
         "source_hash": "sha256:766d401526123581e3170c51ebee83c271f7bc3cc18b9be5fca4279c6ed11e0e",
         "source": "Eight channels only",
@@ -23722,6 +26934,11 @@
         "source_hash": "sha256:7a366d406785d98b232c572e7ab3e8a2358ba77a95f002cdc3c91993acb09b16",
         "source": "You needed this stuff right?",
         "translation": "Кажется, он был вам нужен?"
+      },
+      {
+        "source_hash": "sha256:d353097963cdc11e90d40c89ff230aeb12ab0a2aefba5d89aa8f6b8c66daa158",
+        "source": "Time for Chess",
+        "translation": "Время сыграть в шахматы"
       }
     ],
     "quest:780450B76916CDB7:title": [
@@ -23939,6 +27156,11 @@
         "source_hash": "sha256:4c2f8f1bf5f7c7b90740dc50d0b78a8b71cb823bddaa57a8602bf0c8c76a0345",
         "source": "You can have a source of renewable zinc by creating and crushing asurine.",
         "translation": "Возобновляемый источник цинка можно получить, создавая и дробя азурин."
+      },
+      {
+        "source_hash": "sha256:ff9555b11517ade30df80a14b55d051361fcfefc836087e3ce7fd042629706d9",
+        "source": "With this setup you can make renewable zinc.",
+        "translation": "С этой установкой можно бесконечно производить цинк."
       }
     ],
     "quest:7B6D55B255237469:description:2": [
@@ -23946,6 +27168,11 @@
         "source_hash": "sha256:b32a3bd3d33fbbec7654a1561c3fa55ab3581867928657012a5716d94d82a01e",
         "source": "Porous stone is created by purifying sculk with a sculk scrubber.",
         "translation": "Чтобы получить пористый камень, очистите скалк в скалковом очистителе."
+      },
+      {
+        "source_hash": "sha256:e0e11c667175438748f06191332186c7dbe7943cb5b4f82e93721563f42cba38",
+        "source": "It might be recommended to make a train network through the nether to pick up the Asurine.",
+        "translation": "Стоит проложить через Незер железнодорожную сеть для сбора азурина."
       }
     ],
     "quest:7B6D55B255237469:title": [
@@ -24064,6 +27291,11 @@
       {
         "source_hash": "sha256:a62a7a093acb28e844138274fcb658d12b93838ee9dfacd4776caaaf9e6c0f5d",
         "source": "Absorbing Knowledge",
+        "translation": "Поглощение знаний"
+      },
+      {
+        "source_hash": "sha256:b30ac8d1e105a20adb404631fdc2834b119a6f4c9bb08d2401cdbcc5fe1e3ca6",
+        "source": "Absorbing Knowlege",
         "translation": "Поглощение знаний"
       }
     ],
