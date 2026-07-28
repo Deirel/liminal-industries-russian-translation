@@ -9,6 +9,7 @@ displayName = "Liminal Industries: Russian Translation Audit"
 authors = "Petr K."
 description = '''Development-only runtime audit for item name translations.'''
 displayTest = "IGNORE_ALL_VERSION"
+showAsResourcePack = false
 
 [[dependencies.${mod_id}]]
 modId = "forge"
