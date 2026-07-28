@@ -223,12 +223,16 @@ final class ItemTranslationAudit {
         try {
             Component hoverName = stack.getHoverName();
             String displayName = hoverName.getString();
-            Set<String> keys = ComponentTranslationKeys.collect(hoverName, runtimeRussian);
+            Map<String, String> runtimeTemplates = ComponentTranslationKeys.collect(
+                hoverName,
+                runtimeRussian
+            );
+            Set<String> keys = new TreeSet<>(runtimeTemplates.keySet());
             Set<String> verifiedRussianKeys = keys.stream()
                 .filter(key -> hasRussianTranslation(
                     key,
+                    runtimeTemplates.get(key),
                     russian,
-                    runtimeRussian,
                     resourceEnglish
                 ))
                 .collect(Collectors.toCollection(TreeSet::new));
@@ -252,7 +256,7 @@ final class ItemTranslationAudit {
                 if (pack != null) {
                     translationSources.put(key, pack);
                 } else if (verifiedRussianKeys.contains(key)
-                    && !runtimeRussian.getOrDefault(key).equals(
+                    && !runtimeTemplates.get(key).equals(
                         resourceEnglish.getOrDefault(key)
                     )) {
                     translationSources.put(key, "<runtime>");
@@ -290,13 +294,13 @@ final class ItemTranslationAudit {
 
     private static boolean hasRussianTranslation(
         String key,
+        String runtimeTemplate,
         RussianLanguageIndex russian,
-        Language runtimeRussian,
         Language resourceEnglish
     ) {
         return TranslationCoverage.isTranslated(
             russian.values().containsKey(key),
-            runtimeRussian.getOrDefault(key),
+            runtimeTemplate,
             resourceEnglish.getOrDefault(key)
         );
     }

@@ -4,25 +4,29 @@ import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.contents.TranslatableContents;
 
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.Map;
+import java.util.TreeMap;
 
 final class ComponentTranslationKeys {
     private ComponentTranslationKeys() {
     }
 
-    static Set<String> collect(Component component, Language language) {
-        Set<String> result = new TreeSet<>();
+    static Map<String, String> collect(Component component, Language language) {
+        Map<String, String> result = new TreeMap<>();
         collect(component, language, result);
         return result;
     }
 
-    private static void collect(Component component, Language language, Set<String> result) {
+    private static void collect(
+        Component component,
+        Language language,
+        Map<String, String> result
+    ) {
         if (component.getContents() instanceof TranslatableContents translatable) {
-            result.add(translatable.getKey());
             String template = translatable.getFallback() == null
                 ? language.getOrDefault(translatable.getKey())
                 : language.getOrDefault(translatable.getKey(), translatable.getFallback());
+            result.putIfAbsent(translatable.getKey(), template);
             Object[] arguments = translatable.getArgs();
             for (int index : TranslationTemplate.referencedArguments(template)) {
                 if (index < 0 || index >= arguments.length) {

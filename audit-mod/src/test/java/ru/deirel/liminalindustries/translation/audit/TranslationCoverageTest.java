@@ -21,6 +21,15 @@ class TranslationCoverageTest {
     }
 
     @Test
+    void acceptsRussianComponentFallback() {
+        assertTrue(TranslationCoverage.isTranslated(
+            false,
+            "Акация ящик 1x1",
+            "block.example.acacia_drawer"
+        ));
+    }
+
+    @Test
     void acceptsLanguageNeutralFallbackTemplate() {
         assertTrue(TranslationCoverage.isTranslated(false, "%1$s-%2$s", "%1$s-%2$s"));
     }
