@@ -42,7 +42,14 @@ java {
 def translationSources = translationVersionRoot.dir('payload')
 def translationResourcePack = translationSources.dir('resourcepack')
 def translationQuests = translationSources.dir('quests')
+def resourcePackManifest = translationVersionRoot.file('resource-packs.json')
 def generatedTranslationResources = layout.buildDirectory.dir('generated/translationResources')
+def resourcePackOutput = layout.buildDirectory.dir(
+    "resourcepacks/${selectedTranslationVersion}"
+)
+def releaseOutput = layout.buildDirectory.dir(
+    "releases/${selectedTranslationVersion}"
+)
 
 sourceSets.main.resources {
     srcDir translationResourcePack
@@ -121,6 +128,48 @@ tasks.register('generateQuestTranslationIndex') {
     }
 }
 
+tasks.register('buildResourcePacks', Exec) {
+    group = 'build'
+    description = 'Builds deterministic per-mod Russian resource-pack ZIPs.'
+
+    inputs.file resourcePackManifest
+    inputs.dir translationResourcePack
+    inputs.file '../scripts/build_resource_packs.py'
+    inputs.file '../assets/liminal-industries-russian-translation-256kb.png'
+    outputs.dir resourcePackOutput
+
+    commandLine(
+        'python3',
+        '../scripts/build_resource_packs.py',
+        '--version',
+        selectedTranslationVersion,
+        '--output',
+        resourcePackOutput.get().asFile.absolutePath
+    )
+}
+
+tasks.register('verifyResourcePackPartition', Exec) {
+    group = 'verification'
+    description = 'Verifies exact resource partitioning and reproducible ZIP output.'
+    dependsOn 'buildResourcePacks', 'jar'
+
+    inputs.file resourcePackManifest
+    inputs.dir translationResourcePack
+    inputs.files tasks.named('buildResourcePacks')
+
+    commandLine(
+        'python3',
+        '../scripts/build_resource_packs.py',
+        '--version',
+        selectedTranslationVersion,
+        '--output',
+        resourcePackOutput.get().asFile.absolutePath,
+        '--check',
+        '--jar',
+        tasks.named('jar', Jar).get().archiveFile.get().asFile.absolutePath
+    )
+}
+
 tasks.named('processResources', ProcessResources).configure {
     dependsOn 'generateQuestTranslationIndex'
 
@@ -172,6 +221,22 @@ tasks.named('jar', Jar).configure {
         ])
     }
     finalizedBy 'reobfJar'
+}
+
+tasks.named('build').configure {
+    dependsOn 'verifyResourcePackPartition'
+}
+
+tasks.register('assembleTranslationRelease', Sync) {
+    group = 'build'
+    description = 'Collects the selected translation JAR and resource packs.'
+    dependsOn 'build'
+
+    into releaseOutput
+    from(tasks.named('jar').flatMap { it.archiveFile })
+    from(resourcePackOutput) {
+        into 'resourcepacks'
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {

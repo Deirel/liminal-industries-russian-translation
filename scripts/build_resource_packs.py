@@ -1,0 +1,378 @@
+#!/usr/bin/env python3
+"""Build and verify deterministic per-mod Russian resource-pack archives."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import shutil
+import tempfile
+import zipfile
+from collections import Counter
+from pathlib import Path
+from typing import Any
+
+
+ZIP_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
+PACK_FORMATS = {"1.20.1": 15}
+
+
+def json_bytes(value: Any) -> bytes:
+    return (json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode(
+        "utf-8"
+    )
+
+
+def strict_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate JSON key: {key}")
+        result[key] = value
+    return result
+
+
+def load_json(path: Path) -> Any:
+    try:
+        return json.loads(
+            path.read_text(encoding="utf-8"), object_pairs_hook=strict_object
+        )
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"{path}: invalid JSON: {exc}") from exc
+
+
+def slug(value: str) -> str:
+    normalized = re.sub(r"[^a-z0-9._+-]+", "-", value.lower()).strip("-")
+    if not normalized:
+        raise ValueError(f"cannot make filename component from {value!r}")
+    return normalized
+
+
+def load_canonical(resourcepack: Path) -> dict[str, dict[str, str]]:
+    assets = resourcepack / "assets"
+    if not assets.is_dir():
+        raise ValueError(f"missing canonical resource tree: {assets}")
+    result: dict[str, dict[str, str]] = {}
+    for path in sorted(assets.glob("*/lang/ru_ru.json")):
+        namespace = path.relative_to(assets).parts[0]
+        values = load_json(path)
+        if (
+            not isinstance(values, dict)
+            or not values
+            or any(
+                not isinstance(key, str) or not isinstance(value, str)
+                for key, value in values.items()
+            )
+        ):
+            raise ValueError(f"{path}: expected a non-empty string-to-string object")
+        result[namespace] = values
+    extra_files = [
+        path
+        for path in sorted(resourcepack.rglob("*"))
+        if path.is_file()
+        and not (
+            len(path.relative_to(resourcepack).parts) == 4
+            and path.relative_to(resourcepack).parts[0] == "assets"
+            and path.relative_to(resourcepack).parts[2:] == ("lang", "ru_ru.json")
+        )
+    ]
+    if extra_files:
+        raise ValueError(f"unsupported canonical resource: {extra_files[0]}")
+    if not result:
+        raise ValueError("canonical resource tree has no language files")
+    return result
+
+
+def validate_manifest(
+    manifest: Any, version: str, canonical: dict[str, dict[str, str]]
+) -> list[dict[str, Any]]:
+    if not isinstance(manifest, dict) or manifest.get("schema") != 1:
+        raise ValueError("resource-packs.json must use schema 1")
+    if manifest.get("translation_version") != version:
+        raise ValueError("resource pack manifest translation_version does not match")
+    minecraft_version = manifest.get("minecraft_version")
+    if minecraft_version not in PACK_FORMATS:
+        raise ValueError(f"unsupported Minecraft version: {minecraft_version!r}")
+    packs = manifest.get("packs")
+    if not isinstance(packs, list) or not packs:
+        raise ValueError("resource pack manifest must contain packs")
+
+    ids: set[str] = set()
+    assignments: Counter[tuple[str, str]] = Counter()
+    canonical_keys = {
+        (namespace, key)
+        for namespace, values in canonical.items()
+        for key in values
+    }
+    for pack in packs:
+        if not isinstance(pack, dict):
+            raise ValueError("each resource pack entry must be an object")
+        pack_id = pack.get("id")
+        display_name = pack.get("display_name")
+        versions = pack.get("target_mod_versions")
+        namespaces = pack.get("namespaces", [])
+        selected_keys = pack.get("keys", {})
+        if (
+            not isinstance(pack_id, str)
+            or slug(pack_id) != pack_id
+            or pack_id in ids
+        ):
+            raise ValueError(f"invalid or duplicate resource pack id: {pack_id!r}")
+        if not isinstance(display_name, str) or not display_name.strip():
+            raise ValueError(f"{pack_id}: invalid display_name")
+        if (
+            not isinstance(versions, list)
+            or not versions
+            or any(not isinstance(value, str) or not value for value in versions)
+        ):
+            raise ValueError(f"{pack_id}: target_mod_versions must be non-empty")
+        if (
+            not isinstance(namespaces, list)
+            or any(not isinstance(value, str) for value in namespaces)
+            or len(namespaces) != len(set(namespaces))
+        ):
+            raise ValueError(f"{pack_id}: invalid namespaces")
+        if not isinstance(selected_keys, dict):
+            raise ValueError(f"{pack_id}: keys must be an object")
+        ids.add(pack_id)
+
+        for namespace in namespaces:
+            if namespace not in canonical:
+                raise ValueError(f"{pack_id}: unknown namespace {namespace!r}")
+            for key in canonical[namespace]:
+                assignments[(namespace, key)] += 1
+        for namespace, keys in selected_keys.items():
+            if namespace in namespaces:
+                raise ValueError(
+                    f"{pack_id}: {namespace!r} cannot use namespaces and keys"
+                )
+            if (
+                namespace not in canonical
+                or not isinstance(keys, list)
+                or not keys
+                or any(not isinstance(key, str) for key in keys)
+                or len(keys) != len(set(keys))
+            ):
+                raise ValueError(f"{pack_id}: invalid key selector for {namespace!r}")
+            for key in keys:
+                if key not in canonical[namespace]:
+                    raise ValueError(f"{pack_id}: unknown key {namespace}:{key}")
+                assignments[(namespace, key)] += 1
+
+    assigned_keys = set(assignments)
+    missing = sorted(canonical_keys - assigned_keys)
+    unknown = sorted(assigned_keys - canonical_keys)
+    duplicates = sorted(key for key, count in assignments.items() if count != 1)
+    if missing or unknown or duplicates:
+        raise ValueError(
+            "resource pack partition is not exact: "
+            f"{len(missing)} missing, {len(unknown)} unknown, "
+            f"{len(duplicates)} duplicated"
+        )
+    return packs
+
+
+def selected_resources(
+    pack: dict[str, Any], canonical: dict[str, dict[str, str]]
+) -> dict[str, bytes]:
+    resources: dict[str, bytes] = {}
+    namespaces = pack.get("namespaces", [])
+    keys = pack.get("keys", {})
+    for namespace in sorted(set(namespaces) | set(keys)):
+        values = (
+            canonical[namespace]
+            if namespace in namespaces
+            else {key: canonical[namespace][key] for key in keys[namespace]}
+        )
+        resources[f"assets/{namespace}/lang/ru_ru.json"] = json_bytes(values)
+    return resources
+
+
+def archive_name(
+    pack: dict[str, Any], minecraft_version: str, translation_version: str
+) -> str:
+    mod_versions = "+".join(slug(value) for value in pack["target_mod_versions"])
+    return (
+        f"{pack['id']}-ru-mc{slug(minecraft_version)}-mod{mod_versions}"
+        f"-li{slug(translation_version)}.zip"
+    )
+
+
+def write_archive(path: Path, files: dict[str, bytes]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(
+        path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
+    ) as archive:
+        for name, content in sorted(files.items()):
+            info = zipfile.ZipInfo(name, ZIP_TIMESTAMP)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.create_system = 3
+            info.external_attr = 0o100644 << 16
+            archive.writestr(info, content, compress_type=zipfile.ZIP_DEFLATED)
+
+
+def build_archives(
+    destination: Path,
+    manifest: dict[str, Any],
+    packs: list[dict[str, Any]],
+    canonical: dict[str, dict[str, str]],
+    icon: bytes | None,
+) -> list[Path]:
+    minecraft_version = manifest["minecraft_version"]
+    translation_version = manifest["translation_version"]
+    destination.mkdir(parents=True, exist_ok=True)
+    outputs: list[Path] = []
+    for pack in packs:
+        description = (
+            f"Русский перевод: {pack['display_name']} | Minecraft "
+            f"{minecraft_version} | {', '.join(pack['target_mod_versions'])} | "
+            f"Liminal Industries {translation_version}"
+        )
+        files = selected_resources(pack, canonical)
+        files["pack.mcmeta"] = json_bytes(
+            {
+                "pack": {
+                    "description": description,
+                    "pack_format": PACK_FORMATS[minecraft_version],
+                }
+            }
+        )
+        if icon is not None:
+            files["pack.png"] = icon
+        output = destination / archive_name(
+            pack, minecraft_version, translation_version
+        )
+        write_archive(output, files)
+        outputs.append(output)
+    return outputs
+
+
+def verify_archives(expected_root: Path, actual_root: Path) -> None:
+    expected = {
+        path.name: path.read_bytes() for path in sorted(expected_root.glob("*.zip"))
+    }
+    actual = {
+        path.name: path.read_bytes() for path in sorted(actual_root.glob("*.zip"))
+    }
+    if expected.keys() != actual.keys():
+        raise ValueError(
+            "resource pack archive set is stale: "
+            f"expected {len(expected)}, found {len(actual)}"
+        )
+    changed = [name for name in expected if expected[name] != actual[name]]
+    if changed:
+        raise ValueError(f"resource pack archive is not reproducible: {changed[0]}")
+    for path in sorted(actual_root.glob("*.zip")):
+        with zipfile.ZipFile(path) as archive:
+            if archive.testzip() is not None:
+                raise ValueError(f"{path}: corrupt archive")
+            names = archive.namelist()
+            if names != sorted(names) or len(names) != len(set(names)):
+                raise ValueError(f"{path}: entries are not unique and sorted")
+            for info in archive.infolist():
+                if info.date_time != ZIP_TIMESTAMP:
+                    raise ValueError(f"{path}: non-reproducible ZIP timestamp")
+                if info.filename.endswith("ru_ru.json"):
+                    json.loads(
+                        archive.read(info).decode("utf-8"),
+                        object_pairs_hook=strict_object,
+                    )
+
+
+def verify_jar(jar_path: Path, canonical: dict[str, dict[str, str]]) -> None:
+    if not jar_path.is_file():
+        raise ValueError(f"translation JAR does not exist: {jar_path}")
+    expected = {
+        f"assets/{namespace}/lang/ru_ru.json": json_bytes(values)
+        for namespace, values in canonical.items()
+    }
+    with zipfile.ZipFile(jar_path) as archive:
+        names = [
+            name
+            for name in archive.namelist()
+            if name.startswith("assets/") and name.endswith("/lang/ru_ru.json")
+        ]
+        if len(names) != len(set(names)):
+            raise ValueError(f"{jar_path}: duplicate language resource")
+        actual = {name: archive.read(name) for name in names}
+    if expected.keys() != actual.keys():
+        raise ValueError(
+            "JAR language resource tree differs from canonical payload: "
+            f"expected {len(expected)}, found {len(actual)}"
+        )
+    changed = [name for name in expected if expected[name] != actual[name]]
+    if changed:
+        raise ValueError(
+            f"JAR language resource differs from component packs: {changed[0]}"
+        )
+
+
+def parse_args() -> argparse.Namespace:
+    root = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--version", required=True)
+    parser.add_argument(
+        "--versions-root", type=Path, default=root / "translation-versions"
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="archive directory (default: mod/build/resourcepacks/<version>)",
+    )
+    parser.add_argument(
+        "--icon",
+        type=Path,
+        default=root / "assets/liminal-industries-russian-translation-256kb.png",
+    )
+    parser.add_argument(
+        "--check", action="store_true", help="verify existing archives without changes"
+    )
+    parser.add_argument(
+        "--jar",
+        type=Path,
+        help="translation JAR whose language tree must equal the component-pack union",
+    )
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    root = Path(__file__).resolve().parents[1]
+    version_root = args.versions_root.resolve() / args.version
+    resourcepack = version_root / "payload/resourcepack"
+    manifest_path = version_root / "resource-packs.json"
+    manifest = load_json(manifest_path)
+    canonical = load_canonical(resourcepack)
+    packs = validate_manifest(manifest, args.version, canonical)
+    output = (
+        args.output.resolve()
+        if args.output is not None
+        else root / "mod/build/resourcepacks" / args.version
+    )
+    icon = args.icon.resolve().read_bytes() if args.icon is not None else None
+
+    if args.check:
+        if not output.is_dir():
+            raise ValueError(f"resource pack output does not exist: {output}")
+        with tempfile.TemporaryDirectory(prefix="liminal-resource-packs-") as temp:
+            expected = Path(temp)
+            build_archives(expected, manifest, packs, canonical, icon)
+            verify_archives(expected, output)
+        if args.jar is not None:
+            verify_jar(args.jar.resolve(), canonical)
+        print(f"Verified {len(packs)} resource packs for {args.version}")
+    else:
+        if output.exists():
+            shutil.rmtree(output)
+        outputs = build_archives(output, manifest, packs, canonical, icon)
+        print(f"Built {len(outputs)} resource packs for {args.version} in {output}")
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except (OSError, ValueError, KeyError, TypeError, zipfile.BadZipFile) as exc:
+        print(f"error: {exc}")
+        raise SystemExit(2)
