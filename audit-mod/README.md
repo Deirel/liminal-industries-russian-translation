@@ -12,7 +12,7 @@
 Результат:
 
 ```text
-audit-mod/build/libs/liminal-industries-russian-translation-audit-1.0.0.jar
+audit-mod/build/libs/liminal-industries-russian-translation-audit-1.19.3-original.jar
 ```
 
 ## Проверка в игре
