@@ -1,0 +1,24 @@
+{
+  "version": "1.19.3-original",
+  "modpack": {
+    "name": "Liminal Industries",
+    "version": "1.19.3",
+    "curseforge_project_id": 1276799,
+    "curseforge_file_id": 7397248,
+    "minecraft_version": "1.20.1",
+    "forge_version": "47.4.13",
+    "ftb_quests_version": "2001.4.13"
+  },
+  "quest_records": 455,
+  "item_records": 10079,
+  "registry_source": "item_models",
+  "registry_items": 10079,
+  "native_ru_items": 6243,
+  "generated_english_names": 2489,
+  "catalog_hits": 1565,
+  "native_ru_coverage": 6243,
+  "pending": 2726,
+  "pending_quests": 53,
+  "pending_items": 2673,
+  "errors": 0
+}

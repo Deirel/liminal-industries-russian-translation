@@ -1,0 +1,54 @@
+id	source_hash	translation
+quest-task:021C50BEE88E0B07:29B5E3BFD5FBF7D5:title	sha256:72c1a821752bc4f2c9f3bcc489058cf00804ac9cfa4fa91bd487347f40904c66	Посетите Незер
+quest-task:07122161E18E96C1:50A47622AC51ADE4:title	sha256:2c3a22743c8dc74d99e8afd079666a60a65238ba2ae351838b9dcf35485fb38b	Я обрёл знание
+quest-task:32CA69C5AF2D65AA:7FCD69F562A86552:title	sha256:4b2c1ebe994d3779e767b60a3ecb1253368c6d174191e3ae45b3fe43a7cb9ff6	Я жажду знаний
+quest:021C50BEE88E0B07:description:0	sha256:646fed75836278b3c9289c34303230260041312e81424e9975c26271fb0a1d03	Портал можно создать из десяти вёдер лавы и одного ведра воды.
+quest:021C50BEE88E0B07:description:2	sha256:e9a2aebbe8e82f5fd835af709bae56301acab01998061ec6def422ec2a6a2ce7	Через Незер можно быстро добираться в разные места Backrooms. Учтите: портал всегда нужно строить из Backrooms в Незер.
+quest:021C50BEE88E0B07:subtitle	sha256:6d529d8a3c544b572b67d9ceb4e9bf45344a4b1a52e5726700bc049095c6574f	Ожидали чего-то другого?
+quest:08AA2EDF465DE029:description:2	sha256:4faf0605bbb85688004fa5a3d434c81286ec48bc806f1c0b9869dfb62338ad21	Чтобы завершить ритуал, придётся пожертвовать здоровьем любого моба. Если рядом нет других мобов, ритуал отнимет здоровье у ближайшего игрока.
+quest:0FFB86B741255547:description:0	sha256:cfc9edc95fa148564e20daf785eeb8a0322642c50f4c1f404713baf90ed0200e	С этой установкой можно бесконечно производить железо.
+quest:0FFB86B741255547:description:2	sha256:6d35c46afa735424fb6a549899e0816ce085bed8374855512360600e748c9c3e	Стоит проложить через Незер железнодорожную сеть для сбора кримзита.
+quest:12F6EDB7B3074DBA:subtitle	sha256:340fc51c3ba6e2dc9f2f15e178339c99a05bd5325fc8aaf8fb08461ec1943f76	Спрятано в Бесконечной библиотеке
+quest:14AF78F1E790FC36:subtitle	sha256:7eb1dd8efb885e078e4bd5f770397047a9ec24d4f5fc6f928b76d8ef2052d776	Возродитесь из пепла
+quest:21DFDC2132AC4257:subtitle	sha256:6d8a953de33739e6e37d4a4c970dfe14d04463211fdb8a441cb69431bff36420	Симулятор уборки
+quest:240D7B64E63FCE4F:description:0	sha256:1c458e226dd89e991410cffa1fb88d133e957bed5fd5772a38a5e85c5347ac59	Вы также можете устранить нанесённый Backrooms ущерб:
+quest:240D7B64E63FCE4F:description:10	sha256:362036a6f86519f44c1b1a4f3cb298ebe4906839655cf715b2249426091263ef	Если вам нравится вид бетонных плиток, нажмите по ним ПКМ с куском бетона, чтобы превратить их в цельные блоки. После этого ковёр на них больше не вырастет.
+quest:240D7B64E63FCE4F:description:13	sha256:7aed2fd478636d13d89177521658362fc7150259d73747ff12fea3bb0598b0af	Всё это может показаться безумной затеей, но снова включить свет не так уж плохо.
+quest:240D7B64E63FCE4F:description:2	sha256:ddd9e13ece276bf1f0458b940ba804c7f71040cbfa884ecbe56e2b20c759a22d	- Возьмите ковёр и нажмите ПКМ по напольной плитке
+quest:240D7B64E63FCE4F:description:4	sha256:5a57f9e761f6f14b876193ffacc73aaa03adf801a34aa039a7667bee61e0b9d5	- Возьмите обои и нажмите ПКМ по ободранным обоям
+quest:240D7B64E63FCE4F:description:6	sha256:62ebd723faae4550baad0a4d5179f38baf3c31bbd8643c8e9ef2b905a1400bf6	- Возьмите люминесцентную лампу и нажмите ПКМ по сломанному потолочному светильнику
+quest:240D7B64E63FCE4F:description:8	sha256:dad5c5284e63c18dbcefba2d3d0afad0d14143088eafd452c6297712a21cd389	- Возьмите обои и нажмите ПКМ по Деревянному каркасу, чтобы создать поддельные обои
+quest:240D7B64E63FCE4F:title	sha256:56bc2a4d4c1a5509295449640bd4f0450221213985bfff30765df5af798bcffe	Восстановление Backrooms
+quest:25DBA9EE127F3CE4:description:7	sha256:ca4bd36368a1d2d4429f9341ba565c80d1f6a82ce3d138d14425e98453779154	{image:kubejs:textures/quests/poolrooms_exit.png width:192 height:108 align:center}
+quest:2A93ADA6EAA0C7EB:description:0	sha256:9873d550beb49a2ce7abd09ee301e544bfb1c369850a0bd8167bd6b121a9e081	На Snad сахарный тростник растёт гораздо быстрее. 
+quest:2A93ADA6EAA0C7EB:description:2	sha256:6d7c5e59a00256f0fd3aa25bd0a5be34adc783f78dce0af61f616ced9c62682c	Можно ли этим злоупотребить? Решать вам.
+quest:2A93ADA6EAA0C7EB:description:4	sha256:853432c55bdebd42eab5d320698ad50c040486a4b8ed05f5bbef104c5883160b	Snad не только ускоряет рост: если обновить блок Snad сигналом редстоуна, растение на нём мгновенно вырастет.
+quest:2FD58013123EFE42:description:0	sha256:ba35cac49b875544143c6c482abfeea319b7b5945c5fd0191a87c28f88ef36a9	Без деревянных инструментов не обойтись. Ножом можно разрезать ковёр и добраться до бетонных плиток под ним...
+quest:347FB9BA17B5C66C:description:2	sha256:fc54cdb832df3e5b878bebb682d7d11c2c6eda7414f9029990d44d46491bab00	Сначала добудьте сахарный тростник с помощью Лепесткового алтаря.
+quest:34E24CF953EB8B77:description:0	sha256:cde987e61b49c9d98b9af9ff66e0d87201479a835887f3432b5dc3148ff25e12	С помощью жезла душ Пустые предохранители можно превратить в Предохранители душ.
+quest:34E24CF953EB8B77:description:2	sha256:97e8ccfdf64176737125897b0245455b8802224ce54079a974abb799f3449bd8	Просто бросьте Пустые предохранители на землю и ударьте по ним жезлом душ.
+quest:34E24CF953EB8B77:subtitle	sha256:4ddcd520b39f2d8f038a32426b41aeb04c43fdd46a36c86be2ff5f0ed0840b4c	Пойманные души
+quest:34E24CF953EB8B77:title	sha256:21269a4342f86594d435a01f2ec9188e40448c00b296eb5fef1011ce30595512	Предохранитель душ
+quest:3EEB10E1DC378F7A:description:0	sha256:5295c39e362ebedb75153d96197868dc31389acb2f51b6d94e2a2a3e58426c68	Если бросать кирпичи в потолочные светильники, из них могут выпасть важные детали для грядущей промышленной революции.
+quest:53563EF68FA374A9:description:0	sha256:e2a5da284f195508eab51cab7b875a9848ed3ba2abb15ffd1271f16cb9fa41b9	С этой установкой можно бесконечно производить медь.
+quest:53563EF68FA374A9:description:2	sha256:6397ffb25a51e7f6350da067407be70788211041560fdea7b775dce9c366f27d	Стоит проложить железнодорожную сеть через Незер и обратно в Backrooms для сбора веридия.
+quest:552D47F0044BE5E4:description:0	sha256:cf7df050cfbe6bfd10d24d38d0517dbd0463a9fe56c91076ca3126063e30cab5	Жезл превращает Кирпичи в Незерские кирпичи. Бросьте Кирпичи на пол и выстрелите в них из жезла.
+quest:552D47F0044BE5E4:subtitle	sha256:9f5057c65825c5871b2936120a4dd3794cdec124b0d8dadea444b54ffd221b1b	Авада-а-а-а...
+quest:557617650FFA7BF8:title	sha256:21e21a06ba33ecda48de2c97580de80fa4b6d3fbf10accf3c56f5e9f9f49fba2	Тройные черепа
+quest:5CE78F3B9E2BDC0F:description:0	sha256:178a7e21972a5fd025328bb5e7cc0c720e72035750e147af58b533c94143e24a	Ковёр, пропитанный сырой нефтью, — бесконечный источник нефти. Нажмите по нему ПКМ с губкой в руке.
+quest:5CE78F3B9E2BDC0F:description:1	sha256:6ce9ff21ae8843f86d9c5ff74eea8f64ae97f68b455872f04001c51e45340ffc	Из ковра хлынет сырая нефть, которую можно собрать.
+quest:5CE78F3B9E2BDC0F:description:3	sha256:635791774c6b7f7c5da54497c29363ab782ade6d413bc16f68ea41a61ad23bfb	Рекомендуется автоматизировать этот процесс.
+quest:5CE78F3B9E2BDC0F:description:6	sha256:201d8b4d742d5d79e428c46bf10e7bae071b6abeb28ce40ca0d3773b6ed90597	{image:kubejs:textures/quests/oil_carpet.png width:192 height:102 align:center}
+quest:641ACE318273962A:description:0	sha256:489f22414252ae7c2e9b936b313e28c1224d3718090126a9d09244e5fbbc8094	Лёгкую нефть можно превратить в очищенное топливо.
+quest:641ACE318273962A:description:2	sha256:e0b33e3545223c95b03d40c77cfab7cc4a3d0c8cd2aa57c7d941774c43718ded	Дайте всполоху соломинку и закачайте в него очищенное топливо, чтобы перегреть его. После этого огонь Парового двигателя станет намного жарче.
+quest:641ACE318273962A:title	sha256:9dd12b5229d8106e423b024d3ddedad9625f270df544aa99a5196740f5e58a61	Очищенное топливо
+quest:6762380EB7B4FB9A:description:0	sha256:0196a039f2b779e6876e4943d19e6c9c3e22dea38116a6ae40073fd5911dafb1	Фракционный дистиллятор перерабатывает сырую нефть в битум. Затем из битума можно получить дёготь с помощью пиролизёра.
+quest:6A05A3E430180A39:subtitle	sha256:87294a35be789dc5fb7d90e28aecffac9237a0ab882fab50be3e0f977095f096	Загрузка того, за чем вы не наблюдаете
+quest:6DA0C1A9A1E1AC7B:description:0	sha256:61d93797870e46370dbe4746fbc05e96fd6246fab14497a6a7fa558a53ba80f3	Один из чипов данных создаёт эндерняк. Его можно раздробить и получить эндер-пыль.
+quest:7321D8BB155B472C:description:0	sha256:1f5bb1407f34d8be7275db2fbe97347f88dc91eef2008a9397592dfa0f661977	В некоторых чипах данных есть незерак. Из него можно сделать Всполоховые торты.
+quest:7321D8BB155B472C:title	sha256:1bcf9dcdb45a4eb894293aee6d35365cdb41a7180af37fc03777ede783e070ae	Почему так остро???
+quest:754899C65C2540E0:subtitle	sha256:6606d56a1bd30f10a2fdce987ac5391496106e1db67fd840b32e5ac9921ad9ac	Цифровое хранилище
+quest:780450B76916CDB7:subtitle	sha256:d353097963cdc11e90d40c89ff230aeb12ab0a2aefba5d89aa8f6b8c66daa158	Время сыграть в шахматы
+quest:7B6D55B255237469:description:0	sha256:ff9555b11517ade30df80a14b55d051361fcfefc836087e3ce7fd042629706d9	С этой установкой можно бесконечно производить цинк.
+quest:7B6D55B255237469:description:2	sha256:e0e11c667175438748f06191332186c7dbe7943cb5b4f82e93721563f42cba38	Стоит проложить через Незер железнодорожную сеть для сбора азурина.
+quest:7C74C4D1572E5A39:subtitle	sha256:b30ac8d1e105a20adb404631fdc2834b119a6f4c9bb08d2401cdbcc5fe1e3ca6	Поглощение знаний
