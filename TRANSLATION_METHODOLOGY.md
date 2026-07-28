@@ -308,7 +308,7 @@ translation-versions/<version>/work/pending.tsv
 
 - не копируется в каталог;
 - не передаётся агентам как готовый перевод;
-- не записывается в `src/resourcepack`;
+- не записывается в payload выбранной версии;
 - не изменяется переводческим модом.
 
 Основные документы:
@@ -338,7 +338,8 @@ docs/PACKAGING.md
 - фактический список установленных модов и их версий;
 - SHA-256 исходного архива, если он доступен.
 
-Не используй уже переведённые `src/quests` как английский источник.
+Не используй уже переведённый
+`translation-versions/<version>/payload/quests` как английский источник.
 
 ### 2. Извлечение
 
@@ -478,12 +479,13 @@ manifest.json + catalog.json + английские файлы целевой в
 Результат:
 
 ```text
-src/quests/
-src/resourcepack/assets/<namespace>/lang/ru_ru.json
+translation-versions/<version>/payload/quests/
+translation-versions/<version>/payload/resourcepack/assets/<namespace>/lang/ru_ru.json
 ```
 
-В `src/quests` попадает полный структурный набор квестов целевой версии с
-переведёнными видимыми полями.
+В `payload/quests` попадает полный структурный набор квестов целевой версии с
+переведёнными видимыми полями. Payload каждой версии хранится отдельно и не
+переключает общий каталог исходников.
 
 В собственные `ru_ru.json` попадают только translation keys, которым нужен
 перевод проекта в этой версии. Штатные русские строки Minecraft и модов не

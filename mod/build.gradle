@@ -1,3 +1,5 @@
+import groovy.json.JsonSlurper
+
 plugins {
     id 'eclipse'
     id 'idea'
@@ -5,7 +7,28 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0.36,6.2)'
 }
 
-version = modpack_version
+def selectedTranslationVersion = providers.gradleProperty('translationVersion')
+    .getOrElse(translation_version)
+if (!(selectedTranslationVersion ==~ /[a-zA-Z0-9._-]+/)) {
+    throw new GradleException("Invalid translationVersion: ${selectedTranslationVersion}")
+}
+
+def translationVersionRoot = layout.projectDirectory.dir(
+    "../translation-versions/${selectedTranslationVersion}"
+)
+def translationConfigFile = translationVersionRoot.file('build-config.json').asFile
+if (!translationConfigFile.isFile()) {
+    throw new GradleException(
+        "Unknown translationVersion '${selectedTranslationVersion}': "
+            + "${translationConfigFile} does not exist"
+    )
+}
+def translationConfig = new JsonSlurper().parse(translationConfigFile)
+if (translationConfig.schema != 1 || translationConfig.version != selectedTranslationVersion) {
+    throw new GradleException("Invalid translation build config: ${translationConfigFile}")
+}
+
+version = translationConfig.version
 group = mod_group_id
 
 base {
@@ -16,7 +39,7 @@ java {
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
-def translationSources = layout.projectDirectory.dir('../src')
+def translationSources = translationVersionRoot.dir('payload')
 def translationResourcePack = translationSources.dir('resourcepack')
 def translationQuests = translationSources.dir('quests')
 def generatedTranslationResources = layout.buildDirectory.dir('generated/translationResources')
@@ -63,7 +86,9 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf('dev.ftb.mods:ftb-quests-forge:2001.4.13')
+    implementation fg.deobf(
+        "dev.ftb.mods:ftb-quests-forge:${translationConfig.ftb_quests_version}"
+    )
     implementation fg.deobf('dev.ftb.mods:ftb-library-forge:2001.2.9')
     runtimeOnly fg.deobf('dev.ftb.mods:ftb-teams-forge:2001.3.0')
     runtimeOnly fg.deobf('dev.architectury:architectury-forge:9.1.12')
@@ -105,9 +130,10 @@ tasks.named('processResources', ProcessResources).configure {
         mod_id: mod_id,
         mod_name: mod_name,
         mod_license: mod_license,
-        mod_version: modpack_version,
+        mod_version: translationConfig.version,
         mod_authors: mod_authors,
-        mod_description: mod_description
+        mod_description: translationConfig.mod_description,
+        ftb_quests_version_range: translationConfig.ftb_quests_version_range
     ]
     inputs.properties properties
 
@@ -122,6 +148,15 @@ tasks.named('processResources', ProcessResources).configure {
 
 tasks.named('test', Test).configure {
     useJUnitPlatform()
+    systemProperty 'translation.payload', translationSources.asFile.absolutePath
+    systemProperty(
+        'translation.expectedQuestObjectIds',
+        translationConfig.expected_quest_object_ids.toString()
+    )
+    systemProperty(
+        'translation.expectedQuestTranslations',
+        translationConfig.expected_quest_translations.toString()
+    )
 }
 
 tasks.named('jar', Jar).configure {

@@ -6,19 +6,24 @@
 ## Сборка
 
 ```sh
-./mod/gradlew -p audit-mod clean test build
+./mod/gradlew -p audit-mod clean test build \
+  -PtranslationVersion=1.19.3-original
+
+./mod/gradlew -p audit-mod clean test build \
+  -PtranslationVersion=1.19.3-7-ae2-fix
 ```
 
-Результат:
+Gradle выбирает версию обязательного translation-мода из общего
+`translation-versions/<version>/build-config.json`. Результат:
 
 ```text
-audit-mod/build/libs/liminal-industries-russian-translation-audit-1.19.3-original.jar
+audit-mod/build/libs/liminal-industries-russian-translation-audit-<version>.jar
 ```
 
 ## Проверка в игре
 
 1. Установить релизный JAR перевода и JAR аудита в реальный клиентский профиль
-   оригинального модпака.
+   соответствующего модпака.
 2. Запустить игру, выбрать `Русский (Россия)` и войти в мир.
 3. Дождаться полной загрузки JEI.
 4. Выполнить клиентскую команду `/liminal_ru_audit`.

@@ -18,9 +18,17 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PayloadResourcesTest {
-    private static final Path TRANSLATION_SOURCES = Path.of("..", "src");
+    private static final Path TRANSLATION_SOURCES = Path.of(
+        requiredProperty("translation.payload")
+    );
     private static final Path RESOURCE_PACK = TRANSLATION_SOURCES.resolve("resourcepack");
     private static final Path QUESTS = TRANSLATION_SOURCES.resolve("quests");
+    private static final int EXPECTED_QUEST_OBJECT_IDS = Integer.parseInt(
+        requiredProperty("translation.expectedQuestObjectIds")
+    );
+    private static final int EXPECTED_QUEST_TRANSLATIONS = Integer.parseInt(
+        requiredProperty("translation.expectedQuestTranslations")
+    );
 
     @Test
     void languageFilesAreStrictJsonWithoutDuplicateKeys() throws IOException {
@@ -49,8 +57,8 @@ class PayloadResourcesTest {
         QuestTranslationPayload payload = QuestTranslationPayload.load(
             PayloadResourcesTest.class
         );
-        assertEquals(826, payload.objectIds().size());
-        assertEquals(165, payload.translationCount());
+        assertEquals(EXPECTED_QUEST_OBJECT_IDS, payload.objectIds().size());
+        assertEquals(EXPECTED_QUEST_TRANSLATIONS, payload.translationCount());
 
         long firstQuestId = Long.parseUnsignedLong("74DC667B840746B0", 16);
         QuestTranslation firstQuest = payload.translation(firstQuestId);
@@ -63,6 +71,14 @@ class PayloadResourcesTest {
         Set<Long> incompleteIds = new HashSet<>(payload.objectIds());
         incompleteIds.remove(firstQuestId);
         assertFalse(payload.matchesObjectIds(incompleteIds));
+    }
+
+    private static String requiredProperty(String name) {
+        String value = System.getProperty(name);
+        if (value == null || value.isBlank()) {
+            throw new IllegalStateException("Missing system property: " + name);
+        }
+        return value;
     }
 
     private static void readValue(JsonReader json, Path source) throws IOException {

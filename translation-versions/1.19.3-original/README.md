@@ -21,6 +21,17 @@ python3 scripts/build_version_delta.py \
   --version-slug 1.19.3-original
 ```
 
+Готовый payload и JAR собираются командами:
+
+```sh
+python3 scripts/build_version_resources.py \
+  --version 1.19.3-original \
+  --instance-root "$HOME/Library/Application Support/sklauncher/instances/liminal-industries"
+
+cd mod
+./gradlew clean test build -PtranslationVersion=1.19.3-original
+```
+
 В оригинальной сборке нет ProbeJS. Реестр восстанавливается по моделям,
 имеющим фактический языковой ключ, предметным ссылкам из квестов и объявлениям
 KubeJS из startup-скриптов. Так в реестр входят динамические предметы без

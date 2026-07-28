@@ -29,6 +29,7 @@ from extract_item_names import (
 
 
 SCHEMA_VERSION = 1
+PROJECT_JAR_PREFIX = "liminal-industries-russian-translation-"
 FTB_QUESTS_RE = re.compile(r"ftb-quests-forge-([0-9.]+)\.jar$")
 KUBEJS_REGISTRY_RE = re.compile(
     r"StartupEvents\.registry\(\s*(['\"])(block|item|fluid)\1"
@@ -305,6 +306,14 @@ def load_item_hints(path: Path | None) -> dict[str, tuple[str, str]]:
     return result
 
 
+def source_mod_archives(mods_root: Path) -> list[Path]:
+    return [
+        path
+        for path in sorted(mods_root.glob("*.jar"))
+        if not path.name.startswith(PROJECT_JAR_PREFIX)
+    ]
+
+
 def extract_item_records(
     instance_root: Path,
     launcher_root: Path,
@@ -314,7 +323,8 @@ def extract_item_records(
 ) -> tuple[list[dict[str, Any]], list[dict[str, str]], dict[str, Any]]:
     mods_root = instance_root / "mods"
     kubejs_root = instance_root / "kubejs"
-    en_us, native_ru = load_jar_languages(mods_root)
+    archives = source_mod_archives(mods_root)
+    en_us, native_ru = load_jar_languages(mods_root, archives)
     load_minecraft_languages(launcher_root, en_us, native_ru)
     kubejs_en = sorted(kubejs_root.glob("assets/*/lang/en_us.json"))
     kubejs_en += sorted(
@@ -339,11 +349,11 @@ def extract_item_records(
     registry_source = "probejs"
     kubejs_registry: dict[str, tuple[str, str]] = {}
     if not registry_ids:
-        archives = sorted(mods_root.glob("*.jar"))
+        model_archives = list(archives)
         minecraft_jar = launcher_root / "versions/1.20.1/1.20.1.jar"
         if minecraft_jar.exists():
-            archives.append(minecraft_jar)
-        model_ids = load_item_model_ids(archives, kubejs_root)
+            model_archives.append(minecraft_jar)
+        model_ids = load_item_model_ids(model_archives, kubejs_root)
         kubejs_registry = load_kubejs_registry(kubejs_root)
         registry_ids = {
             item_id
@@ -413,7 +423,7 @@ def extract_item_records(
             }
         )
 
-    source_paths = sorted(mods_root.glob("*.jar"))
+    source_paths = list(archives)
     source_paths += sorted(kubejs_root.glob("assets/*/lang/*.json"))
     source_paths += sorted(kubejs_root.glob("contentpacks/*/assets/*/lang/*.json"))
     source_paths += resource_files
@@ -422,17 +432,22 @@ def extract_item_records(
         source_paths.append(minecraft_jar)
     if item_hints_path is not None:
         source_paths.append(item_hints_path)
-    source_files = [
-        {
-            "path": (
-                str(path.relative_to(instance_root))
-                if path.is_relative_to(instance_root)
-                else str(path)
-            ),
-            "sha256": sha256_bytes(path.read_bytes()),
-        }
-        for path in sorted(set(source_paths))
-    ]
+    source_files = []
+    for path in sorted(set(source_paths)):
+        if path.is_relative_to(instance_root):
+            label = path.relative_to(instance_root).as_posix()
+        elif path.is_relative_to(launcher_root):
+            label = f"launcher/{path.relative_to(launcher_root).as_posix()}"
+        elif item_hints_path is not None and path == item_hints_path:
+            label = f"translation-inputs/{path.name}"
+        else:
+            label = path.name
+        source_files.append(
+            {
+                "path": label,
+                "sha256": sha256_bytes(path.read_bytes()),
+            }
+        )
     report = {
         "registry_source": registry_source,
         "registry_items": len(registry_ids),
@@ -465,7 +480,17 @@ def detect_metadata(
         None,
     )
     if instance is None:
-        raise ValueError(f"instance metadata not found for {instance_root}")
+        forge_manifest_path = instance_root / ".forge-manifest.json"
+        if not forge_manifest_path.exists():
+            raise ValueError(f"instance metadata not found for {instance_root}")
+        forge_manifest = json.loads(
+            forge_manifest_path.read_text(encoding="utf-8")
+        )
+        minecraft_version = forge_manifest["minecraftVersion"]
+        forge_version = forge_manifest["forgeVersion"]
+    else:
+        minecraft_version = instance["minecraftVersion"]
+        forge_version = instance["loaderVersion"]
     ftb_versions = [
         match.group(1)
         for path in (instance_root / "mods").glob("*.jar")
@@ -478,8 +503,8 @@ def detect_metadata(
         "version": link["versionNumber"],
         "curseforge_project_id": int(link["projectId"]),
         "curseforge_file_id": int(link["versionId"]),
-        "minecraft_version": instance["minecraftVersion"],
-        "forge_version": instance["loaderVersion"],
+        "minecraft_version": minecraft_version,
+        "forge_version": forge_version,
         "ftb_quests_version": ftb_versions[0],
     }
 

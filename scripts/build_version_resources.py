@@ -179,7 +179,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--versions-root", type=Path, default=root / "translation-versions"
     )
-    parser.add_argument("--output", type=Path, default=root / "src")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="output payload directory (default: selected version's payload/)",
+    )
     parser.add_argument("--check", action="store_true")
     return parser.parse_args()
 
@@ -217,13 +221,15 @@ def main() -> int:
             raise ValueError("invalid runtime audit overrides")
         runtime_overrides = runtime_overrides_value
 
-    destination = args.output.resolve()
+    destination = (
+        args.output.resolve()
+        if args.output is not None
+        else version_root / "payload"
+    )
     with tempfile.TemporaryDirectory(prefix="liminal-translation-") as temp:
         generated = Path(temp) / "src"
         resourcepack = generated / "resourcepack"
         resourcepack.mkdir(parents=True)
-        pack_meta = destination / "resourcepack/pack.mcmeta"
-        shutil.copy2(pack_meta, resourcepack / "pack.mcmeta")
         quest_count = build_quests(
             manifest, catalog, args.instance_root.resolve(), generated / "quests"
         )

@@ -12,14 +12,6 @@
   },
   "source_files": [
     {
-      "path": "/Users/northcat/Documents/minecraft-industrial-backrooms/translation-versions/1.19.3-original/item-source-hints.tsv",
-      "sha256": "sha256:b81f7a62e73c0de6567e51bcef3261a3e274bd310fcb9fb039f27dff42ba9191"
-    },
-    {
-      "path": "/Users/northcat/Library/Application Support/sklauncher/versions/1.20.1/1.20.1.jar",
-      "sha256": "sha256:56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f"
-    },
-    {
       "path": "config/ftbquests/quests/chapter_groups.snbt",
       "sha256": "sha256:739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
     },
@@ -150,6 +142,10 @@
     {
       "path": "kubejs/assets/thermal/lang/en_us.json",
       "sha256": "sha256:7449ff836da2b61114fa789559851890d30cdd6fedc7af2e8fdc0d0500c33203"
+    },
+    {
+      "path": "launcher/versions/1.20.1/1.20.1.jar",
+      "sha256": "sha256:56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f"
     },
     {
       "path": "mods/AI-Improvements-1.20-0.5.2.jar",
@@ -758,6 +754,10 @@
     {
       "path": "resourcepacks/Liminal Resources/assets/thermal/lang/en_us.json",
       "sha256": "sha256:7449ff836da2b61114fa789559851890d30cdd6fedc7af2e8fdc0d0500c33203"
+    },
+    {
+      "path": "translation-inputs/item-source-hints.tsv",
+      "sha256": "sha256:b81f7a62e73c0de6567e51bcef3261a3e274bd310fcb9fb039f27dff42ba9191"
     }
   ],
   "records": [

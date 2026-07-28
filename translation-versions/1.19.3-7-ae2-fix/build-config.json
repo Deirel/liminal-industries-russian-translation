@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "version": "1.19.3-7-ae2-fix",
+  "mod_description": "Russian translation for Liminal Industries - Rescripted.",
+  "ftb_quests_version": "2001.4.22",
+  "ftb_quests_version_range": "[2001.4.22]",
+  "expected_quest_object_ids": 1038,
+  "expected_quest_translations": 301
+}

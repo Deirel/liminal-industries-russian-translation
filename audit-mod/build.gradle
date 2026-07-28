@@ -1,10 +1,31 @@
+import groovy.json.JsonSlurper
+
 plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.36,6.2)'
 }
 
-version = mod_version
+def selectedTranslationVersion = providers.gradleProperty('translationVersion')
+    .getOrElse(translation_version)
+if (!(selectedTranslationVersion ==~ /[a-zA-Z0-9._-]+/)) {
+    throw new GradleException("Invalid translationVersion: ${selectedTranslationVersion}")
+}
+def translationConfigFile = layout.projectDirectory.file(
+    "../translation-versions/${selectedTranslationVersion}/build-config.json"
+).asFile
+if (!translationConfigFile.isFile()) {
+    throw new GradleException(
+        "Unknown translationVersion '${selectedTranslationVersion}': "
+            + "${translationConfigFile} does not exist"
+    )
+}
+def translationConfig = new JsonSlurper().parse(translationConfigFile)
+if (translationConfig.schema != 1 || translationConfig.version != selectedTranslationVersion) {
+    throw new GradleException("Invalid translation build config: ${translationConfigFile}")
+}
+
+version = translationConfig.version
 group = mod_group_id
 
 base {
@@ -41,7 +62,7 @@ tasks.named('processResources', ProcessResources).configure {
         forge_version: forge_version,
         jei_version: jei_version,
         mod_id: mod_id,
-        mod_version: mod_version
+        mod_version: translationConfig.version
     ]
     inputs.properties properties
 

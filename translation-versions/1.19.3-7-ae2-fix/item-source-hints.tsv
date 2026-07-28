@@ -1,0 +1,1019 @@
+item_id	translation_key	source
+create:cardboard_package_10x12	item.create.cardboard_package_10x12	Cardboard Package 10x12
+create:cardboard_package_10x8	item.create.cardboard_package_10x8	Cardboard Package 10x8
+create:cardboard_package_12x10	item.create.cardboard_package_12x10	Cardboard Package 12x10
+create:cardboard_package_12x12	item.create.cardboard_package_12x12	Cardboard Package 12x12
+enderio:clear_glass_a	item.enderio.clear_glass_a	Clear Glass (Animals Pass)
+enderio:clear_glass_a_black	item.enderio.clear_glass_a_black	Black Clear Glass (Animals Pass)
+enderio:clear_glass_a_blue	item.enderio.clear_glass_a_blue	Blue Clear Glass (Animals Pass)
+enderio:clear_glass_a_brown	item.enderio.clear_glass_a_brown	Brown Clear Glass (Animals Pass)
+enderio:clear_glass_a_cyan	item.enderio.clear_glass_a_cyan	Cyan Clear Glass (Animals Pass)
+enderio:clear_glass_a_gray	item.enderio.clear_glass_a_gray	Gray Clear Glass (Animals Pass)
+enderio:clear_glass_a_green	item.enderio.clear_glass_a_green	Green Clear Glass (Animals Pass)
+enderio:clear_glass_a_light_blue	item.enderio.clear_glass_a_light_blue	Light Blue Clear Glass (Animals Pass)
+enderio:clear_glass_a_light_gray	item.enderio.clear_glass_a_light_gray	Light Gray Clear Glass (Animals Pass)
+enderio:clear_glass_a_lime	item.enderio.clear_glass_a_lime	Lime Clear Glass (Animals Pass)
+enderio:clear_glass_a_magenta	item.enderio.clear_glass_a_magenta	Magenta Clear Glass (Animals Pass)
+enderio:clear_glass_a_orange	item.enderio.clear_glass_a_orange	Orange Clear Glass (Animals Pass)
+enderio:clear_glass_a_pink	item.enderio.clear_glass_a_pink	Pink Clear Glass (Animals Pass)
+enderio:clear_glass_a_purple	item.enderio.clear_glass_a_purple	Purple Clear Glass (Animals Pass)
+enderio:clear_glass_a_red	item.enderio.clear_glass_a_red	Red Clear Glass (Animals Pass)
+enderio:clear_glass_a_white	item.enderio.clear_glass_a_white	White Clear Glass (Animals Pass)
+enderio:clear_glass_a_yellow	item.enderio.clear_glass_a_yellow	Yellow Clear Glass (Animals Pass)
+enderio:clear_glass_da	item.enderio.clear_glass_da	Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_black	item.enderio.clear_glass_da_black	Black Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_blue	item.enderio.clear_glass_da_blue	Blue Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_brown	item.enderio.clear_glass_da_brown	Brown Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_cyan	item.enderio.clear_glass_da_cyan	Cyan Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_gray	item.enderio.clear_glass_da_gray	Gray Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_green	item.enderio.clear_glass_da_green	Green Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_light_blue	item.enderio.clear_glass_da_light_blue	Light Blue Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_light_gray	item.enderio.clear_glass_da_light_gray	Light Gray Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_lime	item.enderio.clear_glass_da_lime	Lime Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_magenta	item.enderio.clear_glass_da_magenta	Magenta Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_orange	item.enderio.clear_glass_da_orange	Orange Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_pink	item.enderio.clear_glass_da_pink	Pink Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_purple	item.enderio.clear_glass_da_purple	Purple Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_red	item.enderio.clear_glass_da_red	Red Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_white	item.enderio.clear_glass_da_white	White Dark Clear Glass (Animals Pass)
+enderio:clear_glass_da_yellow	item.enderio.clear_glass_da_yellow	Yellow Dark Clear Glass (Animals Pass)
+enderio:clear_glass_dm	item.enderio.clear_glass_dm	Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_black	item.enderio.clear_glass_dm_black	Black Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_blue	item.enderio.clear_glass_dm_blue	Blue Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_brown	item.enderio.clear_glass_dm_brown	Brown Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_cyan	item.enderio.clear_glass_dm_cyan	Cyan Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_gray	item.enderio.clear_glass_dm_gray	Gray Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_green	item.enderio.clear_glass_dm_green	Green Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_light_blue	item.enderio.clear_glass_dm_light_blue	Light Blue Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_light_gray	item.enderio.clear_glass_dm_light_gray	Light Gray Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_lime	item.enderio.clear_glass_dm_lime	Lime Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_magenta	item.enderio.clear_glass_dm_magenta	Magenta Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_orange	item.enderio.clear_glass_dm_orange	Orange Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_pink	item.enderio.clear_glass_dm_pink	Pink Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_purple	item.enderio.clear_glass_dm_purple	Purple Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_red	item.enderio.clear_glass_dm_red	Red Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_white	item.enderio.clear_glass_dm_white	White Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dm_yellow	item.enderio.clear_glass_dm_yellow	Yellow Dark Clear Glass (Monsters Pass)
+enderio:clear_glass_dna	item.enderio.clear_glass_dna	Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_black	item.enderio.clear_glass_dna_black	Black Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_blue	item.enderio.clear_glass_dna_blue	Blue Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_brown	item.enderio.clear_glass_dna_brown	Brown Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_cyan	item.enderio.clear_glass_dna_cyan	Cyan Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_gray	item.enderio.clear_glass_dna_gray	Gray Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_green	item.enderio.clear_glass_dna_green	Green Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_light_blue	item.enderio.clear_glass_dna_light_blue	Light Blue Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_light_gray	item.enderio.clear_glass_dna_light_gray	Light Gray Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_lime	item.enderio.clear_glass_dna_lime	Lime Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_magenta	item.enderio.clear_glass_dna_magenta	Magenta Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_orange	item.enderio.clear_glass_dna_orange	Orange Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_pink	item.enderio.clear_glass_dna_pink	Pink Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_purple	item.enderio.clear_glass_dna_purple	Purple Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_red	item.enderio.clear_glass_dna_red	Red Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_white	item.enderio.clear_glass_dna_white	White Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dna_yellow	item.enderio.clear_glass_dna_yellow	Yellow Dark Clear Glass (Animals Blocked)
+enderio:clear_glass_dnm	item.enderio.clear_glass_dnm	Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_black	item.enderio.clear_glass_dnm_black	Black Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_blue	item.enderio.clear_glass_dnm_blue	Blue Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_brown	item.enderio.clear_glass_dnm_brown	Brown Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_cyan	item.enderio.clear_glass_dnm_cyan	Cyan Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_gray	item.enderio.clear_glass_dnm_gray	Gray Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_green	item.enderio.clear_glass_dnm_green	Green Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_light_blue	item.enderio.clear_glass_dnm_light_blue	Light Blue Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_light_gray	item.enderio.clear_glass_dnm_light_gray	Light Gray Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_lime	item.enderio.clear_glass_dnm_lime	Lime Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_magenta	item.enderio.clear_glass_dnm_magenta	Magenta Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_orange	item.enderio.clear_glass_dnm_orange	Orange Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_pink	item.enderio.clear_glass_dnm_pink	Pink Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_purple	item.enderio.clear_glass_dnm_purple	Purple Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_red	item.enderio.clear_glass_dnm_red	Red Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_white	item.enderio.clear_glass_dnm_white	White Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnm_yellow	item.enderio.clear_glass_dnm_yellow	Yellow Dark Clear Glass (Monsters Blocked)
+enderio:clear_glass_dnp	item.enderio.clear_glass_dnp	Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_black	item.enderio.clear_glass_dnp_black	Black Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_blue	item.enderio.clear_glass_dnp_blue	Blue Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_brown	item.enderio.clear_glass_dnp_brown	Brown Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_cyan	item.enderio.clear_glass_dnp_cyan	Cyan Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_gray	item.enderio.clear_glass_dnp_gray	Gray Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_green	item.enderio.clear_glass_dnp_green	Green Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_light_blue	item.enderio.clear_glass_dnp_light_blue	Light Blue Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_light_gray	item.enderio.clear_glass_dnp_light_gray	Light Gray Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_lime	item.enderio.clear_glass_dnp_lime	Lime Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_magenta	item.enderio.clear_glass_dnp_magenta	Magenta Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_orange	item.enderio.clear_glass_dnp_orange	Orange Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_pink	item.enderio.clear_glass_dnp_pink	Pink Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_purple	item.enderio.clear_glass_dnp_purple	Purple Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_red	item.enderio.clear_glass_dnp_red	Red Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_white	item.enderio.clear_glass_dnp_white	White Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dnp_yellow	item.enderio.clear_glass_dnp_yellow	Yellow Dark Clear Glass (Players Blocked)
+enderio:clear_glass_dp	item.enderio.clear_glass_dp	Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_black	item.enderio.clear_glass_dp_black	Black Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_blue	item.enderio.clear_glass_dp_blue	Blue Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_brown	item.enderio.clear_glass_dp_brown	Brown Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_cyan	item.enderio.clear_glass_dp_cyan	Cyan Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_gray	item.enderio.clear_glass_dp_gray	Gray Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_green	item.enderio.clear_glass_dp_green	Green Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_light_blue	item.enderio.clear_glass_dp_light_blue	Light Blue Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_light_gray	item.enderio.clear_glass_dp_light_gray	Light Gray Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_lime	item.enderio.clear_glass_dp_lime	Lime Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_magenta	item.enderio.clear_glass_dp_magenta	Magenta Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_orange	item.enderio.clear_glass_dp_orange	Orange Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_pink	item.enderio.clear_glass_dp_pink	Pink Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_purple	item.enderio.clear_glass_dp_purple	Purple Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_red	item.enderio.clear_glass_dp_red	Red Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_white	item.enderio.clear_glass_dp_white	White Dark Clear Glass (Players Pass)
+enderio:clear_glass_dp_yellow	item.enderio.clear_glass_dp_yellow	Yellow Dark Clear Glass (Players Pass)
+enderio:clear_glass_ea	item.enderio.clear_glass_ea	Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_black	item.enderio.clear_glass_ea_black	Black Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_blue	item.enderio.clear_glass_ea_blue	Blue Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_brown	item.enderio.clear_glass_ea_brown	Brown Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_cyan	item.enderio.clear_glass_ea_cyan	Cyan Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_gray	item.enderio.clear_glass_ea_gray	Gray Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_green	item.enderio.clear_glass_ea_green	Green Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_light_blue	item.enderio.clear_glass_ea_light_blue	Light Blue Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_light_gray	item.enderio.clear_glass_ea_light_gray	Light Gray Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_lime	item.enderio.clear_glass_ea_lime	Lime Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_magenta	item.enderio.clear_glass_ea_magenta	Magenta Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_orange	item.enderio.clear_glass_ea_orange	Orange Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_pink	item.enderio.clear_glass_ea_pink	Pink Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_purple	item.enderio.clear_glass_ea_purple	Purple Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_red	item.enderio.clear_glass_ea_red	Red Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_white	item.enderio.clear_glass_ea_white	White Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_ea_yellow	item.enderio.clear_glass_ea_yellow	Yellow Enlightened Clear Glass (Animals Pass)
+enderio:clear_glass_em	item.enderio.clear_glass_em	Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_black	item.enderio.clear_glass_em_black	Black Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_blue	item.enderio.clear_glass_em_blue	Blue Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_brown	item.enderio.clear_glass_em_brown	Brown Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_cyan	item.enderio.clear_glass_em_cyan	Cyan Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_gray	item.enderio.clear_glass_em_gray	Gray Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_green	item.enderio.clear_glass_em_green	Green Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_light_blue	item.enderio.clear_glass_em_light_blue	Light Blue Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_light_gray	item.enderio.clear_glass_em_light_gray	Light Gray Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_lime	item.enderio.clear_glass_em_lime	Lime Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_magenta	item.enderio.clear_glass_em_magenta	Magenta Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_orange	item.enderio.clear_glass_em_orange	Orange Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_pink	item.enderio.clear_glass_em_pink	Pink Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_purple	item.enderio.clear_glass_em_purple	Purple Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_red	item.enderio.clear_glass_em_red	Red Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_white	item.enderio.clear_glass_em_white	White Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_em_yellow	item.enderio.clear_glass_em_yellow	Yellow Enlightened Clear Glass (Monsters Pass)
+enderio:clear_glass_ena	item.enderio.clear_glass_ena	Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_black	item.enderio.clear_glass_ena_black	Black Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_blue	item.enderio.clear_glass_ena_blue	Blue Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_brown	item.enderio.clear_glass_ena_brown	Brown Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_cyan	item.enderio.clear_glass_ena_cyan	Cyan Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_gray	item.enderio.clear_glass_ena_gray	Gray Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_green	item.enderio.clear_glass_ena_green	Green Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_light_blue	item.enderio.clear_glass_ena_light_blue	Light Blue Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_light_gray	item.enderio.clear_glass_ena_light_gray	Light Gray Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_lime	item.enderio.clear_glass_ena_lime	Lime Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_magenta	item.enderio.clear_glass_ena_magenta	Magenta Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_orange	item.enderio.clear_glass_ena_orange	Orange Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_pink	item.enderio.clear_glass_ena_pink	Pink Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_purple	item.enderio.clear_glass_ena_purple	Purple Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_red	item.enderio.clear_glass_ena_red	Red Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_white	item.enderio.clear_glass_ena_white	White Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_ena_yellow	item.enderio.clear_glass_ena_yellow	Yellow Enlightened Clear Glass (Animals Blocked)
+enderio:clear_glass_enm	item.enderio.clear_glass_enm	Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_black	item.enderio.clear_glass_enm_black	Black Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_blue	item.enderio.clear_glass_enm_blue	Blue Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_brown	item.enderio.clear_glass_enm_brown	Brown Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_cyan	item.enderio.clear_glass_enm_cyan	Cyan Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_gray	item.enderio.clear_glass_enm_gray	Gray Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_green	item.enderio.clear_glass_enm_green	Green Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_light_blue	item.enderio.clear_glass_enm_light_blue	Light Blue Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_light_gray	item.enderio.clear_glass_enm_light_gray	Light Gray Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_lime	item.enderio.clear_glass_enm_lime	Lime Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_magenta	item.enderio.clear_glass_enm_magenta	Magenta Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_orange	item.enderio.clear_glass_enm_orange	Orange Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_pink	item.enderio.clear_glass_enm_pink	Pink Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_purple	item.enderio.clear_glass_enm_purple	Purple Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_red	item.enderio.clear_glass_enm_red	Red Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_white	item.enderio.clear_glass_enm_white	White Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enm_yellow	item.enderio.clear_glass_enm_yellow	Yellow Enlightened Clear Glass (Monsters Blocked)
+enderio:clear_glass_enp	item.enderio.clear_glass_enp	Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_black	item.enderio.clear_glass_enp_black	Black Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_blue	item.enderio.clear_glass_enp_blue	Blue Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_brown	item.enderio.clear_glass_enp_brown	Brown Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_cyan	item.enderio.clear_glass_enp_cyan	Cyan Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_gray	item.enderio.clear_glass_enp_gray	Gray Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_green	item.enderio.clear_glass_enp_green	Green Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_light_blue	item.enderio.clear_glass_enp_light_blue	Light Blue Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_light_gray	item.enderio.clear_glass_enp_light_gray	Light Gray Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_lime	item.enderio.clear_glass_enp_lime	Lime Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_magenta	item.enderio.clear_glass_enp_magenta	Magenta Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_orange	item.enderio.clear_glass_enp_orange	Orange Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_pink	item.enderio.clear_glass_enp_pink	Pink Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_purple	item.enderio.clear_glass_enp_purple	Purple Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_red	item.enderio.clear_glass_enp_red	Red Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_white	item.enderio.clear_glass_enp_white	White Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_enp_yellow	item.enderio.clear_glass_enp_yellow	Yellow Enlightened Clear Glass (Players Blocked)
+enderio:clear_glass_ep	item.enderio.clear_glass_ep	Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_black	item.enderio.clear_glass_ep_black	Black Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_blue	item.enderio.clear_glass_ep_blue	Blue Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_brown	item.enderio.clear_glass_ep_brown	Brown Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_cyan	item.enderio.clear_glass_ep_cyan	Cyan Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_gray	item.enderio.clear_glass_ep_gray	Gray Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_green	item.enderio.clear_glass_ep_green	Green Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_light_blue	item.enderio.clear_glass_ep_light_blue	Light Blue Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_light_gray	item.enderio.clear_glass_ep_light_gray	Light Gray Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_lime	item.enderio.clear_glass_ep_lime	Lime Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_magenta	item.enderio.clear_glass_ep_magenta	Magenta Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_orange	item.enderio.clear_glass_ep_orange	Orange Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_pink	item.enderio.clear_glass_ep_pink	Pink Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_purple	item.enderio.clear_glass_ep_purple	Purple Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_red	item.enderio.clear_glass_ep_red	Red Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_white	item.enderio.clear_glass_ep_white	White Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_ep_yellow	item.enderio.clear_glass_ep_yellow	Yellow Enlightened Clear Glass (Players Pass)
+enderio:clear_glass_m	item.enderio.clear_glass_m	Clear Glass (Monsters Pass)
+enderio:clear_glass_m_black	item.enderio.clear_glass_m_black	Black Clear Glass (Monsters Pass)
+enderio:clear_glass_m_blue	item.enderio.clear_glass_m_blue	Blue Clear Glass (Monsters Pass)
+enderio:clear_glass_m_brown	item.enderio.clear_glass_m_brown	Brown Clear Glass (Monsters Pass)
+enderio:clear_glass_m_cyan	item.enderio.clear_glass_m_cyan	Cyan Clear Glass (Monsters Pass)
+enderio:clear_glass_m_gray	item.enderio.clear_glass_m_gray	Gray Clear Glass (Monsters Pass)
+enderio:clear_glass_m_green	item.enderio.clear_glass_m_green	Green Clear Glass (Monsters Pass)
+enderio:clear_glass_m_light_blue	item.enderio.clear_glass_m_light_blue	Light Blue Clear Glass (Monsters Pass)
+enderio:clear_glass_m_light_gray	item.enderio.clear_glass_m_light_gray	Light Gray Clear Glass (Monsters Pass)
+enderio:clear_glass_m_lime	item.enderio.clear_glass_m_lime	Lime Clear Glass (Monsters Pass)
+enderio:clear_glass_m_magenta	item.enderio.clear_glass_m_magenta	Magenta Clear Glass (Monsters Pass)
+enderio:clear_glass_m_orange	item.enderio.clear_glass_m_orange	Orange Clear Glass (Monsters Pass)
+enderio:clear_glass_m_pink	item.enderio.clear_glass_m_pink	Pink Clear Glass (Monsters Pass)
+enderio:clear_glass_m_purple	item.enderio.clear_glass_m_purple	Purple Clear Glass (Monsters Pass)
+enderio:clear_glass_m_red	item.enderio.clear_glass_m_red	Red Clear Glass (Monsters Pass)
+enderio:clear_glass_m_white	item.enderio.clear_glass_m_white	White Clear Glass (Monsters Pass)
+enderio:clear_glass_m_yellow	item.enderio.clear_glass_m_yellow	Yellow Clear Glass (Monsters Pass)
+enderio:clear_glass_na	item.enderio.clear_glass_na	Clear Glass (Animals Blocked)
+enderio:clear_glass_na_black	item.enderio.clear_glass_na_black	Black Clear Glass (Animals Blocked)
+enderio:clear_glass_na_blue	item.enderio.clear_glass_na_blue	Blue Clear Glass (Animals Blocked)
+enderio:clear_glass_na_brown	item.enderio.clear_glass_na_brown	Brown Clear Glass (Animals Blocked)
+enderio:clear_glass_na_cyan	item.enderio.clear_glass_na_cyan	Cyan Clear Glass (Animals Blocked)
+enderio:clear_glass_na_gray	item.enderio.clear_glass_na_gray	Gray Clear Glass (Animals Blocked)
+enderio:clear_glass_na_green	item.enderio.clear_glass_na_green	Green Clear Glass (Animals Blocked)
+enderio:clear_glass_na_light_blue	item.enderio.clear_glass_na_light_blue	Light Blue Clear Glass (Animals Blocked)
+enderio:clear_glass_na_light_gray	item.enderio.clear_glass_na_light_gray	Light Gray Clear Glass (Animals Blocked)
+enderio:clear_glass_na_lime	item.enderio.clear_glass_na_lime	Lime Clear Glass (Animals Blocked)
+enderio:clear_glass_na_magenta	item.enderio.clear_glass_na_magenta	Magenta Clear Glass (Animals Blocked)
+enderio:clear_glass_na_orange	item.enderio.clear_glass_na_orange	Orange Clear Glass (Animals Blocked)
+enderio:clear_glass_na_pink	item.enderio.clear_glass_na_pink	Pink Clear Glass (Animals Blocked)
+enderio:clear_glass_na_purple	item.enderio.clear_glass_na_purple	Purple Clear Glass (Animals Blocked)
+enderio:clear_glass_na_red	item.enderio.clear_glass_na_red	Red Clear Glass (Animals Blocked)
+enderio:clear_glass_na_white	item.enderio.clear_glass_na_white	White Clear Glass (Animals Blocked)
+enderio:clear_glass_na_yellow	item.enderio.clear_glass_na_yellow	Yellow Clear Glass (Animals Blocked)
+enderio:clear_glass_nm	item.enderio.clear_glass_nm	Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_black	item.enderio.clear_glass_nm_black	Black Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_blue	item.enderio.clear_glass_nm_blue	Blue Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_brown	item.enderio.clear_glass_nm_brown	Brown Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_cyan	item.enderio.clear_glass_nm_cyan	Cyan Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_gray	item.enderio.clear_glass_nm_gray	Gray Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_green	item.enderio.clear_glass_nm_green	Green Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_light_blue	item.enderio.clear_glass_nm_light_blue	Light Blue Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_light_gray	item.enderio.clear_glass_nm_light_gray	Light Gray Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_lime	item.enderio.clear_glass_nm_lime	Lime Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_magenta	item.enderio.clear_glass_nm_magenta	Magenta Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_orange	item.enderio.clear_glass_nm_orange	Orange Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_pink	item.enderio.clear_glass_nm_pink	Pink Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_purple	item.enderio.clear_glass_nm_purple	Purple Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_red	item.enderio.clear_glass_nm_red	Red Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_white	item.enderio.clear_glass_nm_white	White Clear Glass (Monsters Blocked)
+enderio:clear_glass_nm_yellow	item.enderio.clear_glass_nm_yellow	Yellow Clear Glass (Monsters Blocked)
+enderio:clear_glass_np	item.enderio.clear_glass_np	Clear Glass (Players Blocked)
+enderio:clear_glass_np_black	item.enderio.clear_glass_np_black	Black Clear Glass (Players Blocked)
+enderio:clear_glass_np_blue	item.enderio.clear_glass_np_blue	Blue Clear Glass (Players Blocked)
+enderio:clear_glass_np_brown	item.enderio.clear_glass_np_brown	Brown Clear Glass (Players Blocked)
+enderio:clear_glass_np_cyan	item.enderio.clear_glass_np_cyan	Cyan Clear Glass (Players Blocked)
+enderio:clear_glass_np_gray	item.enderio.clear_glass_np_gray	Gray Clear Glass (Players Blocked)
+enderio:clear_glass_np_green	item.enderio.clear_glass_np_green	Green Clear Glass (Players Blocked)
+enderio:clear_glass_np_light_blue	item.enderio.clear_glass_np_light_blue	Light Blue Clear Glass (Players Blocked)
+enderio:clear_glass_np_light_gray	item.enderio.clear_glass_np_light_gray	Light Gray Clear Glass (Players Blocked)
+enderio:clear_glass_np_lime	item.enderio.clear_glass_np_lime	Lime Clear Glass (Players Blocked)
+enderio:clear_glass_np_magenta	item.enderio.clear_glass_np_magenta	Magenta Clear Glass (Players Blocked)
+enderio:clear_glass_np_orange	item.enderio.clear_glass_np_orange	Orange Clear Glass (Players Blocked)
+enderio:clear_glass_np_pink	item.enderio.clear_glass_np_pink	Pink Clear Glass (Players Blocked)
+enderio:clear_glass_np_purple	item.enderio.clear_glass_np_purple	Purple Clear Glass (Players Blocked)
+enderio:clear_glass_np_red	item.enderio.clear_glass_np_red	Red Clear Glass (Players Blocked)
+enderio:clear_glass_np_white	item.enderio.clear_glass_np_white	White Clear Glass (Players Blocked)
+enderio:clear_glass_np_yellow	item.enderio.clear_glass_np_yellow	Yellow Clear Glass (Players Blocked)
+enderio:clear_glass_p	item.enderio.clear_glass_p	Clear Glass (Players Pass)
+enderio:clear_glass_p_black	item.enderio.clear_glass_p_black	Black Clear Glass (Players Pass)
+enderio:clear_glass_p_blue	item.enderio.clear_glass_p_blue	Blue Clear Glass (Players Pass)
+enderio:clear_glass_p_brown	item.enderio.clear_glass_p_brown	Brown Clear Glass (Players Pass)
+enderio:clear_glass_p_cyan	item.enderio.clear_glass_p_cyan	Cyan Clear Glass (Players Pass)
+enderio:clear_glass_p_gray	item.enderio.clear_glass_p_gray	Gray Clear Glass (Players Pass)
+enderio:clear_glass_p_green	item.enderio.clear_glass_p_green	Green Clear Glass (Players Pass)
+enderio:clear_glass_p_light_blue	item.enderio.clear_glass_p_light_blue	Light Blue Clear Glass (Players Pass)
+enderio:clear_glass_p_light_gray	item.enderio.clear_glass_p_light_gray	Light Gray Clear Glass (Players Pass)
+enderio:clear_glass_p_lime	item.enderio.clear_glass_p_lime	Lime Clear Glass (Players Pass)
+enderio:clear_glass_p_magenta	item.enderio.clear_glass_p_magenta	Magenta Clear Glass (Players Pass)
+enderio:clear_glass_p_orange	item.enderio.clear_glass_p_orange	Orange Clear Glass (Players Pass)
+enderio:clear_glass_p_pink	item.enderio.clear_glass_p_pink	Pink Clear Glass (Players Pass)
+enderio:clear_glass_p_purple	item.enderio.clear_glass_p_purple	Purple Clear Glass (Players Pass)
+enderio:clear_glass_p_red	item.enderio.clear_glass_p_red	Red Clear Glass (Players Pass)
+enderio:clear_glass_p_white	item.enderio.clear_glass_p_white	White Clear Glass (Players Pass)
+enderio:clear_glass_p_yellow	item.enderio.clear_glass_p_yellow	Yellow Clear Glass (Players Pass)
+enderio:fused_quartz_a	item.enderio.fused_quartz_a	Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_black	item.enderio.fused_quartz_a_black	Black Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_blue	item.enderio.fused_quartz_a_blue	Blue Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_brown	item.enderio.fused_quartz_a_brown	Brown Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_cyan	item.enderio.fused_quartz_a_cyan	Cyan Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_gray	item.enderio.fused_quartz_a_gray	Gray Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_green	item.enderio.fused_quartz_a_green	Green Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_light_blue	item.enderio.fused_quartz_a_light_blue	Light Blue Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_light_gray	item.enderio.fused_quartz_a_light_gray	Light Gray Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_lime	item.enderio.fused_quartz_a_lime	Lime Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_magenta	item.enderio.fused_quartz_a_magenta	Magenta Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_orange	item.enderio.fused_quartz_a_orange	Orange Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_pink	item.enderio.fused_quartz_a_pink	Pink Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_purple	item.enderio.fused_quartz_a_purple	Purple Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_red	item.enderio.fused_quartz_a_red	Red Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_white	item.enderio.fused_quartz_a_white	White Fused Quartz (Animals Pass)
+enderio:fused_quartz_a_yellow	item.enderio.fused_quartz_a_yellow	Yellow Fused Quartz (Animals Pass)
+enderio:fused_quartz_da	item.enderio.fused_quartz_da	Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_black	item.enderio.fused_quartz_da_black	Black Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_blue	item.enderio.fused_quartz_da_blue	Blue Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_brown	item.enderio.fused_quartz_da_brown	Brown Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_cyan	item.enderio.fused_quartz_da_cyan	Cyan Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_gray	item.enderio.fused_quartz_da_gray	Gray Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_green	item.enderio.fused_quartz_da_green	Green Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_light_blue	item.enderio.fused_quartz_da_light_blue	Light Blue Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_light_gray	item.enderio.fused_quartz_da_light_gray	Light Gray Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_lime	item.enderio.fused_quartz_da_lime	Lime Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_magenta	item.enderio.fused_quartz_da_magenta	Magenta Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_orange	item.enderio.fused_quartz_da_orange	Orange Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_pink	item.enderio.fused_quartz_da_pink	Pink Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_purple	item.enderio.fused_quartz_da_purple	Purple Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_red	item.enderio.fused_quartz_da_red	Red Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_white	item.enderio.fused_quartz_da_white	White Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_da_yellow	item.enderio.fused_quartz_da_yellow	Yellow Dark Fused Quartz (Animals Pass)
+enderio:fused_quartz_dm	item.enderio.fused_quartz_dm	Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_black	item.enderio.fused_quartz_dm_black	Black Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_blue	item.enderio.fused_quartz_dm_blue	Blue Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_brown	item.enderio.fused_quartz_dm_brown	Brown Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_cyan	item.enderio.fused_quartz_dm_cyan	Cyan Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_gray	item.enderio.fused_quartz_dm_gray	Gray Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_green	item.enderio.fused_quartz_dm_green	Green Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_light_blue	item.enderio.fused_quartz_dm_light_blue	Light Blue Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_light_gray	item.enderio.fused_quartz_dm_light_gray	Light Gray Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_lime	item.enderio.fused_quartz_dm_lime	Lime Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_magenta	item.enderio.fused_quartz_dm_magenta	Magenta Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_orange	item.enderio.fused_quartz_dm_orange	Orange Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_pink	item.enderio.fused_quartz_dm_pink	Pink Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_purple	item.enderio.fused_quartz_dm_purple	Purple Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_red	item.enderio.fused_quartz_dm_red	Red Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_white	item.enderio.fused_quartz_dm_white	White Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dm_yellow	item.enderio.fused_quartz_dm_yellow	Yellow Dark Fused Quartz (Monsters Pass)
+enderio:fused_quartz_dna	item.enderio.fused_quartz_dna	Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_black	item.enderio.fused_quartz_dna_black	Black Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_blue	item.enderio.fused_quartz_dna_blue	Blue Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_brown	item.enderio.fused_quartz_dna_brown	Brown Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_cyan	item.enderio.fused_quartz_dna_cyan	Cyan Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_gray	item.enderio.fused_quartz_dna_gray	Gray Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_green	item.enderio.fused_quartz_dna_green	Green Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_light_blue	item.enderio.fused_quartz_dna_light_blue	Light Blue Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_light_gray	item.enderio.fused_quartz_dna_light_gray	Light Gray Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_lime	item.enderio.fused_quartz_dna_lime	Lime Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_magenta	item.enderio.fused_quartz_dna_magenta	Magenta Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_orange	item.enderio.fused_quartz_dna_orange	Orange Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_pink	item.enderio.fused_quartz_dna_pink	Pink Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_purple	item.enderio.fused_quartz_dna_purple	Purple Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_red	item.enderio.fused_quartz_dna_red	Red Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_white	item.enderio.fused_quartz_dna_white	White Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dna_yellow	item.enderio.fused_quartz_dna_yellow	Yellow Dark Fused Quartz (Animals Blocked)
+enderio:fused_quartz_dnm	item.enderio.fused_quartz_dnm	Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_black	item.enderio.fused_quartz_dnm_black	Black Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_blue	item.enderio.fused_quartz_dnm_blue	Blue Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_brown	item.enderio.fused_quartz_dnm_brown	Brown Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_cyan	item.enderio.fused_quartz_dnm_cyan	Cyan Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_gray	item.enderio.fused_quartz_dnm_gray	Gray Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_green	item.enderio.fused_quartz_dnm_green	Green Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_light_blue	item.enderio.fused_quartz_dnm_light_blue	Light Blue Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_light_gray	item.enderio.fused_quartz_dnm_light_gray	Light Gray Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_lime	item.enderio.fused_quartz_dnm_lime	Lime Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_magenta	item.enderio.fused_quartz_dnm_magenta	Magenta Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_orange	item.enderio.fused_quartz_dnm_orange	Orange Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_pink	item.enderio.fused_quartz_dnm_pink	Pink Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_purple	item.enderio.fused_quartz_dnm_purple	Purple Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_red	item.enderio.fused_quartz_dnm_red	Red Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_white	item.enderio.fused_quartz_dnm_white	White Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnm_yellow	item.enderio.fused_quartz_dnm_yellow	Yellow Dark Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_dnp	item.enderio.fused_quartz_dnp	Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_black	item.enderio.fused_quartz_dnp_black	Black Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_blue	item.enderio.fused_quartz_dnp_blue	Blue Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_brown	item.enderio.fused_quartz_dnp_brown	Brown Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_cyan	item.enderio.fused_quartz_dnp_cyan	Cyan Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_gray	item.enderio.fused_quartz_dnp_gray	Gray Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_green	item.enderio.fused_quartz_dnp_green	Green Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_light_blue	item.enderio.fused_quartz_dnp_light_blue	Light Blue Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_light_gray	item.enderio.fused_quartz_dnp_light_gray	Light Gray Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_lime	item.enderio.fused_quartz_dnp_lime	Lime Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_magenta	item.enderio.fused_quartz_dnp_magenta	Magenta Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_orange	item.enderio.fused_quartz_dnp_orange	Orange Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_pink	item.enderio.fused_quartz_dnp_pink	Pink Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_purple	item.enderio.fused_quartz_dnp_purple	Purple Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_red	item.enderio.fused_quartz_dnp_red	Red Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_white	item.enderio.fused_quartz_dnp_white	White Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dnp_yellow	item.enderio.fused_quartz_dnp_yellow	Yellow Dark Fused Quartz (Players Blocked)
+enderio:fused_quartz_dp	item.enderio.fused_quartz_dp	Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_black	item.enderio.fused_quartz_dp_black	Black Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_blue	item.enderio.fused_quartz_dp_blue	Blue Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_brown	item.enderio.fused_quartz_dp_brown	Brown Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_cyan	item.enderio.fused_quartz_dp_cyan	Cyan Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_gray	item.enderio.fused_quartz_dp_gray	Gray Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_green	item.enderio.fused_quartz_dp_green	Green Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_light_blue	item.enderio.fused_quartz_dp_light_blue	Light Blue Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_light_gray	item.enderio.fused_quartz_dp_light_gray	Light Gray Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_lime	item.enderio.fused_quartz_dp_lime	Lime Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_magenta	item.enderio.fused_quartz_dp_magenta	Magenta Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_orange	item.enderio.fused_quartz_dp_orange	Orange Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_pink	item.enderio.fused_quartz_dp_pink	Pink Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_purple	item.enderio.fused_quartz_dp_purple	Purple Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_red	item.enderio.fused_quartz_dp_red	Red Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_white	item.enderio.fused_quartz_dp_white	White Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_dp_yellow	item.enderio.fused_quartz_dp_yellow	Yellow Dark Fused Quartz (Players Pass)
+enderio:fused_quartz_ea	item.enderio.fused_quartz_ea	Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_black	item.enderio.fused_quartz_ea_black	Black Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_blue	item.enderio.fused_quartz_ea_blue	Blue Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_brown	item.enderio.fused_quartz_ea_brown	Brown Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_cyan	item.enderio.fused_quartz_ea_cyan	Cyan Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_gray	item.enderio.fused_quartz_ea_gray	Gray Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_green	item.enderio.fused_quartz_ea_green	Green Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_light_blue	item.enderio.fused_quartz_ea_light_blue	Light Blue Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_light_gray	item.enderio.fused_quartz_ea_light_gray	Light Gray Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_lime	item.enderio.fused_quartz_ea_lime	Lime Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_magenta	item.enderio.fused_quartz_ea_magenta	Magenta Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_orange	item.enderio.fused_quartz_ea_orange	Orange Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_pink	item.enderio.fused_quartz_ea_pink	Pink Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_purple	item.enderio.fused_quartz_ea_purple	Purple Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_red	item.enderio.fused_quartz_ea_red	Red Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_white	item.enderio.fused_quartz_ea_white	White Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_ea_yellow	item.enderio.fused_quartz_ea_yellow	Yellow Enlightened Fused Quartz (Animals Pass)
+enderio:fused_quartz_em	item.enderio.fused_quartz_em	Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_black	item.enderio.fused_quartz_em_black	Black Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_blue	item.enderio.fused_quartz_em_blue	Blue Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_brown	item.enderio.fused_quartz_em_brown	Brown Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_cyan	item.enderio.fused_quartz_em_cyan	Cyan Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_gray	item.enderio.fused_quartz_em_gray	Gray Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_green	item.enderio.fused_quartz_em_green	Green Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_light_blue	item.enderio.fused_quartz_em_light_blue	Light Blue Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_light_gray	item.enderio.fused_quartz_em_light_gray	Light Gray Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_lime	item.enderio.fused_quartz_em_lime	Lime Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_magenta	item.enderio.fused_quartz_em_magenta	Magenta Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_orange	item.enderio.fused_quartz_em_orange	Orange Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_pink	item.enderio.fused_quartz_em_pink	Pink Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_purple	item.enderio.fused_quartz_em_purple	Purple Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_red	item.enderio.fused_quartz_em_red	Red Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_white	item.enderio.fused_quartz_em_white	White Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_em_yellow	item.enderio.fused_quartz_em_yellow	Yellow Enlightened Fused Quartz (Monsters Pass)
+enderio:fused_quartz_ena	item.enderio.fused_quartz_ena	Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_black	item.enderio.fused_quartz_ena_black	Black Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_blue	item.enderio.fused_quartz_ena_blue	Blue Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_brown	item.enderio.fused_quartz_ena_brown	Brown Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_cyan	item.enderio.fused_quartz_ena_cyan	Cyan Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_gray	item.enderio.fused_quartz_ena_gray	Gray Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_green	item.enderio.fused_quartz_ena_green	Green Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_light_blue	item.enderio.fused_quartz_ena_light_blue	Light Blue Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_light_gray	item.enderio.fused_quartz_ena_light_gray	Light Gray Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_lime	item.enderio.fused_quartz_ena_lime	Lime Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_magenta	item.enderio.fused_quartz_ena_magenta	Magenta Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_orange	item.enderio.fused_quartz_ena_orange	Orange Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_pink	item.enderio.fused_quartz_ena_pink	Pink Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_purple	item.enderio.fused_quartz_ena_purple	Purple Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_red	item.enderio.fused_quartz_ena_red	Red Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_white	item.enderio.fused_quartz_ena_white	White Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_ena_yellow	item.enderio.fused_quartz_ena_yellow	Yellow Enlightened Fused Quartz (Animals Blocked)
+enderio:fused_quartz_enm	item.enderio.fused_quartz_enm	Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_black	item.enderio.fused_quartz_enm_black	Black Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_blue	item.enderio.fused_quartz_enm_blue	Blue Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_brown	item.enderio.fused_quartz_enm_brown	Brown Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_cyan	item.enderio.fused_quartz_enm_cyan	Cyan Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_gray	item.enderio.fused_quartz_enm_gray	Gray Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_green	item.enderio.fused_quartz_enm_green	Green Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_light_blue	item.enderio.fused_quartz_enm_light_blue	Light Blue Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_light_gray	item.enderio.fused_quartz_enm_light_gray	Light Gray Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_lime	item.enderio.fused_quartz_enm_lime	Lime Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_magenta	item.enderio.fused_quartz_enm_magenta	Magenta Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_orange	item.enderio.fused_quartz_enm_orange	Orange Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_pink	item.enderio.fused_quartz_enm_pink	Pink Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_purple	item.enderio.fused_quartz_enm_purple	Purple Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_red	item.enderio.fused_quartz_enm_red	Red Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_white	item.enderio.fused_quartz_enm_white	White Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enm_yellow	item.enderio.fused_quartz_enm_yellow	Yellow Enlightened Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_enp	item.enderio.fused_quartz_enp	Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_black	item.enderio.fused_quartz_enp_black	Black Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_blue	item.enderio.fused_quartz_enp_blue	Blue Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_brown	item.enderio.fused_quartz_enp_brown	Brown Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_cyan	item.enderio.fused_quartz_enp_cyan	Cyan Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_gray	item.enderio.fused_quartz_enp_gray	Gray Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_green	item.enderio.fused_quartz_enp_green	Green Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_light_blue	item.enderio.fused_quartz_enp_light_blue	Light Blue Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_light_gray	item.enderio.fused_quartz_enp_light_gray	Light Gray Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_lime	item.enderio.fused_quartz_enp_lime	Lime Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_magenta	item.enderio.fused_quartz_enp_magenta	Magenta Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_orange	item.enderio.fused_quartz_enp_orange	Orange Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_pink	item.enderio.fused_quartz_enp_pink	Pink Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_purple	item.enderio.fused_quartz_enp_purple	Purple Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_red	item.enderio.fused_quartz_enp_red	Red Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_white	item.enderio.fused_quartz_enp_white	White Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_enp_yellow	item.enderio.fused_quartz_enp_yellow	Yellow Enlightened Fused Quartz (Players Blocked)
+enderio:fused_quartz_ep	item.enderio.fused_quartz_ep	Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_black	item.enderio.fused_quartz_ep_black	Black Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_blue	item.enderio.fused_quartz_ep_blue	Blue Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_brown	item.enderio.fused_quartz_ep_brown	Brown Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_cyan	item.enderio.fused_quartz_ep_cyan	Cyan Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_gray	item.enderio.fused_quartz_ep_gray	Gray Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_green	item.enderio.fused_quartz_ep_green	Green Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_light_blue	item.enderio.fused_quartz_ep_light_blue	Light Blue Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_light_gray	item.enderio.fused_quartz_ep_light_gray	Light Gray Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_lime	item.enderio.fused_quartz_ep_lime	Lime Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_magenta	item.enderio.fused_quartz_ep_magenta	Magenta Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_orange	item.enderio.fused_quartz_ep_orange	Orange Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_pink	item.enderio.fused_quartz_ep_pink	Pink Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_purple	item.enderio.fused_quartz_ep_purple	Purple Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_red	item.enderio.fused_quartz_ep_red	Red Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_white	item.enderio.fused_quartz_ep_white	White Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_ep_yellow	item.enderio.fused_quartz_ep_yellow	Yellow Enlightened Fused Quartz (Players Pass)
+enderio:fused_quartz_m	item.enderio.fused_quartz_m	Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_black	item.enderio.fused_quartz_m_black	Black Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_blue	item.enderio.fused_quartz_m_blue	Blue Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_brown	item.enderio.fused_quartz_m_brown	Brown Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_cyan	item.enderio.fused_quartz_m_cyan	Cyan Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_gray	item.enderio.fused_quartz_m_gray	Gray Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_green	item.enderio.fused_quartz_m_green	Green Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_light_blue	item.enderio.fused_quartz_m_light_blue	Light Blue Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_light_gray	item.enderio.fused_quartz_m_light_gray	Light Gray Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_lime	item.enderio.fused_quartz_m_lime	Lime Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_magenta	item.enderio.fused_quartz_m_magenta	Magenta Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_orange	item.enderio.fused_quartz_m_orange	Orange Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_pink	item.enderio.fused_quartz_m_pink	Pink Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_purple	item.enderio.fused_quartz_m_purple	Purple Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_red	item.enderio.fused_quartz_m_red	Red Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_white	item.enderio.fused_quartz_m_white	White Fused Quartz (Monsters Pass)
+enderio:fused_quartz_m_yellow	item.enderio.fused_quartz_m_yellow	Yellow Fused Quartz (Monsters Pass)
+enderio:fused_quartz_na	item.enderio.fused_quartz_na	Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_black	item.enderio.fused_quartz_na_black	Black Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_blue	item.enderio.fused_quartz_na_blue	Blue Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_brown	item.enderio.fused_quartz_na_brown	Brown Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_cyan	item.enderio.fused_quartz_na_cyan	Cyan Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_gray	item.enderio.fused_quartz_na_gray	Gray Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_green	item.enderio.fused_quartz_na_green	Green Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_light_blue	item.enderio.fused_quartz_na_light_blue	Light Blue Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_light_gray	item.enderio.fused_quartz_na_light_gray	Light Gray Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_lime	item.enderio.fused_quartz_na_lime	Lime Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_magenta	item.enderio.fused_quartz_na_magenta	Magenta Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_orange	item.enderio.fused_quartz_na_orange	Orange Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_pink	item.enderio.fused_quartz_na_pink	Pink Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_purple	item.enderio.fused_quartz_na_purple	Purple Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_red	item.enderio.fused_quartz_na_red	Red Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_white	item.enderio.fused_quartz_na_white	White Fused Quartz (Animals Blocked)
+enderio:fused_quartz_na_yellow	item.enderio.fused_quartz_na_yellow	Yellow Fused Quartz (Animals Blocked)
+enderio:fused_quartz_nm	item.enderio.fused_quartz_nm	Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_black	item.enderio.fused_quartz_nm_black	Black Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_blue	item.enderio.fused_quartz_nm_blue	Blue Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_brown	item.enderio.fused_quartz_nm_brown	Brown Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_cyan	item.enderio.fused_quartz_nm_cyan	Cyan Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_gray	item.enderio.fused_quartz_nm_gray	Gray Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_green	item.enderio.fused_quartz_nm_green	Green Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_light_blue	item.enderio.fused_quartz_nm_light_blue	Light Blue Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_light_gray	item.enderio.fused_quartz_nm_light_gray	Light Gray Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_lime	item.enderio.fused_quartz_nm_lime	Lime Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_magenta	item.enderio.fused_quartz_nm_magenta	Magenta Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_orange	item.enderio.fused_quartz_nm_orange	Orange Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_pink	item.enderio.fused_quartz_nm_pink	Pink Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_purple	item.enderio.fused_quartz_nm_purple	Purple Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_red	item.enderio.fused_quartz_nm_red	Red Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_white	item.enderio.fused_quartz_nm_white	White Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_nm_yellow	item.enderio.fused_quartz_nm_yellow	Yellow Fused Quartz (Monsters Blocked)
+enderio:fused_quartz_np	item.enderio.fused_quartz_np	Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_black	item.enderio.fused_quartz_np_black	Black Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_blue	item.enderio.fused_quartz_np_blue	Blue Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_brown	item.enderio.fused_quartz_np_brown	Brown Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_cyan	item.enderio.fused_quartz_np_cyan	Cyan Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_gray	item.enderio.fused_quartz_np_gray	Gray Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_green	item.enderio.fused_quartz_np_green	Green Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_light_blue	item.enderio.fused_quartz_np_light_blue	Light Blue Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_light_gray	item.enderio.fused_quartz_np_light_gray	Light Gray Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_lime	item.enderio.fused_quartz_np_lime	Lime Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_magenta	item.enderio.fused_quartz_np_magenta	Magenta Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_orange	item.enderio.fused_quartz_np_orange	Orange Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_pink	item.enderio.fused_quartz_np_pink	Pink Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_purple	item.enderio.fused_quartz_np_purple	Purple Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_red	item.enderio.fused_quartz_np_red	Red Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_white	item.enderio.fused_quartz_np_white	White Fused Quartz (Players Blocked)
+enderio:fused_quartz_np_yellow	item.enderio.fused_quartz_np_yellow	Yellow Fused Quartz (Players Blocked)
+enderio:fused_quartz_p	item.enderio.fused_quartz_p	Fused Quartz (Players Pass)
+enderio:fused_quartz_p_black	item.enderio.fused_quartz_p_black	Black Fused Quartz (Players Pass)
+enderio:fused_quartz_p_blue	item.enderio.fused_quartz_p_blue	Blue Fused Quartz (Players Pass)
+enderio:fused_quartz_p_brown	item.enderio.fused_quartz_p_brown	Brown Fused Quartz (Players Pass)
+enderio:fused_quartz_p_cyan	item.enderio.fused_quartz_p_cyan	Cyan Fused Quartz (Players Pass)
+enderio:fused_quartz_p_gray	item.enderio.fused_quartz_p_gray	Gray Fused Quartz (Players Pass)
+enderio:fused_quartz_p_green	item.enderio.fused_quartz_p_green	Green Fused Quartz (Players Pass)
+enderio:fused_quartz_p_light_blue	item.enderio.fused_quartz_p_light_blue	Light Blue Fused Quartz (Players Pass)
+enderio:fused_quartz_p_light_gray	item.enderio.fused_quartz_p_light_gray	Light Gray Fused Quartz (Players Pass)
+enderio:fused_quartz_p_lime	item.enderio.fused_quartz_p_lime	Lime Fused Quartz (Players Pass)
+enderio:fused_quartz_p_magenta	item.enderio.fused_quartz_p_magenta	Magenta Fused Quartz (Players Pass)
+enderio:fused_quartz_p_orange	item.enderio.fused_quartz_p_orange	Orange Fused Quartz (Players Pass)
+enderio:fused_quartz_p_pink	item.enderio.fused_quartz_p_pink	Pink Fused Quartz (Players Pass)
+enderio:fused_quartz_p_purple	item.enderio.fused_quartz_p_purple	Purple Fused Quartz (Players Pass)
+enderio:fused_quartz_p_red	item.enderio.fused_quartz_p_red	Red Fused Quartz (Players Pass)
+enderio:fused_quartz_p_white	item.enderio.fused_quartz_p_white	White Fused Quartz (Players Pass)
+enderio:fused_quartz_p_yellow	item.enderio.fused_quartz_p_yellow	Yellow Fused Quartz (Players Pass)
+immersiveengineering:he	item.immersiveengineering.he	HE
+kubejs:acacia_flooring_block	block.kubejs.acacia_flooring_block	Acacia Flooring
+kubejs:ai	item.kubejs.ai	Artificial Intelligence
+kubejs:almond_water_can	item.kubejs.almond_water_can	Almond Water
+kubejs:arrow1_sign	block.kubejs.arrow1_sign	sign
+kubejs:arrow2_sign	block.kubejs.arrow2_sign	sign
+kubejs:asphalt_floor	block.kubejs.asphalt_floor	Asphalt Floor
+kubejs:asphalt_floor_slab	block.kubejs.asphalt_floor_slab	Asphalt Floor Slab
+kubejs:asphalt_floor_stairs	block.kubejs.asphalt_floor_stairs	Asphalt Floor Stairs
+kubejs:backrooms_speaker	block.kubejs.backrooms_speaker	Backrooms Speaker
+kubejs:backup_generator	block.kubejs.backup_generator	Backup Generator
+kubejs:ball_pit_bucket	item.kubejs.ball_pit_bucket	Ball Pit
+kubejs:bamboo_flooring_block	block.kubejs.bamboo_flooring_block	Bamboo Flooring
+kubejs:batteries	block.kubejs.batteries	Batteries
+kubejs:birch_flooring_block	block.kubejs.birch_flooring_block	Birch Flooring
+kubejs:black_hole	block.kubejs.black_hole	Mini Black Hole
+kubejs:box_sign	block.kubejs.box_sign	sign
+kubejs:brittle_porous_stone	block.kubejs.brittle_porous_stone	Brittle Porous Stone
+kubejs:brittle_porous_stone_dark	block.kubejs.brittle_porous_stone_dark	Brittle Dark Porous Stone
+kubejs:cardboard_flooring_block	block.kubejs.cardboard_flooring_block	Cardboard Flooring
+kubejs:carpet	block.kubejs.carpet	Carpet
+kubejs:carpet_dust_block	block.kubejs.carpet_dust_block	Block of Carpet Dust
+kubejs:carpet_grass	block.kubejs.carpet_grass	Carpet Grass
+kubejs:carpet_slab	block.kubejs.carpet_slab	Carpet Slab
+kubejs:carpet_soft	block.kubejs.carpet_soft	Carpet
+kubejs:carpet_stairs	block.kubejs.carpet_stairs	Carpet Stairs
+kubejs:ceilling	block.kubejs.ceilling	Ceiling
+kubejs:ceilling2	block.kubejs.ceilling2	Ceiling (White)
+kubejs:ceilling_edge	block.kubejs.ceilling_edge	Ceiling Edge
+kubejs:ceilling_frame	block.kubejs.ceilling_frame	Ceiling Frame
+kubejs:ceilling_lamp	block.kubejs.ceilling_lamp	Ceiling Lamp
+kubejs:ceilling_lamp2	block.kubejs.ceilling_lamp2	White Ceiling Lamp
+kubejs:ceilling_lamp2_blinking	block.kubejs.ceilling_lamp2_blinking	White Ceiling Lamp (Blinking)
+kubejs:ceilling_lamp2_breaking	block.kubejs.ceilling_lamp2_breaking	White Ceiling Lamp (Breaking)
+kubejs:ceilling_lamp2_broken	block.kubejs.ceilling_lamp2_broken	White Ceiling Lamp (Broken)
+kubejs:ceilling_lamp2_dying	block.kubejs.ceilling_lamp2_dying	White Ceiling Lamp (Dying)
+kubejs:ceilling_lamp2_off	block.kubejs.ceilling_lamp2_off	White Ceiling Lamp (Off)
+kubejs:ceilling_lamp_blinking	block.kubejs.ceilling_lamp_blinking	Ceiling Lamp (Blinking)
+kubejs:ceilling_lamp_breaking	block.kubejs.ceilling_lamp_breaking	Ceiling Lamp (Breaking)
+kubejs:ceilling_lamp_broken	block.kubejs.ceilling_lamp_broken	Ceiling Lamp (Broken)
+kubejs:ceilling_lamp_dying	block.kubejs.ceilling_lamp_dying	Ceiling Lamp (Dying)
+kubejs:ceilling_lamp_off	block.kubejs.ceilling_lamp_off	Ceiling Lamp (Off)
+kubejs:ceilling_lamp_red	block.kubejs.ceilling_lamp_red	Red Ceiling Lamp
+kubejs:ceilling_lamp_red_blinking	block.kubejs.ceilling_lamp_red_blinking	Red Ceiling Lamp (Blinking)
+kubejs:ceilling_lamp_red_breaking	block.kubejs.ceilling_lamp_red_breaking	Red Ceiling Lamp (Breaking)
+kubejs:ceilling_lamp_red_broken	block.kubejs.ceilling_lamp_red_broken	Red Ceiling Lamp (Broken)
+kubejs:ceilling_lamp_red_dying	block.kubejs.ceilling_lamp_red_dying	Red Ceiling Lamp (Dying)
+kubejs:ceilling_lamp_red_off	block.kubejs.ceilling_lamp_red_off	Red Ceiling Lamp (Off)
+kubejs:ceilling_red	block.kubejs.ceilling_red	Ceiling
+kubejs:ceilling_slab	block.kubejs.ceilling_slab	Ceiling Slab
+kubejs:ceilling_stairs	block.kubejs.ceilling_stairs	Ceiling Stairs
+kubejs:checker_flooring_block	block.kubejs.checker_flooring_block	Checker Flooring
+kubejs:cherry_flooring_block	block.kubejs.cherry_flooring_block	Cherry Flooring
+kubejs:closet	block.kubejs.closet	Closet
+kubejs:closet_small	block.kubejs.closet_small	Small Closet
+kubejs:cobblestone_bucket	item.kubejs.cobblestone_bucket	Bucket of Cobblestone
+kubejs:compound_charge	block.kubejs.compound_charge	Compound Charge
+kubejs:compound_sponge	block.kubejs.compound_sponge	Compound Soaked Sponge
+kubejs:concrete_piece	item.kubejs.concrete_piece	Piece of Concrete
+kubejs:controller_wallpaper	block.kubejs.controller_wallpaper	Controller Wallpaper
+kubejs:controller_wallpaper_dead	block.kubejs.controller_wallpaper_dead	Dead Controller Wallpaper
+kubejs:crimson_flooring_block	block.kubejs.crimson_flooring_block	Crimson Flooring
+kubejs:cross_sign	block.kubejs.cross_sign	sign
+kubejs:cryptic_block	block.kubejs.cryptic_block	Cryptic Block
+kubejs:dark_casing	block.kubejs.dark_casing	Dark Casing
+kubejs:dark_oak_flooring_block	block.kubejs.dark_oak_flooring_block	Dark Oak Flooring
+kubejs:data_chip1	item.kubejs.data_chip1	Data Chip
+kubejs:data_chip10	item.kubejs.data_chip10	Data Chip
+kubejs:data_chip2	item.kubejs.data_chip2	Data Chip
+kubejs:data_chip3	item.kubejs.data_chip3	Data Chip
+kubejs:data_chip4	item.kubejs.data_chip4	Data Chip
+kubejs:data_chip5	item.kubejs.data_chip5	Data Chip
+kubejs:data_chip6	item.kubejs.data_chip6	Data Chip
+kubejs:data_chip7	item.kubejs.data_chip7	Data Chip
+kubejs:data_chip8	item.kubejs.data_chip8	Data Chip
+kubejs:data_chip9	item.kubejs.data_chip9	Data Chip
+kubejs:data_chip_error	item.kubejs.data_chip_error	Broken Data Chip
+kubejs:data_chip_infinity	item.kubejs.data_chip_infinity	Modified Data Chip
+kubejs:dead_room_node_block	block.kubejs.dead_room_node_block	Dead Room Node Block
+kubejs:dead_room_node_connector	block.kubejs.dead_room_node_connector	Dead Room Node Connector
+kubejs:dimensional_package_depot	block.kubejs.dimensional_package_depot	Dimensional Package Depot
+kubejs:drain	block.kubejs.drain	Drain (Permanent)
+kubejs:drain_breakable	block.kubejs.drain_breakable	Drain
+kubejs:drain_item	item.kubejs.drain_item	Drain Grate
+kubejs:empty_almond_water_can	item.kubejs.empty_almond_water_can	Almond Water (Empty)
+kubejs:empty_compound_charge	block.kubejs.empty_compound_charge	Empty Compound Charge
+kubejs:empty_wooden_silverfish_cage	block.kubejs.empty_wooden_silverfish_cage	Wooden Silverfish Cage (Empty)
+kubejs:error	block.kubejs.error	Divided by Zero
+kubejs:error_carpet	block.kubejs.error_carpet	Divided by Zero
+kubejs:error_item	item.kubejs.error_item	Error
+kubejs:error_wallpaper	block.kubejs.error_wallpaper	Divided by Zero
+kubejs:event_room_node_block	block.kubejs.event_room_node_block	Event Room Node Block
+kubejs:exit_sign	block.kubejs.exit_sign	sign
+kubejs:exit_sign2	block.kubejs.exit_sign2	sign
+kubejs:exotic_eye	block.kubejs.exotic_eye	Exotic Eye
+kubejs:explantion1_sign	block.kubejs.explantion1_sign	sign
+kubejs:explantion2_sign	block.kubejs.explantion2_sign	sign
+kubejs:exposed_controller_wallpaper	block.kubejs.exposed_controller_wallpaper	Exposed Controller Wallpaper
+kubejs:feature_node	block.kubejs.feature_node	Feature Node
+kubejs:floor_tiles	block.kubejs.floor_tiles	Floor Tiles
+kubejs:floor_tiles_full	block.kubejs.floor_tiles_full	Floor Tiles
+kubejs:floor_tiles_infinite	block.kubejs.floor_tiles_infinite	Floor Tiles
+kubejs:half_frame_bottom	block.kubejs.half_frame_bottom	Bottom of a Machine Frame
+kubejs:half_frame_top	block.kubejs.half_frame_top	Top of a Machine Frame
+kubejs:heavy_engineering_empty	block.kubejs.heavy_engineering_empty	Heavy Engineering Frame
+kubejs:ice_cold_almond_water_can	item.kubejs.ice_cold_almond_water_can	Almond Water (Ice Cold)
+kubejs:incomplete_component_electronic	item.kubejs.incomplete_component_electronic	Incomplete Electronic Component
+kubejs:incomplete_component_electronic_adv	item.kubejs.incomplete_component_electronic_adv	Incomplete Advanced Electronic Component
+kubejs:infected_strange_bricks	block.kubejs.infected_strange_bricks	Infected Strange Bricks
+kubejs:infinity_sign	block.kubejs.infinity_sign	sign
+kubejs:inkblod_sign	block.kubejs.inkblod_sign	sign
+kubejs:jungle_flooring_block	block.kubejs.jungle_flooring_block	Jungle Flooring
+kubejs:layered_room_node_block	block.kubejs.layered_room_node_block	Layered Room Node Block
+kubejs:left_arrow_sign	block.kubejs.left_arrow_sign	sign
+kubejs:light_engineering_empty	block.kubejs.light_engineering_empty	Light Engineering Frame
+kubejs:liminal_warning	block.kubejs.liminal_warning	sign
+kubejs:liminal_warning2	block.kubejs.liminal_warning2	sign
+kubejs:liminalstone	block.kubejs.liminalstone	Liminalstone
+kubejs:liminalstone_poolrooms	block.kubejs.liminalstone_poolrooms	Liminalstone
+kubejs:liquid_pain_can_hidden	item.kubejs.liquid_pain_can_hidden	Almond Water (Tampered)
+kubejs:liquid_time_bucket	item.kubejs.liquid_time_bucket	The Flow of Time
+kubejs:lithium_ion_batteries	block.kubejs.lithium_ion_batteries	Lithium-Ion Batteries
+kubejs:lithium_ion_battery	item.kubejs.lithium_ion_battery	Lithium-Ion Battery
+kubejs:loaded_closet	block.kubejs.loaded_closet	Closet
+kubejs:location_terminal	block.kubejs.location_terminal	Location Terminal
+kubejs:locker_sculkling	block.kubejs.locker_sculkling	Pool Locker
+kubejs:long_pool_tiles	block.kubejs.long_pool_tiles	Pool Tiles (Long)
+kubejs:long_pool_tiles_slab	block.kubejs.long_pool_tiles_slab	Pool Tiles Slab (Long)
+kubejs:long_pool_tiles_soft	block.kubejs.long_pool_tiles_soft	Pool Tiles (Long)
+kubejs:long_pool_tiles_stairs	block.kubejs.long_pool_tiles_stairs	Pool Tiles Stairs (Long)
+kubejs:long_range_wall_destroyer	block.kubejs.long_range_wall_destroyer	Long-Range Wall Piercer
+kubejs:lost_eye	block.kubejs.lost_eye	Lost Eye
+kubejs:mangrove_flooring_block	block.kubejs.mangrove_flooring_block	Mangrove Flooring
+kubejs:metal_ceilling	block.kubejs.metal_ceilling	Metal Ceilling
+kubejs:metal_ceilling_slab	block.kubejs.metal_ceilling_slab	Metal Ceiling Slab
+kubejs:metal_ceilling_stairs	block.kubejs.metal_ceilling_stairs	Metal Ceiling Slab
+kubejs:missing_tiles_empty	block.kubejs.missing_tiles_empty	Missing Pool Tiles
+kubejs:missing_tiles_empty_perm	block.kubejs.missing_tiles_empty_perm	Missing Pool Tiles (Permanent)
+kubejs:missing_tiles_half	block.kubejs.missing_tiles_half	Missing Pool Tiles
+kubejs:missing_tiles_half_perm	block.kubejs.missing_tiles_half_perm	Missing Pool Tiles (Permanent)
+kubejs:monolith_sign	block.kubejs.monolith_sign	sign
+kubejs:nowhere_sign	block.kubejs.nowhere_sign	sign
+kubejs:oak_flooring_block	block.kubejs.oak_flooring_block	Oak Flooring
+kubejs:oil_carpet	block.kubejs.oil_carpet	Crude Oil Soaked Carpet
+kubejs:oil_sponge	block.kubejs.oil_sponge	Oil Soaked Sponge
+kubejs:old_concrete	block.kubejs.old_concrete	Old Concrete
+kubejs:old_concrete_bordered	block.kubejs.old_concrete_bordered	Old Concrete Bordered
+kubejs:old_concrete_plated	block.kubejs.old_concrete_plated	Old Concrete Plated
+kubejs:old_concrete_plated_pillar	block.kubejs.old_concrete_plated_pillar	Old Concrete Plated Pillar
+kubejs:open_pool_locker_double	block.kubejs.open_pool_locker_double	Pool Locker
+kubejs:open_pool_locker_single	block.kubejs.open_pool_locker_single	Pool Locker
+kubejs:perfectly_stablised_compound	item.kubejs.perfectly_stablised_compound	Perfectly Stable Compound
+kubejs:plywood_block	block.kubejs.plywood_block	Plywood Block
+kubejs:polished_wood_floor	block.kubejs.polished_wood_floor	Polished Wood Floor
+kubejs:polished_wood_floor_stairs	block.kubejs.polished_wood_floor_stairs	Polished Wood Floor Stairs
+kubejs:polished_wood_flooring_block	block.kubejs.polished_wood_flooring_block	Polished Wood Flooring
+kubejs:pool_locker_double	block.kubejs.pool_locker_double	Pool Locker
+kubejs:pool_locker_single	block.kubejs.pool_locker_single	Pool Locker
+kubejs:pool_tile_golden	item.kubejs.pool_tile_golden	Golden Pool Tile
+kubejs:pool_tiles	block.kubejs.pool_tiles	Pool Tiles
+kubejs:pool_tiles_fake	block.kubejs.pool_tiles_fake	Fake Pool Tiles
+kubejs:pool_tiles_golden	block.kubejs.pool_tiles_golden	Golden Pool Tiles
+kubejs:pool_tiles_golden_fake	block.kubejs.pool_tiles_golden_fake	Fake Pool Tiles Golden
+kubejs:pool_tiles_golden_half	block.kubejs.pool_tiles_golden_half	Golden Pool Tiles
+kubejs:pool_tiles_golden_half_fake	block.kubejs.pool_tiles_golden_half_fake	Fake Pool Tiles Golden Half
+kubejs:pool_tiles_missing_fake	block.kubejs.pool_tiles_missing_fake	Fake Missing Pool Tiles
+kubejs:pool_tiles_sky	block.kubejs.pool_tiles_sky	Pool Tiles
+kubejs:pool_tiles_slab	block.kubejs.pool_tiles_slab	Pool Tiles Slab
+kubejs:pool_tiles_soft	block.kubejs.pool_tiles_soft	Pool Tiles
+kubejs:pool_tiles_stairs	block.kubejs.pool_tiles_stairs	Pool Tiles Stairs
+kubejs:pool_tiles_wet	block.kubejs.pool_tiles_wet	Wet Pool Tiles
+kubejs:poolrooms_portal	block.kubejs.poolrooms_portal	Poolrooms Entrance
+kubejs:porous_stone	block.kubejs.porous_stone	Porous Stone
+kubejs:reality_charge	block.kubejs.reality_charge	Reality Charge
+kubejs:reality_charge_empty	block.kubejs.reality_charge_empty	Empty Reality Charge
+kubejs:reality_chest	block.kubejs.reality_chest	Reality Chest
+kubejs:reality_controller	block.kubejs.reality_controller	Reality Controller
+kubejs:reality_controller_running	block.kubejs.reality_controller_running	Reality Controller (Active)
+kubejs:reality_core	block.kubejs.reality_core	Active Reality Core
+kubejs:reality_frame	block.kubejs.reality_frame	Reality Frame
+kubejs:reality_spawner	block.kubejs.reality_spawner	Reality Spawner
+kubejs:reality_storage_cell1	item.kubejs.reality_storage_cell1	Reality Storage Cell
+kubejs:reality_storage_empty	item.kubejs.reality_storage_empty	Empty Reality Storage Cell
+kubejs:red_carpet	block.kubejs.red_carpet	Carpet (Red)
+kubejs:red_carpet_slab	block.kubejs.red_carpet_slab	Carpet Slab (Red)
+kubejs:red_carpet_stairs	block.kubejs.red_carpet_stairs	Carpet Stairs (Red)
+kubejs:red_tape	block.kubejs.red_tape	Red Tape
+kubejs:redstone_room_node_block	block.kubejs.redstone_room_node_block	Redstone Room Node Block
+kubejs:right_arrow_sign	block.kubejs.right_arrow_sign	sign
+kubejs:room_node_block	block.kubejs.room_node_block	Room Node Block
+kubejs:room_node_block_spawn	block.kubejs.room_node_block_spawn	Room Node Block Spawn
+kubejs:room_node_connector	block.kubejs.room_node_connector	Room Node Connector
+kubejs:rotten_wallpaper_block	block.kubejs.rotten_wallpaper_block	Rotten Wallpaper Block
+kubejs:sculk_carapace	block.kubejs.sculk_carapace	Sculk Carapace
+kubejs:sculk_scrubber	block.kubejs.sculk_scrubber	Sculk Scrubber
+kubejs:sculk_shroom	block.kubejs.sculk_shroom	Sculk Shroom
+kubejs:sculk_slab	block.kubejs.sculk_slab	Sculk Slab
+kubejs:sculk_stairs	block.kubejs.sculk_stairs	Sculk Stairs
+kubejs:sculk_tendrils	block.kubejs.sculk_tendrils	Sculk Tendrils
+kubejs:sculked_sculk_scrubber	block.kubejs.sculked_sculk_scrubber	Sculked Sculk Scrubber
+kubejs:shop_terminal	block.kubejs.shop_terminal	Shop Terminal
+kubejs:skull_sign	block.kubejs.skull_sign	sign
+kubejs:sky_day_block	block.kubejs.sky_day_block	Day Sky Block
+kubejs:sky_morning_block	block.kubejs.sky_morning_block	Morning Sky Block
+kubejs:sky_night_block	block.kubejs.sky_night_block	Night Sky Block
+kubejs:sky_sunset_block	block.kubejs.sky_sunset_block	Sunset Sky Block
+kubejs:soggy_carpet	block.kubejs.soggy_carpet	Soggy Carpet
+kubejs:soul_carpet	block.kubejs.soul_carpet	Soul Carpet
+kubejs:spruce_flooring_block	block.kubejs.spruce_flooring_block	Spruce Flooring
+kubejs:stop_sign	block.kubejs.stop_sign	sign
+kubejs:strange_bricks	block.kubejs.strange_bricks	Strange Bricks
+kubejs:stripped_wallpaper	block.kubejs.stripped_wallpaper	Stripped Wallpaper
+kubejs:stripped_wallpaper2	block.kubejs.stripped_wallpaper2	Stripped Wallpaper
+kubejs:stripped_wallpaper2_perm	block.kubejs.stripped_wallpaper2_perm	Stripped Wallpaper (Permanent)
+kubejs:stripped_wallpaper3	block.kubejs.stripped_wallpaper3	Stripped Wallpaper
+kubejs:stripped_wallpaper3_perm	block.kubejs.stripped_wallpaper3_perm	Stripped Wallpaper (Permanent)
+kubejs:stripped_wallpaper4	block.kubejs.stripped_wallpaper4	Stripped Wallpaper
+kubejs:stripped_wallpaper4_perm	block.kubejs.stripped_wallpaper4_perm	Stripped Wallpaper (Permanent)
+kubejs:stripped_wallpaper5	block.kubejs.stripped_wallpaper5	Stripped Wallpaper
+kubejs:stripped_wallpaper5_perm	block.kubejs.stripped_wallpaper5_perm	Stripped Wallpaper (Permanent)
+kubejs:stripped_wallpaper6	block.kubejs.stripped_wallpaper6	Stripped Wallpaper
+kubejs:stripped_wallpaper6_perm	block.kubejs.stripped_wallpaper6_perm	Stripped Wallpaper (Permanent)
+kubejs:stripped_wallpaper7	block.kubejs.stripped_wallpaper7	Stripped Wallpaper
+kubejs:stripped_wallpaper7_perm	block.kubejs.stripped_wallpaper7_perm	Stripped Wallpaper (Permanent)
+kubejs:stripped_wallpaper_perm	block.kubejs.stripped_wallpaper_perm	Stripped Wallpaper (Permanent)
+kubejs:structure_foam_expanding	block.kubejs.structure_foam_expanding	Expanding Structure Foam
+kubejs:structure_foam_placeholder	block.kubejs.structure_foam_placeholder	Placeholder Structure Foam
+kubejs:traffic_pole	block.kubejs.traffic_pole	sign
+kubejs:treated_wood_flooring_block	block.kubejs.treated_wood_flooring_block	Treated Wood Flooring
+kubejs:tripple_sign	block.kubejs.tripple_sign	sign
+kubejs:turn_back_sign	block.kubejs.turn_back_sign	sign
+kubejs:unknown1	block.kubejs.unknown1	sign
+kubejs:unstable_room_node_block	block.kubejs.unstable_room_node_block	Unstable Room Node Block
+kubejs:wall_destroyer	block.kubejs.wall_destroyer	Wall Piercer
+kubejs:wallpaper1	block.kubejs.wallpaper1	Wallpaper
+kubejs:wallpaper1_slab	block.kubejs.wallpaper1_slab	Wallpaper Slab
+kubejs:wallpaper2	block.kubejs.wallpaper2	Wallpaper (Large Dots)
+kubejs:wallpaper3	block.kubejs.wallpaper3	Wallpaper (Small Dots)
+kubejs:wallpaper4	block.kubejs.wallpaper4	Wallpaper (Plain)
+kubejs:wallpaper5	block.kubejs.wallpaper5	Wallpaper (Hotel)
+kubejs:wallpaper5_slab	block.kubejs.wallpaper5_slab	Wallpaper Slab (Hotel)
+kubejs:wallpaper6	block.kubejs.wallpaper6	Wallpaper (Striped)
+kubejs:wallpaper7	block.kubejs.wallpaper7	Wallpaper (Pink)
+kubejs:wallpaper_concrete1	block.kubejs.wallpaper_concrete1	Old Concrete
+kubejs:wallpaper_concrete2	block.kubejs.wallpaper_concrete2	Old Concrete
+kubejs:wallpaper_concrete2_dark	block.kubejs.wallpaper_concrete2_dark	Old Concrete (Dark)
+kubejs:wallpaper_concrete_pillar1	block.kubejs.wallpaper_concrete_pillar1	Old Concrete Pillar
+kubejs:wallpaper_concrete_pillar_dark_hazard1	block.kubejs.wallpaper_concrete_pillar_dark_hazard1	Old Concrete Pillar (Dark)
+kubejs:wallpaper_fake	block.kubejs.wallpaper_fake	Fake Wallpaper
+kubejs:wallpaper_manila1	block.kubejs.wallpaper_manila1	Wallpaper (Manila)
+kubejs:wallpaper_manila2	block.kubejs.wallpaper_manila2	Wallpaper (Manila, Depricated)
+kubejs:wallpaper_manila3	block.kubejs.wallpaper_manila3	Wallpaper (Manila, Depricated)
+kubejs:wallpaper_nest	block.kubejs.wallpaper_nest	Wallpaper Nest
+kubejs:wallpaper_nest_perm	block.kubejs.wallpaper_nest_perm	Wallpaper Nest (Permanent)
+kubejs:wallpaper_soft	block.kubejs.wallpaper_soft	Wallpaper
+kubejs:warped_flooring_block	block.kubejs.warped_flooring_block	Warped Flooring
+kubejs:weird_chair	block.kubejs.weird_chair	Weird Chair (Oak)
+kubejs:wet_asphalt_floor	block.kubejs.wet_asphalt_floor	Wet Asphalt Floor
+kubejs:wet_pool_tiles_fake	block.kubejs.wet_pool_tiles_fake	Fake Pool Tiles (Wet)
+kubejs:witahdigroi_sign	block.kubejs.witahdigroi_sign	sign
+kubejs:wooden_silverfish_cage	block.kubejs.wooden_silverfish_cage	Wooden Silverfish Cage (Filled)
+minecraft:coast_armor_trim_smithing_template	item.minecraft.coast_armor_trim_smithing_template	Smithing Template
+minecraft:dune_armor_trim_smithing_template	item.minecraft.dune_armor_trim_smithing_template	Smithing Template
+minecraft:eye_armor_trim_smithing_template	item.minecraft.eye_armor_trim_smithing_template	Smithing Template
+minecraft:host_armor_trim_smithing_template	item.minecraft.host_armor_trim_smithing_template	Smithing Template
+minecraft:netherite_upgrade_smithing_template	item.minecraft.netherite_upgrade_smithing_template	Smithing Template
+minecraft:raiser_armor_trim_smithing_template	item.minecraft.raiser_armor_trim_smithing_template	Smithing Template
+minecraft:rib_armor_trim_smithing_template	item.minecraft.rib_armor_trim_smithing_template	Smithing Template
+minecraft:sentry_armor_trim_smithing_template	item.minecraft.sentry_armor_trim_smithing_template	Smithing Template
+minecraft:shaper_armor_trim_smithing_template	item.minecraft.shaper_armor_trim_smithing_template	Smithing Template
+minecraft:silence_armor_trim_smithing_template	item.minecraft.silence_armor_trim_smithing_template	Smithing Template
+minecraft:snout_armor_trim_smithing_template	item.minecraft.snout_armor_trim_smithing_template	Smithing Template
+minecraft:spire_armor_trim_smithing_template	item.minecraft.spire_armor_trim_smithing_template	Smithing Template
+minecraft:tide_armor_trim_smithing_template	item.minecraft.tide_armor_trim_smithing_template	Smithing Template
+minecraft:vex_armor_trim_smithing_template	item.minecraft.vex_armor_trim_smithing_template	Smithing Template
+minecraft:ward_armor_trim_smithing_template	item.minecraft.ward_armor_trim_smithing_template	Smithing Template
+minecraft:wayfinder_armor_trim_smithing_template	item.minecraft.wayfinder_armor_trim_smithing_template	Smithing Template
+minecraft:wild_armor_trim_smithing_template	item.minecraft.wild_armor_trim_smithing_template	Smithing Template
+storagedrawers:acacia_full_drawers_1	item.storagedrawers.acacia_full_drawers_1	Acacia Drawers 1x1
+storagedrawers:acacia_full_drawers_2	item.storagedrawers.acacia_full_drawers_2	Acacia Drawers 1x2
+storagedrawers:acacia_full_drawers_4	item.storagedrawers.acacia_full_drawers_4	Acacia Drawers 2x2
+storagedrawers:acacia_half_drawers_1	item.storagedrawers.acacia_half_drawers_1	Acacia Half Drawers 1x1
+storagedrawers:acacia_half_drawers_2	item.storagedrawers.acacia_half_drawers_2	Acacia Half Drawers 1x2
+storagedrawers:acacia_half_drawers_4	item.storagedrawers.acacia_half_drawers_4	Acacia Half Drawers 2x2
+storagedrawers:bamboo_full_drawers_1	item.storagedrawers.bamboo_full_drawers_1	Bamboo Drawers 1x1
+storagedrawers:bamboo_full_drawers_2	item.storagedrawers.bamboo_full_drawers_2	Bamboo Drawers 1x2
+storagedrawers:bamboo_full_drawers_4	item.storagedrawers.bamboo_full_drawers_4	Bamboo Drawers 2x2
+storagedrawers:bamboo_half_drawers_1	item.storagedrawers.bamboo_half_drawers_1	Bamboo Half Drawers 1x1
+storagedrawers:bamboo_half_drawers_2	item.storagedrawers.bamboo_half_drawers_2	Bamboo Half Drawers 1x2
+storagedrawers:bamboo_half_drawers_4	item.storagedrawers.bamboo_half_drawers_4	Bamboo Half Drawers 2x2
+storagedrawers:birch_full_drawers_1	item.storagedrawers.birch_full_drawers_1	Birch Drawers 1x1
+storagedrawers:birch_full_drawers_2	item.storagedrawers.birch_full_drawers_2	Birch Drawers 1x2
+storagedrawers:birch_full_drawers_4	item.storagedrawers.birch_full_drawers_4	Birch Drawers 2x2
+storagedrawers:birch_half_drawers_1	item.storagedrawers.birch_half_drawers_1	Birch Half Drawers 1x1
+storagedrawers:birch_half_drawers_2	item.storagedrawers.birch_half_drawers_2	Birch Half Drawers 1x2
+storagedrawers:birch_half_drawers_4	item.storagedrawers.birch_half_drawers_4	Birch Half Drawers 2x2
+storagedrawers:cherry_full_drawers_1	item.storagedrawers.cherry_full_drawers_1	Cherry Drawers 1x1
+storagedrawers:cherry_full_drawers_2	item.storagedrawers.cherry_full_drawers_2	Cherry Drawers 1x2
+storagedrawers:cherry_full_drawers_4	item.storagedrawers.cherry_full_drawers_4	Cherry Drawers 2x2
+storagedrawers:cherry_half_drawers_1	item.storagedrawers.cherry_half_drawers_1	Cherry Half Drawers 1x1
+storagedrawers:cherry_half_drawers_2	item.storagedrawers.cherry_half_drawers_2	Cherry Half Drawers 1x2
+storagedrawers:cherry_half_drawers_4	item.storagedrawers.cherry_half_drawers_4	Cherry Half Drawers 2x2
+storagedrawers:crimson_full_drawers_1	item.storagedrawers.crimson_full_drawers_1	Crimson Drawers 1x1
+storagedrawers:crimson_full_drawers_2	item.storagedrawers.crimson_full_drawers_2	Crimson Drawers 1x2
+storagedrawers:crimson_full_drawers_4	item.storagedrawers.crimson_full_drawers_4	Crimson Drawers 2x2
+storagedrawers:crimson_half_drawers_1	item.storagedrawers.crimson_half_drawers_1	Crimson Half Drawers 1x1
+storagedrawers:crimson_half_drawers_2	item.storagedrawers.crimson_half_drawers_2	Crimson Half Drawers 1x2
+storagedrawers:crimson_half_drawers_4	item.storagedrawers.crimson_half_drawers_4	Crimson Half Drawers 2x2
+storagedrawers:dark_oak_full_drawers_1	item.storagedrawers.dark_oak_full_drawers_1	Dark Oak Drawers 1x1
+storagedrawers:dark_oak_full_drawers_2	item.storagedrawers.dark_oak_full_drawers_2	Dark Oak Drawers 1x2
+storagedrawers:dark_oak_full_drawers_4	item.storagedrawers.dark_oak_full_drawers_4	Dark Oak Drawers 2x2
+storagedrawers:dark_oak_half_drawers_1	item.storagedrawers.dark_oak_half_drawers_1	Dark Oak Half Drawers 1x1
+storagedrawers:dark_oak_half_drawers_2	item.storagedrawers.dark_oak_half_drawers_2	Dark Oak Half Drawers 1x2
+storagedrawers:dark_oak_half_drawers_4	item.storagedrawers.dark_oak_half_drawers_4	Dark Oak Half Drawers 2x2
+storagedrawers:jungle_full_drawers_1	item.storagedrawers.jungle_full_drawers_1	Jungle Drawers 1x1
+storagedrawers:jungle_full_drawers_2	item.storagedrawers.jungle_full_drawers_2	Jungle Drawers 1x2
+storagedrawers:jungle_full_drawers_4	item.storagedrawers.jungle_full_drawers_4	Jungle Drawers 2x2
+storagedrawers:jungle_half_drawers_1	item.storagedrawers.jungle_half_drawers_1	Jungle Half Drawers 1x1
+storagedrawers:jungle_half_drawers_2	item.storagedrawers.jungle_half_drawers_2	Jungle Half Drawers 1x2
+storagedrawers:jungle_half_drawers_4	item.storagedrawers.jungle_half_drawers_4	Jungle Half Drawers 2x2
+storagedrawers:mangrove_full_drawers_1	item.storagedrawers.mangrove_full_drawers_1	Mangrove Drawers 1x1
+storagedrawers:mangrove_full_drawers_2	item.storagedrawers.mangrove_full_drawers_2	Mangrove Drawers 1x2
+storagedrawers:mangrove_full_drawers_4	item.storagedrawers.mangrove_full_drawers_4	Mangrove Drawers 2x2
+storagedrawers:mangrove_half_drawers_1	item.storagedrawers.mangrove_half_drawers_1	Mangrove Half Drawers 1x1
+storagedrawers:mangrove_half_drawers_2	item.storagedrawers.mangrove_half_drawers_2	Mangrove Half Drawers 1x2
+storagedrawers:mangrove_half_drawers_4	item.storagedrawers.mangrove_half_drawers_4	Mangrove Half Drawers 2x2
+storagedrawers:oak_full_drawers_1	item.storagedrawers.oak_full_drawers_1	Oak Drawers 1x1
+storagedrawers:oak_full_drawers_2	item.storagedrawers.oak_full_drawers_2	Oak Drawers 1x2
+storagedrawers:oak_full_drawers_4	item.storagedrawers.oak_full_drawers_4	Oak Drawers 2x2
+storagedrawers:oak_half_drawers_1	item.storagedrawers.oak_half_drawers_1	Oak Half Drawers 1x1
+storagedrawers:oak_half_drawers_2	item.storagedrawers.oak_half_drawers_2	Oak Half Drawers 1x2
+storagedrawers:oak_half_drawers_4	item.storagedrawers.oak_half_drawers_4	Oak Half Drawers 2x2
+storagedrawers:spruce_full_drawers_1	item.storagedrawers.spruce_full_drawers_1	Spruce Drawers 1x1
+storagedrawers:spruce_full_drawers_2	item.storagedrawers.spruce_full_drawers_2	Spruce Drawers 1x2
+storagedrawers:spruce_full_drawers_4	item.storagedrawers.spruce_full_drawers_4	Spruce Drawers 2x2
+storagedrawers:spruce_half_drawers_1	item.storagedrawers.spruce_half_drawers_1	Spruce Half Drawers 1x1
+storagedrawers:spruce_half_drawers_2	item.storagedrawers.spruce_half_drawers_2	Spruce Half Drawers 1x2
+storagedrawers:spruce_half_drawers_4	item.storagedrawers.spruce_half_drawers_4	Spruce Half Drawers 2x2
+storagedrawers:warped_full_drawers_1	item.storagedrawers.warped_full_drawers_1	Warped Drawers 1x1
+storagedrawers:warped_full_drawers_2	item.storagedrawers.warped_full_drawers_2	Warped Drawers 1x2
+storagedrawers:warped_full_drawers_4	item.storagedrawers.warped_full_drawers_4	Warped Drawers 2x2
+storagedrawers:warped_half_drawers_1	item.storagedrawers.warped_half_drawers_1	Warped Half Drawers 1x1
+storagedrawers:warped_half_drawers_2	item.storagedrawers.warped_half_drawers_2	Warped Half Drawers 1x2
+storagedrawers:warped_half_drawers_4	item.storagedrawers.warped_half_drawers_4	Warped Half Drawers 2x2
+supplementaries:beachparty/sign_post_palm	item.supplementaries.beachparty/sign_post_palm	Beachparty sign Post Palm
+supplementaries:botania/sign_post_dreamwood	item.supplementaries.botania/sign_post_dreamwood	Botania sign Post Dreamwood
+supplementaries:botania/sign_post_livingwood	item.supplementaries.botania/sign_post_livingwood	Botania sign Post Livingwood
+supplementaries:eidolon/sign_post_illwood	item.supplementaries.eidolon/sign_post_illwood	Eidolon sign Post Illwood
+supplementaries:palegardenbackport/sign_post_pale_oak	item.supplementaries.palegardenbackport/sign_post_pale_oak	Palegardenbackport sign Post Pale Oak
+supplementaries:tconstruct/sign_post_bloodshroom	item.supplementaries.tconstruct/sign_post_bloodshroom	Tconstruct sign Post Bloodshroom
+supplementaries:tconstruct/sign_post_enderbark	item.supplementaries.tconstruct/sign_post_enderbark	Tconstruct sign Post Enderbark
+supplementaries:tconstruct/sign_post_greenheart	item.supplementaries.tconstruct/sign_post_greenheart	Tconstruct sign Post Greenheart
+supplementaries:tconstruct/sign_post_skyroot	item.supplementaries.tconstruct/sign_post_skyroot	Tconstruct sign Post Skyroot
+supplementaries:thermal/sign_post_rubberwood	item.supplementaries.thermal/sign_post_rubberwood	Thermal sign Post Rubberwood
+thermal:area_radius_augment	item.thermal.area_radius_augment	Radial Enhancement
+thermal:blizz_rod	item.thermal.blizz_rod	Blizz Cube
+thermal:charcoal_block	block.thermal.charcoal_block	Block of Charcoal
+thermal:device_collector	block.thermal.device_collector	Vacuumulator
+thermal:device_rock_gen	block.thermal.device_rock_gen	Igneous Extruder
+thermal:device_xp_condenser	item.thermal.device_xp_condenser	Device XP Condenser
+thermal:diving_boots	item.thermal.diving_boots	Diving Flippers
+thermal:diving_chestplate	item.thermal.diving_chestplate	Diving Suit
+thermal:earth_tnt	item.thermal.earth_tnt	Earth TNT
+thermal:ender_tnt	item.thermal.ender_tnt	Ender TNT
+thermal:explosive_grenade	item.thermal.explosive_grenade	Grenade
+thermal:fire_tnt	item.thermal.fire_tnt	Fire TNT
+thermal:flux_drill	item.thermal.flux_drill	Fluxbore
+thermal:flux_saw	item.thermal.flux_saw	Fluxsaw
+thermal:glowstone_mushroom_spores	item.thermal.glowstone_mushroom_spores	Glimmercap Spores
+thermal:glowstone_tnt	item.thermal.glowstone_tnt	Glowstone TNT
+thermal:gunpowder_mushroom_spores	item.thermal.gunpowder_mushroom_spores	Boomshroom Spores
+thermal:ice_tnt	item.thermal.ice_tnt	Ice TNT
+thermal:lightning_tnt	item.thermal.lightning_tnt	Lightning TNT
+thermal:machine_bottler	block.thermal.machine_bottler	Fluid Encapsulator
+thermal:machine_centrifuge	block.thermal.machine_centrifuge	Centrifugal Separator
+thermal:machine_chiller	block.thermal.machine_chiller	Blast Chiller
+thermal:machine_crystallizer	block.thermal.machine_crystallizer	Crystallizer
+thermal:machine_frame	block.thermal.machine_frame	Machine Frame
+thermal:machine_insolator	block.thermal.machine_insolator	Phytogenic Insolator
+thermal:machine_press	block.thermal.machine_press	Multiservo Press
+thermal:machine_pulverizer	block.thermal.machine_pulverizer	Pulverizer
+thermal:machine_pyrolyzer	block.thermal.machine_pyrolyzer	Pyrolyzer
+thermal:machine_refinery	block.thermal.machine_refinery	Fractionating Still
+thermal:machine_smelter	block.thermal.machine_smelter	Induction Smelter
+thermal:nuke_tnt	item.thermal.nuke_tnt	Nuke TNT
+thermal:phyto_tnt	item.thermal.phyto_tnt	Phyto TNT
+thermal:press_packing_2x2_die	item.thermal.press_packing_2x2_die	Press Packing 2x2 Die
+thermal:press_packing_3x3_die	item.thermal.press_packing_3x3_die	Press Packing 3x3 Die
+thermal:redstone_mushroom_spores	item.thermal.redstone_mushroom_spores	Fluxtooth Spores
+thermal:redstone_tnt	item.thermal.redstone_tnt	Redstone TNT
+thermal:rf_coil	item.thermal.rf_coil	RF Coil
+thermal:rf_coil_augment	item.thermal.rf_coil_augment	RF Coil Augment
+thermal:rf_coil_creative_augment	item.thermal.rf_coil_creative_augment	RF Coil Creative Augment
+thermal:rf_coil_storage_augment	item.thermal.rf_coil_storage_augment	RF Coil Storage Augment
+thermal:rf_coil_xfer_augment	item.thermal.rf_coil_xfer_augment	RF Coil Xfer Augment
+thermal:rf_potato	item.thermal.rf_potato	RF Potato
+thermal:slime_mushroom_spores	item.thermal.slime_mushroom_spores	Slitake Spores
+thermal:slime_tnt	item.thermal.slime_tnt	Slime TNT
+thermal:tinker_bench	block.thermal.tinker_bench	Tinker's Workbench
+thermal:xp_crystal	item.thermal.xp_crystal	XP Crystal
+thermal:xp_stew	item.thermal.xp_stew	XP Stew
+thermal:xp_storage_augment	item.thermal.xp_storage_augment	XP Storage Augment

@@ -3,7 +3,8 @@
 Полная актуальная методика находится в `TRANSLATION_METHODOLOGY.md`. Этот
 документ служит краткой памяткой по названиям предметов.
 
-Русские названия хранятся в `src/resourcepack` и включаются в клиентский мод.
+Русские названия хранятся в version-specific payload и включаются в клиентский
+мод выбранной версии.
 
 Английские `displayName` в KubeJS и исходные языковые файлы модов не
 изменяются. Пак содержит только точечные `ru_ru`-переопределения.
@@ -36,7 +37,7 @@ cd "$TRANSLATION_REPO"
 ```sh
 python3 scripts/extract_item_names.py \
   --root "$MODPACK_ROOT" \
-  --resource-pack src/resourcepack \
+  --resource-pack translation-versions/1.19.3-7-ae2-fix/payload/resourcepack \
   --scope all \
   --output item-translation-work/all_items.tsv
 ```
@@ -46,7 +47,7 @@ python3 scripts/extract_item_names.py \
 ```sh
 python3 scripts/extract_item_names.py \
   --root "$MODPACK_ROOT" \
-  --resource-pack src/resourcepack \
+  --resource-pack translation-versions/1.19.3-7-ae2-fix/payload/resourcepack \
   --scope quest \
   --output item-translation-work/quest_items.tsv
 ```
@@ -71,8 +72,9 @@ python3 scripts/extract_item_names.py \
 python3 scripts/build_item_language_pack.py
 ```
 
-Файлы `ru_ru.json` будут записаны по пространствам имён в
-`src/resourcepack/assets`.
+Файлы `ru_ru.json` будут записаны по пространствам имён в payload Rescripted.
+Для обычного version flow используйте `build_version_resources.py`, который
+строит payload из манифеста и глобального каталога.
 
 ## Правила стиля
 
@@ -91,6 +93,6 @@ python3 scripts/build_item_language_pack.py
 
 1. Проверить корректность всех JSON-файлов.
 2. Повторно собрать полный каталог и убедиться, что пропуски закрыты.
-3. Собрать клиентский мод с обновлённым `src/resourcepack`.
+3. Собрать клиентский мод с обновлённым payload выбранной версии.
 4. Проверить предметы в JEI и награды FTB Quests при языке `ru_ru`.
 5. Выполнить поиск оставшихся английских названий и редакторскую проверку.

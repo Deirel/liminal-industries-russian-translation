@@ -51,7 +51,9 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("src/resourcepack"),
+        default=Path(
+            "translation-versions/1.19.3-7-ae2-fix/payload/resourcepack"
+        ),
     )
     args = parser.parse_args()
 

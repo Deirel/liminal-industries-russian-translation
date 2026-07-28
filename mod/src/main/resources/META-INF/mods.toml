@@ -28,6 +28,6 @@ side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "ftbquests"
 mandatory = true
-versionRange = "[2001.4.13]"
+versionRange = "${ftb_quests_version_range}"
 ordering = "AFTER"
 side = "CLIENT"

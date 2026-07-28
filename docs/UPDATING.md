@@ -1,74 +1,72 @@
 # Обновление перевода
 
-Новая версия модпака задаёт структуру квестов и список ключей. Текущий каталог
-`src/` хранит русский текст. При обновлении нужно совместить их.
+Каждая версия модпака имеет собственные манифест, рабочую дельту, настройки
+сборки и готовый payload в `translation-versions/<version>`. Глобальный каталог
+`translation-catalog/catalog.json` общий для всех версий.
 
-## Подготовка
+## 1. Построение манифеста и дельты
 
-1. Скачайте с
-   [CurseForge](https://www.curseforge.com/minecraft/modpacks/liminal-industries/files)
-   клиентский архив новой версии.
-2. Запишите точное имя версии. Сверьте версии Minecraft, Forge и FTB Quests.
-3. Распакуйте старую и новую версии в разные временные папки. Не добавляйте
-   их в репозиторий.
-4. Создайте отдельную ветку. Проверьте, что `git status` не показывает
-   незакоммиченных изменений.
+Для original:
 
-## Квесты
+```sh
+python3 scripts/build_version_delta.py \
+  --instance-root "$HOME/Library/Application Support/sklauncher/instances/liminal-industries" \
+  --sklauncher-manifest "$HOME/Library/Application Support/sklauncher/manifests/liminal-industries.json" \
+  --item-hints translation-versions/1.19.3-original/item-source-hints.tsv \
+  --version-slug 1.19.3-original
+```
 
-1. Откройте квесты новой версии в `config/ftbquests/quests`.
-2. Сравните их с квестами прошлой версии. Сначала сравните список файлов, затем
-   сами SNBT-файлы.
-3. Возьмите новую версию за основу. Оставьте новые квесты, поля и зависимости.
-   Удалите квесты, которых в новой версии больше нет.
-4. Перенесите русский текст в `title`, `subtitle`, `description` и другие
-   видимые поля. Не меняйте ID, зависимости, задачи, награды и служебные поля.
-5. Сверяйтесь с `QUEST_GLOSSARY.md`. Новые термины добавляйте сразу в
-   `QUEST_GLOSSARY.md` и `QUEST_GLOSSARY.tsv`.
-6. Замените `src/quests` полным набором обновлённых квестов. Не оставляйте там
-   только изменённые файлы.
+Для Rescripted:
 
-Если просто заменить `src/quests`, перевод пропадёт. Если скопировать старый
-перевод поверх новых файлов, пропадут новые квесты и вернутся удалённые. Поэтому
-сравнивайте три набора файлов: старую версию, новую версию и перевод.
+```sh
+python3 scripts/build_version_delta.py \
+  --instance-root "$HOME/Projects/minecraft-industrial-backrooms/data" \
+  --sklauncher-manifest "$HOME/Library/Application Support/sklauncher/manifests/liminal-industries-rescripted.json" \
+  --item-hints translation-versions/1.19.3-7-ae2-fix/item-source-hints.tsv \
+  --version-slug 1.19.3-7-ae2-fix
+```
 
-## Названия предметов
+Используйте чистый источник выбранной версии. Собственные translation/audit JAR
+из `mods` извлекатель игнорирует. Пустые lang-файлы считаются пустыми; прочий
+невалидный JSON останавливает построение.
 
-В `src/resourcepack/assets/<mod_id>/lang/ru_ru.json` лежат ключи, которые
-переводит этот проект.
+Результат записывается в `manifest.json`, `migration-report.json` и
+`work/pending.tsv`. Для уже переведённой версии ожидается `pending: 0`.
 
-1. Сравните список модов и их версии между релизами модпака.
-2. Для новых и обновлённых модов откройте `en_us.json` внутри JAR-файла:
-   `assets/<mod_id>/lang/en_us.json`.
-3. Сравните его ключи с `ru_ru.json`. Добавьте новые, исправьте переименованные
-   и удалите устаревшие.
-4. Не добавляйте в репозиторий JAR-файлы, архивы модпака и чужие языковые файлы.
-5. Проверьте `<mod_id>` в пути и в ключах. Тесты мода найдут ошибки JSON и
-   повторяющиеся ключи.
-6. Если версия Minecraft использует другой формат ресурсов, обновите
-   `pack_format` в `src/resourcepack/pack.mcmeta`.
+## 2. Перевод дельты
 
-## Версии и проверка
+Заполняйте только колонку `translation` в `work/pending.tsv`. После ревью
+добавьте утверждённые записи в каталог:
 
-1. Обновите `modpack_version` в `mod/gradle.properties`.
-2. Исправьте поддерживаемую версию и имя JAR в документации.
-3. Соберите и протестируйте мод:
+```sh
+python3 scripts/approve_version_translations.py --version <version>
+```
 
-   ```sh
-   cd mod
-   ./gradlew clean test build
-   ```
+Повторное построение манифеста должно дать нулевую дельту.
 
-4. Установите собранный JAR в чистый профиль. Проверьте русский язык, все главы
-   квестов и названия предметов.
-5. Подключитесь с модом к тестовому серверу без этого мода и проверьте перевод
-   синхронизированной книги.
-6. Переключите язык с русского на другой и обратно: оригинальный и русский
-   тексты должны сменяться без перезапуска и без изменения файлов квестов.
-7. Обновите копию старого мира и проверьте прогресс. Не проверяйте обновление
-   на единственной копии мира.
-8. Пройдите список проверок из `docs/PACKAGING.md`.
+## 3. Построение payload
 
-Сборка из `mod/` напрямую подключает `src/resourcepack` и `src/quests`. После
-изменения этих каталогов вручную синхронизировать
-`mod/src/main/resources` не нужно.
+```sh
+python3 scripts/build_version_resources.py \
+  --version <version> \
+  --instance-root "/path/to/clean/modpack"
+```
+
+Сборщик полностью заменяет `translation-versions/<version>/payload`, поэтому
+в нём не остаются ресурсы другой версии. Затем проверьте результат:
+
+```sh
+python3 scripts/build_version_resources.py \
+  --version <version> \
+  --instance-root "/path/to/clean/modpack" \
+  --check
+```
+
+## 4. Сборка и проверка
+
+```sh
+cd mod
+./gradlew clean test build -PtranslationVersion=<version>
+```
+
+Проверки в игре и порядок публикации описаны в `docs/PACKAGING.md`.

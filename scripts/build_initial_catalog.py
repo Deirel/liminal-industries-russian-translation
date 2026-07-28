@@ -731,12 +731,18 @@ def build(args: argparse.Namespace) -> tuple[bytes, bytes, bytes]:
     metadata = read_modpack_metadata(args.modpack_root)
     quest_records, quest_catalog, quest_sources = extract_quest_records(
         args.modpack_root / "data/config/ftbquests/quests",
-        args.translation_root / "src/quests",
+        args.translation_root
+        / "translation-versions"
+        / VERSION_SLUG
+        / "payload/quests",
     )
     item_records, item_catalog, item_sources, item_report = extract_item_records(
         args.modpack_root,
         args.minecraft_root,
-        args.translation_root / "src/resourcepack",
+        args.translation_root
+        / "translation-versions"
+        / VERSION_SLUG
+        / "payload/resourcepack",
         args.translation_root / "item-translation-work",
     )
     if len(quest_records) != 841:

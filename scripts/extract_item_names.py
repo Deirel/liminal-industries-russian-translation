@@ -8,6 +8,7 @@ import csv
 import json
 import re
 import zipfile
+from collections.abc import Iterable
 from pathlib import Path
 
 
@@ -22,6 +23,8 @@ LANG_KEY_PREFIXES = (
 
 
 def read_json(data: bytes, source: str) -> dict[str, str]:
+    if not data.strip():
+        return {}
     try:
         parsed = json.loads(data.decode("utf-8-sig"))
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
@@ -29,10 +32,14 @@ def read_json(data: bytes, source: str) -> dict[str, str]:
     return {str(key): str(value) for key, value in parsed.items()}
 
 
-def load_jar_languages(mods_dir: Path) -> tuple[dict[str, str], dict[str, str]]:
+def load_jar_languages(
+    mods_dir: Path,
+    jar_paths: Iterable[Path] | None = None,
+) -> tuple[dict[str, str], dict[str, str]]:
     en_us: dict[str, str] = {}
     ru_ru: dict[str, str] = {}
-    for jar_path in sorted(mods_dir.glob("*.jar")):
+    archives = sorted(jar_paths) if jar_paths is not None else sorted(mods_dir.glob("*.jar"))
+    for jar_path in archives:
         try:
             with zipfile.ZipFile(jar_path) as jar:
                 for member in jar.namelist():
@@ -159,8 +166,9 @@ def main() -> None:
     parser.add_argument(
         "--resource-pack",
         type=Path,
-        default=translation_root / "src/resourcepack",
-        help="reviewed Russian resource pack (default: repository src/resourcepack)",
+        default=translation_root
+        / "translation-versions/1.19.3-7-ae2-fix/payload/resourcepack",
+        help="reviewed Russian resource pack for the selected source version",
     )
     parser.add_argument(
         "--output",
