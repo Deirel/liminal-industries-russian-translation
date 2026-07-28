@@ -35,6 +35,6 @@ side = "CLIENT"
 [[dependencies.${mod_id}]]
 modId = "liminal_industries_ru"
 mandatory = true
-versionRange = "[1.19.3-original]"
+versionRange = "[${mod_version}]"
 ordering = "AFTER"
 side = "CLIENT"
