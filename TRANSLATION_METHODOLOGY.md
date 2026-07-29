@@ -207,6 +207,8 @@ item:<translation_key>
 block:<translation_key>
 patchouli-lang:<namespace>:<key_or_hash>
 patchouli-json:<namespace>:<book>:<path>:<json_pointer>
+mantle-book:<namespace>:<book>:<path>:<json_pointer>
+mantle-book-language:<namespace>:<book>:<key>
 ```
 
 `quest-chapter`, `quest-task` и `quest-reward` используются для видимых
@@ -761,6 +763,9 @@ translation-versions/<version>/payload/resourcepack/assets/<namespace>/lang/ru_r
 - все страницы прочитаны в порядке отображения, а не как изолированные строки;
 - для штатных книг проверены наличие, синтаксис и соответствие английской
   структуре;
+- для книг Mantle отдельно сопоставлены все пары `key=value` в
+  `language.lang`; отсутствие русского значения считается дефектом, даже если
+  JSON-страницы книги полностью переведены;
 - технические и пробельные строки не создают заданий на перевод, а
   `native_translation` присутствует только у структурно актуального ресурса;
 - `FINALIZED` вычисляется до статусов штатного перевода и не возвращается в

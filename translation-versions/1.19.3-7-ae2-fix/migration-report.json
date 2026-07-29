@@ -51,29 +51,24 @@
     },
     "tconstruct_books": {
       "adapter": "mantle_books",
-      "records": 2480,
+      "records": 2659,
       "books": 6,
       "missing_native_pages": 250,
       "invalid_native_pages": 3,
       "stale_native_pages": 107,
-      "native_review_records": 2480
+      "language_files": 6,
+      "missing_native_language_entries": 63,
+      "native_review_records": 2659
     }
   },
-  "catalog_hits": 6213,
-  "finalized": 6213,
-  "native_ru_coverage": 15167,
-  "pending": 3134,
+  "catalog_hits": 9617,
+  "finalized": 9617,
+  "native_ru_coverage": 15283,
+  "pending": 0,
   "translation_statuses": {
-    "FINALIZED": 6213,
-    "INVALID_NATIVE": 12,
-    "MISSING_NATIVE": 1104,
-    "NATIVE_RU": 13123,
-    "REVIEW_NATIVE": 1200,
-    "STALE_NATIVE": 818
+    "FINALIZED": 9617,
+    "NATIVE_RU": 13032
   },
-  "pending_by_source": {
-    "immersive_engineering_manual": 654,
-    "tconstruct_books": 2480
-  },
+  "pending_by_source": {},
   "errors": 0
 }

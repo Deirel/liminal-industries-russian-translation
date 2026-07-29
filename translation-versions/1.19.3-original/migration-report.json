@@ -17,12 +17,12 @@
     },
     "items": {
       "adapter": "registry_items",
-      "records": 7786,
+      "records": 7901,
       "registry_source": "language_models+quest_refs+kubejs_startup+reviewed_hints",
-      "registry_items": 7786,
-      "native_ru_items": 6247,
+      "registry_items": 7901,
+      "native_ru_items": 6396,
       "generated_english_names": 22,
-      "reviewed_hint_names": 26,
+      "reviewed_hint_names": 2,
       "translation_aliases": 5,
       "kubejs_startup_names": 146
     },
@@ -30,24 +30,26 @@
       "adapter": "registry_blocks",
       "records": 6589,
       "registry_blocks": 6589,
-      "native_ru": 4414,
-      "suggested_translations": 1160
+      "native_ru": 4488,
+      "suggested_translations": 1171
     },
     "patchouli": {
       "adapter": "patchouli",
-      "records": 1271,
-      "books": 3,
-      "native_ru": 1233,
-      "language_records": 1267,
-      "json_records": 4
+      "records": 1958,
+      "books": 4,
+      "native_ru": 1873,
+      "language_records": 1270,
+      "json_records": 688
     }
   },
-  "catalog_hits": 4045,
-  "native_ru_coverage": 11894,
-  "pending": 162,
-  "pending_by_source": {
-    "blocks": 133,
-    "patchouli": 29
+  "catalog_hits": 4291,
+  "finalized": 4291,
+  "native_ru_coverage": 12757,
+  "pending": 0,
+  "translation_statuses": {
+    "FINALIZED": 4291,
+    "NATIVE_RU": 12612
   },
+  "pending_by_source": {},
   "errors": 0
 }

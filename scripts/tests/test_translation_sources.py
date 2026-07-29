@@ -15,11 +15,13 @@ from translation_sources import (
     collect_mantle_books,
     collect_patchouli,
     load_source_definitions,
+    parse_mantle_language,
 )
 from build_version_delta import classify_translation_record
 from build_version_resources import (
     build_manual_files,
     build_mantle_book_files,
+    build_mantle_book_language_files,
     build_patchouli_files,
 )
 from build_initial_catalog import sha256_bytes, source_hash
@@ -249,6 +251,91 @@ class PatchouliSourceTest(unittest.TestCase):
 
 
 class ReviewedNativeBookSourceTest(unittest.TestCase):
+    def test_collects_and_builds_missing_mantle_language_entries(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            instance = Path(directory)
+            mods = instance / "mods"
+            mods.mkdir()
+            archive = mods / "tconstruct.jar"
+            en_member = (
+                "assets/tconstruct/book/guide/en_us/language.lang"
+            )
+            ru_member = en_member.replace("/en_us/", "/ru_ru/")
+            english = (
+                "intro=Introduction\n"
+                "materials=General Materials\n"
+                "materials.subtext=Material details\n"
+            ).encode()
+            russian = (
+                "intro=Вступление\n"
+                "legacy=Сохранённая подпись\n"
+            ).encode()
+            with zipfile.ZipFile(archive, "w") as jar:
+                jar.writestr(en_member, english)
+                jar.writestr(ru_member, russian)
+
+            result = collect_mantle_books(
+                SourceDefinition(
+                    "books",
+                    "mantle_books",
+                    {"namespace": "tconstruct", "review_native": False},
+                ),
+                [archive],
+                instance,
+            )
+            records = {
+                record["location"]["key"]: record
+                for record in result.records
+            }
+            self.assertEqual(
+                {"intro", "materials", "materials.subtext"},
+                set(records),
+            )
+            self.assertTrue(records["intro"]["native_ru_present"])
+            self.assertFalse(records["intro"]["force_output"])
+            self.assertFalse(records["materials"]["native_ru_present"])
+            self.assertTrue(records["materials"]["force_output"])
+            self.assertEqual(
+                2, result.report["missing_native_language_entries"]
+            )
+
+            missing = [
+                record
+                for record in result.records
+                if record["force_output"]
+            ]
+            catalog = {
+                "entries": {
+                    record["id"]: [
+                        {
+                            "source": record["source"],
+                            "source_hash": record["source_hash"],
+                            "translation": f"Перевод {index}",
+                        }
+                    ]
+                    for index, record in enumerate(missing)
+                }
+            }
+            output = instance / "output"
+            count = build_mantle_book_language_files(
+                {
+                    "records": result.records,
+                    "source_files": result.source_files,
+                },
+                catalog,
+                instance,
+                output,
+            )
+            built = parse_mantle_language(
+                (output / ru_member).read_bytes(), ru_member
+            )
+
+        self.assertEqual(2, count)
+        self.assertEqual("Вступление", built["intro"])
+        self.assertEqual("Сохранённая подпись", built["legacy"])
+        self.assertEqual("Перевод 0", built["materials"])
+        self.assertEqual("Перевод 1", built["materials.subtext"])
+
     def test_finalized_catalog_entry_wins_over_native_review(self) -> None:
         record = {
             "id": "manual:test:intro:line:0",

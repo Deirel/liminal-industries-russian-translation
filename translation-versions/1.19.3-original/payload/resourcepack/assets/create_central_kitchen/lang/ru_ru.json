@@ -1,4 +1,10 @@
 {
+  "block.create_central_kitchen.cherry_pie": "Вишнёвый пирог",
+  "block.create_central_kitchen.mulberry_pie": "Тутовый пирог",
+  "block.create_central_kitchen.pumpkin_pie": "Тыквенный пирог",
+  "block.create_central_kitchen.sap": "Древесный сок",
+  "block.create_central_kitchen.syrup": "Сироп",
+  "block.create_central_kitchen.truffle_pie": "Трюфельный пирог",
   "item.create_central_kitchen.aloe_gel_bucket": "Ведро геля алоэ",
   "item.create_central_kitchen.creative_tab_icon": "Значок вкладки творчества",
   "item.create_central_kitchen.incomplete_chorus_flower_pie": "Незавершённый пирог из цветков хоруса",

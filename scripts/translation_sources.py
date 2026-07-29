@@ -37,6 +37,9 @@ IE_MANUAL_RE = re.compile(
 MANTLE_BOOK_RE = re.compile(
     r"assets/([^/]+)/book/([^/]+)/en_us/(.+\.json)$"
 )
+MANTLE_LANGUAGE_RE = re.compile(
+    r"assets/([^/]+)/book/([^/]+)/en_us/language\.lang$"
+)
 MANTLE_TEXT_FIELDS = {
     "effects",
     "properties",
@@ -221,6 +224,30 @@ def iter_mantle_group_labels(value: Any, pointer: str):
             yield from iter_mantle_group_labels(
                 child, f"{pointer}/{index}"
             )
+
+
+def parse_mantle_language(data: bytes, source: str) -> dict[str, str]:
+    values: dict[str, str] = {}
+    for line_number, line in enumerate(
+        data.decode("utf-8-sig").splitlines(), start=1
+    ):
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        if "=" not in line:
+            raise ValueError(
+                f"{source}:{line_number}: expected key=value"
+            )
+        key, value = line.split("=", 1)
+        key = key.strip()
+        if not key:
+            raise ValueError(f"{source}:{line_number}: blank key")
+        if key in values:
+            raise ValueError(
+                f"{source}:{line_number}: duplicate key {key}"
+            )
+        values[key] = value.strip()
+    return values
 
 
 def collect_patchouli(
@@ -620,6 +647,8 @@ def collect_mantle_books(
     missing_native_pages = 0
     invalid_native_pages = 0
     stale_native_pages = 0
+    language_files = 0
+    missing_native_language_entries = 0
 
     for archive in archives:
         try:
@@ -719,6 +748,85 @@ def collect_mantle_books(
                             record["native_translation"] = native_translation
                             record["suggested_translation"] = native_translation
                         records.append(record)
+
+                for member in sorted(names):
+                    match = MANTLE_LANGUAGE_RE.fullmatch(member)
+                    if match is None:
+                        continue
+                    namespace, book = match.groups()
+                    if (
+                        namespace_filter is not None
+                        and namespace != namespace_filter
+                    ) or book in excluded_books:
+                        continue
+                    books.add((namespace, book))
+                    language_files += 1
+                    data = jar.read(member)
+                    source_values = parse_mantle_language(data, member)
+                    output_member = member.replace("/en_us/", "/ru_ru/", 1)
+                    native_data = (
+                        jar.read(output_member)
+                        if output_member in names
+                        else None
+                    )
+                    native_values = (
+                        parse_mantle_language(native_data, output_member)
+                        if native_data is not None
+                        else {}
+                    )
+                    source_files[
+                        _archive_label(archive, instance_root, member)
+                    ] = sha256_bytes(data)
+                    if native_data is not None:
+                        source_files[
+                            _archive_label(
+                                archive, instance_root, output_member
+                            )
+                        ] = sha256_bytes(native_data)
+
+                    for key, text in source_values.items():
+                        if not text.strip():
+                            continue
+                        native_translation = native_values.get(key)
+                        native_present = bool(
+                            native_translation
+                            and native_translation.strip()
+                        )
+                        if not native_present:
+                            missing_native_language_entries += 1
+                        record = {
+                            "id": (
+                                f"mantle-book-language:{namespace}:"
+                                f"{book}:{key}"
+                            ),
+                            "kind": "mantle_book_language",
+                            "source": text,
+                            "source_hash": source_hash(text),
+                            "namespace": namespace,
+                            "native_ru_present": native_present,
+                            "native_translation_status": (
+                                "REVIEW_NATIVE"
+                                if native_present
+                                else "MISSING_NATIVE"
+                            ),
+                            "review_native": review_native,
+                            "force_output": (
+                                review_native or not native_present
+                            ),
+                            "output_format": "mantle_book_language",
+                            "location": {
+                                "archive": archive.relative_to(
+                                    instance_root
+                                ).as_posix(),
+                                "member": member,
+                                "output_member": output_member,
+                                "key": key,
+                                "book": book,
+                            },
+                        }
+                        if native_present:
+                            record["native_translation"] = native_translation
+                        records.append(record)
         except zipfile.BadZipFile:
             continue
 
@@ -733,6 +841,9 @@ def collect_mantle_books(
             "missing_native_pages": missing_native_pages,
             "invalid_native_pages": invalid_native_pages,
             "stale_native_pages": stale_native_pages,
+            "language_files": language_files,
+            "missing_native_language_entries":
+                missing_native_language_entries,
             "native_review_records": len(records),
         },
     )

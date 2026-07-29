@@ -1,0 +1,23 @@
+{
+  "category": "thermal:devices",
+  "flag": "|mod:thermal_expansion,mod:thermal_cultivation",
+  "icon": "thermal:device_composter",
+  "name": "Механический компостер",
+  "pages": [
+    {
+      "text": "Механический компостер — более продвинутая версия компостницы. Он перерабатывает несколько предметов сразу и делает компост вместо костной муки. С $(l:thermal:technology/augments/xp_storage)улучшением «Накопитель опыта»$(/l) он также позволяет получать опыт.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:device_composter",
+      "title": "Механический компостер",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Фильтр предметов$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Накопитель опыта$(/l)",
+      "title": "Совместимые улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

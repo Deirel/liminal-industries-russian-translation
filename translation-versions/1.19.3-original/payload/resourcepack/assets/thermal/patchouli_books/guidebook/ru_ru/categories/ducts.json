@@ -1,0 +1,8 @@
+{
+  "description": "Как перемещать <thing>?",
+  "flag": "mod:thermal_dynamics",
+  "icon": "thermal:energy_duct",
+  "name": "Трубы",
+  "parent": "thermal:storage_and_transport",
+  "sortnum": 2
+}
