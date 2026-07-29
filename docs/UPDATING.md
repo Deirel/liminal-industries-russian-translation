@@ -36,12 +36,18 @@ python3 scripts/build_version_delta.py \
 [`TRANSLATION_SOURCES.md`](TRANSLATION_SOURCES.md).
 
 Результат записывается в `manifest.json`, `migration-report.json` и
-`work/pending.tsv`. Для уже переведённой версии ожидается `pending: 0`.
+`work/pending.tsv`. Источники книг с `review_native: true` включают в дельту
+штатные переводы со статусами `REVIEW_NATIVE`, `MISSING_NATIVE`,
+`INVALID_NATIVE` и `STALE_NATIVE`. Точная утверждённая пара
+`ID + source_hash` всегда получает `FINALIZED` и при повторном сканировании в
+дельту не возвращается.
 
 ## 2. Перевод дельты
 
-Заполняйте только колонку `translation` в `work/pending.tsv`. После ревью
-добавьте утверждённые записи в каталог:
+Заполняйте только колонку `translation` в `work/pending.tsv`.
+`native_translation` служит неутверждённой подсказкой и может быть исправлена
+или принята только после проверки по общей методологии. После независимого
+ревью добавьте утверждённые записи в каталог:
 
 ```sh
 python3 scripts/approve_version_translations.py --version <version>

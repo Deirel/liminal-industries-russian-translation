@@ -11,7 +11,13 @@ class AuditSourceConfigTest {
     @Test
     void loadsEnabledProvidersFromVersionConfiguration() {
         assertEquals(
-            Set.of("items", "blocks", "patchouli"),
+            Set.of(
+                "items",
+                "blocks",
+                "patchouli",
+                "immersive_engineering_manual",
+                "tconstruct_books"
+            ),
             AuditSourceConfig.enabledProviders()
         );
     }

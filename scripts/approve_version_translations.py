@@ -15,7 +15,7 @@ from build_initial_catalog import source_hash, validate_catalog
 
 
 TOKEN_RE = re.compile(
-    r"\$\([^)]*\)|</?[a-z0-9_:-]+>|"
+    r"\$\([^)]*\)|<[^>]+>|"
     r"&[0-9a-fklmnor]|§.|%\d*\$?[sd]|\{image:[^}]+\}|"
     r"\b[a-z0-9_.-]+:[a-z0-9_./-]+\b",
     re.IGNORECASE,
@@ -24,6 +24,22 @@ TOKEN_RE = re.compile(
 
 def json_bytes(value: Any) -> bytes:
     return (json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+
+
+def technical_tokens(value: str) -> list[str]:
+    result: list[str] = []
+    for token in TOKEN_RE.findall(value):
+        if token.startswith("<link;"):
+            parts = token[1:-1].split(";")
+            if len(parts) < 3:
+                result.append("<invalid-link>")
+            else:
+                result.append(
+                    ";".join([parts[0], parts[1], "*", *parts[3:]])
+                )
+        else:
+            result.append(token)
+    return result
 
 
 def load_translations(paths: list[Path]) -> dict[str, dict[str, str]]:
@@ -134,7 +150,7 @@ def main() -> int:
             raise ValueError(f"{logical_id}: source hash does not match manifest")
         if source_hash(record["source"]) != record["source_hash"]:
             raise ValueError(f"{logical_id}: invalid manifest source hash")
-        if TOKEN_RE.findall(record["source"]) != TOKEN_RE.findall(
+        if technical_tokens(record["source"]) != technical_tokens(
             translation["translation"]
         ):
             raise ValueError(f"{logical_id}: formatting or technical tokens changed")

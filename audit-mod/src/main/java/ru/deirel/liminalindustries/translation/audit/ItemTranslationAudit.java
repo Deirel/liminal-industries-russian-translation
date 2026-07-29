@@ -35,7 +35,9 @@ final class ItemTranslationAudit {
     private static final List<AuditProvider> PROVIDERS = List.of(
         new ItemAuditProvider(),
         new BlockAuditProvider(),
-        new PatchouliAuditProvider()
+        new PatchouliAuditProvider(),
+        new ImmersiveEngineeringManualAuditProvider(),
+        new MantleBookAuditProvider()
     );
 
     private ItemTranslationAudit() {

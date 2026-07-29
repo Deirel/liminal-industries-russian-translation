@@ -32,6 +32,8 @@ from extract_item_names import (
 from translation_sources import (
     SourceDefinition,
     SourceResult,
+    collect_immersive_engineering_manual,
+    collect_mantle_books,
     collect_patchouli,
     collect_sources,
     load_source_definitions,
@@ -699,6 +701,23 @@ def catalog_has(catalog: dict[str, Any], record: dict[str, Any]) -> bool:
     )
 
 
+def classify_translation_record(
+    catalog: dict[str, Any], record: dict[str, Any]
+) -> str:
+    if catalog_has(catalog, record):
+        return "FINALIZED"
+    if record.get("review_native", False):
+        return record.get(
+            "native_translation_status",
+            "REVIEW_NATIVE"
+            if record.get("native_ru_present", False)
+            else "MISSING_NATIVE",
+        )
+    if record.get("native_ru_present", False):
+        return "NATIVE_RU"
+    return "PENDING"
+
+
 def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]]]:
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     validate_catalog(catalog)
@@ -757,6 +776,30 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
             load_payload_translations(version_root),
         )
 
+    def ie_manual_collector(definition: SourceDefinition) -> SourceResult:
+        archives, _, _, _ = load_effective_languages(
+            args.instance_root,
+            args.launcher_root,
+            metadata["minecraft_version"],
+        )
+        return collect_immersive_engineering_manual(
+            definition,
+            archives,
+            args.instance_root,
+        )
+
+    def mantle_books_collector(definition: SourceDefinition) -> SourceResult:
+        archives, _, _, _ = load_effective_languages(
+            args.instance_root,
+            args.launcher_root,
+            metadata["minecraft_version"],
+        )
+        return collect_mantle_books(
+            definition,
+            archives,
+            args.instance_root,
+        )
+
     collected = collect_sources(
         definitions,
         {
@@ -764,6 +807,8 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
             "registry_items": items_collector,
             "registry_blocks": blocks_collector,
             "patchouli": patchouli_collector,
+            "immersive_engineering_manual": ie_manual_collector,
+            "mantle_books": mantle_books_collector,
         },
     )
     records = collected.records
@@ -771,12 +816,10 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
     pending: list[dict[str, Any]] = []
     categories: Counter[str] = Counter()
     for record in records:
-        if record.get("native_ru_present", False):
-            categories["NATIVE_RU"] += 1
-        elif catalog_has(catalog, record):
-            categories["CATALOG_HIT"] += 1
-        else:
-            categories["PENDING"] += 1
+        status = classify_translation_record(catalog, record)
+        record["translation_status"] = status
+        categories[status] += 1
+        if status not in {"FINALIZED", "NATIVE_RU"}:
             pending.append(record)
 
     manifest = {
@@ -794,9 +837,13 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
         "version": args.version_slug,
         "modpack": metadata,
         **collected.report,
-        "catalog_hits": categories["CATALOG_HIT"],
-        "native_ru_coverage": categories["NATIVE_RU"],
-        "pending": categories["PENDING"],
+        "catalog_hits": categories["FINALIZED"],
+        "finalized": categories["FINALIZED"],
+        "native_ru_coverage": sum(
+            record.get("native_ru_present", False) for record in records
+        ),
+        "pending": len(pending),
+        "translation_statuses": dict(sorted(categories.items())),
         "pending_by_source": dict(
             sorted(Counter(record["source_id"] for record in pending).items())
         ),
@@ -806,18 +853,52 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
 
 
 def write_pending(path: Path, pending: list[dict[str, Any]]) -> None:
+    def order_key(record: dict[str, Any]):
+        location = record.get("location", {})
+        pointer = location.get("pointer", "")
+        pointer_key = tuple(
+            (0, int(token)) if token.isdigit() else (1, token)
+            for token in pointer.removeprefix("/").split("/")
+        )
+        return (
+            record.get("source_id", ""),
+            location.get("output_member")
+            or location.get("file")
+            or record["id"],
+            location.get("line", -1),
+            pointer_key,
+            record["id"],
+        )
+
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.writer(handle, delimiter="\t", lineterminator="\n")
-        writer.writerow(("id", "kind", "source_hash", "source", "translation"))
-        for record in pending:
+        writer = csv.writer(
+            handle,
+            delimiter="\t",
+            lineterminator="\n",
+            quoting=csv.QUOTE_ALL,
+        )
+        writer.writerow(
+            (
+                "id",
+                "kind",
+                "status",
+                "source_hash",
+                "native_translation",
+                "translation",
+                "source",
+            )
+        )
+        for record in sorted(pending, key=order_key):
             writer.writerow(
                 (
                     record["id"],
                     record["kind"],
+                    record["translation_status"],
                     record["source_hash"],
-                    record["source"],
+                    record.get("native_translation", ""),
                     record.get("suggested_translation", ""),
+                    record["source"],
                 )
             )
 

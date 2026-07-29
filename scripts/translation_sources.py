@@ -30,6 +30,20 @@ PATCHOULI_ASSET_RE = re.compile(
 PATCHOULI_BOOK_RE = re.compile(
     r"data/([^/]+)/patchouli_books/([^/]+)/book\.json$"
 )
+IE_MANUAL_RE = re.compile(
+    r"assets/([^/]+)/manual/en_us/(.+\.txt)$"
+)
+MANTLE_BOOK_RE = re.compile(
+    r"assets/([^/]+)/book/([^/]+)/en_us/(.+\.json)$"
+)
+MANTLE_TEXT_FIELDS = {
+    "effects",
+    "properties",
+    "subText",
+    "text",
+    "title",
+    "tooltip",
+}
 
 
 @dataclass
@@ -124,17 +138,25 @@ def collect_sources(
     return combined
 
 
-def iter_json_strings(value: Any, pointer: str = ""):
+def iter_json_strings(
+    value: Any,
+    pointer: str = "",
+    text_fields: set[str] = PATCHOULI_TEXT_FIELDS,
+):
     if isinstance(value, dict):
         for key, child in value.items():
             escaped = key.replace("~", "~0").replace("/", "~1")
             child_pointer = f"{pointer}/{escaped}"
-            if key in PATCHOULI_TEXT_FIELDS and isinstance(child, str) and child:
+            if key in text_fields and isinstance(child, str) and child:
                 yield child_pointer, child
-            yield from iter_json_strings(child, child_pointer)
+            elif key in text_fields and isinstance(child, list):
+                for index, entry in enumerate(child):
+                    if isinstance(entry, str) and entry:
+                        yield f"{child_pointer}/{index}", entry
+            yield from iter_json_strings(child, child_pointer, text_fields)
     elif isinstance(value, list):
         for index, child in enumerate(value):
-            yield from iter_json_strings(child, f"{pointer}/{index}")
+            yield from iter_json_strings(child, f"{pointer}/{index}", text_fields)
 
 
 def json_pointer_get(value: Any, pointer: str) -> Any:
@@ -158,6 +180,46 @@ def json_pointer_set(value: Any, pointer: str, replacement: str) -> None:
         current[int(final)] = replacement
     else:
         current[final] = replacement
+
+
+def iter_mantle_strings(value: Any, pointer: str = ""):
+    yield from iter_json_strings(
+        value,
+        pointer,
+        MANTLE_TEXT_FIELDS,
+    )
+    if isinstance(value, dict):
+        if (
+            value.get("action") == "add_group"
+            and isinstance(value.get("data"), str)
+            and value["data"]
+        ):
+            yield f"{pointer}/data", value["data"]
+        for key, child in value.items():
+            escaped = key.replace("~", "~0").replace("/", "~1")
+            yield from iter_mantle_group_labels(
+                child, f"{pointer}/{escaped}"
+            )
+
+
+def iter_mantle_group_labels(value: Any, pointer: str):
+    if isinstance(value, dict):
+        if (
+            value.get("action") == "add_group"
+            and isinstance(value.get("data"), str)
+            and value["data"]
+        ):
+            yield f"{pointer}/data", value["data"]
+        for key, child in value.items():
+            escaped = key.replace("~", "~0").replace("/", "~1")
+            yield from iter_mantle_group_labels(
+                child, f"{pointer}/{escaped}"
+            )
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            yield from iter_mantle_group_labels(
+                child, f"{pointer}/{index}"
+            )
 
 
 def collect_patchouli(
@@ -195,7 +257,7 @@ def collect_patchouli(
                         containers.append((nested_member, nested))
                 for nested_member, container in containers:
                     names = set(container.namelist())
-                    for member in names:
+                    for member in sorted(names):
                         asset_match = PATCHOULI_ASSET_RE.fullmatch(member)
                         book_match = PATCHOULI_BOOK_RE.fullmatch(member)
                         if asset_match:
@@ -381,5 +443,267 @@ def collect_patchouli(
                 record["output_format"] == "patchouli_json"
                 for record in records
             ),
+        },
+    )
+
+
+def _archive_label(
+    archive: Path,
+    instance_root: Path,
+    member: str,
+) -> str:
+    return f"{archive.relative_to(instance_root).as_posix()}!/{member}"
+
+
+def _manual_marker_sequence(lines: list[str]) -> list[str]:
+    markers: list[str] = []
+    for line in lines:
+        for token in re.findall(r"<[^>]+>", line):
+            if token.startswith("<link;"):
+                parts = token[1:-1].split(";")
+                markers.append(
+                    ";".join(
+                        [parts[0], parts[1], "*", *parts[3:]]
+                    )
+                )
+            else:
+                markers.append(token)
+    return markers
+
+
+def collect_immersive_engineering_manual(
+    definition: SourceDefinition,
+    archives: list[Path],
+    instance_root: Path,
+) -> SourceResult:
+    namespace_filter = definition.options.get(
+        "namespace", "immersiveengineering"
+    )
+    review_native = bool(definition.options.get("review_native", False))
+    records: list[dict[str, Any]] = []
+    source_files: dict[str, str] = {}
+    articles = 0
+    missing_native = 0
+    stale_native = 0
+
+    for archive in archives:
+        try:
+            with zipfile.ZipFile(archive) as jar:
+                names = set(jar.namelist())
+                for member in sorted(names):
+                    match = IE_MANUAL_RE.fullmatch(member)
+                    if match is None:
+                        continue
+                    namespace, relative = match.groups()
+                    if namespace != namespace_filter:
+                        continue
+                    articles += 1
+                    data = jar.read(member)
+                    source_lines = data.decode("utf-8-sig").splitlines()
+                    output_member = member.replace("/en_us/", "/ru_ru/", 1)
+                    native_data = (
+                        jar.read(output_member)
+                        if output_member in names
+                        else None
+                    )
+                    native_lines = (
+                        native_data.decode("utf-8-sig").splitlines()
+                        if native_data is not None
+                        else []
+                    )
+                    if native_data is None:
+                        file_status = "MISSING_NATIVE"
+                        missing_native += 1
+                    elif (
+                        len(source_lines) != len(native_lines)
+                        or _manual_marker_sequence(source_lines)
+                        != _manual_marker_sequence(native_lines)
+                    ):
+                        file_status = "STALE_NATIVE"
+                        stale_native += 1
+                    else:
+                        file_status = "REVIEW_NATIVE"
+                    source_files[
+                        _archive_label(archive, instance_root, member)
+                    ] = sha256_bytes(data)
+                    if native_data is not None:
+                        source_files[
+                            _archive_label(
+                                archive, instance_root, output_member
+                            )
+                        ] = sha256_bytes(native_data)
+                    for index, text in enumerate(source_lines):
+                        if not text or re.fullmatch(r"<&[^>]+>", text):
+                            continue
+                        record = {
+                            "id": (
+                                f"ie-manual:{namespace}:{relative}:line:{index}"
+                            ),
+                            "kind": "manual_text",
+                            "source": text,
+                            "source_hash": source_hash(text),
+                            "namespace": namespace,
+                            "native_ru_present": index < len(native_lines)
+                            and bool(native_lines[index]),
+                            "native_translation_status": file_status,
+                            "review_native": review_native,
+                            "force_output": review_native,
+                            "output_format": "manual_text",
+                            "location": {
+                                "archive": archive.relative_to(
+                                    instance_root
+                                ).as_posix(),
+                                "member": member,
+                                "output_member": output_member,
+                                "line": index,
+                            },
+                        }
+                        if record["native_ru_present"]:
+                            record["native_translation"] = native_lines[index]
+                            record["suggested_translation"] = native_lines[index]
+                        records.append(record)
+        except zipfile.BadZipFile:
+            continue
+
+    return SourceResult(
+        records=records,
+        source_files=[
+            {"path": path, "sha256": digest}
+            for path, digest in sorted(source_files.items())
+        ],
+        report={
+            "articles": articles,
+            "missing_native_articles": missing_native,
+            "stale_native_articles": stale_native,
+            "native_review_records": len(records),
+        },
+    )
+
+
+def collect_mantle_books(
+    definition: SourceDefinition,
+    archives: list[Path],
+    instance_root: Path,
+) -> SourceResult:
+    namespace_filter = definition.options.get("namespace")
+    excluded_books = set(definition.options.get("exclude_books", []))
+    review_native = bool(definition.options.get("review_native", False))
+    records: list[dict[str, Any]] = []
+    source_files: dict[str, str] = {}
+    books: set[tuple[str, str]] = set()
+    missing_native_pages = 0
+    invalid_native_pages = 0
+    stale_native_pages = 0
+
+    for archive in archives:
+        try:
+            with zipfile.ZipFile(archive) as jar:
+                names = set(jar.namelist())
+                for member in sorted(names):
+                    match = MANTLE_BOOK_RE.fullmatch(member)
+                    if match is None:
+                        continue
+                    namespace, book, relative = match.groups()
+                    if (
+                        namespace_filter is not None
+                        and namespace != namespace_filter
+                    ) or book in excluded_books:
+                        continue
+                    books.add((namespace, book))
+                    data = jar.read(member)
+                    source_document = json.loads(data.decode("utf-8-sig"))
+                    output_member = member.replace("/en_us/", "/ru_ru/", 1)
+                    native_data = (
+                        jar.read(output_member)
+                        if output_member in names
+                        else None
+                    )
+                    native_document = None
+                    if native_data is None:
+                        file_status = "MISSING_NATIVE"
+                        missing_native_pages += 1
+                    else:
+                        try:
+                            native_document = json.loads(
+                                native_data.decode("utf-8-sig")
+                            )
+                            file_status = "REVIEW_NATIVE"
+                        except json.JSONDecodeError:
+                            file_status = "INVALID_NATIVE"
+                            invalid_native_pages += 1
+                    source_files[
+                        _archive_label(archive, instance_root, member)
+                    ] = sha256_bytes(data)
+                    if native_data is not None:
+                        source_files[
+                            _archive_label(
+                                archive, instance_root, output_member
+                            )
+                        ] = sha256_bytes(native_data)
+
+                    for pointer, text in iter_mantle_strings(source_document):
+                        native_translation = None
+                        record_status = file_status
+                        if native_document is not None:
+                            try:
+                                value = json_pointer_get(
+                                    native_document, pointer
+                                )
+                                if isinstance(value, str) and value:
+                                    native_translation = value
+                                else:
+                                    record_status = "STALE_NATIVE"
+                            except (KeyError, IndexError, TypeError, ValueError):
+                                record_status = "STALE_NATIVE"
+                        if (
+                            record_status == "STALE_NATIVE"
+                            and file_status != "STALE_NATIVE"
+                        ):
+                            stale_native_pages += 1
+                            file_status = "STALE_NATIVE"
+                        record = {
+                            "id": (
+                                f"mantle-book:{namespace}:{book}:"
+                                f"{relative}:{pointer}"
+                            ),
+                            "kind": "mantle_book_text",
+                            "source": text,
+                            "source_hash": source_hash(text),
+                            "namespace": namespace,
+                            "native_ru_present": native_translation
+                            is not None,
+                            "native_translation_status": record_status,
+                            "review_native": review_native,
+                            "force_output": review_native,
+                            "output_format": "mantle_book_json",
+                            "location": {
+                                "archive": archive.relative_to(
+                                    instance_root
+                                ).as_posix(),
+                                "member": member,
+                                "output_member": output_member,
+                                "pointer": pointer,
+                                "book": book,
+                            },
+                        }
+                        if native_translation is not None:
+                            record["native_translation"] = native_translation
+                            record["suggested_translation"] = native_translation
+                        records.append(record)
+        except zipfile.BadZipFile:
+            continue
+
+    return SourceResult(
+        records=records,
+        source_files=[
+            {"path": path, "sha256": digest}
+            for path, digest in sorted(source_files.items())
+        ],
+        report={
+            "books": len(books),
+            "missing_native_pages": missing_native_pages,
+            "invalid_native_pages": invalid_native_pages,
+            "stale_native_pages": stale_native_pages,
+            "native_review_records": len(records),
         },
     )

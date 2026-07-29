@@ -37,6 +37,21 @@ def catalog_translation(catalog: dict[str, Any], record: dict[str, Any]) -> str:
     return matches[0]
 
 
+def catalog_has(catalog: dict[str, Any], record: dict[str, Any]) -> bool:
+    return any(
+        variant["source_hash"] == record["source_hash"]
+        and variant["source"] == record["source"]
+        for variant in catalog["entries"].get(record["id"], [])
+    )
+
+
+def record_needs_catalog(record: dict[str, Any]) -> bool:
+    status = record.get("translation_status")
+    if status is not None:
+        return status != "NATIVE_RU"
+    return not record.get("native_ru_present", False)
+
+
 def mask_visible_fields(value: Any) -> Any:
     if isinstance(value, dict):
         masked = {}
@@ -166,7 +181,10 @@ def build_language_files(
     for record in manifest["records"]:
         if (
             record.get("output_format") != "lang"
-            or record["native_ru_present"]
+            or (
+                record.get("native_ru_present", False)
+                and not record.get("force_output", False)
+            )
         ):
             continue
         value = catalog_translation(catalog, record)
@@ -283,6 +301,115 @@ def build_patchouli_files(
     return translated
 
 
+def _verified_archive_member(
+    manifest: dict[str, Any],
+    instance_root: Path,
+    archive_name: str,
+    member: str,
+) -> bytes:
+    archive = instance_root / archive_name
+    with zipfile.ZipFile(archive) as jar:
+        data = jar.read(member)
+    source_label = f"{archive_name}!/{member}"
+    expected_hash = next(
+        (
+            entry["sha256"]
+            for entry in manifest["source_files"]
+            if entry["path"] == source_label
+        ),
+        None,
+    )
+    if expected_hash is None or sha256_bytes(data) != expected_hash:
+        raise ValueError(f"{source_label}: source hash changed")
+    return data
+
+
+def build_manual_files(
+    manifest: dict[str, Any],
+    catalog: dict[str, Any],
+    instance_root: Path,
+    output: Path,
+) -> int:
+    grouped: dict[
+        tuple[str, str, str], list[dict[str, Any]]
+    ] = defaultdict(list)
+    for record in manifest["records"]:
+        if (
+            record.get("output_format") == "manual_text"
+            and record.get("force_output", False)
+        ):
+            location = record["location"]
+            grouped[
+                (
+                    location["archive"],
+                    location["member"],
+                    location["output_member"],
+                )
+            ].append(record)
+
+    translated = 0
+    for (archive_name, member, output_member), records in sorted(
+        grouped.items()
+    ):
+        data = _verified_archive_member(
+            manifest, instance_root, archive_name, member
+        )
+        lines = data.decode("utf-8-sig").splitlines()
+        for record in records:
+            lines[record["location"]["line"]] = catalog_translation(
+                catalog, record
+            )
+            translated += 1
+        target = output / output_member
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text("\n".join(lines), encoding="utf-8")
+    return translated
+
+
+def build_mantle_book_files(
+    manifest: dict[str, Any],
+    catalog: dict[str, Any],
+    instance_root: Path,
+    output: Path,
+) -> int:
+    grouped: dict[
+        tuple[str, str, str], list[dict[str, Any]]
+    ] = defaultdict(list)
+    for record in manifest["records"]:
+        if (
+            record.get("output_format") == "mantle_book_json"
+            and record.get("force_output", False)
+        ):
+            location = record["location"]
+            grouped[
+                (
+                    location["archive"],
+                    location["member"],
+                    location["output_member"],
+                )
+            ].append(record)
+
+    translated = 0
+    for (archive_name, member, output_member), records in sorted(
+        grouped.items()
+    ):
+        data = _verified_archive_member(
+            manifest, instance_root, archive_name, member
+        )
+        document = json.loads(data.decode("utf-8-sig"))
+        for record in records:
+            json_pointer_set(
+                document,
+                record["location"]["pointer"],
+                catalog_translation(catalog, record),
+            )
+            translated += 1
+        target = output / output_member
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(json_bytes(document))
+    return translated
+
+
 def snapshot(root: Path) -> dict[str, bytes]:
     return {
         path.relative_to(root).as_posix(): path.read_bytes()
@@ -325,12 +452,7 @@ def main() -> int:
     unresolved = [
         record["id"]
         for record in manifest["records"]
-        if not record.get("native_ru_present", False)
-        and not any(
-            variant["source_hash"] == record["source_hash"]
-            and variant["source"] == record["source"]
-            for variant in catalog["entries"].get(record["id"], [])
-        )
+        if record_needs_catalog(record) and not catalog_has(catalog, record)
     ]
     if unresolved:
         raise ValueError(
@@ -382,6 +504,25 @@ def main() -> int:
             args.instance_root.resolve(),
             resourcepack,
         )
+        manual_count = build_manual_files(
+            manifest,
+            catalog,
+            args.instance_root.resolve(),
+            resourcepack,
+        )
+        mantle_book_count = build_mantle_book_files(
+            manifest,
+            catalog,
+            args.instance_root.resolve(),
+            resourcepack,
+        )
+        resourcepack_overrides = version_root / "resourcepack-overrides"
+        if resourcepack_overrides.exists():
+            shutil.copytree(
+                resourcepack_overrides,
+                resourcepack,
+                dirs_exist_ok=True,
+            )
         if args.check:
             if snapshot(generated) != snapshot(destination):
                 raise ValueError("generated resources are not current")
@@ -394,11 +535,11 @@ def main() -> int:
         "version": args.version,
         "manifest_records": len(manifest["records"]),
         "catalog_hits": sum(
-            not record.get("native_ru_present", False)
+            catalog_has(catalog, record)
             for record in manifest["records"]
         ),
         "native_ru_coverage": sum(
-            record.get("native_ru_present", False)
+            not record_needs_catalog(record)
             for record in manifest["records"]
         ),
         "pending": 0,
@@ -406,6 +547,8 @@ def main() -> int:
         "output_quest_strings": quest_count,
         "output_language_translation_keys": language_count,
         "output_patchouli_strings": patchouli_count,
+        "output_manual_strings": manual_count,
+        "output_mantle_book_strings": mantle_book_count,
         "runtime_audit_translation_keys": sum(
             len(values) for values in runtime_overrides.values()
         ),
@@ -421,7 +564,8 @@ def main() -> int:
         report_path.write_bytes(json_bytes(report))
         print(
             f"Built {quest_count} quest strings, {language_count} language keys, "
-            f"and {patchouli_count} Patchouli strings "
+            f"{patchouli_count} Patchouli strings, {manual_count} manual strings, "
+            f"and {mantle_book_count} Mantle book strings "
             f"for {args.version}"
         )
     return 0

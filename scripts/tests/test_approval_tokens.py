@@ -7,6 +7,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from approve_version_translations import (
     TOKEN_RE,
+    technical_tokens,
     validate_block_item_consistency,
 )
 
@@ -28,6 +29,24 @@ class ApprovalTokenTest(unittest.TestCase):
         self.assertNotEqual(
             TOKEN_RE.findall(source),
             TOKEN_RE.findall(translation),
+        )
+
+    def test_allows_translated_manual_link_label(self) -> None:
+        source = "<&image>Use the <link;wiring;wire;page>."
+        translation = "<&image>Используйте <link;wiring;провод;page>."
+
+        self.assertEqual(
+            technical_tokens(source),
+            technical_tokens(translation),
+        )
+
+    def test_detects_changed_manual_link_target(self) -> None:
+        source = "<link;wiring;wire;page>"
+        translation = "<link;power;провод;page>"
+
+        self.assertNotEqual(
+            technical_tokens(source),
+            technical_tokens(translation),
         )
 
 
