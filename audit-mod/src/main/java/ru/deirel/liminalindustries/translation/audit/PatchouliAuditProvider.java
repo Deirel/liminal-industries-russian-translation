@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
+import vazkii.patchouli.api.PatchouliAPI;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -76,6 +77,19 @@ final class PatchouliAuditProvider implements AuditProvider {
             ));
         }
         return subjects;
+    }
+
+    @Override
+    public List<AuditBook> bookStacks() {
+        List<AuditBook> books = new ArrayList<>();
+        for (TranslationAuditIndex.BookRecord record
+            : TranslationAuditIndex.bookRecords(id())) {
+            books.add(new AuditBook(
+                record.sourceId() + ":" + record.bookId(),
+                PatchouliAPI.get().getBookStack(record.bookId())
+            ));
+        }
+        return List.copyOf(books);
     }
 
     private void collect(

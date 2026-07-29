@@ -58,6 +58,9 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
+    compileOnly fg.deobf(
+        "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE"
+    )
 
     testImplementation platform('org.junit:junit-bom:5.10.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
@@ -68,6 +71,7 @@ tasks.named('processResources', ProcessResources).configure {
         minecraft_version: minecraft_version,
         forge_version: forge_version,
         jei_version: jei_version,
+        patchouli_version: patchouli_version,
         mod_id: mod_id,
         mod_version: translationConfig.version
     ]
@@ -93,7 +97,7 @@ tasks.register('generateTranslationAuditIndex') {
     outputs.file output
     doLast {
         def manifest = new JsonSlurper().parse(translationManifestFile)
-        def records = manifest.records.findAll {
+        def languageRecords = manifest.records.findAll {
             it.source_id == 'patchouli' && it.output_format == 'lang'
         }.collect {
             [
@@ -102,11 +106,43 @@ tasks.register('generateTranslationAuditIndex') {
                 source: it.source
             ]
         }
+        def patchouliBooks = manifest.records.findAll {
+            it.source_id == 'patchouli'
+        }.collect {
+            if (it.location.book) {
+                return "${it.namespace}:${it.location.book}"
+            }
+            def matcher = it.location.member =~
+                'assets/[^/]+/patchouli_books/([^/]+)/'
+            if (!matcher.find()) {
+                throw new GradleException(
+                    "Could not identify Patchouli book for ${it.id}"
+                )
+            }
+            "${it.namespace}:${matcher.group(1)}"
+        }.unique().sort()
+        def mantleBooks = manifest.records.findAll {
+            it.source_id == 'tconstruct_books'
+        }.collect {
+            "${it.namespace}:${it.location.book}"
+        }.unique().sort()
+        def manualBooks = manifest.records.any {
+            it.source_id == 'immersive_engineering_manual'
+        } ? ['immersiveengineering:manual'] : []
         def document = [
-            schema: 1,
+            schema: 2,
             version: selectedTranslationVersion,
             sources: [
-                patchouli: records
+                patchouli: [
+                    language_records: languageRecords,
+                    books: patchouliBooks
+                ],
+                tconstruct_books: [
+                    books: mantleBooks
+                ],
+                immersive_engineering_manual: [
+                    books: manualBooks
+                ]
             ]
         ]
         def target = output.get().asFile

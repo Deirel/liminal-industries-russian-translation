@@ -6,4 +6,8 @@ interface AuditProvider {
     String id();
 
     List<AuditSubject> discover(AuditContext context);
+
+    default List<AuditBook> bookStacks() {
+        return List.of();
+    }
 }

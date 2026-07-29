@@ -32,14 +32,6 @@ final class ItemTranslationAudit {
         "liminal-industries-ru-audit",
         "item-name-audit.json"
     );
-    private static final List<AuditProvider> PROVIDERS = List.of(
-        new ItemAuditProvider(),
-        new BlockAuditProvider(),
-        new PatchouliAuditProvider(),
-        new ImmersiveEngineeringManualAuditProvider(),
-        new MantleBookAuditProvider()
-    );
-
     private ItemTranslationAudit() {
     }
 
@@ -103,7 +95,7 @@ final class ItemTranslationAudit {
         List<AuditEntry> entries = new ArrayList<>();
         Map<String, Integer> providerCounts = new LinkedHashMap<>();
         Set<String> enabledProviders = AuditSourceConfig.enabledProviders();
-        Set<String> availableProviders = PROVIDERS.stream()
+        Set<String> availableProviders = AuditProviders.all().stream()
             .map(AuditProvider::id)
             .collect(Collectors.toSet());
         for (String providerId : enabledProviders) {
@@ -114,7 +106,7 @@ final class ItemTranslationAudit {
                 ));
             }
         }
-        for (AuditProvider provider : PROVIDERS) {
+        for (AuditProvider provider : AuditProviders.all()) {
             if (!enabledProviders.contains(provider.id())) {
                 continue;
             }

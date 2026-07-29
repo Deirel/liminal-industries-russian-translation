@@ -33,6 +33,13 @@ ordering = "AFTER"
 side = "CLIENT"
 
 [[dependencies.${mod_id}]]
+modId = "patchouli"
+mandatory = true
+versionRange = "[${minecraft_version}-${patchouli_version}-FORGE,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.${mod_id}]]
 modId = "liminal_industries_ru"
 mandatory = true
 versionRange = "[${mod_version}]"

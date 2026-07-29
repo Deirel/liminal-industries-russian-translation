@@ -66,6 +66,16 @@ final class ImmersiveEngineeringManualAuditProvider implements AuditProvider {
         return subjects;
     }
 
+    @Override
+    public List<AuditBook> bookStacks() {
+        return TranslationAuditIndex.bookRecords(id()).stream()
+            .map(record -> AuditBooks.registryItem(
+                record.sourceId(),
+                record.bookId()
+            ))
+            .toList();
+    }
+
     List<String> readLines(Resource resource, ResourceLocation location) {
         try (var input = resource.open()) {
             List<String> lines = new ArrayList<>(new String(

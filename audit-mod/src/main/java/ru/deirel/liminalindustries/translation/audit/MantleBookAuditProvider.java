@@ -70,6 +70,16 @@ final class MantleBookAuditProvider implements AuditProvider {
         return subjects;
     }
 
+    @Override
+    public List<AuditBook> bookStacks() {
+        return TranslationAuditIndex.bookRecords(id()).stream()
+            .map(record -> AuditBooks.registryItem(
+                record.sourceId(),
+                record.bookId()
+            ))
+            .toList();
+    }
+
     private void collect(
         ResourceLocation resourceId,
         String pointer,
