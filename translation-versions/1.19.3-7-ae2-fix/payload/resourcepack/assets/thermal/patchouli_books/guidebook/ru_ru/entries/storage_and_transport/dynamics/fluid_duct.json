@@ -1,0 +1,23 @@
+{
+  "category": "thermal:ducts",
+  "flag": "mod:thermal_dynamics",
+  "icon": "thermal:fluid_duct",
+  "name": "Жидкостная труба",
+  "pages": [
+    {
+      "text": "Жидкостные трубы передают жидкости. Одна сеть труб может одновременно содержать и передавать только одну жидкость. Блок «Жидкостная труба с окном» позволяет видеть жидкость внутри. Для извлечения жидкости из $(l:thermal:technology/devices/introduction)устройств$(/l) и других блоков, которые не выводят её автоматически, требуется «Насадка: сервопривод».",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:fluid_duct_4",
+      "B.recipe": "thermal:fluid_duct_windowed_4",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)Насадка: фильтр$(li)Насадка: сервопривод$(li)Насадка: турбосервопривод",
+      "title": "Совместимые насадки",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

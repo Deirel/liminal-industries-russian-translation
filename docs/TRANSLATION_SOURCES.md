@@ -43,6 +43,10 @@ data/<namespace>/patchouli_books/<book>/book.json
 assets/<namespace>/patchouli_books/<book>/en_us/**/*.json
 ```
 
+Поиск выполняется как в основном JAR мода, так и во вложенных
+`META-INF/jarjar/*.jar`. Это важно для модов вроде Thermal Series, где
+языковые файлы и книга находятся во внутреннем core-JAR.
+
 Поля `name`, `title`, `subtitle`, `description`, `landing_text`, `text` и
 `link_text` считаются видимыми. Если значение является ключом из `en_us`, оно
 попадает в обычный `ru_ru.json`. Литеральный текст записывается в зеркальный

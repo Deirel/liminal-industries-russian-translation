@@ -1,0 +1,14 @@
+{
+  "category": "thermal:augments",
+  "icon": "thermal:machine_null_augment",
+  "name": "Отмена обработки",
+  "pages": [
+    {
+      "A.recipe": "thermal:augments/machine_null_augment",
+      "text": "Улучшение «Отмена обработки» автоматически уничтожает излишки вторичных продуктов. Излишним считается продукт, который переполнил бы хранилище сверх обычного допустимого предела.",
+      "title": "Отмена обработки",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

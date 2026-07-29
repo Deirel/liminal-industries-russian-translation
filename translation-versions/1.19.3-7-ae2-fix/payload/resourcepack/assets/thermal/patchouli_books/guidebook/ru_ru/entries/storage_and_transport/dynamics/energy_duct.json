@@ -1,0 +1,22 @@
+{
+  "category": "thermal:ducts",
+  "flag": "mod:thermal_dynamics",
+  "icon": "thermal:energy_duct",
+  "name": "Энергетическая труба",
+  "pages": [
+    {
+      "text": "Энергетические трубы передают энергию. Много ли? Достаточно. При полной загрузке соединения его пропускная способность повысится, поэтому старайтесь поддерживать стабильное потребление. Для ограничения потока энергии можно использовать насадку «Ограничитель RF».",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:energy_duct_4",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)Насадка: ограничитель RF",
+      "title": "Совместимые насадки",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

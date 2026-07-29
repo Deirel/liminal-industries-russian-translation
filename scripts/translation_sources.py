@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import io
 import json
 import re
 import zipfile
@@ -171,26 +172,55 @@ def collect_patchouli(
     project_ru = project_ru or {}
     records_by_id: dict[str, dict[str, Any]] = {}
     source_files: dict[str, str] = {}
-    native_documents: dict[str, Any] = {}
-    documents: list[tuple[Path, str, bytes]] = []
-    book_documents: list[tuple[Path, str, bytes]] = []
+    native_documents: dict[tuple[Path, str | None, str], Any] = {}
+    documents: list[tuple[Path, str | None, str, bytes]] = []
+    book_documents: list[tuple[Path, str | None, str, bytes]] = []
 
     for archive in archives:
         try:
             with zipfile.ZipFile(archive) as jar:
-                for member in jar.namelist():
-                    asset_match = PATCHOULI_ASSET_RE.fullmatch(member)
-                    book_match = PATCHOULI_BOOK_RE.fullmatch(member)
-                    if asset_match:
-                        data = jar.read(member)
-                        documents.append((archive, member, data))
-                        ru_member = member.replace("/en_us/", "/ru_ru/", 1)
-                        if ru_member in jar.namelist():
-                            native_documents[
-                                member.replace("/en_us/", "/ru_ru/", 1)
-                            ] = json.loads(jar.read(ru_member).decode("utf-8-sig"))
-                    elif book_match:
-                        book_documents.append((archive, member, jar.read(member)))
+                containers: list[
+                    tuple[str | None, zipfile.ZipFile]
+                ] = [(None, jar)]
+                nested_handles: list[zipfile.ZipFile] = []
+                for nested_member in jar.namelist():
+                    if (
+                        nested_member.startswith("META-INF/jarjar/")
+                        and nested_member.endswith(".jar")
+                    ):
+                        nested = zipfile.ZipFile(
+                            io.BytesIO(jar.read(nested_member))
+                        )
+                        nested_handles.append(nested)
+                        containers.append((nested_member, nested))
+                for nested_member, container in containers:
+                    names = set(container.namelist())
+                    for member in names:
+                        asset_match = PATCHOULI_ASSET_RE.fullmatch(member)
+                        book_match = PATCHOULI_BOOK_RE.fullmatch(member)
+                        if asset_match:
+                            data = container.read(member)
+                            documents.append(
+                                (archive, nested_member, member, data)
+                            )
+                            ru_member = member.replace("/en_us/", "/ru_ru/", 1)
+                            if ru_member in names:
+                                native_documents[
+                                    (archive, nested_member, ru_member)
+                                ] = json.loads(
+                                    container.read(ru_member).decode("utf-8-sig")
+                                )
+                        elif book_match:
+                            book_documents.append(
+                                (
+                                    archive,
+                                    nested_member,
+                                    member,
+                                    container.read(member),
+                                )
+                            )
+                for nested in nested_handles:
+                    nested.close()
         except zipfile.BadZipFile:
             continue
 
@@ -231,7 +261,7 @@ def collect_patchouli(
         else:
             records_by_id[logical_id] = record
 
-    for archive, member, data in documents:
+    for archive, nested_archive, member, data in documents:
         match = PATCHOULI_ASSET_RE.fullmatch(member)
         assert match is not None
         namespace, book, relative = match.groups()
@@ -239,10 +269,13 @@ def collect_patchouli(
         output_member = (
             f"assets/{namespace}/patchouli_books/{book}/ru_ru/{relative}"
         )
-        native_document = native_documents.get(output_member)
-        source_label = (
-            f"{archive.relative_to(instance_root).as_posix()}!/{member}"
+        native_document = native_documents.get(
+            (archive, nested_archive, output_member)
         )
+        source_label = archive.relative_to(instance_root).as_posix()
+        if nested_archive is not None:
+            source_label += f"!/{nested_archive}"
+        source_label += f"!/{member}"
         source_files[source_label] = sha256_bytes(data)
         for pointer, text in iter_json_strings(source_document):
             if text.startswith("#"):
@@ -253,6 +286,8 @@ def collect_patchouli(
                 "output_member": output_member,
                 "pointer": pointer,
             }
+            if nested_archive is not None:
+                location["nested_archive"] = nested_archive
             if text in en_us:
                 add_language_record(
                     namespace,
@@ -289,14 +324,15 @@ def collect_patchouli(
                 raise ValueError(f"conflicting Patchouli JSON field {logical_id}")
             records_by_id[logical_id] = record
 
-    for archive, member, data in book_documents:
+    for archive, nested_archive, member, data in book_documents:
         match = PATCHOULI_BOOK_RE.fullmatch(member)
         assert match is not None
         namespace, book = match.groups()
         source_document = json.loads(data.decode("utf-8-sig"))
-        source_label = (
-            f"{archive.relative_to(instance_root).as_posix()}!/{member}"
-        )
+        source_label = archive.relative_to(instance_root).as_posix()
+        if nested_archive is not None:
+            source_label += f"!/{nested_archive}"
+        source_label += f"!/{member}"
         source_files[source_label] = sha256_bytes(data)
         for pointer, text in iter_json_strings(source_document):
             add_language_record(
@@ -308,6 +344,11 @@ def collect_patchouli(
                     "member": member,
                     "book": book,
                     "pointer": pointer,
+                    **(
+                        {"nested_archive": nested_archive}
+                        if nested_archive is not None
+                        else {}
+                    ),
                 },
                 "patchouli_book_metadata",
             )

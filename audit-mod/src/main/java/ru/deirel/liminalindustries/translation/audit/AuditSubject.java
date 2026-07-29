@@ -11,6 +11,7 @@ record AuditSubject(
     String registryId,
     String descriptionId,
     Component name,
+    boolean localizedLiteral,
     Set<String> discoveredFrom
 ) {
 }

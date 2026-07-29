@@ -222,7 +222,8 @@ final class ItemTranslationAudit {
             AuditStatus status = AuditClassifier.classify(
                 displayName,
                 keys,
-                verifiedRussianKeys
+                verifiedRussianKeys,
+                subject.localizedLiteral()
             );
             Set<String> missing = new TreeSet<>(keys);
             missing.removeAll(verifiedRussianKeys);

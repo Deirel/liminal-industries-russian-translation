@@ -12,7 +12,8 @@ final class AuditClassifier {
     static AuditStatus classify(
         String displayName,
         Set<String> translationKeys,
-        Set<String> russianKeys
+        Set<String> russianKeys,
+        boolean localizedLiteral
     ) {
         if (displayName == null || displayName.isBlank()) {
             return AuditStatus.ERROR;
@@ -21,6 +22,9 @@ final class AuditClassifier {
             return russianKeys.containsAll(translationKeys)
                 ? AuditStatus.TRANSLATED
                 : AuditStatus.MISSING_RU;
+        }
+        if (localizedLiteral) {
+            return AuditStatus.LOCALIZED_LITERAL;
         }
         return CYRILLIC.matcher(displayName).find()
             ? AuditStatus.CYRILLIC_LITERAL

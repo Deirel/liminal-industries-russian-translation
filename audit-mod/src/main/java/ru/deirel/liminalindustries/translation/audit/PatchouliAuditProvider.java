@@ -71,6 +71,7 @@ final class PatchouliAuditProvider implements AuditProvider {
                 record.translationKey(),
                 record.id(),
                 Component.translatable(record.translationKey()),
+                false,
                 Set.of("TRANSLATION_AUDIT_INDEX")
             ));
         }
@@ -114,7 +115,10 @@ final class PatchouliAuditProvider implements AuditProvider {
                         subjects.add(subject(
                             resourceId,
                             childPointer,
-                            rendered
+                            rendered,
+                            russianChild != null
+                                && russianChild.isJsonPrimitive()
+                                && russianChild.getAsJsonPrimitive().isString()
                         ));
                     }
                 }
@@ -150,7 +154,8 @@ final class PatchouliAuditProvider implements AuditProvider {
     private AuditSubject subject(
         ResourceLocation resourceId,
         String pointer,
-        Component rendered
+        Component rendered,
+        boolean localizedLiteral
     ) {
         String uid = "patchouli:" + resourceId + ":" + pointer;
         return new AuditSubject(
@@ -160,6 +165,7 @@ final class PatchouliAuditProvider implements AuditProvider {
             resourceId.toString(),
             pointer,
             rendered,
+            localizedLiteral,
             Set.of("PATCHOULI_RESOURCE")
         );
     }

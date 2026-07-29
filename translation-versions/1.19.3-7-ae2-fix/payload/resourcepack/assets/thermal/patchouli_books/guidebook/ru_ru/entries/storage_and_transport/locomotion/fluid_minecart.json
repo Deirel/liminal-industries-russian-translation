@@ -1,0 +1,27 @@
+{
+  "category": "thermal:locomotion",
+  "flag": "mod:thermal_locomotion",
+  "icon": "thermal:fluid_minecart",
+  "name": "Вагонетка с жидкостным резервуаром",
+  "pages": [
+    {
+      "text": "Вагонетка с жидкостным резервуаром служит для хранения жидкостей. Изначально она вмещает 32 000 mB; ёмкость можно повысить с помощью улучшений. Одновременно можно хранить только одну жидкость. Вагонетку можно вручную наполнять и опустошать подходящими ёмкостями, например вёдрами.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:fluid_cell_frame",
+      "B.recipe": "thermal:fluid_minecart",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "Вагонетку с жидкостным резервуаром можно наполнять и опустошать по одному ведру за раз, щёлкая по ней ПКМ с ведром. Будьте осторожны: из-за ошибки Forge попытка зачерпнуть жидкость, для которой нет ведра, уничтожит ваше ведро! В будущем появится передающий рельс, который откроет интересные возможности для логистики!",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширитель резервуара$(/l)",
+      "title": "Совместимые улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

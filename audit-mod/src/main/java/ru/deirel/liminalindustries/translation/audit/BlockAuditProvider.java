@@ -30,6 +30,7 @@ final class BlockAuditProvider implements AuditProvider {
                 blockId.toString(),
                 block.getDescriptionId(),
                 block.getName(),
+                false,
                 Set.of("BLOCK_REGISTRY")
             ));
         }

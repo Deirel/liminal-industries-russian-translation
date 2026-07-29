@@ -39635,6 +39635,328 @@
         "translation": "Как выполнить"
       }
     ],
+    "patchouli-json:thermal:guidebook:categories/ducts.json:/description": [
+      {
+        "source_hash": "sha256:27734a1b9d131f97a38a15a506531960d3e1f12ffdad736a002ba5bba3bb79d6",
+        "source": "How do I move <thing>?",
+        "translation": "Как перемещать <thing>?"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:categories/ducts.json:/name": [
+      {
+        "source_hash": "sha256:3b06ad9fdd10c2e40a4e21020d72ea3572324f7dc2784102632b7e6bca9f40fe",
+        "source": "Ducts",
+        "translation": "Трубы"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/equipment/tools/florb.json:/name": [
+      {
+        "source_hash": "sha256:8cf3c31691fae632eab53af38748fc0d16044e61ca180dcac24514132d4086f0",
+        "source": "Florbs",
+        "translation": "Флорбы"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/equipment/tools/florb.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:5da6fe10cd16cdbd1463ca550e900f812b841098227b4033d8798f526d31e7e7",
+        "source": "Florb. Short for Fluid-Orb, obviously. Holds one bucket of fluid. You can throw them! Note that they will only hold fluids which can be placed in-world.",
+        "translation": "Флорб. Сокращение от Fluid-Orb, разумеется. Вмещает одно ведро жидкости. Его можно бросать! Учтите, что флорб можно наполнить только жидкостью, которую можно разлить в мире."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/equipment/tools/florb.json:/pages/1/title": [
+      {
+        "source_hash": "sha256:46a5c2a06b8983d763784752d1e2da22355e7de01edc95879b994e52171a3337",
+        "source": "Florb",
+        "translation": "Флорб"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/energy_duct.json:/name": [
+      {
+        "source_hash": "sha256:d1b90599aec5fb241f3fe7fb250e4d6f18b8b21085c6ffdc3bc135144f310ad6",
+        "source": "Fluxduct",
+        "translation": "Энергетическая труба"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/energy_duct.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:90bfea1a96221b4c82e8dddec5815165681e92800bddb16184dfc134ee725065",
+        "source": "Fluxducts move energy around. How much energy? Enough. If you saturate the connection, it'll allow for higher transfer. So try to maintain a stable demand. In order to limit the rate of energy flow, a Redstone Flux Limiter attachment can be used.",
+        "translation": "Энергетические трубы передают энергию. Много ли? Достаточно. При полной загрузке соединения его пропускная способность повысится, поэтому старайтесь поддерживать стабильное потребление. Для ограничения потока энергии можно использовать насадку «Ограничитель RF»."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/energy_duct.json:/pages/2/text": [
+      {
+        "source_hash": "sha256:3e4a1e312a3cc2fde0278648cc13aea7edb3cc5eca67ee81e783725da681979f",
+        "source": "$(li)Redstone Flux Limiter",
+        "translation": "$(li)Насадка: ограничитель RF"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/energy_duct.json:/pages/2/title": [
+      {
+        "source_hash": "sha256:8239ce4998c9f36021ee5e772277cd5957aa76b145bfb1259ddc10ca9c408f70",
+        "source": "Attachment Compatibility",
+        "translation": "Совместимые насадки"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/fluid_duct.json:/name": [
+      {
+        "source_hash": "sha256:7b05358af924461d69cf900476511dffd499cc4df04063d26afc262b60312d1c",
+        "source": "Fluiduct",
+        "translation": "Жидкостная труба"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/fluid_duct.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:870f30883515e5654f3b2c56501cc705c28ba8237df983d43a0ba819541c5a0a",
+        "source": "Fluiducts move fluids around. A given network of ducts can only hold and transfer a single fluid at a time. Windowed Fluiducts allow you to see the fluid inside. In order to extract from $(l:thermal:technology/devices/introduction)devices$(/l) and other blocks that do not auto-output fluid, a servo attachment is required.",
+        "translation": "Жидкостные трубы передают жидкости. Одна сеть труб может одновременно содержать и передавать только одну жидкость. Блок «Жидкостная труба с окном» позволяет видеть жидкость внутри. Для извлечения жидкости из $(l:thermal:technology/devices/introduction)устройств$(/l) и других блоков, которые не выводят её автоматически, требуется «Насадка: сервопривод»."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/fluid_duct.json:/pages/2/text": [
+      {
+        "source_hash": "sha256:8ba9e78d6023073d37d898a94cca8851de74fb38d0802732b8fb46f15b302e6f",
+        "source": "$(li)Filter$(li)Servo$(li)Turbo-Servo",
+        "translation": "$(li)Насадка: фильтр$(li)Насадка: сервопривод$(li)Насадка: турбосервопривод"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/dynamics/fluid_duct.json:/pages/2/title": [
+      {
+        "source_hash": "sha256:8239ce4998c9f36021ee5e772277cd5957aa76b145bfb1259ddc10ca9c408f70",
+        "source": "Attachment Compatibility",
+        "translation": "Совместимые насадки"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/energy_minecart.json:/name": [
+      {
+        "source_hash": "sha256:5ec3f99f490965c2e72becd406d0bd15d1f42cd4adc68d6f22a5e1fff965ef2f",
+        "source": "Redstone Flux Minecart",
+        "translation": "Вагонетка с энергетической ячейкой"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/energy_minecart.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:ca2d610c89acf36a4b9ca62fe813893466a56d94252a81257e4e8c1b14e6cff9",
+        "source": "The Redstone Flux Minecart can be used to store Redstone Flux (RF). The RF Minecart starts with 1,000,000RF storage capacity and 1,000rf/t max transfer rate, which can be improved using augments. Use the GUI to fill and drain RF-holding items.",
+        "translation": "Вагонетка с энергетической ячейкой служит для хранения Redstone Flux (RF). Изначально она вмещает 1 000 000 RF и может передавать до 1 000 RF/t; эти параметры можно повысить установкой улучшений. В интерфейсе вагонетки можно заряжать и разряжать предметы, способные хранить RF."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/energy_minecart.json:/pages/2/text": [
+      {
+        "source_hash": "sha256:74999e7630a34e29676fbeb412a179048cefd75a67608e8eef189768f91485af",
+        "source": "Stay posted for a transfer rail which will allow for some interesting logistics!",
+        "translation": "В будущем появится передающий рельс, который откроет интересные возможности для логистики!"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/energy_minecart.json:/pages/3/text": [
+      {
+        "source_hash": "sha256:9b35d30fc12c99275eaa25ca808682f23efa325c36df3d4eed21b033146f1a60",
+        "source": "$(li)$(l:thermal:technology/augments/integral_components)Integral Components$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Expanded RF Coil$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Stabilized RF Coil$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)High-Flux RF Coil$(/l)",
+        "translation": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Усиленная катушка RF$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Накопительная катушка RF$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Передающая катушка RF$(/l)"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/energy_minecart.json:/pages/3/title": [
+      {
+        "source_hash": "sha256:dc3bece9b3ee08c20dc11957f9389c1c933c3d1f57867bd7c7cde6bb2e446d42",
+        "source": "Augment Compatibility",
+        "translation": "Совместимые улучшения"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/fluid_minecart.json:/name": [
+      {
+        "source_hash": "sha256:dd9cf3e9c3f33d02479c216c2ff1a428dfd38d5fcc7c171a27c4cbe90612d3b0",
+        "source": "Fluid Tank Minecart",
+        "translation": "Вагонетка с жидкостным резервуаром"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/fluid_minecart.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:f60b93753aebb67089de3dec0cb2b3f28587f0ea1e12522fa26b030cd3fde7d1",
+        "source": "The Fluid Tank Minecart can be used to store fluids. The cart starts with 32,000mb of capacity, which can be improved using augments. It can only store one fluid at a time. You can manually add or remove fluid from the cart by using compatible containers such as buckets.",
+        "translation": "Вагонетка с жидкостным резервуаром служит для хранения жидкостей. Изначально она вмещает 32 000 mB; ёмкость можно повысить с помощью улучшений. Одновременно можно хранить только одну жидкость. Вагонетку можно вручную наполнять и опустошать подходящими ёмкостями, например вёдрами."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/fluid_minecart.json:/pages/2/text": [
+      {
+        "source_hash": "sha256:15499d63232de2441e03f148d45a54e21fa4e46c457f4ad2bfc16aaf2be0d0b8",
+        "source": "The Fluid Tank Minecart can be right clicked with buckets to fill or empty it one bucket at a time. Beware that there is currently a bug with Forge where trying to bucket a non-bucketable fluid voids your bucket! Stay posted for a transfer rail which will allow for some interesting logistics!",
+        "translation": "Вагонетку с жидкостным резервуаром можно наполнять и опустошать по одному ведру за раз, щёлкая по ней ПКМ с ведром. Будьте осторожны: из-за ошибки Forge попытка зачерпнуть жидкость, для которой нет ведра, уничтожит ваше ведро! В будущем появится передающий рельс, который откроет интересные возможности для логистики!"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/fluid_minecart.json:/pages/3/text": [
+      {
+        "source_hash": "sha256:808902e6e32f968ad2b2104359323440525b33e5381854421dbe0ebfd404c40b",
+        "source": "$(li)$(l:thermal:technology/augments/integral_components)Integral Components$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Expanded Tank Construction$(/l)",
+        "translation": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширитель резервуара$(/l)"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/storage_and_transport/locomotion/fluid_minecart.json:/pages/3/title": [
+      {
+        "source_hash": "sha256:dc3bece9b3ee08c20dc11957f9389c1c933c3d1f57867bd7c7cde6bb2e446d42",
+        "source": "Augment Compatibility",
+        "translation": "Совместимые улучшения"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/augments/machine_null.json:/name": [
+      {
+        "source_hash": "sha256:ccabb0a9cbc04551fed54ee36feb4d9c09a27d66aeb227fb1b6c2e3198ca5475",
+        "source": "Auxiliary Cactus",
+        "translation": "Отмена обработки"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/augments/machine_null.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:0cbb5f718c6012b03b16198be56e229e5c9610cb788bf4c3afb9ca29b9bdf2ed",
+        "source": "The Auxiliary Cactus augment automatically destroys any excess secondary products. An excess product is one that would overflow the storage beyond the normal allowed overflow.",
+        "translation": "Улучшение «Отмена обработки» автоматически уничтожает излишки вторичных продуктов. Излишним считается продукт, который переполнил бы хранилище сверх обычного допустимого предела."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/augments/machine_null.json:/pages/0/title": [
+      {
+        "source_hash": "sha256:ccabb0a9cbc04551fed54ee36feb4d9c09a27d66aeb227fb1b6c2e3198ca5475",
+        "source": "Auxiliary Cactus",
+        "translation": "Отмена обработки"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/composter.json:/name": [
+      {
+        "source_hash": "sha256:90222b39828c77b0eb523e5d2c929b25d34fa1ff29b77fc651ed6a70d7fa7070",
+        "source": "Batch Composter",
+        "translation": "Механический компостер"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/composter.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:a1de31a34eaf723ece68aeb7debbc57efa0100350b6ef03bc7164c526473be55",
+        "source": "The Batch Composter is a more advanced version of the Composter. It can compost multiple items at once and produces Compost rather than Bone Meal. It will also generate XP when a $(l:thermal:technology/augments/xp_storage)Knowledge Concentrator augment$(/l) is installed.",
+        "translation": "Механический компостер — более продвинутая версия компостницы. Он может одновременно перерабатывать несколько предметов и производит компост вместо костной муки. Установленное $(l:thermal:technology/augments/xp_storage)улучшение «Накопитель опыта»$(/l) также позволяет ему вырабатывать опыт."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/composter.json:/pages/1/title": [
+      {
+        "source_hash": "sha256:90222b39828c77b0eb523e5d2c929b25d34fa1ff29b77fc651ed6a70d7fa7070",
+        "source": "Batch Composter",
+        "translation": "Механический компостер"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/composter.json:/pages/2/text": [
+      {
+        "source_hash": "sha256:a86f2a92a1fea52d1accdbd7837fbe13875d1035352b8f7e1321308fdcbb8db5",
+        "source": "$(li)$(l:thermal:technology/augments/integral_components)Integral Components$(/l)$(li)$(l:thermal:technology/augments/item_filter)Item Filter$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Knowledge Concentrator$(/l)",
+        "translation": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Фильтр предметов$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Накопитель опыта$(/l)"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/composter.json:/pages/2/title": [
+      {
+        "source_hash": "sha256:dc3bece9b3ee08c20dc11957f9389c1c933c3d1f57867bd7c7cde6bb2e446d42",
+        "source": "Augment Compatibility",
+        "translation": "Совместимые улучшения"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/xp_condenser.json:/name": [
+      {
+        "source_hash": "sha256:d44a3f71400af5e83d19b2dcb45d60d104cc0fe5ad4f0489c6016faa26034d11",
+        "source": "Insightful Condenser",
+        "translation": "Конденсатор опыта"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/xp_condenser.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:725b7f098f1b1cc7f92b168df71824cdd6378e6a51172db9065410131f9f85f8",
+        "source": "The Insightful Condenser is a device that can collect experience from nearby blocks which have stored it internally using a $(l:thermal:technology/augments/xp_storage)Knowledge Concentrator$(/l). It then converts that experience to liquid form. At base, it collects in a 5x5x5 area centered on it, which can be increased using $(l:thermal:technology/augments/area_radius)Radial Enhancement augments$(/l).",
+        "translation": "Конденсатор опыта — устройство, которое может собирать опыт из расположенных поблизости блоков, накопивших его внутри с помощью улучшения $(l:thermal:technology/augments/xp_storage)«Накопитель опыта»$(/l). Затем он преобразует этот опыт в жидкую форму. По умолчанию устройство охватывает область 5×5×5 вокруг себя. Эту область можно увеличить с помощью улучшений $(l:thermal:technology/augments/area_radius)«Улучшение радиуса»$(/l)."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/xp_condenser.json:/pages/1/text": [
+      {
+        "source_hash": "sha256:bcd5816f9e856198aa50065cf6cec90654c7008ee765748c7fff4e61ac771474",
+        "source": "When controlled via redstone signal, the Insightful Condenser will immediately collect the moment it is turned on. This way, it will always reliably activate when pulsed.",
+        "translation": "При управлении редстоуновым сигналом Конденсатор опыта собирает опыт сразу после включения. Благодаря этому он всегда надёжно срабатывает при подаче импульса."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/xp_condenser.json:/pages/1/title": [
+      {
+        "source_hash": "sha256:d44a3f71400af5e83d19b2dcb45d60d104cc0fe5ad4f0489c6016faa26034d11",
+        "source": "Insightful Condenser",
+        "translation": "Конденсатор опыта"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/xp_condenser.json:/pages/2/text": [
+      {
+        "source_hash": "sha256:3092f05904bf6fefaf42981e7362c94438894d722b5716d3d45562b03c2db1c1",
+        "source": "$(li)$(l:thermal:technology/augments/integral_components)Integral Components$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Expanded Tank Construction$(/l)$(li)$(l:thermal:technology/augments/area_radius)Radial Enhancement$(/l)",
+        "translation": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширитель резервуара$(/l)$(li)$(l:thermal:technology/augments/area_radius)Улучшение радиуса$(/l)"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/devices/xp_condenser.json:/pages/2/title": [
+      {
+        "source_hash": "sha256:dc3bece9b3ee08c20dc11957f9389c1c933c3d1f57867bd7c7cde6bb2e446d42",
+        "source": "Augment Compatibility",
+        "translation": "Совместимые улучшения"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/machines/crystallizer.json:/name": [
+      {
+        "source_hash": "sha256:383ebf6c5740d634add48a50f143e359ba621e4b9a92db526d4dc3b2c092a50d",
+        "source": "Crystallizer",
+        "translation": "Кристаллизатор"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/machines/crystallizer.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:c49383f3b62711b26ef480a989dba43f261e546e97730e7f9c82fd8b1ef5794b",
+        "source": "The Crystallizer is a machine that creates crystals from base components and a fluid.",
+        "translation": "Кристаллизатор — машина, создающая кристаллы из базовых компонентов и жидкости."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/machines/crystallizer.json:/pages/1/title": [
+      {
+        "source_hash": "sha256:383ebf6c5740d634add48a50f143e359ba621e4b9a92db526d4dc3b2c092a50d",
+        "source": "Crystallizer",
+        "translation": "Кристаллизатор"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/machines/crystallizer.json:/pages/2/text": [
+      {
+        "source_hash": "sha256:af2198251088e8cf20e4d555b2f55e6225c7f5b7f4614a9089cabab2404b6d99",
+        "source": "$(li)$(l:thermal:technology/augments/integral_components)Integral Components$(/l)$(li)$(l:thermal:technology/augments/item_filter)Item Filter$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Knowledge Concentrator$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Expanded RF Coil$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Stabilized RF Coil$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)High-Flux RF Coil$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Expanded Tank Construction$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Flux Linkage Amplifier$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Flux Efficiency$(/l)",
+        "translation": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Фильтр предметов$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Накопитель опыта$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Усиленная катушка RF$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Накопительная катушка RF$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Передающая катушка RF$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширитель резервуара$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Повышение скорости$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Повышение эффективности$(/l)"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/technology/machines/crystallizer.json:/pages/2/title": [
+      {
+        "source_hash": "sha256:dc3bece9b3ee08c20dc11957f9389c1c933c3d1f57867bd7c7cde6bb2e446d42",
+        "source": "Augment Compatibility",
+        "translation": "Совместимые улучшения"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/world/plants/crops.json:/pages/5/text": [
+      {
+        "source_hash": "sha256:7bbc3110dee2070d5df9a9ca75d568ebd5f20faea7c7f2930ef6c55790bcbbfd",
+        "source": "The leaves of a spinach plant. Grants sailors an increase in muscle mass.",
+        "translation": "Листья шпината. Увеличивают мышечную массу моряков."
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/world/plants/crops.json:/pages/5/title": [
+      {
+        "source_hash": "sha256:115848bd1b625cfe983273f195922a7553f0a63022873a97c8c9966d1cbcad47",
+        "source": "Spinach",
+        "translation": "Шпинат"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/world/plants/trees.json:/name": [
+      {
+        "source_hash": "sha256:109d6f455ed8c31a49197e9d1ca5241f95e8e593dc23412ef206aa9d07563b5a",
+        "source": "Trees",
+        "translation": "Деревья"
+      }
+    ],
+    "patchouli-json:thermal:guidebook:entries/world/plants/trees.json:/pages/0/text": [
+      {
+        "source_hash": "sha256:bdc87fc18a7a18bd42da4fbd5d48fc1318084368c419b460c2c433ce8471af1f",
+        "source": "Thermal Foundation adds a new tree (and associated wood products) - Rubberwood! More will come as progress marches ever onward.",
+        "translation": "Thermal Foundation добавляет новое дерево и связанные с ним изделия из древесины — каучуковое дерево! По мере развития появятся и другие."
+      }
+    ],
     "patchouli-lang:actuallyadditions:bb9fa2c96a216beea265": [
       {
         "source_hash": "sha256:bb9fa2c96a216beea265dde6da858b49234c964d93a3827d7e547e483f8341e6",
@@ -39696,6 +40018,13 @@
         "source_hash": "sha256:7fb810448d7f5cf04ee68193ca9b7e07854ca07c156cb73d8b0ed706e9f014d3",
         "source": "Version 3.4.x.x",
         "translation": "Версия 3.4.x.x"
+      }
+    ],
+    "patchouli-lang:thermal:thermal.book.subtitle": [
+      {
+        "source_hash": "sha256:e52cde3ebaf012b36348303a947106f3d0a43cdbf4c5c2a8037cec867bc5b748",
+        "source": "MC 1.20.1",
+        "translation": "MC 1.20.1"
       }
     ],
     "quest-chapter:0AB22B8732D34B8D:title": [

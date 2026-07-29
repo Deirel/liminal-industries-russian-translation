@@ -208,6 +208,7 @@
     "miners_delight": {
       "block.miners_delight.fake_meatloaf": "Фальшивый мясной рулет",
       "block.miners_delight.glazed_arachnid_limbs": "Глазированные конечности паукообразного",
+      "block.miners_delight.potted_gossypium": "Хлопчатник в горшке",
       "item.miners_delight.baked_spider_leg": "Запечённая паучья лапка",
       "item.miners_delight.cave_hamburger": "Пещерный гамбургер",
       "item.miners_delight.crunchy_bar": "Хрустящий батончик",
@@ -242,6 +243,22 @@
     },
     "sophisticatedcore": {
       "item.sophisticatedcore.xp_bucket": "Ведро опыта"
+    },
+    "storagedrawers": {
+      "block.storagedrawers.meta_hopper": "Мета-воронка",
+      "block.storagedrawers.meta_magnet_icon": "Значок магнита",
+      "block.storagedrawers.meta_priority_n1_icon": "Значок приоритета -1",
+      "block.storagedrawers.meta_priority_n2_icon": "Значок приоритета -2",
+      "block.storagedrawers.meta_priority_p1_icon": "Значок приоритета +1",
+      "block.storagedrawers.meta_priority_p2_icon": "Значок приоритета +2",
+      "block.storagedrawers.meta_right_label": "Правая метка",
+      "block.storagedrawers.meta_shroud_icon": "Значок сокрытия",
+      "block.storagedrawers.meta_suspend_icon": "Значок приостановки",
+      "block.storagedrawers.meta_void_icon": "Значок уничтожения"
+    },
+    "tconstruct": {
+      "block.tconstruct.fiery_liquid_fluid": "Огненная жидкость",
+      "block.tconstruct.molten_steeleaf_fluid": "Расплавленный сталелист"
     }
   }
 }

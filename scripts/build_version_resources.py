@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import shutil
 import tempfile
@@ -53,6 +54,27 @@ def mask_visible_fields(value: Any) -> Any:
     if isinstance(value, list):
         return [mask_visible_fields(child) for child in value]
     return value
+
+
+def overlay_json(base: Any, localized: Any) -> Any:
+    if isinstance(base, dict) and isinstance(localized, dict):
+        result = deepcopy(base)
+        for key, value in localized.items():
+            result[key] = (
+                overlay_json(result[key], value)
+                if key in result
+                else deepcopy(value)
+            )
+        return result
+    if isinstance(base, list) and isinstance(localized, list):
+        result = deepcopy(base)
+        for index, value in enumerate(localized):
+            if index < len(result):
+                result[index] = overlay_json(result[index], value)
+            else:
+                result.append(deepcopy(value))
+        return result
+    return deepcopy(localized)
 
 
 def build_quests(
@@ -175,7 +197,9 @@ def build_patchouli_files(
     instance_root: Path,
     output: Path,
 ) -> int:
-    grouped: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    grouped: dict[
+        tuple[str, str | None, str, str], list[dict[str, Any]]
+    ] = defaultdict(list)
     for record in manifest["records"]:
         if (
             record.get("output_format") == "patchouli_json"
@@ -185,17 +209,48 @@ def build_patchouli_files(
             grouped[
                 (
                     location["archive"],
+                    location.get("nested_archive"),
                     location["member"],
                     location["output_member"],
                 )
             ].append(record)
 
     translated = 0
-    for (archive_name, member, output_member), records in sorted(grouped.items()):
+    for (
+        archive_name,
+        nested_archive,
+        member,
+        output_member,
+    ), records in sorted(
+        grouped.items(),
+        key=lambda item: tuple(value or "" for value in item[0]),
+    ):
         archive = instance_root / archive_name
         with zipfile.ZipFile(archive) as jar:
-            source_data = jar.read(member)
-        source_label = f"{archive_name}!/{member}"
+            if nested_archive is None:
+                container = jar
+                source_data = container.read(member)
+                native_member = member.replace("/en_us/", "/ru_ru/", 1)
+                native_data = (
+                    container.read(native_member)
+                    if native_member in container.namelist()
+                    else None
+                )
+            else:
+                with zipfile.ZipFile(
+                    io.BytesIO(jar.read(nested_archive))
+                ) as nested:
+                    source_data = nested.read(member)
+                    native_member = member.replace("/en_us/", "/ru_ru/", 1)
+                    native_data = (
+                        nested.read(native_member)
+                        if native_member in nested.namelist()
+                        else None
+                    )
+        source_label = archive_name
+        if nested_archive is not None:
+            source_label += f"!/{nested_archive}"
+        source_label += f"!/{member}"
         expected_hash = next(
             (
                 entry["sha256"]
@@ -207,7 +262,14 @@ def build_patchouli_files(
         if expected_hash is None or sha256_bytes(source_data) != expected_hash:
             raise ValueError(f"{source_label}: source hash changed")
         source_document = json.loads(source_data.decode("utf-8-sig"))
-        translated_document = deepcopy(source_document)
+        translated_document = (
+            overlay_json(
+                source_document,
+                json.loads(native_data.decode("utf-8-sig")),
+            )
+            if native_data is not None
+            else deepcopy(source_document)
+        )
         for record in records:
             json_pointer_set(
                 translated_document,

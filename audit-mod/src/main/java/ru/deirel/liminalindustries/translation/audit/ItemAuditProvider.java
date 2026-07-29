@@ -59,6 +59,7 @@ final class ItemAuditProvider implements AuditProvider {
                 itemId.toString(),
                 stack.getDescriptionId(),
                 stack.getHoverName(),
+                false,
                 candidate.sources()
             ));
         }

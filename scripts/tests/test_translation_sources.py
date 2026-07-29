@@ -1,3 +1,4 @@
+import io
 import json
 import sys
 import tempfile
@@ -95,6 +96,79 @@ class PatchouliSourceTest(unittest.TestCase):
             "assets/example/patchouli_books/guide/ru_ru/categories/main.json",
             direct["location"]["output_member"],
         )
+
+    def test_collects_and_builds_patchouli_from_nested_jar(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            instance = Path(directory)
+            mods = instance / "mods"
+            mods.mkdir()
+            archive = mods / "outer.jar"
+            nested_member = "META-INF/jarjar/guide-core.jar"
+            member = (
+                "assets/example/patchouli_books/guide/en_us/entries/start.json"
+            )
+            source = json.dumps({"text": "Nested welcome"}).encode()
+            native_member = member.replace("/en_us/", "/ru_ru/")
+            source = json.dumps(
+                {"name": "Start", "text": "Nested welcome"}
+            ).encode()
+            nested_bytes = io.BytesIO()
+            with zipfile.ZipFile(nested_bytes, "w") as nested:
+                nested.writestr(member, source)
+                nested.writestr(
+                    native_member,
+                    json.dumps({"name": "Начало"}),
+                )
+            with zipfile.ZipFile(archive, "w") as jar:
+                jar.writestr(nested_member, nested_bytes.getvalue())
+
+            result = collect_patchouli(
+                SourceDefinition("patchouli", "patchouli", {}),
+                [archive],
+                instance,
+                {},
+                {},
+            )
+            record = next(
+                value
+                for value in result.records
+                if value["kind"] == "patchouli_json_text"
+                and not value["native_ru_present"]
+            )
+            manifest = {
+                "records": [record],
+                "source_files": result.source_files,
+            }
+            catalog = {
+                "entries": {
+                    record["id"]: [
+                        {
+                            "source": record["source"],
+                            "source_hash": record["source_hash"],
+                            "translation": "Вложенное приветствие",
+                        }
+                    ]
+                }
+            }
+            output = instance / "output"
+
+            count = build_patchouli_files(
+                manifest,
+                catalog,
+                instance,
+                output,
+            )
+            built = json.loads(
+                (
+                    output
+                    / "assets/example/patchouli_books/guide/ru_ru/entries/start.json"
+                ).read_text(encoding="utf-8")
+            )
+
+        self.assertEqual(nested_member, record["location"]["nested_archive"])
+        self.assertEqual(1, count)
+        self.assertEqual("Начало", built["name"])
+        self.assertEqual("Вложенное приветствие", built["text"])
 
     def test_builds_localized_patchouli_json(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

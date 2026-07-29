@@ -2,6 +2,7 @@ package ru.deirel.liminalindustries.translation.audit;
 
 enum AuditStatus {
     TRANSLATED,
+    LOCALIZED_LITERAL,
     CYRILLIC_LITERAL,
     MISSING_RU,
     UNVERIFIABLE_LITERAL,

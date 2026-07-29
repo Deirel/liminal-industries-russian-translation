@@ -1,3 +1,4 @@
+import io
 import json
 import sys
 import tempfile
@@ -9,7 +10,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from build_version_resources import build_language_files
-from extract_item_names import load_blockstate_ids, same_source_aliases
+from extract_item_names import (
+    load_blockstate_ids,
+    load_jar_languages,
+    same_source_aliases,
+)
 
 
 class BlockRegistryDiscoveryTest(unittest.TestCase):
@@ -26,6 +31,43 @@ class BlockRegistryDiscoveryTest(unittest.TestCase):
             block_ids = load_blockstate_ids([archive], root / "kubejs")
 
         self.assertEqual({"example:hidden_machine"}, block_ids)
+
+
+class NestedLanguageDiscoveryTest(unittest.TestCase):
+    def test_loads_languages_from_nested_jar(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            mods = Path(directory)
+            archive = mods / "outer.jar"
+            nested_bytes = io.BytesIO()
+            with zipfile.ZipFile(nested_bytes, "w") as nested:
+                nested.writestr(
+                    "assets/example/lang/en_us.json",
+                    json.dumps(
+                        {
+                            "item.example.machine": "Machine",
+                            "item.example.shared": "Core name",
+                        }
+                    ),
+                )
+                nested.writestr(
+                    "assets/example/lang/ru_ru.json",
+                    json.dumps({"item.example.machine": "Машина"}),
+                )
+            with zipfile.ZipFile(archive, "w") as jar:
+                jar.writestr(
+                    "META-INF/jarjar/example-core.jar",
+                    nested_bytes.getvalue(),
+                )
+                jar.writestr(
+                    "assets/example/lang/en_us.json",
+                    json.dumps({"item.example.shared": "Outer name"}),
+                )
+
+            english, russian = load_jar_languages(mods)
+
+        self.assertEqual("Machine", english["item.example.machine"])
+        self.assertEqual("Outer name", english["item.example.shared"])
+        self.assertEqual("Машина", russian["item.example.machine"])
 
 
 class SameSourceAliasesTest(unittest.TestCase):

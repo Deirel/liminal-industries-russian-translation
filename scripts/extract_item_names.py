@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import io
 import json
 import re
 import zipfile
@@ -42,14 +43,42 @@ def load_jar_languages(
     for jar_path in archives:
         try:
             with zipfile.ZipFile(jar_path) as jar:
-                for member in jar.namelist():
-                    target = None
-                    if re.fullmatch(r"assets/[^/]+/lang/en_us\.json", member):
-                        target = en_us
-                    elif re.fullmatch(r"assets/[^/]+/lang/ru_ru\.json", member):
-                        target = ru_ru
-                    if target is not None:
-                        target.update(read_json(jar.read(member), f"{jar_path}:{member}"))
+                containers: list[
+                    tuple[str | None, zipfile.ZipFile]
+                ] = []
+                nested_handles: list[zipfile.ZipFile] = []
+                for nested_member in jar.namelist():
+                    if (
+                        nested_member.startswith("META-INF/jarjar/")
+                        and nested_member.endswith(".jar")
+                    ):
+                        nested = zipfile.ZipFile(
+                            io.BytesIO(jar.read(nested_member))
+                        )
+                        nested_handles.append(nested)
+                        containers.append((nested_member, nested))
+                containers.append((None, jar))
+                for nested_member, container in containers:
+                    for member in container.namelist():
+                        target = None
+                        if re.fullmatch(
+                            r"assets/[^/]+/lang/en_us\.json", member
+                        ):
+                            target = en_us
+                        elif re.fullmatch(
+                            r"assets/[^/]+/lang/ru_ru\.json", member
+                        ):
+                            target = ru_ru
+                        if target is not None:
+                            source = str(jar_path)
+                            if nested_member is not None:
+                                source += f":{nested_member}"
+                            source += f":{member}"
+                            target.update(
+                                read_json(container.read(member), source)
+                            )
+                for nested in nested_handles:
+                    nested.close()
         except zipfile.BadZipFile:
             continue
     return en_us, ru_ru

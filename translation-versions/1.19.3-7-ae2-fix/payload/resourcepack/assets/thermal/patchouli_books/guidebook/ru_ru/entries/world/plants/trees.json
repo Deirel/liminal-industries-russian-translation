@@ -1,0 +1,24 @@
+{
+  "category": "thermal:plants",
+  "flag": "mod:thermal_foundation",
+  "icon": "thermal:rubberwood_sapling",
+  "name": "Деревья",
+  "pages": [
+    {
+      "text": "Thermal Foundation добавляет новое дерево и связанные с ним изделия из древесины — каучуковое дерево! По мере развития появятся и другие.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.item1": "thermal:rubberwood_sapling",
+      "A.item2": "thermal:rubberwood_leaves",
+      "A.text": "To acquire a sapling, find a Wandering Trader.",
+      "A.title": "Rubberwood Tree",
+      "B.item1": "thermal:rubberwood_log",
+      "B.item2": "thermal:stripped_rubberwood_log",
+      "B.text": "A wood containing lots of latex and fire resistant properties.",
+      "B.title": "Rubberwood",
+      "type": "2-2_item_page"
+    }
+  ],
+  "read_by_default": true
+}

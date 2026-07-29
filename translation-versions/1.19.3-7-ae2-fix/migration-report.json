@@ -20,9 +20,9 @@
       "records": 9322,
       "registry_source": "probejs",
       "registry_items": 9322,
-      "native_ru_items": 6780,
-      "generated_english_names": 509,
-      "reviewed_hint_names": 1018,
+      "native_ru_items": 7143,
+      "generated_english_names": 195,
+      "reviewed_hint_names": 981,
       "translation_aliases": 5,
       "kubejs_startup_names": 0
     },
@@ -30,20 +30,20 @@
       "adapter": "registry_blocks",
       "records": 6989,
       "registry_blocks": 6989,
-      "native_ru": 4753,
+      "native_ru": 4906,
       "suggested_translations": 2255
     },
     "patchouli": {
       "adapter": "patchouli",
-      "records": 1497,
-      "books": 5,
-      "native_ru": 1278,
-      "language_records": 1287,
-      "json_records": 210
+      "records": 2184,
+      "books": 6,
+      "native_ru": 1918,
+      "language_records": 1290,
+      "json_records": 894
     }
   },
-  "catalog_hits": 5838,
-  "native_ru_coverage": 12811,
+  "catalog_hits": 5369,
+  "native_ru_coverage": 13967,
   "pending": 0,
   "pending_by_source": {},
   "errors": 0
