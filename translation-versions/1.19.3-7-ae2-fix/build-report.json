@@ -3,12 +3,12 @@
   "errors": 0,
   "manifest_records": 22470,
   "native_ru_coverage": 13123,
-  "output_language_translation_keys": 3426,
+  "output_language_translation_keys": 3427,
   "output_mantle_book_strings": 2480,
   "output_manual_strings": 654,
   "output_patchouli_strings": 256,
   "output_quest_strings": 841,
   "pending": 0,
-  "runtime_audit_translation_keys": 256,
+  "runtime_audit_translation_keys": 257,
   "version": "1.19.3-7-ae2-fix"
 }

@@ -37,6 +37,9 @@
     "amendments": {
       "item.amendments.dragon_charge": "Драконий заряд"
     },
+    "botania": {
+      "botania.landing": "Магия, техника, природа.$(br2)Ботания — технический мод о природной магии. Создавайте цветы и устройства, питаемые $(thing)маной$() — силой земли."
+    },
     "cfm_wap": {
       "block.cfm_wap.dark_circuit_breaker": "Тёмный автоматический выключатель",
       "block.cfm_wap.light_circuit_breaker": "Светлый автоматический выключатель"
