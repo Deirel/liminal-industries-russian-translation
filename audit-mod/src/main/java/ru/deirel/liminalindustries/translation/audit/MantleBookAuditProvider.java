@@ -10,9 +10,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -67,6 +69,7 @@ final class MantleBookAuditProvider implements AuditProvider {
                 subjects
             );
         }
+        collectLanguageEntries(manager, subjects);
         return subjects;
     }
 
@@ -188,6 +191,100 @@ final class MantleBookAuditProvider implements AuditProvider {
             localized,
             Set.of("MANTLE_BOOK_RESOURCE")
         ));
+    }
+
+    private void collectLanguageEntries(
+        ResourceManager manager,
+        List<AuditSubject> subjects
+    ) {
+        Map<ResourceLocation, Resource> englishResources = manager.listResources(
+            "book",
+            location -> location.getNamespace().equals("tconstruct")
+                && location.getPath().endsWith("/en_us/language.lang")
+        );
+        for (Map.Entry<ResourceLocation, Resource> entry : englishResources.entrySet()) {
+            ResourceLocation englishId = entry.getKey();
+            Map<String, String> english = readLanguage(
+                entry.getValue(), englishId
+            );
+            ResourceLocation russianId = ResourceLocation.fromNamespaceAndPath(
+                englishId.getNamespace(),
+                englishId.getPath().replace(
+                    "/en_us/language.lang",
+                    "/ru_ru/language.lang"
+                )
+            );
+            Map<String, String> russian = manager.getResource(russianId)
+                .map(resource -> readLanguage(resource, russianId))
+                .orElseGet(Map::of);
+            for (Map.Entry<String, String> languageEntry : english.entrySet()) {
+                String key = languageEntry.getKey();
+                String translation = russian.get(key);
+                boolean localized = translation != null
+                    && !translation.isBlank();
+                subjects.add(new AuditSubject(
+                    id(),
+                    id() + ":" + englishId + ":" + key,
+                    "mantle_book_language",
+                    englishId.toString(),
+                    key,
+                    Component.literal(localized ? translation : key),
+                    localized,
+                    Set.of("MANTLE_BOOK_LANGUAGE_RESOURCE")
+                ));
+            }
+        }
+    }
+
+    static Map<String, String> parseLanguage(Reader reader) throws IOException {
+        Map<String, String> values = new LinkedHashMap<>();
+        try (BufferedReader lines = new BufferedReader(reader)) {
+            String line;
+            int lineNumber = 0;
+            while ((line = lines.readLine()) != null) {
+                lineNumber++;
+                String stripped = line.strip();
+                if (stripped.isEmpty() || stripped.startsWith("#")) {
+                    continue;
+                }
+                int separator = line.indexOf('=');
+                if (separator < 0) {
+                    throw new IllegalArgumentException(
+                        "line " + lineNumber + ": expected key=value"
+                    );
+                }
+                String key = line.substring(0, separator).strip();
+                if (key.isEmpty()) {
+                    throw new IllegalArgumentException(
+                        "line " + lineNumber + ": blank key"
+                    );
+                }
+                String previous = values.putIfAbsent(
+                    key,
+                    line.substring(separator + 1).strip()
+                );
+                if (previous != null) {
+                    throw new IllegalArgumentException(
+                        "line " + lineNumber + ": duplicate key " + key
+                    );
+                }
+            }
+        }
+        return values;
+    }
+
+    private Map<String, String> readLanguage(
+        Resource resource,
+        ResourceLocation location
+    ) {
+        try {
+            return parseLanguage(resource.openAsReader());
+        } catch (IOException | RuntimeException exception) {
+            throw new IllegalStateException(
+                "Could not read Mantle language resource " + location,
+                exception
+            );
+        }
     }
 
     static JsonElement normalizeStructure(

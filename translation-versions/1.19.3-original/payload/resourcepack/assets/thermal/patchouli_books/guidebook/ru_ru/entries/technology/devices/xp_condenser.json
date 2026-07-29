@@ -1,0 +1,24 @@
+{
+  "category": "thermal:devices",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:device_xp_condenser",
+  "name": "Конденсатор опыта",
+  "pages": [
+    {
+      "text": "Конденсатор опыта собирает опыт из расположенных поблизости блоков с $(l:thermal:technology/augments/xp_storage)улучшением «Накопитель опыта»$(/l), где этот опыт хранится. Затем он превращает его в жидкость. По умолчанию устройство охватывает область 5×5×5 вокруг себя. Эту область можно увеличить с помощью улучшений $(l:thermal:technology/augments/area_radius)«Улучшение радиуса»$(/l).",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:device_xp_condenser",
+      "text": "При управлении редстоуновым сигналом Конденсатор опыта собирает опыт сразу после включения. Благодаря этому он всегда надёжно срабатывает при подаче импульса.",
+      "title": "Конденсатор опыта",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширитель резервуара$(/l)$(li)$(l:thermal:technology/augments/area_radius)Улучшение радиуса$(/l)",
+      "title": "Совместимые улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

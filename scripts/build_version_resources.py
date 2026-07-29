@@ -16,7 +16,7 @@ from typing import Any
 
 from build_initial_catalog import SnbtParser, sha256_bytes, validate_catalog
 from extract_quest_texts import extract_records
-from translation_sources import json_pointer_set
+from translation_sources import json_pointer_set, parse_mantle_language
 
 
 def json_bytes(value: Any) -> bytes:
@@ -410,6 +410,81 @@ def build_mantle_book_files(
     return translated
 
 
+def build_mantle_book_language_files(
+    manifest: dict[str, Any],
+    catalog: dict[str, Any],
+    instance_root: Path,
+    output: Path,
+) -> int:
+    grouped: dict[
+        tuple[str, str, str], list[dict[str, Any]]
+    ] = defaultdict(list)
+    for record in manifest["records"]:
+        if (
+            record.get("output_format") == "mantle_book_language"
+            and record.get("force_output", False)
+        ):
+            location = record["location"]
+            grouped[
+                (
+                    location["archive"],
+                    location["member"],
+                    location["output_member"],
+                )
+            ].append(record)
+
+    translated = 0
+    for (archive_name, member, output_member), records in sorted(
+        grouped.items()
+    ):
+        source_data = _verified_archive_member(
+            manifest, instance_root, archive_name, member
+        )
+        native_member = member.replace("/en_us/", "/ru_ru/", 1)
+        archive = instance_root / archive_name
+        with zipfile.ZipFile(archive) as jar:
+            native_data = (
+                jar.read(native_member)
+                if native_member in jar.namelist()
+                else None
+            )
+        if native_data is not None:
+            source_label = f"{archive_name}!/{native_member}"
+            expected_hash = next(
+                (
+                    entry["sha256"]
+                    for entry in manifest["source_files"]
+                    if entry["path"] == source_label
+                ),
+                None,
+            )
+            if (
+                expected_hash is None
+                or sha256_bytes(native_data) != expected_hash
+            ):
+                raise ValueError(f"{source_label}: source hash changed")
+
+        values = (
+            parse_mantle_language(native_data, native_member)
+            if native_data is not None
+            else {}
+        )
+        source_values = parse_mantle_language(source_data, member)
+        for record in records:
+            key = record["location"]["key"]
+            if key not in source_values:
+                raise ValueError(f"{member}: missing Mantle language key {key}")
+            values[key] = catalog_translation(catalog, record)
+            translated += 1
+        target = output / output_member
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(
+            "".join(f"{key}={value}\n" for key, value in values.items()),
+            encoding="utf-8",
+        )
+    return translated
+
+
 def snapshot(root: Path) -> dict[str, bytes]:
     return {
         path.relative_to(root).as_posix(): path.read_bytes()
@@ -516,6 +591,12 @@ def main() -> int:
             args.instance_root.resolve(),
             resourcepack,
         )
+        mantle_language_count = build_mantle_book_language_files(
+            manifest,
+            catalog,
+            args.instance_root.resolve(),
+            resourcepack,
+        )
         resourcepack_overrides = version_root / "resourcepack-overrides"
         if resourcepack_overrides.exists():
             shutil.copytree(
@@ -549,6 +630,7 @@ def main() -> int:
         "output_patchouli_strings": patchouli_count,
         "output_manual_strings": manual_count,
         "output_mantle_book_strings": mantle_book_count,
+        "output_mantle_book_language_strings": mantle_language_count,
         "runtime_audit_translation_keys": sum(
             len(values) for values in runtime_overrides.values()
         ),
@@ -565,7 +647,8 @@ def main() -> int:
         print(
             f"Built {quest_count} quest strings, {language_count} language keys, "
             f"{patchouli_count} Patchouli strings, {manual_count} manual strings, "
-            f"and {mantle_book_count} Mantle book strings "
+            f"{mantle_book_count} Mantle book strings, and "
+            f"{mantle_language_count} Mantle language strings "
             f"for {args.version}"
         )
     return 0

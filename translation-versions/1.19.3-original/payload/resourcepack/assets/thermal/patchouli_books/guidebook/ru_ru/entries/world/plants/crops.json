@@ -1,0 +1,153 @@
+{
+  "category": "thermal:plants",
+  "flag": "mod:thermal_cultivation",
+  "icon": "thermal:barley",
+  "name": "Культуры",
+  "pages": [
+    {
+      "text": "Thermal Cultivation добавляет разнообразные культуры, семена которых можно приобрести у деревенских жителей. Эти культуры можно собрать, щёлкнув ПКМ пустой рукой. Грибные культуры могут быть посажены на $(l:thermal:world/plants/phytogro)фито-почву$(/l), мицелий, или подзол, но их рост невозможно ускорить костной мукой или фито-гро. Они всё ещё подвержены влиянию фито-почвы и $(l:thermal:equipment/tools/watering_can)лейки$(/l) ускоряя свой рост.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.item1": "thermal:barley",
+      "A.item2": "thermal:barley_seeds",
+      "A.text": "Злаковое зерно, которое можно перемолоть в муку или использовать для приготовления пива или виски.",
+      "A.title": "Ячмень",
+      "B.item1": "thermal:corn",
+      "B.item2": "thermal:corn_seeds",
+      "B.text": "Основное зерно, которое ценится за свою универсальность.",
+      "B.title": "Кукуруза",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:flax",
+      "A.item2": "thermal:flax_seeds",
+      "A.text": "Волокнистое растение, из которого можно легко создать нитки.",
+      "A.title": "Лён",
+      "B.item1": "thermal:onion",
+      "B.item2": "thermal:onion_seeds",
+      "B.text": "Луковичный овощ, который часто используется для придания вкуса пикантным блюдам. Доводит людей до слёз.",
+      "B.title": "Лук",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:radish",
+      "A.item2": "thermal:radish_seeds",
+      "A.text": "Корнеплод с острым вкусом, обычно употребляемый в сыром виде или приготовленным на пару.",
+      "A.title": "Редис",
+      "B.item1": "thermal:rice",
+      "B.item2": "thermal:rice_seeds",
+      "B.text": "Наиболее широко потребляемое основное зерно в мире. Трудоёмкий сбор урожая.",
+      "B.title": "Рис",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:sadiroot",
+      "A.item2": "thermal:sadiroot_seeds",
+      "A.text": "Лекарственная пряность, известная своими очищающими свойствами. Обладает характерным ароматом.",
+      "A.title": "Сади-корень",
+      "B.item1": "thermal:spinach",
+      "B.item2": "thermal:spinach_seeds",
+      "B.text": "Листья шпината. Дает морякам увеличение мышечной массы.",
+      "B.title": "Шпинат",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:bell_pepper",
+      "A.item2": "thermal:bell_pepper_seeds",
+      "A.text": "Сорт перца без горькости. Обычно его нарезают и используют в блюдах.",
+      "A.title": "Болгарский перец",
+      "B.item1": "thermal:eggplant",
+      "B.item2": "thermal:eggplant_seeds",
+      "B.text": "Фиолетовый, губчатый $(l)фрукт$(), используемый во многих блюдах. Имеет тенденцию поглощать другие ароматы.",
+      "B.title": "Баклажан",
+      "item1": "thermal:spinach",
+      "item2": "thermal:spinach_seeds",
+      "text": "Листья шпината. Увеличивают мышечную массу моряков.",
+      "title": "Шпинат",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:green_bean",
+      "A.item2": "thermal:green_bean_seeds",
+      "A.text": "Незрелые семенные коробочки бобовых можно употреблять отдельно, или использовать в различных блюдах.",
+      "A.title": "Зелёная фасоль",
+      "B.item1": "thermal:peanut",
+      "B.item2": "thermal:peanut_seeds",
+      "B.text": "Семена арахисового растения. Часто обжаривают, консервируют в масле или перемалывают в арахисовое масло.",
+      "B.title": "Арахис",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:strawberry",
+      "A.item2": "thermal:strawberry_seeds",
+      "A.text": "Сладкий красный фрукт, используемый в различных приправах и десертах.",
+      "A.title": "Клубника",
+      "B.item1": "thermal:tomato",
+      "B.item2": "thermal:tomato_seeds",
+      "B.text": "Пикантный красный $(l)фрукт$(), который нарезают ломтиками для блюд, или выжимают для соусов и супов.",
+      "B.title": "Помидор",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:coffee",
+      "A.item2": "thermal:coffee_seeds",
+      "A.text": "Его обжаривают, перемалывают и заваривают, дабы он стал источником жизненной силы для разработчиков модов.",
+      "A.title": "Кофе",
+      "B.item1": "thermal:tea",
+      "B.item2": "thermal:tea_seeds",
+      "B.text": "Листья чайного растения. Часто сбрасываются в океан во время чаепитий.",
+      "B.title": "Чай",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "thermal:hops",
+      "A.item2": "thermal:hops_seeds",
+      "A.text": "Семенные шишки цветущей лозы хмеля. Используется для ароматизации пива.",
+      "A.title": "Хмель",
+      "B.item1": "thermal:frost_melon_slice",
+      "B.item2": "thermal:frost_melon_seeds",
+      "B.text": "Голубой сорт арбузов. Те, кто его употребляют, обнаруживают, что даже самые горячие поверхности кажутся ледяными.",
+      "B.title": "Морозный арбуз",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "minecraft:redstone",
+      "A.item2": "thermal:redstone_mushroom_spores",
+      "A.text": "Бледный гриб, который при созревании выделяет вязкую эмульсию, похожую на красный камень.",
+      "A.title": "Канифольный зубогриб",
+      "B.item1": "minecraft:glowstone_dust",
+      "B.item2": "thermal:glowstone_mushroom_spores",
+      "B.text": "Светящийся гриб, на шляпке которого образуется тонкий слой мерцающего золотистого порошка.",
+      "B.title": "Гриб с мерцающей шляпкой",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "minecraft:gunpowder",
+      "A.item2": "thermal:gunpowder_mushroom_spores",
+      "A.text": "Темпераментный гриб, на нижней стороне которого растет паутина из взрывчатого вещества.",
+      "A.title": "Взрывогриб",
+      "B.item1": "minecraft:slime_ball",
+      "B.item2": "thermal:slime_mushroom_spores",
+      "B.text": "Липкий гриб, выделяющий защитную слизь, которую можно сворачивать в шарики.",
+      "B.title": "Слизнегриб",
+      "type": "2-2_item_page"
+    },
+    {
+      "A.item1": "minecraft:gunpowder",
+      "A.item2": "thermal:gunpowder_mushroom_spores",
+      "A.text": "A temperamental mushroom that grows webs of explosive material on its underside.",
+      "A.title": "Boomshroom",
+      "B.item1": "minecraft:slime_ball",
+      "B.item2": "thermal:slime_mushroom_spores",
+      "B.text": "A gooey fungus that secretes protective slime, which can be congealed into balls.",
+      "B.title": "Slitake",
+      "item1": "thermal:amaranth",
+      "item2": "thermal:amaranth_seeds",
+      "text": "Яркое зерно, наполненное питательными веществами и алхимическими свойствами.",
+      "title": "Амарант",
+      "type": "2_item_page"
+    }
+  ],
+  "read_by_default": true
+}

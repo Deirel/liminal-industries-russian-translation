@@ -1,0 +1,17 @@
+{
+  "category": "thermal:tools",
+  "icon": "thermal:florb",
+  "name": "Флорбы",
+  "pages": [
+    {
+      "text": "Флорб. Сокращение от Fluid-Orb, разумеется. Вмещает одно ведро жидкости. Его можно бросать! Учтите, что флорб можно наполнить только жидкостью, которую можно разлить в мире.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:florb_8",
+      "title": "Флорб",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

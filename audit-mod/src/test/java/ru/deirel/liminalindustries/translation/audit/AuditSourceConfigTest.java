@@ -69,7 +69,8 @@ class AuditSourceConfigTest {
             case "1.19.3-original" -> Set.of(
                 "patchouli=actuallyadditions:booklet",
                 "patchouli=botania:lexicon",
-                "patchouli=enderio:guide"
+                "patchouli=enderio:guide",
+                "patchouli=thermal:guidebook"
             );
             case "1.19.3-7-ae2-fix" -> Set.of(
                 "patchouli=actuallyadditions:booklet",

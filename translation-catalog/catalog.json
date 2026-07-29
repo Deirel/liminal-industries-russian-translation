@@ -120,6 +120,20 @@
         "translation": "Авто-разрушитель"
       }
     ],
+    "block:block.actuallyadditions.canola": [
+      {
+        "source_hash": "sha256:0e55868b876e2995332cf621720b0ef542b40ce3f87d1a3673b06a5339c7f0fe",
+        "source": "Canola Plant",
+        "translation": "Канола"
+      }
+    ],
+    "block:block.actuallyadditions.canola_oil": [
+      {
+        "source_hash": "sha256:10e24459e228e88a8a60f6e88a7cb8715e1b84d507cc379e10f86137b18e2926",
+        "source": "Canola Oil",
+        "translation": "Масло канолы"
+      }
+    ],
     "block:block.actuallyadditions.canola_press": [
       {
         "source_hash": "sha256:dc5534408864296bb52d470f660a4cbe4a62fb93fa9cd01ba04702221b5a3f61",
@@ -162,6 +176,13 @@
         "translation": "Угольный генератор"
       }
     ],
+    "block:block.actuallyadditions.coffee": [
+      {
+        "source_hash": "sha256:6ef3c11d401683327797465a83476fce27121141ec5d1a4084aae2d76885ff8d",
+        "source": "Coffee Plant",
+        "translation": "Кофейный куст"
+      }
+    ],
     "block:block.actuallyadditions.coffee_machine": [
       {
         "source_hash": "sha256:a7c9ac52a64b790c620e98caa9c13932bd37b2c279b2463df647423d78a3ad5e",
@@ -181,6 +202,13 @@
         "source_hash": "sha256:4e9875f6897a00105834bfae17ec428249e58c6634e93fd2575ba18258432cd8",
         "source": "Double Crusher",
         "translation": "Двойной дробитель"
+      }
+    ],
+    "block:block.actuallyadditions.crystallized_oil": [
+      {
+        "source_hash": "sha256:9f4a2cf37c79fa67f62c98117cd1f405d3fa8e29fa76ba21a20fd9d1467279c9",
+        "source": "Crystallized Oil",
+        "translation": "Кристаллизованное масло"
       }
     ],
     "block:block.actuallyadditions.diamatine_crystal_block": [
@@ -244,6 +272,13 @@
         "source_hash": "sha256:cdbac93d73ca28572a5323d2bd0ff832e9567f1d7646065395d94ea874c9aa8b",
         "source": "Empowered Enori Crystal Block",
         "translation": "Усиленный кристальный блок Энори"
+      }
+    ],
+    "block:block.actuallyadditions.empowered_oil": [
+      {
+        "source_hash": "sha256:f90b7caa5afb3956bbbf127e47b5859b0f76b848d9ca3cb26dd5beaad1b45679",
+        "source": "Empowered Oil",
+        "translation": "Обогащённое масло"
       }
     ],
     "block:block.actuallyadditions.empowered_palis_crystal_block": [
@@ -391,6 +426,13 @@
         "source_hash": "sha256:b0f5b4897e242864e554a2fe944a9de5201c423fdc0694ce11ba147bfe3afd15",
         "source": "Firework Box",
         "translation": "Ящик фейрверков"
+      }
+    ],
+    "block:block.actuallyadditions.flax": [
+      {
+        "source_hash": "sha256:bc3508d44386331fc214b499e11b4fc791a85935d1eac3f18dbed09a4685d320",
+        "source": "Flax Plant",
+        "translation": "Лён"
       }
     ],
     "block:block.actuallyadditions.fluid_collector": [
@@ -729,6 +771,13 @@
         "translation": "Диапазонный собиратель"
       }
     ],
+    "block:block.actuallyadditions.refined_canola_oil": [
+      {
+        "source_hash": "sha256:3150e58e5e6df0688ee1cd7eba43ecc696f59df9e73870f435db75676922c68d",
+        "source": "Refined Canola Oil",
+        "translation": "Рафинированное масло канолы"
+      }
+    ],
     "block:block.actuallyadditions.restonia_crystal_block": [
       {
         "source_hash": "sha256:7065fd965ab328f9e8f9e832b8e3eda2bd238466017fcfc3e8b0829c6e9497b6",
@@ -741,6 +790,13 @@
         "source_hash": "sha256:9a4fdff6bf20a2dfc691d62f2ec7c0154410dd0131f38adbffbdbe38cba51253",
         "source": "Red Crystal Cluster",
         "translation": "Красное кристаллическое скопление"
+      }
+    ],
+    "block:block.actuallyadditions.rice": [
+      {
+        "source_hash": "sha256:6cee7ca1248840ae69bfda96fe0ca16198c5dbfd29cc82ec370ac445298ea32c",
+        "source": "Rice Plant",
+        "translation": "Рис"
       }
     ],
     "block:block.actuallyadditions.shock_suppressor": [
@@ -2136,6 +2192,146 @@
         "translation": "Твёрдая лоза"
       }
     ],
+    "block:block.brewinandchewin.apple_jelly": [
+      {
+        "source_hash": "sha256:8f1459a2fdb62a77c79ce14b6cd58d6f36ef41aa4b6840af556c4d768b023857",
+        "source": "Apple Jelly",
+        "translation": "Яблочное желе"
+      }
+    ],
+    "block:block.brewinandchewin.beer": [
+      {
+        "source_hash": "sha256:2758060bedd99ddd1b5e56151f3e82ebfdbe65bb1c9ba07e8931abffb560cd40",
+        "source": "Beer",
+        "translation": "Пиво"
+      }
+    ],
+    "block:block.brewinandchewin.bloody_mary": [
+      {
+        "source_hash": "sha256:c22ce5a26e13559df843acdf7ae5c3fae6e389fbc06dcb83eccdb5b2cc238d5e",
+        "source": "Bloody Mary",
+        "translation": "Кровавая Мэри"
+      }
+    ],
+    "block:block.brewinandchewin.dread_nog": [
+      {
+        "source_hash": "sha256:ce3974ae9c208742dac9dff712b199203050bb7ee48770401e24c1d9e31103fe",
+        "source": "Dread Nog",
+        "translation": "Ужасный ног"
+      }
+    ],
+    "block:block.brewinandchewin.egg_grog": [
+      {
+        "source_hash": "sha256:4c72fc70772652c7b1b81839f41be6eb46d55561c7b682004336e0baf2245ee3",
+        "source": "Egg Grog",
+        "translation": "Яичный грог"
+      }
+    ],
+    "block:block.brewinandchewin.glittering_grenadine_model": [
+      {
+        "source_hash": "sha256:9924531b3432e5dce83fbcee1c8e4e5451c69d457219ac77c77ca2a8b1f68171",
+        "source": "Glittering Grenadine Model",
+        "translation": "Модель сверкающего гренадина"
+      }
+    ],
+    "block:block.brewinandchewin.glow_berry_marmalade": [
+      {
+        "source_hash": "sha256:01eb9e96544395f1007dede307378f355abbe3c590495ec331d7afb6c3990397",
+        "source": "Glow Berry Marmalade",
+        "translation": "Светящийся ягодный мармелад"
+      }
+    ],
+    "block:block.brewinandchewin.kombucha": [
+      {
+        "source_hash": "sha256:62abbf611a3a050e8826af35f08c55606b01b8a40752d3523a3f322e753e9549",
+        "source": "Kombucha",
+        "translation": "Чайный гриб"
+      }
+    ],
+    "block:block.brewinandchewin.mead": [
+      {
+        "source_hash": "sha256:abf4e9bf698901609e2d5ef1a18ccf25ad1092f28098ee267b42907a595551c8",
+        "source": "Mead",
+        "translation": "Медовуха"
+      }
+    ],
+    "block:block.brewinandchewin.pale_jane": [
+      {
+        "source_hash": "sha256:d29315ee11b753744e9b022e05446014869b780e2aea18828aa8ec112fc8bd2a",
+        "source": "Pale Jane",
+        "translation": "Бледная Джейн"
+      }
+    ],
+    "block:block.brewinandchewin.red_rum": [
+      {
+        "source_hash": "sha256:0d7f09be33d4e81647ec35640a1d6165ab855ec0f219f788f9d8949ca760a56f",
+        "source": "Red Rum",
+        "translation": "Красный ром"
+      }
+    ],
+    "block:block.brewinandchewin.rice_wine": [
+      {
+        "source_hash": "sha256:ab9dc497abc8cf11c9f19d99c168cfe251bec3059a604c9dcddad7f080991fe0",
+        "source": "Rice Wine",
+        "translation": "Рисовое вино"
+      }
+    ],
+    "block:block.brewinandchewin.saccharine_rum": [
+      {
+        "source_hash": "sha256:d7ff6a4802cdbfec90e0c09982b4faa31acbee42c0dfb9883764fa750d1b5a47",
+        "source": "Saccharine Rum",
+        "translation": "Сахариновый ром"
+      }
+    ],
+    "block:block.brewinandchewin.salty_folly": [
+      {
+        "source_hash": "sha256:c08ebd999a221586818c86992a2415c67e3298aaf9d9cb53b88d82970764e026",
+        "source": "Salty Folly",
+        "translation": "Солёная глупость"
+      }
+    ],
+    "block:block.brewinandchewin.steel_toe_stout": [
+      {
+        "source_hash": "sha256:d40023bb5a0016b13cba7e6d7129ac63de4e4ccd7505ecea55f9ba32f57e313e",
+        "source": "Steel Toe Stout",
+        "translation": "Стаут «Стальной носок»"
+      }
+    ],
+    "block:block.brewinandchewin.strongroot_ale": [
+      {
+        "source_hash": "sha256:8dcf98ada4747232ec3d8869c49a27124cbc2550752893188a0bddd453a8dca6",
+        "source": "Strongroot Ale",
+        "translation": "Крепкий корневой эль"
+      }
+    ],
+    "block:block.brewinandchewin.sweet_berry_jam": [
+      {
+        "source_hash": "sha256:f98013628040aafed3742b1f20af6dc3f64e756689155c497adc1c3697264674",
+        "source": "Sweet Berry Jam",
+        "translation": "Варенье из сладких ягод"
+      }
+    ],
+    "block:block.brewinandchewin.tankard": [
+      {
+        "source_hash": "sha256:7b86f4791baa9f180bf2577766e93fb4cb5adbccf25a3cb6e1e1256ed64a1b39",
+        "source": "Tankard",
+        "translation": "Кружка"
+      }
+    ],
+    "block:block.brewinandchewin.vodka": [
+      {
+        "source_hash": "sha256:68eff3cd82e3fa2f147ce998b31ba45231092d30db65fffc4aa22bf2e7c83bf5",
+        "source": "Vodka",
+        "translation": "Водка"
+      }
+    ],
+    "block:block.brewinandchewin.withering_dross": [
+      {
+        "source_hash": "sha256:e270264d455beeb093782a40cc7108dad9f2b1ec85bb6fb0ad14c92d56634e36",
+        "source": "Withering Dross",
+        "translation": "Иссушающий шлак"
+      }
+    ],
     "block:block.cfm_circuit_breaker.circuit_breaker": [
       {
         "source_hash": "sha256:a316128169a55f5b8afb8e25bf1fc1f3046a3034e1f14aeac703c77bc6643a8c",
@@ -2346,6 +2542,13 @@
         "translation": "Жила сплетённого скалка"
       }
     ],
+    "block:block.create_central_kitchen.cherry_pie": [
+      {
+        "source_hash": "sha256:b7eee800ad73d6745cc9ba83a81e4b3012e2101d1f9d81366917f15d1ded870e",
+        "source": "Cherry Pie",
+        "translation": "Вишнёвый пирог"
+      }
+    ],
     "block:block.create_central_kitchen.mulberry_pie": [
       {
         "source_hash": "sha256:49f8299685624d947ba82e11c075b953f7b75ab54c0e05c87f5ba10d929b5216",
@@ -2360,11 +2563,46 @@
         "translation": "Тыквенный пирог"
       }
     ],
+    "block:block.create_central_kitchen.sap": [
+      {
+        "source_hash": "sha256:aba3be22737a5900a929d4bb8fef01bc06cb2e613a92ec743868b0e4b949e577",
+        "source": "Sap",
+        "translation": "Древесный сок"
+      }
+    ],
+    "block:block.create_central_kitchen.syrup": [
+      {
+        "source_hash": "sha256:85b61c0714fadc30ee32dce40f33654da2dd3b3a61b382f451860a7c36619274",
+        "source": "Syrup",
+        "translation": "Сироп"
+      }
+    ],
+    "block:block.create_central_kitchen.truffle_pie": [
+      {
+        "source_hash": "sha256:93bee3fb7aabd99c4ced50d231650ee47bf91a332b731cf618d4ad31f776099b",
+        "source": "Truffle Pie",
+        "translation": "Трюфельный пирог"
+      }
+    ],
     "block:block.createaddition.biomass_pellet_block": [
       {
         "source_hash": "sha256:b7a57cdcba1963f883b2f1d6c3b6b03af241f8f43996adc1a471bbed3d901654",
         "source": "Biomass Pallet",
         "translation": "Блок пеллет из биомассы"
+      }
+    ],
+    "block:block.createaddition.connector_old": [
+      {
+        "source_hash": "sha256:9d7ccb489d1eed590bcbefac3d586ab8686585819aa9ee9035dee6a14ad494c5",
+        "source": "Connector Old",
+        "translation": "Старый соединитель"
+      }
+    ],
+    "block:block.createaddition.copper_wire_casing": [
+      {
+        "source_hash": "sha256:82ac1ad73889f648fba186c1383dd6009b20e14e1da1c090e5302f603f5df34d",
+        "source": "Copper Wire Casing",
+        "translation": "Корпус медного провода"
       }
     ],
     "block:block.createaddition.electrum_block": [
@@ -2463,6 +2701,13 @@
         "source_hash": "sha256:61a0199336e3cf8ade24a8293b964a617a040fced6cf350c8352c53a3533affa",
         "source": "Mangrove Support",
         "translation": "Мангровый кронштейн"
+      }
+    ],
+    "block:block.decorative_blocks.oak_seat_post": [
+      {
+        "source_hash": "sha256:a74985f5f8bd75eb8d700b06a6dc4a12cf89055a70697c1b8809c13a4f2a9b6f",
+        "source": "Oak Seat Post",
+        "translation": "Дубовая стойка сиденья"
       }
     ],
     "block:block.dtneapolitan.banana_branch": [
@@ -2899,6 +3144,20 @@
         "translation": "Корневая почва душ"
       }
     ],
+    "block:block.dynamictrees.rooty_supplementaries_planter": [
+      {
+        "source_hash": "sha256:c45dc505a5ff88ec4efaf136414da688befa333d2b33ffc46b44461630c767b5",
+        "source": "Rooty Supplementaries Planter",
+        "translation": "Корневая кадка Supplementaries"
+      }
+    ],
+    "block:block.dynamictrees.rooty_supplementaries_planter_rich": [
+      {
+        "source_hash": "sha256:a2d75f6456812ae414172bdac333c78f6ab6b1ca57ebd08493af920e2759fd03",
+        "source": "Rooty Supplementaries Planter Rich",
+        "translation": "Плодородная корневая кадка Supplementaries"
+      }
+    ],
     "block:block.dynamictrees.rooty_terracotta": [
       {
         "source_hash": "sha256:d378866816436b8dab2102cd7032d898d5f24f1ece08cbead44feacc84bff036",
@@ -3046,6 +3305,20 @@
         "translation": "Искажённый нарост"
       }
     ],
+    "block:block.eidolon.cistern": [
+      {
+        "source_hash": "sha256:722d10e143a06a5c4c05cceff2f4f95e489c26d42cc1496a7355cacfee7e74b0",
+        "source": "Cistern",
+        "translation": "Цистерна"
+      }
+    ],
+    "block:block.eidolon.glass_tube": [
+      {
+        "source_hash": "sha256:f3763c66b3ff45c03b04f23203fb8d379568ea5dec05c1b310360971b305b1b8",
+        "source": "Glass Tube",
+        "translation": "Стеклянная трубка"
+      }
+    ],
     "block:block.eidolon.illwood_hanging_wall_sign": [
       {
         "source_hash": "sha256:c27fef767b54fd51f15a80d445deb411bc83226f37df721c1e0d23603c2677cd",
@@ -3058,6 +3331,13 @@
         "source_hash": "sha256:120c8b450df17e522c7bd828d3e698e43aade0cd92932476d7cf28d20c87cab8",
         "source": "Illwood Wall Sign",
         "translation": "Настенная табличка из иллвуда"
+      }
+    ],
+    "block:block.eidolon.incubator": [
+      {
+        "source_hash": "sha256:b7a34fb39f8a5daf7661d2021e8c8f833c4c00013e76e2b5ff77abbeaac7e481",
+        "source": "Incubator",
+        "translation": "Инкубатор"
       }
     ],
     "block:block.eidolon.polished_hanging_wall_sign": [
@@ -7393,6 +7673,48 @@
         "translation": "Фотовспышка"
       }
     ],
+    "block:block.exposure.photograph_frame_large": [
+      {
+        "source_hash": "sha256:a6b9ee69104ffce5b31ffd3d0742f439cdc687dbc97f2103d06514710c856ba5",
+        "source": "Photograph Frame Large",
+        "translation": "Большая фоторамка"
+      }
+    ],
+    "block:block.exposure.photograph_frame_large_stripped": [
+      {
+        "source_hash": "sha256:d90a5980aa7469a7757bfa55fd73ee91d815d2dc18f520660e94a3ca0ad085aa",
+        "source": "Photograph Frame Large Stripped",
+        "translation": "Большая фоторамка без отделки"
+      }
+    ],
+    "block:block.exposure.photograph_frame_medium": [
+      {
+        "source_hash": "sha256:b1faef63c8e38482aa26a25f1363fb6cfe93682cdf6fd905c920d4433f6f4983",
+        "source": "Photograph Frame Medium",
+        "translation": "Средняя фоторамка"
+      }
+    ],
+    "block:block.exposure.photograph_frame_medium_stripped": [
+      {
+        "source_hash": "sha256:5316ac18bc80cf81ea349b3c1cb95fd8ddc3d68ca4c65363cf676035a09d1042",
+        "source": "Photograph Frame Medium Stripped",
+        "translation": "Средняя фоторамка без отделки"
+      }
+    ],
+    "block:block.exposure.photograph_frame_small": [
+      {
+        "source_hash": "sha256:74b0b9cfecd293ef4db6cdaa19e9333041d0325a938be9ca527da6aa8d2e7349",
+        "source": "Photograph Frame Small",
+        "translation": "Малая фоторамка"
+      }
+    ],
+    "block:block.exposure.photograph_frame_small_stripped": [
+      {
+        "source_hash": "sha256:633e051d40def9ccfa4cdaf15db2020380933bf760e98b015bdc058c1129b057",
+        "source": "Photograph Frame Small Stripped",
+        "translation": "Малая фоторамка без отделки"
+      }
+    ],
     "block:block.fairylights.candle_lantern": [
       {
         "source_hash": "sha256:81e0e4ce159fe797e38c3516b7871e78e4c35783f51e81c17cfe69475f345594",
@@ -7547,11 +7869,256 @@
         "translation": "Корзина"
       }
     ],
+    "block:block.farmersdelight.black_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:4851b3dc0807504e26315bacf388e6d3f4fba7fcd92613b7d1f14ee084fddc3d",
+        "source": "Black Canvas Wall Sign",
+        "translation": "Чёрная настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.black_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:2df5a4bd873a5177b31e0eba55a2e1bdbbe1b6080f9f16ed7c7210abb335cbc3",
+        "source": "Black Wall Hanging Canvas Sign",
+        "translation": "Чёрная подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.blue_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:86dc773e2373bfbe55575bc4ced4dbd780af3109e92ad12061107f93e199e5cd",
+        "source": "Blue Canvas Wall Sign",
+        "translation": "Синяя настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.blue_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:ed45f94a6db4276383513d52e4e4e71f68c52e4bcdcfb8813cf2d9d0b9c6c872",
+        "source": "Blue Wall Hanging Canvas Sign",
+        "translation": "Синяя подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.brown_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:584a00c3e4b5680a6eb18358815f0f3b61bda53a1a7dc736f1a7642a14706c68",
+        "source": "Brown Canvas Wall Sign",
+        "translation": "Коричневая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.brown_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:2e54ee9240298df15ac5a5f72e35f02e6793965be1ec5fd1c74b528f90e6a10d",
+        "source": "Brown Wall Hanging Canvas Sign",
+        "translation": "Коричневая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.canvas_wall_sign": [
+      {
+        "source_hash": "sha256:f690e7a2d385f33d7445b348034dad0e3a21591aed61d68a36b77d316af250b9",
+        "source": "Canvas Wall Sign",
+        "translation": "Настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.cyan_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:3cc9dfecf73c3721a3c4aee505f33478dc01dc3eca1685711533edc7307fc274",
+        "source": "Cyan Canvas Wall Sign",
+        "translation": "Бирюзовая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.cyan_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:8284ac22cdcb4035e0c1c4fb3ac8a0f447023d997c6c7b38cc24b3e45262fcc3",
+        "source": "Cyan Wall Hanging Canvas Sign",
+        "translation": "Бирюзовая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.gray_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:6413da06a1766fc5259d361df308536eda263e5bf864cfe0af5b739c83a7a837",
+        "source": "Gray Canvas Wall Sign",
+        "translation": "Серая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.gray_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:e18e28970609ea280083004860b10c76a535e33587e96221a10a713a9482f5ff",
+        "source": "Gray Wall Hanging Canvas Sign",
+        "translation": "Серая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.green_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:802a6878de269e289d911ebca8145281c8759351dea8ee6d37bf35c438a871fa",
+        "source": "Green Canvas Wall Sign",
+        "translation": "Зелёная настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.green_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:46df8adf2f96c7f2db07319cf1da8d7c7b1d8f92d499a87bc7098350a4d2299d",
+        "source": "Green Wall Hanging Canvas Sign",
+        "translation": "Зелёная подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.light_blue_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:5919386172f0398d823aa30c40c1fdc2cd010d7369ec88d6f6427e4755cad555",
+        "source": "Light Blue Canvas Wall Sign",
+        "translation": "Голубая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.light_blue_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:2802dea6371c9ed9fdc97978fa0fd347b3a16f6da2a7cf46046ef22d0dbc730e",
+        "source": "Light Blue Wall Hanging Canvas Sign",
+        "translation": "Голубая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.light_gray_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:5b9acd4c5b6c8d83841da3ec8e83f912e9f4ef2af8bea3d7f63e9e6a87c15644",
+        "source": "Light Gray Canvas Wall Sign",
+        "translation": "Светло-серая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.light_gray_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:9963f9cdd0eeb20424cf75f47d7e45f0baa94d69f125a3dbb42bacd493c5c397",
+        "source": "Light Gray Wall Hanging Canvas Sign",
+        "translation": "Светло-серая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.lime_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:29c84d147d3a347febd68a90a2409fe1a33ae85e82028fd2ad74f6378f392840",
+        "source": "Lime Canvas Wall Sign",
+        "translation": "Лаймовая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.lime_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:fb2b56d370b0c028c32458fa6c09bf2c33ea564541f86f1c4976f2e25c41fc13",
+        "source": "Lime Wall Hanging Canvas Sign",
+        "translation": "Лаймовая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.magenta_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:94c3a5879339fdfdc48c7217dc97a0855ef3cfdb6352a9525a3a2980502a387a",
+        "source": "Magenta Canvas Wall Sign",
+        "translation": "Пурпурная настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.magenta_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:0eae7647ead83dabf03e39b8e163526d6d9d52183c0c379a7fe15bcc53b242f5",
+        "source": "Magenta Wall Hanging Canvas Sign",
+        "translation": "Пурпурная подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.orange_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:4214de1b415b8c75cf1a09b5082506214c84104d31beea8c8c3d19bcbfae3147",
+        "source": "Orange Canvas Wall Sign",
+        "translation": "Оранжевая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.orange_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:767885c9c6ef96cd2465ec3ce7359411fbdb23985730617950369574474d3e23",
+        "source": "Orange Wall Hanging Canvas Sign",
+        "translation": "Оранжевая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.pink_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:f83dac6770b390c9b2cb6abf7fa6f633c7e69d1a00834b656e2a0c90ef5c043b",
+        "source": "Pink Canvas Wall Sign",
+        "translation": "Розовая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.pink_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:84e5da4e1dcf0a7c3afac5f8a1dd2613a86bd4528a655f747f83f5be0aa8037f",
+        "source": "Pink Wall Hanging Canvas Sign",
+        "translation": "Розовая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.purple_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:304c389a5a311af8e3dc303e347246e145eef78ba4ba4d88083b3306638dc459",
+        "source": "Purple Canvas Wall Sign",
+        "translation": "Фиолетовая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.purple_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:9180580512233a3cbb5bcf6b6466fe128e01c641d92a6bae73e49746753b5485",
+        "source": "Purple Wall Hanging Canvas Sign",
+        "translation": "Фиолетовая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.red_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:0149563ee740f4b0580831ce2c191f38ef61630c7e70870e11dd066f469aa1dd",
+        "source": "Red Canvas Wall Sign",
+        "translation": "Красная настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.red_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:275cee33a44da2621422b951455adca1ff004c8f4b336feab3f347e1dc755a19",
+        "source": "Red Wall Hanging Canvas Sign",
+        "translation": "Красная подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:c09af50f635e65452b8d080db6172aa7e5e7190215fc98db44a468537c596a9f",
+        "source": "Wall Hanging Canvas Sign",
+        "translation": "Подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.white_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:8c1ef936043fbe2a826a609f1a28f7a06bb17532015ce73e2c312c116c60731b",
+        "source": "White Canvas Wall Sign",
+        "translation": "Белая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.white_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:cc5220dc84a9272c99f69a7556eb68edb0b11127a97db5231b22f07c05a7ef96",
+        "source": "White Wall Hanging Canvas Sign",
+        "translation": "Белая подвесная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.yellow_canvas_wall_sign": [
+      {
+        "source_hash": "sha256:385637cfaff40ed6d1d80b895d596d9204aae5ac4ad6531442e9f3adef29f8e5",
+        "source": "Yellow Canvas Wall Sign",
+        "translation": "Жёлтая настенная холщовая табличка"
+      }
+    ],
+    "block:block.farmersdelight.yellow_wall_hanging_canvas_sign": [
+      {
+        "source_hash": "sha256:8a6cc4421b83e01b5ffe656b13e4d73279bf419beaf875c3763fed8f1e815dd8",
+        "source": "Yellow Wall Hanging Canvas Sign",
+        "translation": "Жёлтая подвесная холщовая табличка"
+      }
+    ],
     "block:block.fastpaintings.painting": [
       {
         "source_hash": "sha256:3c080b85b195f820d9c42b7b8041432a0e5bb51b6e17c5225db7f56c482fa2b3",
         "source": "Painting",
         "translation": "Картина"
+      }
+    ],
+    "block:block.ftbquests.banner": [
+      {
+        "source_hash": "sha256:b7f4d98f98d51f8e0dca27ea5b64679b328281af1d0b0985816c208d1c9a1d46",
+        "source": "Banner",
+        "translation": "Флаг"
       }
     ],
     "block:block.geckolib.fertilizer": [
@@ -8884,6 +9451,13 @@
         "translation": "Пористый камень"
       }
     ],
+    "block:block.kubejs.power_house": [
+      {
+        "source_hash": "sha256:fed678cdbf1f7b96b833fdce753e427803166a8479f88f40f510d6d2c7329ffe",
+        "source": "Power House",
+        "translation": "Энергетический модуль"
+      }
+    ],
     "block:block.kubejs.reality_charge": [
       {
         "source_hash": "sha256:6b7d64800323373fced06d090b69e39b5c1905d1f86b85b05ea5b74151317769",
@@ -9022,6 +9596,13 @@
         "source_hash": "sha256:c7ba9db8be554d29ed3cd36fe5446a2b282bc8ef27ca26657a704137ac330083",
         "source": "Rotten Wallpaper Block",
         "translation": "Блок гнилых обоев"
+      }
+    ],
+    "block:block.kubejs.sculk2": [
+      {
+        "source_hash": "sha256:1afc59b0478f2d3a683bcd598702125d84fa6c562bc95816636b51cc1cd84055",
+        "source": "Sculk2",
+        "translation": "Скалк 2"
       }
     ],
     "block:block.kubejs.sculk_carapace": [
@@ -9535,6 +10116,20 @@
         "translation": "Деревянная клетка с чешуйницами"
       }
     ],
+    "block:block.lipoolroomsadditions.bedfeet": [
+      {
+        "source_hash": "sha256:0659da302a568698d3aeb38a05345a989e35974f2f86660ce106797ab439eb57",
+        "source": "Bedfeet",
+        "translation": "Изножье кровати"
+      }
+    ],
+    "block:block.lipoolroomsadditions.bedhead": [
+      {
+        "source_hash": "sha256:1ad006b736edae1119f6f05d41be1440ee5520160b9cac2ca21435e887dbbf62",
+        "source": "Bedhead",
+        "translation": "Изголовье кровати"
+      }
+    ],
     "block:block.lipoolroomsadditions.oak_pool_chair_back": [
       {
         "source_hash": "sha256:e1e2842fd846aa5e791f4235eed0cd311aa444edb21ab679024ec23727623cb4",
@@ -9619,6 +10214,13 @@
         "translation": "Белое дубовое кресло для бассейна"
       }
     ],
+    "block:block.mekanism.advanced_bounding_block": [
+      {
+        "source_hash": "sha256:2893820e7add624a723c8d85638c9d16faf2067dc4ff11f6edfceb9f977aa17d",
+        "source": "Advanced Bounding Block",
+        "translation": "Продвинутый ограничивающий блок"
+      }
+    ],
     "block:block.minecraft.black_wall_banner": [
       {
         "source_hash": "sha256:7420bdcd4cc1f11cd0c7907b81a38e7bcc78acab94c251c81df00ca602501434",
@@ -9647,6 +10249,13 @@
         "translation": "Бирюзовый настенный флаг"
       }
     ],
+    "block:block.minecraft.glow_item_frame": [
+      {
+        "source_hash": "sha256:445bfe2e29822d13fad9cf9fff78881faecf610a35295f6a3e930d52ffac986d",
+        "source": "Glow Item Frame",
+        "translation": "Светящаяся рамка"
+      }
+    ],
     "block:block.minecraft.gray_wall_banner": [
       {
         "source_hash": "sha256:d0472fc4fac1d8477d551f5af1863bfdddcc7c216fb8d62cd5d4970a04af1d00",
@@ -9659,6 +10268,13 @@
         "source_hash": "sha256:f184b3ee80bc6a98b91f6a86f2f026243cd13f7839c88a77655c59c3d04485d3",
         "source": "Green Wall Banner",
         "translation": "Зелёный настенный флаг"
+      }
+    ],
+    "block:block.minecraft.item_frame": [
+      {
+        "source_hash": "sha256:454714535b1927db9a6a7df93daa00d7d45f8f8fb0c8e235f4168e556fee750a",
+        "source": "Item Frame",
+        "translation": "Рамка"
       }
     ],
     "block:block.minecraft.light_blue_wall_banner": [
@@ -10142,6 +10758,13 @@
         "source_hash": "sha256:cad8073519756d7c2880c3d3e31ce6d7b09d6f9c881f62e9280250636a07baa9",
         "source": "Allay Plushie",
         "translation": "Плюшевая тихоня"
+      }
+    ],
+    "block:block.plushie_buddies.plushie_allay_skull": [
+      {
+        "source_hash": "sha256:b380bf35b7d3473c27be5be98ebbd17dc5010fec3871af7469ffd7a66836744b",
+        "source": "Plushie Allay Skull",
+        "translation": "Череп плюшевой тихони"
       }
     ],
     "block:block.plushie_buddies.plushie_armadillo": [
@@ -10681,6 +11304,11 @@
         "source_hash": "sha256:12a193c2d8c0512771d75d2d94a84323b987479e0cccfcbfc1a20b0881b7713c",
         "source": "Sewing Machine",
         "translation": "Швейная машинка"
+      },
+      {
+        "source_hash": "sha256:a4e733eebdd37c3ad6d3a0edc6fab8d8efd4487598fa42ec8cd1ee3e119914e3",
+        "source": "Workbench",
+        "translation": "Верстак для плюшевых игрушек"
       }
     ],
     "block:block.refurbished_furniture.acacia_basin": [
@@ -14806,6 +15434,13 @@
         "translation": "Отделка из тропического дерева"
       }
     ],
+    "block:block.storagedrawers.keybutton_personel": [
+      {
+        "source_hash": "sha256:e2c80c708f910de95114450da45e24df577e1a76a2eccd0d2531829b89e78382",
+        "source": "Keybutton Personel",
+        "translation": "Кнопка личного ключа"
+      }
+    ],
     "block:block.storagedrawers.mangrove_full_drawers_1": [
       {
         "source_hash": "sha256:8c0f3f303bff7eff3f89fbdf31d3458e0e2578bc1589b89524550c6ff75c7be7",
@@ -15275,6 +15910,13 @@
         "translation": "Искажённая отделка"
       }
     ],
+    "block:block.supplementaries.awning_dark_gray": [
+      {
+        "source_hash": "sha256:47511238904e4b2960aa60bdbba24499f86cbab4039b1efa4ba6e4c48d6d2e47",
+        "source": "Awning Dark Gray",
+        "translation": "Тёмно-серый навес"
+      }
+    ],
     "block:block.supplementaries.block_generator": [
       {
         "source_hash": "sha256:cd19d3fdacdca74c0dd206fdd9a4ef2af88d70b142126320475904b6ac2fc378",
@@ -15282,11 +15924,53 @@
         "translation": "Генератор блоков"
       }
     ],
+    "block:block.supplementaries.cracked_bell": [
+      {
+        "source_hash": "sha256:8b1f824ab5a83735454d0e5f19b8294e46ae14026fa79f64a5209d665af39c87",
+        "source": "Cracked Bell",
+        "translation": "Треснувший колокол"
+      }
+    ],
+    "block:block.supplementaries.diode_block": [
+      {
+        "source_hash": "sha256:f2314349e7d96701268055aa5fbdf2dad6700ff349405203667246a40e5888eb",
+        "source": "Diode Block",
+        "translation": "Диодный блок"
+      }
+    ],
+    "block:block.supplementaries.drawers": [
+      {
+        "source_hash": "sha256:ed14110fccb312d019acb0cf32b5c0ae5e9c62f0838cd0ab7b5d69651227eb7c",
+        "source": "Drawers",
+        "translation": "Ящики"
+      }
+    ],
+    "block:block.supplementaries.edelwood_stick": [
+      {
+        "source_hash": "sha256:b4c75c0a3609d3f3287137d33d92a33cdd81953983d7d35f07d871911cddb00c",
+        "source": "Edelwood Stick",
+        "translation": "Эдельвудовая палка"
+      }
+    ],
     "block:block.supplementaries.enderman_wall_head": [
       {
         "source_hash": "sha256:0f00fe5350731b7a42d51db16d5a9ac4aafc1e9ccaea4e57b4a41f0f1492fa37",
         "source": "Enderman Wall Head",
         "translation": "Настенная голова эндермена"
+      }
+    ],
+    "block:block.supplementaries.label": [
+      {
+        "source_hash": "sha256:0e66373f45dcf3dd656151e519f7ee5e3d558d9c22cb87df339bbdd2b6c6a3c1",
+        "source": "Label",
+        "translation": "Этикетка"
+      }
+    ],
+    "block:block.supplementaries.mob_jar": [
+      {
+        "source_hash": "sha256:bbe4b7bf10387d58224b11d92a21dfcc8b88442bc3c77d0f0b7bf9b916781165",
+        "source": "Mob Jar",
+        "translation": "Банка с мобом"
       }
     ],
     "block:block.supplementaries.moving_slidy_block": [
@@ -15303,6 +15987,20 @@
         "translation": "Источник передвижного блока"
       }
     ],
+    "block:block.supplementaries.prismarine_rod": [
+      {
+        "source_hash": "sha256:94d81ddf4319299e73b24860579ec30d035206189113ce67bd6cf4e35db7382b",
+        "source": "Prismarine Rod",
+        "translation": "Призмариновый стержень"
+      }
+    ],
+    "block:block.supplementaries.propelplant_cane": [
+      {
+        "source_hash": "sha256:de09c18770652fa4b22b586356a3a161233fcf48543f167bec8e4c60f6e27442",
+        "source": "Propelplant Cane",
+        "translation": "Стебель толкающего растения"
+      }
+    ],
     "block:block.supplementaries.rope_buntings": [
       {
         "source_hash": "sha256:67a5fee6c3cdf64abd8535452c0c05a186785f299a8514ac6defcbd33d252cde",
@@ -15315,6 +16013,20 @@
         "source_hash": "sha256:602a56f27888d7f2cd9d36ee42482ee9852112cb59b3be406b85afb4908c324f",
         "source": "Rope Chandelier",
         "translation": "Люстра на верёвке"
+      }
+    ],
+    "block:block.supplementaries.rope_ender_chandelier": [
+      {
+        "source_hash": "sha256:ec7d1843e4ac7da6f7f98511bc5e899a377d077315c2521bf714a98ac2ffb71e",
+        "source": "Rope Ender Chandelier",
+        "translation": "Эндер-люстра на верёвке"
+      }
+    ],
+    "block:block.supplementaries.rope_glow_chandelier": [
+      {
+        "source_hash": "sha256:9762d5bb9919cbc4b5cfd53af80c7a8475a7b1164df9e610bf681f9974f425ed",
+        "source": "Rope Glow Chandelier",
+        "translation": "Светящаяся люстра на верёвке"
       }
     ],
     "block:block.supplementaries.rope_soul_chandelier": [
@@ -15331,11 +16043,32 @@
         "translation": "Помидоры на верёвке"
       }
     ],
+    "block:block.supplementaries.sconce_wall_ender": [
+      {
+        "source_hash": "sha256:e5a696043d254b246c7637fbaa26ba703dc79d3495198c8397b6b12d10546d75",
+        "source": "Sconce Wall Ender",
+        "translation": "Настенное эндер-бра"
+      }
+    ],
+    "block:block.supplementaries.sconce_wall_glow": [
+      {
+        "source_hash": "sha256:b8f9483417ac0969b80c095ed2b68e8630bb98a901e16f39485c2016024ef8d6",
+        "source": "Sconce Wall Glow",
+        "translation": "Светящееся настенное бра"
+      }
+    ],
     "block:block.supplementaries.sconce_wall_green": [
       {
         "source_hash": "sha256:c4daa129841842d48af139adda4b344d99b883efeb45425b1c2f942549512407",
         "source": "Sconce Wall Green",
         "translation": "Зелёное настенное бра"
+      }
+    ],
+    "block:block.supplementaries.sconce_wall_nether_brass": [
+      {
+        "source_hash": "sha256:ee5ebd25b448485bd72d7ebd093554318652cb55e7ae59b147c9c01e34c6d097",
+        "source": "Sconce Wall Nether Brass",
+        "translation": "Настенное бра из незерской латуни"
       }
     ],
     "block:block.supplementaries.sconce_wall_soul": [
@@ -15352,11 +16085,25 @@
         "translation": "Настенный указатель"
       }
     ],
+    "block:block.supplementaries.soul_jar": [
+      {
+        "source_hash": "sha256:74bd367dc9feb14943fbed1599a7cd352fa1c428ee024d7439a4ab140ed7bf10",
+        "source": "Soul Jar",
+        "translation": "Банка с душой"
+      }
+    ],
     "block:block.supplementaries.stick_tomatoes": [
       {
         "source_hash": "sha256:707bd7c01dc62889ee8f4bd3811c20e01620666cd8a9ac04aaa78745cee1faa2",
         "source": "Stick Tomatoes",
         "translation": "Помидоры на опоре"
+      }
+    ],
+    "block:block.tconstruct.beetroot_soup_fluid": [
+      {
+        "source_hash": "sha256:791591ca9cd3dbec2aa89fcb874ecf9d20223ab1dab6c8110ab7a9584b07ed46",
+        "source": "Beetroot Soup",
+        "translation": "Свекольный суп"
       }
     ],
     "block:block.tconstruct.blaze_wall_head": [
@@ -15374,6 +16121,13 @@
       }
     ],
     "block:block.tconstruct.bloodshroom_hanging_sign": [
+      {
+        "source_hash": "sha256:13007c85e1ebdc26b11ae275be66605960283fd31f41ca9274fdd161271bf554",
+        "source": "Bloodshroom Hanging Sign",
+        "translation": "Подвесная табличка из кровавого гриба"
+      }
+    ],
+    "block:block.tconstruct.bloodshroom_wall_hanging_sign": [
       {
         "source_hash": "sha256:13007c85e1ebdc26b11ae275be66605960283fd31f41ca9274fdd161271bf554",
         "source": "Bloodshroom Hanging Sign",
@@ -15399,6 +16153,20 @@
         "source_hash": "sha256:9f1ce5a5d2d586b8ba7585507c4198c1c6d12d8c4b2d688a1e765a0d544f27c2",
         "source": "Block of Cinderslime",
         "translation": "Блок зольной слизи"
+      }
+    ],
+    "block:block.tconstruct.clear_frame": [
+      {
+        "source_hash": "sha256:b96d34eb0ede0c6f6521e5f4b226700a6c929747d0bba909a68084be6446dfda",
+        "source": "Clear Frame",
+        "translation": "Прозрачная рамка"
+      }
+    ],
+    "block:block.tconstruct.cobalt_frame": [
+      {
+        "source_hash": "sha256:a168fe7737ec9c0c8823aa9636431f0470bc8fa628dc058cb3c70a6af9298f44",
+        "source": "Cobalt Frame",
+        "translation": "Кобальтовая рамка"
       }
     ],
     "block:block.tconstruct.drowned_wall_head": [
@@ -15513,6 +16281,20 @@
         "translation": "Люк из эндербарка"
       }
     ],
+    "block:block.tconstruct.enderbark_wall_hanging_sign": [
+      {
+        "source_hash": "sha256:6a5845d150968aa357988322b9c764ec9ae7f7c84ed48b561b192fd5a5d1bef6",
+        "source": "Enderbark Hanging Sign",
+        "translation": "Подвесная табличка из эндербарка"
+      }
+    ],
+    "block:block.tconstruct.enderbark_wall_sign": [
+      {
+        "source_hash": "sha256:407d0584517fbf4e1af186c2c0b64d92253adaa283ff80aef7f354d4eff69de0",
+        "source": "Enderbark Sign",
+        "translation": "Табличка из эндербарка"
+      }
+    ],
     "block:block.tconstruct.enderbark_wood": [
       {
         "source_hash": "sha256:19df56625f78907fa16cc00483212b3827730c9b2bb5bc8ae4c01239e3a211a0",
@@ -15527,11 +16309,32 @@
         "translation": "Настенная голова эндермена"
       }
     ],
+    "block:block.tconstruct.gold_frame": [
+      {
+        "source_hash": "sha256:92efab774d437580d223c242fde9b53fb79d626349e3315b79bf7268dfc9ddf4",
+        "source": "Gold Frame",
+        "translation": "Золотая рамка"
+      }
+    ],
     "block:block.tconstruct.greenheart_hanging_sign": [
       {
         "source_hash": "sha256:d09e82473ca5ea5393586ae1c96c9fefbf435ffa0823e0c37685f8b0c0f1b4e3",
         "source": "Greenheart Hanging Sign",
         "translation": "Подвесная табличка из зелёного сердца"
+      }
+    ],
+    "block:block.tconstruct.greenheart_wall_hanging_sign": [
+      {
+        "source_hash": "sha256:d09e82473ca5ea5393586ae1c96c9fefbf435ffa0823e0c37685f8b0c0f1b4e3",
+        "source": "Greenheart Hanging Sign",
+        "translation": "Подвесная табличка из зелёного сердца"
+      }
+    ],
+    "block:block.tconstruct.honey_fluid": [
+      {
+        "source_hash": "sha256:ebcf983695346eea63258d8ab772084bb91b6d51b529ae8b00121f2fa323831c",
+        "source": "Honey",
+        "translation": "Мёд"
       }
     ],
     "block:block.tconstruct.husk_wall_head": [
@@ -15548,6 +16351,27 @@
         "translation": "Ихоровые слизневые корни эндербарка"
       }
     ],
+    "block:block.tconstruct.jewel_frame": [
+      {
+        "source_hash": "sha256:82e86e275a039c9fea85c868aed59a81f9672e245d51b036af90382b9afc1e69",
+        "source": "Jewel Frame",
+        "translation": "Драгоценная рамка"
+      }
+    ],
+    "block:block.tconstruct.manyullyn_frame": [
+      {
+        "source_hash": "sha256:10a0c0965669bf72fee7880cae3c5353b2d228000d57bbe1c6c39faf832a79c3",
+        "source": "Manyullyn Frame",
+        "translation": "Маньюллиновая рамка"
+      }
+    ],
+    "block:block.tconstruct.meat_soup_fluid": [
+      {
+        "source_hash": "sha256:060905aa32408a08a7f61080128caffb4f8661864d039f1e3546604c3fab27c8",
+        "source": "Meat Soup",
+        "translation": "Мясной суп"
+      }
+    ],
     "block:block.tconstruct.modifier_worktable": [
       {
         "source_hash": "sha256:dead182429e72c29f4253a0767969055e98b75116c9f6c389cd4b19b51a56539",
@@ -15555,11 +16379,102 @@
         "translation": "Рабочий стол для модификаторов"
       }
     ],
+    "block:block.tconstruct.mushroom_stew_fluid": [
+      {
+        "source_hash": "sha256:4490ebf456b9301c4d3618554175056eeec38d5a6032792bcd4a2dc738c8bdf6",
+        "source": "Mushroom Stew",
+        "translation": "Тушёные грибы"
+      }
+    ],
+    "block:block.tconstruct.nahuatl_fence_gate": [
+      {
+        "source_hash": "sha256:65edc8b767bd44f37706741630ee338591a1973823699c6c21cddacda9873016",
+        "source": "Nahuatl Fence Gate",
+        "translation": "Калитка из науатля"
+      }
+    ],
     "block:block.tconstruct.piglin_brute_wall_head": [
       {
         "source_hash": "sha256:d099b80b5ee0a42cce6624d8b90f5fe95372bce9ec7ddb8fe2c8b47d487152c9",
         "source": "Piglin Brute Wall Head",
         "translation": "Настенная голова брутального пиглина"
+      }
+    ],
+    "block:block.tconstruct.potted_blood_slime_fern": [
+      {
+        "source_hash": "sha256:b59a79433250eae4e0789608f6f362712c5819eedb9900f0c925eca99b4f3c97",
+        "source": "Potted Bloody Roots",
+        "translation": "Кровавые корни в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_blood_slime_sapling": [
+      {
+        "source_hash": "sha256:2d896dafade84e21ce01b409a5459395d18046d7ed0fea507f9ac3c1aa27ed08",
+        "source": "Potted Bloodshroom",
+        "translation": "Кровавый гриб в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_earth_slime_fern": [
+      {
+        "source_hash": "sha256:1923ccbaccf32bc7dad367e9d547dfaeb29592eecdd9433f90fbd9fa8ef221c2",
+        "source": "Potted Slimy Fern",
+        "translation": "Слизневый папоротник в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_earth_slime_sapling": [
+      {
+        "source_hash": "sha256:b3f3bda876dbd1966067f1238dfb5b4a39a9639492588276c100c4146210ea9f",
+        "source": "Potted Greenheart Sapling",
+        "translation": "Саженец зелёного сердца в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_ender_slime_fern": [
+      {
+        "source_hash": "sha256:1923ccbaccf32bc7dad367e9d547dfaeb29592eecdd9433f90fbd9fa8ef221c2",
+        "source": "Potted Slimy Fern",
+        "translation": "Слизневый папоротник в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_ender_slime_sapling": [
+      {
+        "source_hash": "sha256:85761ff9e850f9f9d4f498e6727b47b740845441fdad320802fcc1c531a5dca2",
+        "source": "Potted Enderbark Propagule",
+        "translation": "Росток эндербарка в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_ichor_slime_fern": [
+      {
+        "source_hash": "sha256:dc54f6bc36bf310435e6370526b59d58bb95f7e92b57314ee343a3f02c91b027",
+        "source": "Potted Slimy Roots",
+        "translation": "Слизневые корни в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_ichor_slime_sapling": [
+      {
+        "source_hash": "sha256:ec0dfaf92385b36803377118ba7ddc7e5bf7383df20355574224326818c9dbb5",
+        "source": "Potted Ichor Sapling",
+        "translation": "Саженец ихора в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_sky_slime_fern": [
+      {
+        "source_hash": "sha256:1923ccbaccf32bc7dad367e9d547dfaeb29592eecdd9433f90fbd9fa8ef221c2",
+        "source": "Potted Slimy Fern",
+        "translation": "Слизневый папоротник в горшке"
+      }
+    ],
+    "block:block.tconstruct.potted_sky_slime_sapling": [
+      {
+        "source_hash": "sha256:25eb3609f9f6b4b9fa9bf48c220123dd3b850e2a722588e7653568c4998fae6f",
+        "source": "Potted Skyroot Sapling",
+        "translation": "Саженец небесного корня в горшке"
+      }
+    ],
+    "block:block.tconstruct.rabbit_stew_fluid": [
+      {
+        "source_hash": "sha256:673b33c4c9eefc11a926b3a4f233fb0dad7fc600466b0f93b006d678c74649ad",
+        "source": "Rabbit Stew",
+        "translation": "Тушёный кролик"
       }
     ],
     "block:block.tconstruct.scorched_fluid_cannon": [
@@ -15640,6 +16555,13 @@
       }
     ],
     "block:block.tconstruct.skyroot_hanging_sign": [
+      {
+        "source_hash": "sha256:01ce05925417a75755f756d4591ae3a8b42bfaab0d252711957b8573a3411cdc",
+        "source": "Skyroot Hanging Sign",
+        "translation": "Подвесная табличка из небесного корня"
+      }
+    ],
+    "block:block.tconstruct.skyroot_wall_hanging_sign": [
       {
         "source_hash": "sha256:01ce05925417a75755f756d4591ae3a8b42bfaab0d252711957b8573a3411cdc",
         "source": "Skyroot Hanging Sign",
@@ -16827,6 +17749,13 @@
         "source_hash": "sha256:ada6d7a662f03a9ad858d482acae6970b3bb3c9bc9012582508abe191679b452",
         "source": "Upper",
         "translation": "Верхняя воронка"
+      }
+    ],
+    "block:block.vslab_compat.checker_vertical_slab": [
+      {
+        "source_hash": "sha256:e1aa39fcd12cfcf3cd00c0a8b45e6b8d27ac9e266ec669099f22ee262d83936d",
+        "source": "Checker Vertical Slab",
+        "translation": "Вертикальная клетчатая плита"
       }
     ],
     "block:block.waystones.blackstone_waystone": [
@@ -42743,6 +43672,1259 @@
         "translation": "Рассыпающийся настроенный осколок"
       }
     ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities": [
+      {
+        "source_hash": "sha256:81932b99d9d932d998aaa17ae2359f7c6e868af4479be078e0115927c4edd738",
+        "source": "Abilities",
+        "translation": "Умения"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_armor": [
+      {
+        "source_hash": "sha256:a592855d0508d16121c443b3500e94395f2087cc9deb7f84e1a82061f1a8ec69",
+        "source": "Armor",
+        "translation": "Броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_armor.boots": [
+      {
+        "source_hash": "sha256:929433e4be1dbd23ffc6b076da2e6f3854ccc5fe606a1e59419110b71fe0a833",
+        "source": "Boots",
+        "translation": "Ботинки"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_armor.chestplate": [
+      {
+        "source_hash": "sha256:efd648433f738f60b2936fb190b108dd5bd87f39f5f24cc675373836feede10e",
+        "source": "Chestplate",
+        "translation": "Нагрудник"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_armor.helmet": [
+      {
+        "source_hash": "sha256:a47fdf6415fc436ee65ac597251edfa2e58a5ea60b53e65d2886ea6cb17ba374",
+        "source": "Helmet",
+        "translation": "Шлем"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_armor.leggings": [
+      {
+        "source_hash": "sha256:166f79114abace7da4ca0996291a2d4a6f73dfe27bfab96cc9af95df53bf9736",
+        "source": "Leggings",
+        "translation": "Поножи"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_armor.shield": [
+      {
+        "source_hash": "sha256:480d4be7d61fe52bc31768ffaaffea7ad5db66ba8b699d30623c4726704cc646",
+        "source": "Shield",
+        "translation": "Щит"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_general": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_harvest": [
+      {
+        "source_hash": "sha256:c91ab8b61d373c0cb1cce94713f161e259f77172c8c08467ecacd138169ea364",
+        "source": "Harvest",
+        "translation": "Добыча"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_interact": [
+      {
+        "source_hash": "sha256:b7d2863247e0230fc402347740098d2e3f799aae27be97da0936e97aca77e16c",
+        "source": "Interaction",
+        "translation": "Взаимодействие"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_melee": [
+      {
+        "source_hash": "sha256:2e24eb8ac3378a24fb64d99f02cd9135880e26f0b84b5dd3feac1be91a16a00f",
+        "source": "Melee",
+        "translation": "Ближний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.group_ranged": [
+      {
+        "source_hash": "sha256:3f0b51a2492f73ecf48a84bc7f261e4223a8701efbda4726fa1de490fdf12498",
+        "source": "Ranged",
+        "translation": "Дальний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:abilities.subtext": [
+      {
+        "source_hash": "sha256:f2aa5c9686fcf4889a52ea669ba1a6b24213ce248c027222effe016bfc2a4796",
+        "source": "Ability modifiers have fewer slots than upgrades, but are stronger per slot.",
+        "translation": "Для модификаторов умений доступно меньше слотов, чем для улучшений, но каждый из них даёт более сильный эффект."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:armor": [
+      {
+        "source_hash": "sha256:a592855d0508d16121c443b3500e94395f2087cc9deb7f84e1a82061f1a8ec69",
+        "source": "Armor",
+        "translation": "Броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:defense": [
+      {
+        "source_hash": "sha256:6d3b491cc4b3b8c942decedece5f1f363e8f996b489f995acb320c18f73b3ca5",
+        "source": "Defense",
+        "translation": "Защита"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:defense.group_protection": [
+      {
+        "source_hash": "sha256:0e97ad021672d434a066dc50b8681813907da9f1f706aa1fa4402b9c4ba4c006",
+        "source": "Protection",
+        "translation": "Защитные"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:defense.group_special": [
+      {
+        "source_hash": "sha256:997c544f1be0a2dde15ce4e764321511ce9abdb34c7e7c661439e0382191a396",
+        "source": "Special",
+        "translation": "Специальные"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:defense.subtext": [
+      {
+        "source_hash": "sha256:5b80b78b773b1e61aac191854c6bf22b2058ecbfdc317f0e4891bb596bca7db7",
+        "source": "Instead of material traits, armor will include defense slots to improve protection.",
+        "translation": "Вместо особенностей материалов броня получает слоты защиты, позволяющие повысить её защитные свойства."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:fluid_effects": [
+      {
+        "source_hash": "sha256:6490aa27fb05925462355e5d7451a63f8579c42828c98eefffb2dd2b328d755b",
+        "source": "Fluid Effects",
+        "translation": "Эффекты жидкости"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:fluid_effects.subtext": [
+      {
+        "source_hash": "sha256:2dd01730a396053e30f53be6938a3c8d9884b059a392a01b31833af7b04e2764",
+        "source": "Fluid effects define the behavior when a fluid hits a block or entity through various modifiers such as spitting, spilling, and splashing.",
+        "translation": "Эффекты жидкостей определяют, что происходит при попадании жидкости на блок или сущность из-за таких модификаторов, как выплёскивание, разлив и разбрызгивание."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:intro": [
+      {
+        "source_hash": "sha256:b605350bc00209520b7cd8f546322663356ba630708f71bbf30aead6b3dd608e",
+        "source": "Introduction",
+        "translation": "Введение"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_ammo": [
+      {
+        "source_hash": "sha256:519a23e7ed89f8728763805462203aa5c06290d23e02f24847af160acf7861ca",
+        "source": "Ammo Materials",
+        "translation": "Материалы для боеприпасов"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_ammo.subtext": [
+      {
+        "source_hash": "sha256:9d52ce10d0430e77cd26b59715ccacba224b06fb7279c80f7da011bc3cf5dd33",
+        "source": "Materials used for creating arrows and shurikens.",
+        "translation": "Материалы для создания стрел и сюрикенов."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_armor": [
+      {
+        "source_hash": "sha256:cdb4712651dd234711d9e034f1a9eda420abec68421efa8158448ac29e4127d1",
+        "source": "Armor Materials",
+        "translation": "Материалы для брони"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_armor.subtext": [
+      {
+        "source_hash": "sha256:8d7f6d1a8cf0c446e94f3854e80d4540828a39037db394f6a782375b974a58f9",
+        "source": "Materials used for creating armor and shields.",
+        "translation": "Материалы для создания брони и щитов."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_harvest": [
+      {
+        "source_hash": "sha256:957a09ddaa0eb2cdea819044f9a59e57309f55c1930ef4ae5f33c7ee36480fbe",
+        "source": "General Materials",
+        "translation": "Материалы общего назначения"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_harvest.subtext": [
+      {
+        "source_hash": "sha256:90c89f63e1f8c8618c3ebb86f84e8d31705573d65a7844fe4ec98427f65f2286",
+        "source": "Materials used for creating melee weapons or harvest tools.",
+        "translation": "Материалы для создания оружия ближнего боя и добывающих инструментов."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_ranged": [
+      {
+        "source_hash": "sha256:2eb4c7d0b69a9ae380f24574ff2dd28ca27283ff2619205af9cd4a5d6f1cb96e",
+        "source": "Ranged Materials",
+        "translation": "Материалы для дальнего боя"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_ranged.subtext": [
+      {
+        "source_hash": "sha256:4195048dad26df38606cb28b2cc25db11b4142a77d3774fdf17123d6e2891d24",
+        "source": "Materials used for creating ranged weapons.",
+        "translation": "Материалы для создания оружия дальнего боя."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_skull": [
+      {
+        "source_hash": "sha256:669f4a288bd7027cd5706ee0142208c323f4b7c98a9234fd2c1d29263e58f38a",
+        "source": "Slimeskulls",
+        "translation": "Слизневые черепа"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:materials_skull.subtext": [
+      {
+        "source_hash": "sha256:6f65c46439e5419f31b7e83031b62f0e17cec783536029fdf5f912c87da4c495",
+        "source": "This section describes the effects of all types of skulls in creating a slimeskull",
+        "translation": "В этом разделе описано, как разные виды черепов влияют на создаваемый слизневый череп."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:slotless": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Бесслотовые модификаторы"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:slotless.group_bonus": [
+      {
+        "source_hash": "sha256:d587622d277c4be4a2ed692b5a52d550abf0d9e19adb40469bb837462084dcdd",
+        "source": "Bonus",
+        "translation": "Бонусы"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:slotless.group_cosmetic": [
+      {
+        "source_hash": "sha256:3f9679cf685f17af227d423f96031bdc3b29cfd284277f00de35ccbce2bddbca",
+        "source": "Cosmetic",
+        "translation": "Косметические"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:slotless.group_general": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:slotless.subtext": [
+      {
+        "source_hash": "sha256:ffa4143cba688487695e5be100537096a55848123ea4f050147cfcac977e32b7",
+        "source": "Slotless modifiers do not require any slots.",
+        "translation": "Бесслотовые модификаторы не требуют слотов."
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools": [
+      {
+        "source_hash": "sha256:ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+        "source": "Tools",
+        "translation": "Инструменты"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.group_ancient": [
+      {
+        "source_hash": "sha256:64c0aff73032d3c74841faf2f9b8b5a1033dee54ca1be5f0736658f0a998d42c",
+        "source": "Ancient",
+        "translation": "Древние"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.group_large": [
+      {
+        "source_hash": "sha256:3d9c05379c208f25b379920201932253a25bc05e87261e733cf4bc0e7d456ae4",
+        "source": "Broad",
+        "translation": "Крупные"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.group_ranged": [
+      {
+        "source_hash": "sha256:3f0b51a2492f73ecf48a84bc7f261e4223a8701efbda4726fa1de490fdf12498",
+        "source": "Ranged",
+        "translation": "Дальний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.group_small": [
+      {
+        "source_hash": "sha256:5263293fc202649bdc8135573ac9cd3b0bcea4355e0d8f0a59f1ddeea8eefc15",
+        "source": "Small",
+        "translation": "Малые"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.group_staff": [
+      {
+        "source_hash": "sha256:9b2039ce089477ff3528c7a400062f0c5c511663f1f5bce14298ab068e09372b",
+        "source": "Staffs",
+        "translation": "Посохи"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.tconstruct.earth_staff": [
+      {
+        "source_hash": "sha256:3239e38d95b6c2c6d8cc003c8f127d0d6596d50f818c48ec12f23b882284d754",
+        "source": "Earthslime",
+        "translation": "Земная слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.tconstruct.ender_staff": [
+      {
+        "source_hash": "sha256:91253b86e9d749e7d8640b6d9d6fb52fafc1a9fdd56d5355674b23c419ccd83d",
+        "source": "Enderslime",
+        "translation": "Эндер-слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.tconstruct.ichor_staff": [
+      {
+        "source_hash": "sha256:09f8720da7e112a59a145aaf42aebde27ad49dfd64a6557175a2999e0fa3b60d",
+        "source": "Ichor",
+        "translation": "Ихор"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:tools.tconstruct.sky_staff": [
+      {
+        "source_hash": "sha256:cf11b25bd2405969b52b1286f269b7895887e284f79ebca4bf19f5e4473fd2eb",
+        "source": "Skyslime",
+        "translation": "Небесная слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades": [
+      {
+        "source_hash": "sha256:e02a5941602a57c3c2f17eafe2bf11c64bba85755ace8983c10ed23f1d4b286f",
+        "source": "Upgrades",
+        "translation": "Улучшения"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.boots.tconstruct.feather_falling": [
+      {
+        "source_hash": "sha256:470f8f8daa1f2e6f1288cb4499d9ad132dda6f90fe16270b5a1126b9a401cb40",
+        "source": "Feather Fall",
+        "translation": "Невесомость"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_armor": [
+      {
+        "source_hash": "sha256:a592855d0508d16121c443b3500e94395f2087cc9deb7f84e1a82061f1a8ec69",
+        "source": "Armor",
+        "translation": "Броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_armor.boots": [
+      {
+        "source_hash": "sha256:929433e4be1dbd23ffc6b076da2e6f3854ccc5fe606a1e59419110b71fe0a833",
+        "source": "Boots",
+        "translation": "Ботинки"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_armor.chestplate": [
+      {
+        "source_hash": "sha256:efd648433f738f60b2936fb190b108dd5bd87f39f5f24cc675373836feede10e",
+        "source": "Chestplate",
+        "translation": "Нагрудник"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_armor.helmet": [
+      {
+        "source_hash": "sha256:a47fdf6415fc436ee65ac597251edfa2e58a5ea60b53e65d2886ea6cb17ba374",
+        "source": "Helmet",
+        "translation": "Шлем"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_armor.leggings": [
+      {
+        "source_hash": "sha256:166f79114abace7da4ca0996291a2d4a6f73dfe27bfab96cc9af95df53bf9736",
+        "source": "Leggings",
+        "translation": "Поножи"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_damage": [
+      {
+        "source_hash": "sha256:de08dbca6d31543745b8edbb0c9a2322f6d78e018892203ccdada48054cac296",
+        "source": "Damage Boost",
+        "translation": "Усиление урона"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_general": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_harvest": [
+      {
+        "source_hash": "sha256:c91ab8b61d373c0cb1cce94713f161e259f77172c8c08467ecacd138169ea364",
+        "source": "Harvest",
+        "translation": "Добыча"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_ranged": [
+      {
+        "source_hash": "sha256:3f0b51a2492f73ecf48a84bc7f261e4223a8701efbda4726fa1de490fdf12498",
+        "source": "Ranged",
+        "translation": "Дальний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.group_weapon": [
+      {
+        "source_hash": "sha256:2e24eb8ac3378a24fb64d99f02cd9135880e26f0b84b5dd3feac1be91a16a00f",
+        "source": "Melee",
+        "translation": "Ближний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:encyclopedia:upgrades.subtext": [
+      {
+        "source_hash": "sha256:10f34be55d709f6a407c28ef01e081354cef30afd13746f699c2fa614d11952d",
+        "source": "Each tool gets a limited total number of upgrades slots.",
+        "translation": "Каждый инструмент имеет ограниченное количество слотов для улучшений."
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:alloyer": [
+      {
+        "source_hash": "sha256:3708de4b5b8b58cf3cc23b922b97608b7037b80f0fe845ea1101da20a9e03d51",
+        "source": "Alloyer",
+        "translation": "Смешиватель"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:armor": [
+      {
+        "source_hash": "sha256:b6d6757b3f6d390eb269ff6aa028eb473bc9aae7ed3da0d6af9c441ed9548409",
+        "source": "Fantastic Armor",
+        "translation": "Фантастическая броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:armor.subtext": [
+      {
+        "source_hash": "sha256:87aed3fd3cc06389ab727b60dea16d8dc8ddab601764d9fa78b92e5029fb76c4",
+        "source": "Using Nether resources grants access to create higher tiers of armor. For instance, the mighty plate armor boasts a high defense, but less modifiability. Who needs extra features when you can be protected?",
+        "translation": "Ресурсы Нижнего мира позволяют создавать броню более высоких уровней. Например, могучая латная броня отличается высокой защитой, но имеет меньше возможностей для модификации. Кому нужны дополнительные функции, когда ты надёжно защищён?"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:armor_materials": [
+      {
+        "source_hash": "sha256:61e519aa9cafad6d5c4a5df06021bfcec8273041949b8d474790ed264a48cc6e",
+        "source": "Tier 4 Armor Materials",
+        "translation": "Материалы для брони 4-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:armor_materials.subtext": [
+      {
+        "source_hash": "sha256:1e3cbda525da1983588f3d07121a157e688b9b88ad85ba9d4b52727dd0340b98",
+        "source": "These materials require blazing blood to create, and can be casted into armor and shields.",
+        "translation": "Для создания этих материалов требуется огненная кровь. Из них можно отливать броню и щиты."
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:blazing_blood": [
+      {
+        "source_hash": "sha256:109bd9bf373faa8ead17ab55c8a08a4b4f12b2bb1e937e28608594353d6e7357",
+        "source": "Blazing Blood",
+        "translation": "Огненная кровь"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:foundry": [
+      {
+        "source_hash": "sha256:88bc6ea46083b1ed223f6a2c0bf3b2990614e4a256a7d3f7ac03bdd0a487782f",
+        "source": "Foundry",
+        "translation": "Литейная печь"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:intro": [
+      {
+        "source_hash": "sha256:b605350bc00209520b7cd8f546322663356ba630708f71bbf30aead6b3dd608e",
+        "source": "Introduction",
+        "translation": "Введение"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:melee_harvest_materials": [
+      {
+        "source_hash": "sha256:dfd383c3013855295d3fc005d1024632bdf953cc61a79af755436cc1e9b65947",
+        "source": "Tier 4 General Materials",
+        "translation": "Материалы общего назначения 4-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:melee_harvest_materials.subtext": [
+      {
+        "source_hash": "sha256:d2c75a86a3919be78b048233dd3c96458337667742c35c41a27e14c1eca052f5",
+        "source": "These materials require blazing blood to create, and can be used to create tool parts for melee weapons or harvest tools.",
+        "translation": "Для создания этих материалов требуется огненная кровь. Из них можно изготавливать детали инструментов ближнего боя и добывающих инструментов."
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:ranged_materials": [
+      {
+        "source_hash": "sha256:a04ec40618d1ead09bef3586bc004c401fde899455d1ead2cd0712202abda8ee",
+        "source": "Tier 4 Ranged Materials",
+        "translation": "Материалы для дальнего боя 4-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:fantastic_foundry:ranged_materials.subtext": [
+      {
+        "source_hash": "sha256:013abf372426f4e1136534b60413117a99f11ec38697079cfa41acad9acbc8fb",
+        "source": "These materials require blazing blood to create, and can be used to create tool parts for ranged weapons like bows.",
+        "translation": "Для создания этих материалов требуется огненная кровь. Из них можно изготавливать детали оружия дальнего боя, например луков."
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:ammo_materials": [
+      {
+        "source_hash": "sha256:bb7f88bf64e81a248f3b9588497a1fecef4401bc9e3a358b263f5f9e0ee36e01",
+        "source": "Basic Ammo Materials",
+        "translation": "Базовые материалы для боеприпасов"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:ammo_materials.subtext": [
+      {
+        "source_hash": "sha256:f51b57eaa0de5ced952d6191ac08441023768aed7d1c4e1b800a0016b2ef8e40",
+        "source": "These materials are ideal for crafting your first arrows and shurikens.",
+        "translation": "Эти материалы отлично подходят для создания первых стрел и сюрикенов."
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:armor": [
+      {
+        "source_hash": "sha256:59f217c15c888dfdc6eba5eedcd4bba8576b2e83032a8111846e66eac7018f41",
+        "source": "Basic Armor",
+        "translation": "Базовая броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:armor.subtext": [
+      {
+        "source_hash": "sha256:ba4c7137a04bf7189172551cde9bff6f4f2e9c1c213c5297578ef20e20df047b",
+        "source": "Basic armor allows basic protection without needing to hunt for resources or build any machinery. This will grant limited defense, but there are still many opportunities to upgrade your suit of armor! Oh what fun things will you create?",
+        "translation": "Базовая броня обеспечивает начальную защиту без поиска редких ресурсов и строительства механизмов. Она защищает не слишком хорошо, зато оставляет много возможностей для улучшения. Какую забавную броню создашь ты?"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:further_reading": [
+      {
+        "source_hash": "sha256:bd2e42f237b39fc195116b8e1606b7af14daf25b36e918b2341817bf4ddf2fd2",
+        "source": "Further Reading",
+        "translation": "Дополнительная литература"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:intro": [
+      {
+        "source_hash": "sha256:b605350bc00209520b7cd8f546322663356ba630708f71bbf30aead6b3dd608e",
+        "source": "Introduction",
+        "translation": "Введение"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:melee_harvest_materials": [
+      {
+        "source_hash": "sha256:33a911986ff67352cc2ee5f46ee39b8aae55017b6acf022920abe924601f4ef5",
+        "source": "Tier 1 General Materials",
+        "translation": "Материалы общего назначения 1-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:melee_harvest_materials.subtext": [
+      {
+        "source_hash": "sha256:72677e1119000d6e0c902b6b62f7f092d52699ee40a3cbf2f910690485441990",
+        "source": "These materials can be placed in the part builder to create tool parts for melee weapons or harvest tools.",
+        "translation": "Из этих материалов можно создавать в формирователе детали инструментов ближнего боя и добывающих инструментов."
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:modifiers": [
+      {
+        "source_hash": "sha256:072da57facdcc631f41c5d886717e71197314fb5518d7c4b51033dbe11f7ffff",
+        "source": "Modifiers",
+        "translation": "Модификаторы"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:ranged_materials": [
+      {
+        "source_hash": "sha256:71de5191a30d654e498347f8649122f831b3dbfff2c66c4c7bc600587c60d621",
+        "source": "Tier 1 Ranged Materials",
+        "translation": "Материалы для дальнего боя 1-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:ranged_materials.subtext": [
+      {
+        "source_hash": "sha256:bdd561b86f22774acd628a5285c5faf5f3099252c44e285f50f8443295e6d4ae",
+        "source": "These materials can be placed in the part builder to create tool parts for ranged weapons like bows.",
+        "translation": "Из этих материалов можно создавать в формирователе детали оружия дальнего боя, например луков."
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:tools": [
+      {
+        "source_hash": "sha256:ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+        "source": "Tools",
+        "translation": "Инструменты"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:tools.group_general": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:tools.group_info": [
+      {
+        "source_hash": "sha256:1cb0ba125f84c982b00ba3639cdfb2cee6b70f94b5e0115c045fef607af4f216",
+        "source": "Information",
+        "translation": "Сведения"
+      }
+    ],
+    "mantle-book-language:tconstruct:materials_and_you:tools.group_ranged": [
+      {
+        "source_hash": "sha256:3f0b51a2492f73ecf48a84bc7f261e4223a8701efbda4726fa1de490fdf12498",
+        "source": "Ranged",
+        "translation": "Дальний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities": [
+      {
+        "source_hash": "sha256:81932b99d9d932d998aaa17ae2359f7c6e868af4479be078e0115927c4edd738",
+        "source": "Abilities",
+        "translation": "Умения"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_armor": [
+      {
+        "source_hash": "sha256:a592855d0508d16121c443b3500e94395f2087cc9deb7f84e1a82061f1a8ec69",
+        "source": "Armor",
+        "translation": "Броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_armor.boots": [
+      {
+        "source_hash": "sha256:929433e4be1dbd23ffc6b076da2e6f3854ccc5fe606a1e59419110b71fe0a833",
+        "source": "Boots",
+        "translation": "Ботинки"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_armor.chestplate": [
+      {
+        "source_hash": "sha256:efd648433f738f60b2936fb190b108dd5bd87f39f5f24cc675373836feede10e",
+        "source": "Chestplate",
+        "translation": "Нагрудник"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_armor.helmet": [
+      {
+        "source_hash": "sha256:a47fdf6415fc436ee65ac597251edfa2e58a5ea60b53e65d2886ea6cb17ba374",
+        "source": "Helmet",
+        "translation": "Шлем"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_armor.leggings": [
+      {
+        "source_hash": "sha256:166f79114abace7da4ca0996291a2d4a6f73dfe27bfab96cc9af95df53bf9736",
+        "source": "Leggings",
+        "translation": "Поножи"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_armor.shield": [
+      {
+        "source_hash": "sha256:480d4be7d61fe52bc31768ffaaffea7ad5db66ba8b699d30623c4726704cc646",
+        "source": "Shield",
+        "translation": "Щит"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_general": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_harvest": [
+      {
+        "source_hash": "sha256:c91ab8b61d373c0cb1cce94713f161e259f77172c8c08467ecacd138169ea364",
+        "source": "Harvest",
+        "translation": "Добыча"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_interact": [
+      {
+        "source_hash": "sha256:b7d2863247e0230fc402347740098d2e3f799aae27be97da0936e97aca77e16c",
+        "source": "Interaction",
+        "translation": "Взаимодействие"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_melee": [
+      {
+        "source_hash": "sha256:2e24eb8ac3378a24fb64d99f02cd9135880e26f0b84b5dd3feac1be91a16a00f",
+        "source": "Melee",
+        "translation": "Ближний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.group_ranged": [
+      {
+        "source_hash": "sha256:3f0b51a2492f73ecf48a84bc7f261e4223a8701efbda4726fa1de490fdf12498",
+        "source": "Ranged",
+        "translation": "Дальний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:abilities.subtext": [
+      {
+        "source_hash": "sha256:39d5eaef6fd0dcef695ede44c6040b884de924223d4f63ae3e663b1845370d60",
+        "source": "Abilities are more powerful than upgrades, but also have a more limited number of slots.",
+        "translation": "Умения сильнее улучшений, но для них доступно меньше слотов."
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:armor": [
+      {
+        "source_hash": "sha256:6373cbba2c9d872a2dbd20cfc2bd26626ca36ac6c176fe0fd16d4fb9d6064e8d",
+        "source": "Mighty Armor",
+        "translation": "Могучая броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:armor.subtext": [
+      {
+        "source_hash": "sha256:545e92e8a7a423ec1620c3cbb33f24dd04d12b3eafbeb4e3f4b582607e856454",
+        "source": "Alloys unlock a wider range of materials for armor creation. These may grant additional abilities beyond basic sets like travelers gear.",
+        "translation": "Сплавы открывают больше материалов для создания брони. Такая броня может давать дополнительные умения, недоступные базовым комплектам вроде снаряжения путешественника."
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:armor_materials": [
+      {
+        "source_hash": "sha256:c6b07494edc7d92dedf1009a0d67449a8ae2f3a82adaf53af67d23578d5dd3a4",
+        "source": "Tier 3 Armor Materials",
+        "translation": "Материалы для брони 3-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:armor_materials.subtext": [
+      {
+        "source_hash": "sha256:2e74fe5768ec731579a381f6de95ca20a8184743a2e8454faef2ef4fe678720f",
+        "source": "These materials can be casted into armor and shields.",
+        "translation": "Из этих материалов можно отливать броню и щиты."
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:defense": [
+      {
+        "source_hash": "sha256:6d3b491cc4b3b8c942decedece5f1f363e8f996b489f995acb320c18f73b3ca5",
+        "source": "Defense",
+        "translation": "Защита"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:defense.group_protection": [
+      {
+        "source_hash": "sha256:0e97ad021672d434a066dc50b8681813907da9f1f706aa1fa4402b9c4ba4c006",
+        "source": "Protection",
+        "translation": "Защитные"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:defense.group_special": [
+      {
+        "source_hash": "sha256:997c544f1be0a2dde15ce4e764321511ce9abdb34c7e7c661439e0382191a396",
+        "source": "Special",
+        "translation": "Специальные"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:defense.subtext": [
+      {
+        "source_hash": "sha256:661d62b4372607f731f0a72863c365ee8cba3525e213a25095430046de35ad48",
+        "source": "Defense modifiers can only be applied to armor, using defense slots.",
+        "translation": "Защитные модификаторы применяются только к броне и занимают слоты защиты."
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:entity_melting": [
+      {
+        "source_hash": "sha256:bbff45ce90f5f94ffe60cb12efc51025217e8867a5264064a544dc445e83cf4f",
+        "source": "Entity Melting",
+        "translation": "Переплавка существ"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:intro": [
+      {
+        "source_hash": "sha256:b605350bc00209520b7cd8f546322663356ba630708f71bbf30aead6b3dd608e",
+        "source": "Introduction",
+        "translation": "Введение"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:melee_harvest_materials": [
+      {
+        "source_hash": "sha256:44678433680f67b3c0e16f6dcdb06f8d7d08ae5a48dc80a5edfad83d782d0ac7",
+        "source": "Tier 3 General Materials",
+        "translation": "Материалы общего назначения 3-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:melee_harvest_materials.subtext": [
+      {
+        "source_hash": "sha256:793dfee7201143142b7fd632828910d57544caebeaaafe4b8c07f43a7a3921d2",
+        "source": "These materials can be created with alloying then casted into tool parts for melee weapons or harvest tools.",
+        "translation": "Эти материалы получают смешиванием, после чего отливают из них детали инструментов ближнего боя и добывающих инструментов."
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:ranged_materials": [
+      {
+        "source_hash": "sha256:a1751e91c3ec65ab7fdded199bb0abee16cd174bb766f0f2db34b8db722da649",
+        "source": "Tier 3 Ranged Materials",
+        "translation": "Материалы для дальнего боя 3-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:ranged_materials.subtext": [
+      {
+        "source_hash": "sha256:cc5cf60a121d620b7f4b999a8b38cf7055814652694987aaf0d73844fe9bc89e",
+        "source": "These materials can be created with alloying then casted into tool parts for ranged weapons like bows.",
+        "translation": "Эти материалы получают смешиванием, после чего отливают из них детали оружия дальнего боя, например луков."
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:smeltery": [
+      {
+        "source_hash": "sha256:4d04fdd9e84a6f58d6da896aa36ae0b6e779b557a2ee01fad3925ccff655b309",
+        "source": "Smeltery",
+        "translation": "Плавильня"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:tools": [
+      {
+        "source_hash": "sha256:382a6187783b59c97d1d82a1b88eee33df79f49e78897e9bfb8edca39918a6eb",
+        "source": "Broad Tools",
+        "translation": "Крупные инструменты"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:tools.group_general": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:tools.group_info": [
+      {
+        "source_hash": "sha256:1cb0ba125f84c982b00ba3639cdfb2cee6b70f94b5e0115c045fef607af4f216",
+        "source": "Information",
+        "translation": "Сведения"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:tools.group_ranged": [
+      {
+        "source_hash": "sha256:3f0b51a2492f73ecf48a84bc7f261e4223a8701efbda4726fa1de490fdf12498",
+        "source": "Ranged",
+        "translation": "Дальний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:tools.subtext": [
+      {
+        "source_hash": "sha256:bc0aef95b9774ec0e52efdda1dbb1cda1389146fb839c0ab3bd1773d759302b4",
+        "source": "Broad tools all require the use of a tinker's anvil to create",
+        "translation": "Для создания всех крупных инструментов требуется Наковальня Тинкера."
+      }
+    ],
+    "mantle-book-language:tconstruct:mighty_smelting:upgrades.subtext": [
+      {
+        "source_hash": "sha256:dc4cdb53ba8e95f52e7f1c04e0ea87d47e8b49e64b48c1976688c7873f30d516",
+        "source": "Tools can be enhanced with upgrades, though only a limited number can be applied to each tool.",
+        "translation": "Инструменты можно усиливать улучшениями, но на каждый из них помещается лишь ограниченное количество."
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:armor": [
+      {
+        "source_hash": "sha256:a55153419ce6153003a00e6690808f01b2b3b51cb3fbf9c16684db51f91b6baa",
+        "source": "Puny Armor",
+        "translation": "Простая броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:armor.subtext": [
+      {
+        "source_hash": "sha256:18bdb6af2551be49df82d4a04f561dbac777e1b57445ea017311c646ba506912",
+        "source": "Choose your path with your armor; travelers gives you highly modifiable armor with more room for abilities, while plate gives you more opportunities for defense. If you have no fashion sense you can mix both.",
+        "translation": "Выбери подходящую броню: снаряжение путешественника легко модифицировать и наделять умениями, а латная броня даёт больше возможностей для защиты. Если внешний вид не важен, части комплектов можно сочетать."
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:armor_materials": [
+      {
+        "source_hash": "sha256:0b1eb9d94b4edc480793a15bd3e48e060d1c60acc71dba1d6a2b9f98c72196ea",
+        "source": "Tier 2 Armor Materials",
+        "translation": "Материалы для брони 2-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:armor_materials.subtext": [
+      {
+        "source_hash": "sha256:2e74fe5768ec731579a381f6de95ca20a8184743a2e8454faef2ef4fe678720f",
+        "source": "These materials can be casted into armor and shields.",
+        "translation": "Из этих материалов можно отливать броню и щиты."
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:casting": [
+      {
+        "source_hash": "sha256:0c9e7b062660e3dcb0ea2efe55f231095d585cd1b81a59fd67fee04832471202",
+        "source": "Casting",
+        "translation": "Литьё"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:further_reading": [
+      {
+        "source_hash": "sha256:bd2e42f237b39fc195116b8e1606b7af14daf25b36e918b2341817bf4ddf2fd2",
+        "source": "Further Reading",
+        "translation": "Дополнительная литература"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:intro": [
+      {
+        "source_hash": "sha256:b605350bc00209520b7cd8f546322663356ba630708f71bbf30aead6b3dd608e",
+        "source": "Introduction",
+        "translation": "Введение"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:melee_harvest_materials": [
+      {
+        "source_hash": "sha256:497f0546200bf07e36c942c6933792ae43eb6463b8762f67f26a764b6b2c13f1",
+        "source": "Tier 2 General Materials",
+        "translation": "Материалы общего назначения 2-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:melee_harvest_materials.subtext": [
+      {
+        "source_hash": "sha256:d08a516030ca541344880a2ac4c124effbef1591272a2f1587e99d7f5c23b05a",
+        "source": "These materials can be casted into tool parts for melee weapons or harvest tools.",
+        "translation": "Из этих материалов можно отливать детали инструментов ближнего боя и добывающих инструментов."
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:melter": [
+      {
+        "source_hash": "sha256:629b9cb7e2a135bf5177a81975e805398ed59c36fe2bc4e5599056781747e89b",
+        "source": "Melter",
+        "translation": "Плавильная печь"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:moving_fluids": [
+      {
+        "source_hash": "sha256:3b48b50639bfe29db94a36f5f243256dcc35362e00381e07e359025d6ce95488",
+        "source": "Moving Fluids",
+        "translation": "Перемещение жидкостей"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:ranged_materials": [
+      {
+        "source_hash": "sha256:82be718f760896bbba3eb92e375a151de354a48c6d3e953a1f95cc7ff1fa2306",
+        "source": "Tier 2 Ranged Materials",
+        "translation": "Материалы для дальнего боя 2-го уровня"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:ranged_materials.subtext": [
+      {
+        "source_hash": "sha256:862df105238cbc0a13e7249170f3719cbda4ed6b3f769ebe40a0def698f0a6f8",
+        "source": "These materials can be casted into tool parts for ranged weapons like bows.",
+        "translation": "Из этих материалов можно отливать детали оружия дальнего боя, например луков."
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:slotless": [
+      {
+        "source_hash": "sha256:30747c2dbc0807952e87a7aa15a530b6cd651f9fc6ba66e733a448c4748a5efc",
+        "source": "Slotless Modifier",
+        "translation": "Бесслотовые модификаторы"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:slotless.group_bonus_upgrades": [
+      {
+        "source_hash": "sha256:80869157c9b3c4a06a9e3f95f89ff9517c1c00fa57ae2069f7547a02ee6f7bc4",
+        "source": "Slots++",
+        "translation": "Улучшения++"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:slotless.group_cosmetic": [
+      {
+        "source_hash": "sha256:3f9679cf685f17af227d423f96031bdc3b29cfd284277f00de35ccbce2bddbca",
+        "source": "Cosmetic",
+        "translation": "Косметические"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:slotless.group_slotless": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:slotless.subtext": [
+      {
+        "source_hash": "sha256:c969756b1833a7cca07a026285344d336abbf895f3a608c3b7a32224cf812a67",
+        "source": "These modifiers do not require any slots to apply, you can have them all if you wish.",
+        "translation": "Эти модификаторы не требуют слотов, поэтому при желании можно применить их все."
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades": [
+      {
+        "source_hash": "sha256:e02a5941602a57c3c2f17eafe2bf11c64bba85755ace8983c10ed23f1d4b286f",
+        "source": "Upgrades",
+        "translation": "Улучшения"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_armor": [
+      {
+        "source_hash": "sha256:a592855d0508d16121c443b3500e94395f2087cc9deb7f84e1a82061f1a8ec69",
+        "source": "Armor",
+        "translation": "Броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_armor.boots": [
+      {
+        "source_hash": "sha256:929433e4be1dbd23ffc6b076da2e6f3854ccc5fe606a1e59419110b71fe0a833",
+        "source": "Boots",
+        "translation": "Ботинки"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_armor.chestplate": [
+      {
+        "source_hash": "sha256:efd648433f738f60b2936fb190b108dd5bd87f39f5f24cc675373836feede10e",
+        "source": "Chestplate",
+        "translation": "Нагрудник"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_armor.helmet": [
+      {
+        "source_hash": "sha256:a47fdf6415fc436ee65ac597251edfa2e58a5ea60b53e65d2886ea6cb17ba374",
+        "source": "Helmet",
+        "translation": "Шлем"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_armor.leggings": [
+      {
+        "source_hash": "sha256:166f79114abace7da4ca0996291a2d4a6f73dfe27bfab96cc9af95df53bf9736",
+        "source": "Leggings",
+        "translation": "Поножи"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_damage": [
+      {
+        "source_hash": "sha256:52e889c12f0af4b8877bbb3add6267650ceb161e4b5d6a08f20bf56d519c5575",
+        "source": "Bonus Damage",
+        "translation": "Урон"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_general": [
+      {
+        "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+        "source": "General",
+        "translation": "Общие"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_harvest": [
+      {
+        "source_hash": "sha256:c91ab8b61d373c0cb1cce94713f161e259f77172c8c08467ecacd138169ea364",
+        "source": "Harvest",
+        "translation": "Добыча"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.group_melee": [
+      {
+        "source_hash": "sha256:2e24eb8ac3378a24fb64d99f02cd9135880e26f0b84b5dd3feac1be91a16a00f",
+        "source": "Melee",
+        "translation": "Ближний бой"
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:upgrades.subtext": [
+      {
+        "source_hash": "sha256:5bca0f8c0614d9b3845f16ee372099fb7b8a6d7d0ef7092a699bc18ab5edc6ba",
+        "source": "Tools can be enhanced with upgrades, though only a limited number can be applied per tool.",
+        "translation": "Инструменты можно усиливать улучшениями, но на каждый инструмент помещается лишь ограниченное их количество."
+      }
+    ],
+    "mantle-book-language:tconstruct:puny_smelting:worktable": [
+      {
+        "source_hash": "sha256:dead182429e72c29f4253a0767969055e98b75116c9f6c389cd4b19b51a56539",
+        "source": "Modifier Worktable",
+        "translation": "Рабочий стол для модификаторов"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:ammo_materials": [
+      {
+        "source_hash": "sha256:0c42f90966df82027bbb68e9426774875df8fcd374c5b9fb60cc13aba23e6b2e",
+        "source": "Advanced Ammo Materials",
+        "translation": "Продвинутые материалы для боеприпасов"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:ammo_materials.subtext": [
+      {
+        "source_hash": "sha256:a59b34840320864c035fab12453660161660f88e1ab4f2b8a1eff42e99f50bcb",
+        "source": "These materials are used to craft better ammo using rarer materials.",
+        "translation": "Из этих редких материалов создают более мощные боеприпасы."
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:ancient_tools": [
+      {
+        "source_hash": "sha256:bc9af63998fd09163a0688fba32f31524a09802bd720c1a220d62d38d14d3e56",
+        "source": "Ancient Tools",
+        "translation": "Древние инструменты"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:ancient_tools.subtext": [
+      {
+        "source_hash": "sha256:7ac69673015ccb786215270a209e2f3b4d5a6044a417efed8de7191f451ee557",
+        "source": "Ancient tools are tools rarely found in loot throughout the world. Their material construction appears to be random and cannot be altered, but they may be modified like any other tool. Rarely, they may come constructed from a unique material, which is only otherwise seen on armor or tool parts obtained from piglins.",
+        "translation": "Древние инструменты изредка встречаются среди добычи по всему миру. Они состоят из случайных материалов, которые нельзя заменить, но сами инструменты можно модифицировать как обычно. Иногда попадаются инструменты из уникального материала, который иначе встречается только в броне или деталях инструментов, полученных от пиглинов."
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:armor": [
+      {
+        "source_hash": "sha256:0097938d502e1c685e9f57b9dbb3c6ad8ed8d850cffb3aff7d99a058cacd8ad1",
+        "source": "Slimy Armor",
+        "translation": "Слизневая броня"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:armor.subtext": [
+      {
+        "source_hash": "sha256:a6ebef959aaa006773f3a77c1f7267a2aa40396da7a8e6e3e13cd25f2df068aa",
+        "source": "Mixing slime with various mob parts produces an interesting set of armor. Its not the most defensive, but it can really enhance your abilities.",
+        "translation": "Сочетая слизь с частями различных существ, можно получить необычную броню. Она защищает не слишком хорошо, зато заметно усиливает способности."
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:armor_materials": [
+      {
+        "source_hash": "sha256:cdb4712651dd234711d9e034f1a9eda420abec68421efa8158448ac29e4127d1",
+        "source": "Armor Materials",
+        "translation": "Материалы для брони"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:armor_materials.subtext": [
+      {
+        "source_hash": "sha256:34aca581b46f21d80783d1e85f7a2afc85e715219216418c1ac74cfde5d8bb71",
+        "source": "These materials are found in exploration of distant locations, and can be crafted into armor and shields.",
+        "translation": "Эти материалы находят при исследовании далёких мест. Из них можно создавать броню и щиты."
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration": [
+      {
+        "source_hash": "sha256:f08e7f4a8d5c7b2a62ede2d1643527c2e823bd454f9e8c632d4f55db0f3a3cc0",
+        "source": "Exploration",
+        "translation": "Исследование"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.blood_island": [
+      {
+        "source_hash": "sha256:8a7961ab59837fd7340327fc375f3e5160cc2ec8cb38340de75e5055ee8ba271",
+        "source": "Blood",
+        "translation": "Кровь"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.clay_island": [
+      {
+        "source_hash": "sha256:05947b7bdbad0f301c8086a325985c41961fa6c762799f8659f64740683736de",
+        "source": "Clay",
+        "translation": "Глина"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.earthslime_geode": [
+      {
+        "source_hash": "sha256:3239e38d95b6c2c6d8cc003c8f127d0d6596d50f818c48ec12f23b882284d754",
+        "source": "Earthslime",
+        "translation": "Земная слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.earthslime_island": [
+      {
+        "source_hash": "sha256:3239e38d95b6c2c6d8cc003c8f127d0d6596d50f818c48ec12f23b882284d754",
+        "source": "Earthslime",
+        "translation": "Земная слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.enderslime_geode": [
+      {
+        "source_hash": "sha256:91253b86e9d749e7d8640b6d9d6fb52fafc1a9fdd56d5355674b23c419ccd83d",
+        "source": "Enderslime",
+        "translation": "Эндер-слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.enderslime_island": [
+      {
+        "source_hash": "sha256:91253b86e9d749e7d8640b6d9d6fb52fafc1a9fdd56d5355674b23c419ccd83d",
+        "source": "Enderslime",
+        "translation": "Эндер-слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.ichor_geode": [
+      {
+        "source_hash": "sha256:09f8720da7e112a59a145aaf42aebde27ad49dfd64a6557175a2999e0fa3b60d",
+        "source": "Ichor",
+        "translation": "Ихор"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.necrotic_bones": [
+      {
+        "source_hash": "sha256:c9f428ae37169a7f8ccefb0129ccbf3c311273a70462350f82321779b06745ec",
+        "source": "Necrotic Bone",
+        "translation": "Некротическая кость"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.skyslime_geode": [
+      {
+        "source_hash": "sha256:cf11b25bd2405969b52b1286f269b7895887e284f79ebca4bf19f5e4473fd2eb",
+        "source": "Skyslime",
+        "translation": "Небесная слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:exploration.skyslime_island": [
+      {
+        "source_hash": "sha256:cf11b25bd2405969b52b1286f269b7895887e284f79ebca4bf19f5e4473fd2eb",
+        "source": "Skyslime",
+        "translation": "Небесная слизь"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:gadgets": [
+      {
+        "source_hash": "sha256:4be9d221d795080ca122599bfb19f46d4f0ebfc3ec7cb3f4531a4a09ccda2b7a",
+        "source": "Gadgets",
+        "translation": "Гаджеты"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:intro": [
+      {
+        "source_hash": "sha256:b605350bc00209520b7cd8f546322663356ba630708f71bbf30aead6b3dd608e",
+        "source": "Introduction",
+        "translation": "Введение"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:materials": [
+      {
+        "source_hash": "sha256:7bc1160023c8c83a5289c503c66897431eeee0ec31d57d4b68eb4a3b947bdc6b",
+        "source": "Skull Materials",
+        "translation": "Материалы для слизневых черепов"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:materials.subtext": [
+      {
+        "source_hash": "sha256:fd408ee53c5a65e19c213ef7424da0ce61901748e0ded0633bcb927f96a290b3",
+        "source": "Placing one of these skulls in a casting basin and adding enderslime can enhance their ability as a helmet.",
+        "translation": "Если положить один из этих черепов в литейный резервуар и залить эндер-слизью, из него получится шлем с усиленной способностью."
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:melee_harvest_materials": [
+      {
+        "source_hash": "sha256:957a09ddaa0eb2cdea819044f9a59e57309f55c1930ef4ae5f33c7ee36480fbe",
+        "source": "General Materials",
+        "translation": "Материалы общего назначения"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:melee_harvest_materials.subtext": [
+      {
+        "source_hash": "sha256:f6c9ce0099ee2b3c7650b8eea0f738729ec6bb1664c337771162a9a8f05cfdb9",
+        "source": "These materials are found in exploration of distant locations, and can be used to create tool parts for melee weapons or harvest tools.",
+        "translation": "Эти материалы находят при исследовании далёких мест. Из них можно изготавливать детали инструментов ближнего боя и добывающих инструментов."
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:ranged_materials": [
+      {
+        "source_hash": "sha256:2eb4c7d0b69a9ae380f24574ff2dd28ca27283ff2619205af9cd4a5d6f1cb96e",
+        "source": "Ranged Materials",
+        "translation": "Материалы для дальнего боя"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:ranged_materials.subtext": [
+      {
+        "source_hash": "sha256:44a026b476e7bb755de98fb333ef1d0157fc4f5688e6252a720ffd7783b98db1",
+        "source": "These materials are found in exploration of distant locations, and can be used to create tool parts for ranged weapons like bows.",
+        "translation": "Эти материалы находят при исследовании далёких мест. Из них можно изготавливать детали оружия дальнего боя, например луков."
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:staffs": [
+      {
+        "source_hash": "sha256:9b2039ce089477ff3528c7a400062f0c5c511663f1f5bce14298ab068e09372b",
+        "source": "Staffs",
+        "translation": "Посохи"
+      }
+    ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:staffs.subtext": [
+      {
+        "source_hash": "sha256:e51d582c80976e3fe226e27fcc762da27bfcfb914c5f8e9e51f47bc6cf7e61c0",
+        "source": "Combining slime crystals and slime wood aids in creation of very flexible tools. Just need a bit of metal to hold the whole thing together.",
+        "translation": "Кристаллы слизи и слизнедревесина позволяют создавать очень гибкие инструменты. Нужно лишь немного металла, чтобы скрепить всё вместе."
+      }
+    ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor.json:/text/0/text": [
       {
         "source_hash": "sha256:8da201721e8ea794cfb182bb1172da3904a9a73e25c9eb144d845a1eb6b5faab",
@@ -61902,11 +64084,151 @@
         "translation": "<i>Признаться честно, я и сам не представлял, сколько всего есть в Actually Additions.<r><n> - Ellpeck"
       }
     ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.book_tutorial": [
+      {
+        "source_hash": "sha256:8e02534b839ac9a39bada9c589cd77b71ddd146c8ec3a1030753b70571770733",
+        "source": "Intro to the Manual",
+        "translation": "Знакомство с руководством"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.book_tutorial.text.1": [
+      {
+        "source_hash": "sha256:54e3751e0639c92dc9cf74de9e7b69803acd6be924a09d53258dc2a897380b45",
+        "source": "The <item>Actually Additions Manual<r>, the book you are looking at right now, contains a variety of <imp>useful information about all of the items<r>. <n>Once you get the hang of it, it is very easy to navigate. Here is a quick rundown: <n><n>While you are in a <item>chapter<r>, like this one, you can use the <imp>white buttons at the bottom<r> to turn the page back or forwards. This can also be done by <imp>using the scroll wheel<r>. <n>Chapters, however, aren't the only thing that this book consists of.",
+        "translation": "<item>Руководство Actually Additions<r>, которое вы сейчас читаете, содержит множество <imp>полезных сведений обо всех предметах<r>. <n>Разобравшись с управлением, вы легко найдёте нужную информацию. Вот краткий обзор: <n><n>Находясь в <item>главе<r>, как сейчас, используйте <imp>белые кнопки внизу<r>, чтобы листать страницы назад и вперёд. То же самое можно делать <imp>колесом мыши<r>. <n>Но руководство состоит не только из глав."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.book_tutorial.text.2": [
+      {
+        "source_hash": "sha256:4c90ae9a2d4318d0221a1e19d18575976738436174c80b70f3e53386bf6a620f",
+        "source": "Were you to <imp>go back<r> a level via the <imp>buttom on the top left<r> or via <imp>right-clicking<r>, you would find yourself inside an <item>entry<r>. Entries contain all chapters that are related to <imp>a specific topic<r>. Here, you can also <imp>turn pages<r> and click the items on the page. <n><n>Were you to <imp>go back another level<r> (again, via the button on the top left or right-clicking), you would find yourself on the <item>main page<r> of the manual. <n><n><i>Turn the page now via the button on the bottom right.",
+        "translation": "Если <imp>вернуться<r> на уровень выше с помощью <imp>кнопки слева вверху<r> или <imp>правой кнопки мыши<r>, вы окажетесь в <item>разделе<r>. Разделы содержат все главы, относящиеся к <imp>определённой теме<r>. Здесь также можно <imp>листать страницы<r> и нажимать на предметы. <n><n><imp>Вернувшись ещё на один уровень выше<r> тем же способом, вы попадёте на <item>главную страницу<r> руководства. <n><n><i>Теперь перелистните страницу кнопкой справа внизу."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.book_tutorial.text.3": [
+      {
+        "source_hash": "sha256:b51f19a9fd467ef33d3c0f18956b645df2e5069bd992ba5aad6c6d90128563f2",
+        "source": "On the <item>main page<r>, you can see (and click on!) a list of <imp>all of the entries<r>. <n><n>The <item>bookmarks<r> are placed at the <imp>bottom of the booklet<r>. While you are <imp>in a chapter<r>, you can <imp>bookmark<r> the page you are currently on <imp>for later viewing<r>. <n><n>The booklet also has <imp>a lot of other functions<r>, though. Look around in the GUI to explore them all! <n><n><i>Now press the back button on the top left or right-click to leave this chapter.",
+        "translation": "На <item>главной странице<r> находится список <imp>всех разделов<r>, по которым можно нажимать. <n><n><item>Закладки<r> расположены <imp>внизу руководства<r>. Находясь <imp>в главе<r>, можно <imp>добавить текущую страницу в закладки<r>, чтобы <imp>вернуться к ней позже<r>. <n><n>У руководства есть и <imp>много других возможностей<r>. Изучите интерфейс, чтобы найти их все! <n><n><i>Теперь нажмите кнопку возврата слева вверху или правую кнопку мыши, чтобы выйти из этой главы."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.crystals": [
+      {
+        "source_hash": "sha256:83e184e664fca24cb9385178051223ccb78a66a8110fe52714e99f03f05419cc",
+        "source": "Crystals and Reconstructor",
+        "translation": "Кристаллы и реконстрактор"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.crystals.text.1": [
+      {
+        "source_hash": "sha256:b04132de15f64eda4510bd207ceb233637bf8816fc92a23f4fcb4397408f0fde",
+        "source": "The <item>Atomic Reconstructor<r> is used to craft <item>Crystals<r>, which are the main crafting ingredient in most items from <imp>Actually Additions<r>. <n>Upon being supplied with power, it shoots out a Laser. <tifisgrin>It will convert all surrounding items and blocks along the beam's path, provided they can be converted, until it hits a block.",
+        "translation": "<item>Атомный реконстрактор<r> создаёт <item>кристаллы<r> — основной материал для изготовления большинства предметов из <imp>Actually Additions<r>. <n>Получив энергию, он выпускает лазерный луч. <tifisgrin>Луч преобразует все подходящие предметы и блоки на своём пути, пока не упрётся в блок."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.crystals.text.2": [
+      {
+        "source_hash": "sha256:0390a171af91e4219d84d7b0783e13c855e5c975740827db17a40a404156a999",
+        "source": "When shooting a laser, it uses <imp>1000 CF<r>, but additional rates vary depending on the conversion. <n>There are various <item>Lenses<r> that can be attached to the Reconstructor that don't all follow the default behavior of the Reconstructor and are able to do some neat things. <n>See the <imp>Reconstruction section<r> in the booklet <imp>for more information<r>.",
+        "translation": "Каждый выстрел лазера расходует <imp>1000 CF<r>, а дополнительный расход зависит от преобразования. <n>На реконстрактор можно установить различные <item>линзы<r>. Они меняют его обычное поведение и позволяют делать много интересного. <n><imp>Подробнее<r> об этом читайте в разделе <imp>«Реконструкция»<r>."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.crystals.text.3": [
+      {
+        "source_hash": "sha256:c8062ab0571e7b40ca76517fcbbfcf6ac3438e9df19b09ff33b85763f3816010",
+        "source": "When right-clicking the Reconstructor with a <item>Redstone Torch<r> in hand, it will change between a mode where it <imp>gets deactivated by Redstone<r> and a mode where it <imp>responds to pulses<r>. It should be noted that any recipes listed without information about Lenses <imp>don't use one<r>. <n><i>I thought that was obvious.",
+        "translation": "Нажатие ПКМ по реконстрактору с <item>редстоуновым факелом<r> переключает режимы: в одном сигнал редстоуна <imp>отключает устройство<r>, в другом оно <imp>реагирует на импульсы<r>. Если в рецепте не указана линза, значит, она <imp>не нужна<r>. <n><i>Казалось бы, это очевидно."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.crystals.text.5": [
+      {
+        "source_hash": "sha256:611bf24d56813e3d1f0e40a7f9f628e4d6be75169e38f22a2dbea0c99d4bd02c",
+        "source": "When you have crafted a couple of items, you might want to find a way to <imp>automate this<r>. <n>There is a very simple way to do accomplish this: <n>Place the <item>Atomic Reconstructor<r> down facing into a <item>Precision Dropper<r> (to find it, look it up in the <imp>All Items<r> Entry!). <n>Next, place a <item>Ranged Collector<r> in the area that has the converted items set as a allowlist. <n>Now you can just chuck your raw materials into the Dropper to convert them!",
+        "translation": "Создав несколько предметов, вы наверняка захотите <imp>автоматизировать процесс<r>. <n>Это можно сделать очень просто: <n>Установите <item>Атомный реконстрактор<r> так, чтобы он смотрел в <item>Автоматический точный выбрасыватель<r> (его можно найти в разделе <imp>«Все предметы»<r>!). <n>Затем поставьте рядом <item>Диапазонный собиратель<r> и добавьте преобразованные предметы в его список разрешённых. <n>Теперь достаточно загрузить сырьё в выбрасыватель!"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.crystals.text.6": [
+      {
+        "source_hash": "sha256:a36b3f3f6cd2b50b8090e2c260a567dc173aafa0f5c7e4317b6c72cc5a9532b2",
+        "source": "<n><n><n><i>Molecular Transformilator",
+        "translation": "<n><n><n><i>Молекулярный трансформилятор"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.engineer_house": [
+      {
+        "source_hash": "sha256:ed4f7455b8e619a22bd67b8e25d87e9e923596e1a5042639e2aeaaa5bdccf87c",
+        "source": "A visit to the Engineers",
+        "translation": "В гостях у инженеров"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.engineer_house.text.1": [
+      {
+        "source_hash": "sha256:bf9cab330b0ff42f0da199f84010ee34d1d5348bba8a88e29ae78c7c29fe5947",
+        "source": "If you want to know how to start, you can check out what the <imp>Engineers<r> are up to. <n>They are two friendly <imp>villagers<r> that sell you various goods: One is the <item>Crystallizer<r>, who will exchange <imp>Emeralds and Crystals<r> with you, and the <item>Engineer<r> will trade <imp>various machines<r> with you! <n>On the next page, you can see the <imp>house<r> they live in - which is also worth checking out! But be careful, the <imp>machines inside the house<r> are a little more <imp>fragile<r>, meaning they will shatter once you try to break them.",
+        "translation": "Если не знаете, с чего начать, посмотрите, чем занимаются <imp>инженеры<r>. <n>Это два дружелюбных <imp>жителя<r>, продающих разные товары. <item>Кристаллизатор<r> обменивает <imp>изумруды и кристаллы<r>, а <item>инженер<r> торгует <imp>различными машинами<r>! <n>На следующей странице показан <imp>дом<r>, где они живут. Его тоже стоит осмотреть! Но будьте осторожны: <imp>машины внутри дома<r> довольно <imp>хрупкие<r> и разобьются, если попытаться их сломать."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.engineer_house.text.2": [
+      {
+        "source_hash": "sha256:b9a13a52c6ae5f652fda06d8220c1a36eec27b8982726c803a9ef22c1976a6e2",
+        "source": "<i>     Machines Primus",
+        "translation": "<i>     Первые машины"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.intro": [
+      {
+        "source_hash": "sha256:18cc299b642f5e6aac3ed6465fe54685daea9a1db1d426f3789c802875e94233",
+        "source": "A story about ActAdd",
+        "translation": "История ActAdd"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.intro.text.1": [
+      {
+        "source_hash": "sha256:9b8104eaedd68eeac7c4cb3dff75d551d66c517c63a8fba894984cefdcceda81",
+        "source": "<i>For too long have the people of Minecraftia toiled under a relentless whip. A whip more hurtful and more injurious than that of any slave-master: inconvenience. Aye, the thousand million inconveniences that make up the grind, that force players to waste hours- nay, days!- chopping wood and farming wheat and other such mundane tasks,",
+        "translation": "<i>Слишком долго жители Майнкрафтии трудились под неумолимым кнутом. Кнутом, куда более жестоким и мучительным, чем у любого рабовладельца: неудобством. Да, тысячами миллионов неудобств, из которых складывается гринд, заставляющий игроков тратить часы — нет, дни! — на рубку леса, выращивание пшеницы и прочие обыденные занятия,"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.intro.text.2": [
+      {
+        "source_hash": "sha256:dbdddb018d1f8d5e00c63e5a64e29dbf643f9532f285559b342cfde1093ad0fe",
+        "source": "<i>just to momentarily escape the remorseless tedium and experience the true joys of Minecraftia, building, caving and adventuring into the beautiful uncharted abundance of the world. Yet no sooner has one immersed oneself in this creative enterprise than the inconveniences return, like millions of furious bees pestering, stinging, swarming all over you until the game ceases to be enjoyable, and you are driven away from it forever.",
+        "translation": "<i>лишь затем, чтобы ненадолго вырваться из беспощадной рутины и испытать истинные радости Майнкрафтии: строительство, исследование пещер и приключения в прекрасных неизведанных просторах мира. Но стоит погрузиться в созидание, как неудобства возвращаются, словно миллионы разъярённых пчёл: докучают, жалят и роятся вокруг, пока игра не перестанет приносить радость и вы не покинете её навсегда."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.intro.text.3": [
+      {
+        "source_hash": "sha256:a1283af2b1ae2b580bd6bb6671fec66e9da0f7607da66345a904454ab08a6c56",
+        "source": "<i>To that end, a certain Ellpeck has created this Actual Addition to the world of Minecraft, that will allow the player to better engage with the core experiences of the game- building and adventuring- by automating and streamlining the monotony that is grinding in Minecraft. Therefore, Ellpeck humbly presents to you this Actually Additions Manual, that shall teach you the ways of this modification and, ultimately,",
+        "translation": "<i>Чтобы положить этому конец, некто Ellpeck создал это настоящее дополнение к миру Minecraft. Оно позволяет игроку сосредоточиться на главном — строительстве и приключениях, — автоматизируя и упрощая монотонный гринд. И потому Ellpeck смиренно представляет вам Руководство Actually Additions, которое научит вас пользоваться этой модификацией и в конечном счёте"
+      }
+    ],
     "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.intro.text.4": [
       {
         "source_hash": "sha256:ea255c777f0425b8fe2faa723e6fce6d731991968619b2a8a9f2d0304bff1158",
         "source": "<i>allow you to transcend inconvenience and attain enlightenment. <r><n><n>                   ~by <imp>Tulkas<r>",
         "translation": "<i>поможет оставить неудобства позади и достичь просветления. <r><n><n>                   ~<imp>Tulkas<r>"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.video_guide": [
+      {
+        "source_hash": "sha256:32c4a6f2c070feb325752e6c714e9cb8c5161dada66d3dea25e98cceeca16fb5",
+        "source": "A Video Guide",
+        "translation": "Видеоруководство"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.video_guide.booty.button": [
+      {
+        "source_hash": "sha256:254b90cb16499b0a13cea8bafddfb017bb6e49dc2ac59545950830d4a3f14dfc",
+        "source": "BootyToast's Video",
+        "translation": "Видео BootyToast"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.video_guide.booty.text.1": [
+      {
+        "source_hash": "sha256:c9b52c947e32d45c98d9c38d51834f397db8a3acb9cae7aa69d3a4da96cbe6c5",
+        "source": "If you want to have a <imp>visual introduction<r> to see what <item>Actually Additions<r> has to offer, you can watch this really awesome video by a friend of mine, <item>Booty Toast<r> (yes, weird name, I know).",
+        "translation": "Если хотите получить <imp>наглядное представление<r> о возможностях <item>Actually Additions<r>, посмотрите замечательное видео моего друга <item>Booty Toast<r> (да, имя странное, я знаю)."
       }
     ],
     "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.video_guide.booty.text.2": [
@@ -61916,11 +64238,25 @@
         "translation": "<n>В этом видео показана большая часть возможностей мода. Оно <imp>немного устарело<r> и охватывает не всё, но по-прежнему отлично подходит <imp>для первого знакомства<r>."
       }
     ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.video_guide.dire.text.1": [
+      {
+        "source_hash": "sha256:c823c971e62f619051bd9ae0065eb1a5f52bf69ff77bbbb28e63ed4451a8a494",
+        "source": "There is also the second option, a <imp>playlist<r> consisting of a <imp>spotlight<r> by <item>Direwolf20<r>. It is a bit more recent than the other video, however, it is <imp>substantially longer<r> and provides a more detailed overview. So you have the choice: The quicker introduction",
+        "translation": "Есть и второй вариант: <imp>плейлист<r> с <imp>обзором<r> от <item>Direwolf20<r>. Он немного новее другого видео, но <imp>гораздо длиннее<r> и подробнее рассказывает о моде. Выбор за вами: быстрое знакомство"
+      }
+    ],
     "patchouli-lang:actuallyadditions:booklet.actuallyadditions.chapter.video_guide.dire.text.2": [
       {
         "source_hash": "sha256:c07c3504a8fdba7e5cbd7ad2a6309626590f2519cfab4767279e38527430c3aa",
         "source": "on the left or the longer, more in-depth introduction down below.",
         "translation": "или подробный плейлист ниже."
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.indexEntry.getting_started": [
+      {
+        "source_hash": "sha256:d00eca1bae6742803906ab42a831e8b5396d15b6573ea13c139ec31631208ec1",
+        "source": "Getting Started",
+        "translation": "Начало работы"
       }
     ],
     "patchouli-lang:actuallyadditions:booklet.actuallyadditions.item.actuallyadditions.booklet": [
@@ -61930,11 +64266,60 @@
         "translation": "Руководство Actually Additions"
       }
     ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.reconstructor_recipe": [
+      {
+        "source_hash": "sha256:c7fda940e457aba2420594e53da923c6d2465d3c1641f07f48f99ad6455f4386",
+        "source": "Atomic Reconstructor Recipe",
+        "translation": "Рецепт атомного реконстрактора"
+      }
+    ],
+    "patchouli-lang:actuallyadditions:booklet.actuallyadditions.shapeless_recipe": [
+      {
+        "source_hash": "sha256:d1212f5a4d9a13dd30541e86f70a17c1aa873f8201d14636f4eaaec0c9d8fbf4",
+        "source": "Shapeless Recipe",
+        "translation": "Бесформенный рецепт"
+      }
+    ],
+    "patchouli-lang:botania:botania.page.bIntro0_trinkets": [
+      {
+        "source_hash": "sha256:b5d01ff8f8fde6ee29b037d81c319fc94efccd8a611eea90a02cd325da5a1180",
+        "source": "$(thing)Trinkets$(0) (also known as $(thing)Curios$(0), $(thing)Baubles$(0), or $(thing)Charms$(0)) are accessories that offer all sorts of different effects when worn.",
+        "translation": "$(thing)Безделушки$(0) (также известные как $(thing)Диковинки$(0), $(thing)Амулеты$(0) или $(thing)Фенечки$(0)) — это аксессуары, дающие при ношении самые разные эффекты."
+      }
+    ],
+    "patchouli-lang:botania:botania.page.corporeaFunnel3": [
+      {
+        "source_hash": "sha256:ffae96e814fbdc01ff80197be4423aa3ba997ff3b3be773d2986afc54a52ddd3",
+        "source": "Similar to a $(l:functional_flowers/hopperhock)$(item)Hopperhock$(0)$(/l), the $(item)Corporea Funnel$(0) supports non-empty container items in $(item)Glow Item Frames$(0) to specify multiple potential matches. The relative stack sizes in the container determine how likely that particular item is selected for a request.$(p)The request quantity is still determined by the rotation of the container item in the frame.",
+        "translation": "Подобно $(l:functional_flowers/hopperhock)$(item)Воротку$(0)$(/l), $(item)Воронка Хранилища$(0) поддерживает непустые предметы-контейнеры в $(item)светящихся рамках$(0), позволяя указать несколько возможных совпадений. Относительный размер стопок в контейнере определяет вероятность выбора каждого предмета для запроса.$(p)Количество запрашиваемых предметов по-прежнему задаётся поворотом контейнера в рамке."
+      }
+    ],
+    "patchouli-lang:botania:botania.page.enderHand0a": [
+      {
+        "source_hash": "sha256:2883b8c35b6ccadb25f520f40d2f57bf5917f91f09202fdb383d9f083baaaf3b",
+        "source": "The $(item)Hand of Ender$(0) allows its user to access their interdimensional Ender subspace pocket; in other words, their $(item)Ender Chest$(0) inventory. Said inventory can be opened with some $(thing)Mana$(0) by right-clicking with the Hand, no matter the place.",
+        "translation": "$(item)Рука Края$(0) открывает доступ к межпространственному карману владельца, то есть к инвентарю его $(item)эндер-сундука$(0). Этот инвентарь можно открыть в любом месте, нажав ПКМ с рукой и потратив немного $(thing)маны$(0)."
+      }
+    ],
     "patchouli-lang:botania:botania.page.headCreating3": [
       {
         "source_hash": "sha256:9f7216683e09f98f28f359e9a11d840de686ebe915977003d45ee9f16f9de383",
         "source": "Replacing the name tag with a $(item)Written Book$(0) (copies work as well) allows channeling even more information into the process:$(p)If the secret code to evoke a past $(thing)Skin$(0) is known in the arcane language of $(thing)Base64$(0), it may be written into a book to conjure that specific historic look of the $(thing)Player$(0)'s head.",
         "translation": "Если вместо бирки использовать $(item)подписанную книгу$(0) (подойдёт и копия), в процесс можно передать ещё больше информации:$(p)Если известен тайный код, вызывающий прежний $(thing)скин$(0) и записанный на мистическом языке $(thing)Base64$(0), его можно внести в книгу, чтобы воссоздать прежний облик головы $(thing)игрока$(0)."
+      }
+    ],
+    "patchouli-lang:botania:botania.page.looniumStructures": [
+      {
+        "source_hash": "sha256:ed8280343bd3bf25b91da53782aa55d469de0c077d9c9babc94b67d6778e9976",
+        "source": "Ordinarily the Loonium will summon treasure of the sort you would find in a $(thing)Dungeon$(0). However, the Loonium is sensitive to the large structures you can find in the world; if planted in one such structure, it'll instead summon treasure appropriate for its surroundings.$(p)It seems the Loonium is a bit picky, though-- there may be some items that never drop from the monsters it spawns.",
+        "translation": "Обычно Лутюльпан призывает сокровища, которые можно найти в $(thing)подземелье$(0). Но он чувствителен к крупным структурам мира: если посадить его внутри такой структуры, он будет призывать сокровища, соответствующие окружению.$(p)Похоже, Лутюльпан довольно привередлив: некоторые предметы могут никогда не выпасть из призванных им монстров."
+      }
+    ],
+    "patchouli-lang:botania:botania.page.turntable1": [
+      {
+        "source_hash": "sha256:47d85b35714a17316a6ca98d70012496f24db2c4f4b00252b4a674f1b2e42606",
+        "source": "You spin me right round",
+        "translation": "Ты крутишь меня по кругу"
       }
     ],
     "patchouli-lang:dynamictrees:537df3ed0b709a8d19e0": [
