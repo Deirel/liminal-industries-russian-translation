@@ -43,37 +43,37 @@
     },
     "immersive_engineering_manual": {
       "adapter": "immersive_engineering_manual",
-      "records": 658,
+      "records": 654,
       "articles": 84,
       "missing_native_articles": 11,
       "stale_native_articles": 34,
-      "native_review_records": 658
+      "native_review_records": 654
     },
     "tconstruct_books": {
       "adapter": "mantle_books",
-      "records": 2504,
+      "records": 2480,
       "books": 6,
       "missing_native_pages": 250,
       "invalid_native_pages": 3,
-      "stale_native_pages": 62,
-      "native_review_records": 2504
+      "stale_native_pages": 107,
+      "native_review_records": 2480
     }
   },
   "catalog_hits": 6213,
   "finalized": 6213,
-  "native_ru_coverage": 15884,
-  "pending": 3162,
+  "native_ru_coverage": 15167,
+  "pending": 3134,
   "translation_statuses": {
     "FINALIZED": 6213,
     "INVALID_NATIVE": 12,
-    "MISSING_NATIVE": 1108,
+    "MISSING_NATIVE": 1104,
     "NATIVE_RU": 13123,
-    "REVIEW_NATIVE": 1599,
-    "STALE_NATIVE": 443
+    "REVIEW_NATIVE": 1200,
+    "STALE_NATIVE": 818
   },
   "pending_by_source": {
-    "immersive_engineering_manual": 658,
-    "tconstruct_books": 2504
+    "immersive_engineering_manual": 654,
+    "tconstruct_books": 2480
   },
   "errors": 0
 }

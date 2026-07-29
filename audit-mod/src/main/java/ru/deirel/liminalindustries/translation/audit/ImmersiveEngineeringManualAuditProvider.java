@@ -41,10 +41,10 @@ final class ImmersiveEngineeringManualAuditProvider implements AuditProvider {
                 .map(resource -> readLines(resource, russianId))
                 .orElseGet(List::of);
             boolean structureMatches = english.size() == russian.size()
-                && markerSequence(english).equals(markerSequence(russian));
+                && lineMarkers(english).equals(lineMarkers(russian));
             for (int index = 0; index < english.size(); index++) {
                 String source = english.get(index);
-                if (source.isBlank() || source.matches("<&[^>]+>")) {
+                if (!isTranslatable(source)) {
                     continue;
                 }
                 boolean localized = structureMatches
@@ -78,6 +78,23 @@ final class ImmersiveEngineeringManualAuditProvider implements AuditProvider {
                 exception
             );
         }
+    }
+
+    private boolean isTranslatable(String value) {
+        String stripped = value.strip();
+        if (stripped.isEmpty()) {
+            return false;
+        }
+        return !stripped.matches("(?:<[^>]+>\\s*)+")
+            || stripped.contains("<link;");
+    }
+
+    private List<List<String>> lineMarkers(List<String> lines) {
+        List<List<String>> result = new ArrayList<>();
+        for (String line : lines) {
+            result.add(markerSequence(List.of(line)));
+        }
+        return result;
     }
 
     private List<String> markerSequence(List<String> lines) {

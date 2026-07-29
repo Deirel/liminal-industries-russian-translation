@@ -7,6 +7,7 @@ import io
 import json
 import re
 import zipfile
+from copy import deepcopy
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable
@@ -183,16 +184,16 @@ def json_pointer_set(value: Any, pointer: str, replacement: str) -> None:
 
 
 def iter_mantle_strings(value: Any, pointer: str = ""):
-    yield from iter_json_strings(
-        value,
-        pointer,
-        MANTLE_TEXT_FIELDS,
-    )
+    for child_pointer, text in iter_json_strings(
+        value, pointer, MANTLE_TEXT_FIELDS
+    ):
+        if text.strip():
+            yield child_pointer, text
     if isinstance(value, dict):
         if (
             value.get("action") == "add_group"
             and isinstance(value.get("data"), str)
-            and value["data"]
+            and value["data"].strip()
         ):
             yield f"{pointer}/data", value["data"]
         for key, child in value.items():
@@ -207,7 +208,7 @@ def iter_mantle_group_labels(value: Any, pointer: str):
         if (
             value.get("action") == "add_group"
             and isinstance(value.get("data"), str)
-            and value["data"]
+            and value["data"].strip()
         ):
             yield f"{pointer}/data", value["data"]
         for key, child in value.items():
@@ -471,6 +472,26 @@ def _manual_marker_sequence(lines: list[str]) -> list[str]:
     return markers
 
 
+def _manual_structure(lines: list[str]) -> list[list[str]]:
+    return [_manual_marker_sequence([line]) for line in lines]
+
+
+def _is_manual_translatable(text: str) -> bool:
+    stripped = text.strip()
+    if not stripped:
+        return False
+    if re.fullmatch(r"(?:<[^>]+>\s*)+", stripped):
+        return "<link;" in stripped
+    return True
+
+
+def _mantle_structure(document: Any) -> Any:
+    normalized = deepcopy(document)
+    for pointer, _ in iter_mantle_strings(document):
+        json_pointer_set(normalized, pointer, "<translated>")
+    return normalized
+
+
 def collect_immersive_engineering_manual(
     definition: SourceDefinition,
     archives: list[Path],
@@ -516,8 +537,8 @@ def collect_immersive_engineering_manual(
                         missing_native += 1
                     elif (
                         len(source_lines) != len(native_lines)
-                        or _manual_marker_sequence(source_lines)
-                        != _manual_marker_sequence(native_lines)
+                        or _manual_structure(source_lines)
+                        != _manual_structure(native_lines)
                     ):
                         file_status = "STALE_NATIVE"
                         stale_native += 1
@@ -533,8 +554,14 @@ def collect_immersive_engineering_manual(
                             )
                         ] = sha256_bytes(native_data)
                     for index, text in enumerate(source_lines):
-                        if not text or re.fullmatch(r"<&[^>]+>", text):
+                        if not _is_manual_translatable(text):
                             continue
+                        native_translation = (
+                            native_lines[index]
+                            if file_status == "REVIEW_NATIVE"
+                            and native_lines[index].strip()
+                            else None
+                        )
                         record = {
                             "id": (
                                 f"ie-manual:{namespace}:{relative}:line:{index}"
@@ -543,8 +570,7 @@ def collect_immersive_engineering_manual(
                             "source": text,
                             "source_hash": source_hash(text),
                             "namespace": namespace,
-                            "native_ru_present": index < len(native_lines)
-                            and bool(native_lines[index]),
+                            "native_ru_present": native_translation is not None,
                             "native_translation_status": file_status,
                             "review_native": review_native,
                             "force_output": review_native,
@@ -558,9 +584,9 @@ def collect_immersive_engineering_manual(
                                 "line": index,
                             },
                         }
-                        if record["native_ru_present"]:
-                            record["native_translation"] = native_lines[index]
-                            record["suggested_translation"] = native_lines[index]
+                        if native_translation is not None:
+                            record["native_translation"] = native_translation
+                            record["suggested_translation"] = native_translation
                         records.append(record)
         except zipfile.BadZipFile:
             continue
@@ -627,7 +653,13 @@ def collect_mantle_books(
                             native_document = json.loads(
                                 native_data.decode("utf-8-sig")
                             )
-                            file_status = "REVIEW_NATIVE"
+                            if _mantle_structure(
+                                source_document
+                            ) == _mantle_structure(native_document):
+                                file_status = "REVIEW_NATIVE"
+                            else:
+                                file_status = "STALE_NATIVE"
+                                stale_native_pages += 1
                         except json.JSONDecodeError:
                             file_status = "INVALID_NATIVE"
                             invalid_native_pages += 1
@@ -643,24 +675,21 @@ def collect_mantle_books(
 
                     for pointer, text in iter_mantle_strings(source_document):
                         native_translation = None
-                        record_status = file_status
-                        if native_document is not None:
+                        if (
+                            file_status == "REVIEW_NATIVE"
+                            and native_document is not None
+                        ):
                             try:
                                 value = json_pointer_get(
                                     native_document, pointer
                                 )
-                                if isinstance(value, str) and value:
+                                if isinstance(value, str) and value.strip():
                                     native_translation = value
-                                else:
-                                    record_status = "STALE_NATIVE"
                             except (KeyError, IndexError, TypeError, ValueError):
-                                record_status = "STALE_NATIVE"
-                        if (
-                            record_status == "STALE_NATIVE"
-                            and file_status != "STALE_NATIVE"
-                        ):
-                            stale_native_pages += 1
-                            file_status = "STALE_NATIVE"
+                                raise AssertionError(
+                                    "matching Mantle structures must expose "
+                                    f"translation pointer {pointer}"
+                                )
                         record = {
                             "id": (
                                 f"mantle-book:{namespace}:{book}:"
@@ -672,7 +701,7 @@ def collect_mantle_books(
                             "namespace": namespace,
                             "native_ru_present": native_translation
                             is not None,
-                            "native_translation_status": record_status,
+                            "native_translation_status": file_status,
                             "review_native": review_native,
                             "force_output": review_native,
                             "output_format": "mantle_book_json",

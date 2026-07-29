@@ -298,7 +298,10 @@ class ReviewedNativeBookSourceTest(unittest.TestCase):
             )
             ru_member = en_member.replace("/en_us/", "/ru_ru/")
             with zipfile.ZipFile(archive, "w") as jar:
-                jar.writestr(en_member, "Title\n<&image>English text\nNew line")
+                jar.writestr(
+                    en_member,
+                    "Title\n<np>\n<&image>English text\nNew line",
+                )
                 jar.writestr(ru_member, "Заголовок\n<&image>Старый текст")
 
             result = collect_immersive_engineering_manual(
@@ -319,6 +322,18 @@ class ReviewedNativeBookSourceTest(unittest.TestCase):
                     record["native_translation_status"]
                     for record in result.records
                 },
+            )
+            self.assertEqual(3, len(result.records))
+            self.assertNotIn(
+                "<np>",
+                {record["source"] for record in result.records},
+            )
+            self.assertTrue(
+                all(
+                    "native_translation" not in record
+                    and "suggested_translation" not in record
+                    for record in result.records
+                )
             )
             catalog = {
                 "entries": {
@@ -346,9 +361,65 @@ class ReviewedNativeBookSourceTest(unittest.TestCase):
             built = (output / ru_member).read_text(encoding="utf-8")
         self.assertEqual(3, count)
         self.assertEqual(
-            "Перевод 0\nПеревод 1\nПеревод 2",
+            "Перевод 0\n<np>\nПеревод 1\nПеревод 2",
             built,
         )
+
+    def test_mantle_structure_is_classified_before_records(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            instance = Path(directory)
+            mods = instance / "mods"
+            mods.mkdir()
+            archive = mods / "tconstruct.jar"
+            en_member = "assets/tconstruct/book/guide/en_us/page.json"
+            ru_member = en_member.replace("/en_us/", "/ru_ru/")
+            english = {
+                "title": "Page",
+                "text": [
+                    {"text": "Description"},
+                    {"text": " \n "},
+                ],
+                "tool_filter": "tconstruct:modifiable",
+            }
+            russian = {
+                "title": "Страница",
+                "text": [
+                    {"text": "Описание"},
+                    {"text": " \n "},
+                ],
+                "tool_filter": "tconstruct:wrong",
+            }
+            with zipfile.ZipFile(archive, "w") as jar:
+                jar.writestr(en_member, json.dumps(english))
+                jar.writestr(ru_member, json.dumps(russian))
+
+            result = collect_mantle_books(
+                SourceDefinition(
+                    "books",
+                    "mantle_books",
+                    {"namespace": "tconstruct", "review_native": True},
+                ),
+                [archive],
+                instance,
+            )
+
+        self.assertEqual(2, len(result.records))
+        self.assertEqual(
+            {"STALE_NATIVE"},
+            {
+                record["native_translation_status"]
+                for record in result.records
+            },
+        )
+        self.assertTrue(
+            all(
+                not record["native_ru_present"]
+                and "native_translation" not in record
+                and "suggested_translation" not in record
+                for record in result.records
+            )
+        )
+        self.assertEqual(1, result.report["stale_native_pages"])
 
     def test_invalid_mantle_translation_enters_delta_and_rebuilds(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
