@@ -800,6 +800,46 @@ cd "$TRANSLATION_REPO/mod"
 одного манифеста версии и не содержат записей каталога, отсутствующих в этом
 манифесте.
 
+### Обязательная установка после завершения перевода
+
+Работа над переводом не считается завершённой после сборки одного релизного
+JAR. Для той же `translationVersion` обязательно:
+
+1. собрать релизный мод перевода;
+2. собрать отдельный мод из `audit-mod/`;
+3. скопировать оба полученных JAR в каталог `mods` соответствующего
+   SK Launcher-инстанса;
+4. убедиться, что в инстансе не осталось другой версии этих двух модов.
+
+Соответствие поддерживаемых версий:
+
+| `translationVersion` | SK Launcher-инстанс |
+| --- | --- |
+| `1.19.3-original` | `liminal-industries` |
+| `1.19.3-7-ae2-fix` | `liminal-industries-rescripted` |
+
+Пример полного финального шага из корня репозитория:
+
+```sh
+VERSION=1.19.3-7-ae2-fix
+INSTANCE="$HOME/Library/Application Support/sklauncher/instances/liminal-industries-rescripted"
+
+./mod/gradlew -p mod clean test build -PtranslationVersion="$VERSION"
+./mod/gradlew -p audit-mod clean test build -PtranslationVersion="$VERSION"
+
+cp -f \
+  "mod/build/libs/liminal-industries-russian-translation-$VERSION.jar" \
+  "$INSTANCE/mods/"
+cp -f \
+  "audit-mod/build/libs/liminal-industries-russian-translation-audit-$VERSION.jar" \
+  "$INSTANCE/mods/"
+```
+
+Для `1.19.3-original` в `VERSION` и `INSTANCE` подставляются значения из
+таблицы. Audit-мод является служебным: он устанавливается в локальный инстанс
+для проверки, но не включается в публикуемый JAR и не распространяется как
+часть релиза.
+
 ## Автоматическая проверка в игре
 
 Статический манифест не заменяет проверку фактического runtime-реестра.
@@ -888,6 +928,10 @@ JEI запрещено включать в публикуемый JAR перев
 - [ ] Версионные исправления книг прошли независимое ревью и сборку из
       `resourcepack-overrides`.
 - [ ] `./gradlew clean test build` проходит.
+- [ ] Audit-мод собран для той же `translationVersion`, что и релизный JAR.
+- [ ] Оба JAR скопированы в `mods` соответствующего SK Launcher-инстанса, а
+      другие версии этих модов удалены.
+- [ ] `/liminal_ru_audit` в обновлённом инстансе завершился `PASS`.
 - [ ] JAR проверен в игре на русском и другом языке.
 
 ## Стартовая инструкция для чистой сессии
@@ -915,7 +959,12 @@ QUEST_GLOSSARY.tsv и документы из docs/. Найди точную р�
    остальных записей;
 9. собери квесты и собственные ru_ru только обходом манифеста этой версии;
 10. добейся PENDING = 0 и ERROR = 0;
-11. запусти тесты, собери JAR и сообщи точные результаты.
+11. запусти тесты и собери релизный JAR;
+12. для той же translationVersion собери audit-mod, скопируй оба JAR в mods
+    соответствующего SK Launcher-инстанса и удали из него другие версии этих
+    модов;
+13. после перезапуска клиента выполни /liminal_ru_audit и сообщи точные
+    результаты сборки, установки и runtime-аудита.
 
 Никогда не собирай мод прямой выгрузкой всего глобального каталога.
 ```
