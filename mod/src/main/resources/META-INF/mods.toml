@@ -31,3 +31,10 @@ mandatory = true
 versionRange = "${ftb_quests_version_range}"
 ordering = "AFTER"
 side = "CLIENT"
+
+[[dependencies.${mod_id}]]
+modId = "thermal"
+mandatory = false
+versionRange = "[0,)"
+ordering = "BEFORE"
+side = "CLIENT"

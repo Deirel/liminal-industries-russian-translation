@@ -5,6 +5,7 @@ import com.google.gson.stream.JsonToken;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -71,6 +72,26 @@ class PayloadResourcesTest {
         Set<Long> incompleteIds = new HashSet<>(payload.objectIds());
         incompleteIds.remove(firstQuestId);
         assertFalse(payload.matchesObjectIds(incompleteIds));
+    }
+
+    @Test
+    void translationResourcesLoadBeforeThermal() throws IOException {
+        try (InputStream input = PayloadResourcesTest.class.getResourceAsStream(
+            "/META-INF/mods.toml"
+        )) {
+            assertNotNull(input);
+            String modsToml = new String(
+                input.readAllBytes(),
+                StandardCharsets.UTF_8
+            );
+            assertTrue(modsToml.contains("""
+                modId = "thermal"
+                mandatory = false
+                versionRange = "[0,)"
+                ordering = "BEFORE"
+                side = "CLIENT"
+                """));
+        }
     }
 
     private static String requiredProperty(String name) {
