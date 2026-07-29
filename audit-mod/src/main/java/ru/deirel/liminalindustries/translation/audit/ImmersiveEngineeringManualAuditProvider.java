@@ -66,12 +66,16 @@ final class ImmersiveEngineeringManualAuditProvider implements AuditProvider {
         return subjects;
     }
 
-    private List<String> readLines(Resource resource, ResourceLocation location) {
+    List<String> readLines(Resource resource, ResourceLocation location) {
         try (var input = resource.open()) {
-            return new String(
+            List<String> lines = new ArrayList<>(new String(
                 input.readAllBytes(),
                 StandardCharsets.UTF_8
-            ).lines().toList();
+            ).lines().toList());
+            while (!lines.isEmpty() && lines.get(lines.size() - 1).isBlank()) {
+                lines.remove(lines.size() - 1);
+            }
+            return lines;
         } catch (IOException exception) {
             throw new IllegalStateException(
                 "Could not read manual resource " + location,
