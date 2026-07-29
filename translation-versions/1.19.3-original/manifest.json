@@ -79497,7 +79497,10 @@
       "item_id": "neapolitan:banana_frond",
       "translation_key": "item.neapolitan.banana_frond",
       "native_ru_present": false,
-      "source_origin": "effective_en_us"
+      "source_origin": "effective_en_us",
+      "translation_aliases": [
+        "block.neapolitan.banana_frond"
+      ]
     },
     {
       "id": "item:item.neapolitan.banana_ice_cream",
@@ -80080,7 +80083,10 @@
       "item_id": "refurbished_furniture:dark_fridge",
       "translation_key": "item.refurbished_furniture.dark_fridge",
       "native_ru_present": false,
-      "source_origin": "effective_en_us"
+      "source_origin": "effective_en_us",
+      "translation_aliases": [
+        "block.refurbished_furniture.dark_fridge"
+      ]
     },
     {
       "id": "item:item.refurbished_furniture.dough",
@@ -80135,7 +80141,10 @@
       "item_id": "refurbished_furniture:light_fridge",
       "translation_key": "item.refurbished_furniture.light_fridge",
       "native_ru_present": false,
-      "source_origin": "effective_en_us"
+      "source_origin": "effective_en_us",
+      "translation_aliases": [
+        "block.refurbished_furniture.light_fridge"
+      ]
     },
     {
       "id": "item:item.refurbished_furniture.meatlovers_pizza_slice",
@@ -82709,7 +82718,10 @@
       "item_id": "tconstruct:crystalshot",
       "translation_key": "item.tconstruct.crystalshot",
       "native_ru_present": false,
-      "source_origin": "effective_en_us"
+      "source_origin": "effective_en_us",
+      "translation_aliases": [
+        "entity.tconstruct.crystalshot"
+      ]
     },
     {
       "id": "item:item.tconstruct.dagger",
@@ -83633,7 +83645,10 @@
       "item_id": "tconstruct:meat_soup",
       "translation_key": "item.tconstruct.meat_soup",
       "native_ru_present": false,
-      "source_origin": "effective_en_us"
+      "source_origin": "effective_en_us",
+      "translation_aliases": [
+        "fluid.tconstruct.meat_soup"
+      ]
     },
     {
       "id": "item:item.tconstruct.meat_soup_bucket",

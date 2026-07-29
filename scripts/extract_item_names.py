@@ -142,6 +142,19 @@ def candidate_keys(item_id: str) -> list[str]:
     ]
 
 
+def same_source_aliases(
+    item_id: str,
+    translation_key: str,
+    source: str,
+    en_us: dict[str, str],
+) -> list[str]:
+    return [
+        key
+        for key in candidate_keys(item_id)
+        if key != translation_key and en_us.get(key) == source
+    ]
+
+
 def resolve_key(item_id: str, en_us: dict[str, str], ru_ru: dict[str, str]) -> str:
     for key in candidate_keys(item_id):
         if key in en_us or key in ru_ru:

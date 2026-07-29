@@ -15,6 +15,8 @@ import net.minecraft.client.resources.language.ClientLanguage;
 import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -126,7 +128,7 @@ final class ItemTranslationAudit {
             }
         }
 
-        List<AuditEntry> entries = candidates.values().stream()
+        List<AuditEntry> entries = new ArrayList<>(candidates.values().stream()
             .map(candidate -> inspect(
                 candidate,
                 russian,
@@ -135,12 +137,23 @@ final class ItemTranslationAudit {
                 resourceEnglish
             ))
             .sorted(Comparator.comparing(AuditEntry::uid))
-            .toList();
+            .toList());
+        ForgeRegistries.BLOCKS.getValues().stream()
+            .filter(block -> block != Blocks.AIR)
+            .map(block -> inspectBlock(
+                block,
+                russian,
+                english,
+                runtimeRussian,
+                resourceEnglish
+            ))
+            .sorted(Comparator.comparing(AuditEntry::uid))
+            .forEach(entries::add);
         int failures = (int) entries.stream().filter(AuditEntry::failure).count();
         boolean success = failures == 0 && russian.errors().isEmpty();
 
         JsonObject root = new JsonObject();
-        root.addProperty("schema", 2);
+        root.addProperty("schema", 3);
         root.addProperty("result", success ? "PASS" : "FAIL");
         root.addProperty("generated_at", Instant.now().toString());
         root.addProperty(
@@ -150,6 +163,7 @@ final class ItemTranslationAudit {
         root.addProperty("selected_language", REQUIRED_LANGUAGE);
         root.addProperty("jei_item_stacks", jeiStacks.size());
         root.addProperty("registered_items", ForgeRegistries.ITEMS.getValues().size());
+        root.addProperty("registered_blocks", ForgeRegistries.BLOCKS.getValues().size());
         root.addProperty("checked_variants", entries.size());
         root.addProperty("failures", failures);
         root.addProperty("russian_keys", russian.values().size());
@@ -222,74 +236,151 @@ final class ItemTranslationAudit {
         ResourceLocation itemId = ForgeRegistries.ITEMS.getKey(stack.getItem());
         try {
             Component hoverName = stack.getHoverName();
-            String displayName = hoverName.getString();
-            Map<String, String> runtimeTemplates = ComponentTranslationKeys.collect(
-                hoverName,
-                runtimeRussian
-            );
-            Set<String> keys = new TreeSet<>(runtimeTemplates.keySet());
-            Set<String> verifiedRussianKeys = keys.stream()
-                .filter(key -> hasRussianTranslation(
-                    key,
-                    runtimeTemplates.get(key),
-                    russian,
-                    resourceEnglish
-                ))
-                .collect(Collectors.toCollection(TreeSet::new));
-            AuditStatus status = AuditClassifier.classify(
-                displayName,
-                keys,
-                verifiedRussianKeys
-            );
-            Set<String> missing = new TreeSet<>(keys);
-            missing.removeAll(verifiedRussianKeys);
-            Set<String> sameAsEnglish = new TreeSet<>();
-            for (String key : keys) {
-                if (russian.values().containsKey(key)
-                    && russian.values().get(key).equals(english.values().get(key))) {
-                    sameAsEnglish.add(key);
-                }
-            }
-            Map<String, String> translationSources = new LinkedHashMap<>();
-            for (String key : keys) {
-                String pack = russian.sources().get(key);
-                if (pack != null) {
-                    translationSources.put(key, pack);
-                } else if (verifiedRussianKeys.contains(key)
-                    && !runtimeTemplates.get(key).equals(
-                        resourceEnglish.getOrDefault(key)
-                    )) {
-                    translationSources.put(key, "<runtime>");
-                }
-            }
-            return new AuditEntry(
+            return inspectName(
                 candidate.uid(),
-                itemId.toString(),
+                "item",
+                itemId,
                 stack.getDescriptionId(),
-                displayName,
+                hoverName,
                 candidate.sources(),
-                keys,
-                missing,
-                sameAsEnglish,
-                translationSources,
-                status,
-                null
+                russian,
+                english,
+                runtimeRussian,
+                resourceEnglish
             );
         } catch (RuntimeException exception) {
-            return new AuditEntry(
+            return errorEntry(
                 candidate.uid(),
-                itemId.toString(),
+                "item",
+                itemId,
                 stack.getDescriptionId(),
-                "",
                 candidate.sources(),
-                Set.of(),
-                Set.of(),
-                Set.of(),
-                Map.of(),
-                AuditStatus.ERROR,
-                exception.toString()
+                exception
             );
         }
+    }
+
+    private static AuditEntry inspectBlock(
+        Block block,
+        RussianLanguageIndex russian,
+        RussianLanguageIndex english,
+        Language runtimeRussian,
+        Language resourceEnglish
+    ) {
+        ResourceLocation blockId = ForgeRegistries.BLOCKS.getKey(block);
+        try {
+            return inspectName(
+                "block:" + blockId,
+                "block",
+                blockId,
+                block.getDescriptionId(),
+                block.getName(),
+                Set.of("BLOCK_REGISTRY"),
+                russian,
+                english,
+                runtimeRussian,
+                resourceEnglish
+            );
+        } catch (RuntimeException exception) {
+            return errorEntry(
+                "block:" + blockId,
+                "block",
+                blockId,
+                block.getDescriptionId(),
+                Set.of("BLOCK_REGISTRY"),
+                exception
+            );
+        }
+    }
+
+    private static AuditEntry inspectName(
+        String uid,
+        String registryType,
+        ResourceLocation registryId,
+        String descriptionId,
+        Component name,
+        Set<String> sources,
+        RussianLanguageIndex russian,
+        RussianLanguageIndex english,
+        Language runtimeRussian,
+        Language resourceEnglish
+    ) {
+        String displayName = name.getString();
+        Map<String, String> runtimeTemplates = ComponentTranslationKeys.collect(
+            name,
+            runtimeRussian
+        );
+        Set<String> keys = new TreeSet<>(runtimeTemplates.keySet());
+        Set<String> verifiedRussianKeys = keys.stream()
+            .filter(key -> hasRussianTranslation(
+                key,
+                runtimeTemplates.get(key),
+                russian,
+                resourceEnglish
+            ))
+            .collect(Collectors.toCollection(TreeSet::new));
+        AuditStatus status = AuditClassifier.classify(
+            displayName,
+            keys,
+            verifiedRussianKeys
+        );
+        Set<String> missing = new TreeSet<>(keys);
+        missing.removeAll(verifiedRussianKeys);
+        Set<String> sameAsEnglish = new TreeSet<>();
+        for (String key : keys) {
+            if (russian.values().containsKey(key)
+                && russian.values().get(key).equals(english.values().get(key))) {
+                sameAsEnglish.add(key);
+            }
+        }
+        Map<String, String> translationSources = new LinkedHashMap<>();
+        for (String key : keys) {
+            String pack = russian.sources().get(key);
+            if (pack != null) {
+                translationSources.put(key, pack);
+            } else if (verifiedRussianKeys.contains(key)
+                && !runtimeTemplates.get(key).equals(resourceEnglish.getOrDefault(key))) {
+                translationSources.put(key, "<runtime>");
+            }
+        }
+        return new AuditEntry(
+            uid,
+            registryType,
+            registryId.toString(),
+            descriptionId,
+            displayName,
+            sources,
+            keys,
+            missing,
+            sameAsEnglish,
+            translationSources,
+            status,
+            null
+        );
+    }
+
+    private static AuditEntry errorEntry(
+        String uid,
+        String registryType,
+        ResourceLocation registryId,
+        String descriptionId,
+        Set<String> sources,
+        RuntimeException exception
+    ) {
+        return new AuditEntry(
+            uid,
+            registryType,
+            registryId.toString(),
+            descriptionId,
+            "",
+            sources,
+            Set.of(),
+            Set.of(),
+            Set.of(),
+            Map.of(),
+            AuditStatus.ERROR,
+            exception.toString()
+        );
     }
 
     private static boolean hasRussianTranslation(
@@ -319,7 +410,8 @@ final class ItemTranslationAudit {
 
     private record AuditEntry(
         String uid,
-        String itemId,
+        String registryType,
+        String registryId,
         String descriptionId,
         String displayName,
         Set<String> discoveredFrom,
@@ -337,7 +429,11 @@ final class ItemTranslationAudit {
         JsonObject json() {
             JsonObject value = new JsonObject();
             value.addProperty("uid", uid);
-            value.addProperty("item_id", itemId);
+            value.addProperty("registry_type", registryType);
+            value.addProperty("registry_id", registryId);
+            if ("item".equals(registryType)) {
+                value.addProperty("item_id", registryId);
+            }
             value.addProperty("description_id", descriptionId);
             value.addProperty("display_name", displayName);
             value.add("discovered_from", strings(discoveredFrom));

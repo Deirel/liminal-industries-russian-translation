@@ -21,6 +21,7 @@ from extract_item_names import (
     load_minecraft_languages,
     load_probe_item_ids,
     overlay_loose_languages,
+    same_source_aliases,
 )
 
 
@@ -632,7 +633,7 @@ def extract_item_records(
             raise ValueError(f"no English source for {item_id} ({key})")
         source_origins[origin] = source_origins.get(origin, 0) + 1
         namespace = item_id.split(":", 1)[0]
-        manifest_record = {
+        manifest_record: dict[str, Any] = {
             "id": f"item:{key}",
             "kind": "item_name",
             "source": source,
@@ -643,6 +644,13 @@ def extract_item_records(
             "native_ru_present": key in native_ru,
             "source_origin": origin,
         }
+        aliases = (
+            []
+            if key in native_ru
+            else same_source_aliases(item_id, key, source, en_us)
+        )
+        if aliases:
+            manifest_record["translation_aliases"] = aliases
         manifest_records.append(manifest_record)
         if key in project_ru:
             catalog_entries[manifest_record["id"]] = [

@@ -139,12 +139,13 @@ def build_items(
     for record in manifest["records"]:
         if record["kind"] != "item_name" or record["native_ru_present"]:
             continue
-        key = record["translation_key"]
         value = catalog_translation(catalog, record)
-        previous = by_namespace[record["namespace"]].get(key)
-        if previous is not None and previous != value:
-            raise ValueError(f"{key}: conflicting output translations")
-        by_namespace[record["namespace"]][key] = value
+        keys = [record["translation_key"], *record.get("translation_aliases", [])]
+        for key in keys:
+            previous = by_namespace[record["namespace"]].get(key)
+            if previous is not None and previous != value:
+                raise ValueError(f"{key}: conflicting output translations")
+            by_namespace[record["namespace"]][key] = value
 
     for namespace, values in sorted(runtime_overrides.items()):
         for key, value in sorted(values.items()):

@@ -25,6 +25,7 @@ from extract_item_names import (
     load_jar_languages,
     load_minecraft_languages,
     load_probe_item_ids,
+    same_source_aliases,
 )
 
 
@@ -401,27 +402,33 @@ def extract_item_records(
             if kubejs_entry
             else fallback_name(item_id)
         )
-        records.append(
-            {
-                "id": f"item:{key}",
-                "kind": "item_name",
-                "source": source,
-                "source_hash": source_hash(source),
-                "namespace": item_id.split(":", 1)[0],
-                "item_id": item_id,
-                "translation_key": key,
-                "native_ru_present": key in native_ru,
-                "source_origin": (
-                    "effective_en_us"
-                    if key in en_us
-                    else "reviewed_hint"
-                    if item_hint
-                    else "kubejs_startup"
-                    if kubejs_entry
-                    else "runtime_generated"
-                ),
-            }
+        record = {
+            "id": f"item:{key}",
+            "kind": "item_name",
+            "source": source,
+            "source_hash": source_hash(source),
+            "namespace": item_id.split(":", 1)[0],
+            "item_id": item_id,
+            "translation_key": key,
+            "native_ru_present": key in native_ru,
+            "source_origin": (
+                "effective_en_us"
+                if key in en_us
+                else "reviewed_hint"
+                if item_hint
+                else "kubejs_startup"
+                if kubejs_entry
+                else "runtime_generated"
+            ),
+        }
+        aliases = (
+            []
+            if key in native_ru
+            else same_source_aliases(item_id, key, source, en_us)
         )
+        if aliases:
+            record["translation_aliases"] = aliases
+        records.append(record)
 
     source_paths = list(archives)
     source_paths += sorted(kubejs_root.glob("assets/*/lang/*.json"))
@@ -457,6 +464,9 @@ def extract_item_records(
         ),
         "reviewed_hint_names": sum(
             record["source_origin"] == "reviewed_hint" for record in records
+        ),
+        "translation_aliases": sum(
+            len(record.get("translation_aliases", [])) for record in records
         ),
         "kubejs_startup_names": sum(
             record["source_origin"] == "kubejs_startup" for record in records
