@@ -48,6 +48,47 @@ def load_translations(paths: list[Path]) -> dict[str, dict[str, str]]:
     return result
 
 
+def catalog_translation(
+    catalog: dict[str, Any], record: dict[str, Any]
+) -> str | None:
+    matches = [
+        variant["translation"]
+        for variant in catalog["entries"].get(record["id"], [])
+        if variant["source_hash"] == record["source_hash"]
+        and variant["source"] == record["source"]
+    ]
+    if len(matches) > 1:
+        raise ValueError(f"{record['id']}: duplicate catalog variants")
+    return matches[0] if matches else None
+
+
+def validate_block_item_consistency(
+    manifest_records: dict[str, dict[str, Any]],
+    translations: dict[str, dict[str, str]],
+    catalog: dict[str, Any],
+) -> None:
+    items_by_registry_id = {
+        record["item_id"]: record
+        for record in manifest_records.values()
+        if record.get("kind") == "item_name"
+    }
+    for logical_id, reviewed in translations.items():
+        block = manifest_records[logical_id]
+        if block.get("kind") != "block_name":
+            continue
+        item = items_by_registry_id.get(block["block_id"])
+        if item is None:
+            continue
+        expected = catalog_translation(catalog, item)
+        if expected is None and item["id"] in translations:
+            expected = translations[item["id"]]["translation"]
+        if expected is not None and reviewed["translation"] != expected:
+            raise ValueError(
+                f"{logical_id}: block translation {reviewed['translation']!r} "
+                f"must match item translation {expected!r} from {item['id']}"
+            )
+
+
 def parse_args() -> argparse.Namespace:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
@@ -100,6 +141,7 @@ def main() -> int:
 
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     validate_catalog(catalog)
+    validate_block_item_consistency(manifest_records, translations, catalog)
     old_entries = deepcopy(catalog["entries"])
     added = 0
     for logical_id in sorted(translations):

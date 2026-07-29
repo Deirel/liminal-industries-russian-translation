@@ -5,7 +5,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from approve_version_translations import TOKEN_RE
+from approve_version_translations import (
+    TOKEN_RE,
+    validate_block_item_consistency,
+)
 
 
 class ApprovalTokenTest(unittest.TestCase):
@@ -26,6 +29,82 @@ class ApprovalTokenTest(unittest.TestCase):
             TOKEN_RE.findall(source),
             TOKEN_RE.findall(translation),
         )
+
+
+class BlockItemConsistencyTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.item = {
+            "id": "item:item.example.machine",
+            "kind": "item_name",
+            "item_id": "example:machine",
+            "source": "Machine",
+            "source_hash": "sha256:machine",
+        }
+        self.block = {
+            "id": "block:block.example.machine",
+            "kind": "block_name",
+            "block_id": "example:machine",
+            "source": "Machine",
+            "source_hash": "sha256:machine",
+        }
+        self.records = {
+            self.item["id"]: self.item,
+            self.block["id"]: self.block,
+        }
+        self.catalog = {
+            "entries": {
+                self.item["id"]: [
+                    {
+                        "source": "Machine",
+                        "source_hash": "sha256:machine",
+                        "translation": "Машина",
+                    }
+                ]
+            }
+        }
+
+    def test_accepts_block_translation_matching_immutable_item(self) -> None:
+        validate_block_item_consistency(
+            self.records,
+            {
+                self.block["id"]: {
+                    "source_hash": "sha256:machine",
+                    "translation": "Машина",
+                }
+            },
+            self.catalog,
+        )
+
+    def test_rejects_block_translation_differing_from_immutable_item(self) -> None:
+        with self.assertRaisesRegex(
+            ValueError, "must match item translation 'Машина'"
+        ):
+            validate_block_item_consistency(
+                self.records,
+                {
+                    self.block["id"]: {
+                        "source_hash": "sha256:machine",
+                        "translation": "Механизм",
+                    }
+                },
+                self.catalog,
+            )
+
+    def test_uses_item_translation_from_same_review_batch(self) -> None:
+        translations = {
+            self.item["id"]: {
+                "source_hash": "sha256:machine",
+                "translation": "Машина",
+            },
+            self.block["id"]: {
+                "source_hash": "sha256:machine",
+                "translation": "Механизм",
+            },
+        }
+        with self.assertRaisesRegex(ValueError, "must match item translation"):
+            validate_block_item_consistency(
+                self.records, translations, {"entries": {}}
+            )
 
 
 if __name__ == "__main__":
