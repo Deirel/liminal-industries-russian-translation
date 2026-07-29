@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:stone",
+  "name": "Свисание с уступа",
+  "pages": [
+    {
+      "text": "Можно висеть на цепях, стержнях Края и некоторых других блоках.$(br2)Также можно двигаться и прыгать вперёд, нажав клавишу прыжка.",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/hang_down.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(list)Нажмите клавишу свисания с уступа ($(k:parcool.HangDown)) под горизонтальным тонким блоком$(br)",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:arrow",
+  "name": "Уклонение",
+  "pages": [
+    {
+      "text": "$(bold)Уклонение$() помогает избегать пуль и стрел. Оно позволяет быстро переместиться на небольшое расстояние. $(br)Учтите время восстановления!",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/dodge.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(list)Дважды нажмите клавишу движения (кроме движения вперёд)$(list)Нажмите клавишу движения и клавишу уклонения ($(k:parcool.Dodge))",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "category": "dynamictrees:potions",
+  "icon": "dynamictrees:dendro_potion",
+  "name": "Основное зелье из биоугля",
+  "pages": [
+    {
+      "bottle": "minecraft:potion{Potion:'minecraft:thick'}",
+      "ingredient": "minecraft:charcoal",
+      "output": "dynamictrees:dendro_potion",
+      "text": "Это рецепт варки основного зелья.$(br2)Оно используется при варке всех остальных зелий Dynamic Trees.",
+      "title": "Основное зелье из биоугля",
+      "type": "dynamictrees:brewing"
+    },
+    {
+      "entries": [
+        "dynamictrees:potions/burgeoning_potion",
+        "dynamictrees:potions/depletion_potion",
+        "dynamictrees:potions/gigas_potion",
+        "dynamictrees:potions/transformation_potion"
+      ],
+      "title": "Применение",
+      "type": "patchouli:relations"
+    }
+  ],
+  "sortnum": 1
+}

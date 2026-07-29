@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:hay_block",
+  "name": "Укрытие в блоке",
+  "pages": [
+    {
+      "text": "В некоторых блоках можно прятаться.$(br2)Спрятавшегося игрока сложнее обнаружить врагам, а его имя не видно другим игрокам.$(br2)Прятаться можно в следующих блоках:$(list)листва$(list)сено",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/hide_in_block.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(list)Нажмите клавишу укрытия в блоке ($(k:parcool.HideInBlock)), присев рядом с нужным блоком",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

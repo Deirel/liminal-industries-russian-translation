@@ -1,0 +1,11 @@
+{
+  "category": "enderio:test_category",
+  "icon": "minecraft:writable_book",
+  "name": "Тестовая статья",
+  "pages": [
+    {
+      "text": "Это тестовая статья, но она должна отображаться!",
+      "type": "patchouli:text"
+    }
+  ]
+}

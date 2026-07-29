@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:stone_bricks",
+  "name": "Забег на стену",
+  "pages": [
+    {
+      "text": "$(bold)Забег на стену$() — приём, позволяющий вертикально взбежать по стене и преодолеть её.$(br)Не путайте его с $(l:actions/horizontal_wall_run)горизонтальным бегом по стене$().$(br)$(br)Учтите: по стене из скользкого материала, например льда, взбежать не получится.",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/vertical_wall_run.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(bold)1.$() Посмотрите выше линии горизонта и разбегитесь с помощью $(l:parcool:actions/fast_run)быстрого бега$()$(br)$(bold)2.$() Прыгните на стену, не отпуская клавишу прыжка.$(br)$(br)Сначала может быть непросто, но всё получится.",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:quartz_pillar",
+  "name": "Взбирание по столбу",
+  "pages": [
+    {
+      "text": "Можно взбираться по блокам, похожим на шесты: столбам из заборов, цепям, железным прутьям и другим.",
+      "type": "patchouli:text"
+    }
+  ]
+}

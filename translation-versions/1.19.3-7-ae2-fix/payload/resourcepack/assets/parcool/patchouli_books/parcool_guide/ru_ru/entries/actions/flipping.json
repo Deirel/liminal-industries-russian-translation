@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:blaze_powder",
+  "name": "Сальто",
+  "pages": [
+    {
+      "text": "ParCool добавляет особую анимацию прыжка — $(bold)сальто$().$(br2) Можно сделать сальто вперёд или назад.",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/flipping_2.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(list)Одновременно нажмите клавиши движения влево и вправо$(list)Нажмите клавишу сальто ($(k:parcool.Flipping))",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

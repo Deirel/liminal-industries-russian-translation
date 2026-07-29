@@ -31,7 +31,7 @@
       "records": 6989,
       "registry_blocks": 6989,
       "native_ru": 4753,
-      "suggested_translations": 1147
+      "suggested_translations": 2255
     },
     "patchouli": {
       "adapter": "patchouli",
@@ -42,12 +42,9 @@
       "json_records": 210
     }
   },
-  "catalog_hits": 4513,
+  "catalog_hits": 5838,
   "native_ru_coverage": 12811,
-  "pending": 1325,
-  "pending_by_source": {
-    "blocks": 1107,
-    "patchouli": 218
-  },
+  "pending": 0,
+  "pending_by_source": {},
   "errors": 0
 }

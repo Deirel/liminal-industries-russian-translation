@@ -42,12 +42,12 @@
       "json_records": 4
     }
   },
-  "catalog_hits": 3114,
+  "catalog_hits": 4045,
   "native_ru_coverage": 11894,
-  "pending": 1093,
+  "pending": 162,
   "pending_by_source": {
-    "blocks": 1055,
-    "patchouli": 38
+    "blocks": 133,
+    "patchouli": 29
   },
   "errors": 0
 }

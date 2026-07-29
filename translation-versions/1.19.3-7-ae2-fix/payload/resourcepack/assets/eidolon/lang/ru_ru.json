@@ -1,5 +1,9 @@
 {
+  "block.eidolon.illwood_hanging_wall_sign": "Настенная подвесная табличка из иллвуда",
+  "block.eidolon.illwood_wall_sign": "Настенная табличка из иллвуда",
   "block.eidolon.mirecap": "Трясинный гриб",
+  "block.eidolon.polished_hanging_wall_sign": "Полированная настенная подвесная табличка",
+  "block.eidolon.polished_wall_sign": "Полированная настенная табличка",
   "item.eidolon.bloodlust_incense": "Благовоние кровожадности",
   "item.eidolon.chant_scroll": "Свиток песнопения",
   "item.eidolon.deathbane_incense": "Благовоние погибели",

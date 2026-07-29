@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_support_features",
+  "icon": "minecraft:potion{\"Potion\":\"parcool:energy_drink\"}",
+  "name": "Энергетик",
+  "pages": [
+    {
+      "text": "Часто заканчивается выносливость? Тогда $(strike)измените настройки$() приготовьте $(bold)энергетик$(). С ним действия ParCool не расходуют выносливость!",
+      "type": "patchouli:text"
+    },
+    {
+      "item": "minecraft:potion{\"Potion\":\"parcool:energy_drink\"}",
+      "text": "Энергетики готовятся в зельеварке.$(br2)Рецепты:$(list)[Мутное зелье] + [Незер-кварц]$(list)[Некачественный энергетик] + [Незер-кварц]",
+      "title": "Приготовление энергетика",
+      "type": "patchouli:spotlight"
+    },
+    {
+      "item": "minecraft:potion{\"Potion\":\"parcool:poor_energy_drink\"}",
+      "text": "Некачественный энергетик — простой в приготовлении вариант с неприятными побочными эффектами.$(br2)Рецепты:$(list)[Мутное зелье] + [Ядовитый картофель]$(list)[Мутное зелье] + [Курятина]",
+      "title": "Некачественный энергетик",
+      "type": "patchouli:spotlight"
+    }
+  ]
+}

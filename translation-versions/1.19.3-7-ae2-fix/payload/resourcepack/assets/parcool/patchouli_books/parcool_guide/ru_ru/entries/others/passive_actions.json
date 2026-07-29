@@ -1,0 +1,16 @@
+{
+  "category": "parcool:category_support_features",
+  "icon": "minecraft:brick",
+  "name": "Пассивные действия",
+  "pages": [
+    {
+      "text": "ParCool добавляет несколько пассивных способностей и анимаций.",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "Добавлена новая анимация долгого падения. Если она мешает, её можно отключить в настройках.",
+      "title": "Анимация падения",
+      "type": "patchouli:text"
+    }
+  ]
+}

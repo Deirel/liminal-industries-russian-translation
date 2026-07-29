@@ -1,0 +1,16 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:leather_boots",
+  "name": "Прыжок от стены",
+  "pages": [
+    {
+      "text": "Прыжок от стены позволяет оттолкнуться от неё и прыгнуть дальше. Нужно находиться спиной к стене.$(br)От ледяных блоков нельзя оттолкнуться вверх!",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "$(list)В воздухе рядом со стеной нажмите клавишу прыжка от стены ($(k:parcool.WallJump))",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

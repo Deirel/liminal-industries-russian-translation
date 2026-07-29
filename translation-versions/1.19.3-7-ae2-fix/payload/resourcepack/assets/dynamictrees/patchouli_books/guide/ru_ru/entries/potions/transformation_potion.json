@@ -1,0 +1,24 @@
+{
+  "category": "dynamictrees:potions",
+  "icon": "dynamictrees:dendro_potion{potion_index:6}",
+  "name": "Зелье трансформации",
+  "pages": [
+    {
+      "bottle": "dynamictrees:dendro_potion",
+      "ingredient": "minecraft:prismarine_crystals",
+      "output": "dynamictrees:dendro_potion{potion_index:6}",
+      "text": "Это рецепт варки базового зелья трансформации.$(br2)Оно используется для всех остальных зелий трансформации.",
+      "title": "Базовое зелье",
+      "type": "dynamictrees:brewing"
+    },
+    {
+      "bottle": "dynamictrees:dendro_potion{potion_index:6}",
+      "ingredient": "dynamictrees:oak_seed",
+      "output": "dynamictrees:dendro_potion{potion_index:6,target:'dynamictrees:oak'}",
+      "text": "Это зелье превращает существующее дерево в другой вид.$(br2)Новый вид зависит от семени в рецепте. В примере выше используется жёлудь дуба.",
+      "title": "Зелье трансформации",
+      "type": "dynamictrees:brewing"
+    }
+  ],
+  "sortnum": 4
+}

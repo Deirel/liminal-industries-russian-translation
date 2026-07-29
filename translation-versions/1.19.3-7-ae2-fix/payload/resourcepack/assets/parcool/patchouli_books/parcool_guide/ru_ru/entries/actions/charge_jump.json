@@ -1,0 +1,22 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:rabbit_foot",
+  "name": "Усиленный прыжок",
+  "pages": [
+    {
+      "text": "$(bold)Усиленный прыжок$() позволяет прыгнуть выше.$(br)Он помогает перепрыгивать заборы и взбираться на высокие стены.$(br2)Простой, но очень полезный приём!",
+      "type": "patchouli:text"
+    },
+    {
+      "images": [
+        "parcool:textures/gui/entries/charge_jump_1.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(bold)1.$() Стойте на месте и приседайте несколько секунд $(br)$(bold)2.$() Одновременно отпустите клавишу приседания и нажмите клавишу прыжка.",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:water_bucket",
+  "name": "Быстрое плавание",
+  "pages": [
+    {
+      "text": "Теперь вы также можете плавать быстрее благодаря $(bold)быстрому плаванию$() с собственной анимацией.$(br2)Управление такое же, как у быстрого бега.",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "$(list)Во время ускоренного плавания удерживайте клавишу быстрого бега ($(k:parcool.FastRun))",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

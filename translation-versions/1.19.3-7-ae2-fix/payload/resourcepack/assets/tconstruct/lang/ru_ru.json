@@ -1,0 +1,11 @@
+{
+  "block.tconstruct.blaze_wall_head": "Настенная голова всполоха",
+  "block.tconstruct.cave_spider_wall_head": "Настенная голова пещерного паука",
+  "block.tconstruct.drowned_wall_head": "Настенная голова утопленника",
+  "block.tconstruct.enderman_wall_head": "Настенная голова эндермена",
+  "block.tconstruct.husk_wall_head": "Настенная голова кадавра",
+  "block.tconstruct.piglin_brute_wall_head": "Настенная голова брутального пиглина",
+  "block.tconstruct.spider_wall_head": "Настенная голова паука",
+  "block.tconstruct.stray_wall_head": "Настенная голова зимогора",
+  "block.tconstruct.zombified_piglin_wall_head": "Настенная голова зомбифицированного пиглина"
+}

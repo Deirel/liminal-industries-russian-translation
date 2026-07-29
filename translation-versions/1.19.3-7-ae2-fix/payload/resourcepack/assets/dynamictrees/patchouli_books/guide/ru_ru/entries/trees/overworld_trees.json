@@ -1,0 +1,36 @@
+{
+  "category": "dynamictrees:trees",
+  "icon": "dynamictrees:birch_seed",
+  "name": "Деревья Обычного мира",
+  "pages": [
+    {
+      "text": "По умолчанию деревья Dynamic Trees встречаются по всему Обычному миру почти в каждом биоме.$(br2)Дубы большие и крепкие, а берёзы высокие и тонкие. Исследуйте мир, чтобы найти разные виды с уникальной формой.",
+      "title": "Деревья Обычного мира",
+      "type": "text"
+    },
+    {
+      "border": true,
+      "images": [
+        "dynamictrees:textures/patchouli/images/oak_1.png",
+        "dynamictrees:textures/patchouli/images/spruce_1.png",
+        "dynamictrees:textures/patchouli/images/dark_oak_1.png",
+        "dynamictrees:textures/patchouli/images/acacia_1.png"
+      ],
+      "text": "Примеры деревьев",
+      "type": "image"
+    },
+    {
+      "text": "В некоторых деревьях живут пчёлы, поэтому при рубке постарайтесь не тревожить этих пушистых тружениц.$(br2)Пчелиное гнездо также может появиться на естественно растущем дубе или берёзе, если рядом есть цветы.",
+      "type": "text"
+    },
+    {
+      "border": true,
+      "images": [
+        "dynamictrees:textures/patchouli/images/bees_1.png"
+      ],
+      "text": "Пчелиное гнездо на берёзе",
+      "type": "image"
+    }
+  ],
+  "sortnum": 2
+}

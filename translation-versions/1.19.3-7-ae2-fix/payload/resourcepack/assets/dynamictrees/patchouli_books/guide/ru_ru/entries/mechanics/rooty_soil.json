@@ -1,0 +1,22 @@
+{
+  "category": "dynamictrees:mechanics",
+  "icon": "minecraft:grass_block",
+  "name": "Корневая почва",
+  "pages": [
+    {
+      "text": "- Питает деревья и со временем может истощиться.$(br2)- Костная мука повышает плодородие почвы и позволяет дереву расти дальше после созревания.$(br2)- Компараторы позволяют определить уровень плодородия почвы.",
+      "title": "Корневая почва",
+      "type": "text"
+    },
+    {
+      "border": true,
+      "images": [
+        "dynamictrees:textures/patchouli/images/rooty_soil.png"
+      ],
+      "text": "Блок корневой травы берёзы.",
+      "type": "image"
+    }
+  ],
+  "read_by_default": "true",
+  "sortnum": 2
+}

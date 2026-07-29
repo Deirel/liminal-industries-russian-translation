@@ -15,6 +15,7 @@ from build_initial_catalog import source_hash, validate_catalog
 
 
 TOKEN_RE = re.compile(
+    r"\$\([^)]*\)|</?[a-z0-9_:-]+>|"
     r"&[0-9a-fklmnor]|§.|%\d*\$?[sd]|\{image:[^}]+\}|"
     r"\b[a-z0-9_.-]+:[a-z0-9_./-]+\b",
     re.IGNORECASE,

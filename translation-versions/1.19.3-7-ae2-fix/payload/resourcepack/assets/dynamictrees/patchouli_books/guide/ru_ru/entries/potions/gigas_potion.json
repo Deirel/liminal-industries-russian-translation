@@ -1,0 +1,24 @@
+{
+  "category": "dynamictrees:potions",
+  "icon": "dynamictrees:dendro_potion{potion_index:2}",
+  "name": "Зелье Гигаса",
+  "pages": [
+    {
+      "bottle": "dynamictrees:dendro_potion",
+      "ingredient": "minecraft:pumpkin_seeds",
+      "output": "dynamictrees:dendro_potion{potion_index:2}",
+      "text": "Заставляет дерево вырасти до гигантских размеров. Учтите, что это работает только с деревьями, у которых есть огромные варианты: по умолчанию с елью и тропическим деревом.$(br1)Это равносильно посадке саженцев квадратом 2x2.",
+      "title": "Зелье Гигаса",
+      "type": "dynamictrees:brewing"
+    },
+    {
+      "border": true,
+      "images": [
+        "dynamictrees:textures/patchouli/images/mega_spruce.png"
+      ],
+      "text": "Обычная ель рядом со взрослой огромной елью.",
+      "type": "image"
+    }
+  ],
+  "sortnum": 5
+}

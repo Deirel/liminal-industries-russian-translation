@@ -1,0 +1,18 @@
+{
+  "category": "parcool:category_about",
+  "icon": "minecraft:feather",
+  "name": "Что такое ParCool?",
+  "pages": [
+    {
+      "text": "Спасибо, что играете с этим модом!$(br2)Это мод для Minecraft Forge, добавляющий больше $(bold)крутых$() действий, например элементы $(bold)паркура$().$(br)Некоторые действия действительно основаны на приёмах паркура.$(br2)Теперь вы паркурщик. Вперёд, покорять мир Minecraft!",
+      "type": "patchouli:text"
+    },
+    {
+      "images": [
+        "parcool:textures/gui/entries/logo_round.png"
+      ],
+      "type": "patchouli:image"
+    }
+  ],
+  "sortnum": 1
+}

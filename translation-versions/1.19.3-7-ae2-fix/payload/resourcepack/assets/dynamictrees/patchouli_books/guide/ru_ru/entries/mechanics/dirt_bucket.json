@@ -1,0 +1,35 @@
+{
+  "category": "dynamictrees:mechanics",
+  "icon": "dynamictrees:dirt_bucket",
+  "name": "Ведро грязи",
+  "pages": [
+    {
+      "item": "dynamictrees:dirt_bucket",
+      "link_recipe": true,
+      "text": "Ведро грязи позволяет превратить семя в саженец и наоборот.$(br2)Положите ведро грязи и семя или саженец на верстак. Рецепт бесформенный.",
+      "title": "Ведро грязи",
+      "type": "spotlight"
+    },
+    {
+      "anchor": "dirt_bucket",
+      "recipe": "dynamictrees:dirt_bucket",
+      "text": "Чтобы получить ведро грязи, просто соедините блок земли с ведром.$(br2)При необходимости щёлкните ведром ПКМ по земле, чтобы опустошить его.",
+      "title": "Ведро грязи",
+      "type": "crafting"
+    },
+    {
+      "recipe": "dynamictrees:oak_seed_to_minecraft_oak_sapling",
+      "recipe2": "dynamictrees:minecraft_oak_sapling_to_oak_seed",
+      "title": "Из семян в саженцы",
+      "type": "crafting"
+    },
+    {
+      "recipe": "dynamictrees:minecraft_apple_to_apple_oak_seed",
+      "text": "Плодовые деревья не сбрасывают семена: их можно получить из плодов.",
+      "title": "Из плодов в семена",
+      "type": "crafting"
+    }
+  ],
+  "read_by_default": "true",
+  "sortnum": 1
+}

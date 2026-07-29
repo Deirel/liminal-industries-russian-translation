@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:yellow_dye",
+  "name": "Подкат",
+  "pages": [
+    {
+      "text": "$(bold)Подкат$() — действие на основе $(l:parcool:actions/crawl)ползания$(). Оно позволяет быстро преодолевать узкие проходы.",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/slide.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(list)Начните ползти во время $(l:parcool:actions/fast_run)быстрого бега$()",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

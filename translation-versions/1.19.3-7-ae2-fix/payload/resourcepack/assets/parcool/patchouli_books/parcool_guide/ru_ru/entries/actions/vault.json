@@ -1,0 +1,24 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:oak_fence",
+  "name": "Прыжок через препятствие",
+  "pages": [
+    {
+      "text": "$(bold)Прыжок через препятствие$() помогает преодолевать препятствия, например заборы.$(br)У приёма много вариантов. В игре доступны $(italic)скоростной прыжок через препятствие$() и $(italic)прыжок Конга$()",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/speed_vault.png"
+      ],
+      "title": "Скоростной прыжок через препятствие$",
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(bold)1.$() Выполните $(l:parcool:actions/fast_run)быстрый бег$()$(br)$(bold)2.$() Столкнитесь с блоком",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

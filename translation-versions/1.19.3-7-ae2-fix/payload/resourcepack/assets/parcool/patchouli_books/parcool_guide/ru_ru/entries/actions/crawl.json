@@ -1,0 +1,23 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:nautilus_shell",
+  "name": "Ползание",
+  "pages": [
+    {
+      "text": "Можно ползать где угодно и пробираться через узкие проходы.$(br)Также ознакомьтесь с $(l:parcool:actions/slide)подкатом$().",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/crawl.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(list)Нажмите клавишу ползания ($(k:parcool.Crawl))",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

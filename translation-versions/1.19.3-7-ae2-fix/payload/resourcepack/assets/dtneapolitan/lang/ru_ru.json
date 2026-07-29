@@ -1,4 +1,7 @@
 {
   "block.dtneapolitan.banana_branch": "Банановое растение",
+  "block.dtneapolitan.banana_bunch": "Связка бананов",
+  "block.dtneapolitan.banana_leaves": "Банановые листья",
+  "block.dtneapolitan.banana_sapling": "Саженец банана",
   "item.dtneapolitan.banana_seed": "Отросток банана"
 }

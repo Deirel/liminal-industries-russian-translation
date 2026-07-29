@@ -1,0 +1,30 @@
+{
+  "category": "parcool:category_actions",
+  "icon": "minecraft:stone",
+  "name": "Зацеп за уступ",
+  "pages": [
+    {
+      "text": "Можно уцепиться за край блока и оставаться на месте. Также можно медленно двигаться.$(br)Нажмите клавишу прыжка, чтобы забраться на блок.",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/cling_to_cliff_1.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/cling_to_cliff_2.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "$(list)Нажмите клавишу зацепа за уступ ($(k:parcool.ClingToCliff)) рядом со стеной$(br)",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}

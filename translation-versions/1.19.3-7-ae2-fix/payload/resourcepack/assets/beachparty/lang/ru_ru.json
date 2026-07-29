@@ -1,4 +1,7 @@
 {
+  "block.beachparty.beachparty_wall_banner": "Настенный флаг Beachparty",
+  "block.beachparty.palm_wall_hanging_sign": "Пальмовая настенная подвесная табличка",
+  "block.beachparty.palm_wall_torch": "Пальмовый настенный факел",
   "item.beachparty.music_disc_beachparty": "Пластинка",
   "item.beachparty.music_disc_caribbean_beach": "Пластинка",
   "item.beachparty.music_disc_pridelands": "Пластинка",

@@ -1,0 +1,42 @@
+{
+  "category": "parcool:category_support_features",
+  "icon": "parcool:zipline_rope",
+  "name": "Зиплайн",
+  "pages": [
+    {
+      "text": "Зиплайн — приспособление для паркура, соединяющее две удалённые точки и позволяющее перемещаться между ними.",
+      "type": "patchouli:text"
+    },
+    {
+      "border": "true",
+      "images": [
+        "parcool:textures/gui/entries/ride_zipline.png"
+      ],
+      "type": "patchouli:image"
+    },
+    {
+      "text": "Сначала выберите две точки для зиплайна и установите в каждой по крюку.$(br2)Крюки бывают двух видов: деревянные и железные.",
+      "title": "Крюк зиплайна",
+      "type": "patchouli:text"
+    },
+    {
+      "recipe": "parcool:wooden_zipline_hook",
+      "recipe2": "parcool:iron_zipline_hook",
+      "type": "patchouli:crafting"
+    },
+    {
+      "text": "Крюки установлены? Теперь создайте трос зиплайна. Используйте предмет, присев, чтобы изменить натяжение троса.$(br2)Чтобы проложить зиплайн, примените трос к обоим крюкам. После этого точки соединятся.",
+      "title": "Трос зиплайна",
+      "type": "patchouli:text"
+    },
+    {
+      "recipe": "parcool:zipline_rope",
+      "type": "patchouli:crafting"
+    },
+    {
+      "text": "$(list)Прыгните к зиплайну и нажмите клавишу движения по зиплайну ($(k:parcool.RideZipline))",
+      "title": "Как выполнить",
+      "type": "patchouli:text"
+    }
+  ]
+}
