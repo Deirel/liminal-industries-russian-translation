@@ -236,6 +236,10 @@
       "item.plushie_buddies.stuffing": "Наполнитель",
       "item.plushie_buddies.thread": "Нить"
     },
+    "refurbished_furniture": {
+      "block.refurbished_furniture.dark_fridge": "Тёмный холодильник",
+      "block.refurbished_furniture.light_fridge": "Светлый холодильник"
+    },
     "sophisticatedbackpacks": {
       "item.sophisticatedbackpacks.advanced_mob_catcher_upgrade": "Продвинутое улучшение ловушки для мобов",
       "item.sophisticatedbackpacks.mob_catcher_upgrade": "Улучшение ловушки для мобов"

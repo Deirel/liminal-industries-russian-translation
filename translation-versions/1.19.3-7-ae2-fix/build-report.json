@@ -3,9 +3,9 @@
   "errors": 0,
   "manifest_records": 10163,
   "native_ru_coverage": 6780,
-  "output_item_translation_keys": 2754,
+  "output_item_translation_keys": 2756,
   "output_quest_strings": 841,
   "pending": 0,
-  "runtime_audit_translation_keys": 212,
+  "runtime_audit_translation_keys": 214,
   "version": "1.19.3-7-ae2-fix"
 }
