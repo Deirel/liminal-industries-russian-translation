@@ -87,3 +87,48 @@ Tinkers' Construct и проверяет все видимые поля, вкл�
 `same_as_english_keys` для редакторской проверки, но сами по себе не вызывают
 `FAIL`: названия модов, аббревиатуры и имена собственные могут совпадать
 намеренно.
+
+## Аудит верстки книг
+
+Клиентская команда:
+
+```text
+/liminal_ru_layout_audit
+```
+
+проходит реальные landing-, category- и entry-экраны Patchouli сначала в
+`en_us`, затем в `ru_ru`. Для каждой страницы аудит ждёт три кадра, читает
+bounding box уже разложенных `BookTextRenderer` слов с учетом масштаба GUI и
+проверяет выход за страницу, clipping, пересечение с элементами управления и
+наложение строк. Заблокированные записи создаются напрямую из runtime-модели
+книги, поэтому прогресс игрока не меняется.
+
+Отчет и необязательный HTML-индекс сохраняются в:
+
+```text
+liminal-industries-ru-audit/book-layout-audit.json
+liminal-industries-ru-audit/book-layout-audit.html
+```
+
+Снимки создаются только для проблемных экранов в каталоге `screenshots`.
+Дефекты, воспроизводимые в обоих языках, получают классификацию
+`UPSTREAM_LAYOUT`; только русские дефекты — `TRANSLATION_LAYOUT`. Сборку
+блокируют только русские `ERROR`.
+
+Сгенерированный `translation-audit-index.json` имеет schema 3 и содержит
+`book_screens` с движком, книгой, ресурсом, entry/page и источником текста.
+Индекс включает Patchouli, Mantle/Tinkers' Construct и руководство Immersive
+Engineering. Runtime-адаптер Patchouli дополнительно перечисляет фактически
+загруженные страницы, включая нативные строки вне каталога переводов.
+
+Для автоматического smoke-прохода подготовьте локальный мир
+`audit-mod/run-layout-audit/saves/Liminal Layout Audit` и каталог `mods` с
+модами проверяемой сборки и JAR перевода, затем выполните:
+
+```sh
+./mod/gradlew -p audit-mod runLayoutAuditClient \
+  -PtranslationVersion=1.19.3-7-ae2-fix
+```
+
+Задача сама входит в мир, запускает аудит, завершает клиент и возвращает
+ошибку Gradle, если отчет отсутствует или содержит `TRANSLATION_LAYOUT ERROR`.

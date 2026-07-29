@@ -12,11 +12,23 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-final class TranslationAuditIndex {
-    record LanguageRecord(String id, String translationKey, String source) {
+public final class TranslationAuditIndex {
+    public record LanguageRecord(String id, String translationKey, String source) {
     }
 
-    record BookRecord(String sourceId, ResourceLocation bookId) {
+    public record BookRecord(String sourceId, ResourceLocation bookId) {
+    }
+
+    public record ScreenRecord(
+        String engine,
+        ResourceLocation bookId,
+        String resource,
+        String entry,
+        Integer page,
+        String textSourceType,
+        String textSource,
+        String source
+    ) {
     }
 
     private TranslationAuditIndex() {
@@ -70,6 +82,31 @@ final class TranslationAuditIndex {
         return List.copyOf(result);
     }
 
+    public static List<ScreenRecord> screenRecords(String engine) {
+        JsonObject root = load();
+        List<ScreenRecord> result = new ArrayList<>();
+        for (JsonElement element : root.getAsJsonArray("book_screens")) {
+            JsonObject record = element.getAsJsonObject();
+            if (!engine.equals(record.get("engine").getAsString())) {
+                continue;
+            }
+            JsonObject textSource = record.getAsJsonObject("text_source");
+            result.add(new ScreenRecord(
+                engine,
+                ResourceLocation.parse(record.get("book").getAsString()),
+                record.get("resource").getAsString(),
+                record.get("entry").getAsString(),
+                record.has("page") && !record.get("page").isJsonNull()
+                    ? record.get("page").getAsInt()
+                    : null,
+                textSource.get("type").getAsString(),
+                textSource.get("value").getAsString(),
+                record.get("source").getAsString()
+            ));
+        }
+        return List.copyOf(result);
+    }
+
     private static JsonObject load() {
         InputStream stream = TranslationAuditIndex.class.getClassLoader()
             .getResourceAsStream("translation-audit-index.json");
@@ -81,7 +118,7 @@ final class TranslationAuditIndex {
             StandardCharsets.UTF_8
         )) {
             JsonObject root = JsonParser.parseReader(reader).getAsJsonObject();
-            if (root.get("schema").getAsInt() != 2) {
+            if (root.get("schema").getAsInt() != 3) {
                 throw new IllegalStateException("unsupported translation audit index");
             }
             return root;

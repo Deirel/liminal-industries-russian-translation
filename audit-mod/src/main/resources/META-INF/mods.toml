@@ -7,7 +7,7 @@ modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "Liminal Industries: Russian Translation Audit"
 authors = "Petr K."
-description = '''Development-only runtime audit for item name translations.'''
+description = '''Development-only runtime audit for translations and book layouts.'''
 displayTest = "IGNORE_ALL_VERSION"
 showAsResourcePack = false
 

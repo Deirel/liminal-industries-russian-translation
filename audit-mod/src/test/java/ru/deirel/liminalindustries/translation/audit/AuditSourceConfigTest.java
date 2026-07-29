@@ -61,6 +61,17 @@ class AuditSourceConfigTest {
     }
 
     @Test
+    void generatedIndexDescribesBookScreensForEveryEngine() {
+        assertFalse(TranslationAuditIndex.screenRecords("patchouli").isEmpty());
+        if (TranslationAuditIndex.version().equals("1.19.3-7-ae2-fix")) {
+            assertFalse(TranslationAuditIndex.screenRecords("mantle").isEmpty());
+            assertFalse(
+                TranslationAuditIndex.screenRecords("immersive_engineering").isEmpty()
+            );
+        }
+    }
+
+    @Test
     void generatedIndexContainsEveryTranslatedBook() {
         Set<String> actual = TranslationAuditIndex.allBookRecords().stream()
             .map(record -> record.sourceId() + "=" + record.bookId())

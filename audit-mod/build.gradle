@@ -45,6 +45,21 @@ java {
 
 minecraft {
     mappings channel: 'official', version: minecraft_version
+
+    runs {
+        client {
+            workingDirectory project.file('run-layout-audit')
+            property 'forge.logging.console.level', 'info'
+            property 'liminal.layoutAudit.auto', 'true'
+            property 'liminal.layoutAudit.exitWhenDone', 'true'
+            args '--quickPlaySingleplayer', 'Liminal Layout Audit'
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
 }
 
 repositories {
@@ -59,6 +74,10 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
     compileOnly fg.deobf(
+        "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE"
+    )
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
+    runtimeOnly fg.deobf(
         "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE"
     )
 
@@ -129,9 +148,88 @@ tasks.register('generateTranslationAuditIndex') {
         def manualBooks = manifest.records.any {
             it.source_id == 'immersive_engineering_manual'
         } ? ['immersiveengineering:manual'] : []
+        def screenRecords = manifest.records.findAll {
+            it.source_id in [
+                'patchouli',
+                'tconstruct_books',
+                'immersive_engineering_manual'
+            ]
+        }.collect { record ->
+            def location = record.location ?: [:]
+            def member = location.output_member ?: location.member ?: ''
+            def engine = [
+                patchouli: 'patchouli',
+                tconstruct_books: 'mantle',
+                immersive_engineering_manual: 'immersive_engineering'
+            ][record.source_id]
+            def book = location.book
+            if (!book && record.source_id == 'patchouli') {
+                def matcher = member =~ 'patchouli_books/([^/]+)/'
+                book = matcher.find() ? matcher.group(1) : null
+            }
+            if (!book && record.source_id == 'immersive_engineering_manual') {
+                book = 'manual'
+            }
+            def entry = '<landing>'
+            def entryMatcher = member =~ '/(?:entries|categories)/(.+)\\.(?:json|txt)$'
+            if (entryMatcher.find()) {
+                entry = entryMatcher.group(1)
+            } else if (record.source_id != 'patchouli') {
+                def filenameMatcher = member =~ '/([^/]+)\\.(?:json|txt)$'
+                entry = filenameMatcher.find() ? filenameMatcher.group(1) : '<index>'
+            }
+            def page = null
+            def pageMatcher = (location.pointer ?: '') =~ '^/pages/(\\d+)'
+            if (pageMatcher.find()) {
+                page = pageMatcher.group(1) as Integer
+            } else if (location.line != null) {
+                page = location.line
+            }
+            [
+                engine: engine,
+                book: "${record.namespace}:${book}",
+                resource: member,
+                entry: entry,
+                page: page,
+                text_source: record.translation_key
+                    ? [type: 'translation_key', value: record.translation_key]
+                    : location.pointer
+                        ? [type: 'json_pointer', value: location.pointer]
+                        : [type: 'line', value: String.valueOf(location.line)],
+                source: record.source
+            ]
+        }.unique { record ->
+            [
+                record.engine,
+                record.book,
+                record.resource,
+                record.entry,
+                record.page,
+                record.text_source
+            ]
+        }.sort { left, right ->
+            def leftKey = [
+                left.engine,
+                left.book,
+                left.resource,
+                left.entry,
+                left.page ?: -1,
+                left.text_source.value
+            ].join('\u0000')
+            def rightKey = [
+                right.engine,
+                right.book,
+                right.resource,
+                right.entry,
+                right.page ?: -1,
+                right.text_source.value
+            ].join('\u0000')
+            leftKey <=> rightKey
+        }
         def document = [
-            schema: 2,
+            schema: 3,
             version: selectedTranslationVersion,
+            book_screens: screenRecords,
             sources: [
                 patchouli: [
                     language_records: languageRecords,
@@ -153,6 +251,26 @@ tasks.register('generateTranslationAuditIndex') {
 
 tasks.named('test', Test).configure {
     useJUnitPlatform()
+}
+
+tasks.register('runLayoutAuditClient') {
+    group = 'verification'
+    description = 'Runs the automated book layout audit client.'
+    dependsOn 'runClient'
+    doLast {
+        def report = layout.projectDirectory.file(
+            'run-layout-audit/liminal-industries-ru-audit/book-layout-audit.json'
+        ).asFile
+        if (!report.isFile()) {
+            throw new GradleException("Layout audit did not create ${report}")
+        }
+        def result = new JsonSlurper().parse(report)
+        if (result.result != 'PASS') {
+            throw new GradleException(
+                "Book layout audit failed with ${result.translation_errors} errors"
+            )
+        }
+    }
 }
 
 tasks.named('jar', Jar).configure {
