@@ -21,15 +21,24 @@ from build_initial_catalog import (
 )
 from extract_item_names import (
     candidate_keys,
+    load_blockstate_ids,
     load_item_model_ids,
     load_jar_languages,
     load_minecraft_languages,
+    load_probe_block_ids,
     load_probe_item_ids,
     same_source_aliases,
 )
+from translation_sources import (
+    SourceDefinition,
+    SourceResult,
+    collect_patchouli,
+    collect_sources,
+    load_source_definitions,
+)
 
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 PROJECT_JAR_PREFIX = "liminal-industries-russian-translation-"
 FTB_QUESTS_RE = re.compile(r"ftb-quests-forge-([0-9.]+)\.jar$")
 KUBEJS_REGISTRY_RE = re.compile(
@@ -318,6 +327,7 @@ def source_mod_archives(mods_root: Path) -> list[Path]:
 def extract_item_records(
     instance_root: Path,
     launcher_root: Path,
+    minecraft_version: str,
     quest_item_ids: set[str],
     item_hints: dict[str, tuple[str, str]],
     item_hints_path: Path | None,
@@ -326,7 +336,9 @@ def extract_item_records(
     kubejs_root = instance_root / "kubejs"
     archives = source_mod_archives(mods_root)
     en_us, native_ru = load_jar_languages(mods_root, archives)
-    load_minecraft_languages(launcher_root, en_us, native_ru)
+    load_minecraft_languages(
+        launcher_root, en_us, native_ru, minecraft_version
+    )
     kubejs_en = sorted(kubejs_root.glob("assets/*/lang/en_us.json"))
     kubejs_en += sorted(
         kubejs_root.glob("contentpacks/*/assets/*/lang/en_us.json")
@@ -351,7 +363,12 @@ def extract_item_records(
     kubejs_registry: dict[str, tuple[str, str]] = {}
     if not registry_ids:
         model_archives = list(archives)
-        minecraft_jar = launcher_root / "versions/1.20.1/1.20.1.jar"
+        minecraft_jar = (
+            launcher_root
+            / "versions"
+            / minecraft_version
+            / f"{minecraft_version}.jar"
+        )
         if minecraft_jar.exists():
             model_archives.append(minecraft_jar)
         model_ids = load_item_model_ids(model_archives, kubejs_root)
@@ -411,6 +428,7 @@ def extract_item_records(
             "item_id": item_id,
             "translation_key": key,
             "native_ru_present": key in native_ru,
+            "output_format": "lang",
             "source_origin": (
                 "effective_en_us"
                 if key in en_us
@@ -434,7 +452,12 @@ def extract_item_records(
     source_paths += sorted(kubejs_root.glob("assets/*/lang/*.json"))
     source_paths += sorted(kubejs_root.glob("contentpacks/*/assets/*/lang/*.json"))
     source_paths += resource_files
-    minecraft_jar = launcher_root / "versions/1.20.1/1.20.1.jar"
+    minecraft_jar = (
+        launcher_root
+        / "versions"
+        / minecraft_version
+        / f"{minecraft_version}.jar"
+    )
     if minecraft_jar.exists():
         source_paths.append(minecraft_jar)
     if item_hints_path is not None:
@@ -473,6 +496,155 @@ def extract_item_records(
         ),
     }
     return records, source_files, report
+
+
+def load_effective_languages(
+    instance_root: Path,
+    launcher_root: Path,
+    minecraft_version: str,
+) -> tuple[list[Path], dict[str, str], dict[str, str], list[Path]]:
+    mods_root = instance_root / "mods"
+    kubejs_root = instance_root / "kubejs"
+    archives = source_mod_archives(mods_root)
+    en_us, native_ru = load_jar_languages(mods_root, archives)
+    load_minecraft_languages(
+        launcher_root, en_us, native_ru, minecraft_version
+    )
+    kubejs_en = sorted(kubejs_root.glob("assets/*/lang/en_us.json"))
+    kubejs_en += sorted(
+        kubejs_root.glob("contentpacks/*/assets/*/lang/en_us.json")
+    )
+    kubejs_ru = sorted(kubejs_root.glob("assets/*/lang/ru_ru.json"))
+    kubejs_ru += sorted(
+        kubejs_root.glob("contentpacks/*/assets/*/lang/ru_ru.json")
+    )
+    language_files = overlay_language_paths(kubejs_en, en_us)
+    language_files += overlay_language_paths(kubejs_ru, native_ru)
+    resource_en = sorted(
+        (instance_root / "resourcepacks").glob("*/assets/*/lang/en_us.json")
+    )
+    resource_ru = sorted(
+        (instance_root / "resourcepacks").glob("*/assets/*/lang/ru_ru.json")
+    )
+    language_files += overlay_language_paths(resource_en, en_us)
+    language_files += overlay_language_paths(resource_ru, native_ru)
+    return archives, en_us, native_ru, language_files
+
+
+def load_payload_translations(version_root: Path) -> dict[str, str]:
+    values: dict[str, str] = {}
+    for path in sorted(
+        (version_root / "payload/resourcepack").glob("assets/*/lang/ru_ru.json")
+    ):
+        document = json.loads(path.read_text(encoding="utf-8"))
+        values.update(
+            {
+                str(key): str(value)
+                for key, value in document.items()
+                if isinstance(value, str)
+            }
+        )
+    return values
+
+
+def extract_block_records(
+    instance_root: Path,
+    launcher_root: Path,
+    minecraft_version: str,
+    version_root: Path,
+    catalog: dict[str, Any],
+) -> tuple[list[dict[str, Any]], list[dict[str, str]], dict[str, Any]]:
+    archives, en_us, native_ru, language_files = load_effective_languages(
+        instance_root, launcher_root, minecraft_version
+    )
+    block_ids = load_probe_block_ids(instance_root / "kubejs")
+    if not block_ids:
+        model_archives = list(archives)
+        minecraft_jar = (
+            launcher_root
+            / "versions"
+            / minecraft_version
+            / f"{minecraft_version}.jar"
+        )
+        if minecraft_jar.exists():
+            model_archives.append(minecraft_jar)
+        block_ids = load_blockstate_ids(model_archives, instance_root / "kubejs")
+        block_ids.update(
+            registry_id
+            for registry_id, (translation_key, _) in load_kubejs_registry(
+                instance_root / "kubejs"
+            ).items()
+            if translation_key.startswith("block.")
+        )
+    if not block_ids:
+        raise ValueError("could not build a block registry")
+    project_ru = load_payload_translations(version_root)
+    records: list[dict[str, Any]] = []
+    for block_id in sorted(block_ids):
+        namespace, path = block_id.split(":", 1)
+        key = f"block.{namespace}.{path}"
+        source = en_us.get(key) or fallback_name(block_id)
+        record = {
+            "id": f"block:{key}",
+            "kind": "block_name",
+            "source": source,
+            "source_hash": source_hash(source),
+            "namespace": namespace,
+            "block_id": block_id,
+            "translation_key": key,
+            "native_ru_present": key in native_ru,
+            "source_origin": (
+                "effective_en_us" if key in en_us else "runtime_generated"
+            ),
+            "output_format": "lang",
+        }
+        suggested = project_ru.get(key)
+        item_key = f"item.{namespace}.{path}"
+        if (
+            suggested is None
+            and en_us.get(item_key) == source
+        ):
+            suggested = project_ru.get(item_key) or native_ru.get(item_key)
+            if suggested is None:
+                matches = {
+                    variant["translation"]
+                    for variant in catalog["entries"].get(
+                        f"item:{item_key}", []
+                    )
+                    if variant["source"] == source
+                    and variant["source_hash"] == source_hash(source)
+                }
+                if len(matches) == 1:
+                    suggested = next(iter(matches))
+        if suggested is not None:
+            record["suggested_translation"] = suggested
+        records.append(record)
+
+    source_paths = [*archives, *language_files]
+    minecraft_jar = (
+        launcher_root
+        / "versions"
+        / minecraft_version
+        / f"{minecraft_version}.jar"
+    )
+    if minecraft_jar.exists():
+        source_paths.append(minecraft_jar)
+    source_files = []
+    for path in sorted(set(source_paths)):
+        if path.is_relative_to(instance_root):
+            label = path.relative_to(instance_root).as_posix()
+        elif path.is_relative_to(launcher_root):
+            label = f"launcher/{path.relative_to(launcher_root).as_posix()}"
+        else:
+            label = path.name
+        source_files.append({"path": label, "sha256": sha256_bytes(path.read_bytes())})
+    return records, source_files, {
+        "registry_blocks": len(block_ids),
+        "native_ru": sum(record["native_ru_present"] for record in records),
+        "suggested_translations": sum(
+            "suggested_translation" in record for record in records
+        ),
+    }
 
 
 def detect_metadata(
@@ -533,29 +705,73 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
     metadata = detect_metadata(
         args.instance_root, args.launcher_root, args.sklauncher_manifest
     )
-    quest_records, quest_sources = extract_quest_records(
-        args.instance_root / "config/ftbquests/quests"
+    version_root = args.output_root.resolve() / args.version_slug
+    definitions = load_source_definitions(version_root / "sources.json")
+
+    def quests_collector(definition: SourceDefinition) -> SourceResult:
+        del definition
+        records, source_files = extract_quest_records(
+            args.instance_root / "config/ftbquests/quests"
+        )
+        return SourceResult(
+            records,
+            source_files,
+            {"quest_records": len(records)},
+        )
+
+    def items_collector(definition: SourceDefinition) -> SourceResult:
+        del definition
+        records, source_files, report = extract_item_records(
+            args.instance_root,
+            args.launcher_root,
+            metadata["minecraft_version"],
+            load_quest_item_ids(args.instance_root / "config/ftbquests/quests"),
+            load_item_hints(args.item_hints),
+            args.item_hints,
+        )
+        return SourceResult(records, source_files, report)
+
+    def blocks_collector(definition: SourceDefinition) -> SourceResult:
+        del definition
+        records, source_files, report = extract_block_records(
+            args.instance_root,
+            args.launcher_root,
+            metadata["minecraft_version"],
+            version_root,
+            catalog,
+        )
+        return SourceResult(records, source_files, report)
+
+    def patchouli_collector(definition: SourceDefinition) -> SourceResult:
+        archives, en_us, native_ru, _ = load_effective_languages(
+            args.instance_root,
+            args.launcher_root,
+            metadata["minecraft_version"],
+        )
+        return collect_patchouli(
+            definition,
+            archives,
+            args.instance_root,
+            en_us,
+            native_ru,
+            load_payload_translations(version_root),
+        )
+
+    collected = collect_sources(
+        definitions,
+        {
+            "ftb_quests": quests_collector,
+            "registry_items": items_collector,
+            "registry_blocks": blocks_collector,
+            "patchouli": patchouli_collector,
+        },
     )
-    item_records, item_sources, item_report = extract_item_records(
-        args.instance_root,
-        args.launcher_root,
-        load_quest_item_ids(args.instance_root / "config/ftbquests/quests"),
-        load_item_hints(args.item_hints),
-        args.item_hints,
-    )
-    records = sorted(quest_records + item_records, key=lambda item: item["id"])
-    duplicate_ids = [
-        logical_id
-        for logical_id, count in Counter(record["id"] for record in records).items()
-        if count > 1
-    ]
-    if duplicate_ids:
-        raise ValueError(f"duplicate manifest IDs: {duplicate_ids[:3]}")
+    records = collected.records
 
     pending: list[dict[str, Any]] = []
     categories: Counter[str] = Counter()
     for record in records:
-        if record["kind"] == "item_name" and record["native_ru_present"]:
+        if record.get("native_ru_present", False):
             categories["NATIVE_RU"] += 1
         elif catalog_has(catalog, record):
             categories["CATALOG_HIT"] += 1
@@ -567,25 +783,22 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
         "schema_version": SCHEMA_VERSION,
         "version": args.version_slug,
         "modpack": metadata,
-        "source_files": sorted(
-            quest_sources + item_sources, key=lambda item: item["path"]
+        "source_config": "sources.json",
+        "source_config_hash": sha256_bytes(
+            (version_root / "sources.json").read_bytes()
         ),
+        "source_files": collected.source_files,
         "records": records,
     }
     report = {
         "version": args.version_slug,
         "modpack": metadata,
-        "quest_records": len(quest_records),
-        "item_records": len(item_records),
-        **item_report,
+        **collected.report,
         "catalog_hits": categories["CATALOG_HIT"],
         "native_ru_coverage": categories["NATIVE_RU"],
         "pending": categories["PENDING"],
-        "pending_quests": sum(
-            record["kind"] != "item_name" for record in pending
-        ),
-        "pending_items": sum(
-            record["kind"] == "item_name" for record in pending
+        "pending_by_source": dict(
+            sorted(Counter(record["source_id"] for record in pending).items())
         ),
         "errors": 0,
     }
@@ -604,7 +817,7 @@ def write_pending(path: Path, pending: list[dict[str, Any]]) -> None:
                     record["kind"],
                     record["source_hash"],
                     record["source"],
-                    "",
+                    record.get("suggested_translation", ""),
                 )
             )
 

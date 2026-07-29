@@ -9,19 +9,45 @@
     "forge_version": "47.4.13",
     "ftb_quests_version": "2001.4.13"
   },
-  "quest_records": 455,
-  "item_records": 7786,
-  "registry_source": "language_models+quest_refs+kubejs_startup+reviewed_hints",
-  "registry_items": 7786,
-  "native_ru_items": 6247,
-  "generated_english_names": 22,
-  "reviewed_hint_names": 26,
-  "translation_aliases": 5,
-  "kubejs_startup_names": 146,
-  "catalog_hits": 1994,
-  "native_ru_coverage": 6247,
-  "pending": 0,
-  "pending_quests": 0,
-  "pending_items": 0,
+  "sources": {
+    "quests": {
+      "adapter": "ftb_quests",
+      "records": 455,
+      "quest_records": 455
+    },
+    "items": {
+      "adapter": "registry_items",
+      "records": 7786,
+      "registry_source": "language_models+quest_refs+kubejs_startup+reviewed_hints",
+      "registry_items": 7786,
+      "native_ru_items": 6247,
+      "generated_english_names": 22,
+      "reviewed_hint_names": 26,
+      "translation_aliases": 5,
+      "kubejs_startup_names": 146
+    },
+    "blocks": {
+      "adapter": "registry_blocks",
+      "records": 6589,
+      "registry_blocks": 6589,
+      "native_ru": 4414,
+      "suggested_translations": 1160
+    },
+    "patchouli": {
+      "adapter": "patchouli",
+      "records": 1271,
+      "books": 3,
+      "native_ru": 1233,
+      "language_records": 1267,
+      "json_records": 4
+    }
+  },
+  "catalog_hits": 3114,
+  "native_ru_coverage": 11894,
+  "pending": 1093,
+  "pending_by_source": {
+    "blocks": 1055,
+    "patchouli": 38
+  },
   "errors": 0
 }

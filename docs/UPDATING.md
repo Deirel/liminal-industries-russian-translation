@@ -30,6 +30,11 @@ python3 scripts/build_version_delta.py \
 из `mods` извлекатель игнорирует. Пустые lang-файлы считаются пустыми; прочий
 невалидный JSON останавливает построение.
 
+Включённые источники задаются в
+`translation-versions/<version>/sources.json`. Контракт адаптеров и порядок
+добавления новых источников описаны в
+[`TRANSLATION_SOURCES.md`](TRANSLATION_SOURCES.md).
+
 Результат записывается в `manifest.json`, `migration-report.json` и
 `work/pending.tsv`. Для уже переведённой версии ожидается `pending: 0`.
 
@@ -41,6 +46,8 @@ python3 scripts/build_version_delta.py \
 ```sh
 python3 scripts/approve_version_translations.py --version <version>
 ```
+
+Для миграции или ревью части большой дельты можно добавить `--allow-partial`.
 
 Повторное построение манифеста должно дать нулевую дельту.
 

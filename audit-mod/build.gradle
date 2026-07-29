@@ -1,4 +1,5 @@
 import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
 
 plugins {
     id 'eclipse'
@@ -13,6 +14,12 @@ if (!(selectedTranslationVersion ==~ /[a-zA-Z0-9._-]+/)) {
 }
 def translationConfigFile = layout.projectDirectory.file(
     "../translation-versions/${selectedTranslationVersion}/build-config.json"
+).asFile
+def translationSourcesFile = layout.projectDirectory.file(
+    "../translation-versions/${selectedTranslationVersion}/sources.json"
+).asFile
+def translationManifestFile = layout.projectDirectory.file(
+    "../translation-versions/${selectedTranslationVersion}/manifest.json"
 ).asFile
 if (!translationConfigFile.isFile()) {
     throw new GradleException(
@@ -65,9 +72,46 @@ tasks.named('processResources', ProcessResources).configure {
         mod_version: translationConfig.version
     ]
     inputs.properties properties
+    inputs.file translationSourcesFile
+    dependsOn 'generateTranslationAuditIndex'
+
+    from(translationSourcesFile) {
+        rename { 'translation-sources.json' }
+    }
+    from(layout.buildDirectory.dir('generated/audit'))
 
     filesMatching('META-INF/mods.toml') {
         expand properties
+    }
+}
+
+tasks.register('generateTranslationAuditIndex') {
+    inputs.file translationManifestFile
+    def output = layout.buildDirectory.file(
+        'generated/audit/translation-audit-index.json'
+    )
+    outputs.file output
+    doLast {
+        def manifest = new JsonSlurper().parse(translationManifestFile)
+        def records = manifest.records.findAll {
+            it.source_id == 'patchouli' && it.output_format == 'lang'
+        }.collect {
+            [
+                id: it.id,
+                translation_key: it.translation_key,
+                source: it.source
+            ]
+        }
+        def document = [
+            schema: 1,
+            version: selectedTranslationVersion,
+            sources: [
+                patchouli: records
+            ]
+        ]
+        def target = output.get().asFile
+        target.parentFile.mkdirs()
+        target.text = JsonOutput.prettyPrint(JsonOutput.toJson(document)) + '\n'
     }
 }
 

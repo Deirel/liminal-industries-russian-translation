@@ -2,13 +2,30 @@ import json
 import sys
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from build_version_resources import build_items
-from extract_item_names import same_source_aliases
+from build_version_resources import build_language_files
+from extract_item_names import load_blockstate_ids, same_source_aliases
+
+
+class BlockRegistryDiscoveryTest(unittest.TestCase):
+    def test_discovers_blockstate_without_language_key(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            archive = root / "example.jar"
+            with zipfile.ZipFile(archive, "w") as jar:
+                jar.writestr(
+                    "assets/example/blockstates/hidden_machine.json",
+                    '{"variants": {}}',
+                )
+
+            block_ids = load_blockstate_ids([archive], root / "kubejs")
+
+        self.assertEqual({"example:hidden_machine"}, block_ids)
 
 
 class SameSourceAliasesTest(unittest.TestCase):
@@ -50,6 +67,7 @@ class BuildItemAliasesTest(unittest.TestCase):
             "translation_key": "item.example.machine",
             "translation_aliases": ["block.example.machine"],
             "native_ru_present": False,
+            "output_format": "lang",
         }
         catalog = {
             "entries": {
@@ -64,7 +82,7 @@ class BuildItemAliasesTest(unittest.TestCase):
         }
 
         with tempfile.TemporaryDirectory() as directory:
-            count = build_items(
+            count = build_language_files(
                 {"records": [record]},
                 catalog,
                 {},

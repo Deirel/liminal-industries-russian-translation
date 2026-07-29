@@ -57,6 +57,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--versions-root", type=Path, default=root / "translation-versions"
     )
+    parser.add_argument(
+        "--allow-partial",
+        action="store_true",
+        help="approve the reviewed subset without requiring every pending row",
+    )
     parser.add_argument("--check", action="store_true")
     return parser.parse_args()
 
@@ -76,7 +81,7 @@ def main() -> int:
     manifest_records = {record["id"]: record for record in manifest["records"]}
     pending_ids = {row["id"] for row in pending_rows}
     missing = sorted(pending_ids - translations.keys())
-    if missing:
+    if missing and not args.allow_partial:
         raise ValueError(f"translation coverage mismatch; missing={missing[:3]}")
 
     for logical_id, translation in translations.items():

@@ -4,24 +4,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import mezz.jei.api.constants.VanillaTypes;
-import mezz.jei.api.ingredients.IIngredientHelper;
-import mezz.jei.api.ingredients.subtypes.UidContext;
-import mezz.jei.api.runtime.IIngredientManager;
 import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.language.ClientLanguage;
 import net.minecraft.locale.Language;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.fml.ModList;
-import net.minecraftforge.registries.ForgeRegistries;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -29,7 +17,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -44,6 +31,11 @@ final class ItemTranslationAudit {
     private static final Path REPORT_PATH = Path.of(
         "liminal-industries-ru-audit",
         "item-name-audit.json"
+    );
+    private static final List<AuditProvider> PROVIDERS = List.of(
+        new ItemAuditProvider(),
+        new BlockAuditProvider(),
+        new PatchouliAuditProvider()
     );
 
     private ItemTranslationAudit() {
@@ -71,19 +63,19 @@ final class ItemTranslationAudit {
                 StandardCharsets.UTF_8
             );
             LiminalIndustriesTranslationAuditMod.LOGGER.info(
-                "Item translation audit: {} (report: {})",
+                "Translation audit: {} (report: {})",
                 report.success() ? "PASS" : "FAIL",
                 output.toAbsolutePath()
             );
             return new Result(
                 report.success(),
                 "Аудит " + (report.success() ? "пройден" : "не пройден")
-                    + ": " + report.checked() + " вариантов, "
+                    + ": " + report.checked() + " записей, "
                     + report.failures() + " ошибок. Отчёт: " + output.toAbsolutePath()
             );
         } catch (IOException | RuntimeException exception) {
             LiminalIndustriesTranslationAuditMod.LOGGER.error(
-                "Could not complete item translation audit",
+                "Could not complete translation audit",
                 exception
             );
             return Result.failure("Ошибка аудита: " + exception.getMessage());
@@ -105,55 +97,55 @@ final class ItemTranslationAudit {
             List.of("en_us"),
             false
         );
-        IIngredientManager ingredients = runtime.getIngredientManager();
-        IIngredientHelper<ItemStack> helper = ingredients.getIngredientHelper(
-            VanillaTypes.ITEM_STACK
-        );
-        Collection<ItemStack> jeiStacks = ingredients.getAllIngredients(
-            VanillaTypes.ITEM_STACK
-        );
-
-        Map<String, Candidate> candidates = new LinkedHashMap<>();
-        for (ItemStack stack : jeiStacks) {
-            if (!stack.isEmpty()) {
-                addCandidate(candidates, helper, stack, "JEI");
+        AuditContext context = new AuditContext(minecraft, runtime, english);
+        List<AuditEntry> entries = new ArrayList<>();
+        Map<String, Integer> providerCounts = new LinkedHashMap<>();
+        Set<String> enabledProviders = AuditSourceConfig.enabledProviders();
+        Set<String> availableProviders = PROVIDERS.stream()
+            .map(AuditProvider::id)
+            .collect(Collectors.toSet());
+        for (String providerId : enabledProviders) {
+            if (!availableProviders.contains(providerId)) {
+                entries.add(providerError(
+                    providerId,
+                    new IllegalStateException("configured audit provider is missing")
+                ));
             }
         }
-        for (Item item : ForgeRegistries.ITEMS) {
-            if (item != Items.AIR) {
-                ItemStack stack = new ItemStack(item);
-                if (!stack.isEmpty()) {
-                    addCandidate(candidates, helper, stack, "REGISTRY");
+        for (AuditProvider provider : PROVIDERS) {
+            if (!enabledProviders.contains(provider.id())) {
+                continue;
+            }
+            try {
+                List<AuditSubject> subjects = provider.discover(context);
+                providerCounts.put(provider.id(), subjects.size());
+                if (subjects.isEmpty()) {
+                    entries.add(providerError(
+                        provider.id(),
+                        new IllegalStateException("provider discovered no records")
+                    ));
+                    continue;
                 }
+                subjects.stream()
+                    .map(subject -> inspect(
+                        subject,
+                        russian,
+                        english,
+                        runtimeRussian,
+                        resourceEnglish
+                    ))
+                    .sorted(Comparator.comparing(AuditEntry::uid))
+                    .forEach(entries::add);
+            } catch (RuntimeException exception) {
+                providerCounts.put(provider.id(), 0);
+                entries.add(providerError(provider.id(), exception));
             }
         }
 
-        List<AuditEntry> entries = new ArrayList<>(candidates.values().stream()
-            .map(candidate -> inspect(
-                candidate,
-                russian,
-                english,
-                runtimeRussian,
-                resourceEnglish
-            ))
-            .sorted(Comparator.comparing(AuditEntry::uid))
-            .toList());
-        ForgeRegistries.BLOCKS.getValues().stream()
-            .filter(block -> block != Blocks.AIR)
-            .map(block -> inspectBlock(
-                block,
-                russian,
-                english,
-                runtimeRussian,
-                resourceEnglish
-            ))
-            .sorted(Comparator.comparing(AuditEntry::uid))
-            .forEach(entries::add);
         int failures = (int) entries.stream().filter(AuditEntry::failure).count();
         boolean success = failures == 0 && russian.errors().isEmpty();
-
         JsonObject root = new JsonObject();
-        root.addProperty("schema", 3);
+        root.addProperty("schema", 4);
         root.addProperty("result", success ? "PASS" : "FAIL");
         root.addProperty("generated_at", Instant.now().toString());
         root.addProperty(
@@ -161,14 +153,15 @@ final class ItemTranslationAudit {
             SharedConstants.getCurrentVersion().getName()
         );
         root.addProperty("selected_language", REQUIRED_LANGUAGE);
-        root.addProperty("jei_item_stacks", jeiStacks.size());
-        root.addProperty("registered_items", ForgeRegistries.ITEMS.getValues().size());
-        root.addProperty("registered_blocks", ForgeRegistries.BLOCKS.getValues().size());
-        root.addProperty("checked_variants", entries.size());
+        root.addProperty("checked_records", entries.size());
         root.addProperty("failures", failures);
         root.addProperty("russian_keys", russian.values().size());
         root.addProperty("english_keys", english.values().size());
         root.addProperty("runtime_language_keys", runtimeRussian.getLanguageData().size());
+
+        JsonObject providers = new JsonObject();
+        providerCounts.forEach(providers::addProperty);
+        root.add("provider_counts", providers);
 
         Map<AuditStatus, Long> statusCounts = entries.stream().collect(
             Collectors.groupingBy(AuditEntry::status, Collectors.counting())
@@ -204,176 +197,100 @@ final class ItemTranslationAudit {
         return new AuditReport(success, entries.size(), failures, root);
     }
 
-    private static void addCandidate(
-        Map<String, Candidate> candidates,
-        IIngredientHelper<ItemStack> helper,
-        ItemStack stack,
-        String source
-    ) {
-        String uid;
-        try {
-            uid = helper.getUniqueId(stack, UidContext.Ingredient);
-        } catch (RuntimeException exception) {
-            ResourceLocation itemId = ForgeRegistries.ITEMS.getKey(stack.getItem());
-            uid = "unresolved:" + itemId + ":" + Integer.toHexString(stack.hashCode());
-        }
-        String auditUid = uid;
-        Candidate candidate = candidates.computeIfAbsent(
-            auditUid,
-            ignored -> new Candidate(auditUid, stack.copy(), new TreeSet<>())
-        );
-        candidate.sources().add(source);
-    }
-
     private static AuditEntry inspect(
-        Candidate candidate,
+        AuditSubject subject,
         RussianLanguageIndex russian,
         RussianLanguageIndex english,
         Language runtimeRussian,
         Language resourceEnglish
     ) {
-        ItemStack stack = candidate.stack();
-        ResourceLocation itemId = ForgeRegistries.ITEMS.getKey(stack.getItem());
         try {
-            Component hoverName = stack.getHoverName();
-            return inspectName(
-                candidate.uid(),
-                "item",
-                itemId,
-                stack.getDescriptionId(),
-                hoverName,
-                candidate.sources(),
-                russian,
-                english,
-                runtimeRussian,
-                resourceEnglish
+            String displayName = subject.name().getString();
+            Map<String, String> runtimeTemplates = ComponentTranslationKeys.collect(
+                subject.name(),
+                runtimeRussian
+            );
+            Set<String> keys = new TreeSet<>(runtimeTemplates.keySet());
+            Set<String> verifiedRussianKeys = keys.stream()
+                .filter(key -> hasRussianTranslation(
+                    key,
+                    runtimeTemplates.get(key),
+                    russian,
+                    resourceEnglish
+                ))
+                .collect(Collectors.toCollection(TreeSet::new));
+            AuditStatus status = AuditClassifier.classify(
+                displayName,
+                keys,
+                verifiedRussianKeys
+            );
+            Set<String> missing = new TreeSet<>(keys);
+            missing.removeAll(verifiedRussianKeys);
+            Set<String> sameAsEnglish = new TreeSet<>();
+            for (String key : keys) {
+                if (russian.values().containsKey(key)
+                    && russian.values().get(key).equals(english.values().get(key))) {
+                    sameAsEnglish.add(key);
+                }
+            }
+            Map<String, String> translationSources = new LinkedHashMap<>();
+            for (String key : keys) {
+                String pack = russian.sources().get(key);
+                if (pack != null) {
+                    translationSources.put(key, pack);
+                } else if (verifiedRussianKeys.contains(key)
+                    && !runtimeTemplates.get(key).equals(
+                        resourceEnglish.getOrDefault(key)
+                    )) {
+                    translationSources.put(key, "<runtime>");
+                }
+            }
+            return new AuditEntry(
+                subject.provider(),
+                subject.uid(),
+                subject.registryType(),
+                subject.registryId(),
+                subject.descriptionId(),
+                displayName,
+                subject.discoveredFrom(),
+                keys,
+                missing,
+                sameAsEnglish,
+                translationSources,
+                status,
+                null
             );
         } catch (RuntimeException exception) {
-            return errorEntry(
-                candidate.uid(),
-                "item",
-                itemId,
-                stack.getDescriptionId(),
-                candidate.sources(),
-                exception
+            return new AuditEntry(
+                subject.provider(),
+                subject.uid(),
+                subject.registryType(),
+                subject.registryId(),
+                subject.descriptionId(),
+                "",
+                subject.discoveredFrom(),
+                Set.of(),
+                Set.of(),
+                Set.of(),
+                Map.of(),
+                AuditStatus.ERROR,
+                exception.toString()
             );
         }
     }
 
-    private static AuditEntry inspectBlock(
-        Block block,
-        RussianLanguageIndex russian,
-        RussianLanguageIndex english,
-        Language runtimeRussian,
-        Language resourceEnglish
-    ) {
-        ResourceLocation blockId = ForgeRegistries.BLOCKS.getKey(block);
-        try {
-            return inspectName(
-                "block:" + blockId,
-                "block",
-                blockId,
-                block.getDescriptionId(),
-                block.getName(),
-                Set.of("BLOCK_REGISTRY"),
-                russian,
-                english,
-                runtimeRussian,
-                resourceEnglish
-            );
-        } catch (RuntimeException exception) {
-            return errorEntry(
-                "block:" + blockId,
-                "block",
-                blockId,
-                block.getDescriptionId(),
-                Set.of("BLOCK_REGISTRY"),
-                exception
-            );
-        }
-    }
-
-    private static AuditEntry inspectName(
-        String uid,
-        String registryType,
-        ResourceLocation registryId,
-        String descriptionId,
-        Component name,
-        Set<String> sources,
-        RussianLanguageIndex russian,
-        RussianLanguageIndex english,
-        Language runtimeRussian,
-        Language resourceEnglish
-    ) {
-        String displayName = name.getString();
-        Map<String, String> runtimeTemplates = ComponentTranslationKeys.collect(
-            name,
-            runtimeRussian
-        );
-        Set<String> keys = new TreeSet<>(runtimeTemplates.keySet());
-        Set<String> verifiedRussianKeys = keys.stream()
-            .filter(key -> hasRussianTranslation(
-                key,
-                runtimeTemplates.get(key),
-                russian,
-                resourceEnglish
-            ))
-            .collect(Collectors.toCollection(TreeSet::new));
-        AuditStatus status = AuditClassifier.classify(
-            displayName,
-            keys,
-            verifiedRussianKeys
-        );
-        Set<String> missing = new TreeSet<>(keys);
-        missing.removeAll(verifiedRussianKeys);
-        Set<String> sameAsEnglish = new TreeSet<>();
-        for (String key : keys) {
-            if (russian.values().containsKey(key)
-                && russian.values().get(key).equals(english.values().get(key))) {
-                sameAsEnglish.add(key);
-            }
-        }
-        Map<String, String> translationSources = new LinkedHashMap<>();
-        for (String key : keys) {
-            String pack = russian.sources().get(key);
-            if (pack != null) {
-                translationSources.put(key, pack);
-            } else if (verifiedRussianKeys.contains(key)
-                && !runtimeTemplates.get(key).equals(resourceEnglish.getOrDefault(key))) {
-                translationSources.put(key, "<runtime>");
-            }
-        }
-        return new AuditEntry(
-            uid,
-            registryType,
-            registryId.toString(),
-            descriptionId,
-            displayName,
-            sources,
-            keys,
-            missing,
-            sameAsEnglish,
-            translationSources,
-            status,
-            null
-        );
-    }
-
-    private static AuditEntry errorEntry(
-        String uid,
-        String registryType,
-        ResourceLocation registryId,
-        String descriptionId,
-        Set<String> sources,
+    private static AuditEntry providerError(
+        String provider,
         RuntimeException exception
     ) {
         return new AuditEntry(
-            uid,
-            registryType,
-            registryId.toString(),
-            descriptionId,
+            provider,
+            "provider:" + provider,
+            "provider",
+            provider,
             "",
-            sources,
+            "",
+            Set.of("PROVIDER"),
             Set.of(),
             Set.of(),
             Set.of(),
@@ -402,13 +319,11 @@ final class ItemTranslationAudit {
         }
     }
 
-    private record Candidate(String uid, ItemStack stack, Set<String> sources) {
-    }
-
     private record AuditReport(boolean success, int checked, int failures, JsonObject json) {
     }
 
     private record AuditEntry(
+        String provider,
         String uid,
         String registryType,
         String registryId,
@@ -428,6 +343,7 @@ final class ItemTranslationAudit {
 
         JsonObject json() {
             JsonObject value = new JsonObject();
+            value.addProperty("provider", provider);
             value.addProperty("uid", uid);
             value.addProperty("registry_type", registryType);
             value.addProperty("registry_id", registryId);

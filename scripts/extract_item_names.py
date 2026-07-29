@@ -76,20 +76,58 @@ def load_item_model_ids(archives: list[Path], kubejs_dir: Path) -> set[str]:
     return ids
 
 
-def load_probe_item_ids(kubejs_dir: Path) -> set[str]:
+def load_blockstate_ids(archives: list[Path], kubejs_dir: Path) -> set[str]:
+    ids: set[str] = set()
+    pattern = re.compile(r"assets/([^/]+)/blockstates/(.+)\.json$")
+    for archive in archives:
+        try:
+            with zipfile.ZipFile(archive) as jar:
+                for member in jar.namelist():
+                    match = pattern.fullmatch(member)
+                    if match:
+                        ids.add(f"{match.group(1)}:{match.group(2)}")
+        except zipfile.BadZipFile:
+            continue
+    for base in (kubejs_dir, *sorted((kubejs_dir / "contentpacks").glob("*"))):
+        for path in base.glob("assets/*/blockstates/**/*.json"):
+            relative = path.relative_to(base / "assets")
+            namespace = relative.parts[0]
+            block_path = Path(*relative.parts[2:]).with_suffix("").as_posix()
+            ids.add(f"{namespace}:{block_path}")
+    return ids
+
+
+def load_probe_registry_ids(kubejs_dir: Path, registry: str) -> set[str]:
     globals_path = kubejs_dir / "probe/generated/globals.d.ts"
     if not globals_path.exists():
         return set()
+    prefix = f"    type {registry.title()} = "
     for line in globals_path.read_text(encoding="utf-8").splitlines():
-        if line.startswith("    type Item = "):
+        if line.startswith(prefix):
             return set(re.findall(r'"([a-z0-9_.-]+:[a-z0-9_./-]+)"', line))
     return set()
 
 
+def load_probe_item_ids(kubejs_dir: Path) -> set[str]:
+    return load_probe_registry_ids(kubejs_dir, "item")
+
+
+def load_probe_block_ids(kubejs_dir: Path) -> set[str]:
+    return load_probe_registry_ids(kubejs_dir, "block")
+
+
 def load_minecraft_languages(
-    launcher_dir: Path, en_us: dict[str, str], ru_ru: dict[str, str]
+    launcher_dir: Path,
+    en_us: dict[str, str],
+    ru_ru: dict[str, str],
+    minecraft_version: str = "1.20.1",
 ) -> None:
-    version_jar = launcher_dir / "versions/1.20.1/1.20.1.jar"
+    version_jar = (
+        launcher_dir
+        / "versions"
+        / minecraft_version
+        / f"{minecraft_version}.jar"
+    )
     if version_jar.exists():
         with zipfile.ZipFile(version_jar) as jar:
             member = "assets/minecraft/lang/en_us.json"

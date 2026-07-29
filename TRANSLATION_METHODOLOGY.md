@@ -42,11 +42,15 @@
 выпусками. Состав контентных модов также не считается постоянным: источником
 истины всегда служит фактический состав целевой версии.
 
-Перевод охватывает два класса текста:
+Перевод охватывает подключённые для конкретной версии источники:
 
 - видимые тексты квестов FTB Quests;
-- отображаемые названия зарегистрированных предметов независимо от префикса
-  их translation key.
+- отображаемые названия зарегистрированных предметов;
+- отображаемые названия зарегистрированных блоков;
+- тексты книг Patchouli.
+
+Точный список задаётся в `translation-versions/<version>/sources.json`.
+Архитектура источников описана в `docs/TRANSLATION_SOURCES.md`.
 
 KubeJS и ProbeJS являются ожидаемыми инструментами текущих версий, но не
 инвариантами методики. Если в целевой версии они отсутствуют, изменили формат
@@ -180,6 +184,9 @@ quest-chapter:<chapter_id>:title
 quest-task:<quest_id>:<task_id>:title
 quest-reward:<quest_id>:<reward_id>:title
 item:<translation_key>
+block:<translation_key>
+patchouli-lang:<namespace>:<key_or_hash>
+patchouli-json:<namespace>:<book>:<path>:<json_pointer>
 ```
 
 `quest-chapter`, `quest-task` и `quest-reward` используются для видимых
@@ -232,7 +239,9 @@ translation-versions/<version>/manifest.json
 - все извлечённые английские записи;
 - их логические ID, типы, расположение и `source_hash`;
 - сведения, необходимые для обратной упаковки;
-- для предметов — эффективный translation key и namespace;
+- `source_id`, `source_type` и формат результата;
+- для записей lang — эффективный translation key и namespace;
+- для Patchouli JSON — архив, resource path и JSON pointer;
 - отметку о штатном покрытии `ru_ru`, но не сам штатный русский текст.
 
 Манифест является снимком английского оригинала конкретной версии. Он не

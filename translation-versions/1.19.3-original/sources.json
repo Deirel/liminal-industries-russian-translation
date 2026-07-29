@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "id": "quests",
+      "adapter": "ftb_quests",
+      "audit": false
+    },
+    {
+      "id": "items",
+      "adapter": "registry_items"
+    },
+    {
+      "id": "blocks",
+      "adapter": "registry_blocks"
+    },
+    {
+      "id": "patchouli",
+      "adapter": "patchouli"
+    }
+  ]
+}

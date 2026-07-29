@@ -10,6 +10,7 @@ import shutil
 import tempfile
 import zipfile
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -49,11 +50,44 @@ def slug(value: str) -> str:
     return normalized
 
 
-def load_canonical(resourcepack: Path) -> dict[str, dict[str, str]]:
+@dataclass(frozen=True)
+class CanonicalResources:
+    files: dict[str, bytes]
+    language: dict[str, dict[str, str]]
+
+    def namespaces(self) -> set[str]:
+        return {
+            path.split("/", 2)[1]
+            for path in self.files
+        }
+
+    def resource_ids(self, namespace: str) -> set[str]:
+        prefix = f"assets/{namespace}/"
+        result = {
+            f"file:{path}"
+            for path in self.files
+            if path.startswith(prefix)
+            and path != f"{prefix}lang/ru_ru.json"
+        }
+        result.update(
+            f"lang:{key}" for key in self.language.get(namespace, {})
+        )
+        return result
+
+
+def load_canonical(resourcepack: Path) -> CanonicalResources:
     assets = resourcepack / "assets"
     if not assets.is_dir():
         raise ValueError(f"missing canonical resource tree: {assets}")
-    result: dict[str, dict[str, str]] = {}
+    files: dict[str, bytes] = {}
+    language: dict[str, dict[str, str]] = {}
+    for path in sorted(assets.rglob("*")):
+        if not path.is_file():
+            continue
+        if path.suffix == ".json":
+            load_json(path)
+        relative = path.relative_to(resourcepack).as_posix()
+        files[relative] = path.read_bytes()
     for path in sorted(assets.glob("*/lang/ru_ru.json")):
         namespace = path.relative_to(assets).parts[0]
         values = load_json(path)
@@ -66,26 +100,14 @@ def load_canonical(resourcepack: Path) -> dict[str, dict[str, str]]:
             )
         ):
             raise ValueError(f"{path}: expected a non-empty string-to-string object")
-        result[namespace] = values
-    extra_files = [
-        path
-        for path in sorted(resourcepack.rglob("*"))
-        if path.is_file()
-        and not (
-            len(path.relative_to(resourcepack).parts) == 4
-            and path.relative_to(resourcepack).parts[0] == "assets"
-            and path.relative_to(resourcepack).parts[2:] == ("lang", "ru_ru.json")
-        )
-    ]
-    if extra_files:
-        raise ValueError(f"unsupported canonical resource: {extra_files[0]}")
-    if not result:
-        raise ValueError("canonical resource tree has no language files")
-    return result
+        language[namespace] = values
+    if not files:
+        raise ValueError("canonical resource tree is empty")
+    return CanonicalResources(files, language)
 
 
 def validate_manifest(
-    manifest: Any, version: str, canonical: dict[str, dict[str, str]]
+    manifest: Any, version: str, canonical: CanonicalResources
 ) -> list[dict[str, Any]]:
     if not isinstance(manifest, dict) or manifest.get("schema") != 1:
         raise ValueError("resource-packs.json must use schema 1")
@@ -100,10 +122,10 @@ def validate_manifest(
 
     ids: set[str] = set()
     assignments: Counter[tuple[str, str]] = Counter()
-    canonical_keys = {
-        (namespace, key)
-        for namespace, values in canonical.items()
-        for key in values
+    canonical_resources = {
+        (namespace, resource)
+        for namespace in canonical.namespaces()
+        for resource in canonical.resource_ids(namespace)
     }
     for pack in packs:
         if not isinstance(pack, dict):
@@ -138,17 +160,17 @@ def validate_manifest(
         ids.add(pack_id)
 
         for namespace in namespaces:
-            if namespace not in canonical:
+            if namespace not in canonical.namespaces():
                 raise ValueError(f"{pack_id}: unknown namespace {namespace!r}")
-            for key in canonical[namespace]:
-                assignments[(namespace, key)] += 1
+            for resource in canonical.resource_ids(namespace):
+                assignments[(namespace, resource)] += 1
         for namespace, keys in selected_keys.items():
             if namespace in namespaces:
                 raise ValueError(
                     f"{pack_id}: {namespace!r} cannot use namespaces and keys"
                 )
             if (
-                namespace not in canonical
+                namespace not in canonical.namespaces()
                 or not isinstance(keys, list)
                 or not keys
                 or any(not isinstance(key, str) for key in keys)
@@ -156,13 +178,13 @@ def validate_manifest(
             ):
                 raise ValueError(f"{pack_id}: invalid key selector for {namespace!r}")
             for key in keys:
-                if key not in canonical[namespace]:
+                if key not in canonical.language.get(namespace, {}):
                     raise ValueError(f"{pack_id}: unknown key {namespace}:{key}")
-                assignments[(namespace, key)] += 1
+                assignments[(namespace, f"lang:{key}")] += 1
 
-    assigned_keys = set(assignments)
-    missing = sorted(canonical_keys - assigned_keys)
-    unknown = sorted(assigned_keys - canonical_keys)
+    assigned_resources = set(assignments)
+    missing = sorted(canonical_resources - assigned_resources)
+    unknown = sorted(assigned_resources - canonical_resources)
     duplicates = sorted(key for key, count in assignments.items() if count != 1)
     if missing or unknown or duplicates:
         raise ValueError(
@@ -174,17 +196,21 @@ def validate_manifest(
 
 
 def selected_resources(
-    pack: dict[str, Any], canonical: dict[str, dict[str, str]]
+    pack: dict[str, Any], canonical: CanonicalResources
 ) -> dict[str, bytes]:
     resources: dict[str, bytes] = {}
     namespaces = pack.get("namespaces", [])
     keys = pack.get("keys", {})
-    for namespace in sorted(set(namespaces) | set(keys)):
-        values = (
-            canonical[namespace]
-            if namespace in namespaces
-            else {key: canonical[namespace][key] for key in keys[namespace]}
-        )
+    for namespace in sorted(namespaces):
+        prefix = f"assets/{namespace}/"
+        for path, content in canonical.files.items():
+            if path.startswith(prefix):
+                resources[path] = content
+    for namespace in sorted(keys):
+        values = {
+            key: canonical.language[namespace][key]
+            for key in keys[namespace]
+        }
         resources[f"assets/{namespace}/lang/ru_ru.json"] = json_bytes(values)
     return resources
 
@@ -216,7 +242,7 @@ def build_archives(
     destination: Path,
     manifest: dict[str, Any],
     packs: list[dict[str, Any]],
-    canonical: dict[str, dict[str, str]],
+    canonical: CanonicalResources,
     icon: bytes | None,
 ) -> list[Path]:
     minecraft_version = manifest["minecraft_version"]
@@ -280,31 +306,28 @@ def verify_archives(expected_root: Path, actual_root: Path) -> None:
                     )
 
 
-def verify_jar(jar_path: Path, canonical: dict[str, dict[str, str]]) -> None:
+def verify_jar(jar_path: Path, canonical: CanonicalResources) -> None:
     if not jar_path.is_file():
         raise ValueError(f"translation JAR does not exist: {jar_path}")
-    expected = {
-        f"assets/{namespace}/lang/ru_ru.json": json_bytes(values)
-        for namespace, values in canonical.items()
-    }
+    expected = canonical.files
     with zipfile.ZipFile(jar_path) as archive:
         names = [
             name
             for name in archive.namelist()
-            if name.startswith("assets/") and name.endswith("/lang/ru_ru.json")
+            if name.startswith("assets/") and not name.endswith("/")
         ]
         if len(names) != len(set(names)):
-            raise ValueError(f"{jar_path}: duplicate language resource")
+            raise ValueError(f"{jar_path}: duplicate asset resource")
         actual = {name: archive.read(name) for name in names}
     if expected.keys() != actual.keys():
         raise ValueError(
-            "JAR language resource tree differs from canonical payload: "
+            "JAR resource tree differs from canonical payload: "
             f"expected {len(expected)}, found {len(actual)}"
         )
     changed = [name for name in expected if expected[name] != actual[name]]
     if changed:
         raise ValueError(
-            f"JAR language resource differs from component packs: {changed[0]}"
+            f"JAR resource differs from component packs: {changed[0]}"
         )
 
 

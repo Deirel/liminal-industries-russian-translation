@@ -7,12 +7,15 @@ import argparse
 import json
 import shutil
 import tempfile
+import zipfile
 from collections import Counter, defaultdict
+from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
 from build_initial_catalog import SnbtParser, sha256_bytes, validate_catalog
 from extract_quest_texts import extract_records
+from translation_sources import json_pointer_set
 
 
 def json_bytes(value: Any) -> bytes:
@@ -60,7 +63,9 @@ def build_quests(
 ) -> int:
     source_root = instance_root / "config/ftbquests/quests"
     quest_records = [
-        record for record in manifest["records"] if record["kind"] != "item_name"
+        record
+        for record in manifest["records"]
+        if record.get("source_type") == "ftb_quests"
     ]
     by_file: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for record in quest_records:
@@ -126,7 +131,7 @@ def build_quests(
     return translated
 
 
-def build_items(
+def build_language_files(
     manifest: dict[str, Any],
     catalog: dict[str, Any],
     runtime_overrides: dict[str, dict[str, str]],
@@ -137,7 +142,10 @@ def build_items(
         shutil.rmtree(assets)
     by_namespace: dict[str, dict[str, str]] = defaultdict(dict)
     for record in manifest["records"]:
-        if record["kind"] != "item_name" or record["native_ru_present"]:
+        if (
+            record.get("output_format") != "lang"
+            or record["native_ru_present"]
+        ):
             continue
         value = catalog_translation(catalog, record)
         keys = [record["translation_key"], *record.get("translation_aliases", [])]
@@ -159,6 +167,58 @@ def build_items(
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(json_bytes(values))
     return sum(len(values) for values in by_namespace.values())
+
+
+def build_patchouli_files(
+    manifest: dict[str, Any],
+    catalog: dict[str, Any],
+    instance_root: Path,
+    output: Path,
+) -> int:
+    grouped: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    for record in manifest["records"]:
+        if (
+            record.get("output_format") == "patchouli_json"
+            and not record["native_ru_present"]
+        ):
+            location = record["location"]
+            grouped[
+                (
+                    location["archive"],
+                    location["member"],
+                    location["output_member"],
+                )
+            ].append(record)
+
+    translated = 0
+    for (archive_name, member, output_member), records in sorted(grouped.items()):
+        archive = instance_root / archive_name
+        with zipfile.ZipFile(archive) as jar:
+            source_data = jar.read(member)
+        source_label = f"{archive_name}!/{member}"
+        expected_hash = next(
+            (
+                entry["sha256"]
+                for entry in manifest["source_files"]
+                if entry["path"] == source_label
+            ),
+            None,
+        )
+        if expected_hash is None or sha256_bytes(source_data) != expected_hash:
+            raise ValueError(f"{source_label}: source hash changed")
+        source_document = json.loads(source_data.decode("utf-8-sig"))
+        translated_document = deepcopy(source_document)
+        for record in records:
+            json_pointer_set(
+                translated_document,
+                record["location"]["pointer"],
+                catalog_translation(catalog, record),
+            )
+            translated += 1
+        target = output / output_member
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(json_bytes(translated_document))
+    return translated
 
 
 def snapshot(root: Path) -> dict[str, bytes]:
@@ -195,8 +255,25 @@ def main() -> int:
     manifest = json.loads((version_root / "manifest.json").read_text(encoding="utf-8"))
     if manifest["version"] != args.version:
         raise ValueError("manifest version does not match requested version")
+    source_config = version_root / manifest["source_config"]
+    if sha256_bytes(source_config.read_bytes()) != manifest["source_config_hash"]:
+        raise ValueError("translation source configuration changed")
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     validate_catalog(catalog)
+    unresolved = [
+        record["id"]
+        for record in manifest["records"]
+        if not record.get("native_ru_present", False)
+        and not any(
+            variant["source_hash"] == record["source_hash"]
+            and variant["source"] == record["source"]
+            for variant in catalog["entries"].get(record["id"], [])
+        )
+    ]
+    if unresolved:
+        raise ValueError(
+            f"manifest has {len(unresolved)} pending translations: {unresolved[:3]}"
+        )
     runtime_overrides_path = version_root / "runtime-audit-overrides.json"
     runtime_overrides: dict[str, dict[str, str]] = {}
     if runtime_overrides_path.exists():
@@ -234,7 +311,15 @@ def main() -> int:
         quest_count = build_quests(
             manifest, catalog, args.instance_root.resolve(), generated / "quests"
         )
-        item_count = build_items(manifest, catalog, runtime_overrides, resourcepack)
+        language_count = build_language_files(
+            manifest, catalog, runtime_overrides, resourcepack
+        )
+        patchouli_count = build_patchouli_files(
+            manifest,
+            catalog,
+            args.instance_root.resolve(),
+            resourcepack,
+        )
         if args.check:
             if snapshot(generated) != snapshot(destination):
                 raise ValueError("generated resources are not current")
@@ -247,17 +332,18 @@ def main() -> int:
         "version": args.version,
         "manifest_records": len(manifest["records"]),
         "catalog_hits": sum(
-            record["kind"] != "item_name" or not record["native_ru_present"]
+            not record.get("native_ru_present", False)
             for record in manifest["records"]
         ),
         "native_ru_coverage": sum(
-            record["kind"] == "item_name" and record["native_ru_present"]
+            record.get("native_ru_present", False)
             for record in manifest["records"]
         ),
         "pending": 0,
         "errors": 0,
         "output_quest_strings": quest_count,
-        "output_item_translation_keys": item_count,
+        "output_language_translation_keys": language_count,
+        "output_patchouli_strings": patchouli_count,
         "runtime_audit_translation_keys": sum(
             len(values) for values in runtime_overrides.values()
         ),
@@ -272,7 +358,8 @@ def main() -> int:
     else:
         report_path.write_bytes(json_bytes(report))
         print(
-            f"Built {quest_count} quest strings and {item_count} item keys "
+            f"Built {quest_count} quest strings, {language_count} language keys, "
+            f"and {patchouli_count} Patchouli strings "
             f"for {args.version}"
         )
     return 0
