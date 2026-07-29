@@ -1,0 +1,12 @@
+{
+  "block": [
+    "Explosion ignores blocks"
+  ],
+  "entity": [
+    "Power 1.5 explosion",
+    "0 Explosion Damage",
+    "Inverted explosion knockback"
+  ],
+  "text": "Редстоун отлично подходит для расстановки мобов в упорядоченные позиции, не причиняя им вреда.",
+  "title": "Редстоун"
+}

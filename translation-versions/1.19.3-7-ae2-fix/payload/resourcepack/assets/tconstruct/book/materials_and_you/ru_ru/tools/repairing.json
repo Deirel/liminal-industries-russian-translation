@@ -1,0 +1,55 @@
+{
+  "description": [
+    {
+      "text": "Чтобы починить инструмент, поместите его вместе с материалом головки в литейную станцию или литейную наковальню. Также можно использовать ремонтные наборы: они работают на верстаке и при щелчке ПКМ непосредственно по инструменту."
+    }
+  ],
+  "grid": [
+    [
+      {
+        "item": "tconstruct:pickaxe",
+        "nbt": {
+          "Damage": 70,
+          "tic_broken": false,
+          "tic_display": true,
+          "tic_materials": [
+            "tconstruct:ui_render#head",
+            "tconstruct:ui_render#handle",
+            "tconstruct:ui_render#extra"
+          ],
+          "tic_stats": {
+            "tconstruct:durability": 100
+          }
+        },
+        "type": "forge:nbt"
+      },
+      {
+        "item": "tconstruct:repair_kit",
+        "nbt": {
+          "Material": "tconstruct:ui_render#head",
+          "tic_display": true
+        },
+        "type": "forge:nbt"
+      }
+    ]
+  ],
+  "grid_size": "small",
+  "result": {
+    "item": "tconstruct:pickaxe",
+    "nbt": {
+      "Damage": 10,
+      "tic_broken": false,
+      "tic_display": true,
+      "tic_materials": [
+        "tconstruct:ui_render#head",
+        "tconstruct:ui_render#handle",
+        "tconstruct:ui_render#extra"
+      ],
+      "tic_stats": {
+        "tconstruct:durability": 100
+      }
+    },
+    "type": "forge:nbt"
+  },
+  "title": "Ремонт"
+}

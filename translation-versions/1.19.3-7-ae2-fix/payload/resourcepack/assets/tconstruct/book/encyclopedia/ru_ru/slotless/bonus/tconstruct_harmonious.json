@@ -1,0 +1,13 @@
+{
+  "effects": [
+    "Максимум 1 уровень",
+    "Бесслотовый"
+  ],
+  "modifier_id": "tconstruct:harmonious",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Даёт +1 слот для улучшений."
+    }
+  ]
+}

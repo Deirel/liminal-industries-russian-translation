@@ -1,0 +1,13 @@
+{
+  "effects": [
+    "Максимум 1 уровень",
+    "Без слотов"
+  ],
+  "modifier_id": "tconstruct:forecast",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Предоставляет +1 слот для улучшений."
+    }
+  ]
+}

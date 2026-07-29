@@ -1,12 +1,14 @@
 {
-  "catalog_hits": 5369,
+  "catalog_hits": 9347,
   "errors": 0,
-  "manifest_records": 19336,
-  "native_ru_coverage": 13967,
-  "output_language_translation_keys": 3395,
+  "manifest_records": 22470,
+  "native_ru_coverage": 13123,
+  "output_language_translation_keys": 3426,
+  "output_mantle_book_strings": 2480,
+  "output_manual_strings": 654,
   "output_patchouli_strings": 256,
   "output_quest_strings": 841,
   "pending": 0,
-  "runtime_audit_translation_keys": 225,
+  "runtime_audit_translation_keys": 256,
   "version": "1.19.3-7-ae2-fix"
 }

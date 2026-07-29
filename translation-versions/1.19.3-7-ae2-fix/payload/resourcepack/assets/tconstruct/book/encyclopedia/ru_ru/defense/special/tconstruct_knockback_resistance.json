@@ -1,0 +1,13 @@
+{
+  "effects": [
+    "Максимум 1 уровень за часть",
+    "Требуется 1 защитный слот"
+  ],
+  "modifier_id": "tconstruct:knockback_resistance",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Уменьшает значение получаемого отбрасывания на 10%."
+    }
+  ]
+}

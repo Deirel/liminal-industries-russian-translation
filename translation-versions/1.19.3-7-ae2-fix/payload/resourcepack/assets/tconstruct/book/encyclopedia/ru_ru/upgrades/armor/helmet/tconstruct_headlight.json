@@ -1,0 +1,13 @@
+{
+  "effects": [
+    "Один уровень",
+    "Требуется 1 слот для улучшений."
+  ],
+  "modifier_id": "tconstruct:headlight",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Визуально подсвечивает блоки вокруг вас."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "block": [
+    "Explosion ignores blocks"
+  ],
+  "entity": [
+    "Power 2 explosion",
+    "Up to 2 Explosion Damage",
+    "Inverted explosion knockback"
+  ],
+  "text": "Расплавленный сигналум отлично подходит для инвертированных взрывных атак с минимальным ущербом окружающей среде."
+}

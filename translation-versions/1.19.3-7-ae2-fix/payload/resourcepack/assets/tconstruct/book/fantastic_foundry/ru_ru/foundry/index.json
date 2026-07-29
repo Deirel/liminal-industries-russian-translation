@@ -1,0 +1,24 @@
+{
+  "hidden": [
+    "structurereq",
+    "fgui2"
+  ],
+  "operations": [
+    {
+      "action": "add_group",
+      "before": "features",
+      "data": "Подробности"
+    },
+    {
+      "action": "column_break",
+      "before": "scorched_tanks"
+    },
+    {
+      "action": "add_group",
+      "before": "scorched_tanks",
+      "data": "Блоки"
+    }
+  ],
+  "subText": "Нет ничего более фантастического, чем Литейная.",
+  "title": "Литейная печь"
+}

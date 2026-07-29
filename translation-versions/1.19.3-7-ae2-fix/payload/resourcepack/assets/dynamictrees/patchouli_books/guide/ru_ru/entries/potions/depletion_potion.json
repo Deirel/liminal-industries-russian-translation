@@ -7,7 +7,7 @@
       "bottle": "dynamictrees:dendro_potion",
       "ingredient": "minecraft:slime_ball",
       "output": "dynamictrees:dendro_potion{potion_index:1}",
-      "text": "Это зелье истощает почву и останавливает рост дерева.$(br2)Полезно для украшения небольшими деревьями.",
+      "text": "Это зелье истощает почву и останавливает рост дерева.$(br2)Так удобно украшать мир небольшими деревьями.",
       "title": "Зелье истощения",
       "type": "dynamictrees:brewing"
     }

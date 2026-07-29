@@ -38,3 +38,10 @@ mandatory = false
 versionRange = "[0,)"
 ordering = "BEFORE"
 side = "CLIENT"
+
+[[dependencies.${mod_id}]]
+modId = "actuallyadditions"
+mandatory = false
+versionRange = "[0,)"
+ordering = "BEFORE"
+side = "CLIENT"

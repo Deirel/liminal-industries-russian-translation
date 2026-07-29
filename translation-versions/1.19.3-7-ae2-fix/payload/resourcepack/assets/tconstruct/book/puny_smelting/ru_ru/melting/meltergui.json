@@ -1,0 +1,13 @@
+{
+  "image": {
+    "file": "tconstruct:book/images/meltergui.png",
+    "height": 81,
+    "width": 172
+  },
+  "text": [
+    {
+      "text": "Обычный интерфейс плавильной печи. Ни больше ни меньше."
+    }
+  ],
+  "title": "Интерфейс плавильной печи"
+}

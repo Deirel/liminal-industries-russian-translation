@@ -1,0 +1,29 @@
+{
+  "operations": [
+    {
+      "action": "add_group",
+      "before": "steel_shard",
+      "data": "Ресурсы"
+    },
+    {
+      "action": "column_break",
+      "before": "skyslime_island"
+    },
+    {
+      "action": "add_group",
+      "before": "skyslime_island",
+      "data": "Острова"
+    },
+    {
+      "action": "column_break",
+      "before": "skyslime_geode"
+    },
+    {
+      "action": "add_group",
+      "before": "skyslime_geode",
+      "data": "Жеоды"
+    }
+  ],
+  "subText": "Многие литейщики упоминают ресурсы, полезные для модификаторов или материалов для инструментов, но забывают рассказать, как их получить. К счастью, в своих путешествиях я нашел многие из них, поэтому могу передать вам свои находки.",
+  "title": "Исследования"
+}

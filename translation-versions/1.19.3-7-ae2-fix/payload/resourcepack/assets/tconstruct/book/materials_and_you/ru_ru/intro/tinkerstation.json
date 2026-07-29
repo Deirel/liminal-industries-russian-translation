@@ -1,0 +1,14 @@
+{
+  "image": {
+    "file": "tconstruct:book/images/tinkerstation.png",
+    "height": 72,
+    "width": 135
+  },
+  "text": [
+    {
+      "paragraph": true,
+      "text": "Это сюда, то туда... Ой, наоборот. Нужно продолжать мастерить."
+    }
+  ],
+  "title": "Литейная станция"
+}

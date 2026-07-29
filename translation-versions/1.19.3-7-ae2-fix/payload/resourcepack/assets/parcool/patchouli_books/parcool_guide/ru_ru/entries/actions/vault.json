@@ -12,11 +12,11 @@
       "images": [
         "parcool:textures/gui/entries/speed_vault.png"
       ],
-      "title": "Скоростной прыжок через препятствие$",
+      "title": "Скоростной прыжок через препятствие",
       "type": "patchouli:image"
     },
     {
-      "text": "$(bold)1.$() Выполните $(l:parcool:actions/fast_run)быстрый бег$()$(br)$(bold)2.$() Столкнитесь с блоком",
+      "text": "$(bold)1.$() Разбегитесь с помощью $(l:parcool:actions/fast_run)быстрого бега$()$(br)$(bold)2.$() Налетите на препятствие",
       "title": "Как выполнить",
       "type": "patchouli:text"
     }

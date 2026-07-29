@@ -1,0 +1,11 @@
+{
+  "block": [
+    "Explosion breaks blocks"
+  ],
+  "entity": [
+    "Power 2 explosion",
+    "Up to 3 Explosion Damage",
+    "Inverted explosion knockback"
+  ],
+  "text": "Пеплослизь течет не в ту сторону, и ее взрыв идет не в ту сторону."
+}

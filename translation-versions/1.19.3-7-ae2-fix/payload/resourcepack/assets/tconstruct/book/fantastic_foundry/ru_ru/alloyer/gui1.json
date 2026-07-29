@@ -1,0 +1,14 @@
+{
+  "image": {
+    "file": "tconstruct:book/images/alloyergui.png",
+    "height": 78,
+    "width": 166
+  },
+  "text": [
+    {
+      "paragraph": true,
+      "text": "Обычный интерфейс смешивателя, только компонентов в нём может быть больше или меньше"
+    }
+  ],
+  "title": "Графический интерфейс Смешивателя"
+}
