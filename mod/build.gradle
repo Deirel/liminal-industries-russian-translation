@@ -1,9 +1,6 @@
 import groovy.json.JsonSlurper
 
 plugins {
-    id 'eclipse'
-    id 'idea'
-    id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0.36,6.2)'
 }
 

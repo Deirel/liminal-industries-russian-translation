@@ -361,8 +361,6 @@ translation-versions/<version>/work/pending.tsv
 QUEST_GLOSSARY.md
 QUEST_GLOSSARY.tsv
 TRANSLATION_METHODOLOGY.md
-docs/QUEST_TRANSLATION.md
-docs/ITEM_TRANSLATION.md
 docs/UPDATING.md
 docs/PACKAGING.md
 ```

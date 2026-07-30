@@ -301,11 +301,9 @@ final class ItemTranslationAudit {
         RussianLanguageIndex russian,
         Language resourceEnglish
     ) {
-        return TranslationCoverage.isTranslated(
-            russian.values().containsKey(key),
-            runtimeTemplate,
-            resourceEnglish.getOrDefault(key)
-        );
+        return russian.values().containsKey(key)
+            || !runtimeTemplate.equals(resourceEnglish.getOrDefault(key))
+            || TranslationTemplate.isLanguageNeutral(runtimeTemplate);
     }
 
     record Result(boolean success, String message) {

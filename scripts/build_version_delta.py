@@ -12,14 +12,14 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-from build_initial_catalog import (
+from catalog_utils import (
     parse_snbt,
     require_string,
     sha256_bytes,
     source_hash,
     validate_catalog,
 )
-from extract_item_names import (
+from item_sources import (
     candidate_keys,
     load_blockstate_ids,
     load_item_model_ids,

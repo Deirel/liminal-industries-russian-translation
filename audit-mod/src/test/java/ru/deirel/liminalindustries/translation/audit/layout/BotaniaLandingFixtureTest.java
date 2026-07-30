@@ -44,7 +44,8 @@ class BotaniaLandingFixtureTest {
             lines,
             List.of(region("page", LayoutRegion.Kind.PAGE, 0, 0, 116, 156)),
             List.of(region("clip", LayoutRegion.Kind.SCISSOR, 0, 0, 116, 156)),
-            List.of(region("bottom-button", LayoutRegion.Kind.CONTROL, 0, 106, 116, 12))
+            List.of(region("bottom-button", LayoutRegion.Kind.CONTROL, 0, 106, 116, 12)),
+            List.of()
         );
         return LayoutAnalyzer.analyze(capture);
     }

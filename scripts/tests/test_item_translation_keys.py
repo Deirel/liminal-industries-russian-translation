@@ -13,7 +13,7 @@ from build_version_resources import (
     apply_resourcepack_overrides,
     build_language_files,
 )
-from extract_item_names import (
+from item_sources import (
     load_blockstate_ids,
     load_jar_languages,
     same_source_aliases,

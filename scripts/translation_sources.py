@@ -12,7 +12,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable
 
-from build_initial_catalog import sha256_bytes, source_hash
+from catalog_utils import sha256_bytes, source_hash
 
 
 SOURCE_CONFIG_SCHEMA = 1

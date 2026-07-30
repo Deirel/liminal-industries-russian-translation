@@ -29,16 +29,11 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
-public final class PatchouliLayoutAdapter implements LayoutAdapter {
+final class PatchouliLayoutAdapter {
     private static final double ENTRY_LABEL_SCALE = 0.5;
+    private static final String ENGINE = "patchouli";
 
-    @Override
-    public String engine() {
-        return "patchouli";
-    }
-
-    @Override
-    public List<LayoutScreen> screens(Minecraft minecraft) {
+    List<LayoutScreen> screens() {
         Set<ResourceLocation> selected = selectedBooks();
         List<LayoutScreen> result = new ArrayList<>();
         BookRegistry.INSTANCE.books.values().stream()
@@ -48,8 +43,7 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
         return List.copyOf(result);
     }
 
-    @Override
-    public void resetAfterAudit(Minecraft minecraft) {
+    void resetAfterAudit() {
         Set<ResourceLocation> selected = selectedBooks();
         BookRegistry.INSTANCE.books.values().stream()
             .filter(book -> selected.contains(book.id))
@@ -61,14 +55,13 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
 
     private Set<ResourceLocation> selectedBooks() {
         return TranslationAuditIndex
-            .screenRecords(engine())
+            .screenRecords(ENGINE)
             .stream()
             .map(TranslationAuditIndex.ScreenRecord::bookId)
             .collect(java.util.stream.Collectors.toSet());
     }
 
-    @Override
-    public LayoutCapture capture(
+    LayoutCapture capture(
         Minecraft minecraft,
         LayoutScreen target,
         Screen screen,
@@ -111,7 +104,7 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             scale
         );
         return new LayoutCapture(
-            engine(),
+            ENGINE,
             target.book(),
             target.id(),
             target.resource(),
@@ -217,7 +210,7 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
         java.util.function.Supplier<Screen> factory
     ) {
         TranslationAuditIndex.ScreenRecord indexed = TranslationAuditIndex
-            .screenRecords(engine())
+            .screenRecords(ENGINE)
             .stream()
             .filter(record -> record.bookId().equals(book.id))
             .filter(record -> matches(record, book, suffix, entry))
@@ -225,9 +218,9 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             .min(Comparator.comparingInt(record -> sourceRank(record, page, null)))
             .orElse(null);
         return new LayoutScreen(
-            engine(),
+            ENGINE,
             book.id.toString(),
-            engine() + ":" + book.id + ":" + suffix,
+            ENGINE + ":" + book.id + ":" + suffix,
             indexed == null ? "<runtime>" : indexed.resource(),
             entry,
             page,
@@ -572,7 +565,7 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
     }
 
     private String indexedEntryNameSource(BookEntry entry, String fallback) {
-        return TranslationAuditIndex.screenRecords(engine()).stream()
+        return TranslationAuditIndex.screenRecords(ENGINE).stream()
             .filter(record -> record.bookId().equals(entry.getBook().id))
             .filter(record -> sameEntry(record.entry(), entry.getId().toString()))
             .min(Comparator.comparingInt(record -> sourceRank(record, null, "/name")))
@@ -586,7 +579,7 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
         String preferredSuffix
     ) {
         ResourceLocation bookId = ResourceLocation.parse(target.book());
-        return TranslationAuditIndex.screenRecords(engine()).stream()
+        return TranslationAuditIndex.screenRecords(ENGINE).stream()
             .filter(record -> record.bookId().equals(bookId))
             .filter(record -> sameEntry(record.entry(), target.entry()))
             .filter(record -> record.page() == null || record.page() == page)

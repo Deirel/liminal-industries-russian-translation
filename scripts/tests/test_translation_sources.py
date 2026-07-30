@@ -24,7 +24,7 @@ from build_version_resources import (
     build_mantle_book_language_files,
     build_patchouli_files,
 )
-from build_initial_catalog import sha256_bytes, source_hash
+from catalog_utils import sha256_bytes, source_hash
 
 
 class SourceConfigurationTest(unittest.TestCase):

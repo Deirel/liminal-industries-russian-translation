@@ -23,13 +23,11 @@ public final class LayoutAuditRunner {
     private final Minecraft minecraft;
     private final Screen returnScreen;
     private final String originalLanguage;
-    private final List<LayoutAdapter> adapters = List.of(
-        new PatchouliLayoutAdapter()
-    );
+    private final PatchouliLayoutAdapter adapter = new PatchouliLayoutAdapter();
     private final List<LayoutCapture> captures = new ArrayList<>();
     private final List<LayoutIssue> englishIssues = new ArrayList<>();
     private final List<LayoutIssue> russianIssues = new ArrayList<>();
-    private List<Target> targets = List.of();
+    private List<LayoutScreen> targets = List.of();
     private int targetIndex;
     private int stableFrames;
     private String language;
@@ -106,13 +104,7 @@ public final class LayoutAuditRunner {
 
     private void preparePass() {
         reloading = false;
-        List<Target> discovered = new ArrayList<>();
-        for (LayoutAdapter adapter : adapters) {
-            for (LayoutScreen screen : adapter.screens(minecraft)) {
-                discovered.add(new Target(adapter, screen));
-            }
-        }
-        targets = List.copyOf(discovered);
+        targets = adapter.screens();
         targetIndex = 0;
         if (targets.isEmpty()) {
             fail("Не найдено ни одного экрана книги для " + language, null);
@@ -123,7 +115,7 @@ public final class LayoutAuditRunner {
 
     private void openCurrent() {
         stableFrames = 0;
-        Screen screen = targets.get(targetIndex).screen().factory().get();
+        Screen screen = targets.get(targetIndex).factory().get();
         minecraft.setScreen(screen);
     }
 
@@ -131,7 +123,7 @@ public final class LayoutAuditRunner {
         if (complete || reloading || targetIndex >= targets.size()) {
             return;
         }
-        Target target = targets.get(targetIndex);
+        LayoutScreen target = targets.get(targetIndex);
         if (rendered != minecraft.screen) {
             return;
         }
@@ -139,9 +131,9 @@ public final class LayoutAuditRunner {
             return;
         }
         try {
-            LayoutCapture capture = target.adapter().capture(
+            LayoutCapture capture = adapter.capture(
                 minecraft,
-                target.screen(),
+                target,
                 rendered,
                 language
             );
@@ -154,7 +146,7 @@ public final class LayoutAuditRunner {
             }
             (language.equals("en_us") ? englishIssues : russianIssues).addAll(issues);
         } catch (RuntimeException exception) {
-            fail("Ошибка захвата экрана " + target.screen().id(), exception);
+            fail("Ошибка захвата экрана " + target.id(), exception);
             return;
         }
         targetIndex++;
@@ -312,22 +304,16 @@ public final class LayoutAuditRunner {
     }
 
     private void resetAdapterState() {
-        for (LayoutAdapter adapter : adapters) {
-            try {
-                adapter.resetAfterAudit(minecraft);
-            } catch (RuntimeException exception) {
-                LiminalIndustriesTranslationAuditMod.LOGGER.warn(
-                    "Не удалось сбросить состояние книг после аудита: "
-                        + adapter.engine(),
-                    exception
-                );
-            }
+        try {
+            adapter.resetAfterAudit();
+        } catch (RuntimeException exception) {
+            LiminalIndustriesTranslationAuditMod.LOGGER.warn(
+                "Не удалось сбросить состояние книг после аудита: Patchouli",
+                exception
+            );
         }
     }
 
     public record StartResult(boolean started, String message) {
-    }
-
-    private record Target(LayoutAdapter adapter, LayoutScreen screen) {
     }
 }

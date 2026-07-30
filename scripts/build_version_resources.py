@@ -14,8 +14,8 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
-from build_initial_catalog import SnbtParser, sha256_bytes, validate_catalog
-from extract_quest_texts import extract_records
+from catalog_utils import SnbtParser, sha256_bytes, validate_catalog
+from quest_sources import extract_records
 from translation_sources import json_pointer_set, parse_mantle_language
 
 

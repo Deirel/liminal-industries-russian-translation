@@ -61,7 +61,8 @@ class LayoutAnalyzerTest {
             List.of(text),
             pages,
             scissors,
-            controls
+            controls,
+            List.of()
         );
 
         assertEquals(

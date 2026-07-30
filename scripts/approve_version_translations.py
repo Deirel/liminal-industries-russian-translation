@@ -11,7 +11,7 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
-from build_initial_catalog import source_hash, validate_catalog
+from catalog_utils import source_hash, validate_catalog
 
 
 TOKEN_RE = re.compile(
