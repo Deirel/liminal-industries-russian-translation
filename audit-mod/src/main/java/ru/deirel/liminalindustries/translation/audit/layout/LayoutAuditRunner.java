@@ -163,17 +163,22 @@ public final class LayoutAuditRunner {
                 captures,
                 classified
             );
-            long failures = classified.stream()
+            long translationFailures = classified.stream()
                 .filter(issue ->
                     issue.classification()
                         == LayoutIssue.Classification.TRANSLATION_LAYOUT
                 )
                 .filter(issue -> issue.severity() == LayoutIssue.Severity.ERROR)
                 .count();
+            long missingContentFailures =
+                LayoutReportWriter.missingContentErrors(classified);
+            long failures = LayoutReportWriter.blockingErrors(classified);
             completionMessage = "Аудит верстки "
                 + (failures == 0 ? "пройден" : "не пройден")
                 + ": " + captures.size() + " экранов, "
-                + failures + " ошибок перевода. Отчёт: " + output.toAbsolutePath();
+                + failures + " ошибок (перевод: " + translationFailures
+                + ", содержимое: " + missingContentFailures
+                + "). Отчёт: " + output.toAbsolutePath();
             complete = true;
             restore();
             if (minecraft.player != null) {

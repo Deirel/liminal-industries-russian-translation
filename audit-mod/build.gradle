@@ -267,7 +267,7 @@ tasks.register('runLayoutAuditClient') {
         def result = new JsonSlurper().parse(report)
         if (result.result != 'PASS') {
             throw new GradleException(
-                "Book layout audit failed with ${result.translation_errors} errors"
+                "Book layout audit failed with ${result.blocking_errors} errors"
             )
         }
     }

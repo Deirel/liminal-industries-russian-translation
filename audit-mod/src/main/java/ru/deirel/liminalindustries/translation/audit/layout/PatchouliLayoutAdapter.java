@@ -15,6 +15,7 @@ import vazkii.patchouli.client.book.gui.GuiBook;
 import vazkii.patchouli.client.book.gui.GuiBookCategory;
 import vazkii.patchouli.client.book.gui.GuiBookEntry;
 import vazkii.patchouli.client.book.gui.GuiBookLanding;
+import vazkii.patchouli.client.book.page.abstr.PageDoubleRecipe;
 import vazkii.patchouli.client.book.text.Word;
 import vazkii.patchouli.common.book.Book;
 import vazkii.patchouli.common.book.BookRegistry;
@@ -105,10 +106,7 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             int pageNumber = field(page, "pageNum", Integer.class);
             String side = page.left < 136 ? "left" : "right";
             for (PatchouliRecipeReferences.MissingReference missing :
-                PatchouliRecipeReferences.missing(
-                    page.sourceObject,
-                    id -> minecraft.level.getRecipeManager().byKey(id).isPresent()
-                )) {
+                missingRecipeReferences(minecraft, page)) {
                 result.add(new LayoutRegion(
                     "missing-recipe-" + pageNumber + "-" + missing.recipe(),
                     LayoutRegion.Kind.TEXT,
@@ -122,6 +120,22 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             }
         }
         return List.copyOf(result);
+    }
+
+    private List<PatchouliRecipeReferences.MissingReference>
+        missingRecipeReferences(Minecraft minecraft, BookPage page) {
+        if (page instanceof PageDoubleRecipe<?>) {
+            return PatchouliRecipeReferences.missingResolved(
+                optionalField(page, "recipeId", ResourceLocation.class),
+                optionalField(page, "recipe1", Object.class),
+                optionalField(page, "recipe2Id", ResourceLocation.class),
+                optionalField(page, "recipe2", Object.class)
+            );
+        }
+        return PatchouliRecipeReferences.missing(
+            page.sourceObject,
+            id -> minecraft.level.getRecipeManager().byKey(id).isPresent()
+        );
     }
 
     private void addBook(List<LayoutScreen> result, Book book) {

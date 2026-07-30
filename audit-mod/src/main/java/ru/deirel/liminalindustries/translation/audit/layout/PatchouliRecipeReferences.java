@@ -41,6 +41,22 @@ final class PatchouliRecipeReferences {
         return List.copyOf(result);
     }
 
+    static List<MissingReference> missingResolved(
+        ResourceLocation recipe,
+        Object resolvedRecipe,
+        ResourceLocation recipe2,
+        Object resolvedRecipe2
+    ) {
+        List<MissingReference> result = new ArrayList<>(2);
+        if (recipe != null && resolvedRecipe == null) {
+            result.add(new MissingReference("recipe", recipe));
+        }
+        if (recipe2 != null && resolvedRecipe2 == null) {
+            result.add(new MissingReference("recipe2", recipe2));
+        }
+        return List.copyOf(result);
+    }
+
     private static boolean isRecipePage(JsonObject page) {
         JsonElement type = page.get("type");
         if (type == null || !type.isJsonPrimitive()) {

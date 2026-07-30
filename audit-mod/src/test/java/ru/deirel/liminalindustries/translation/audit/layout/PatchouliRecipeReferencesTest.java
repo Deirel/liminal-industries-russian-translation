@@ -67,4 +67,20 @@ class PatchouliRecipeReferencesTest {
                 .recipe()
         );
     }
+
+    @Test
+    void trustsTheResolvedRecipeSlotInsteadOfIdExistenceAlone() {
+        ResourceLocation id = ResourceLocation.parse("botania:fertilizer_dye");
+
+        List<PatchouliRecipeReferences.MissingReference> missing =
+            PatchouliRecipeReferences.missingResolved(
+                id,
+                null,
+                null,
+                null
+            );
+
+        assertEquals(1, missing.size());
+        assertEquals(id, missing.get(0).recipe());
+    }
 }

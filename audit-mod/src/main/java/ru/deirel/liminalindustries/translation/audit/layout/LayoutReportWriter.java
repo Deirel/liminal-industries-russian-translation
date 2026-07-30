@@ -33,12 +33,15 @@ public final class LayoutReportWriter {
         JsonObject root = new JsonObject();
         long translationErrors = issues.stream()
             .filter(issue -> issue.severity() == LayoutIssue.Severity.ERROR)
+            .filter(issue -> issue.rule() != LayoutIssue.Rule.MISSING_CONTENT)
             .filter(issue ->
                 issue.classification() == LayoutIssue.Classification.TRANSLATION_LAYOUT
             )
             .count();
+        long missingContentErrors = missingContentErrors(issues);
+        long blockingErrors = blockingErrors(issues);
         root.addProperty("schema", 1);
-        root.addProperty("result", translationErrors == 0 ? "PASS" : "FAIL");
+        root.addProperty("result", blockingErrors == 0 ? "PASS" : "FAIL");
         root.addProperty("generated_at", Instant.now().toString());
         root.addProperty(
             "minecraft_version",
@@ -46,7 +49,9 @@ public final class LayoutReportWriter {
         );
         root.addProperty("checked_screens", captures.size());
         root.addProperty("issues", issues.size());
+        root.addProperty("blocking_errors", blockingErrors);
         root.addProperty("translation_errors", translationErrors);
+        root.addProperty("missing_content_errors", missingContentErrors);
 
         JsonArray screens = new JsonArray();
         captures.forEach(capture -> {
@@ -78,6 +83,30 @@ public final class LayoutReportWriter {
         );
         writeHtml(output.getParent(), issues);
         return output;
+    }
+
+    static long blockingErrors(List<LayoutIssue> issues) {
+        long translationErrors = issues.stream()
+            .filter(issue -> issue.severity() == LayoutIssue.Severity.ERROR)
+            .filter(issue -> issue.rule() != LayoutIssue.Rule.MISSING_CONTENT)
+            .filter(issue ->
+                issue.classification() == LayoutIssue.Classification.TRANSLATION_LAYOUT
+            )
+            .count();
+        return translationErrors + missingContentErrors(issues);
+    }
+
+    static long missingContentErrors(List<LayoutIssue> issues) {
+        return issues.stream()
+            .filter(issue -> issue.severity() == LayoutIssue.Severity.ERROR)
+            .filter(issue -> issue.rule() == LayoutIssue.Rule.MISSING_CONTENT)
+            .map(LayoutReportWriter::contentIssueKey)
+            .distinct()
+            .count();
+    }
+
+    private static String contentIssueKey(LayoutIssue issue) {
+        return issue.screenId() + "\u0000" + issue.text().id();
     }
 
     private static void writeHtml(Path directory, List<LayoutIssue> issues)
