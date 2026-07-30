@@ -30,7 +30,7 @@
       "type": "patchouli:spotlight",
       "item": "actuallyadditions:atomic_reconstructor",
       "text": "booklet.actuallyadditions.chapter.crystals.text.6",
-      "title": "Atomic Reconstructor"
+      "title": "block.actuallyadditions.atomic_reconstructor"
     },
     {
       "type": "actuallyadditions:reconstructor",
@@ -54,7 +54,7 @@
       "type": "patchouli:spotlight",
       "item": "actuallyadditions:void_crystal",
       "text": "booklet.actuallyadditions.chapter.crystals.void_recipe_note",
-      "title": "Void Crystals"
+      "title": "item.actuallyadditions.void_crystal"
     },
     {
       "type": "actuallyadditions:reconstructor",
