@@ -2,10 +2,21 @@
   "schema": 1,
   "translations": {
     "actuallyadditions": {
+      "booklet.actuallyadditions.chapter.crystals.void_recipe_note": "Атомный реконструктор превращает чёрный кварц в кристалл Пустоты, а блок чёрного кварца — в блок кристалла Пустоты.",
       "fluid_type.actuallyadditions.canola_oil": "Рапсовое масло",
       "fluid_type.actuallyadditions.crystallized_oil": "Кристаллизованное масло",
       "fluid_type.actuallyadditions.empowered_oil": "Насыщенное масло",
       "fluid_type.actuallyadditions.refined_canola_oil": "Очищенное рапсовое масло"
+    },
+    "botania": {
+      "botania.challenge.fullCropFarm": "Ферма всех культур",
+      "botania.challenge.potionBrewer": "Автозельеварение",
+      "botania.challenge.pureDaisy": "Автоферма маргаритки",
+      "botania.challenge.runeCrafter.desc": "Создайте полностью автоматическую систему, которая по запросу создаёт любые $(l:basics/rune_altar#rune)руны$(/l) или поддерживает их запас, включая подачу материалов. Бонус: используйте только один рунический алтарь.$(p)Для этого испытания нужно быть немного безумным.",
+      "botania.entry.dreamwoodSpreader": "Эльфийский распространитель",
+      "botania.entry.fIntro": "Функциональная флора",
+      "botania.entry.gIntro": "Генерирующая флора",
+      "botania.landing": "Ботания — технический мод о природной магии. Создавайте волшебные цветы и устройства, питаемые силой земли — $(thing)маной$()."
     },
     "ceramicbucket": {
       "item.ceramicbucket.ceramic_bucket.filled": "Керамическое ведро: %s"
