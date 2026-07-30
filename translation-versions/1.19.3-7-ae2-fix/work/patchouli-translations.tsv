@@ -176,7 +176,7 @@ patchouli-json:parcool:parcool_guide:entries/actions/slide.json:/pages/2/text	sh
 patchouli-json:parcool:parcool_guide:entries/actions/slide.json:/pages/2/title	sha256:97666357604928b175f2941ae20cc135fe62f3a9244ae4471f3a92fe15427edb	Как выполнить
 patchouli-json:parcool:parcool_guide:entries/actions/vault.json:/name	sha256:5d55c415e356dd7b59f329aa5c83a34ee10c3803516ac569fde5e68804a7e06c	Прыжок через препятствие
 patchouli-json:parcool:parcool_guide:entries/actions/vault.json:/pages/0/text	sha256:d0e577f439cc90df26749996722d6a42ea7024d0ec155d015e8cf4769f6e361c	$(bold)Прыжок через препятствие$() помогает преодолевать препятствия, например заборы.$(br)У приёма много вариантов. В игре доступны $(italic)скоростной прыжок через препятствие$() и $(italic)прыжок Конга$()
-patchouli-json:parcool:parcool_guide:entries/actions/vault.json:/pages/1/title	sha256:b7bc6e649a12a9c561f87c2f4d6056f927412bfa6d0c7e0c7cec57e8656711f4	Скоростной прыжок через препятствие
+patchouli-json:parcool:parcool_guide:entries/actions/vault.json:/pages/1/title	sha256:b7bc6e649a12a9c561f87c2f4d6056f927412bfa6d0c7e0c7cec57e8656711f4	Скоростной прыжок
 patchouli-json:parcool:parcool_guide:entries/actions/vault.json:/pages/2/text	sha256:7fed34fdd6c3d0515f884769c511fe183122535674400dab44b9e7ad0f1f4236	$(bold)1.$() Разбегитесь с помощью $(l:parcool:actions/fast_run)быстрого бега$()$(br)$(bold)2.$() Налетите на препятствие
 patchouli-json:parcool:parcool_guide:entries/actions/vault.json:/pages/2/title	sha256:97666357604928b175f2941ae20cc135fe62f3a9244ae4471f3a92fe15427edb	Как выполнить
 patchouli-json:parcool:parcool_guide:entries/actions/wall_jump.json:/name	sha256:0620cbd3999e2a52cc5272127952f45c020667a87df1ec1ac432855c810096a7	Прыжок от стены

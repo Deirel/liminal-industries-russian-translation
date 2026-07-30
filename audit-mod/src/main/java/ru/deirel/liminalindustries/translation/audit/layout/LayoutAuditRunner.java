@@ -10,8 +10,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
+import java.util.stream.Collectors;
 
 public final class LayoutAuditRunner {
     private static final int STABLE_FRAMES = 3;
@@ -50,6 +53,19 @@ public final class LayoutAuditRunner {
         }
         LayoutAuditRunner runner = new LayoutAuditRunner(minecraft);
         active = runner;
+        try {
+            runner.prepareOutput();
+        } catch (RuntimeException exception) {
+            active = null;
+            LiminalIndustriesTranslationAuditMod.LOGGER.error(
+                "Не удалось подготовить каталог аудита верстки",
+                exception
+            );
+            return new StartResult(
+                false,
+                "Не удалось подготовить каталог аудита верстки."
+            );
+        }
         runner.switchLanguage("en_us");
         return new StartResult(true, "Аудит верстки запущен: en_us, затем ru_ru.");
     }
@@ -156,7 +172,15 @@ public final class LayoutAuditRunner {
         englishIssues.stream()
             .map(issue -> issue.classify(LayoutIssue.Classification.UPSTREAM_LAYOUT))
             .forEach(classified::add);
-        classified.addAll(LayoutIssueClassifier.classify(englishIssues, russianIssues));
+        Set<String> englishScreens = captures.stream()
+            .filter(capture -> capture.language().equals("en_us"))
+            .map(LayoutCapture::screenId)
+            .collect(Collectors.toSet());
+        classified.addAll(LayoutIssueClassifier.classify(
+            englishIssues,
+            russianIssues,
+            englishScreens
+        ));
         try {
             Path output = LayoutReportWriter.write(
                 minecraft.gameDirectory.toPath(),
@@ -197,8 +221,7 @@ public final class LayoutAuditRunner {
     private void takeScreenshot(String name) {
         Path directory = minecraft.gameDirectory.toPath()
             .resolve(LayoutReportWriter.REPORT_PATH)
-            .getParent()
-            .resolve("screenshots");
+            .getParent();
         try {
             Files.createDirectories(directory);
             Screenshot.grab(
@@ -210,6 +233,42 @@ public final class LayoutAuditRunner {
             );
         } catch (IOException exception) {
             throw new IllegalStateException("Could not prepare screenshot directory", exception);
+        }
+    }
+
+    private void prepareOutput() {
+        Path report = minecraft.gameDirectory.toPath()
+            .resolve(LayoutReportWriter.REPORT_PATH);
+        Path directory = report.getParent()
+            .resolve("screenshots");
+        try {
+            Files.deleteIfExists(report);
+            Files.deleteIfExists(report.resolveSibling("book-layout-audit.html"));
+        } catch (IOException exception) {
+            throw new IllegalStateException(
+                "Could not remove stale layout audit report",
+                exception
+            );
+        }
+        if (!Files.exists(directory)) {
+            return;
+        }
+        try (var paths = Files.walk(directory)) {
+            paths.sorted(Comparator.reverseOrder()).forEach(path -> {
+                try {
+                    Files.delete(path);
+                } catch (IOException exception) {
+                    throw new IllegalStateException(
+                        "Could not remove stale screenshot " + path,
+                        exception
+                    );
+                }
+            });
+        } catch (IOException exception) {
+            throw new IllegalStateException(
+                "Could not clean screenshot directory " + directory,
+                exception
+            );
         }
     }
 
@@ -238,11 +297,32 @@ public final class LayoutAuditRunner {
     }
 
     private void restore() {
+        CompletableFuture<Void> reload = null;
         if (!minecraft.getLanguageManager().getSelected().equals(originalLanguage)) {
             minecraft.getLanguageManager().setSelected(originalLanguage);
-            minecraft.reloadResourcePacks();
+            reload = minecraft.reloadResourcePacks();
         }
         minecraft.setScreen(returnScreen);
+        resetAdapterState();
+        if (reload != null) {
+            reload.whenComplete((ignored, exception) ->
+                minecraft.execute(this::resetAdapterState)
+            );
+        }
+    }
+
+    private void resetAdapterState() {
+        for (LayoutAdapter adapter : adapters) {
+            try {
+                adapter.resetAfterAudit(minecraft);
+            } catch (RuntimeException exception) {
+                LiminalIndustriesTranslationAuditMod.LOGGER.warn(
+                    "Не удалось сбросить состояние книг после аудита: "
+                        + adapter.engine(),
+                    exception
+                );
+            }
+        }
     }
 
     public record StartResult(boolean started, String message) {

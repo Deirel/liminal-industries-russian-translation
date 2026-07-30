@@ -12,7 +12,7 @@
       "images": [
         "parcool:textures/gui/entries/speed_vault.png"
       ],
-      "title": "Скоростной прыжок через препятствие",
+      "title": "Скоростной прыжок",
       "type": "patchouli:image"
     },
     {

@@ -11,7 +11,10 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Instant;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public final class LayoutReportWriter {
     public static final Path REPORT_PATH = Path.of(
@@ -38,6 +41,12 @@ public final class LayoutReportWriter {
                 issue.classification() == LayoutIssue.Classification.TRANSLATION_LAYOUT
             )
             .count();
+        long unpairedErrors = issues.stream()
+            .filter(issue -> issue.severity() == LayoutIssue.Severity.ERROR)
+            .filter(issue ->
+                issue.classification() == LayoutIssue.Classification.UNPAIRED_LANGUAGE
+            )
+            .count();
         long missingContentErrors = missingContentErrors(issues);
         long blockingErrors = blockingErrors(issues);
         root.addProperty("schema", 1);
@@ -52,6 +61,7 @@ public final class LayoutReportWriter {
         root.addProperty("blocking_errors", blockingErrors);
         root.addProperty("translation_errors", translationErrors);
         root.addProperty("missing_content_errors", missingContentErrors);
+        root.addProperty("unpaired_language_errors", unpairedErrors);
 
         JsonArray screens = new JsonArray();
         captures.forEach(capture -> {
@@ -73,8 +83,38 @@ public final class LayoutReportWriter {
         });
         root.add("screens", screens);
 
+        Map<String, LayoutCapture> captureIndex = new LinkedHashMap<>();
+        captures.forEach(capture -> captureIndex.put(
+            captureKey(capture.language(), capture.screenId()),
+            capture
+        ));
         JsonArray issueValues = new JsonArray();
-        issues.forEach(issue -> issueValues.add(GSON.toJsonTree(issue)));
+        issues.forEach(issue -> {
+            JsonObject value = GSON.toJsonTree(issue).getAsJsonObject();
+            LayoutCapture capture = captureIndex.get(captureKey(
+                issue.language(),
+                issue.screenId()
+            ));
+            if (capture != null) {
+                value.addProperty("engine", capture.engine());
+                value.addProperty("book", capture.book());
+                value.addProperty("resource", capture.resource());
+                value.addProperty("entry", capture.entry());
+                if (capture.page() != null) {
+                    value.addProperty("page", capture.page());
+                }
+                value.addProperty(
+                    "text_source",
+                    issue.text().source() == null
+                        ? capture.textSource()
+                        : issue.text().source()
+                );
+                value.addProperty("width", capture.screenWidth());
+                value.addProperty("height", capture.screenHeight());
+                value.addProperty("gui_scale", capture.guiScale());
+            }
+            issueValues.add(value);
+        });
         root.add("issue_details", issueValues);
         Files.writeString(
             output,
@@ -117,13 +157,35 @@ public final class LayoutReportWriter {
                 + "img{max-width:100%;border:1px solid #999}code{font-size:12px}</style>"
                 + "<h1>Book layout audit</h1>"
         );
-        for (LayoutIssue issue : issues) {
+        Map<String, List<LayoutIssue>> grouped = new LinkedHashMap<>();
+        issues.forEach(issue -> grouped.computeIfAbsent(
+            captureKey(issue.language(), issue.screenId()),
+            ignored -> new java.util.ArrayList<>()
+        ).add(issue));
+        for (List<LayoutIssue> screenIssues : grouped.values()) {
+            LayoutIssue issue = screenIssues.get(0);
+            String classifications = screenIssues.stream()
+                .map(LayoutIssue::classification)
+                .map(Enum::name)
+                .distinct()
+                .sorted()
+                .collect(Collectors.joining(", "));
+            String rules = screenIssues.stream()
+                .map(LayoutIssue::rule)
+                .map(Enum::name)
+                .distinct()
+                .sorted()
+                .collect(Collectors.joining(", "));
             html.append("<section><h2>")
-                .append(escape(issue.rule().name()))
-                .append("</h2><p><code>")
                 .append(escape(issue.screenId()))
+                .append("</h2><p><code>")
+                .append(escape(issue.language()))
                 .append("</code> ")
-                .append(escape(issue.classification().name()))
+                .append(escape(classifications))
+                .append(" ")
+                .append(screenIssues.size())
+                .append(" issue(s): ")
+                .append(escape(rules))
                 .append("</p>");
             if (issue.screenshot() != null) {
                 html.append("<a href=\"")
@@ -139,6 +201,10 @@ public final class LayoutReportWriter {
             html.toString(),
             StandardCharsets.UTF_8
         );
+    }
+
+    private static String captureKey(String language, String screenId) {
+        return language + "\u0000" + screenId;
     }
 
     private static String escape(String value) {

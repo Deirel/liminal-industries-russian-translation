@@ -5,6 +5,7 @@ import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraft.resources.ResourceLocation;
 import ru.deirel.liminalindustries.translation.audit.TranslationAuditIndex;
 import vazkii.patchouli.client.book.BookCategory;
@@ -15,7 +16,9 @@ import vazkii.patchouli.client.book.gui.GuiBook;
 import vazkii.patchouli.client.book.gui.GuiBookCategory;
 import vazkii.patchouli.client.book.gui.GuiBookEntry;
 import vazkii.patchouli.client.book.gui.GuiBookLanding;
+import vazkii.patchouli.client.book.gui.button.GuiButtonEntry;
 import vazkii.patchouli.client.book.page.abstr.PageDoubleRecipe;
+import vazkii.patchouli.client.book.page.abstr.PageWithText;
 import vazkii.patchouli.client.book.text.Word;
 import vazkii.patchouli.common.book.Book;
 import vazkii.patchouli.common.book.BookRegistry;
@@ -27,6 +30,8 @@ import java.util.List;
 import java.util.Set;
 
 public final class PatchouliLayoutAdapter implements LayoutAdapter {
+    private static final double ENTRY_LABEL_SCALE = 0.5;
+
     @Override
     public String engine() {
         return "patchouli";
@@ -34,17 +39,32 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
 
     @Override
     public List<LayoutScreen> screens(Minecraft minecraft) {
-        Set<ResourceLocation> selected = TranslationAuditIndex
-            .screenRecords(engine())
-            .stream()
-            .map(TranslationAuditIndex.ScreenRecord::bookId)
-            .collect(java.util.stream.Collectors.toSet());
+        Set<ResourceLocation> selected = selectedBooks();
         List<LayoutScreen> result = new ArrayList<>();
         BookRegistry.INSTANCE.books.values().stream()
             .filter(book -> selected.contains(book.id))
             .sorted(Comparator.comparing(book -> book.id.toString()))
             .forEach(book -> addBook(result, book));
         return List.copyOf(result);
+    }
+
+    @Override
+    public void resetAfterAudit(Minecraft minecraft) {
+        Set<ResourceLocation> selected = selectedBooks();
+        BookRegistry.INSTANCE.books.values().stream()
+            .filter(book -> selected.contains(book.id))
+            .forEach(book -> {
+                book.getContents().guiStack.clear();
+                book.getContents().currentGui = null;
+            });
+    }
+
+    private Set<ResourceLocation> selectedBooks() {
+        return TranslationAuditIndex
+            .screenRecords(engine())
+            .stream()
+            .map(TranslationAuditIndex.ScreenRecord::bookId)
+            .collect(java.util.stream.Collectors.toSet());
     }
 
     @Override
@@ -58,15 +78,32 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             throw new IllegalStateException("Patchouli did not open a GuiBook screen");
         }
         double scale = field(gui, "scaleFactor", Float.class);
+        int pageTop = gui instanceof GuiBookEntry ? 14 : 0;
+        int pageHeight = gui instanceof GuiBookEntry ? 160 : 180;
         List<LayoutRegion> pages = List.of(
-            region(gui, scale, "left", LayoutRegion.Kind.PAGE, 15, 18, 116, 156),
-            region(gui, scale, "right", LayoutRegion.Kind.PAGE, 141, 18, 116, 156)
+            region(
+                gui,
+                scale,
+                "left",
+                LayoutRegion.Kind.PAGE,
+                15,
+                pageTop,
+                116,
+                pageHeight
+            ),
+            region(
+                gui,
+                scale,
+                "right",
+                LayoutRegion.Kind.PAGE,
+                141,
+                pageTop,
+                116,
+                pageHeight
+            )
         );
-        List<LayoutRegion> scissors = List.of(
-            region(gui, scale, "left", LayoutRegion.Kind.SCISSOR, 15, 18, 116, 156),
-            region(gui, scale, "right", LayoutRegion.Kind.SCISSOR, 141, 18, 116, 156)
-        );
-        List<LayoutRegion> text = captureText(gui, scale);
+        List<LayoutRegion> scissors = List.of();
+        List<LayoutRegion> text = captureText(gui, scale, target);
         List<LayoutRegion> controls = captureControls(gui, scale);
         List<LayoutRegion> missingContent = captureMissingContent(
             minecraft,
@@ -185,7 +222,7 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             .filter(record -> record.bookId().equals(book.id))
             .filter(record -> matches(record, book, suffix, entry))
             .filter(record -> page == null || record.page() == null || record.page().equals(page))
-            .findFirst()
+            .min(Comparator.comparingInt(record -> sourceRank(record, page, null)))
             .orElse(null);
         return new LayoutScreen(
             engine(),
@@ -223,58 +260,167 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
         return false;
     }
 
-    private List<LayoutRegion> captureText(GuiBook gui, double scale) {
+    private List<LayoutRegion> captureText(
+        GuiBook gui,
+        double scale,
+        LayoutScreen target
+    ) {
         List<LayoutRegion> result = new ArrayList<>();
-        List<BookTextRenderer> renderers = new ArrayList<>();
-        findRenderers(gui, renderers);
-        activePages(gui).forEach(page -> findRenderers(page, renderers));
-        int rendererIndex = 0;
-        for (BookTextRenderer renderer : renderers) {
+        List<RendererContext> renderers = new ArrayList<>();
+        findRenderers(gui, null, "screen", renderers);
+        for (BookPage page : activePages(gui)) {
+            if (page instanceof PageWithText textPage && !textPage.shouldRenderText()) {
+                continue;
+            }
+            String side = page.left < 136 ? "left" : "right";
+            findRenderers(page, page, side, renderers);
+        }
+        for (RendererContext context : renderers) {
+            BookTextRenderer renderer = context.renderer();
+            String rendererSource = context.owner() == null
+                ? target.textSource()
+                : indexedSource(
+                    target,
+                    field(context.owner(), "pageNum", Integer.class),
+                    "/text"
+                );
             @SuppressWarnings("unchecked")
             List<Word> words = field(renderer, "words", List.class);
+            if (words.isEmpty()) {
+                continue;
+            }
+            Word anchor = words.get(0);
+            double rendererScale = field(renderer, "scale", Float.class);
+            double ownerLeft = context.owner() == null ? 0 : context.owner().left;
+            double ownerTop = context.owner() == null ? 0 : context.owner().top;
             int wordIndex = 0;
             for (Word word : words) {
-                String page = word.x < 136 ? "left" : "right";
-                result.add(region(
-                    gui,
-                    scale,
-                    "text-" + rendererIndex + "-" + wordIndex++,
-                    LayoutRegion.Kind.TEXT,
+                Component rendered = field(word, "text", Component.class);
+                Component visibleText = withoutTrailingWhitespace(rendered);
+                int width = gui.getMinecraft().font.width(
+                    visibleText.copy().withStyle(gui.book.getFontStyle())
+                );
+                String id = "text-" + context.id() + "-" + wordIndex++;
+                if (width <= 0) {
+                    continue;
+                }
+                String page = context.owner() == null
+                    ? (word.x < 136 ? "left" : "right")
+                    : (context.owner().left < 136 ? "left" : "right");
+                int line = (int) Math.round(
+                    ownerTop + anchor.y + (word.y - anchor.y) * rendererScale
+                );
+                result.add(RenderedTextGeometry.region(
+                    id,
                     page,
-                    word.y,
+                    line,
+                    gui.bookLeft,
+                    gui.bookTop,
+                    ownerLeft,
+                    ownerTop,
+                    anchor.x,
+                    anchor.y,
                     word.x,
                     word.y,
-                    word.width,
-                    word.height
+                    width,
+                    word.height,
+                    rendererScale,
+                    scale,
+                    componentSource(rendered, rendererSource)
                 ));
             }
-            rendererIndex++;
         }
-        addTitles(gui, scale, result);
+        captureWidgetText(gui, scale, target.textSource(), result);
+        addTitles(gui, scale, target, result);
         return List.copyOf(result);
     }
 
-    private void addTitles(GuiBook gui, double scale, List<LayoutRegion> result) {
-        for (BookPage page : activePages(gui)) {
-            String title = optionalField(page, "title", String.class);
-            if (title == null || title.isBlank()) {
+    private Component withoutTrailingWhitespace(Component component) {
+        String text = component.getString();
+        String visibleText = RenderedTextGeometry.trimTrailingWhitespace(text);
+        if (visibleText.length() == text.length()) {
+            return component;
+        }
+        return Component.literal(visibleText).setStyle(component.getStyle());
+    }
+
+    private void captureWidgetText(
+        GuiBook gui,
+        double scale,
+        String fallbackSource,
+        List<LayoutRegion> result
+    ) {
+        int index = 0;
+        for (GuiEventListener child : gui.children()) {
+            if (!(child instanceof GuiButtonEntry button) || !button.visible) {
                 continue;
             }
-            Component rendered = page.i18nText(title);
+            Component rendered = button.getEntry().isLocked()
+                ? Component.translatable("patchouli.gui.lexicon.locked")
+                : button.getMessage();
             int width = gui.getMinecraft().font.width(rendered);
+            double x = button.getX() + 12;
+            String page = x - gui.bookLeft < 136 ? "left" : "right";
+            result.add(new LayoutRegion(
+                "entry-label-" + index++,
+                LayoutRegion.Kind.TEXT,
+                page,
+                button.getY(),
+                x * scale,
+                button.getY() * scale,
+                width * ENTRY_LABEL_SCALE * scale,
+                9 * ENTRY_LABEL_SCALE * scale,
+                componentSource(
+                    rendered,
+                    indexedEntryNameSource(button.getEntry(), fallbackSource)
+                )
+            ));
+        }
+    }
+
+    private void addTitles(
+        GuiBook gui,
+        double scale,
+        LayoutScreen target,
+        List<LayoutRegion> result
+    ) {
+        for (BookPage page : activePages(gui)) {
+            int pageNumber = field(page, "pageNum", Integer.class);
+            Component rendered;
+            if (pageNumber == 0 && gui instanceof GuiBookEntry entryScreen) {
+                rendered = entryScreen.getEntry().getName();
+            } else {
+                String title = optionalField(page, "title", String.class);
+                if (title == null || title.isBlank()) {
+                    continue;
+                }
+                rendered = page.i18nText(title);
+            }
+            int width = gui.getMinecraft().font.width(rendered);
+            if (width <= 0) {
+                continue;
+            }
             String side = page.left < 136 ? "left" : "right";
             double x = page.left + (116 - width) / 2.0;
             result.add(region(
                 gui,
                 scale,
-                "title-" + side,
+                "title-" + side + "-" + pageNumber,
                 LayoutRegion.Kind.TEXT,
                 side,
                 page.top,
                 x,
                 page.top,
                 width,
-                9
+                9,
+                componentSource(
+                    rendered,
+                    indexedSource(
+                        target,
+                        pageNumber,
+                        pageNumber == 0 ? "/name" : "/title"
+                    )
+                )
             ));
         }
     }
@@ -284,6 +430,9 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
         int index = 0;
         for (GuiEventListener child : gui.children()) {
             if (!(child instanceof AbstractWidget widget) || !widget.visible) {
+                continue;
+            }
+            if (widget instanceof GuiButtonEntry) {
                 continue;
             }
             String page = widget.getX() - gui.bookLeft < 136 ? "left" : "right";
@@ -319,7 +468,9 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
 
     private void findRenderers(
         Object owner,
-        List<BookTextRenderer> renderers
+        BookPage page,
+        String prefix,
+        List<RendererContext> renderers
     ) {
         for (Class<?> type = owner.getClass(); type != null; type = type.getSuperclass()) {
             for (Field field : type.getDeclaredFields()) {
@@ -327,8 +478,14 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
                     continue;
                 }
                 BookTextRenderer value = read(owner, field, BookTextRenderer.class);
-                if (value != null && !renderers.contains(value)) {
-                    renderers.add(value);
+                boolean seen = renderers.stream()
+                    .anyMatch(context -> context.renderer() == value);
+                if (value != null && !seen) {
+                    renderers.add(new RendererContext(
+                        value,
+                        page,
+                        prefix + "-" + field.getName()
+                    ));
                 }
             }
         }
@@ -360,6 +517,34 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
         double width,
         double height
     ) {
+        return region(
+            gui,
+            scale,
+            id,
+            kind,
+            page,
+            line,
+            x,
+            y,
+            width,
+            height,
+            null
+        );
+    }
+
+    private LayoutRegion region(
+        GuiBook gui,
+        double scale,
+        String id,
+        LayoutRegion.Kind kind,
+        String page,
+        int line,
+        double x,
+        double y,
+        double width,
+        double height,
+        String source
+    ) {
         return new LayoutRegion(
             id,
             kind,
@@ -368,8 +553,70 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             (gui.bookLeft + x) * scale,
             (gui.bookTop + y) * scale,
             width * scale,
-            height * scale
+            height * scale,
+            source
         );
+    }
+
+    private String componentSource(Component component, String fallback) {
+        if (component.getContents() instanceof TranslatableContents translatable) {
+            return "translation_key:" + translatable.getKey();
+        }
+        for (Component sibling : component.getSiblings()) {
+            String source = componentSource(sibling, null);
+            if (source != null) {
+                return source;
+            }
+        }
+        return fallback;
+    }
+
+    private String indexedEntryNameSource(BookEntry entry, String fallback) {
+        return TranslationAuditIndex.screenRecords(engine()).stream()
+            .filter(record -> record.bookId().equals(entry.getBook().id))
+            .filter(record -> sameEntry(record.entry(), entry.getId().toString()))
+            .min(Comparator.comparingInt(record -> sourceRank(record, null, "/name")))
+            .map(record -> record.textSourceType() + ":" + record.textSource())
+            .orElse(fallback);
+    }
+
+    private String indexedSource(
+        LayoutScreen target,
+        int page,
+        String preferredSuffix
+    ) {
+        ResourceLocation bookId = ResourceLocation.parse(target.book());
+        return TranslationAuditIndex.screenRecords(engine()).stream()
+            .filter(record -> record.bookId().equals(bookId))
+            .filter(record -> sameEntry(record.entry(), target.entry()))
+            .filter(record -> record.page() == null || record.page() == page)
+            .min(Comparator.comparingInt(
+                record -> sourceRank(record, page, preferredSuffix)
+            ))
+            .map(record -> record.textSourceType() + ":" + record.textSource())
+            .orElse(target.textSource());
+    }
+
+    private boolean sameEntry(String indexed, String runtime) {
+        ResourceLocation parsed = ResourceLocation.tryParse(runtime);
+        String path = parsed == null ? runtime : parsed.getPath();
+        return indexed.equals(path) || indexed.equals(runtime);
+    }
+
+    private int sourceRank(
+        TranslationAuditIndex.ScreenRecord record,
+        Integer page,
+        String preferredSuffix
+    ) {
+        int rank = 0;
+        if (preferredSuffix != null
+            && !record.textSource().endsWith(preferredSuffix)) {
+            rank += 100;
+        }
+        if (page != null && !page.equals(record.page())) {
+            rank += 10;
+        }
+        return rank;
     }
 
     private static <T> T field(Object owner, String name, Class<T> type) {
@@ -404,5 +651,12 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
                 exception
             );
         }
+    }
+
+    private record RendererContext(
+        BookTextRenderer renderer,
+        BookPage owner,
+        String id
+    ) {
     }
 }

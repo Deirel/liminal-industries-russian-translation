@@ -16,4 +16,7 @@ public interface LayoutAdapter {
         Screen screen,
         String language
     );
+
+    default void resetAfterAudit(Minecraft minecraft) {
+    }
 }

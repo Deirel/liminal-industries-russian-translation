@@ -493,6 +493,30 @@ def snapshot(root: Path) -> dict[str, bytes]:
     }
 
 
+def apply_resourcepack_overrides(overrides: Path, resourcepack: Path) -> None:
+    for source in sorted(overrides.rglob("*")):
+        if not source.is_file():
+            continue
+        relative = source.relative_to(overrides)
+        target = resourcepack / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if (
+            len(relative.parts) == 4
+            and relative.parts[0] == "assets"
+            and relative.parts[2] == "lang"
+            and relative.suffix == ".json"
+            and target.exists()
+        ):
+            generated = json.loads(target.read_text(encoding="utf-8"))
+            override = json.loads(source.read_text(encoding="utf-8"))
+            if not isinstance(generated, dict) or not isinstance(override, dict):
+                raise ValueError(f"{relative}: language files must be JSON objects")
+            generated.update(override)
+            target.write_bytes(json_bytes(generated))
+        else:
+            shutil.copy2(source, target)
+
+
 def parse_args() -> argparse.Namespace:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
@@ -599,10 +623,9 @@ def main() -> int:
         )
         resourcepack_overrides = version_root / "resourcepack-overrides"
         if resourcepack_overrides.exists():
-            shutil.copytree(
+            apply_resourcepack_overrides(
                 resourcepack_overrides,
                 resourcepack,
-                dirs_exist_ok=True,
             )
         if args.check:
             if snapshot(generated) != snapshot(destination):

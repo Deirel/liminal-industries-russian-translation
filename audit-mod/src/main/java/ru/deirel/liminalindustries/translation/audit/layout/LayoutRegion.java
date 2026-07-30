@@ -8,13 +8,29 @@ public record LayoutRegion(
     double x,
     double y,
     double width,
-    double height
+    double height,
+    String source
 ) {
+    private static final double GEOMETRY_EPSILON = 0.0001;
+
     public enum Kind {
         TEXT,
         PAGE,
         SCISSOR,
         CONTROL
+    }
+
+    public LayoutRegion(
+        String id,
+        Kind kind,
+        String page,
+        int line,
+        double x,
+        double y,
+        double width,
+        double height
+    ) {
+        this(id, kind, page, line, x, y, width, height, null);
     }
 
     public double right() {
@@ -26,16 +42,16 @@ public record LayoutRegion(
     }
 
     public boolean intersects(LayoutRegion other) {
-        return x < other.right()
-            && right() > other.x()
-            && y < other.bottom()
-            && bottom() > other.y();
+        return x < other.right() - GEOMETRY_EPSILON
+            && right() > other.x() + GEOMETRY_EPSILON
+            && y < other.bottom() - GEOMETRY_EPSILON
+            && bottom() > other.y() + GEOMETRY_EPSILON;
     }
 
     public boolean contains(LayoutRegion other) {
-        return x <= other.x()
-            && y <= other.y()
-            && right() >= other.right()
-            && bottom() >= other.bottom();
+        return x <= other.x() + GEOMETRY_EPSILON
+            && y <= other.y() + GEOMETRY_EPSILON
+            && right() + GEOMETRY_EPSILON >= other.right()
+            && bottom() + GEOMETRY_EPSILON >= other.bottom();
     }
 }

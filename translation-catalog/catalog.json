@@ -63528,7 +63528,7 @@
       {
         "source_hash": "sha256:b7bc6e649a12a9c561f87c2f4d6056f927412bfa6d0c7e0c7cec57e8656711f4",
         "source": "Speed Vault$",
-        "translation": "Скоростной прыжок через препятствие"
+        "translation": "Скоростной прыжок"
       }
     ],
     "patchouli-json:parcool:parcool_guide:entries/actions/vault.json:/pages/2/text": [

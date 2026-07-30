@@ -1,0 +1,15 @@
+{
+  "name": "Регенератор катализатора",
+  "icon": "thermal:machine_catalyst_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/machine_catalyst_augment",
+      "title": "Регенератор катализатора",
+      "text": "Улучшение «Регенератор катализатора» на 20% снижает вероятность расходования катализатора, но увеличивает расход энергии на операцию на 25%."
+    }
+  ]
+}

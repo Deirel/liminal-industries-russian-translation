@@ -5,11 +5,38 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class LayoutAnalyzerTest {
+    @org.junit.jupiter.api.Test
+    void ignoresSubpixelFloatingPointNoiseAtPageAndControlEdges() {
+        LayoutRegion page = region("page", LayoutRegion.Kind.PAGE, 0, 0, 116, 156);
+        LayoutRegion text = region(
+            "text",
+            LayoutRegion.Kind.TEXT,
+            0,
+            0,
+            116.0000002,
+            8
+        );
+        LayoutRegion touchingControl = region(
+            "button",
+            LayoutRegion.Kind.CONTROL,
+            116.0000001,
+            0,
+            10,
+            8
+        );
+
+        assertTrue(page.contains(text));
+        assertFalse(text.intersects(touchingControl));
+    }
+
     @ParameterizedTest
     @MethodSource("defects")
     void detectsObjectiveGeometryDefects(
@@ -100,6 +127,83 @@ class LayoutAnalyzerTest {
         );
     }
 
+    @org.junit.jupiter.api.Test
+    void doesNotHideDifferentRussianRegionBehindSameEnglishRule() {
+        LayoutRegion englishText = region(
+            "english-word",
+            LayoutRegion.Kind.TEXT,
+            0,
+            0,
+            10,
+            9
+        );
+        LayoutRegion russianText = region(
+            "english-word",
+            LayoutRegion.Kind.TEXT,
+            0,
+            80,
+            10,
+            9
+        );
+        LayoutRegion page = region(
+            "page",
+            LayoutRegion.Kind.PAGE,
+            0,
+            0,
+            100,
+            100
+        );
+        LayoutIssue english = issue(
+            "shared",
+            "en_us",
+            LayoutIssue.Rule.TEXT_OUTSIDE_PAGE,
+            englishText,
+            page
+        );
+        LayoutIssue russian = issue(
+            "shared",
+            "ru_ru",
+            LayoutIssue.Rule.TEXT_OUTSIDE_PAGE,
+            russianText,
+            page
+        );
+
+        LayoutIssue classified = LayoutIssueClassifier.classify(
+            List.of(english),
+            List.of(russian),
+            Set.of("shared")
+        ).get(0);
+
+        assertEquals(
+            LayoutIssue.Classification.TRANSLATION_LAYOUT,
+            classified.classification()
+        );
+    }
+
+    @org.junit.jupiter.api.Test
+    void marksRussianScreenWithoutEnglishCounterpartAsUnpaired() {
+        LayoutRegion text = region("word", LayoutRegion.Kind.TEXT, 0, 0, 10, 9);
+        LayoutRegion page = region("page", LayoutRegion.Kind.PAGE, 0, 0, 100, 100);
+        LayoutIssue russian = issue(
+            "russian-only",
+            "ru_ru",
+            LayoutIssue.Rule.TEXT_OUTSIDE_PAGE,
+            text,
+            page
+        );
+
+        LayoutIssue classified = LayoutIssueClassifier.classify(
+            List.of(),
+            List.of(russian),
+            Set.of()
+        ).get(0);
+
+        assertEquals(
+            LayoutIssue.Classification.UNPAIRED_LANGUAGE,
+            classified.classification()
+        );
+    }
+
     private static Stream<Arguments> defects() {
         LayoutRegion page = region("page", LayoutRegion.Kind.PAGE, 0, 0, 100, 100);
         LayoutRegion scissor = region(
@@ -152,5 +256,24 @@ class LayoutAnalyzerTest {
         double height
     ) {
         return new LayoutRegion(id, kind, "left", 0, x, y, width, height);
+    }
+
+    private static LayoutIssue issue(
+        String screen,
+        String language,
+        LayoutIssue.Rule rule,
+        LayoutRegion text,
+        LayoutRegion obstacle
+    ) {
+        return new LayoutIssue(
+            screen,
+            language,
+            rule,
+            LayoutIssue.Severity.ERROR,
+            LayoutIssue.Classification.UNCLASSIFIED,
+            text,
+            obstacle,
+            null
+        );
     }
 }

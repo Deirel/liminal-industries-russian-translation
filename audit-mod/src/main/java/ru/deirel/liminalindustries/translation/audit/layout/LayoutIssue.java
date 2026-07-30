@@ -26,7 +26,8 @@ public record LayoutIssue(
     public enum Classification {
         UNCLASSIFIED,
         UPSTREAM_LAYOUT,
-        TRANSLATION_LAYOUT
+        TRANSLATION_LAYOUT,
+        UNPAIRED_LANGUAGE
     }
 
     public LayoutIssue classify(Classification value) {

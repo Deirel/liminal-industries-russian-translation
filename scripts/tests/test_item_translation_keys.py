@@ -9,7 +9,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from build_version_resources import build_language_files
+from build_version_resources import (
+    apply_resourcepack_overrides,
+    build_language_files,
+)
 from extract_item_names import (
     load_blockstate_ids,
     load_jar_languages,
@@ -140,6 +143,43 @@ class BuildItemAliasesTest(unittest.TestCase):
         self.assertEqual(2, count)
         self.assertEqual("Машина", output["item.example.machine"])
         self.assertEqual("Машина", output["block.example.machine"])
+
+
+class ResourcepackOverrideTest(unittest.TestCase):
+    def test_merges_language_override_without_dropping_generated_keys(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            resourcepack = root / "resourcepack"
+            generated = resourcepack / "assets/example/lang/ru_ru.json"
+            generated.parent.mkdir(parents=True)
+            generated.write_text(
+                json.dumps(
+                    {
+                        "block.example.machine": "Машина",
+                        "item.example.shared": "Старое название",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            overrides = root / "overrides"
+            override = overrides / "assets/example/lang/ru_ru.json"
+            override.parent.mkdir(parents=True)
+            override.write_text(
+                json.dumps(
+                    {
+                        "item.example.shared": "Новое название",
+                        "item.example.extra": "Дополнение",
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            apply_resourcepack_overrides(overrides, resourcepack)
+            output = json.loads(generated.read_text(encoding="utf-8"))
+
+        self.assertEqual("Машина", output["block.example.machine"])
+        self.assertEqual("Новое название", output["item.example.shared"])
+        self.assertEqual("Дополнение", output["item.example.extra"])
 
 
 if __name__ == "__main__":
