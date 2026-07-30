@@ -67,6 +67,11 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
         );
         List<LayoutRegion> text = captureText(gui, scale);
         List<LayoutRegion> controls = captureControls(gui, scale);
+        List<LayoutRegion> missingContent = captureMissingContent(
+            minecraft,
+            gui,
+            scale
+        );
         return new LayoutCapture(
             engine(),
             target.book(),
@@ -82,8 +87,41 @@ public final class PatchouliLayoutAdapter implements LayoutAdapter {
             text,
             pages,
             scissors,
-            controls
+            controls,
+            missingContent
         );
+    }
+
+    private List<LayoutRegion> captureMissingContent(
+        Minecraft minecraft,
+        GuiBook gui,
+        double scale
+    ) {
+        if (minecraft.level == null) {
+            return List.of();
+        }
+        List<LayoutRegion> result = new ArrayList<>();
+        for (BookPage page : activePages(gui)) {
+            int pageNumber = field(page, "pageNum", Integer.class);
+            String side = page.left < 136 ? "left" : "right";
+            for (PatchouliRecipeReferences.MissingReference missing :
+                PatchouliRecipeReferences.missing(
+                    page.sourceObject,
+                    id -> minecraft.level.getRecipeManager().byKey(id).isPresent()
+                )) {
+                result.add(new LayoutRegion(
+                    "missing-recipe-" + pageNumber + "-" + missing.recipe(),
+                    LayoutRegion.Kind.TEXT,
+                    side,
+                    page.top,
+                    (gui.bookLeft + page.left) * scale,
+                    (gui.bookTop + page.top) * scale,
+                    1,
+                    1
+                ));
+            }
+        }
+        return List.copyOf(result);
     }
 
     private void addBook(List<LayoutScreen> result, Book book) {

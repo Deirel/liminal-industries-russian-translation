@@ -45,6 +45,15 @@ public final class LayoutAnalyzer {
                 }
             }
         }
+        for (LayoutRegion missing : capture.missingContent()) {
+            LayoutRegion page = findPage(capture.pages(), missing.page());
+            issues.add(issue(
+                capture,
+                LayoutIssue.Rule.MISSING_CONTENT,
+                missing,
+                page == null ? missing : page
+            ));
+        }
         return List.copyOf(issues);
     }
 

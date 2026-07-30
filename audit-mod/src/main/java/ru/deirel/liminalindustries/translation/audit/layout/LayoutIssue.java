@@ -14,7 +14,8 @@ public record LayoutIssue(
         TEXT_OUTSIDE_PAGE,
         TEXT_INTERSECTS_CONTROL,
         TEXT_CLIPPED,
-        TEXT_LINES_OVERLAP
+        TEXT_LINES_OVERLAP,
+        MISSING_CONTENT
     }
 
     public enum Severity {

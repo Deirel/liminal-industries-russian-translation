@@ -1,0 +1,70 @@
+package ru.deirel.liminalindustries.translation.audit.layout;
+
+import com.google.gson.JsonParser;
+import net.minecraft.resources.ResourceLocation;
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class PatchouliRecipeReferencesTest {
+    @Test
+    void findsMissingSingleAndMultiRecipeReferences() {
+        var page = JsonParser.parseString("""
+            {
+              "type": "botania:crafting_multi",
+              "recipe": "botania:present",
+              "recipes": [
+                "botania:missing",
+                "botania:also_present"
+              ]
+            }
+            """).getAsJsonObject();
+        Set<ResourceLocation> present = Set.of(
+            ResourceLocation.parse("botania:present"),
+            ResourceLocation.parse("botania:also_present")
+        );
+
+        List<PatchouliRecipeReferences.MissingReference> missing =
+            PatchouliRecipeReferences.missing(page, present::contains);
+
+        assertEquals(1, missing.size());
+        assertEquals("recipes/0", missing.get(0).pointer());
+        assertEquals(
+            ResourceLocation.parse("botania:missing"),
+            missing.get(0).recipe()
+        );
+    }
+
+    @Test
+    void ignoresRecipeNamedFieldsOnNonRecipePages() {
+        var page = JsonParser.parseString("""
+            {
+              "type": "multiblock",
+              "recipe": "botania:not_a_recipe_reference"
+            }
+            """).getAsJsonObject();
+
+        assertTrue(PatchouliRecipeReferences.missing(page, ignored -> false).isEmpty());
+    }
+
+    @Test
+    void acceptsNamespacedPatchouliRecipePages() {
+        var page = JsonParser.parseString("""
+            {
+              "type": "patchouli:crafting",
+              "recipe": "example:missing"
+            }
+            """).getAsJsonObject();
+
+        assertEquals(
+            ResourceLocation.parse("example:missing"),
+            PatchouliRecipeReferences.missing(page, ignored -> false)
+                .get(0)
+                .recipe()
+        );
+    }
+}
