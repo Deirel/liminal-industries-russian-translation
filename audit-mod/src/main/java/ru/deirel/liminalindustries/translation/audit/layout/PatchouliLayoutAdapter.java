@@ -156,9 +156,9 @@ final class PatchouliLayoutAdapter {
         missingRecipeReferences(Minecraft minecraft, BookPage page) {
         if (page instanceof PageDoubleRecipe<?>) {
             return PatchouliRecipeReferences.missingResolved(
-                optionalField(page, "recipeId", ResourceLocation.class),
+                page.sourceObject,
+                id -> minecraft.level.getRecipeManager().byKey(id).orElse(null),
                 optionalField(page, "recipe1", Object.class),
-                optionalField(page, "recipe2Id", ResourceLocation.class),
                 optionalField(page, "recipe2", Object.class)
             );
         }
@@ -187,19 +187,26 @@ final class PatchouliLayoutAdapter {
             )));
         book.getContents().entries.values().stream()
             .sorted(Comparator.comparing(entry -> entry.getId().toString()))
-            .forEach(entry -> {
-                int spreads = Math.max(1, (entry.getPages().size() + 1) / 2);
-                for (int spread = 0; spread < spreads; spread++) {
-                    int firstPage = spread * 2;
+            .forEach(entry ->
+                spreadTargets(entry.getPages().size()).forEach(target ->
                     result.add(screen(
                         book,
-                        "entry/" + entry.getId() + "/" + firstPage,
+                        "entry/" + entry.getId() + "/" + target.firstPage(),
                         entry.getId().toString(),
-                        firstPage,
-                        () -> new GuiBookEntry(book, entry, firstPage)
-                    ));
-                }
-            });
+                        target.firstPage(),
+                        () -> new GuiBookEntry(book, entry, target.spread())
+                    ))
+                )
+            );
+    }
+
+    static List<SpreadTarget> spreadTargets(int pageCount) {
+        int spreads = Math.max(1, (pageCount + 1) / 2);
+        List<SpreadTarget> result = new ArrayList<>(spreads);
+        for (int spread = 0; spread < spreads; spread++) {
+            result.add(new SpreadTarget(spread, spread * 2));
+        }
+        return List.copyOf(result);
     }
 
     private LayoutScreen screen(
@@ -651,5 +658,8 @@ final class PatchouliLayoutAdapter {
         BookPage owner,
         String id
     ) {
+    }
+
+    record SpreadTarget(int spread, int firstPage) {
     }
 }

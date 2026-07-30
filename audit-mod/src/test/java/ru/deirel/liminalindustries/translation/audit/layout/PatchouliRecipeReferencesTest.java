@@ -5,6 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -69,18 +70,83 @@ class PatchouliRecipeReferencesTest {
     }
 
     @Test
-    void trustsTheResolvedRecipeSlotInsteadOfIdExistenceAlone() {
+    void findsUnresolvedRecipeFromTheSourcePage() {
         ResourceLocation id = ResourceLocation.parse("botania:fertilizer_dye");
+        var page = JsonParser.parseString("""
+            {
+              "type": "crafting",
+              "recipe": "botania:fertilizer_dye"
+            }
+            """).getAsJsonObject();
 
         List<PatchouliRecipeReferences.MissingReference> missing =
             PatchouliRecipeReferences.missingResolved(
-                id,
-                null,
+                page,
+                ignored -> null,
                 null,
                 null
             );
 
         assertEquals(1, missing.size());
         assertEquals(id, missing.get(0).recipe());
+    }
+
+    @Test
+    void rejectsARegisteredRecipeThatThePageCouldNotResolve() {
+        ResourceLocation id = ResourceLocation.parse("botania:fertilizer_dye");
+        Object wrongType = new Object();
+        var page = JsonParser.parseString("""
+            {
+              "type": "crafting",
+              "recipe": "botania:fertilizer_dye"
+            }
+            """).getAsJsonObject();
+
+        List<PatchouliRecipeReferences.MissingReference> missing =
+            PatchouliRecipeReferences.missingResolved(
+                page,
+                ignored -> wrongType,
+                null,
+                null
+            );
+
+        assertEquals(1, missing.size());
+        assertEquals(id, missing.get(0).recipe());
+        assertTrue(
+            PatchouliRecipeReferences.missingResolved(
+                page,
+                ignored -> wrongType,
+                wrongType,
+                null
+            ).isEmpty()
+        );
+    }
+
+    @Test
+    void keepsResolvedSecondRecipeMatchedAfterPatchouliShiftsItsSlot() {
+        ResourceLocation presentId = ResourceLocation.parse("botania:present");
+        Object present = new Object();
+        var page = JsonParser.parseString("""
+            {
+              "type": "crafting",
+              "recipe": "botania:missing",
+              "recipe2": "botania:present"
+            }
+            """).getAsJsonObject();
+        Map<ResourceLocation, Object> registered = Map.of(presentId, present);
+
+        List<PatchouliRecipeReferences.MissingReference> missing =
+            PatchouliRecipeReferences.missingResolved(
+                page,
+                registered::get,
+                present,
+                null
+            );
+
+        assertEquals(1, missing.size());
+        assertEquals(
+            ResourceLocation.parse("botania:missing"),
+            missing.get(0).recipe()
+        );
     }
 }

@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 final class PatchouliRecipeReferences {
@@ -23,38 +24,78 @@ final class PatchouliRecipeReferences {
         JsonObject page,
         Predicate<ResourceLocation> exists
     ) {
-        if (page == null || !isRecipePage(page)) {
-            return List.of();
-        }
         List<MissingReference> result = new ArrayList<>();
-        for (String field : FIELDS) {
-            JsonElement value = page.get(field);
-            if (value == null) {
-                continue;
-            }
-            if (value.isJsonArray()) {
-                addMissing(result, field, value.getAsJsonArray(), exists);
-            } else if (value.isJsonPrimitive() && value.getAsJsonPrimitive().isString()) {
-                addMissing(result, field, value.getAsString(), exists);
+        for (Reference reference : references(page)) {
+            if (!exists.test(reference.recipe())) {
+                result.add(reference.missing());
             }
         }
         return List.copyOf(result);
     }
 
     static List<MissingReference> missingResolved(
-        ResourceLocation recipe,
+        JsonObject page,
+        Function<ResourceLocation, Object> registeredRecipe,
         Object resolvedRecipe,
-        ResourceLocation recipe2,
         Object resolvedRecipe2
     ) {
-        List<MissingReference> result = new ArrayList<>(2);
-        if (recipe != null && resolvedRecipe == null) {
-            result.add(new MissingReference("recipe", recipe));
+        List<Reference> unresolved = new ArrayList<>();
+        List<Object> unmatchedResolved = new ArrayList<>(2);
+        if (resolvedRecipe != null) {
+            unmatchedResolved.add(resolvedRecipe);
         }
-        if (recipe2 != null && resolvedRecipe2 == null) {
-            result.add(new MissingReference("recipe2", recipe2));
+        if (resolvedRecipe2 != null) {
+            unmatchedResolved.add(resolvedRecipe2);
+        }
+
+        for (Reference reference : references(page)) {
+            Object registered = registeredRecipe.apply(reference.recipe());
+            if (registered == null) {
+                unresolved.add(reference);
+            } else if (!removeIdentity(unmatchedResolved, registered)) {
+                unresolved.add(reference);
+            }
+        }
+
+        List<MissingReference> result = new ArrayList<>(unresolved.size());
+        for (Reference reference : unresolved) {
+            if (registeredRecipe.apply(reference.recipe()) == null
+                && !unmatchedResolved.isEmpty()) {
+                unmatchedResolved.remove(0);
+            } else {
+                result.add(reference.missing());
+            }
         }
         return List.copyOf(result);
+    }
+
+    private static List<Reference> references(JsonObject page) {
+        if (page == null || !isRecipePage(page)) {
+            return List.of();
+        }
+        List<Reference> result = new ArrayList<>();
+        for (String field : FIELDS) {
+            JsonElement value = page.get(field);
+            if (value == null) {
+                continue;
+            }
+            if (value.isJsonArray()) {
+                addReferences(result, field, value.getAsJsonArray());
+            } else if (value.isJsonPrimitive() && value.getAsJsonPrimitive().isString()) {
+                addReference(result, field, value.getAsString());
+            }
+        }
+        return List.copyOf(result);
+    }
+
+    private static boolean removeIdentity(List<Object> values, Object expected) {
+        for (int index = 0; index < values.size(); index++) {
+            if (values.get(index) == expected) {
+                values.remove(index);
+                return true;
+            }
+        }
+        return false;
     }
 
     private static boolean isRecipePage(JsonObject page) {
@@ -76,29 +117,33 @@ final class PatchouliRecipeReferences {
             || value.startsWith("botania:");
     }
 
-    private static void addMissing(
-        List<MissingReference> result,
+    private static void addReferences(
+        List<Reference> result,
         String field,
-        JsonArray values,
-        Predicate<ResourceLocation> exists
+        JsonArray values
     ) {
         for (int index = 0; index < values.size(); index++) {
             JsonElement value = values.get(index);
             if (value.isJsonPrimitive() && value.getAsJsonPrimitive().isString()) {
-                addMissing(result, field + "/" + index, value.getAsString(), exists);
+                addReference(result, field + "/" + index, value.getAsString());
             }
         }
     }
 
-    private static void addMissing(
-        List<MissingReference> result,
+    private static void addReference(
+        List<Reference> result,
         String pointer,
-        String value,
-        Predicate<ResourceLocation> exists
+        String value
     ) {
         ResourceLocation id = ResourceLocation.tryParse(value);
-        if (id != null && !exists.test(id)) {
-            result.add(new MissingReference(pointer, id));
+        if (id != null) {
+            result.add(new Reference(pointer, id));
+        }
+    }
+
+    private record Reference(String pointer, ResourceLocation recipe) {
+        private MissingReference missing() {
+            return new MissingReference(pointer, recipe);
         }
     }
 

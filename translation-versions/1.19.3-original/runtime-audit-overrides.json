@@ -68,6 +68,7 @@
       "item.immersiveengineering.shader.name.transpride": "Сломай цис-тему"
     },
     "kubejs": {
+      "block.kubejs.ball_pit": "Бассейн с шариками",
       "fluid.kubejs.ball_pit": "Шариковый бассейн",
       "fluid.kubejs.liquid_time": "Поток времени"
     },
@@ -152,6 +153,11 @@
       "material.tconstruct.slimeskin": "Слизневая кожа",
       "material.tconstruct.treated_wood": "Обработанная древесина",
       "material.tconstruct.venombone": "Ядовитая кость"
+    },
+    "thermal": {
+      "block.thermal.crude_oil_fluid": "Сырая нефть",
+      "block.thermal.ender_fluid": "Жидкий эндер",
+      "block.thermal.redstone_fluid": "Жидкий редстоун"
     }
   }
 }

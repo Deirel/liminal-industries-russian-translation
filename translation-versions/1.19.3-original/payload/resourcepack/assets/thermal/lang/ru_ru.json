@@ -1,8 +1,11 @@
 {
+  "block.thermal.crude_oil_fluid": "Сырая нефть",
+  "block.thermal.ender_fluid": "Жидкий эндер",
   "block.thermal.frost_melon_stem": "Стебель морозной дыни",
   "block.thermal.frost_melon_stem_attached": "Прикреплённый стебель морозной дыни",
   "block.thermal.glowstone_mushroom": "Светокаменный гриб",
   "block.thermal.gunpowder_mushroom": "Пороховой гриб",
+  "block.thermal.redstone_fluid": "Жидкий редстоун",
   "block.thermal.redstone_mushroom": "Флюсозуб",
   "block.thermal.slime_mushroom": "Слизневый гриб",
   "thermal.book.subtitle": "MC 1.20.1"
