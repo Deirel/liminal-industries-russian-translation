@@ -65,6 +65,18 @@ Gradle читает `build-config.json` выбранной версии, под�
 payload и подставляет правильные версию артефакта, описание и диапазон
 FTB Quests в `META-INF/mods.toml`.
 
+Для публикуемого исправления передайте положительный счётчик
+`-PreleaseIteration=<N>`. Он добавляется к версии JAR и внутренней версии мода;
+для Original служебный суффикс `-original` при этом удаляется:
+
+```sh
+./gradlew clean build \
+  -PtranslationVersion=1.19.3-original \
+  -PreleaseIteration=2
+```
+
+Результат: `liminal-industries-russian-translation-1.19.3-2.jar`.
+
 Обычный `build` также запускает `buildResourcePacks` и
 `verifyResourcePackPartition`. Проверка доказывает, что каждый канонический
 ключ назначен ровно один раз, неизвестных ключей нет, объединение паков равно

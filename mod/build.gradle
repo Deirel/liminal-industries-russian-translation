@@ -25,7 +25,16 @@ if (translationConfig.schema != 1 || translationConfig.version != selectedTransl
     throw new GradleException("Invalid translation build config: ${translationConfigFile}")
 }
 
-version = translationConfig.version
+def releaseIteration = providers.gradleProperty('releaseIteration').orNull
+if (releaseIteration != null && !(releaseIteration ==~ /[1-9][0-9]*/)) {
+    throw new GradleException("Invalid releaseIteration: ${releaseIteration}")
+}
+def releaseBaseVersion = translationConfig.version.replaceFirst(/-original$/, '')
+def publishedVersion = releaseIteration == null
+    ? translationConfig.version
+    : "${releaseBaseVersion}-${releaseIteration}"
+
+version = publishedVersion
 group = mod_group_id
 
 base {
@@ -176,7 +185,7 @@ tasks.named('processResources', ProcessResources).configure {
         mod_id: mod_id,
         mod_name: mod_name,
         mod_license: mod_license,
-        mod_version: translationConfig.version,
+        mod_version: publishedVersion,
         mod_authors: mod_authors,
         mod_description: translationConfig.mod_description,
         ftb_quests_version_range: translationConfig.ftb_quests_version_range
