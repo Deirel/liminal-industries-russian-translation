@@ -72,11 +72,11 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
     compileOnly fg.deobf(
-        "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE"
+        "vazkii.patchouli:Patchouli:${minecraft_version}-${translationConfig.patchouli_version}-FORGE"
     )
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
     runtimeOnly fg.deobf(
-        "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE"
+        "vazkii.patchouli:Patchouli:${minecraft_version}-${translationConfig.patchouli_version}-FORGE"
     )
 
     testImplementation platform('org.junit:junit-bom:5.10.2')
@@ -88,7 +88,7 @@ tasks.named('processResources', ProcessResources).configure {
         minecraft_version: minecraft_version,
         forge_version: forge_version,
         jei_version: jei_version,
-        patchouli_version: patchouli_version,
+        patchouli_version: translationConfig.patchouli_version,
         mod_id: mod_id,
         mod_version: translationConfig.version
     ]
