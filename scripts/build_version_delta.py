@@ -239,10 +239,23 @@ def fallback_name(item_id: str) -> str:
     return item_id.split(":", 1)[1].replace("_", " ").replace("/", " ").title()
 
 
+def kubejs_startup_scripts(kubejs_root: Path) -> list[Path]:
+    return sorted(
+        {
+            *kubejs_root.glob("startup_scripts/**/*.js"),
+            *kubejs_root.glob("contentpacks/*/startup_scripts/**/*.js"),
+        }
+    )
+
+
+def kubejs_display_name(kind: str, display_name: str) -> str:
+    return f"{display_name} Bucket" if kind == "fluid" else display_name
+
+
 def load_kubejs_registry(kubejs_root: Path) -> dict[str, tuple[str, str]]:
     """Extract deterministic KubeJS registry names from the pack's startup scripts."""
     result: dict[str, tuple[str, str]] = {}
-    for path in sorted(kubejs_root.glob("startup_scripts/**/*.js")):
+    for path in kubejs_startup_scripts(kubejs_root):
         source = path.read_text(encoding="utf-8-sig")
         sections = list(KUBEJS_REGISTRY_RE.finditer(source))
         for index, section in enumerate(sections):
@@ -256,7 +269,7 @@ def load_kubejs_registry(kubejs_root: Path) -> dict[str, tuple[str, str]]:
                 item_id = f"kubejs:{item_path}"
                 result[item_id] = (
                     f"{key_prefix}.kubejs.{item_path}",
-                    match.group(4),
+                    kubejs_display_name(kind, match.group(4)),
                 )
 
             helpers: dict[str, str | None] = {}
@@ -283,7 +296,7 @@ def load_kubejs_registry(kubejs_root: Path) -> dict[str, tuple[str, str]]:
                 item_id = f"kubejs:{item_path}"
                 result[item_id] = (
                     f"{key_prefix}.kubejs.{item_path}",
-                    display_name,
+                    kubejs_display_name(kind, display_name),
                 )
     return result
 
@@ -362,7 +375,7 @@ def extract_item_records(
 
     registry_ids = load_probe_item_ids(kubejs_root)
     registry_source = "probejs"
-    kubejs_registry: dict[str, tuple[str, str]] = {}
+    kubejs_registry = load_kubejs_registry(kubejs_root)
     if not registry_ids:
         model_archives = list(archives)
         minecraft_jar = (
@@ -374,7 +387,6 @@ def extract_item_records(
         if minecraft_jar.exists():
             model_archives.append(minecraft_jar)
         model_ids = load_item_model_ids(model_archives, kubejs_root)
-        kubejs_registry = load_kubejs_registry(kubejs_root)
         registry_ids = {
             item_id
             for item_id in model_ids
@@ -383,7 +395,11 @@ def extract_item_records(
                 for key in candidate_keys(item_id)
             )
         }
-        registry_ids.update(kubejs_registry)
+        registry_ids.update(
+            item_id
+            for item_id, (translation_key, _) in kubejs_registry.items()
+            if translation_key.startswith("item.")
+        )
         registry_ids.update(quest_item_ids)
         registry_source = "language_models+quest_refs+kubejs_startup"
         if item_hints:
@@ -415,10 +431,10 @@ def extract_item_records(
             raise ValueError(f"translation key {key} maps to {previous} and {item_id}")
         by_key[key] = item_id
         source = en_us.get(key) or (
-            item_hint[1]
-            if item_hint
-            else kubejs_entry[1]
+            kubejs_entry[1]
             if kubejs_entry
+            else item_hint[1]
+            if item_hint
             else fallback_name(item_id)
         )
         record = {
@@ -434,13 +450,15 @@ def extract_item_records(
             "source_origin": (
                 "effective_en_us"
                 if key in en_us
-                else "reviewed_hint"
-                if item_hint
                 else "kubejs_startup"
                 if kubejs_entry
+                else "reviewed_hint"
+                if item_hint
                 else "runtime_generated"
             ),
         }
+        if key in native_ru and native_ru[key] == source:
+            record["native_ru_same_as_source"] = True
         aliases = (
             []
             if key in native_ru
@@ -451,6 +469,7 @@ def extract_item_records(
         records.append(record)
 
     source_paths = list(archives)
+    source_paths += kubejs_startup_scripts(kubejs_root)
     source_paths += sorted(kubejs_root.glob("assets/*/lang/*.json"))
     source_paths += sorted(kubejs_root.glob("contentpacks/*/assets/*/lang/*.json"))
     source_paths += resource_files
@@ -559,7 +578,9 @@ def extract_block_records(
     archives, en_us, native_ru, language_files = load_effective_languages(
         instance_root, launcher_root, minecraft_version
     )
-    block_ids = load_probe_block_ids(instance_root / "kubejs")
+    kubejs_root = instance_root / "kubejs"
+    kubejs_registry = load_kubejs_registry(kubejs_root)
+    block_ids = load_probe_block_ids(kubejs_root)
     if not block_ids:
         model_archives = list(archives)
         minecraft_jar = (
@@ -570,12 +591,10 @@ def extract_block_records(
         )
         if minecraft_jar.exists():
             model_archives.append(minecraft_jar)
-        block_ids = load_blockstate_ids(model_archives, instance_root / "kubejs")
+        block_ids = load_blockstate_ids(model_archives, kubejs_root)
         block_ids.update(
             registry_id
-            for registry_id, (translation_key, _) in load_kubejs_registry(
-                instance_root / "kubejs"
-            ).items()
+            for registry_id, (translation_key, _) in kubejs_registry.items()
             if translation_key.startswith("block.")
         )
     if not block_ids:
@@ -585,7 +604,12 @@ def extract_block_records(
     for block_id in sorted(block_ids):
         namespace, path = block_id.split(":", 1)
         key = f"block.{namespace}.{path}"
-        source = en_us.get(key) or fallback_name(block_id)
+        kubejs_entry = kubejs_registry.get(block_id)
+        source = en_us.get(key) or (
+            kubejs_entry[1]
+            if kubejs_entry and kubejs_entry[0] == key
+            else fallback_name(block_id)
+        )
         record = {
             "id": f"block:{key}",
             "kind": "block_name",
@@ -596,10 +620,16 @@ def extract_block_records(
             "translation_key": key,
             "native_ru_present": key in native_ru,
             "source_origin": (
-                "effective_en_us" if key in en_us else "runtime_generated"
+                "effective_en_us"
+                if key in en_us
+                else "kubejs_startup"
+                if kubejs_entry and kubejs_entry[0] == key
+                else "runtime_generated"
             ),
             "output_format": "lang",
         }
+        if key in native_ru and native_ru[key] == source:
+            record["native_ru_same_as_source"] = True
         suggested = project_ru.get(key)
         item_key = f"item.{namespace}.{path}"
         if (
@@ -622,7 +652,11 @@ def extract_block_records(
             record["suggested_translation"] = suggested
         records.append(record)
 
-    source_paths = [*archives, *language_files]
+    source_paths = [
+        *archives,
+        *language_files,
+        *kubejs_startup_scripts(kubejs_root),
+    ]
     minecraft_jar = (
         launcher_root
         / "versions"

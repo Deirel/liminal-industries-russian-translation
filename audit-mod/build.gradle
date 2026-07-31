@@ -19,6 +19,12 @@ def translationSourcesFile = layout.projectDirectory.file(
 def translationManifestFile = layout.projectDirectory.file(
     "../translation-versions/${selectedTranslationVersion}/manifest.json"
 ).asFile
+def translationCatalogFile = layout.projectDirectory.file(
+    "../translation-catalog/catalog.json"
+).asFile
+def runtimeAuditOverridesFile = layout.projectDirectory.file(
+    "../translation-versions/${selectedTranslationVersion}/runtime-audit-overrides.json"
+).asFile
 if (!translationConfigFile.isFile()) {
     throw new GradleException(
         "Unknown translationVersion '${selectedTranslationVersion}': "
@@ -108,12 +114,50 @@ tasks.named('processResources', ProcessResources).configure {
 
 tasks.register('generateTranslationAuditIndex') {
     inputs.file translationManifestFile
+    inputs.file translationCatalogFile
+    inputs.file runtimeAuditOverridesFile
     def output = layout.buildDirectory.file(
         'generated/audit/translation-audit-index.json'
     )
     outputs.file output
     doLast {
         def manifest = new JsonSlurper().parse(translationManifestFile)
+        def catalog = new JsonSlurper().parse(translationCatalogFile)
+        def runtimePolicy = new JsonSlurper().parse(runtimeAuditOverridesFile)
+        if (!(runtimePolicy.schema in [1, 2])) {
+            throw new GradleException(
+                "Invalid runtime audit overrides: ${runtimeAuditOverridesFile}"
+            )
+        }
+        def acceptedSameAsEnglish = new TreeMap(
+            runtimePolicy.accepted_same_as_english ?: [:]
+        )
+        manifest.records.findAll {
+            it.translation_key && it.source instanceof String
+        }.each { record ->
+            def matches = (catalog.entries[record.id] ?: []).findAll {
+                it.source == record.source
+                    && it.source_hash == record.source_hash
+            }
+            if (matches.size() > 1) {
+                throw new GradleException(
+                    "Duplicate catalog variants for ${record.id}"
+                )
+            }
+            if (matches.size() == 1
+                && matches[0].translation == record.source) {
+                def previous = acceptedSameAsEnglish.putIfAbsent(
+                    record.translation_key,
+                    record.source
+                )
+                if (previous && previous != record.source) {
+                    throw new GradleException(
+                        "Conflicting accepted English source for "
+                            + record.translation_key
+                    )
+                }
+            }
+        }
         def languageRecords = manifest.records.findAll {
             it.source_id == 'patchouli' && it.output_format == 'lang'
         }.collect {
@@ -146,6 +190,41 @@ tasks.register('generateTranslationAuditIndex') {
         def manualBooks = manifest.records.any {
             it.source_id == 'immersive_engineering_manual'
         } ? ['immersiveengineering:manual'] : []
+        def languageTargetsByKey = [:]
+        manifest.records.findAll {
+            it.translation_key && it.source instanceof String
+        }.each { record ->
+            def target = [
+                translation_key: record.translation_key,
+                source: record.source,
+                native_ru: record.native_ru_present == true
+            ]
+            def previous = languageTargetsByKey.putIfAbsent(
+                record.translation_key,
+                target
+            )
+            if (previous && previous.source != target.source) {
+                previous.source = null
+                previous.native_ru =
+                    previous.native_ru || target.native_ru
+            }
+        }
+        def languageTargets = languageTargetsByKey.values().sort {
+            it.translation_key
+        }
+        def registryTargets = manifest.records.findAll {
+            it.kind in ['item_name', 'block_name']
+        }.collect { record ->
+            record.kind == 'item_name'
+                ? [registry_type: 'item', registry_id: record.item_id]
+                : [registry_type: 'block', registry_id: record.block_id]
+        }.unique().sort { left, right ->
+            "${left.registry_type}\u0000${left.registry_id}" <=>
+                "${right.registry_type}\u0000${right.registry_id}"
+        }
+        def targetNamespaces = manifest.records.collect { record ->
+            record.namespace
+        }.findAll().unique().sort()
         def screenRecords = manifest.records.findAll {
             it.source_id in [
                 'patchouli',
@@ -225,8 +304,12 @@ tasks.register('generateTranslationAuditIndex') {
             leftKey <=> rightKey
         }
         def document = [
-            schema: 3,
+            schema: 4,
             version: selectedTranslationVersion,
+            language_targets: languageTargets,
+            accepted_same_as_english: acceptedSameAsEnglish,
+            registry_targets: registryTargets,
+            target_namespaces: targetNamespaces,
             book_screens: screenRecords,
             sources: [
                 patchouli: [

@@ -4,6 +4,7 @@
   "package": "ru.deirel.liminalindustries.translation.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "PackRepositoryMixin",
     "QuestMixin",
     "QuestObjectBaseMixin"
   ],

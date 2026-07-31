@@ -5,6 +5,7 @@
   "packs": [
     {"id": "actually-subtractions", "display_name": "Actually Subtractions", "target_mod_versions": ["1.2.14.20+mc1.20.1"], "namespaces": ["actuallyadditions"]},
     {"id": "ae2", "display_name": "Applied Energistics 2", "target_mod_versions": ["15.4.10"], "namespaces": ["ae2"]},
+    {"id": "advanced-ae", "display_name": "AdvancedAE", "target_mod_versions": ["1.3.5"], "namespaces": ["advanced_ae"]},
     {"id": "amendments", "display_name": "Amendments", "target_mod_versions": ["2.2.5"], "namespaces": ["amendments"]},
     {"id": "antiblocks-rechiseled", "display_name": "AntiBlocksReChiseled", "target_mod_versions": ["0.4.8"], "namespaces": ["antiblocksrechiseled"]},
     {"id": "azurelib", "display_name": "AzureLib", "target_mod_versions": ["3.1.11"], "namespaces": ["azurelib"]},

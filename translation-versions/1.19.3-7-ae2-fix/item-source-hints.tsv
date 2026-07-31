@@ -626,7 +626,7 @@ kubejs:asphalt_floor_slab	block.kubejs.asphalt_floor_slab	Asphalt Floor Slab
 kubejs:asphalt_floor_stairs	block.kubejs.asphalt_floor_stairs	Asphalt Floor Stairs
 kubejs:backrooms_speaker	block.kubejs.backrooms_speaker	Backrooms Speaker
 kubejs:backup_generator	block.kubejs.backup_generator	Backup Generator
-kubejs:ball_pit_bucket	item.kubejs.ball_pit_bucket	Ball Pit
+kubejs:ball_pit_bucket	item.kubejs.ball_pit_bucket	Ball Pit Bucket
 kubejs:bamboo_flooring_block	block.kubejs.bamboo_flooring_block	Bamboo Flooring
 kubejs:batteries	block.kubejs.batteries	Batteries
 kubejs:birch_flooring_block	block.kubejs.birch_flooring_block	Birch Flooring
@@ -735,7 +735,7 @@ kubejs:liminal_warning2	block.kubejs.liminal_warning2	sign
 kubejs:liminalstone	block.kubejs.liminalstone	Liminalstone
 kubejs:liminalstone_poolrooms	block.kubejs.liminalstone_poolrooms	Liminalstone
 kubejs:liquid_pain_can_hidden	item.kubejs.liquid_pain_can_hidden	Almond Water (Tampered)
-kubejs:liquid_time_bucket	item.kubejs.liquid_time_bucket	The Flow of Time
+kubejs:liquid_time_bucket	item.kubejs.liquid_time_bucket	The Flow of Time Bucket
 kubejs:lithium_ion_batteries	block.kubejs.lithium_ion_batteries	Lithium-Ion Batteries
 kubejs:lithium_ion_battery	item.kubejs.lithium_ion_battery	Lithium-Ion Battery
 kubejs:loaded_closet	block.kubejs.loaded_closet	Closet

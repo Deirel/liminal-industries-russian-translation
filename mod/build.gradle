@@ -14,6 +14,7 @@ def translationVersionRoot = layout.projectDirectory.dir(
     "../translation-versions/${selectedTranslationVersion}"
 )
 def translationConfigFile = translationVersionRoot.file('build-config.json').asFile
+def translationManifestFile = translationVersionRoot.file('manifest.json').asFile
 if (!translationConfigFile.isFile()) {
     throw new GradleException(
         "Unknown translationVersion '${selectedTranslationVersion}': "
@@ -39,10 +40,16 @@ java {
 def translationSources = translationVersionRoot.dir('payload')
 def translationResourcePack = translationSources.dir('resourcepack')
 def translationQuests = translationSources.dir('quests')
+def compatibilityResourcePack = translationVersionRoot.dir(
+    'compatibility-resourcepack'
+)
 def resourcePackManifest = translationVersionRoot.file('resource-packs.json')
 def generatedTranslationResources = layout.buildDirectory.dir('generated/translationResources')
 def resourcePackOutput = layout.buildDirectory.dir(
     "resourcepacks/${selectedTranslationVersion}"
+)
+def compatibilityPackOutput = layout.buildDirectory.dir(
+    "compatibilitypacks/${selectedTranslationVersion}"
 )
 def releaseOutput = layout.buildDirectory.dir(
     "releases/${selectedTranslationVersion}"
@@ -108,9 +115,13 @@ tasks.register('generateQuestTranslationIndex') {
     def indexOutput = generatedTranslationResources.map {
         it.file('liminal_industries_ru/quest-files.list')
     }
+    def metadataOutput = generatedTranslationResources.map {
+        it.file('liminal_industries_ru/quest-source-fields.json')
+    }
 
     inputs.files questFiles
-    outputs.file indexOutput
+    inputs.file translationManifestFile
+    outputs.files indexOutput, metadataOutput
 
     doLast {
         def relativePaths = questFiles.files.collect { file ->
@@ -122,7 +133,99 @@ tasks.register('generateQuestTranslationIndex') {
         def output = indexOutput.get().asFile
         output.parentFile.mkdirs()
         output.setText(relativePaths.join('\n') + '\n', 'UTF-8')
+
+        def manifest = new JsonSlurper().parse(translationManifestFile)
+        def fields = manifest.records.findAll {
+            it.source_type == 'ftb_quests'
+        }.collect { record ->
+            def location = record.location
+            def objectId = location.entry_id
+                ?: location.quest_id
+                ?: location.chapter_id
+                ?: location.group_id
+            if (!objectId) {
+                throw new GradleException(
+                    "Quest translation record has no object ID: ${record.id}"
+                )
+            }
+            def field = [
+                object_id: objectId,
+                field: location.field,
+                source: record.source,
+                source_hash: record.source_hash
+            ]
+            if (location.index != null) {
+                field.index = location.index
+            }
+            field
+        }
+        fields.groupBy { it.object_id }.each { objectId, objectFields ->
+            def descriptions = objectFields.findAll {
+                it.field == 'description'
+            }
+            if (descriptions) {
+                def indexes = descriptions.collect { it.index }.toSet()
+                (0..descriptions.collect { it.index }.max()).each { index ->
+                    if (!indexes.contains(index)) {
+                        fields.add([
+                            object_id: objectId,
+                            field: 'description',
+                            source: '',
+                            source_hash: 'sha256:e3b0c44298fc1c149afbf4c8996fb924'
+                                + '27ae41e4649b934ca495991b7852b855',
+                            index: index
+                        ])
+                    }
+                }
+            }
+        }
+        fields.sort { left, right ->
+            [
+                left.object_id,
+                left.field,
+                left.index == null ? -1 : left.index
+            ].join('\u0000') <=> [
+                right.object_id,
+                right.field,
+                right.index == null ? -1 : right.index
+            ].join('\u0000')
+        }
+        def metadata = [
+            schema: 1,
+            fields: fields
+        ]
+        def metadataFile = metadataOutput.get().asFile
+        metadataFile.parentFile.mkdirs()
+        metadataFile.setText(
+            groovy.json.JsonOutput.prettyPrint(
+                groovy.json.JsonOutput.toJson(metadata)
+            ) + '\n',
+            'UTF-8'
+        )
     }
+}
+
+tasks.register('generateBookTranslationIndex', Exec) {
+    def output = generatedTranslationResources.map {
+        it.file('assets/liminal_industries_ru/book-translations.json')
+    }
+
+    inputs.file translationManifestFile
+    inputs.dir translationResourcePack
+    inputs.file '../scripts/build_book_translation_index.py'
+    inputs.file '../scripts/translation_sources.py'
+    outputs.file output
+
+    commandLine(
+        'python3',
+        '../scripts/build_book_translation_index.py',
+        '--manifest',
+        translationManifestFile.absolutePath,
+        '--resourcepack',
+        translationResourcePack.asFile.absolutePath,
+        '--output',
+        output.get().asFile.absolutePath
+    )
 }
 
 tasks.register('buildResourcePacks', Exec) {
@@ -167,9 +270,49 @@ tasks.register('verifyResourcePackPartition', Exec) {
     )
 }
 
-tasks.named('processResources', ProcessResources).configure {
-    dependsOn 'generateQuestTranslationIndex'
+tasks.register('buildCompatibilityPack', Exec) {
+    group = 'build'
+    description = 'Builds the optional technical compatibility resource pack.'
 
+    inputs.dir compatibilityResourcePack
+    inputs.file '../scripts/build_compatibility_pack.py'
+    inputs.file '../scripts/build_resource_packs.py'
+    inputs.file '../assets/liminal-industries-russian-translation-256kb.png'
+    outputs.dir compatibilityPackOutput
+
+    commandLine(
+        'python3',
+        '../scripts/build_compatibility_pack.py',
+        '--version',
+        selectedTranslationVersion,
+        '--output',
+        compatibilityPackOutput.get().asFile.absolutePath
+    )
+}
+
+tasks.register('verifyCompatibilityPack', Exec) {
+    group = 'verification'
+    description = 'Verifies the optional compatibility pack is reproducible.'
+    dependsOn 'buildCompatibilityPack'
+
+    inputs.dir compatibilityResourcePack
+    inputs.files tasks.named('buildCompatibilityPack')
+
+    commandLine(
+        'python3',
+        '../scripts/build_compatibility_pack.py',
+        '--version',
+        selectedTranslationVersion,
+        '--output',
+        compatibilityPackOutput.get().asFile.absolutePath,
+        '--check'
+    )
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    dependsOn 'generateQuestTranslationIndex', 'generateBookTranslationIndex'
+
+    inputs.dir compatibilityResourcePack
     def properties = [
         minecraft_version: minecraft_version,
         forge_version: forge_version,
@@ -187,6 +330,12 @@ tasks.named('processResources', ProcessResources).configure {
         into 'liminal_industries_ru/quests'
     }
 
+    from(compatibilityResourcePack.dir('assets')) {
+        into 'assets'
+        exclude '**/ru_ru/**'
+        exclude '**/lang/ru_ru.json'
+    }
+
     filesMatching('META-INF/mods.toml') {
         expand properties + [project: project]
     }
@@ -202,6 +351,10 @@ tasks.named('test', Test).configure {
     systemProperty(
         'translation.expectedQuestTranslations',
         translationConfig.expected_quest_translations.toString()
+    )
+    systemProperty(
+        'translation.compatibilityPack',
+        compatibilityResourcePack.asFile.absolutePath
     )
 }
 
@@ -221,7 +374,7 @@ tasks.named('jar', Jar).configure {
 }
 
 tasks.named('build').configure {
-    dependsOn 'verifyResourcePackPartition'
+    dependsOn 'verifyResourcePackPartition', 'verifyCompatibilityPack'
 }
 
 tasks.register('assembleTranslationRelease', Sync) {
@@ -233,6 +386,9 @@ tasks.register('assembleTranslationRelease', Sync) {
     from(tasks.named('jar').flatMap { it.archiveFile })
     from(resourcePackOutput) {
         into 'resourcepacks'
+    }
+    from(compatibilityPackOutput) {
+        into 'compatibility'
     }
 }
 

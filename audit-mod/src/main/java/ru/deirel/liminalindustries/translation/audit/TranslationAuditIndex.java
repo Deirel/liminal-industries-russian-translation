@@ -10,13 +10,27 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public final class TranslationAuditIndex {
     public record LanguageRecord(String id, String translationKey, String source) {
     }
 
     public record BookRecord(String sourceId, ResourceLocation bookId) {
+    }
+
+    public record LanguageTarget(
+        String translationKey,
+        String source,
+        boolean nativeRussian
+    ) {
+    }
+
+    public record RegistryTarget(String registryType, String registryId) {
     }
 
     public record ScreenRecord(
@@ -53,6 +67,51 @@ public final class TranslationAuditIndex {
 
     static String version() {
         return load().get("version").getAsString();
+    }
+
+    static Map<String, LanguageTarget> languageTargets() {
+        Map<String, LanguageTarget> result = new HashMap<>();
+        for (JsonElement element : load().getAsJsonArray("language_targets")) {
+            JsonObject record = element.getAsJsonObject();
+            LanguageTarget target = new LanguageTarget(
+                record.get("translation_key").getAsString(),
+                record.get("source").isJsonNull()
+                    ? null
+                    : record.get("source").getAsString(),
+                record.get("native_ru").getAsBoolean()
+            );
+            result.put(target.translationKey(), target);
+        }
+        return Map.copyOf(result);
+    }
+
+    static Map<String, String> acceptedSameAsEnglish() {
+        Map<String, String> result = new HashMap<>();
+        for (Map.Entry<String, JsonElement> entry :
+            load().getAsJsonObject("accepted_same_as_english").entrySet()) {
+            result.put(entry.getKey(), entry.getValue().getAsString());
+        }
+        return Map.copyOf(result);
+    }
+
+    static Set<RegistryTarget> registryTargets() {
+        Set<RegistryTarget> result = new HashSet<>();
+        for (JsonElement element : load().getAsJsonArray("registry_targets")) {
+            JsonObject record = element.getAsJsonObject();
+            result.add(new RegistryTarget(
+                record.get("registry_type").getAsString(),
+                record.get("registry_id").getAsString()
+            ));
+        }
+        return Set.copyOf(result);
+    }
+
+    static Set<String> targetNamespaces() {
+        Set<String> result = new HashSet<>();
+        for (JsonElement element : load().getAsJsonArray("target_namespaces")) {
+            result.add(element.getAsString());
+        }
+        return Set.copyOf(result);
     }
 
     static List<BookRecord> bookRecords(String sourceId) {
@@ -118,7 +177,7 @@ public final class TranslationAuditIndex {
             StandardCharsets.UTF_8
         )) {
             JsonObject root = JsonParser.parseReader(reader).getAsJsonObject();
-            if (root.get("schema").getAsInt() != 3) {
+            if (root.get("schema").getAsInt() != 4) {
                 throw new IllegalStateException("unsupported translation audit index");
             }
             return root;

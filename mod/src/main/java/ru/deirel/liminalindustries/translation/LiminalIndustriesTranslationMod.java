@@ -17,11 +17,12 @@ import org.slf4j.LoggerFactory;
 @Mod(LiminalIndustriesTranslationMod.MOD_ID)
 public final class LiminalIndustriesTranslationMod {
     public static final String MOD_ID = "liminal_industries_ru";
+    public static final String BASELINE_PACK_ID = MOD_ID + "_baseline";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public LiminalIndustriesTranslationMod() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(
-            this::addTranslationPack
+            this::addBaselineTranslationPack
         );
         ModLoadingContext.get().registerExtensionPoint(
             IExtensionPoint.DisplayTest.class,
@@ -32,19 +33,39 @@ public final class LiminalIndustriesTranslationMod {
         );
     }
 
-    private void addTranslationPack(AddPackFindersEvent event) {
+    static Pack.Position translationPackPosition() {
+        return Pack.Position.BOTTOM;
+    }
+
+    private void addBaselineTranslationPack(AddPackFindersEvent event) {
         if (event.getPackType() != PackType.CLIENT_RESOURCES) {
             return;
         }
         event.addRepositorySource(consumer ->
             ResourcePackLoader.getPackFor(MOD_ID).ifPresent(resources -> {
+                BookTranslationIndex bookIndex;
+                try {
+                    bookIndex = BookTranslationIndex.load(
+                        LiminalIndustriesTranslationMod.class
+                    );
+                } catch (java.io.IOException exception) {
+                    LOGGER.error(
+                        "Could not load source-aware book translations",
+                        exception
+                    );
+                    return;
+                }
                 Pack pack = Pack.readMetaAndCreate(
-                    MOD_ID + "_overrides",
+                    BASELINE_PACK_ID,
                     Component.literal("Liminal Industries: Russian Translation"),
                     true,
-                    id -> resources,
+                    id -> new SourceAwareBookPackResources(
+                        resources,
+                        bookIndex,
+                        BookSourceResolver.runtime()
+                    ),
                     PackType.CLIENT_RESOURCES,
-                    Pack.Position.TOP,
+                    translationPackPosition(),
                     PackSource.BUILT_IN
                 );
                 if (pack == null) {

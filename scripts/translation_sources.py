@@ -338,6 +338,8 @@ def collect_patchouli(
             "output_format": "lang",
             "location": location,
         }
+        if key in native_ru and native_ru[key] == source:
+            record["native_ru_same_as_source"] = True
         if key in project_ru:
             record["suggested_translation"] = project_ru[key]
         previous = records_by_id.get(logical_id)

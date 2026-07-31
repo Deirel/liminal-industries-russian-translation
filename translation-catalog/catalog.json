@@ -8438,12 +8438,22 @@
     ],
     "block:block.kubejs.arrow1_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:533a95a6d57a2cf02cead19e9a021325c2f520e5be06366ee4409a6882f3f007",
         "source": "Arrow1 Sign",
         "translation": "Знак"
       }
     ],
     "block:block.kubejs.arrow2_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:9a2121097583445378e032180ad9de4e7ea1746c1c5de6adf28a62221c833462",
         "source": "Arrow2 Sign",
@@ -8515,12 +8525,22 @@
     ],
     "block:block.kubejs.black_hole": [
       {
+        "source_hash": "sha256:a00bdececf44d8c0fc640e38763a6d2d5638ab6e350ec3d13211342f9f5e4071",
+        "source": "Mini Black Hole",
+        "translation": "Миниатюрная чёрная дыра"
+      },
+      {
         "source_hash": "sha256:fd0c0ca7d1b7064bec5e8cd0c749f37b98522e3164a20062da7bf72c8da45d19",
         "source": "Black Hole",
         "translation": "Миниатюрная чёрная дыра"
       }
     ],
     "block:block.kubejs.box_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:f152456d985438764ef8f2b0dd011e1b67675b50db1c3eb1194d45f05fe71e74",
         "source": "Box Sign",
@@ -8634,6 +8654,11 @@
     ],
     "block:block.kubejs.ceilling_lamp2_blinking": [
       {
+        "source_hash": "sha256:8a32e81ff77fdbcfb127a4ab8a5bc0dab0d370f0d73161fb511d1e6f9e2d6675",
+        "source": "White Ceiling Lamp (Blinking)",
+        "translation": "Белый потолочный светильник (мигает)"
+      },
+      {
         "source_hash": "sha256:f5c20adc56752bd9c5b3464ee7778a7797c1d5e0789e56589c1971a060d56e9c",
         "source": "Ceilling Lamp2 Blinking",
         "translation": "Белый потолочный светильник (мигает)"
@@ -8655,6 +8680,11 @@
     ],
     "block:block.kubejs.ceilling_lamp2_dying": [
       {
+        "source_hash": "sha256:d36d4b69e9b0268bc5507d8430a3197f1f4f2b233d28e6b07ffffaf2c6769373",
+        "source": "White Ceiling Lamp (Dying)",
+        "translation": "Белый потолочный светильник (гаснет)"
+      },
+      {
         "source_hash": "sha256:f908c85ee8eb6ce9b25b4a52e3b159979d8146eaa3e0bed3769b57d491cc310a",
         "source": "Ceilling Lamp2 Dying",
         "translation": "Белый потолочный светильник (гаснет)"
@@ -8668,6 +8698,11 @@
       }
     ],
     "block:block.kubejs.ceilling_lamp_blinking": [
+      {
+        "source_hash": "sha256:3e988afaa2b82b86dc6ff10ee0ae0cfb405dd2e714a52f2b09e2103508ca1ad3",
+        "source": "Ceiling Lamp (Blinking)",
+        "translation": "Потолочный светильник (мигает)"
+      },
       {
         "source_hash": "sha256:53d03e896d54a194922c3c9f943da45e92ff8a2af24761c4d99613a05871226d",
         "source": "Ceilling Lamp Blinking",
@@ -8689,6 +8724,11 @@
       }
     ],
     "block:block.kubejs.ceilling_lamp_dying": [
+      {
+        "source_hash": "sha256:34aa8b72e0c208fefbdc41c496d2863e94aa54a8e957515b988bc6372c1c553a",
+        "source": "Ceiling Lamp (Dying)",
+        "translation": "Потолочный светильник (гаснет)"
+      },
       {
         "source_hash": "sha256:4c507b79722f534948cdfdc15fb6db595fbd73d5b76742d796b372a5a71621ee",
         "source": "Ceilling Lamp Dying",
@@ -8714,6 +8754,11 @@
         "source_hash": "sha256:2001630612290c43bf44af41ee75fc19407495cc45bc7fff889d3cace4f75c71",
         "source": "Ceilling Lamp Red Blinking",
         "translation": "Красный потолочный светильник (мигает)"
+      },
+      {
+        "source_hash": "sha256:291f635e57d88133f4d717e724614e00a72988eab0a676f6fef9007ca86d3452",
+        "source": "Red Ceiling Lamp (Blinking)",
+        "translation": "Красный потолочный светильник (мигает)"
       }
     ],
     "block:block.kubejs.ceilling_lamp_red_breaking": [
@@ -8735,6 +8780,11 @@
         "source_hash": "sha256:d3a4972a824b04291756b935542847e3f87aeb0b581660756d0bb95917a5711e",
         "source": "Ceilling Lamp Red Dying",
         "translation": "Красный потолочный светильник (гаснет)"
+      },
+      {
+        "source_hash": "sha256:e4e77c55609f4b65a5cc79fcabb6042d8ad40861b26d9dd14210f370bb9d4313",
+        "source": "Red Ceiling Lamp (Dying)",
+        "translation": "Красный потолочный светильник (гаснет)"
       }
     ],
     "block:block.kubejs.ceilling_lamp_red_off": [
@@ -8745,6 +8795,11 @@
       }
     ],
     "block:block.kubejs.ceilling_red": [
+      {
+        "source_hash": "sha256:685394345b4000bbbdc30d2bacf891fe9461c2d4cde9843375c745ba336d19f2",
+        "source": "Ceiling",
+        "translation": "Потолок"
+      },
       {
         "source_hash": "sha256:8284dfc6ab402c253643a4054ec118a462bd236b08f690a35bd07fe236f65f16",
         "source": "Ceilling Red",
@@ -8791,6 +8846,11 @@
         "source_hash": "sha256:73f7f572c0a0745b73fbaaddd2890a1013c57ddef7c4ef10f2f95903200241b9",
         "source": "Closet Small",
         "translation": "Маленький шкаф"
+      },
+      {
+        "source_hash": "sha256:eb46b5446f56d87346e820e41d5d9dd4e7093d639001de2e83e6efda73b6891d",
+        "source": "Small Closet",
+        "translation": "Маленький шкаф"
       }
     ],
     "block:block.kubejs.compound_charge": [
@@ -8829,6 +8889,11 @@
       }
     ],
     "block:block.kubejs.cross_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:c0577dc25a126fa20a2b72613c4c491262417ce4baa89d9452fc6252b5d354a8",
         "source": "Cross Sign",
@@ -8879,6 +8944,11 @@
     ],
     "block:block.kubejs.drain": [
       {
+        "source_hash": "sha256:021847c415affc3369528d0f4a3754cbc53b97fe0dd5cde15d001e4b0a6a484f",
+        "source": "Drain (Permanent)",
+        "translation": "Водосток (постоянный)"
+      },
+      {
         "source_hash": "sha256:795b048ba2164e50aed17f86797f1f03add5a66df9c18b37013058c8c0115749",
         "source": "Drain",
         "translation": "Водосток (постоянный)"
@@ -8888,6 +8958,11 @@
       {
         "source_hash": "sha256:5d429aeb64f8fb50541dfd8691f3a658d556e2678e48f3f6ab177705915d8b19",
         "source": "Drain Breakable",
+        "translation": "Водосток"
+      },
+      {
+        "source_hash": "sha256:795b048ba2164e50aed17f86797f1f03add5a66df9c18b37013058c8c0115749",
+        "source": "Drain",
         "translation": "Водосток"
       }
     ],
@@ -8907,12 +8982,22 @@
     ],
     "block:block.kubejs.error": [
       {
+        "source_hash": "sha256:3b7933e9c428a8034e03b5c8b96ff85be0b96186e3bc01fb7bbb8fceed495a70",
+        "source": "Divided by Zero",
+        "translation": "Деление на ноль"
+      },
+      {
         "source_hash": "sha256:54a0e8c17ebb21a11f8a25b8042786ef7efe52441e6cc87e92c67e0c4c0c6e78",
         "source": "Error",
         "translation": "Деление на ноль"
       }
     ],
     "block:block.kubejs.error_carpet": [
+      {
+        "source_hash": "sha256:3b7933e9c428a8034e03b5c8b96ff85be0b96186e3bc01fb7bbb8fceed495a70",
+        "source": "Divided by Zero",
+        "translation": "Деление на ноль"
+      },
       {
         "source_hash": "sha256:a9a1f640dcb49ec0f731497072397b3806a4e3ef310c7877a3b0a9d90a4418b7",
         "source": "Error Carpet",
@@ -8923,6 +9008,11 @@
       {
         "source_hash": "sha256:1f69845cefdc0a0834455f55f65c644dd35905d1de747ee189cba0110d700042",
         "source": "Error Wallpaper",
+        "translation": "Деление на ноль"
+      },
+      {
+        "source_hash": "sha256:3b7933e9c428a8034e03b5c8b96ff85be0b96186e3bc01fb7bbb8fceed495a70",
+        "source": "Divided by Zero",
         "translation": "Деление на ноль"
       }
     ],
@@ -8935,12 +9025,22 @@
     ],
     "block:block.kubejs.exit_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:cb276046dbe8acf58ad9d2546be2933c3ba62bf36eff699e51293e1a668c3e22",
         "source": "Exit Sign",
         "translation": "Знак"
       }
     ],
     "block:block.kubejs.exit_sign2": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:0bf2f2cb3900fd7051276f7a66b993d2c34e8f624b3902aeee5c087920205b90",
         "source": "Exit Sign2",
@@ -8956,6 +9056,11 @@
     ],
     "block:block.kubejs.explantion1_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:abdbb6fff6f1401ca0691f85542f48a8f5addbff54ac1772bbfbba16f79f9206",
         "source": "Explantion1 Sign",
         "translation": "Знак"
@@ -8963,12 +9068,22 @@
     ],
     "block:block.kubejs.explantion2_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:ce7775e006109dfd7aefca64490b0907623a8121da47f39dd82a64626949a833",
         "source": "Explantion2 Sign",
         "translation": "Знак"
       }
     ],
     "block:block.kubejs.explantion2_sign_red": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Красный поясняющий знак"
+      },
       {
         "source_hash": "sha256:ec04ef159cf10856694f03df55f821cd6a63bd729444e65e602c7acc71a6a478",
         "source": "Explantion2 Sign Red",
@@ -9001,6 +9116,11 @@
         "source_hash": "sha256:7accf727d2eedf3c0ff522d9da2d3d382d8732293b52b1df1b706e6ec64d6274",
         "source": "Floor Tiles Full",
         "translation": "Напольная плитка"
+      },
+      {
+        "source_hash": "sha256:e81819b49e118b7feda9b56e98d08753c76801584a3b6e51ae7e85a667df6874",
+        "source": "Floor Tiles",
+        "translation": "Напольная плитка"
       }
     ],
     "block:block.kubejs.floor_tiles_infinite": [
@@ -9008,9 +9128,19 @@
         "source_hash": "sha256:6019806059c6b363885992cb25377a780081c0be119f1e13ecfc876416894dad",
         "source": "Floor Tiles Infinite",
         "translation": "Напольная плитка"
+      },
+      {
+        "source_hash": "sha256:e81819b49e118b7feda9b56e98d08753c76801584a3b6e51ae7e85a667df6874",
+        "source": "Floor Tiles",
+        "translation": "Напольная плитка"
       }
     ],
     "block:block.kubejs.half_frame_bottom": [
+      {
+        "source_hash": "sha256:02928f37ffeaac84dc13d5dc4dcb3557f8b75a0ad614d87db8d6df0a98b7c5e5",
+        "source": "Bottom of a Machine Frame",
+        "translation": "Нижняя половина каркаса механизма"
+      },
       {
         "source_hash": "sha256:2d3ba4626d3093c05b61cac5fb157c3427ed45fcc63cac07211eaeb73f186a99",
         "source": "Half Frame Bottom",
@@ -9019,12 +9149,22 @@
     ],
     "block:block.kubejs.half_frame_top": [
       {
+        "source_hash": "sha256:6bb37bab9d0295a21c7a77ae5cbc3fbade43ca28aca5b83cb8847ee0ed773636",
+        "source": "Top of a Machine Frame",
+        "translation": "Верхняя половина каркаса механизма"
+      },
+      {
         "source_hash": "sha256:cb60afcc7843a975d15520d79cbe2a12d28a6daaa144b49abd1aa175df5d50c6",
         "source": "Half Frame Top",
         "translation": "Верхняя половина каркаса механизма"
       }
     ],
     "block:block.kubejs.heavy_engineering_empty": [
+      {
+        "source_hash": "sha256:166a542c61183cc9f1185c3c4a873486a875b82aba4d918a3e305571c77ab2e3",
+        "source": "Heavy Engineering Frame",
+        "translation": "Тяжёлый инженерный каркас"
+      },
       {
         "source_hash": "sha256:626c626ff57ec33d7ac7faf1700534a8134ebbd05928dd3adfc03f6e9de831c5",
         "source": "Heavy Engineering Empty",
@@ -9040,12 +9180,22 @@
     ],
     "block:block.kubejs.infinity_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:7e545a65af4333b040b947ebaff996ad283a1cd92853f9766854ca199c26534f",
         "source": "Infinity Sign",
         "translation": "Знак"
       }
     ],
     "block:block.kubejs.inkblod_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:330fbad7524138fced909f12fbfcd6eeb1a0d21b5d87cb9ce7af15ef132fa67e",
         "source": "Inkblod Sign",
@@ -9068,6 +9218,11 @@
     ],
     "block:block.kubejs.left_arrow_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:3033b9ac59fe7e869804a72332a76fca429a4f7bb73e77ff66b260308e51510e",
         "source": "Left Arrow Sign",
         "translation": "Знак"
@@ -9078,9 +9233,19 @@
         "source_hash": "sha256:de42df3e93ae063e42d92d048551496f6cfc3e17f1562d61dc3e753636440683",
         "source": "Light Engineering Empty",
         "translation": "Лёгкий инженерный каркас"
+      },
+      {
+        "source_hash": "sha256:f6b68def4ca3c9fa129009b4390ebcf53c41fa2bbe8a57593821eb8c6a8a69ff",
+        "source": "Light Engineering Frame",
+        "translation": "Лёгкий инженерный каркас"
       }
     ],
     "block:block.kubejs.liminal_warning": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:2da1972233341243d8fe8a1642c612b3e03021ebe8ca7f78a8f4ac073ab92ac4",
         "source": "Liminal Warning",
@@ -9088,6 +9253,11 @@
       }
     ],
     "block:block.kubejs.liminal_warning2": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:a8641b6ab2800b507d07ccc74ce87ad458f265f2ee7158ba33aac65a4cf699f0",
         "source": "Liminal Warning2",
@@ -9103,6 +9273,11 @@
     ],
     "block:block.kubejs.liminalstone_poolrooms": [
       {
+        "source_hash": "sha256:25e0c7176ccead12e82aa4352bd6944db37d181a5b66a6d4924a96ee2926dff3",
+        "source": "Liminalstone",
+        "translation": "Лиминальный камень"
+      },
+      {
         "source_hash": "sha256:f26714e37625fdec9cd576fe0cbedd153887cefeec38109917177bb8fef7855c",
         "source": "Liminalstone Poolrooms",
         "translation": "Лиминальный камень"
@@ -9113,12 +9288,22 @@
         "source_hash": "sha256:c00579ed2220ab40483ccf556fc04a18786467fa1fa2b1ca60e9d57020d9675e",
         "source": "Lithium Ion Batteries",
         "translation": "Литий-ионные батарейки"
+      },
+      {
+        "source_hash": "sha256:fb0bd2934c541d9a7a713e6966a82ccbccca6895a0a2d1c70905109ff92720f5",
+        "source": "Lithium-Ion Batteries",
+        "translation": "Литий-ионные батарейки"
       }
     ],
     "block:block.kubejs.loaded_closet": [
       {
         "source_hash": "sha256:07209f22e5aba51b0207db1c591d8eb5a038cf6b9acd198e184ce7ba2b175e91",
         "source": "Loaded Closet",
+        "translation": "Шкаф"
+      },
+      {
+        "source_hash": "sha256:51ae9309d025515ec5b504693b9f8262aaaf2b86a28f06cf63b173bd6c030213",
+        "source": "Closet",
         "translation": "Шкаф"
       }
     ],
@@ -9133,6 +9318,11 @@
       {
         "source_hash": "sha256:781a83238d3273ee1858ebb545a8c2c15a689d2cca3f50a8660922c66d6d9515",
         "source": "Locker Sculkling",
+        "translation": "Шкафчик у бассейна"
+      },
+      {
+        "source_hash": "sha256:d1aeb1b117acd0e4280a2ed5eeaf7327e4fe057fe65ed6189c128c8e17ff0cd1",
+        "source": "Pool Locker",
         "translation": "Шкафчик у бассейна"
       }
     ],
@@ -9168,6 +9358,11 @@
       {
         "source_hash": "sha256:303cd53653bc40945c2ed59e8942ffea5ceede3114991b799176f101116a2f37",
         "source": "Long Range Wall Destroyer",
+        "translation": "Дальнобойный пробойник стен"
+      },
+      {
+        "source_hash": "sha256:404c4ae6db910922f1feaa55647a2a3f0c019b9a6d30282ee7883c9da2daaf9a",
+        "source": "Long-Range Wall Piercer",
         "translation": "Дальнобойный пробойник стен"
       }
     ],
@@ -9222,6 +9417,11 @@
     ],
     "block:block.kubejs.missing_tiles_half": [
       {
+        "source_hash": "sha256:69546791b25698259ac444c7668d755f2b13a260771f8571e5ffdd149107befa",
+        "source": "Missing Pool Tiles",
+        "translation": "Плитка бассейна с пропусками"
+      },
+      {
         "source_hash": "sha256:696e5832693f365b6afdb38d0d6f1698958477062583fd5f63935c852faebb88",
         "source": "Missing Tiles Half",
         "translation": "Плитка бассейна с пропусками"
@@ -9232,9 +9432,19 @@
         "source_hash": "sha256:5ddca12eb43f463e6bed25a43ffd536c7681e269fb9d5b58d8774ae72c4d4061",
         "source": "Missing Tiles Half Perm",
         "translation": "Плитка бассейна с пропусками (постоянная)"
+      },
+      {
+        "source_hash": "sha256:8d0055a4ee924330bdd0a8efc5e24ccff6c9d9ad3863bff76f5d8f963fc640e2",
+        "source": "Missing Pool Tiles (Permanent)",
+        "translation": "Плитка бассейна с пропусками (постоянная)"
       }
     ],
     "block:block.kubejs.monolith_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:5ac357d9d3f5a992afa99e1bee89f52302363bdd8c361ae4cb6723486cde6f0f",
         "source": "Monolith Sign",
@@ -9242,6 +9452,11 @@
       }
     ],
     "block:block.kubejs.nowhere_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:4bdf6483e18d5c7c5bc699b835bd31fe94c2ec72789ed55e2bc5164dfeabf962",
         "source": "Nowhere Sign",
@@ -9302,12 +9517,22 @@
         "source_hash": "sha256:b897d0c9ebf999067ecb486af6620a2bfbeeccc9a1eaa466f5d41d5181be3af2",
         "source": "Open Pool Locker Double",
         "translation": "Открытый шкафчик у бассейна"
+      },
+      {
+        "source_hash": "sha256:d1aeb1b117acd0e4280a2ed5eeaf7327e4fe057fe65ed6189c128c8e17ff0cd1",
+        "source": "Pool Locker",
+        "translation": "Открытый шкафчик у бассейна"
       }
     ],
     "block:block.kubejs.open_pool_locker_single": [
       {
         "source_hash": "sha256:1f49d7f0b8aa455782e9dced7f7252102d44c1d3fa488f38724f5be89a2b2bab",
         "source": "Open Pool Locker Single",
+        "translation": "Открытый шкафчик у бассейна"
+      },
+      {
+        "source_hash": "sha256:d1aeb1b117acd0e4280a2ed5eeaf7327e4fe057fe65ed6189c128c8e17ff0cd1",
+        "source": "Pool Locker",
         "translation": "Открытый шкафчик у бассейна"
       }
     ],
@@ -9343,6 +9568,11 @@
       {
         "source_hash": "sha256:d06836cb87202952b7b7908fad1a0e77eeb39a98b66438225471fb65b0a789e7",
         "source": "Pool Locker Double",
+        "translation": "Шкафчик у бассейна"
+      },
+      {
+        "source_hash": "sha256:d1aeb1b117acd0e4280a2ed5eeaf7327e4fe057fe65ed6189c128c8e17ff0cd1",
+        "source": "Pool Locker",
         "translation": "Шкафчик у бассейна"
       }
     ],
@@ -9382,6 +9612,11 @@
       }
     ],
     "block:block.kubejs.pool_tiles_golden_half": [
+      {
+        "source_hash": "sha256:1b68f64fc19268c5341773d6ea7efa5ceb66d55890e60ccb3bdbe44b63545270",
+        "source": "Golden Pool Tiles",
+        "translation": "Золотая плитка бассейна"
+      },
       {
         "source_hash": "sha256:266dee332a79032a8d1f39d4bb55105198d09504f9e12d343ac88542c5862572",
         "source": "Pool Tiles Golden Half",
@@ -9442,6 +9677,11 @@
         "source_hash": "sha256:88af9d21f82b56d25b44874fbe131b94b52e43fdcf4eb8fc22de1b7b683d4476",
         "source": "Poolrooms Portal",
         "translation": "Вход в Poolrooms"
+      },
+      {
+        "source_hash": "sha256:f4050edc5852a839166eb234899299d6b175e70b280ad779e6192ea6cf25051a",
+        "source": "Poolrooms Entrance",
+        "translation": "Вход в Poolrooms"
       }
     ],
     "block:block.kubejs.porous_stone": [
@@ -9470,6 +9710,11 @@
         "source_hash": "sha256:7ca4092035f256d29121e332a918d620a96a25ef2efd91c76906339b11b5fb81",
         "source": "Reality Charge Empty",
         "translation": "Пустой заряд реальности"
+      },
+      {
+        "source_hash": "sha256:ce15214a531433744d349f55140eeb0e9ddac86231e517a116b8f27102af26d5",
+        "source": "Empty Reality Charge",
+        "translation": "Пустой заряд реальности"
       }
     ],
     "block:block.kubejs.reality_chest": [
@@ -9487,6 +9732,11 @@
       }
     ],
     "block:block.kubejs.reality_controller_running": [
+      {
+        "source_hash": "sha256:829f8a2fe73ece17a85459b1c43ff29746c82c6a1ab523e94528516050aafc29",
+        "source": "Reality Controller (Active)",
+        "translation": "Контроллер реальности (активный)"
+      },
       {
         "source_hash": "sha256:d40d29e5e6e508305cbad3aae1beab1ce0310def24205e68cd667bece20d7b06",
         "source": "Reality Controller Running",
@@ -9540,12 +9790,22 @@
         "source_hash": "sha256:33b727fcc171c5964e8fe6e2adc279ba8a97de592963053b7936deb235abee55",
         "source": "Red Locker Double",
         "translation": "Красный двойной шкафчик"
+      },
+      {
+        "source_hash": "sha256:b0bfa90dbb91886b05c9a145371f5e6af68030662fba9c3950e3555ef31ee414",
+        "source": "Red Locker",
+        "translation": "Красный двойной шкафчик"
       }
     ],
     "block:block.kubejs.red_locker_single": [
       {
         "source_hash": "sha256:6b776d92be7a0c7ee61f99768ff758a8c564e919613d8af9776d31a1f1ec95b5",
         "source": "Red Locker Single",
+        "translation": "Красный шкафчик"
+      },
+      {
+        "source_hash": "sha256:b0bfa90dbb91886b05c9a145371f5e6af68030662fba9c3950e3555ef31ee414",
+        "source": "Red Locker",
         "translation": "Красный шкафчик"
       }
     ],
@@ -9564,6 +9824,11 @@
       }
     ],
     "block:block.kubejs.right_arrow_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:6a1143d05d27f6d9a17e408f6ffd50181d822f0c25b5dc4db81c266b44a95250",
         "source": "Right Arrow Sign",
@@ -9663,12 +9928,22 @@
     ],
     "block:block.kubejs.skull_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:c69a582e61621ed010135c021f17bcd9b59fcff94bbb05d2745d5ab989a028c4",
         "source": "Skull Sign",
         "translation": "Знак"
       }
     ],
     "block:block.kubejs.sky_day_block": [
+      {
+        "source_hash": "sha256:2781796e03204df5198a6b9c50fec067f901ca37c4444e2e10f6cd94d05670c6",
+        "source": "Day Sky Block",
+        "translation": "Блок дневного неба"
+      },
       {
         "source_hash": "sha256:2c702a0d5abe471805af4109183442f645c96946cd22e9176fd13e029f52b56f",
         "source": "Sky Day Block",
@@ -9680,9 +9955,19 @@
         "source_hash": "sha256:31ba3bf787dcbaa1e46ed8b842aab9bb4e06ac06e349cfef0f0588f251b0012a",
         "source": "Sky Morning Block",
         "translation": "Блок утреннего неба"
+      },
+      {
+        "source_hash": "sha256:4bd75616e00d16ebcc447b5bc8db4468de045f800bef3f803ea8f413f15ef2d5",
+        "source": "Morning Sky Block",
+        "translation": "Блок утреннего неба"
       }
     ],
     "block:block.kubejs.sky_night_block": [
+      {
+        "source_hash": "sha256:0466370f1cee8920a36a6e87f4f320025ff918f4a82faa6b1c8ed73dc2c00b60",
+        "source": "Night Sky Block",
+        "translation": "Блок ночного неба"
+      },
       {
         "source_hash": "sha256:a6d6b9db4751edb8b4ddeb80c4aab1b5f4c8c201b1ad073f227e03735a6bf0c7",
         "source": "Sky Night Block",
@@ -9693,6 +9978,11 @@
       {
         "source_hash": "sha256:327770e36c651eed2f0eae9e9cd29348780371c7edd3ae1d77fb833bcb5008b7",
         "source": "Sky Sunset Block",
+        "translation": "Блок закатного неба"
+      },
+      {
+        "source_hash": "sha256:3b3da4e2d4dad7c82da4b03051f4e083cbe70c89924bd05145920021f7eda7bb",
+        "source": "Sunset Sky Block",
         "translation": "Блок закатного неба"
       }
     ],
@@ -9719,6 +10009,11 @@
     ],
     "block:block.kubejs.stop_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:745c91a3975f9aedf6a79b8873e52cc8062ba3164a5f81f0327d403b7f9fbef3",
         "source": "Stop Sign",
         "translation": "Знак"
@@ -9743,12 +10038,22 @@
         "source_hash": "sha256:a621a972c1fb564160ca74dc1141d547f0f181305afef6e5e77d960fb4b41afa",
         "source": "Stripped Wallpaper2",
         "translation": "Ободранные обои"
+      },
+      {
+        "source_hash": "sha256:eb6249183103275ae4a11d483ef3d85e74b7a3da12941e9766a901fc821c1128",
+        "source": "Stripped Wallpaper",
+        "translation": "Ободранные обои"
       }
     ],
     "block:block.kubejs.stripped_wallpaper2_perm": [
       {
         "source_hash": "sha256:49d5d2b261da934ee6abcb02a39ff2a1c0d32fac25096e23dfb90d0fca6da6db",
         "source": "Stripped Wallpaper2 Perm",
+        "translation": "Ободранные обои (постоянные)"
+      },
+      {
+        "source_hash": "sha256:74ece97e2db4224a118433c136e9caf4f9c46449ad6df7c72cf403eab0c3d06a",
+        "source": "Stripped Wallpaper (Permanent)",
         "translation": "Ободранные обои (постоянные)"
       }
     ],
@@ -9757,6 +10062,11 @@
         "source_hash": "sha256:d4882cd7b3c04117d45df279786c33c909b0edc8a2eaee28318f6182c327507e",
         "source": "Stripped Wallpaper3",
         "translation": "Ободранные обои"
+      },
+      {
+        "source_hash": "sha256:eb6249183103275ae4a11d483ef3d85e74b7a3da12941e9766a901fc821c1128",
+        "source": "Stripped Wallpaper",
+        "translation": "Ободранные обои"
       }
     ],
     "block:block.kubejs.stripped_wallpaper3_perm": [
@@ -9764,9 +10074,19 @@
         "source_hash": "sha256:5e8cf79dba83777958fa7871c301537924820721f4b9b9477a55933b7bcd2e0f",
         "source": "Stripped Wallpaper3 Perm",
         "translation": "Ободранные обои (постоянные)"
+      },
+      {
+        "source_hash": "sha256:74ece97e2db4224a118433c136e9caf4f9c46449ad6df7c72cf403eab0c3d06a",
+        "source": "Stripped Wallpaper (Permanent)",
+        "translation": "Ободранные обои (постоянные)"
       }
     ],
     "block:block.kubejs.stripped_wallpaper4": [
+      {
+        "source_hash": "sha256:eb6249183103275ae4a11d483ef3d85e74b7a3da12941e9766a901fc821c1128",
+        "source": "Stripped Wallpaper",
+        "translation": "Ободранные обои"
+      },
       {
         "source_hash": "sha256:f1af491149afb9d312bffd5efa26ffdf55ecdede262dcfc7c101933dc7d9d479",
         "source": "Stripped Wallpaper4",
@@ -9778,6 +10098,11 @@
         "source_hash": "sha256:5b6ddfee39811d515e4e5e28d4a9a10b0ccf1853376b656e7c6d48a7d8ebd80f",
         "source": "Stripped Wallpaper4 Perm",
         "translation": "Ободранные обои (постоянные)"
+      },
+      {
+        "source_hash": "sha256:74ece97e2db4224a118433c136e9caf4f9c46449ad6df7c72cf403eab0c3d06a",
+        "source": "Stripped Wallpaper (Permanent)",
+        "translation": "Ободранные обои (постоянные)"
       }
     ],
     "block:block.kubejs.stripped_wallpaper5": [
@@ -9785,9 +10110,19 @@
         "source_hash": "sha256:a8a9063f63b923cbaac6c0c9afa37bf516bda2cc0f2f62d272779c4314677ce3",
         "source": "Stripped Wallpaper5",
         "translation": "Ободранные обои"
+      },
+      {
+        "source_hash": "sha256:eb6249183103275ae4a11d483ef3d85e74b7a3da12941e9766a901fc821c1128",
+        "source": "Stripped Wallpaper",
+        "translation": "Ободранные обои"
       }
     ],
     "block:block.kubejs.stripped_wallpaper5_perm": [
+      {
+        "source_hash": "sha256:74ece97e2db4224a118433c136e9caf4f9c46449ad6df7c72cf403eab0c3d06a",
+        "source": "Stripped Wallpaper (Permanent)",
+        "translation": "Ободранные обои (постоянные)"
+      },
       {
         "source_hash": "sha256:786117eeba5c4a6fcb3a781633675bd8f775630d875ba4ed1b8096cf992ca9e7",
         "source": "Stripped Wallpaper5 Perm",
@@ -9799,9 +10134,19 @@
         "source_hash": "sha256:a77397263be437279c995e2f1b4dce190110964074aa47e41202d69b01bebd3d",
         "source": "Stripped Wallpaper6",
         "translation": "Ободранные обои"
+      },
+      {
+        "source_hash": "sha256:eb6249183103275ae4a11d483ef3d85e74b7a3da12941e9766a901fc821c1128",
+        "source": "Stripped Wallpaper",
+        "translation": "Ободранные обои"
       }
     ],
     "block:block.kubejs.stripped_wallpaper6_perm": [
+      {
+        "source_hash": "sha256:74ece97e2db4224a118433c136e9caf4f9c46449ad6df7c72cf403eab0c3d06a",
+        "source": "Stripped Wallpaper (Permanent)",
+        "translation": "Ободранные обои (постоянные)"
+      },
       {
         "source_hash": "sha256:86cb694b47a90fc234b4a90cf50282702cd638042ab6c22ca193b4a31ccfe002",
         "source": "Stripped Wallpaper6 Perm",
@@ -9809,6 +10154,11 @@
       }
     ],
     "block:block.kubejs.stripped_wallpaper7": [
+      {
+        "source_hash": "sha256:eb6249183103275ae4a11d483ef3d85e74b7a3da12941e9766a901fc821c1128",
+        "source": "Stripped Wallpaper",
+        "translation": "Ободранные обои"
+      },
       {
         "source_hash": "sha256:f6bf6235f0ebeb0e01bd83f79ce4a6c97abfacb800cd9eb9627cc0d8a8424b36",
         "source": "Stripped Wallpaper7",
@@ -9820,9 +10170,19 @@
         "source_hash": "sha256:112faacecbcdf877debf155b43fd98dff5f69ee022122b7838795e160538f7f6",
         "source": "Stripped Wallpaper7 Perm",
         "translation": "Ободранные обои (постоянные)"
+      },
+      {
+        "source_hash": "sha256:74ece97e2db4224a118433c136e9caf4f9c46449ad6df7c72cf403eab0c3d06a",
+        "source": "Stripped Wallpaper (Permanent)",
+        "translation": "Ободранные обои (постоянные)"
       }
     ],
     "block:block.kubejs.stripped_wallpaper_perm": [
+      {
+        "source_hash": "sha256:74ece97e2db4224a118433c136e9caf4f9c46449ad6df7c72cf403eab0c3d06a",
+        "source": "Stripped Wallpaper (Permanent)",
+        "translation": "Ободранные обои (постоянные)"
+      },
       {
         "source_hash": "sha256:c24986912fbff713bcb986ff68f99c656968c17d93ecf9eb75d1d02b849d95c7",
         "source": "Stripped Wallpaper Perm",
@@ -9845,12 +10205,22 @@
     ],
     "block:block.kubejs.traffic_pole": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:ac9d34a62e73f3cc8f0c54df2847caaac39ce6e8974785d6526958614a6d2ff0",
         "source": "Traffic Pole",
         "translation": "Знак"
       }
     ],
     "block:block.kubejs.traffic_pole_red": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Красный дорожный столб"
+      },
       {
         "source_hash": "sha256:d65d7795f2f952e04e75870b8778f4e579708a4466b855fae873745980bf2368",
         "source": "Traffic Pole Red",
@@ -9873,12 +10243,22 @@
     ],
     "block:block.kubejs.tripple_sign": [
       {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
+      {
         "source_hash": "sha256:1e3ce8fbfb9fc1e5a01fe076f33d88b7cab315f7f38854157e2c021d4c95edce",
         "source": "Tripple Sign",
         "translation": "Знак"
       }
     ],
     "block:block.kubejs.turn_back_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:7c490e669d0979a13c99770820087122f3d7980a31e76a2e248c5423d265b974",
         "source": "Turn Back Sign",
@@ -9887,12 +10267,22 @@
     ],
     "block:block.kubejs.uncanny_shroom_crop": [
       {
+        "source_hash": "sha256:2c68d1829690ee00695f4df5acfd483912888d83b25aff0ebd67d09cdc7c2eee",
+        "source": "Uncanny Shroom",
+        "translation": "Всходы зловещего гриба"
+      },
+      {
         "source_hash": "sha256:83cfaf25a8668ece810619045c42b01526cdde8c1f0a01d9903b42efa5d7b958",
         "source": "Uncanny Shroom Crop",
         "translation": "Всходы зловещего гриба"
       }
     ],
     "block:block.kubejs.unknown1": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:650cef842df46254d46fd57279b7cfd67087d6de9b42f01be55a9cf3cca236c3",
         "source": "Unknown1",
@@ -9908,12 +10298,22 @@
     ],
     "block:block.kubejs.wall_cave_carrot_crop": [
       {
+        "source_hash": "sha256:5b765211ca5609718bb8ae34f03bfc63dd4cd249b1604cb9f01849c9dc37d64c",
+        "source": "Cave Carrots",
+        "translation": "Всходы пещерной моркови на стене"
+      },
+      {
         "source_hash": "sha256:bc112fe0a40e0fec625c46877cc01934ad97030ca9759a716f30141864904f88",
         "source": "Wall Cave Carrot Crop",
         "translation": "Всходы пещерной моркови на стене"
       }
     ],
     "block:block.kubejs.wall_destroyer": [
+      {
+        "source_hash": "sha256:612e16f449f938fee4ec3229edcced97971ef64fb08dfa1fcc8876c0b20eb493",
+        "source": "Wall Piercer",
+        "translation": "Пробойник стен"
+      },
       {
         "source_hash": "sha256:f39ae66976cdc62cdc6e2497778e5a0779c0d70a5a455d2438b3149fde9898a7",
         "source": "Wall Destroyer",
@@ -9931,6 +10331,11 @@
       {
         "source_hash": "sha256:7b7fa095c5ffebca6a4d514375926f181e1bb80599e774bcb1d4221568d62c47",
         "source": "Wallpaper1 Red",
+        "translation": "Красные обои"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
         "translation": "Красные обои"
       }
     ],
@@ -10062,6 +10467,11 @@
     ],
     "block:block.kubejs.wallpaper_nest_perm": [
       {
+        "source_hash": "sha256:0dd2234d805b825c406196a38955e4abad3da1258f3e7d92a32615f320bc155a",
+        "source": "Wallpaper Nest (Permanent)",
+        "translation": "Гнездо в обоях (постоянное)"
+      },
+      {
         "source_hash": "sha256:23993b489380e82d10bfeec2fcb9bb999572ca23ff4066afeb11cb1aee757393",
         "source": "Wallpaper Nest Perm",
         "translation": "Гнездо в обоях (постоянное)"
@@ -10103,6 +10513,11 @@
       }
     ],
     "block:block.kubejs.witahdigroi_sign": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Знак"
+      },
       {
         "source_hash": "sha256:4daa731e5e0aab841496c08e199aaa642339c1fa1d7944069b67f2c071b863de",
         "source": "Witahdigroi Sign",
@@ -25665,6 +26080,13 @@
         "translation": "Знак"
       }
     ],
+    "item:block.kubejs.explantion2_sign_red": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Красный поясняющий знак"
+      }
+    ],
     "item:block.kubejs.exposed_controller_wallpaper": [
       {
         "source_hash": "sha256:86c1142f4fed88c453ba9961bbaaf06a821d09c36b8fb3a3fdfb37645fb3bcdb",
@@ -26265,6 +26687,20 @@
         "translation": "Красные ковровые ступеньки"
       }
     ],
+    "item:block.kubejs.red_locker_double": [
+      {
+        "source_hash": "sha256:b0bfa90dbb91886b05c9a145371f5e6af68030662fba9c3950e3555ef31ee414",
+        "source": "Red Locker",
+        "translation": "Красный двойной шкафчик"
+      }
+    ],
+    "item:block.kubejs.red_locker_single": [
+      {
+        "source_hash": "sha256:b0bfa90dbb91886b05c9a145371f5e6af68030662fba9c3950e3555ef31ee414",
+        "source": "Red Locker",
+        "translation": "Красный шкафчик"
+      }
+    ],
     "item:block.kubejs.red_tape": [
       {
         "source_hash": "sha256:81d837ba499ea49c15af06f85dd1d1efc5423125c09161c4f98d6ce5cd765bfa",
@@ -26559,6 +26995,13 @@
         "translation": "Знак"
       }
     ],
+    "item:block.kubejs.traffic_pole_red": [
+      {
+        "source_hash": "sha256:0b6f395ca14ac202374d5cff678b71157d0bef7e00c3045e9b80aab4ffb85276",
+        "source": "sign",
+        "translation": "Красный дорожный столб"
+      }
+    ],
     "item:block.kubejs.treated_wood_flooring_block": [
       {
         "source_hash": "sha256:dd84d8974166fd212414de01624b8e7310ef46a618e47edd6ca2bc75fa68ff2b",
@@ -26606,6 +27049,13 @@
         "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
         "source": "Wallpaper",
         "translation": "Обои"
+      }
+    ],
+    "item:block.kubejs.wallpaper1_red": [
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Красные обои"
       }
     ],
     "item:block.kubejs.wallpaper1_slab": [
@@ -38083,6 +38533,11 @@
     ],
     "item:item.kubejs.ball_pit_bucket": [
       {
+        "source_hash": "sha256:000ea3f73f2d232c63508211899777260534abbac887e314fa675045af54bec7",
+        "source": "Ball Pit Bucket",
+        "translation": "Бассейн с шариками"
+      },
+      {
         "source_hash": "sha256:b48352d382fdf2d0792cf7af4f9ac562aa76f2d0bb6f5f1acf55e239e7b07f5e",
         "source": "Ball Pit",
         "translation": "Бассейн с шариками"
@@ -38103,6 +38558,11 @@
       }
     ],
     "item:item.kubejs.battery_bowl": [
+      {
+        "source_hash": "sha256:2d09b321a618915b96260c21cefbcd03ab0069ac211d4ce9d6a8a4939a4a10be",
+        "source": "Bowl Of Batteries",
+        "translation": "Чаша с батарейками"
+      },
       {
         "source_hash": "sha256:4eb2cbf6eafa6b3df3c8231b8d23584f83a68e3f1814ffe9f096910a4c9220c9",
         "source": "Battery Bowl",
@@ -38163,9 +38623,19 @@
         "source_hash": "sha256:511e23732b9feabd61a7196d1c1b7a901b5ebb9c0adcf6f16be0ac0f30c65044",
         "source": "Chapter 1 Star",
         "translation": "Звезда главы 1"
+      },
+      {
+        "source_hash": "sha256:8b34fc35d65d29f798941adc268a9bd1da197d675d3ded0a3175a4c1995eddba",
+        "source": "Hardcore Star (Chapter 1)",
+        "translation": "Звезда главы 1"
       }
     ],
     "item:item.kubejs.chapter_2_star": [
+      {
+        "source_hash": "sha256:3884023142acc39df7c2c278e2816600d0d93320113499fb3431d52ddf5d7bd2",
+        "source": "Hardcore Star (Chapter 2)",
+        "translation": "Звезда главы 2"
+      },
       {
         "source_hash": "sha256:6a6f75cbd8decd9f3a5f7e102d2419862b00265eba51a356482f1020ff246b41",
         "source": "Chapter 2 Star",
@@ -38173,6 +38643,11 @@
       }
     ],
     "item:item.kubejs.chapter_3_star": [
+      {
+        "source_hash": "sha256:a46ed781dea11c77f5ff942bbd0782bedd7279ddb6a9ce4995b655735aec1324",
+        "source": "Hardcore Star (Chapter 3)",
+        "translation": "Звезда главы 3"
+      },
       {
         "source_hash": "sha256:d0bb8438bc90087422d76e3ddf84c3c6dc125117a78a518e90e5fa2f0b87a235",
         "source": "Chapter 3 Star",
@@ -38184,9 +38659,19 @@
         "source_hash": "sha256:ae9f472390793e2c3dfd257683fc6cd2dc431883c3a16f05b189698bd96ce24e",
         "source": "Chapter 4 Star",
         "translation": "Звезда главы 4"
+      },
+      {
+        "source_hash": "sha256:c4ba7d27d9850b2afb3dca275f9155aa4c9464433a7f98aa58314a6b59f00e62",
+        "source": "Hardcore Star (Chapter 4)",
+        "translation": "Звезда главы 4"
       }
     ],
     "item:item.kubejs.chapter_5_star": [
+      {
+        "source_hash": "sha256:5616bb448127e765cdc03a4daf1d73db44ee9d2324eb344c6e9371c1a799d1fc",
+        "source": "Hardcore Star (Chapter 5)",
+        "translation": "Звезда главы 5"
+      },
       {
         "source_hash": "sha256:8fc59b44c25b1d14b33164004d9097a747296e651baafdc24303ce99efe1da25",
         "source": "Chapter 5 Star",
@@ -38530,6 +39015,11 @@
       }
     ],
     "item:item.kubejs.liquid_time_bucket": [
+      {
+        "source_hash": "sha256:46ab9920d17c705a7eaceb48d6cc307ac74c289232161570862128efb8facccb",
+        "source": "The Flow of Time Bucket",
+        "translation": "Поток времени"
+      },
       {
         "source_hash": "sha256:6807fefcda386a82fcf7b4b479ecb5bbb40f46cbd1726dcb18aec2ff5f42c6b7",
         "source": "The Flow of Time",

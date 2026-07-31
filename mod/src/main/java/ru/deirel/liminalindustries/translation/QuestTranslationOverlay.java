@@ -1,6 +1,5 @@
 package ru.deirel.liminalindustries.translation;
 
-import dev.ftb.mods.ftbquests.quest.BaseQuestFile;
 import dev.ftb.mods.ftbquests.quest.Quest;
 import dev.ftb.mods.ftbquests.quest.QuestObjectBase;
 import dev.ftb.mods.ftbquests.util.TextUtils;
@@ -9,41 +8,41 @@ import net.minecraft.network.chat.Component;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public final class QuestTranslationOverlay {
     private static final QuestTranslationPayload PAYLOAD = loadPayload();
-
-    private static BaseQuestFile checkedQuestFile;
-    private static boolean compatibleQuestFile;
 
     private QuestTranslationOverlay() {
     }
 
     public static Component title(QuestObjectBase object) {
         QuestTranslation translation = translationFor(object);
-        return translation == null || translation.title() == null
+        String translated = translation == null
             ? null
-            : TextUtils.parseRawText(translation.title());
+            : translation.translatedTitle(object.getRawTitle());
+        return translated == null ? null : TextUtils.parseRawText(translated);
     }
 
     public static Component subtitle(Quest quest) {
         QuestTranslation translation = translationFor(quest);
-        return translation == null || translation.subtitle() == null
+        String translated = translation == null
             ? null
-            : TextUtils.parseRawText(translation.subtitle());
+            : translation.translatedSubtitle(quest.getRawSubtitle());
+        return translated == null ? null : TextUtils.parseRawText(translated);
     }
 
     public static List<Component> description(Quest quest) {
         QuestTranslation translation = translationFor(quest);
-        return translation == null || translation.description().isEmpty()
+        List<String> translated = translation == null
             ? null
-            : translation.description().stream().map(TextUtils::parseRawText).toList();
+            : translation.translatedDescription(quest.getRawDescription());
+        return translated == null
+            ? null
+            : translated.stream().map(TextUtils::parseRawText).toList();
     }
 
     private static QuestTranslation translationFor(QuestObjectBase object) {
-        if (!isRussianLanguage() || !isCompatible(object.getQuestFile())) {
+        if (!isRussianLanguage()) {
             return null;
         }
         return PAYLOAD.translation(object.id);
@@ -51,28 +50,6 @@ public final class QuestTranslationOverlay {
 
     private static boolean isRussianLanguage() {
         return "ru_ru".equals(Minecraft.getInstance().getLanguageManager().getSelected());
-    }
-
-    private static synchronized boolean isCompatible(BaseQuestFile questFile) {
-        if (questFile != checkedQuestFile) {
-            Set<Long> actualObjectIds = questFile.getAllObjects().stream()
-                .map(object -> object.id)
-                .collect(Collectors.toUnmodifiableSet());
-            compatibleQuestFile = PAYLOAD.matchesObjectIds(actualObjectIds);
-            checkedQuestFile = questFile;
-
-            if (compatibleQuestFile) {
-                LiminalIndustriesTranslationMod.LOGGER.info(
-                    "Quest translation overlay enabled for {} objects",
-                    actualObjectIds.size()
-                );
-            } else {
-                LiminalIndustriesTranslationMod.LOGGER.warn(
-                    "Quest translation overlay disabled: unsupported quest book"
-                );
-            }
-        }
-        return compatibleQuestFile;
     }
 
     private static QuestTranslationPayload loadPayload() {

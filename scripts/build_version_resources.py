@@ -16,6 +16,7 @@ from typing import Any
 
 from catalog_utils import SnbtParser, sha256_bytes, validate_catalog
 from quest_sources import extract_records
+from runtime_audit_overrides import load_runtime_audit_overrides
 from translation_sources import json_pointer_set, parse_mantle_language
 
 
@@ -25,24 +26,29 @@ def json_bytes(value: Any) -> bytes:
     )
 
 
-def catalog_translation(catalog: dict[str, Any], record: dict[str, Any]) -> str:
+def optional_catalog_translation(
+    catalog: dict[str, Any], record: dict[str, Any]
+) -> str | None:
     matches = [
         variant["translation"]
         for variant in catalog["entries"].get(record["id"], [])
         if variant["source_hash"] == record["source_hash"]
         and variant["source"] == record["source"]
     ]
-    if len(matches) != 1:
+    if len(matches) > 1:
         raise ValueError(f"{record['id']}: expected one exact catalog translation")
-    return matches[0]
+    return matches[0] if matches else None
+
+
+def catalog_translation(catalog: dict[str, Any], record: dict[str, Any]) -> str:
+    translation = optional_catalog_translation(catalog, record)
+    if translation is None:
+        raise ValueError(f"{record['id']}: expected one exact catalog translation")
+    return translation
 
 
 def catalog_has(catalog: dict[str, Any], record: dict[str, Any]) -> bool:
-    return any(
-        variant["source_hash"] == record["source_hash"]
-        and variant["source"] == record["source"]
-        for variant in catalog["entries"].get(record["id"], [])
-    )
+    return optional_catalog_translation(catalog, record) is not None
 
 
 def record_needs_catalog(record: dict[str, Any]) -> bool:
@@ -179,17 +185,25 @@ def build_language_files(
         shutil.rmtree(assets)
     by_namespace: dict[str, dict[str, str]] = defaultdict(dict)
     for record in manifest["records"]:
+        if record.get("output_format") != "lang":
+            continue
+        value = optional_catalog_translation(catalog, record)
         if (
-            record.get("output_format") != "lang"
-            or (
-                record.get("native_ru_present", False)
-                and not record.get("force_output", False)
+            record.get("native_ru_present", False)
+            and not record.get("force_output", False)
+            and (
+                not record.get("native_ru_same_as_source", False)
+                or value is None
+                or value == record["source"]
             )
         ):
             continue
-        value = catalog_translation(catalog, record)
+        if value is None:
+            value = catalog_translation(catalog, record)
         keys = [record["translation_key"], *record.get("translation_aliases", [])]
         for key in keys:
+            if key in runtime_overrides.get(record["namespace"], {}):
+                continue
             previous = by_namespace[record["namespace"]].get(key)
             if previous is not None and previous != value:
                 raise ValueError(f"{key}: conflicting output translations")
@@ -493,28 +507,60 @@ def snapshot(root: Path) -> dict[str, bytes]:
     }
 
 
-def apply_resourcepack_overrides(overrides: Path, resourcepack: Path) -> None:
+def apply_resource_override(
+    source: Path,
+    relative: Path,
+    resourcepack: Path,
+) -> None:
+    target = resourcepack / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if (
+        len(relative.parts) == 4
+        and relative.parts[0] == "assets"
+        and relative.parts[2] == "lang"
+        and relative.suffix == ".json"
+        and target.exists()
+    ):
+        generated = json.loads(target.read_text(encoding="utf-8"))
+        override = json.loads(source.read_text(encoding="utf-8"))
+        if not isinstance(generated, dict) or not isinstance(override, dict):
+            raise ValueError(f"{relative}: language files must be JSON objects")
+        generated.update(override)
+        target.write_bytes(json_bytes(generated))
+    else:
+        shutil.copy2(source, target)
+
+
+def apply_translation_overrides(overrides: Path, resourcepack: Path) -> None:
     for source in sorted(overrides.rglob("*")):
         if not source.is_file():
             continue
         relative = source.relative_to(overrides)
-        target = resourcepack / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
         if (
-            len(relative.parts) == 4
-            and relative.parts[0] == "assets"
-            and relative.parts[2] == "lang"
-            and relative.suffix == ".json"
-            and target.exists()
+            not relative.parts
+            or relative.parts[0] != "assets"
+            or ("ru_ru" not in relative.parts and source.stem != "ru_ru")
         ):
-            generated = json.loads(target.read_text(encoding="utf-8"))
-            override = json.loads(source.read_text(encoding="utf-8"))
-            if not isinstance(generated, dict) or not isinstance(override, dict):
-                raise ValueError(f"{relative}: language files must be JSON objects")
-            generated.update(override)
-            target.write_bytes(json_bytes(generated))
-        else:
-            shutil.copy2(source, target)
+            raise ValueError(
+                f"{relative}: translation overrides may only contain ru_ru resources"
+            )
+        apply_resource_override(source, relative, resourcepack)
+
+
+def apply_compatibility_translations(
+    compatibility_pack: Path,
+    resourcepack: Path,
+) -> int:
+    copied = 0
+    for source in sorted((compatibility_pack / "assets").rglob("*")):
+        if not source.is_file():
+            continue
+        relative = source.relative_to(compatibility_pack)
+        if "ru_ru" not in relative.parts and source.stem != "ru_ru":
+            continue
+        apply_resource_override(source, relative, resourcepack)
+        copied += 1
+    return copied
 
 
 def parse_args() -> argparse.Namespace:
@@ -557,30 +603,10 @@ def main() -> int:
         raise ValueError(
             f"manifest has {len(unresolved)} pending translations: {unresolved[:3]}"
         )
-    runtime_overrides_path = version_root / "runtime-audit-overrides.json"
-    runtime_overrides: dict[str, dict[str, str]] = {}
-    if runtime_overrides_path.exists():
-        runtime_overrides_document = json.loads(
-            runtime_overrides_path.read_text(encoding="utf-8")
-        )
-        runtime_overrides_value = runtime_overrides_document.get("translations")
-        if (
-            runtime_overrides_document.get("schema") != 1
-            or not isinstance(runtime_overrides_value, dict)
-            or any(
-                not isinstance(namespace, str)
-                or not isinstance(values, dict)
-                or any(
-                    not isinstance(key, str)
-                    or not isinstance(value, str)
-                    or not value
-                    for key, value in values.items()
-                )
-                for namespace, values in runtime_overrides_value.items()
-            )
-        ):
-            raise ValueError("invalid runtime audit overrides")
-        runtime_overrides = runtime_overrides_value
+    runtime_policy = load_runtime_audit_overrides(
+        version_root / "runtime-audit-overrides.json"
+    )
+    runtime_overrides = runtime_policy.translations
 
     destination = (
         args.output.resolve()
@@ -621,10 +647,19 @@ def main() -> int:
             args.instance_root.resolve(),
             resourcepack,
         )
-        resourcepack_overrides = version_root / "resourcepack-overrides"
-        if resourcepack_overrides.exists():
-            apply_resourcepack_overrides(
-                resourcepack_overrides,
+        compatibility_pack = version_root / "compatibility-resourcepack"
+        compatibility_translation_count = (
+            apply_compatibility_translations(
+                compatibility_pack,
+                resourcepack,
+            )
+            if compatibility_pack.exists()
+            else 0
+        )
+        translation_overrides = version_root / "translation-overrides"
+        if translation_overrides.exists():
+            apply_translation_overrides(
+                translation_overrides,
                 resourcepack,
             )
         if args.check:
@@ -654,6 +689,7 @@ def main() -> int:
         "output_manual_strings": manual_count,
         "output_mantle_book_strings": mantle_book_count,
         "output_mantle_book_language_strings": mantle_language_count,
+        "compatibility_translation_resources": compatibility_translation_count,
         "runtime_audit_translation_keys": sum(
             len(values) for values in runtime_overrides.values()
         ),
