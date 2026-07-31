@@ -79,6 +79,18 @@ FTB Quests в `META-INF/mods.toml`.
 целевого мода. Индекс строится из version-specific manifest и payload и не
 объединяет Original и Rescripted.
 
+Для публикуемого исправления передайте положительный счётчик
+`-PreleaseIteration=<N>`. Он добавляется к версии JAR и внутренней версии мода;
+для Original служебный суффикс `-original` при этом удаляется:
+
+```sh
+./gradlew clean build \
+  -PtranslationVersion=1.19.3-original \
+  -PreleaseIteration=2
+```
+
+Результат: `liminal-industries-russian-translation-1.19.3-2.jar`.
+
 Обычный `build` также запускает `buildResourcePacks` и
 `verifyResourcePackPartition`, а также сборку и проверку compatibility ZIP.
 Проверка доказывает, что каждый канонический ключ назначен ровно один раз,

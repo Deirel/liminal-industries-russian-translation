@@ -10,6 +10,7 @@ eclipse/
 run/
 logs/
 forge*changelog.txt
+/release/
 
 # Eclipse
 *.launch
