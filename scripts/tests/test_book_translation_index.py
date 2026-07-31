@@ -84,6 +84,45 @@ class BookTranslationIndexTest(unittest.TestCase):
                 [resource["format"] for resource in first["resources"]],
             )
 
+    def test_uses_compatibility_english_for_language_field_source(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            resourcepack = root / "resourcepack"
+            compatibility = root / "compatibility"
+            russian = resourcepack / "assets/example/lang/ru_ru.json"
+            english = compatibility / "assets/example/lang/en_us.json"
+            russian.parent.mkdir(parents=True)
+            english.parent.mkdir(parents=True)
+            russian.write_text(
+                json.dumps({"book.page": "Текущий перевод"}),
+                encoding="utf-8",
+            )
+            english.write_text(
+                json.dumps({"book.page": "Current source"}),
+                encoding="utf-8",
+            )
+            manifest = {
+                "source_files": [],
+                "records": [
+                    {
+                        "id": "patchouli-lang:example:book.page",
+                        "source": "Old source",
+                        "source_id": "patchouli",
+                        "output_format": "lang",
+                        "namespace": "example",
+                        "translation_key": "book.page",
+                        "native_ru_present": False,
+                    }
+                ],
+            }
+
+            index = build_index(manifest, resourcepack, compatibility)
+
+        self.assertEqual(
+            "Current source",
+            index["resources"][0]["fields"][0]["source"],
+        )
+
     @staticmethod
     def record(
         output_format: str,

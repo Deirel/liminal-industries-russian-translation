@@ -8598,6 +8598,11 @@
     ],
     "block:block.kubejs.carpet_soft": [
       {
+        "source_hash": "sha256:311f453ee128ef393940af7fb510c5d1a2d31c1ee1cf0118d62fc9353283259e",
+        "source": "Carpet",
+        "translation": "Ковёр"
+      },
+      {
         "source_hash": "sha256:89ce982b55562784e85bd62b718f7408b37ee344e6c77d175dde3273ad36d472",
         "source": "Carpet Soft",
         "translation": "Ковёр"
@@ -8612,6 +8617,11 @@
     ],
     "block:block.kubejs.ceilling": [
       {
+        "source_hash": "sha256:685394345b4000bbbdc30d2bacf891fe9461c2d4cde9843375c745ba336d19f2",
+        "source": "Ceiling",
+        "translation": "Потолок"
+      },
+      {
         "source_hash": "sha256:e40b8540a1e5e63c786a8a3999f94f09ce01f6f58066ba26bd7ab4c57ca917ea",
         "source": "Ceilling",
         "translation": "Потолок"
@@ -8622,9 +8632,19 @@
         "source_hash": "sha256:2af43dc323bd89b31f45acf01906524f67dfb627ab24c57bd319508d06479d20",
         "source": "Ceilling2",
         "translation": "Белый потолок"
+      },
+      {
+        "source_hash": "sha256:685394345b4000bbbdc30d2bacf891fe9461c2d4cde9843375c745ba336d19f2",
+        "source": "Ceiling",
+        "translation": "Белый потолок"
       }
     ],
     "block:block.kubejs.ceilling_edge": [
+      {
+        "source_hash": "sha256:685394345b4000bbbdc30d2bacf891fe9461c2d4cde9843375c745ba336d19f2",
+        "source": "Ceiling",
+        "translation": "Край потолка"
+      },
       {
         "source_hash": "sha256:d899794e64f17e6de0e906cca9d00ef2f6e6ffb7663ab2e6099d0edd44ab659a",
         "source": "Ceilling Edge",
@@ -8632,6 +8652,11 @@
       }
     ],
     "block:block.kubejs.ceilling_frame": [
+      {
+        "source_hash": "sha256:740f40d56a305c4d5747209d40dd1cdc3a360dc80db04c7abbed76b6490b33af",
+        "source": "Ceiling Frame",
+        "translation": "Потолочный каркас"
+      },
       {
         "source_hash": "sha256:d45775bc02a4cdcbeb3feb64dbe877b241a81ee206e6393cc2457201f599b2f3",
         "source": "Ceilling Frame",
@@ -8643,9 +8668,19 @@
         "source_hash": "sha256:86b7a6b60897a270ab0b90c236b41d673f7386d77943ab202bcbcd50cdc28b26",
         "source": "Ceilling Lamp",
         "translation": "Потолочный светильник"
+      },
+      {
+        "source_hash": "sha256:d8afd715c4e7dc36d64557907c48361cc671ff169295ea5fdaddcd3e900fb8e2",
+        "source": "Ceiling Lamp",
+        "translation": "Потолочный светильник"
       }
     ],
     "block:block.kubejs.ceilling_lamp2": [
+      {
+        "source_hash": "sha256:d8afd715c4e7dc36d64557907c48361cc671ff169295ea5fdaddcd3e900fb8e2",
+        "source": "Ceiling Lamp",
+        "translation": "Белый потолочный светильник"
+      },
       {
         "source_hash": "sha256:e07cb813759555d245f9a9de78dc6e7eb92403d3ea3c9b122ca4976f2262886d",
         "source": "Ceilling Lamp2",
@@ -8740,6 +8775,11 @@
         "source_hash": "sha256:3032fb23c3052c6e0d2e1a3c580f3d98e790daf29185961db1d084239ee53e4d",
         "source": "Ceilling Lamp Off",
         "translation": "Потолочный светильник (выключен)"
+      },
+      {
+        "source_hash": "sha256:d8afd715c4e7dc36d64557907c48361cc671ff169295ea5fdaddcd3e900fb8e2",
+        "source": "Ceiling Lamp",
+        "translation": "Потолочный светильник (выключен)"
       }
     ],
     "block:block.kubejs.ceilling_lamp_red": [
@@ -8811,9 +8851,19 @@
         "source_hash": "sha256:28b6dac5fee8f86ac01211d07155663cac4a6314e052c47e65b31d590df7b19e",
         "source": "Ceilling Slab",
         "translation": "Потолочная плита"
+      },
+      {
+        "source_hash": "sha256:a8900a0bd99e8c0ffde6828a87ba2549a24ea84edd6c4043d84e7b3fcc944e5d",
+        "source": "Ceiling Slab",
+        "translation": "Потолочная плита"
       }
     ],
     "block:block.kubejs.ceilling_stairs": [
+      {
+        "source_hash": "sha256:5464e24aaa921ddb6772a820ffff93d12246dca7e485a45a3f0ea61f920a4824",
+        "source": "Ceiling Stairs",
+        "translation": "Потолочные ступеньки"
+      },
       {
         "source_hash": "sha256:e4ef6d390ef5d563480bc634819151332eaaecbc8b8efd9369c08f6ead579aff",
         "source": "Ceilling Stairs",
@@ -9328,6 +9378,11 @@
     ],
     "block:block.kubejs.long_pool_tiles": [
       {
+        "source_hash": "sha256:4b4b5f102d82a6e736dd91b56e6782aa8b9a99708119c71559ca15e887a7886d",
+        "source": "Pool Tiles",
+        "translation": "Длинная плитка бассейна"
+      },
+      {
         "source_hash": "sha256:51c4399a8e173908d994c0e7322c4b372532aeeae6255f1eac08715a8bf27b9b",
         "source": "Long Pool Tiles",
         "translation": "Длинная плитка бассейна"
@@ -9338,6 +9393,11 @@
         "source_hash": "sha256:91bdf2b80856268209a84cf3e2fb4ed0a8da5e18a2ccb7337a4388ef2c463852",
         "source": "Long Pool Tiles Slab",
         "translation": "Длинная плита из плитки бассейна"
+      },
+      {
+        "source_hash": "sha256:f6f7c026fc682b85743844ef2d9ffb5cd82918f46a69d211a78aebb34771e1f7",
+        "source": "Pool Tiles Slab",
+        "translation": "Длинная плита из плитки бассейна"
       }
     ],
     "block:block.kubejs.long_pool_tiles_soft": [
@@ -9345,12 +9405,22 @@
         "source_hash": "sha256:374964f4173bca69e1df0f8ca73478c8c538687fc9021be2cb1de28dffbce7e0",
         "source": "Long Pool Tiles Soft",
         "translation": "Длинная плитка бассейна"
+      },
+      {
+        "source_hash": "sha256:4b4b5f102d82a6e736dd91b56e6782aa8b9a99708119c71559ca15e887a7886d",
+        "source": "Pool Tiles",
+        "translation": "Длинная плитка бассейна"
       }
     ],
     "block:block.kubejs.long_pool_tiles_stairs": [
       {
         "source_hash": "sha256:809c9a063d28c336a655bb8e15ee85b1f0d75ecdfe64c3e5027527422b2a097f",
         "source": "Long Pool Tiles Stairs",
+        "translation": "Длинные ступеньки из плитки бассейна"
+      },
+      {
+        "source_hash": "sha256:ebf0a57b5621c09f83f3cb506a2e7eff61bb88d1223df928771c403c5b1957b6",
+        "source": "Pool Tiles Stairs",
         "translation": "Длинные ступеньки из плитки бассейна"
       }
     ],
@@ -9405,6 +9475,11 @@
       {
         "source_hash": "sha256:29c5df6435f0c56a70a1f1d1cfca133eb1b03d4d52553f0063c631a4c6bc8a86",
         "source": "Missing Tiles Empty",
+        "translation": "Плитка бассейна с пропусками"
+      },
+      {
+        "source_hash": "sha256:69546791b25698259ac444c7668d755f2b13a260771f8571e5ffdd149107befa",
+        "source": "Missing Pool Tiles",
         "translation": "Плитка бассейна с пропусками"
       }
     ],
@@ -9471,6 +9546,11 @@
       }
     ],
     "block:block.kubejs.oil_carpet": [
+      {
+        "source_hash": "sha256:02cb6e3231842a41f04fa54ff3a53de6610626ec0341cff5bddf5e989c6ce18c",
+        "source": "Crude Oil Soaked Carpet",
+        "translation": "Ковёр, пропитанный сырой нефтью"
+      },
       {
         "source_hash": "sha256:c26fd802d12b1668db2b01592676aa52c7506f63bacb0a0b72c511c9898f1cf0",
         "source": "Oil Carpet",
@@ -9581,6 +9661,11 @@
         "source_hash": "sha256:654e9c8a8ebc60dea03d80024549bfc87535d497b82fc40151a507ce8af14eeb",
         "source": "Pool Locker Single",
         "translation": "Шкафчик у бассейна"
+      },
+      {
+        "source_hash": "sha256:d1aeb1b117acd0e4280a2ed5eeaf7327e4fe057fe65ed6189c128c8e17ff0cd1",
+        "source": "Pool Locker",
+        "translation": "Шкафчик у бассейна"
       }
     ],
     "block:block.kubejs.pool_tiles": [
@@ -9598,6 +9683,11 @@
       }
     ],
     "block:block.kubejs.pool_tiles_golden": [
+      {
+        "source_hash": "sha256:1b68f64fc19268c5341773d6ea7efa5ceb66d55890e60ccb3bdbe44b63545270",
+        "source": "Golden Pool Tiles",
+        "translation": "Золотая плитка бассейна"
+      },
       {
         "source_hash": "sha256:cc0c5a0f734cb91a595b565c6c87439a74e4351a2d15a7b1281baea1eedefc67",
         "source": "Pool Tiles Golden",
@@ -9642,6 +9732,11 @@
         "source_hash": "sha256:1e74dab992301e6e534075cc9a87b0ef7716f1114e55e3f95bc14a08b86a9867",
         "source": "Pool Tiles Sky",
         "translation": "Плитка бассейна"
+      },
+      {
+        "source_hash": "sha256:4b4b5f102d82a6e736dd91b56e6782aa8b9a99708119c71559ca15e887a7886d",
+        "source": "Pool Tiles",
+        "translation": "Плитка бассейна"
       }
     ],
     "block:block.kubejs.pool_tiles_slab": [
@@ -9652,6 +9747,11 @@
       }
     ],
     "block:block.kubejs.pool_tiles_soft": [
+      {
+        "source_hash": "sha256:4b4b5f102d82a6e736dd91b56e6782aa8b9a99708119c71559ca15e887a7886d",
+        "source": "Pool Tiles",
+        "translation": "Плитка бассейна"
+      },
       {
         "source_hash": "sha256:8871890d00497751c29341d12b0504d286f9eb32a7361cce16d165d80f0315d8",
         "source": "Pool Tiles Soft",
@@ -9666,6 +9766,11 @@
       }
     ],
     "block:block.kubejs.pool_tiles_wet": [
+      {
+        "source_hash": "sha256:201af5d930c289acd6b7f7349df1c9623576a8cec86445054a18c13c72cda00a",
+        "source": "Wet Pool Tiles",
+        "translation": "Мокрая плитка бассейна"
+      },
       {
         "source_hash": "sha256:6b206e9e2e7c47fa42641a1af2edeb72b53127f9819912be0daa999b2f8afbfb",
         "source": "Pool Tiles Wet",
@@ -9732,6 +9837,11 @@
       }
     ],
     "block:block.kubejs.reality_controller_running": [
+      {
+        "source_hash": "sha256:6316a3d818024627fbaab5a9e36672e94e59693364bf0b7e48662a0613bd876d",
+        "source": "Reality Controller",
+        "translation": "Контроллер реальности (активный)"
+      },
       {
         "source_hash": "sha256:829f8a2fe73ece17a85459b1c43ff29746c82c6a1ab523e94528516050aafc29",
         "source": "Reality Controller (Active)",
@@ -10322,6 +10432,11 @@
     ],
     "block:block.kubejs.wallpaper1": [
       {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Обои"
+      },
+      {
         "source_hash": "sha256:b53e62d42fabed2dbe1d8faab59a9d80e55c6da6a4cee5bcbc47763bda00f8f9",
         "source": "Wallpaper1",
         "translation": "Обои"
@@ -10344,9 +10459,19 @@
         "source_hash": "sha256:394d727b7be997fc62cbc01bb24eb8ebfa3048cb320e58e3bf3092c3ea07df7c",
         "source": "Wallpaper1 Slab",
         "translation": "Плита из обоев"
+      },
+      {
+        "source_hash": "sha256:7f0a5efd87e4efc5f7ed94e4fdd9c55f9cc34af327d2fcb605eee04e79d4ac0a",
+        "source": "Wallpaper Slab",
+        "translation": "Плита из обоев"
       }
     ],
     "block:block.kubejs.wallpaper2": [
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Обои в крупный горошек"
+      },
       {
         "source_hash": "sha256:aece03a4f2f07cd5dba94b9ec2c87ef94608b03385d90b9fab9d35ebc2ac7806",
         "source": "Wallpaper2",
@@ -10358,9 +10483,19 @@
         "source_hash": "sha256:4261f30a79120e4b85d93bd93b4be016293393a001e8799b044d6912eb836fc0",
         "source": "Wallpaper3",
         "translation": "Обои в мелкий горошек"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Обои в мелкий горошек"
       }
     ],
     "block:block.kubejs.wallpaper4": [
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Однотонные обои"
+      },
       {
         "source_hash": "sha256:ec02cd6e344c9e40b68a3920de65335ad3652b46fa62fc05fc5bece95faa92d6",
         "source": "Wallpaper4",
@@ -10368,6 +10503,11 @@
       }
     ],
     "block:block.kubejs.wallpaper5": [
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Гостиничные обои"
+      },
       {
         "source_hash": "sha256:f51b560315ffe5191b889142e20cd5bb6b4fece65a0e5b06478d8436f14115c6",
         "source": "Wallpaper5",
@@ -10379,6 +10519,11 @@
         "source_hash": "sha256:59fc657bab51f9a3df91c12319d5cd0f26b056be6dbfa3dce825b7a81b756ff1",
         "source": "Wallpaper5 Slab",
         "translation": "Плита из гостиничных обоев"
+      },
+      {
+        "source_hash": "sha256:8951ae39dfadf199cd462a21c252020d676287dae56549d4dca429e881e91c6b",
+        "source": "Hotel Wall Slab",
+        "translation": "Плита из гостиничных обоев"
       }
     ],
     "block:block.kubejs.wallpaper6": [
@@ -10386,12 +10531,22 @@
         "source_hash": "sha256:3bcd83b7aea8a52ae959e0715d22a6b53835c3c50e8fbc3c9c6fa294d60558a3",
         "source": "Wallpaper6",
         "translation": "Полосатые обои"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
+        "translation": "Полосатые обои"
       }
     ],
     "block:block.kubejs.wallpaper7": [
       {
         "source_hash": "sha256:12186e822f66a85277b52387795f3ca304f3532d65dc248da30a1a7e3b1015c8",
         "source": "Wallpaper7",
+        "translation": "Розовые обои"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
         "translation": "Розовые обои"
       }
     ],
@@ -10434,6 +10589,11 @@
       {
         "source_hash": "sha256:72386d945f36146d3ea07849de75d11e91e07d29fade352dd9a40fd2d2c01ca9",
         "source": "Wallpaper Fake",
+        "translation": "Поддельные обои"
+      },
+      {
+        "source_hash": "sha256:8c70ec7623dd02a655495e8a8937f4e4d77d9f5c3404bff878186b403d59867f",
+        "source": "Fake Wallpaper",
         "translation": "Поддельные обои"
       }
     ],
@@ -10481,6 +10641,11 @@
       {
         "source_hash": "sha256:27e75a23679338939cf9b81eba241fc7810b1aed00187945662a9de4a8748a16",
         "source": "Wallpaper Soft",
+        "translation": "Обои"
+      },
+      {
+        "source_hash": "sha256:a7f173cdaae49a03443ed62db8c0e34857d8c6b11281e6da7af7377309772153",
+        "source": "Wallpaper",
         "translation": "Обои"
       }
     ],

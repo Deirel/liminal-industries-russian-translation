@@ -9,6 +9,7 @@ import net.minecraft.server.packs.PackResources;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.repository.Pack;
 import net.minecraft.server.packs.resources.IoSupplier;
+import net.minecraft.server.packs.resources.Resource;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.forgespi.locating.IModFile;
 
@@ -25,6 +26,9 @@ import java.util.Map;
 import java.util.Set;
 
 interface BookSourceResolver {
+    record LanguageLayer(String packId, byte[] bytes) {
+    }
+
     record Resolution(byte[] bytes, String error) {
         static Resolution found(byte[] bytes) {
             return new Resolution(bytes, null);
@@ -65,18 +69,15 @@ interface BookSourceResolver {
 
     static BookSourceResolver effectiveClientPacks() {
         return (resource, expectedSha256) -> {
-            List<Pack> selected;
+            Minecraft minecraft;
             try {
-                Minecraft minecraft = Minecraft.getInstance();
+                minecraft = Minecraft.getInstance();
                 if (minecraft == null
                     || minecraft.getResourcePackRepository() == null) {
                     return Resolution.missing(
                         "effective resource stack is unavailable"
                     );
                 }
-                selected = new ArrayList<>(
-                    minecraft.getResourcePackRepository().getSelectedPacks()
-                );
             } catch (RuntimeException exception) {
                 return Resolution.missing(
                     "effective resource stack is unavailable: "
@@ -84,8 +85,15 @@ interface BookSourceResolver {
                 );
             }
             if ("lang/en_us.json".equals(resource.path())) {
-                return resolveEffectiveLanguage(selected, resource);
+                return resolveEffectiveLanguage(
+                    minecraft,
+                    resource,
+                    expectedSha256
+                );
             }
+            List<Pack> selected = new ArrayList<>(
+                minecraft.getResourcePackRepository().getSelectedPacks()
+            );
             Collections.reverse(selected);
             for (Pack pack : selected) {
                 if (isTranslationBaseline(pack)) {
@@ -156,24 +164,50 @@ interface BookSourceResolver {
     }
 
     private static Resolution resolveEffectiveLanguage(
-        List<Pack> selected,
-        BookTranslationIndex.ResourceKey resource
+        Minecraft minecraft,
+        BookTranslationIndex.ResourceKey resource,
+        String expectedSha256
     ) {
+        List<LanguageLayer> layers = new ArrayList<>();
+        Resolution installed = installedMods().resolve(
+            resource,
+            expectedSha256
+        );
+        if (installed.found()) {
+            layers.add(new LanguageLayer("<installed-mods>", installed.bytes()));
+        }
+        try {
+            for (Resource candidate : minecraft
+                .getResourceManager()
+                .getResourceStack(resource.location())) {
+                try (InputStream stream = candidate.open()) {
+                    layers.add(new LanguageLayer(
+                        candidate.sourcePackId(),
+                        stream.readAllBytes()
+                    ));
+                }
+            }
+        } catch (IOException | RuntimeException exception) {
+            return Resolution.missing(
+                "effective language resource is invalid: "
+                    + exception.getMessage()
+            );
+        }
+        return mergeLanguageLayers(layers);
+    }
+
+    static Resolution mergeLanguageLayers(List<LanguageLayer> layers) {
         JsonObject merged = new JsonObject();
         boolean found = false;
-        for (Pack pack : selected) {
-            if (isTranslationBaseline(pack)) {
-                continue;
-            }
-            Resolution candidate = read(pack, resource);
-            if (!candidate.found()) {
+        for (LanguageLayer layer : layers) {
+            if (isTranslationBaseline(layer.packId())) {
                 continue;
             }
             found = true;
             try {
                 JsonObject document = JsonParser.parseString(
                     new String(
-                        candidate.bytes(),
+                        layer.bytes(),
                         java.nio.charset.StandardCharsets.UTF_8
                     )
                 ).getAsJsonObject();
@@ -223,9 +257,13 @@ interface BookSourceResolver {
     }
 
     private static boolean isTranslationBaseline(Pack pack) {
+        return isTranslationBaseline(pack.getId());
+    }
+
+    private static boolean isTranslationBaseline(String packId) {
         return (
             LiminalIndustriesTranslationMod.MOD_ID + "_baseline"
-        ).equals(pack.getId());
+        ).equals(packId);
     }
 
     private static Resolution mergeLanguageFiles(Map<Path, Path> matches) {

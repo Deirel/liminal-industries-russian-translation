@@ -209,6 +209,7 @@ tasks.register('generateBookTranslationIndex', Exec) {
 
     inputs.file translationManifestFile
     inputs.dir translationResourcePack
+    inputs.dir compatibilityResourcePack
     inputs.file '../scripts/build_book_translation_index.py'
     inputs.file '../scripts/translation_sources.py'
     outputs.file output
@@ -220,6 +221,8 @@ tasks.register('generateBookTranslationIndex', Exec) {
         translationManifestFile.absolutePath,
         '--resourcepack',
         translationResourcePack.asFile.absolutePath,
+        '--compatibility-resourcepack',
+        compatibilityResourcePack.asFile.absolutePath,
         '--output',
         output.get().asFile.absolutePath
     )

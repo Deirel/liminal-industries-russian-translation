@@ -56,7 +56,29 @@ def translated_value(
     return value
 
 
-def build_index(manifest: dict[str, Any], resourcepack: Path) -> dict[str, Any]:
+def load_compatibility_languages(
+    resourcepack: Path | None,
+) -> dict[str, dict[str, str]]:
+    if resourcepack is None:
+        return {}
+    result: dict[str, dict[str, str]] = {}
+    for path in sorted(resourcepack.glob("assets/*/lang/en_us.json")):
+        namespace = path.parts[-3]
+        document = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(document, dict) or any(
+            not isinstance(key, str) or not isinstance(value, str)
+            for key, value in document.items()
+        ):
+            raise ValueError(f"{path}: expected a string language object")
+        result[namespace] = document
+    return result
+
+
+def build_index(
+    manifest: dict[str, Any],
+    resourcepack: Path,
+    compatibility_resourcepack: Path | None = None,
+) -> dict[str, Any]:
     source_hashes = {
         entry["path"]: entry["sha256"]
         for entry in manifest["source_files"]
@@ -146,6 +168,9 @@ def build_index(manifest: dict[str, Any], resourcepack: Path) -> dict[str, Any]:
             }
         )
 
+    compatibility_languages = load_compatibility_languages(
+        compatibility_resourcepack
+    )
     patchouli_language = defaultdict(list)
     for record in manifest["records"]:
         if (
@@ -165,13 +190,16 @@ def build_index(manifest: dict[str, Any], resourcepack: Path) -> dict[str, Any]:
             translation = values.get(key)
             if not isinstance(translation, str):
                 raise ValueError(f"{output}: missing Patchouli language key {key}")
-            if translation == record["source"]:
+            source = compatibility_languages.get(namespace, {}).get(
+                key, record["source"]
+            )
+            if translation == source:
                 continue
             fields.append(
                 {
                     "id": record["id"],
                     "key": key,
-                    "source": record["source"],
+                    "source": source,
                     "translation": translation,
                 }
             )
@@ -204,6 +232,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--resourcepack", type=Path, required=True)
+    parser.add_argument("--compatibility-resourcepack", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     return parser.parse_args()
 
@@ -211,7 +240,11 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
-    index = build_index(manifest, args.resourcepack)
+    index = build_index(
+        manifest,
+        args.resourcepack,
+        args.compatibility_resourcepack,
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_bytes(json_bytes(index))
     print(

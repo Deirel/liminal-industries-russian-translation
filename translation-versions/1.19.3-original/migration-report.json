@@ -17,14 +17,14 @@
     },
     "items": {
       "adapter": "registry_items",
-      "records": 7901,
+      "records": 7810,
       "registry_source": "language_models+quest_refs+kubejs_startup+reviewed_hints",
-      "registry_items": 7901,
+      "registry_items": 7810,
       "native_ru_items": 6396,
       "generated_english_names": 22,
       "reviewed_hint_names": 2,
       "translation_aliases": 5,
-      "kubejs_startup_names": 146
+      "kubejs_startup_names": 55
     },
     "blocks": {
       "adapter": "registry_blocks",
@@ -42,12 +42,12 @@
       "json_records": 688
     }
   },
-  "catalog_hits": 4291,
-  "finalized": 4291,
+  "catalog_hits": 4200,
+  "finalized": 4200,
   "native_ru_coverage": 12757,
   "pending": 0,
   "translation_statuses": {
-    "FINALIZED": 4291,
+    "FINALIZED": 4200,
     "NATIVE_RU": 12612
   },
   "pending_by_source": {},
