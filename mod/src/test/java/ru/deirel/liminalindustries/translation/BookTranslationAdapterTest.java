@@ -387,7 +387,6 @@ class BookTranslationAdapterTest {
         return new BookTranslationIndex.Field(
             id,
             source,
-            BookTranslationAdapter.sha256(bytes(source)),
             pointer,
             line,
             key,

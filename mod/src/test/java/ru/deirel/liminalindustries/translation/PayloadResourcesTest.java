@@ -227,10 +227,6 @@ class PayloadResourcesTest {
         extra.addProperty("object_id", "74DC667B840746B0");
         extra.addProperty("field", "description");
         extra.addProperty("source", "Unexpected source");
-        extra.addProperty(
-            "source_hash",
-            QuestTranslationField.sourceHash("Unexpected source")
-        );
         extra.addProperty("index", 5);
         metadata.getAsJsonArray("fields").add(extra);
 

@@ -25,8 +25,7 @@ public final class TranslationAuditIndex {
 
     public record LanguageTarget(
         String translationKey,
-        String source,
-        boolean nativeRussian
+        String source
     ) {
     }
 
@@ -77,8 +76,7 @@ public final class TranslationAuditIndex {
                 record.get("translation_key").getAsString(),
                 record.get("source").isJsonNull()
                     ? null
-                    : record.get("source").getAsString(),
-                record.get("native_ru").getAsBoolean()
+                    : record.get("source").getAsString()
             );
             result.put(target.translationKey(), target);
         }

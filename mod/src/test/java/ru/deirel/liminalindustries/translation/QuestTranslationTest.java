@@ -74,10 +74,6 @@ class QuestTranslationTest {
         String source,
         String translation
     ) {
-        return new QuestTranslationField(
-            source,
-            QuestTranslationField.sourceHash(source),
-            translation
-        );
+        return new QuestTranslationField(source, translation);
     }
 }

@@ -196,8 +196,7 @@ tasks.register('generateTranslationAuditIndex') {
         }.each { record ->
             def target = [
                 translation_key: record.translation_key,
-                source: record.source,
-                native_ru: record.native_ru_present == true
+                source: record.source
             ]
             def previous = languageTargetsByKey.putIfAbsent(
                 record.translation_key,
@@ -205,8 +204,6 @@ tasks.register('generateTranslationAuditIndex') {
             )
             if (previous && previous.source != target.source) {
                 previous.source = null
-                previous.native_ru =
-                    previous.native_ru || target.native_ru
             }
         }
         def languageTargets = languageTargetsByKey.values().sort {

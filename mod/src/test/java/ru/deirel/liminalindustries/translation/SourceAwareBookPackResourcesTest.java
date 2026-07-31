@@ -43,7 +43,6 @@ class SourceAwareBookPackResourcesTest {
                     "fields": [{
                       "id": "title",
                       "source": "Old",
-                      "source_hash": "sha256:old",
                       "pointer": "/title",
                       "translation": "Старое"
                     }]

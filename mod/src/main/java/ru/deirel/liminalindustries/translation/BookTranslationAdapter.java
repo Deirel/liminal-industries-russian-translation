@@ -13,6 +13,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.HexFormat;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -64,11 +65,7 @@ final class BookTranslationAdapter {
     static String sha256(byte[] value) {
         try {
             byte[] digest = MessageDigest.getInstance("SHA-256").digest(value);
-            StringBuilder result = new StringBuilder("sha256:");
-            for (byte part : digest) {
-                result.append(String.format("%02x", part));
-            }
-            return result.toString();
+            return "sha256:" + HexFormat.of().formatHex(digest);
         } catch (NoSuchAlgorithmException exception) {
             throw new IllegalStateException("SHA-256 is unavailable", exception);
         }

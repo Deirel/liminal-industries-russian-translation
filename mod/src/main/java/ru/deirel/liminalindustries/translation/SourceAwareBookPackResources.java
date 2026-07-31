@@ -10,6 +10,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -17,10 +18,8 @@ final class SourceAwareBookPackResources implements PackResources {
     private final PackResources delegate;
     private final BookTranslationIndex index;
     private final BookSourceResolver sources;
-    private final Map<ResourceLocation, byte[]> generated =
+    private final Map<ResourceLocation, Optional<byte[]>> generated =
         new ConcurrentHashMap<>();
-    private final Set<ResourceLocation> unavailable =
-        ConcurrentHashMap.newKeySet();
 
     SourceAwareBookPackResources(
         PackResources delegate,
@@ -48,29 +47,11 @@ final class SourceAwareBookPackResources implements PackResources {
         if (rule == null) {
             return delegate.getResource(type, location);
         }
-        byte[] cached = generated.get(location);
-        if (cached != null) {
-            return bytes(cached);
-        }
-        if (unavailable.contains(location)) {
-            return null;
-        }
-        synchronized (generated) {
-            cached = generated.get(location);
-            if (cached != null) {
-                return bytes(cached);
-            }
-            if (unavailable.contains(location)) {
-                return null;
-            }
-            byte[] resolved = resolve(type, rule);
-            if (resolved == null) {
-                unavailable.add(location);
-                return null;
-            }
-            generated.put(location, resolved);
-            return bytes(resolved);
-        }
+        Optional<byte[]> resolved = generated.computeIfAbsent(
+            location,
+            ignored -> Optional.ofNullable(resolve(type, rule))
+        );
+        return resolved.map(SourceAwareBookPackResources::bytes).orElse(null);
     }
 
     private byte[] resolve(PackType type, BookTranslationIndex.Rule rule) {

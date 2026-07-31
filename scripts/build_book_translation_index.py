@@ -128,7 +128,6 @@ def build_index(manifest: dict[str, Any], resourcepack: Path) -> dict[str, Any]:
                 {
                     "id": record["id"],
                     "source": record["source"],
-                    "source_hash": record["source_hash"],
                     address_name: record["location"][address_name],
                     "translation": translation,
                 }
@@ -173,7 +172,6 @@ def build_index(manifest: dict[str, Any], resourcepack: Path) -> dict[str, Any]:
                     "id": record["id"],
                     "key": key,
                     "source": record["source"],
-                    "source_hash": record["source_hash"],
                     "translation": translation,
                 }
             )

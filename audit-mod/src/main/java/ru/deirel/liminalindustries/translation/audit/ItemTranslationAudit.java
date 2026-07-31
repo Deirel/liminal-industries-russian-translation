@@ -254,6 +254,7 @@ final class ItemTranslationAudit {
             Set<String> verifiedRussianKeys = new TreeSet<>();
             Set<String> sourceChangedKeys = new TreeSet<>();
             Set<String> skippedKeys = new TreeSet<>();
+            Set<String> sameAsEnglishKeys = new TreeSet<>();
             Map<String, AuditProvenance> keyProvenance = new LinkedHashMap<>();
             for (String key : keys) {
                 TranslationAuditIndex.LanguageTarget target =
@@ -265,6 +266,9 @@ final class ItemTranslationAudit {
                 );
                 boolean sameAsEnglish = hasRussianResource
                     && russian.values().get(key).equals(english.values().get(key));
+                if (sameAsEnglish) {
+                    sameAsEnglishKeys.add(key);
+                }
                 boolean sourceChanged = target != null
                     && target.source() != null
                     && english.values().get(key) != null
@@ -311,13 +315,6 @@ final class ItemTranslationAudit {
             );
             Set<String> missing = new TreeSet<>(keys);
             missing.removeAll(verifiedRussianKeys);
-            Set<String> sameAsEnglish = new TreeSet<>();
-            for (String key : keys) {
-                if (russian.values().containsKey(key)
-                    && russian.values().get(key).equals(english.values().get(key))) {
-                    sameAsEnglish.add(key);
-                }
-            }
             Map<String, String> translationSources = new LinkedHashMap<>();
             for (String key : keys) {
                 String pack = russian.sources().get(key);
@@ -345,7 +342,7 @@ final class ItemTranslationAudit {
                 subject.discoveredFrom(),
                 keys,
                 missing,
-                sameAsEnglish,
+                sameAsEnglishKeys,
                 sourceChangedKeys,
                 skippedKeys,
                 translationSources,

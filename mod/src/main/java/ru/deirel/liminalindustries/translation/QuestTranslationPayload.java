@@ -208,8 +208,7 @@ final class QuestTranslationPayload {
                         );
                     }
                     SourceField source = new SourceField(
-                        field.get("source").getAsString(),
-                        field.get("source_hash").getAsString()
+                        field.get("source").getAsString()
                     );
                     long objectId = Long.parseUnsignedLong(encodedId, 16);
                     MutableQuestSourceFields fields = mutable.computeIfAbsent(
@@ -285,11 +284,7 @@ final class QuestTranslationPayload {
                     + Long.toUnsignedString(objectId, 16)
             );
         }
-        return new QuestTranslationField(
-            source.source(),
-            source.sourceHash(),
-            translation
-        );
+        return new QuestTranslationField(source.source(), translation);
     }
 
     private static List<QuestTranslationField> combineDescription(
@@ -314,7 +309,6 @@ final class QuestTranslationPayload {
             }
             result.add(new QuestTranslationField(
                 source.source(),
-                source.sourceHash(),
                 translations.get(index)
             ));
         }
@@ -353,7 +347,7 @@ final class QuestTranslationPayload {
         }
     }
 
-    private record SourceField(String source, String sourceHash) {
+    private record SourceField(String source) {
     }
 
     private record QuestSourceFields(

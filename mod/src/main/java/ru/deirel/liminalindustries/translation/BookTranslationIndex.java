@@ -37,7 +37,6 @@ final class BookTranslationIndex {
     record Field(
         String id,
         String source,
-        String sourceHash,
         String pointer,
         Integer line,
         String key,
@@ -98,7 +97,6 @@ final class BookTranslationIndex {
                     fields.add(new Field(
                         field.get("id").getAsString(),
                         field.get("source").getAsString(),
-                        field.get("source_hash").getAsString(),
                         optionalString(field, "pointer"),
                         field.has("line") ? field.get("line").getAsInt() : null,
                         optionalString(field, "key"),

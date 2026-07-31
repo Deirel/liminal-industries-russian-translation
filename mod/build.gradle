@@ -151,8 +151,7 @@ tasks.register('generateQuestTranslationIndex') {
             def field = [
                 object_id: objectId,
                 field: location.field,
-                source: record.source,
-                source_hash: record.source_hash
+                source: record.source
             ]
             if (location.index != null) {
                 field.index = location.index
@@ -171,8 +170,6 @@ tasks.register('generateQuestTranslationIndex') {
                             object_id: objectId,
                             field: 'description',
                             source: '',
-                            source_hash: 'sha256:e3b0c44298fc1c149afbf4c8996fb924'
-                                + '27ae41e4649b934ca495991b7852b855',
                             index: index
                         ])
                     }
