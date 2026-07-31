@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class AuditSourceConfigTest {
     @Test
@@ -58,6 +59,51 @@ class AuditSourceConfigTest {
         var records = TranslationAuditIndex.patchouliLanguageRecords();
 
         assertFalse(records.isEmpty());
+    }
+
+    @Test
+    void generatedLanguageTargetsHaveKnownTiers() {
+        assertTrue(
+            TranslationAuditIndex.languageTargets().values().stream()
+                .allMatch(target -> Set.of("required", "extended")
+                    .contains(target.tier()))
+        );
+    }
+
+    @Test
+    void registryAndStandaloneTargetsUseDifferentVerification() {
+        var targets = TranslationAuditIndex.languageTargets();
+        assertEquals(
+            "runtime_provider",
+            targets.get("block.minecraft.stone").verification()
+        );
+        if (TranslationAuditIndex.version().equals("1.19.3-7-ae2-fix")) {
+            assertEquals(
+                "runtime_provider",
+                targets.get(
+                    "block.beachparty.palm_wall_sign"
+                ).verification()
+            );
+            assertEquals(
+                "direct",
+                targets.get(
+                    "manual.immersiveengineering.early_machines"
+                ).verification()
+            );
+        }
+    }
+
+    @Test
+    void rescriptedIndexContainsEngineerManualNavigation() {
+        if (!TranslationAuditIndex.version().equals("1.19.3-7-ae2-fix")) {
+            return;
+        }
+
+        var target = TranslationAuditIndex.languageTargets().get(
+            "manual.immersiveengineering.early_machines"
+        );
+        assertEquals("required", target.tier());
+        assertEquals("Workbenches & Furnaces", target.source());
     }
 
     @Test

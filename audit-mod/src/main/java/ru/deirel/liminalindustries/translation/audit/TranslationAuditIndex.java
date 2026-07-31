@@ -25,7 +25,9 @@ public final class TranslationAuditIndex {
 
     public record LanguageTarget(
         String translationKey,
-        String source
+        String source,
+        String tier,
+        String verification
     ) {
     }
 
@@ -76,8 +78,27 @@ public final class TranslationAuditIndex {
                 record.get("translation_key").getAsString(),
                 record.get("source").isJsonNull()
                     ? null
-                    : record.get("source").getAsString()
+                    : record.get("source").getAsString(),
+                record.has("tier")
+                    ? record.get("tier").getAsString()
+                    : "required",
+                record.has("verification")
+                    ? record.get("verification").getAsString()
+                    : "direct"
             );
+            if (!target.tier().equals("required")
+                && !target.tier().equals("extended")) {
+                throw new IllegalStateException(
+                    "unsupported translation tier " + target.tier()
+                );
+            }
+            if (!target.verification().equals("direct")
+                && !target.verification().equals("runtime_provider")) {
+                throw new IllegalStateException(
+                    "unsupported translation verification "
+                        + target.verification()
+                );
+            }
             result.put(target.translationKey(), target);
         }
         return Map.copyOf(result);

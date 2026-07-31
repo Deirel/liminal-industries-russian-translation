@@ -811,7 +811,7 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
         )
 
     def ie_manual_collector(definition: SourceDefinition) -> SourceResult:
-        archives, _, _, _ = load_effective_languages(
+        archives, en_us, native_ru, _ = load_effective_languages(
             args.instance_root,
             args.launcher_root,
             metadata["minecraft_version"],
@@ -820,6 +820,9 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
             definition,
             archives,
             args.instance_root,
+            en_us,
+            native_ru,
+            load_payload_translations(version_root),
         )
 
     def mantle_books_collector(definition: SourceDefinition) -> SourceResult:

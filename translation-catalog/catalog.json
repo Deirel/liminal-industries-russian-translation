@@ -18194,6 +18194,13 @@
         "translation": "Эндерняковый путевой камень"
       }
     ],
+    "ie-manual-lang:immersiveengineering:manual.immersiveengineering.early_machines": [
+      {
+        "source_hash": "sha256:53f1842c4d3e9a58359b4d27600a38ff2049db323b39b424ced0120a2eaa748e",
+        "source": "Workbenches & Furnaces",
+        "translation": "Верстаки и печи"
+      }
+    ],
     "ie-manual:immersiveengineering:accumulators.txt:line:0": [
       {
         "source_hash": "sha256:d8b46c897977e3e01f3a200184fd3417cb7cf022cb63e68853c061e954067c54",

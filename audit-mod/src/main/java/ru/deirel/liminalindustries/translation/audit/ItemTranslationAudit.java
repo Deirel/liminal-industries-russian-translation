@@ -101,6 +101,13 @@ final class ItemTranslationAudit {
         Set<String> targetNamespaces = TranslationAuditIndex.targetNamespaces();
         List<AuditEntry> entries = new ArrayList<>();
         Map<String, Integer> providerCounts = new LinkedHashMap<>();
+        LanguageCoverageAudit.Result languageCoverage =
+            LanguageCoverageAudit.inspect(
+                english,
+                russian,
+                runtimeRussian.getLanguageData(),
+                acceptedSameAsEnglish
+            );
         Set<String> enabledProviders = AuditSourceConfig.enabledProviders();
         Set<String> availableProviders = AuditProviders.all().stream()
             .map(AuditProvider::id)
@@ -146,11 +153,62 @@ final class ItemTranslationAudit {
                 entries.add(providerError(provider.id(), exception));
             }
         }
+        Set<String> auditedKeys = entries.stream()
+            .filter(AuditEntry::targetScope)
+            .flatMap(entry -> entry.translationKeys().stream())
+            .collect(Collectors.toSet());
+        List<AuditSubject> indexedLanguageTargets = languageTargets.values()
+            .stream()
+            .filter(target -> target.verification().equals("direct"))
+            .filter(target -> !auditedKeys.contains(target.translationKey()))
+            .sorted(Comparator.comparing(
+                TranslationAuditIndex.LanguageTarget::translationKey
+            ))
+            .map(target -> indexedLanguageTarget(target.translationKey()))
+            .toList();
+        List<TranslationAuditIndex.LanguageTarget> ignoredLanguageTargets =
+            languageTargets.values().stream()
+                .filter(target -> target.verification().equals("runtime_provider"))
+                .filter(target -> !auditedKeys.contains(target.translationKey()))
+                .sorted(Comparator.comparing(
+                    TranslationAuditIndex.LanguageTarget::translationKey
+                ))
+                .toList();
+        indexedLanguageTargets.stream()
+            .map(subject -> inspect(
+                subject,
+                russian,
+                english,
+                runtimeRussian,
+                resourceEnglish,
+                languageTargets,
+                acceptedSameAsEnglish,
+                registryTargets,
+                targetNamespaces
+            ))
+            .forEach(entries::add);
+        providerCounts.put(
+            "language_targets",
+            indexedLanguageTargets.size()
+        );
+        List<LanguageCoverageAudit.Gap> languageCandidates =
+            languageCoverage.gaps().stream()
+                .filter(gap -> !languageTargets.containsKey(gap.key()))
+                .filter(gap -> !auditedKeys.contains(gap.key()))
+                .toList();
 
         int failures = (int) entries.stream().filter(AuditEntry::failure).count();
+        long requiredFailures = entries.stream()
+            .filter(AuditEntry::failure)
+            .filter(entry -> "required".equals(entry.tier()))
+            .count();
+        long extendedFailures = entries.stream()
+            .filter(AuditEntry::failure)
+            .filter(entry -> "extended".equals(entry.tier()))
+            .count();
         boolean success = failures == 0 && russian.errors().isEmpty();
         JsonObject root = new JsonObject();
-        root.addProperty("schema", 4);
+        root.addProperty("schema", 6);
         root.addProperty("result", success ? "PASS" : "FAIL");
         root.addProperty("generated_at", Instant.now().toString());
         root.addProperty(
@@ -160,6 +218,8 @@ final class ItemTranslationAudit {
         root.addProperty("selected_language", REQUIRED_LANGUAGE);
         root.addProperty("checked_records", entries.size());
         root.addProperty("failures", failures);
+        root.addProperty("required_failures", requiredFailures);
+        root.addProperty("extended_failures", extendedFailures);
         root.addProperty(
             "target_records",
             entries.stream().filter(AuditEntry::targetScope).count()
@@ -171,6 +231,22 @@ final class ItemTranslationAudit {
         root.addProperty("russian_keys", russian.values().size());
         root.addProperty("english_keys", english.values().size());
         root.addProperty("runtime_language_keys", runtimeRussian.getLanguageData().size());
+        root.addProperty(
+            "language_keys_checked",
+            languageCoverage.checkedKeys()
+        );
+        root.addProperty(
+            "language_gaps",
+            languageCoverage.gaps().size()
+        );
+        root.addProperty(
+            "candidate_language_gaps",
+            languageCandidates.size()
+        );
+        root.addProperty(
+            "ignored_language_targets",
+            ignoredLanguageTargets.size()
+        );
 
         JsonObject providers = new JsonObject();
         providerCounts.forEach(providers::addProperty);
@@ -223,6 +299,16 @@ final class ItemTranslationAudit {
         JsonArray values = new JsonArray();
         entries.forEach(entry -> values.add(entry.json()));
         root.add("entries", values);
+        JsonArray candidates = new JsonArray();
+        languageCandidates.forEach(
+            gap -> candidates.add(languageCandidateJson(gap))
+        );
+        root.add("language_candidates", candidates);
+        JsonArray ignoredTargets = new JsonArray();
+        ignoredLanguageTargets.forEach(
+            target -> ignoredTargets.add(ignoredLanguageTargetJson(target))
+        );
+        root.add("ignored_language_target_entries", ignoredTargets);
         return new AuditReport(success, entries.size(), failures, root);
     }
 
@@ -316,7 +402,12 @@ final class ItemTranslationAudit {
             Set<String> missing = new TreeSet<>(keys);
             missing.removeAll(verifiedRussianKeys);
             Map<String, String> translationSources = new LinkedHashMap<>();
+            Map<String, String> englishSources = new LinkedHashMap<>();
             for (String key : keys) {
+                String englishPack = english.sources().get(key);
+                if (englishPack != null) {
+                    englishSources.put(key, englishPack);
+                }
                 String pack = russian.sources().get(key);
                 if (pack != null) {
                     translationSources.put(key, pack);
@@ -332,6 +423,7 @@ final class ItemTranslationAudit {
                 keyProvenance.values(),
                 status
             );
+            String tier = targetTier(targetScope, keys, languageTargets);
             return new AuditEntry(
                 subject.provider(),
                 subject.uid(),
@@ -345,8 +437,10 @@ final class ItemTranslationAudit {
                 sameAsEnglishKeys,
                 sourceChangedKeys,
                 skippedKeys,
+                englishSources,
                 translationSources,
                 keyProvenance,
+                tier,
                 targetScope,
                 provenance,
                 status,
@@ -368,6 +462,8 @@ final class ItemTranslationAudit {
                 Set.of(),
                 Map.of(),
                 Map.of(),
+                Map.of(),
+                "required",
                 true,
                 AuditProvenance.MISSING,
                 AuditStatus.ERROR,
@@ -395,11 +491,74 @@ final class ItemTranslationAudit {
             Set.of(),
             Map.of(),
             Map.of(),
+            Map.of(),
+            "required",
             true,
             AuditProvenance.MISSING,
             AuditStatus.ERROR,
             exception.toString()
         );
+    }
+
+    private static AuditSubject indexedLanguageTarget(String key) {
+        return new AuditSubject(
+            "language_targets",
+            "language-target:" + key,
+            "language_key",
+            key,
+            key,
+            net.minecraft.network.chat.Component.translatable(key),
+            false,
+            Set.of("TRANSLATION_AUDIT_INDEX")
+        );
+    }
+
+    private static JsonObject languageCandidateJson(
+        LanguageCoverageAudit.Gap gap
+    ) {
+        JsonObject value = new JsonObject();
+        value.addProperty("key", gap.key());
+        value.addProperty("english", gap.englishValue());
+        value.addProperty("namespace", gap.namespace());
+        value.addProperty("source_pack", gap.sourcePack());
+        value.addProperty("classification", "candidate");
+        value.addProperty("reason", "NO_TRANSLATION_TARGET_EVIDENCE");
+        return value;
+    }
+
+    private static JsonObject ignoredLanguageTargetJson(
+        TranslationAuditIndex.LanguageTarget target
+    ) {
+        JsonObject value = new JsonObject();
+        value.addProperty("key", target.translationKey());
+        value.addProperty("english", target.source());
+        value.addProperty("tier", target.tier());
+        value.addProperty("classification", "ignored");
+        value.addProperty("reason", "DECLARED_KEY_UNUSED");
+        return value;
+    }
+
+    private static String targetTier(
+        boolean targetScope,
+        Set<String> keys,
+        Map<String, TranslationAuditIndex.LanguageTarget> languageTargets
+    ) {
+        if (!targetScope) {
+            return null;
+        }
+        boolean extended = false;
+        for (String key : keys) {
+            TranslationAuditIndex.LanguageTarget target =
+                languageTargets.get(key);
+            if (target == null) {
+                continue;
+            }
+            if (target.tier().equals("required")) {
+                return "required";
+            }
+            extended = true;
+        }
+        return extended ? "extended" : "required";
     }
 
     private static boolean isTargetScope(
@@ -492,8 +651,10 @@ final class ItemTranslationAudit {
         Set<String> sameAsEnglishKeys,
         Set<String> sourceChangedKeys,
         Set<String> skippedTranslationKeys,
+        Map<String, String> englishSources,
         Map<String, String> translationSources,
         Map<String, AuditProvenance> translationProvenance,
+        String tier,
         boolean targetScope,
         AuditProvenance provenance,
         AuditStatus status,
@@ -524,6 +685,9 @@ final class ItemTranslationAudit {
                 strings(skippedTranslationKeys)
             );
 
+            JsonObject englishPacks = new JsonObject();
+            englishSources.forEach(englishPacks::addProperty);
+            value.add("english_sources", englishPacks);
             JsonObject sources = new JsonObject();
             translationSources.forEach(sources::addProperty);
             value.add("translation_sources", sources);
@@ -534,6 +698,9 @@ final class ItemTranslationAudit {
             );
             value.add("translation_provenance", provenanceByKey);
             value.addProperty("target_scope", targetScope);
+            if (tier != null) {
+                value.addProperty("tier", tier);
+            }
             value.addProperty("provenance", provenance.name());
             value.addProperty("status", status.name());
             if (error != null) {

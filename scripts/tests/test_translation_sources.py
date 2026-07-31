@@ -11,9 +11,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from translation_sources import (
     SourceDefinition,
+    SourceResult,
     collect_immersive_engineering_manual,
     collect_mantle_books,
     collect_patchouli,
+    collect_sources,
     load_source_definitions,
     parse_mantle_language,
 )
@@ -41,6 +43,7 @@ class SourceConfigurationTest(unittest.TestCase):
                                 "id": "patchouli",
                                 "adapter": "patchouli",
                                 "audit": True,
+                                "tier": "extended",
                             },
                         ],
                     }
@@ -52,6 +55,42 @@ class SourceConfigurationTest(unittest.TestCase):
 
         self.assertEqual(["items", "patchouli"], [value.source_id for value in definitions])
         self.assertEqual({"audit": True}, definitions[1].options)
+        self.assertEqual("required", definitions[0].tier)
+        self.assertEqual("extended", definitions[1].tier)
+
+    def test_rejects_unknown_translation_tier(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sources.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "schema": 1,
+                        "sources": [
+                            {
+                                "id": "example",
+                                "adapter": "example",
+                                "tier": "optional",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "invalid tier"):
+                load_source_definitions(path)
+
+    def test_extended_source_stamps_manifest_records(self) -> None:
+        result = collect_sources(
+            [SourceDefinition("example", "example", {}, "extended")],
+            {
+                "example": lambda definition: SourceResult(
+                    records=[{"id": "example:key"}]
+                )
+            },
+        )
+
+        self.assertEqual("extended", result.records[0]["tier"])
 
 
 class PatchouliSourceTest(unittest.TestCase):
@@ -450,6 +489,63 @@ class ReviewedNativeBookSourceTest(unittest.TestCase):
         self.assertEqual(
             "Перевод 0\n<np>\nПеревод 1\nПеревод 2",
             built,
+        )
+
+    def test_collects_ie_manual_navigation_language_keys(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            instance = Path(directory)
+            mods = instance / "mods"
+            mods.mkdir()
+            archive = mods / "ie.jar"
+            with zipfile.ZipFile(archive, "w") as jar:
+                jar.writestr(
+                    "assets/immersiveengineering/manual/en_us/example.txt",
+                    "Title",
+                )
+
+            result = collect_immersive_engineering_manual(
+                SourceDefinition(
+                    "manual",
+                    "immersive_engineering_manual",
+                    {"namespace": "immersiveengineering"},
+                ),
+                [archive],
+                instance,
+                {
+                    "manual.immersiveengineering.general": "General",
+                    "manual.immersiveengineering.early_machines": (
+                        "Workbenches & Furnaces"
+                    ),
+                    "item.immersiveengineering.manual": "Engineer's Manual",
+                },
+                {
+                    "manual.immersiveengineering.general": "Общие сведения",
+                },
+                {},
+            )
+
+        language_records = [
+            record
+            for record in result.records
+            if record["output_format"] == "lang"
+        ]
+        self.assertEqual(2, len(language_records))
+        by_key = {
+            record["translation_key"]: record
+            for record in language_records
+        }
+        self.assertTrue(
+            by_key["manual.immersiveengineering.general"][
+                "native_ru_present"
+            ]
+        )
+        missing = by_key[
+            "manual.immersiveengineering.early_machines"
+        ]
+        self.assertFalse(missing["native_ru_present"])
+        self.assertEqual(
+            "Workbenches & Furnaces",
+            missing["source"],
         )
 
     def test_mantle_structure_is_classified_before_records(self) -> None:

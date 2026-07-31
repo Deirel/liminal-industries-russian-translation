@@ -25,6 +25,12 @@ def translationCatalogFile = layout.projectDirectory.file(
 def runtimeAuditOverridesFile = layout.projectDirectory.file(
     "../translation-versions/${selectedTranslationVersion}/runtime-audit-overrides.json"
 ).asFile
+def compatibilityResourcePack = layout.projectDirectory.dir(
+    "../translation-versions/${selectedTranslationVersion}/compatibility-resourcepack"
+)
+def compatibilityEnglishResources = fileTree(compatibilityResourcePack.asFile) {
+    include 'assets/*/lang/en_us.json'
+}
 if (!translationConfigFile.isFile()) {
     throw new GradleException(
         "Unknown translationVersion '${selectedTranslationVersion}': "
@@ -116,6 +122,7 @@ tasks.register('generateTranslationAuditIndex') {
     inputs.file translationManifestFile
     inputs.file translationCatalogFile
     inputs.file runtimeAuditOverridesFile
+    inputs.files compatibilityEnglishResources
     def output = layout.buildDirectory.file(
         'generated/audit/translation-audit-index.json'
     )
@@ -196,7 +203,11 @@ tasks.register('generateTranslationAuditIndex') {
         }.each { record ->
             def target = [
                 translation_key: record.translation_key,
-                source: record.source
+                source: record.source,
+                tier: record.tier ?: 'required',
+                verification: record.kind in ['item_name', 'block_name']
+                    ? 'runtime_provider'
+                    : 'direct'
             ]
             def previous = languageTargetsByKey.putIfAbsent(
                 record.translation_key,
@@ -204,6 +215,38 @@ tasks.register('generateTranslationAuditIndex') {
             )
             if (previous && previous.source != target.source) {
                 previous.source = null
+            }
+            if (previous && target.tier == 'required') {
+                previous.tier = 'required'
+            }
+            if (previous && target.verification == 'direct') {
+                previous.verification = 'direct'
+            }
+        }
+        def compatibilityEnglishByKey = [:]
+        compatibilityEnglishResources.files.sort { it.path }.each { resource ->
+            def document = new JsonSlurper().parse(resource)
+            if (!(document instanceof Map)
+                || document.any { key, value ->
+                    !(key instanceof String) || !(value instanceof String)
+                }) {
+                throw new GradleException(
+                    "Invalid compatibility language resource: ${resource}"
+                )
+            }
+            document.each { key, source ->
+                def previous = compatibilityEnglishByKey.putIfAbsent(key, source)
+                if (previous != null && previous != source) {
+                    throw new GradleException(
+                        "Conflicting compatibility English source for ${key}"
+                    )
+                }
+            }
+        }
+        compatibilityEnglishByKey.each { key, source ->
+            def target = languageTargetsByKey[key]
+            if (target != null) {
+                target.source = source
             }
         }
         def languageTargets = languageTargetsByKey.values().sort {
@@ -228,6 +271,8 @@ tasks.register('generateTranslationAuditIndex') {
                 'tconstruct_books',
                 'immersive_engineering_manual'
             ]
+                && !(it.source_id == 'immersive_engineering_manual'
+                    && it.output_format == 'lang')
         }.collect { record ->
             def location = record.location ?: [:]
             def member = location.output_member ?: location.member ?: ''

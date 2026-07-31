@@ -16,6 +16,7 @@ from catalog_utils import sha256_bytes, source_hash
 
 
 SOURCE_CONFIG_SCHEMA = 1
+TRANSLATION_TIERS = {"required", "extended"}
 PATCHOULI_TEXT_FIELDS = {
     "description",
     "landing_text",
@@ -62,6 +63,7 @@ class SourceDefinition:
     source_id: str
     adapter: str
     options: dict[str, Any]
+    tier: str = "required"
 
 
 SourceCollector = Callable[[SourceDefinition], SourceResult]
@@ -85,6 +87,11 @@ def load_source_definitions(path: Path) -> list[SourceDefinition]:
             raise ValueError(f"{path}: source {source_id} has no adapter")
         if source_id in seen:
             raise ValueError(f"{path}: duplicate source ID {source_id}")
+        tier = value.get("tier", "required")
+        if tier not in TRANSLATION_TIERS:
+            raise ValueError(
+                f"{path}: source {source_id} has invalid tier {tier!r}"
+            )
         seen.add(source_id)
         result.append(
             SourceDefinition(
@@ -93,8 +100,9 @@ def load_source_definitions(path: Path) -> list[SourceDefinition]:
                 {
                     key: child
                     for key, child in value.items()
-                    if key not in {"id", "adapter"}
+                    if key not in {"id", "adapter", "tier"}
                 },
+                tier,
             )
         )
     return result
@@ -121,6 +129,8 @@ def collect_sources(
             seen_records.add(logical_id)
             record["source_id"] = definition.source_id
             record["source_type"] = definition.adapter
+            if definition.tier != "required":
+                record["tier"] = definition.tier
             combined.records.append(record)
         for source_file in result.source_files:
             path = source_file["path"]
@@ -525,6 +535,9 @@ def collect_immersive_engineering_manual(
     definition: SourceDefinition,
     archives: list[Path],
     instance_root: Path,
+    en_us: dict[str, str] | None = None,
+    native_ru: dict[str, str] | None = None,
+    project_ru: dict[str, str] | None = None,
 ) -> SourceResult:
     namespace_filter = definition.options.get(
         "namespace", "immersiveengineering"
@@ -535,6 +548,9 @@ def collect_immersive_engineering_manual(
     articles = 0
     missing_native = 0
     stale_native = 0
+    en_us = en_us or {}
+    native_ru = native_ru or {}
+    project_ru = project_ru or {}
 
     for archive in archives:
         try:
@@ -620,6 +636,37 @@ def collect_immersive_engineering_manual(
         except zipfile.BadZipFile:
             continue
 
+    if articles:
+        language_prefix = f"manual.{namespace_filter}."
+        for key, source in sorted(en_us.items()):
+            if not key.startswith(language_prefix):
+                continue
+            record = {
+                "id": f"ie-manual-lang:{namespace_filter}:{key}",
+                "kind": "manual_language_text",
+                "source": source,
+                "source_hash": source_hash(source),
+                "namespace": namespace_filter,
+                "translation_key": key,
+                "native_ru_present": key in native_ru,
+                "output_format": "lang",
+                "location": {
+                    "member": f"assets/{namespace_filter}/lang/en_us.json",
+                    "output_member": (
+                        f"assets/{namespace_filter}/lang/ru_ru.json"
+                    ),
+                    "key": key,
+                },
+            }
+            if key in native_ru and native_ru[key] == source:
+                record["native_ru_same_as_source"] = True
+            if key in project_ru:
+                record["suggested_translation"] = project_ru[key]
+            records.append(record)
+
+    language_records = sum(
+        record["output_format"] == "lang" for record in records
+    )
     return SourceResult(
         records=records,
         source_files=[
@@ -630,7 +677,8 @@ def collect_immersive_engineering_manual(
             "articles": articles,
             "missing_native_articles": missing_native,
             "stale_native_articles": stale_native,
-            "native_review_records": len(records),
+            "native_review_records": len(records) - language_records,
+            "language_records": language_records,
         },
     )
 
