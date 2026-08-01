@@ -14,6 +14,90 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class LayoutAnalyzerTest {
     @org.junit.jupiter.api.Test
+    void reportsClippedMarkerWithoutApplyingGeometryRules() {
+        LayoutRegion clipped = new LayoutRegion(
+            "clipped",
+            LayoutRegion.Kind.CLIPPED_TEXT,
+            "left",
+            1,
+            95,
+            95,
+            20,
+            9
+        );
+        LayoutCapture capture = new LayoutCapture(
+            "mantle",
+            "tconstruct:test",
+            "screen",
+            "test.json",
+            "entry",
+            0,
+            "/text",
+            "ru_ru",
+            320,
+            240,
+            2,
+            List.of(clipped),
+            List.of(region("page", LayoutRegion.Kind.PAGE, 0, 0, 100, 100)),
+            List.of(),
+            List.of(region("button", LayoutRegion.Kind.CONTROL, 90, 90, 20, 20)),
+            List.of()
+        );
+
+        List<LayoutIssue> issues = LayoutAnalyzer.analyze(capture);
+
+        assertEquals(1, issues.size());
+        assertEquals(LayoutIssue.Rule.TEXT_CLIPPED, issues.get(0).rule());
+    }
+
+    @org.junit.jupiter.api.Test
+    void comparesLinesFromDifferentTextElementsOnTheSamePhysicalPage() {
+        LayoutRegion first = new LayoutRegion(
+            "first",
+            LayoutRegion.Kind.TEXT,
+            "left#text-1",
+            1,
+            10,
+            10,
+            20,
+            9
+        );
+        LayoutRegion second = new LayoutRegion(
+            "second",
+            LayoutRegion.Kind.TEXT,
+            "left#text-2",
+            2,
+            10,
+            10,
+            20,
+            9
+        );
+        LayoutCapture capture = new LayoutCapture(
+            "mantle",
+            "tconstruct:test",
+            "screen",
+            "test.json",
+            "entry",
+            0,
+            "/text",
+            "ru_ru",
+            320,
+            240,
+            2,
+            List.of(first, second),
+            List.of(),
+            List.of(),
+            List.of(),
+            List.of()
+        );
+
+        assertEquals(
+            LayoutIssue.Rule.TEXT_LINES_OVERLAP,
+            LayoutAnalyzer.analyze(capture).get(0).rule()
+        );
+    }
+
+    @org.junit.jupiter.api.Test
     void ignoresSubpixelFloatingPointNoiseAtPageAndControlEdges() {
         LayoutRegion page = region("page", LayoutRegion.Kind.PAGE, 0, 0, 116, 156);
         LayoutRegion text = region(
@@ -35,6 +119,50 @@ class LayoutAnalyzerTest {
 
         assertTrue(page.contains(text));
         assertFalse(text.intersects(touchingControl));
+    }
+
+    @org.junit.jupiter.api.Test
+    void appliesAdapterRenderingToleranceWithoutHidingLargerDefects() {
+        LayoutRegion page = region("page", LayoutRegion.Kind.PAGE, 0, 0, 100, 100);
+        LayoutRegion control = region(
+            "button",
+            LayoutRegion.Kind.CONTROL,
+            100,
+            0,
+            10,
+            10
+        );
+        LayoutRegion onePixelOverflow = region(
+            "rounding",
+            LayoutRegion.Kind.TEXT,
+            90,
+            0,
+            11,
+            9
+        );
+        LayoutRegion realOverflow = region(
+            "outside",
+            LayoutRegion.Kind.TEXT,
+            90,
+            0,
+            12,
+            9
+        );
+
+        assertEquals(
+            List.of(),
+            LayoutAnalyzer.analyze(capture(onePixelOverflow, page, control), 1)
+        );
+        assertEquals(
+            List.of(
+                LayoutIssue.Rule.TEXT_OUTSIDE_PAGE,
+                LayoutIssue.Rule.TEXT_INTERSECTS_CONTROL
+            ),
+            LayoutAnalyzer.analyze(capture(realOverflow, page, control), 1)
+                .stream()
+                .map(LayoutIssue::rule)
+                .toList()
+        );
     }
 
     @ParameterizedTest
@@ -182,6 +310,121 @@ class LayoutAnalyzerTest {
     }
 
     @org.junit.jupiter.api.Test
+    void pairsMantleIssuesByLogicalPageInsteadOfSpreadPosition() {
+        String logicalPage = "mantle:tconstruct:test:page/tools.tconstruct.pickaxe";
+        LayoutRegion englishText = region(
+            "text-1-0-0",
+            LayoutRegion.Kind.TEXT,
+            10,
+            10,
+            20,
+            9
+        ).withLogicalPage(logicalPage);
+        LayoutRegion russianText = region(
+            "text-1-0-0",
+            LayoutRegion.Kind.TEXT,
+            260,
+            10,
+            25,
+            9
+        ).withLogicalPage(logicalPage);
+        LayoutRegion englishControl = region(
+            "control-0",
+            LayoutRegion.Kind.CONTROL,
+            10,
+            10,
+            20,
+            9
+        );
+        LayoutRegion russianControl = region(
+            "control-3",
+            LayoutRegion.Kind.CONTROL,
+            260,
+            10,
+            25,
+            9
+        );
+        LayoutIssue english = issue(
+            "mantle:tconstruct:test:spread/5",
+            "en_us",
+            LayoutIssue.Rule.TEXT_INTERSECTS_CONTROL,
+            englishText,
+            englishControl
+        );
+        LayoutIssue russian = issue(
+            "mantle:tconstruct:test:spread/7",
+            "ru_ru",
+            LayoutIssue.Rule.TEXT_INTERSECTS_CONTROL,
+            russianText,
+            russianControl
+        );
+
+        LayoutIssue classified = LayoutIssueClassifier.classify(
+            List.of(english),
+            List.of(russian),
+            Set.of(logicalPage)
+        ).get(0);
+
+        assertEquals(
+            LayoutIssue.Classification.UPSTREAM_LAYOUT,
+            classified.classification()
+        );
+    }
+
+    @org.junit.jupiter.api.Test
+    void doesNotPairDifferentLogicalPagesAtTheSameSpreadPosition() {
+        LayoutRegion englishText = region(
+            "text-1-0-0",
+            LayoutRegion.Kind.TEXT,
+            10,
+            10,
+            20,
+            9
+        ).withLogicalPage("mantle:tconstruct:test:page/tools.pickaxe");
+        LayoutRegion russianText = region(
+            "text-1-0-0",
+            LayoutRegion.Kind.TEXT,
+            10,
+            10,
+            20,
+            9
+        ).withLogicalPage("mantle:tconstruct:test:page/tools.sword");
+        LayoutRegion obstacle = region(
+            "control-0",
+            LayoutRegion.Kind.CONTROL,
+            10,
+            10,
+            20,
+            9
+        );
+        LayoutIssue english = issue(
+            "mantle:tconstruct:test:spread/5",
+            "en_us",
+            LayoutIssue.Rule.TEXT_INTERSECTS_CONTROL,
+            englishText,
+            obstacle
+        );
+        LayoutIssue russian = issue(
+            "mantle:tconstruct:test:spread/5",
+            "ru_ru",
+            LayoutIssue.Rule.TEXT_INTERSECTS_CONTROL,
+            russianText,
+            obstacle
+        );
+
+        LayoutIssue classified = LayoutIssueClassifier.classify(
+            List.of(english),
+            List.of(russian),
+            Set.of(englishText.logicalPage(), russianText.logicalPage())
+        ).get(0);
+
+        assertEquals(
+            LayoutIssue.Classification.TRANSLATION_LAYOUT,
+            classified.classification()
+        );
+    }
+
+    @org.junit.jupiter.api.Test
     void marksRussianScreenWithoutEnglishCounterpartAsUnpaired() {
         LayoutRegion text = region("word", LayoutRegion.Kind.TEXT, 0, 0, 10, 9);
         LayoutRegion page = region("page", LayoutRegion.Kind.PAGE, 0, 0, 100, 100);
@@ -257,6 +500,31 @@ class LayoutAnalyzerTest {
         double height
     ) {
         return new LayoutRegion(id, kind, "left", 0, x, y, width, height);
+    }
+
+    private static LayoutCapture capture(
+        LayoutRegion text,
+        LayoutRegion page,
+        LayoutRegion control
+    ) {
+        return new LayoutCapture(
+            "fixture",
+            "fixture:book",
+            "fixture:screen",
+            "fixture.json",
+            "entry",
+            0,
+            "/text",
+            "ru_ru",
+            320,
+            240,
+            2,
+            List.of(text),
+            List.of(page),
+            List.of(),
+            List.of(control),
+            List.of()
+        );
     }
 
     private static LayoutIssue issue(

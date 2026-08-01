@@ -131,13 +131,19 @@ def build_index(
         if source_sha256 is None:
             raise ValueError(f"{source_label}: source hash is missing")
 
+        sorted_records = sorted(records, key=lambda value: value["id"])
         fields = []
-        for record in sorted(records, key=lambda value: value["id"]):
-            translation = translated_value(
-                output_format,
-                output,
-                record["location"],
-            )
+        exact_only = False
+        for record in sorted_records:
+            try:
+                translation = translated_value(
+                    output_format,
+                    output,
+                    record["location"],
+                )
+            except IndexError:
+                exact_only = True
+                continue
             if translation == record["source"]:
                 continue
             address_name = {
@@ -154,19 +160,26 @@ def build_index(
                     "translation": translation,
                 }
             )
-        if not fields:
+        if exact_only:
+            # A structurally compact translation cannot be represented as
+            # independent field replacements. Package it as an atomic resource
+            # for this exact source version instead of emitting shifted fields.
+            fields = []
+        if not fields and not exact_only:
             continue
-        resources.append(
-            {
-                "format": FORMATS[output_format],
-                "source": {
-                    **resource_location(member),
-                    "sha256": source_sha256,
-                },
-                "output": output_location,
-                "fields": fields,
-            }
-        )
+        resource = {
+            "format": FORMATS[output_format],
+            "source": {
+                **resource_location(member),
+                "sha256": source_sha256,
+            },
+            "output": output_location,
+            "fields": fields,
+        }
+        if exact_only:
+            resource["exact_only"] = True
+            resource["field_ids"] = [record["id"] for record in sorted_records]
+        resources.append(resource)
 
     compatibility_languages = load_compatibility_languages(
         compatibility_resourcepack

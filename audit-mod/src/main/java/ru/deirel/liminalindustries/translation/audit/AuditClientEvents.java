@@ -9,6 +9,7 @@ import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import ru.deirel.liminalindustries.translation.audit.layout.LayoutEngineAdapters;
 import ru.deirel.liminalindustries.translation.audit.layout.LayoutAuditRunner;
 
 @Mod.EventBusSubscriber(
@@ -38,6 +39,19 @@ public final class AuditClientEvents {
                     return result.started() ? Command.SINGLE_SUCCESS : 0;
                 })
         );
+        for (String engine : LayoutEngineAdapters.engines()) {
+            event.getDispatcher().register(
+                Commands.literal("liminal_ru_layout_audit_" + engine)
+                    .executes(context -> {
+                        LayoutAuditRunner.StartResult result =
+                            LayoutAuditRunner.start(engine);
+                        context.getSource().sendSystemMessage(
+                            Component.literal(result.message())
+                        );
+                        return result.started() ? Command.SINGLE_SUCCESS : 0;
+                    })
+            );
+        }
     }
 
     @SubscribeEvent

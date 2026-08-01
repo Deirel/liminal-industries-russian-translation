@@ -12,8 +12,12 @@ import net.minecraft.server.packs.resources.ResourceManager;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,6 +25,8 @@ import java.util.Optional;
 import java.util.Set;
 
 final class MantleBookAuditProvider implements AuditProvider {
+    private static final String BOOK_TRANSLATION_INDEX =
+        "assets/liminal_industries_ru/book-translations.json";
     private static final Set<String> TEXT_FIELDS = Set.of(
         "effects",
         "properties",
@@ -38,6 +44,7 @@ final class MantleBookAuditProvider implements AuditProvider {
     @Override
     public List<AuditSubject> discover(AuditContext context) {
         ResourceManager manager = context.minecraft().getResourceManager();
+        Set<ResourceLocation> exactOnlyResources = exactOnlyResources();
         Map<ResourceLocation, Resource> englishResources = manager.listResources(
             "book",
             location -> location.getNamespace().equals("tconstruct")
@@ -59,6 +66,11 @@ final class MantleBookAuditProvider implements AuditProvider {
             boolean structureMatches = russian != null
                 && normalizeStructure(english, null, false)
                     .equals(normalizeStructure(russian, null, false));
+            boolean wholeResourceLocalized = isWholeResourceLocalized(
+                english,
+                russian,
+                exactOnlyResources.contains(russianId)
+            );
             collect(
                 englishId,
                 "",
@@ -66,6 +78,7 @@ final class MantleBookAuditProvider implements AuditProvider {
                 english,
                 russian,
                 structureMatches,
+                wholeResourceLocalized,
                 subjects
             );
         }
@@ -90,6 +103,7 @@ final class MantleBookAuditProvider implements AuditProvider {
         JsonElement english,
         JsonElement russian,
         boolean structureMatches,
+        boolean wholeResourceLocalized,
         List<AuditSubject> subjects
     ) {
         if (english.isJsonObject()) {
@@ -111,6 +125,7 @@ final class MantleBookAuditProvider implements AuditProvider {
                     englishObject.get("data"),
                     russianData,
                     structureMatches,
+                    wholeResourceLocalized,
                     subjects
                 );
             }
@@ -126,6 +141,7 @@ final class MantleBookAuditProvider implements AuditProvider {
                     entry.getValue(),
                     russianChild,
                     structureMatches,
+                    wholeResourceLocalized,
                     subjects
                 );
             }
@@ -146,6 +162,7 @@ final class MantleBookAuditProvider implements AuditProvider {
                         ? russianArray.get(index)
                         : null,
                     structureMatches,
+                    wholeResourceLocalized,
                     subjects
                 );
             }
@@ -164,6 +181,7 @@ final class MantleBookAuditProvider implements AuditProvider {
             english,
             russian,
             structureMatches,
+            wholeResourceLocalized,
             subjects
         );
     }
@@ -174,20 +192,24 @@ final class MantleBookAuditProvider implements AuditProvider {
         JsonElement english,
         JsonElement russian,
         boolean structureMatches,
+        boolean wholeResourceLocalized,
         List<AuditSubject> subjects
     ) {
-        boolean localized = structureMatches
+        boolean fieldLocalized = structureMatches
             && russian != null
             && russian.isJsonPrimitive()
             && russian.getAsJsonPrimitive().isString()
             && !russian.getAsString().isBlank();
+        boolean localized = wholeResourceLocalized || fieldLocalized;
         subjects.add(new AuditSubject(
             id(),
             id() + ":" + resourceId + ":" + pointer,
             "mantle_book",
             resourceId.toString(),
             pointer,
-            Component.literal(localized ? russian.getAsString() : english.getAsString()),
+            Component.literal(
+                fieldLocalized ? russian.getAsString() : english.getAsString()
+            ),
             localized,
             Set.of("MANTLE_BOOK_RESOURCE")
         ));
@@ -271,6 +293,52 @@ final class MantleBookAuditProvider implements AuditProvider {
             }
         }
         return values;
+    }
+
+    static Set<ResourceLocation> parseExactOnlyResources(Reader reader) {
+        Set<ResourceLocation> resources = new HashSet<>();
+        JsonObject root = JsonParser.parseReader(reader).getAsJsonObject();
+        for (JsonElement element : root.getAsJsonArray("resources")) {
+            JsonObject resource = element.getAsJsonObject();
+            if (!resource.has("exact_only")
+                || !resource.get("exact_only").getAsBoolean()) {
+                continue;
+            }
+            JsonObject output = resource.getAsJsonObject("output");
+            resources.add(ResourceLocation.fromNamespaceAndPath(
+                output.get("namespace").getAsString(),
+                output.get("path").getAsString()
+            ));
+        }
+        return Set.copyOf(resources);
+    }
+
+    static boolean isWholeResourceLocalized(
+        JsonElement english,
+        JsonElement russian,
+        boolean exactOnly
+    ) {
+        return exactOnly && russian != null && !english.equals(russian);
+    }
+
+    private Set<ResourceLocation> exactOnlyResources() {
+        try (InputStream stream = getClass().getClassLoader()
+            .getResourceAsStream(BOOK_TRANSLATION_INDEX)) {
+            if (stream == null) {
+                throw new IllegalStateException(
+                    BOOK_TRANSLATION_INDEX + " is missing"
+                );
+            }
+            return parseExactOnlyResources(new InputStreamReader(
+                stream,
+                StandardCharsets.UTF_8
+            ));
+        } catch (IOException | RuntimeException exception) {
+            throw new IllegalStateException(
+                "Could not load " + BOOK_TRANSLATION_INDEX,
+                exception
+            );
+        }
     }
 
     private Map<String, String> readLanguage(

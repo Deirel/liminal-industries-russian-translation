@@ -71,9 +71,7 @@ final class SourceAwareBookPackResources implements PackResources {
                     resource,
                     "MISSING_SOURCE",
                     0,
-                    rule.fields().stream()
-                        .map(BookTranslationIndex.Field::id)
-                        .toList(),
+                    rule.fieldIds(),
                     source.error()
                 )
             );
@@ -125,9 +123,7 @@ final class SourceAwareBookPackResources implements PackResources {
                     resource,
                     "INVALID_SOURCE",
                     0,
-                    rule.fields().stream()
-                        .map(BookTranslationIndex.Field::id)
-                        .toList(),
+                    rule.fieldIds(),
                     exception.getMessage()
                 )
             );

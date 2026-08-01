@@ -23,6 +23,7 @@
     {"id": "create-central-kitchen", "display_name": "Create: Central Kitchen", "target_mod_versions": ["1.5.0"], "namespaces": ["create_central_kitchen"]},
     {"id": "create-connected", "display_name": "Create: Connected", "target_mod_versions": ["1.2.3"], "namespaces": ["create_connected"]},
     {"id": "decorative-blocks", "display_name": "Decorative Blocks", "target_mod_versions": ["4.1.3"], "namespaces": ["decorative_blocks"]},
+    {"id": "dustrial-decor", "display_name": "'Dustrial Decor", "target_mod_versions": ["1.3.5-1.20"], "namespaces": ["dustrial_decor"]},
     {"id": "dynamic-trees", "display_name": "Dynamic Trees", "target_mod_versions": ["1.4.11"], "namespaces": ["dynamictrees"]},
     {"id": "dynamic-trees-neapolitan", "display_name": "Dynamic Trees for Neapolitan", "target_mod_versions": ["1.3.2"], "namespaces": ["dtneapolitan"]},
     {"id": "eidolon-repraised", "display_name": "Eidolon: Repraised", "target_mod_versions": ["0.3.12"], "namespaces": ["eidolon"]},

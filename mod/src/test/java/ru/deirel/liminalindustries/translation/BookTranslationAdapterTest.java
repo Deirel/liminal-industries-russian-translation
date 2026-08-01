@@ -165,6 +165,42 @@ class BookTranslationAdapterTest {
     }
 
     @Test
+    void structuralOverrideIsAtomicAndRequiresExactSource() {
+        byte[] exactSource = bytes("{\"properties\":[\"First\",\"Second\"]}");
+        byte[] compact = bytes("{\"properties\":[\"Первое и второе\"]}");
+        BookTranslationIndex.Rule rule = new BookTranslationIndex.Rule(
+            BookTranslationIndex.Format.JSON,
+            new BookTranslationIndex.ResourceKey("example", "en_us/source"),
+            BookTranslationAdapter.sha256(exactSource),
+            ResourceLocation.fromNamespaceAndPath("example", "ru_ru/output"),
+            List.of(),
+            true,
+            List.of("first", "second")
+        );
+
+        BookTranslationAdapter.Result exact = BookTranslationAdapter.adapt(
+            rule,
+            exactSource,
+            compact
+        );
+        byte[] changedSource = bytes(
+            "{\"properties\":[\"Changed\",\"Second\"]}"
+        );
+        BookTranslationAdapter.Result changed = BookTranslationAdapter.adapt(
+            rule,
+            changedSource,
+            compact
+        );
+
+        assertTrue(exact.exactSource());
+        assertArrayEquals(compact, exact.bytes());
+        assertEquals(2, exact.translatedFields());
+        assertFalse(changed.exactSource());
+        assertArrayEquals(changedSource, changed.bytes());
+        assertEquals(List.of("first", "second"), changed.skippedFieldIds());
+    }
+
+    @Test
     void ieManualRelocatesUniqueLinesAndSkipsChangedLines() {
         byte[] source = bytes("Inserted\nOriginal line\nChanged line\n");
         BookTranslationAdapter.Result result = BookTranslationAdapter.adapt(
@@ -372,7 +408,11 @@ class BookTranslationAdapterTest {
             new BookTranslationIndex.ResourceKey("example", "en_us/source"),
             sourceSha256,
             ResourceLocation.fromNamespaceAndPath("example", "ru_ru/output"),
-            List.of(fields)
+            List.of(fields),
+            false,
+            List.of(fields).stream()
+                .map(BookTranslationIndex.Field::id)
+                .toList()
         );
     }
 

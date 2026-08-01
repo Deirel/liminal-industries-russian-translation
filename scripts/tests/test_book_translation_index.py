@@ -123,6 +123,52 @@ class BookTranslationIndexTest(unittest.TestCase):
             index["resources"][0]["fields"][0]["source"],
         )
 
+    def test_allows_exact_translation_to_shorten_json_array(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            resourcepack = Path(temp)
+            output = resourcepack / "assets/tconstruct/book/guide/ru_ru/page.json"
+            output.parent.mkdir(parents=True)
+            output.write_bytes(json_bytes({"properties": ["Первое"]}))
+            manifest = {
+                "source_files": [
+                    {
+                        "path": "mods/c.jar!/assets/tconstruct/book/guide/en_us/page.json",
+                        "sha256": "c",
+                    }
+                ],
+                "records": [
+                    self.record(
+                        "mantle_book_json",
+                        "mods/c.jar",
+                        "assets/tconstruct/book/guide/en_us/page.json",
+                        "assets/tconstruct/book/guide/ru_ru/page.json",
+                        "First",
+                        pointer="/properties/0",
+                    ),
+                    self.record(
+                        "mantle_book_json",
+                        "mods/c.jar",
+                        "assets/tconstruct/book/guide/en_us/page.json",
+                        "assets/tconstruct/book/guide/ru_ru/page.json",
+                        "Second",
+                        pointer="/properties/1",
+                    ),
+                ],
+            }
+
+            index = build_index(manifest, resourcepack)
+
+        resource = index["resources"][0]
+        self.assertTrue(resource["exact_only"])
+        self.assertEqual([], resource["fields"])
+        self.assertEqual(
+            [
+                "mantle_book_json:First",
+                "mantle_book_json:Second",
+            ],
+            resource["field_ids"],
+        )
+
     @staticmethod
     def record(
         output_format: str,

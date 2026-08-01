@@ -40,6 +40,20 @@ ordering = "AFTER"
 side = "CLIENT"
 
 [[dependencies.${mod_id}]]
+modId = "mantle"
+mandatory = true
+versionRange = "[${mantle_version}]"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.${mod_id}]]
+modId = "tconstruct"
+mandatory = true
+versionRange = "[${tconstruct_version}]"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.${mod_id}]]
 modId = "liminal_industries_ru"
 mandatory = true
 versionRange = "[${mod_version}]"

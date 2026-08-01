@@ -49,7 +49,9 @@ final class BookTranslationIndex {
         ResourceKey source,
         String sourceSha256,
         ResourceLocation output,
-        List<Field> fields
+        List<Field> fields,
+        boolean exactOnly,
+        List<String> fieldIds
     ) {
     }
 
@@ -104,12 +106,24 @@ final class BookTranslationIndex {
                     ));
                 }
                 fields.sort(Comparator.comparing(Field::id));
+                List<String> fieldIds = new ArrayList<>();
+                if (value.has("field_ids")) {
+                    for (JsonElement id : value.getAsJsonArray("field_ids")) {
+                        fieldIds.add(id.getAsString());
+                    }
+                } else {
+                    fields.stream().map(Field::id).forEach(fieldIds::add);
+                }
+                fieldIds.sort(String::compareTo);
                 Rule rule = new Rule(
                     Format.valueOf(value.get("format").getAsString().toUpperCase()),
                     source,
                     optionalString(sourceValue, "sha256"),
                     output,
-                    List.copyOf(fields)
+                    List.copyOf(fields),
+                    value.has("exact_only")
+                        && value.get("exact_only").getAsBoolean(),
+                    List.copyOf(fieldIds)
                 );
                 if (rules.put(output, rule) != null) {
                     throw new IOException("Duplicate book output resource " + output);

@@ -29,11 +29,17 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
-final class PatchouliLayoutAdapter {
+final class PatchouliLayoutAdapter implements LayoutEngineAdapter {
     private static final double ENTRY_LABEL_SCALE = 0.5;
     private static final String ENGINE = "patchouli";
 
-    List<LayoutScreen> screens() {
+    @Override
+    public String engine() {
+        return ENGINE;
+    }
+
+    @Override
+    public List<LayoutScreen> screens() {
         Set<ResourceLocation> selected = selectedBooks();
         List<LayoutScreen> result = new ArrayList<>();
         BookRegistry.INSTANCE.books.values().stream()
@@ -43,7 +49,8 @@ final class PatchouliLayoutAdapter {
         return List.copyOf(result);
     }
 
-    void resetAfterAudit() {
+    @Override
+    public void resetAfterAudit() {
         Set<ResourceLocation> selected = selectedBooks();
         BookRegistry.INSTANCE.books.values().stream()
             .filter(book -> selected.contains(book.id))
@@ -61,7 +68,8 @@ final class PatchouliLayoutAdapter {
             .collect(java.util.stream.Collectors.toSet());
     }
 
-    LayoutCapture capture(
+    @Override
+    public LayoutCapture capture(
         Minecraft minecraft,
         LayoutScreen target,
         Screen screen,

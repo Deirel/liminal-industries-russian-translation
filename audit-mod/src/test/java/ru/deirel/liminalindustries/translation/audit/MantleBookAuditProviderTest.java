@@ -7,9 +7,12 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.Map;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MantleBookAuditProviderTest {
     @Test
@@ -66,5 +69,51 @@ class MantleBookAuditProviderTest {
             normalizedEnglish,
             MantleBookAuditProvider.normalizeStructure(stale, null, false)
         );
+    }
+
+    @Test
+    void recognizesAtomicStructuralTranslations() {
+        assertEquals(
+            Set.of(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(
+                "tconstruct",
+                "book/guide/ru_ru/page.json"
+            )),
+            MantleBookAuditProvider.parseExactOnlyResources(new StringReader("""
+                {
+                  "resources": [
+                    {
+                      "exact_only": true,
+                      "output": {
+                        "namespace": "tconstruct",
+                        "path": "book/guide/ru_ru/page.json"
+                      }
+                    },
+                    {
+                      "output": {
+                        "namespace": "test",
+                        "path": "book/ru_ru/regular.json"
+                      }
+                    }
+                  ]
+                }
+                """))
+        );
+
+        JsonElement english = JsonParser.parseString(
+            "{\"properties\":[\"First\",\"Second\"]}"
+        );
+        JsonElement compact = JsonParser.parseString(
+            "{\"properties\":[\"Первое и второе\"]}"
+        );
+        assertTrue(MantleBookAuditProvider.isWholeResourceLocalized(
+            english,
+            compact,
+            true
+        ));
+        assertFalse(MantleBookAuditProvider.isWholeResourceLocalized(
+            english,
+            english.deepCopy(),
+            true
+        ));
     }
 }

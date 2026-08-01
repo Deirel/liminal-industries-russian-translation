@@ -5,6 +5,8 @@
   "ftb_quests_version": "2001.4.22",
   "ftb_quests_version_range": "[2001.4.22]",
   "patchouli_version": "85",
+  "mantle_version": "1.11.104",
+  "tconstruct_version": "3.11.2.166",
   "expected_quest_object_ids": 1038,
   "expected_quest_translations": 301
 }

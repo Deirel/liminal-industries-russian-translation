@@ -13,22 +13,22 @@ public final class LayoutIssueClassifier {
         List<LayoutIssue> english,
         List<LayoutIssue> russian
     ) {
-        Set<String> pairedScreens = russian.stream()
-            .map(LayoutIssue::screenId)
+        Set<String> pairedSubjects = russian.stream()
+            .map(LayoutIssueClassifier::subject)
             .collect(Collectors.toSet());
-        return classify(english, russian, pairedScreens);
+        return classify(english, russian, pairedSubjects);
     }
 
     public static List<LayoutIssue> classify(
         List<LayoutIssue> english,
         List<LayoutIssue> russian,
-        Set<String> englishScreens
+        Set<String> englishSubjects
     ) {
         Set<String> upstream = new HashSet<>();
         english.forEach(issue -> upstream.add(key(issue)));
         return russian.stream()
             .map(issue -> issue.classify(
-                !englishScreens.contains(issue.screenId())
+                !englishSubjects.contains(subject(issue))
                     ? LayoutIssue.Classification.UNPAIRED_LANGUAGE
                     : upstream.contains(key(issue))
                     ? LayoutIssue.Classification.UPSTREAM_LAYOUT
@@ -38,11 +38,20 @@ public final class LayoutIssueClassifier {
     }
 
     private static String key(LayoutIssue issue) {
-        return issue.screenId()
+        String key = subject(issue)
             + "|" + issue.rule()
-            + "|" + issue.text().id()
-            + "|" + issue.obstacle().id()
-            + "|" + Math.round(issue.text().x())
-            + "|" + Math.round(issue.text().y());
+            + "|" + issue.text().id();
+        if (issue.text().logicalPage() == null) {
+            key += "|" + issue.obstacle().id()
+                + "|" + Math.round(issue.text().x())
+                + "|" + Math.round(issue.text().y());
+        }
+        return key;
+    }
+
+    private static String subject(LayoutIssue issue) {
+        return issue.text().logicalPage() == null
+            ? issue.screenId()
+            : issue.text().logicalPage();
     }
 }

@@ -104,6 +104,10 @@ public final class TranslationAuditIndex {
         return Map.copyOf(result);
     }
 
+    public static Set<String> languageTranslationKeys() {
+        return languageTargets().keySet();
+    }
+
     static Map<String, String> acceptedSameAsEnglish() {
         Map<String, String> result = new HashMap<>();
         for (Map.Entry<String, JsonElement> entry :

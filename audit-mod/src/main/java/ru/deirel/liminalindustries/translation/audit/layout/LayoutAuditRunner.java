@@ -11,10 +11,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public final class LayoutAuditRunner {
     private static final int STABLE_FRAMES = 3;
@@ -23,7 +27,9 @@ public final class LayoutAuditRunner {
     private final Minecraft minecraft;
     private final Screen returnScreen;
     private final String originalLanguage;
-    private final PatchouliLayoutAdapter adapter = new PatchouliLayoutAdapter();
+    private final List<LayoutEngineAdapter> adapters;
+    private final Map<String, LayoutEngineAdapter> adaptersByEngine;
+    private final String adapterScope;
     private final List<LayoutCapture> captures = new ArrayList<>();
     private final List<LayoutIssue> englishIssues = new ArrayList<>();
     private final List<LayoutIssue> russianIssues = new ArrayList<>();
@@ -35,13 +41,25 @@ public final class LayoutAuditRunner {
     private boolean complete;
     private String completionMessage;
 
-    private LayoutAuditRunner(Minecraft minecraft) {
+    private LayoutAuditRunner(
+        Minecraft minecraft,
+        List<LayoutEngineAdapter> adapters
+    ) {
         this.minecraft = minecraft;
         this.returnScreen = minecraft.screen;
         this.originalLanguage = minecraft.getLanguageManager().getSelected();
+        this.adapters = List.copyOf(adapters);
+        this.adaptersByEngine = adapterIndex();
+        this.adapterScope = this.adapters.stream()
+            .map(LayoutEngineAdapter::engine)
+            .collect(Collectors.joining(", "));
     }
 
     public static StartResult start() {
+        return start(null);
+    }
+
+    public static StartResult start(String engine) {
         Minecraft minecraft = Minecraft.getInstance();
         if (active != null) {
             return new StartResult(false, "Аудит верстки уже выполняется.");
@@ -49,7 +67,15 @@ public final class LayoutAuditRunner {
         if (minecraft.level == null) {
             return new StartResult(false, "Сначала войдите в локальный мир.");
         }
-        LayoutAuditRunner runner = new LayoutAuditRunner(minecraft);
+        List<LayoutEngineAdapter> adapters;
+        try {
+            adapters = engine == null
+                ? LayoutEngineAdapters.createAll()
+                : List.of(LayoutEngineAdapters.create(engine));
+        } catch (IllegalArgumentException exception) {
+            return new StartResult(false, exception.getMessage());
+        }
+        LayoutAuditRunner runner = new LayoutAuditRunner(minecraft, adapters);
         active = runner;
         try {
             runner.prepareOutput();
@@ -65,7 +91,11 @@ public final class LayoutAuditRunner {
             );
         }
         runner.switchLanguage("en_us");
-        return new StartResult(true, "Аудит верстки запущен: en_us, затем ru_ru.");
+        return new StartResult(
+            true,
+            "Аудит верстки [" + runner.adapterScope
+                + "] запущен: en_us, затем ru_ru."
+        );
     }
 
     public static void onRendered(Screen screen) {
@@ -98,13 +128,22 @@ public final class LayoutAuditRunner {
                 fail("Не удалось загрузить язык " + requested, exception);
                 return;
             }
-            preparePass();
+            try {
+                preparePass();
+            } catch (RuntimeException prepareException) {
+                fail(
+                    "Не удалось подготовить экраны для " + requested,
+                    prepareException
+                );
+            }
         }));
     }
 
     private void preparePass() {
         reloading = false;
-        targets = adapter.screens();
+        targets = adapters.stream()
+            .flatMap(adapter -> adapter.screens().stream())
+            .toList();
         targetIndex = 0;
         if (targets.isEmpty()) {
             fail("Не найдено ни одного экрана книги для " + language, null);
@@ -115,8 +154,13 @@ public final class LayoutAuditRunner {
 
     private void openCurrent() {
         stableFrames = 0;
-        Screen screen = targets.get(targetIndex).factory().get();
-        minecraft.setScreen(screen);
+        LayoutScreen target = targets.get(targetIndex);
+        try {
+            Screen screen = target.factory().get();
+            minecraft.setScreen(screen);
+        } catch (RuntimeException exception) {
+            fail("Не удалось открыть экран " + target.id(), exception);
+        }
     }
 
     private void rendered(Screen rendered) {
@@ -131,6 +175,7 @@ public final class LayoutAuditRunner {
             return;
         }
         try {
+            LayoutEngineAdapter adapter = adapter(target);
             LayoutCapture capture = adapter.capture(
                 minecraft,
                 target,
@@ -138,7 +183,10 @@ public final class LayoutAuditRunner {
                 language
             );
             captures.add(capture);
-            List<LayoutIssue> issues = new ArrayList<>(LayoutAnalyzer.analyze(capture));
+            List<LayoutIssue> issues = new ArrayList<>(LayoutAnalyzer.analyze(
+                capture,
+                adapter.renderingTolerance()
+            ));
             if (!issues.isEmpty()) {
                 String screenshot = screenshotName(capture);
                 takeScreenshot(screenshot);
@@ -164,14 +212,22 @@ public final class LayoutAuditRunner {
         englishIssues.stream()
             .map(issue -> issue.classify(LayoutIssue.Classification.UPSTREAM_LAYOUT))
             .forEach(classified::add);
-        Set<String> englishScreens = captures.stream()
+        Set<String> englishSubjects = captures.stream()
             .filter(capture -> capture.language().equals("en_us"))
-            .map(LayoutCapture::screenId)
+            .flatMap(capture -> Stream.concat(
+                Stream.of(capture.screenId()),
+                Stream.concat(
+                    capture.pages().stream(),
+                    capture.text().stream()
+                )
+                    .map(LayoutRegion::logicalPage)
+                    .filter(Objects::nonNull)
+            ))
             .collect(Collectors.toSet());
         classified.addAll(LayoutIssueClassifier.classify(
             englishIssues,
             russianIssues,
-            englishScreens
+            englishSubjects
         ));
         try {
             Path output = LayoutReportWriter.write(
@@ -189,7 +245,7 @@ public final class LayoutAuditRunner {
             long missingContentFailures =
                 LayoutReportWriter.missingContentErrors(classified);
             long failures = LayoutReportWriter.blockingErrors(classified);
-            completionMessage = "Аудит верстки "
+            completionMessage = "Аудит верстки [" + adapterScope + "] "
                 + (failures == 0 ? "пройден" : "не пройден")
                 + ": " + captures.size() + " экранов, "
                 + failures + " ошибок (перевод: " + translationFailures
@@ -304,14 +360,39 @@ public final class LayoutAuditRunner {
     }
 
     private void resetAdapterState() {
-        try {
-            adapter.resetAfterAudit();
-        } catch (RuntimeException exception) {
-            LiminalIndustriesTranslationAuditMod.LOGGER.warn(
-                "Не удалось сбросить состояние книг после аудита: Patchouli",
-                exception
+        for (LayoutEngineAdapter adapter : adapters) {
+            try {
+                adapter.resetAfterAudit();
+            } catch (RuntimeException exception) {
+                LiminalIndustriesTranslationAuditMod.LOGGER.warn(
+                    "Не удалось сбросить состояние книг после аудита: {}",
+                    adapter.engine(),
+                    exception
+                );
+            }
+        }
+    }
+
+    private LayoutEngineAdapter adapter(LayoutScreen target) {
+        LayoutEngineAdapter adapter = adaptersByEngine.get(target.engine());
+        if (adapter == null) {
+            throw new IllegalStateException(
+                "No layout adapter for engine " + target.engine()
             );
         }
+        return adapter;
+    }
+
+    private Map<String, LayoutEngineAdapter> adapterIndex() {
+        Map<String, LayoutEngineAdapter> result = new LinkedHashMap<>();
+        for (LayoutEngineAdapter adapter : adapters) {
+            if (result.put(adapter.engine(), adapter) != null) {
+                throw new IllegalStateException(
+                    "Duplicate layout adapter " + adapter.engine()
+                );
+            }
+        }
+        return Map.copyOf(result);
     }
 
     public record StartResult(boolean started, String message) {

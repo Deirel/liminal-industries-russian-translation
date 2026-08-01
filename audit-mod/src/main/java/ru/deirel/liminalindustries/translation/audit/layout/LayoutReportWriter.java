@@ -98,7 +98,12 @@ public final class LayoutReportWriter {
             if (capture != null) {
                 value.addProperty("engine", capture.engine());
                 value.addProperty("book", capture.book());
-                value.addProperty("resource", capture.resource());
+                value.addProperty(
+                    "resource",
+                    issue.text().resource() == null
+                        ? capture.resource()
+                        : issue.text().resource()
+                );
                 value.addProperty("entry", capture.entry());
                 if (capture.page() != null) {
                     value.addProperty("page", capture.page());
@@ -109,6 +114,12 @@ public final class LayoutReportWriter {
                         ? capture.textSource()
                         : issue.text().source()
                 );
+                if (issue.text().logicalPage() != null) {
+                    value.addProperty(
+                        "logical_page",
+                        issue.text().logicalPage()
+                    );
+                }
                 value.addProperty("width", capture.screenWidth());
                 value.addProperty("height", capture.screenHeight());
                 value.addProperty("gui_scale", capture.guiScale());

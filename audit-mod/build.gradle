@@ -25,6 +25,9 @@ def translationCatalogFile = layout.projectDirectory.file(
 def runtimeAuditOverridesFile = layout.projectDirectory.file(
     "../translation-versions/${selectedTranslationVersion}/runtime-audit-overrides.json"
 ).asFile
+def translationResourcePack = layout.projectDirectory.dir(
+    "../translation-versions/${selectedTranslationVersion}/payload/resourcepack"
+)
 def compatibilityResourcePack = layout.projectDirectory.dir(
     "../translation-versions/${selectedTranslationVersion}/compatibility-resourcepack"
 )
@@ -74,6 +77,10 @@ minecraft {
 
 repositories {
     maven {
+        name = 'Mantle'
+        url = 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven {
         name = 'Jared'
         url = 'https://maven.blamejared.com/'
     }
@@ -86,13 +93,22 @@ dependencies {
     compileOnly fg.deobf(
         "vazkii.patchouli:Patchouli:${minecraft_version}-${translationConfig.patchouli_version}-FORGE"
     )
+    compileOnly fg.deobf(
+        "slimeknights.mantle:Mantle:${minecraft_version}-${translationConfig.mantle_version}"
+    )
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
     runtimeOnly fg.deobf(
         "vazkii.patchouli:Patchouli:${minecraft_version}-${translationConfig.patchouli_version}-FORGE"
     )
+    runtimeOnly fg.deobf(
+        "slimeknights.mantle:Mantle:${minecraft_version}-${translationConfig.mantle_version}"
+    )
 
     testImplementation platform('org.junit:junit-bom:5.10.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation fg.deobf(
+        "slimeknights.mantle:Mantle:${minecraft_version}-${translationConfig.mantle_version}"
+    )
 }
 
 tasks.named('processResources', ProcessResources).configure {
@@ -101,12 +117,14 @@ tasks.named('processResources', ProcessResources).configure {
         forge_version: forge_version,
         jei_version: jei_version,
         patchouli_version: translationConfig.patchouli_version,
+        mantle_version: translationConfig.mantle_version,
+        tconstruct_version: translationConfig.tconstruct_version,
         mod_id: mod_id,
         mod_version: translationConfig.version
     ]
     inputs.properties properties
     inputs.file translationSourcesFile
-    dependsOn 'generateTranslationAuditIndex'
+    dependsOn 'generateTranslationAuditIndex', 'generateBookTranslationIndex'
 
     from(translationSourcesFile) {
         rename { 'translation-sources.json' }
@@ -116,6 +134,32 @@ tasks.named('processResources', ProcessResources).configure {
     filesMatching('META-INF/mods.toml') {
         expand properties
     }
+}
+
+tasks.register('generateBookTranslationIndex', Exec) {
+    def output = layout.buildDirectory.file(
+        'generated/audit/assets/liminal_industries_ru/book-translations.json'
+    )
+
+    inputs.file translationManifestFile
+    inputs.dir translationResourcePack
+    inputs.dir compatibilityResourcePack
+    inputs.file '../scripts/build_book_translation_index.py'
+    inputs.file '../scripts/translation_sources.py'
+    outputs.file output
+
+    commandLine(
+        'python3',
+        '../scripts/build_book_translation_index.py',
+        '--manifest',
+        translationManifestFile.absolutePath,
+        '--resourcepack',
+        translationResourcePack.asFile.absolutePath,
+        '--compatibility-resourcepack',
+        compatibilityResourcePack.asFile.absolutePath,
+        '--output',
+        output.get().asFile.absolutePath
+    )
 }
 
 tasks.register('generateTranslationAuditIndex') {

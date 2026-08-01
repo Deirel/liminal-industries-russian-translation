@@ -49,10 +49,13 @@ final class BookTranslationAdapter {
             }
             return new Result(
                 exactOutput,
-                rule.fields().size(),
+                rule.fieldIds().size(),
                 List.of(),
                 true
             );
+        }
+        if (rule.exactOnly()) {
+            return new Result(source, 0, rule.fieldIds(), false);
         }
         return switch (rule.format()) {
             case JSON -> adaptJson(rule, source, exactOutput);
