@@ -35,6 +35,10 @@ final class ItemTranslationAudit {
     private ItemTranslationAudit() {
     }
 
+    static boolean isReady() {
+        return TranslationAuditJeiPlugin.runtime() != null;
+    }
+
     static Result run() {
         Minecraft minecraft = Minecraft.getInstance();
         String selectedLanguage = minecraft.getLanguageManager().getSelected();

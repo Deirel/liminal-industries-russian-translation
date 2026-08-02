@@ -62,6 +62,7 @@ public final class AuditClientEvents {
     @SubscribeEvent
     public static void clientTick(TickEvent.ClientTickEvent event) {
         if (event.phase == TickEvent.Phase.END) {
+            AutoAuditController.tick();
             LayoutAuditRunner.tickAutoStart();
         }
     }
