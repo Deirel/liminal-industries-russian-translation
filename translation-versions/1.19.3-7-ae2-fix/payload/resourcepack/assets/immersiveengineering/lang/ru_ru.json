@@ -89,5 +89,7 @@
   "item.immersiveengineering.toolupgrade_powerpack_magnet": "Переносной электромагнит",
   "item.immersiveengineering.toolupgrade_powerpack_tesla": "Миниатюрная катушка Теслы",
   "item.immersiveengineering.wolfpack": "Патрон «Волчья стая»",
-  "manual.immersiveengineering.early_machines": "Верстаки и печи"
+  "manual.immersiveengineering.early_machines": "Верстаки и печи",
+  "manual.immersiveengineering.energy": "Энергия и сети",
+  "manual.immersiveengineering.general": "Обзор и ресурсы"
 }

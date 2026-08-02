@@ -18615,14 +18615,14 @@
       {
         "source_hash": "sha256:7ee7907304e79c40d3842f100b2f7de5983de76e056a2439a0067e7656c24c34",
         "source": "Automated Workbench",
-        "translation": "Автоматизированный верстак"
+        "translation": "Автоматический верстак"
       }
     ],
     "ie-manual:immersiveengineering:automated_workbench.txt:line:1": [
       {
         "source_hash": "sha256:d12c30d18ae31299c3ab33c28e9be3d37a399662739fa9c33f59f1f7271b20c7",
         "source": "For those who can't drive stick",
-        "translation": "Для тех, кто не умеет переключать передачи"
+        "translation": "Без ручного переключения"
       }
     ],
     "ie-manual:immersiveengineering:automated_workbench.txt:line:2": [
@@ -18937,7 +18937,7 @@
       {
         "source_hash": "sha256:b18c5365ba9af7f35c084e35e655b5acdef976df2a59785a709fa30a526ecff4",
         "source": "<&buckshot>§lBuckshot §lCartridges§r, created with the aforementioned blueprint, are filled with multiple small projectiles that are fired out in a cone shape. This cartridge is highly effective at short range.<np>",
-        "translation": "<&buckshot>§lПатроны §lс картечью§r создаются по упомянутому выше чертежу. Они содержат множество мелких снарядов, которые разлетаются конусом. Такие патроны особенно эффективны вблизи.<np>"
+        "translation": "<&buckshot>§lКартечные §lпатроны§r создаются по упомянутому выше чертежу. Они содержат множество мелких снарядов, которые разлетаются конусом. Такие патроны особенно эффективны вблизи.<np>"
       }
     ],
     "ie-manual:immersiveengineering:bullets.txt:line:7": [
@@ -19749,7 +19749,7 @@
       {
         "source_hash": "sha256:f3364558ce0fc41a5e1a42e37086d02b218cc916f4f5d79b8a0ec7cd663da232",
         "source": "Better than volume: More volume.",
-        "translation": "Лучше, чем громкость: больше громкости."
+        "translation": "Громче. Ещё громче."
       }
     ],
     "ie-manual:immersiveengineering:diesel_generator.txt:line:2": [
@@ -19805,7 +19805,7 @@
       {
         "source_hash": "sha256:3df4c4b9b6d5bb5bdc9bdcbaa57f4e045517588736132c3e0920356c887066cf",
         "source": "Definitely Perfectly Harmless",
-        "translation": "Определённо совершенно безвредные"
+        "translation": "Совершенно безвредные"
       }
     ],
     "ie-manual:immersiveengineering:dyes.txt:line:10": [
@@ -20064,7 +20064,7 @@
       {
         "source_hash": "sha256:b0e87c3447c60c749bf764cb0f5bb1abcedd3ff85e4c778b9d67490b2816bd5d",
         "source": "Milk goes left, acid goes right",
-        "translation": "Молоко идет налево, кислота идет направо"
+        "translation": "Молоко влево, кислота вправо"
       }
     ],
     "ie-manual:immersiveengineering:fluid_router.txt:line:2": [
@@ -21079,7 +21079,7 @@
       {
         "source_hash": "sha256:b1d15a9dc22933cadb68a4fa732b2ab620f6bb9e72a029de93402d22d6ca9bed",
         "source": "Mineral Deposits",
-        "translation": "Залежи полезных ископаемых"
+        "translation": "Минеральные залежи"
       }
     ],
     "ie-manual:immersiveengineering:minerals.txt:line:1": [
@@ -21828,7 +21828,7 @@
       {
         "source_hash": "sha256:209418dc5d2c69a724a23a910fe00d24a72e023d03a428cf9a006de8073b3827",
         "source": "<&probe>§2Redstone Probe Connectors§r have a functionality similar to Redstone Comparators, reading inventories for how full they are. Not only that, but they can be configured with a certain §lsignal threshold§r and will only output if that threshold is met - similar to a comparator.",
-        "translation": "<&probe>§2Соединители зондов Redstone§r имеют функциональность, аналогичную компараторам Redstone, считывая инвентарные данные на предмет их наполненности. Более того, они могут быть настроены на определенный §l порог сигнала §r и будут выводить сигнал только в том случае, если этот порог достигнут – аналогично компаратору."
+        "translation": "<&probe>§2Соединители редстоун-зонда§r работают как компараторы и считывают заполненность инвентаря. Для них можно задать §lпорог сигнала§r: выход включится, только когда заполненность достигнет этого порога."
       }
     ],
     "ie-manual:immersiveengineering:redstone_wire.txt:line:5": [
@@ -21926,7 +21926,7 @@
       {
         "source_hash": "sha256:170af624eac879a5fe5d15a57c198e9d2f34590b52d04f8955b084710dc2db70",
         "source": "Wanted: Dead or Alive",
-        "translation": "Разыскивается: живой или мертвый"
+        "translation": "Живым или мёртвым"
       }
     ],
     "ie-manual:immersiveengineering:revolver.txt:line:10": [
@@ -22430,7 +22430,7 @@
       {
         "source_hash": "sha256:7e881f7d048e1dfbf5672d11ec21a80a21c7a5c3ca7f9f38c1f013929ab0f24b",
         "source": "Thermoelectric Generator",
-        "translation": "Термоэлектрический генератор"
+        "translation": "Термоэлектрогенератор"
       }
     ],
     "ie-manual:immersiveengineering:thermoelectric.txt:line:1": [
@@ -22465,7 +22465,7 @@
       {
         "source_hash": "sha256:f878aa0ba9c5d60d76e427a3810e7f55c048971f1d1190b00ed23cfcefd7d28d",
         "source": "Engineer's Toolbox",
-        "translation": "Набор инструментов инженера"
+        "translation": "Ящик инженера"
       }
     ],
     "ie-manual:immersiveengineering:toolbox.txt:line:1": [
