@@ -6,6 +6,7 @@ import blusunrize.lib.manual.ManualInstance;
 import blusunrize.lib.manual.ManualUtils;
 import blusunrize.lib.manual.SpecialManualElement;
 import blusunrize.lib.manual.Tree;
+import blusunrize.lib.manual.gui.GuiButtonManualLink;
 import blusunrize.lib.manual.gui.ManualScreen;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -66,18 +67,19 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
             );
         }
         double scale = field(gui, "scaleFactor", Float.class);
+        String resource = languageResource(target.resource(), language);
         List<LayoutRegion> pages = new ArrayList<>();
         List<LayoutRegion> text = new ArrayList<>();
         if (gui.currentNode.isLeaf()) {
-            captureEntry(gui, target, scale, pages, text);
+            captureEntry(gui, target, resource, scale, pages, text);
         } else {
-            captureIndex(gui, target, scale, pages, text);
+            captureIndex(gui, target, resource, scale, pages, text);
         }
         return new LayoutCapture(
             ENGINE,
             target.book(),
             target.id(),
-            target.resource(),
+            resource,
             target.entry(),
             target.page(),
             target.textSource(),
@@ -160,6 +162,7 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
     private void captureEntry(
         ManualScreen gui,
         LayoutScreen target,
+        String resource,
         double scale,
         List<LayoutRegion> pages,
         List<LayoutRegion> text
@@ -243,7 +246,7 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
                 font.lineHeight,
                 scale,
                 target.textSource(),
-                target.resource(),
+                resource,
                 content
             ).withLogicalPage(logicalPage));
         }
@@ -252,6 +255,7 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
     private void captureIndex(
         ManualScreen gui,
         LayoutScreen target,
+        String resource,
         double scale,
         List<LayoutRegion> pages,
         List<LayoutRegion> text
@@ -326,7 +330,7 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
                 font.lineHeight * textScale,
                 scale,
                 target.textSource(),
-                target.resource(),
+                resource,
                 content
             ).withLogicalPage(logicalPage));
         }
@@ -370,6 +374,7 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
         for (GuiEventListener child : gui.children()) {
             if (!(child instanceof AbstractWidget widget)
                 || !widget.visible
+                || widget instanceof GuiButtonManualLink
                 || widget.getClass().getSimpleName().equals("ClickableList")) {
                 continue;
             }
@@ -412,6 +417,12 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
     private String runtimeResource(ManualEntry entry) {
         return "assets/" + entry.getLocation().getNamespace()
             + "/manual/<language>/" + entry.getLocation().getPath() + ".txt";
+    }
+
+    private String languageResource(String resource, String language) {
+        return resource
+            .replace("/<language>/", "/" + language + "/")
+            .replace("/ru_ru/", "/" + language + "/");
     }
 
     private String nodeId(Tree.AbstractNode<ResourceLocation, ManualEntry> node) {
