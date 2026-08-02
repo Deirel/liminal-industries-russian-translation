@@ -53,6 +53,14 @@ import java.util.stream.Collectors;
 
 final class MantleLayoutAdapter implements LayoutEngineAdapter {
     private static final String ENGINE = "mantle";
+    private static final Set<ResourceLocation> TINKERS_CONSTRUCT_BOOKS = Set.of(
+        ResourceLocation.parse("tconstruct:materials_and_you"),
+        ResourceLocation.parse("tconstruct:mighty_smelting"),
+        ResourceLocation.parse("tconstruct:puny_smelting"),
+        ResourceLocation.parse("tconstruct:tinkers_gadgetry"),
+        ResourceLocation.parse("tconstruct:fantastic_foundry"),
+        ResourceLocation.parse("tconstruct:encyclopedia")
+    );
     private static final String ADVANCEMENT_LISTENER_FIELD = "f_104391_";
     private static final double HORIZONTAL_RENDERING_SLOP = BookScreen.PAGE_MARGIN;
     private static final Pattern TRANSLATION_KEY = Pattern.compile(
@@ -154,9 +162,17 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
     }
 
     private Set<ResourceLocation> selectedBooks() {
-        return records.stream()
+        return selectedBooks(records);
+    }
+
+    static Set<ResourceLocation> selectedBooks(
+        List<TranslationAuditIndex.ScreenRecord> records
+    ) {
+        Set<ResourceLocation> result = records.stream()
             .map(TranslationAuditIndex.ScreenRecord::bookId)
             .collect(Collectors.toSet());
+        result.addAll(TINKERS_CONSTRUCT_BOOKS);
+        return Set.copyOf(result);
     }
 
     private BookData loadBook(ResourceLocation bookId) {
@@ -200,15 +216,18 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
 
         for (SpreadTarget target : spreadTargets(book.getPageCount(null))) {
             PageData page = book.findPage(target.firstPage(), null);
-            TranslationAuditIndex.ScreenRecord indexed = pageRecord(bookId, page);
+            List<TranslationAuditIndex.ScreenRecord> indexed = pageRecords(
+                bookId,
+                page
+            );
             result.add(new LayoutScreen(
                 ENGINE,
                 bookId.toString(),
                 ENGINE + ":" + bookId + ":spread/" + target.firstPage(),
-                indexed == null ? "<runtime>" : indexed.resource(),
+                preferredResource(indexed, runtimePageResource(page)),
                 page == null ? "<runtime>" : page.name,
                 target.firstPage(),
-                source(indexed),
+                source(indexed.isEmpty() ? null : indexed.get(0)),
                 screenFactory(stack, book, firstPage, target.spread())
             ));
         }
@@ -351,16 +370,20 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             .filter(record -> record.bookId().equals(bookId))
             .toList();
         for (int side = 0; side < 2; side++) {
-            int pageNumber = gui.getPage(side);
+            int pageNumber = displayedPage(gui.getPage_(), side);
             if (pageNumber < 0) {
                 continue;
             }
             PageData pageData = gui.book.findPage(pageNumber, null);
+            if (pageData == null) {
+                continue;
+            }
             String logicalPage = logicalPage(bookId, pageData, gui.book.sections);
             List<TranslationAuditIndex.ScreenRecord> pageRecords = pageRecords(
                 bookId,
                 pageData
             );
+            String runtimeResource = runtimePageResource(pageData);
             int firstText = text.size();
             int firstPage = pages.size();
             List<BookElement> elements = gui.getElements(side);
@@ -375,6 +398,7 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
                         font,
                         pageRecords,
                         bookRecords,
+                        runtimeResource,
                         text,
                         pages
                     );
@@ -387,6 +411,7 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
                         font,
                         pageRecords,
                         bookRecords,
+                        runtimeResource,
                         text,
                         pages
                     );
@@ -416,7 +441,11 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
         ResourceLocation bookId,
         String resource
     ) {
-        return ENGINE + ":" + bookId + ":resource/" + resource;
+        String languageIndependent = resource.replaceFirst(
+            "/[a-z]{2}_[a-z]{2}/",
+            "/<language>/"
+        );
+        return ENGINE + ":" + bookId + ":resource/" + languageIndependent;
     }
 
     private String logicalPage(
@@ -445,6 +474,7 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
         Font font,
         List<TranslationAuditIndex.ScreenRecord> pageRecords,
         List<TranslationAuditIndex.ScreenRecord> bookRecords,
+        String runtimeResource,
         List<LayoutRegion> text,
         List<LayoutRegion> pages
     ) {
@@ -490,7 +520,8 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
                 item.text,
                 rendered,
                 pageRecords,
-                bookRecords
+                bookRecords,
+                runtimeResource
             );
             String[] allLines = TextDataRenderer.cropStringBySize(
                 rendered,
@@ -558,6 +589,7 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
         Font font,
         List<TranslationAuditIndex.ScreenRecord> pageRecords,
         List<TranslationAuditIndex.ScreenRecord> bookRecords,
+        String runtimeResource,
         List<LayoutRegion> text,
         List<LayoutRegion> pages
     ) {
@@ -600,7 +632,8 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             TextOrigin origin = componentOrigin(
                 item.text,
                 pageRecords,
-                bookRecords
+                bookRecords,
+                runtimeResource
             );
             List<FormattedText> allLines = TextComponentDataRenderer
                 .splitTextComponentBySize(
@@ -974,13 +1007,6 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             .orElse(null);
     }
 
-    private TranslationAuditIndex.ScreenRecord pageRecord(
-        ResourceLocation bookId,
-        PageData page
-    ) {
-        return pageRecords(bookId, page).stream().findFirst().orElse(null);
-    }
-
     private List<TranslationAuditIndex.ScreenRecord> pageRecords(
         ResourceLocation bookId,
         PageData page
@@ -1014,6 +1040,27 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             || normalized.endsWith("_" + recordEntry);
     }
 
+    static String preferredResource(
+        List<TranslationAuditIndex.ScreenRecord> indexed,
+        String runtimeResource
+    ) {
+        return indexed.isEmpty() ? runtimeResource : indexed.get(0).resource();
+    }
+
+    static String runtimePageResource(PageData page) {
+        if (page == null
+            || page.source == null
+            || page.data == null
+            || page.data.isEmpty()
+            || page.data.equals("no-load")) {
+            return "<runtime>";
+        }
+        ResourceLocation location = page.source.getResourceLocation(page.data);
+        return location == null
+            ? "<runtime>"
+            : "assets/" + location.getNamespace() + "/" + location.getPath();
+    }
+
     private String source(TranslationAuditIndex.ScreenRecord record) {
         return record == null
             ? "<runtime>"
@@ -1024,7 +1071,8 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
         String raw,
         String rendered,
         List<TranslationAuditIndex.ScreenRecord> pageRecords,
-        List<TranslationAuditIndex.ScreenRecord> bookRecords
+        List<TranslationAuditIndex.ScreenRecord> bookRecords,
+        String runtimeResource
     ) {
         String translationKey = translationKeySource(raw);
         if (translationKey != null) {
@@ -1042,6 +1090,12 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
         if (!pageOrigin.equals(TextOrigin.RUNTIME)) {
             return pageOrigin;
         }
+        if (!runtimeResource.equals("<runtime>")) {
+            String runtimeSource = textSource(runtimeResource, raw, rendered);
+            if (runtimeSource != null) {
+                return new TextOrigin(runtimeResource, runtimeSource);
+            }
+        }
         TextOrigin bookOrigin = uniqueOrigin(bookRecords.stream()
             .map(TranslationAuditIndex.ScreenRecord::resource)
             .distinct()
@@ -1051,9 +1105,16 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             ))
             .filter(origin -> origin.source() != null)
             .toList());
-        return bookOrigin.equals(TextOrigin.RUNTIME)
-            ? runtimeTranslationOrigin(rendered)
-            : bookOrigin;
+        if (!bookOrigin.equals(TextOrigin.RUNTIME)) {
+            return bookOrigin;
+        }
+        TextOrigin translationOrigin = runtimeTranslationOrigin(rendered);
+        if (!translationOrigin.equals(TextOrigin.RUNTIME)) {
+            return translationOrigin;
+        }
+        return runtimeResource.equals("<runtime>")
+            ? TextOrigin.RUNTIME
+            : new TextOrigin(runtimeResource, "<runtime>");
     }
 
     private TextOrigin uniqueOrigin(List<TextOrigin> matches) {
@@ -1063,7 +1124,8 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
     private TextOrigin componentOrigin(
         Component component,
         List<TranslationAuditIndex.ScreenRecord> pageRecords,
-        List<TranslationAuditIndex.ScreenRecord> bookRecords
+        List<TranslationAuditIndex.ScreenRecord> bookRecords,
+        String runtimeResource
     ) {
         if (component.getContents() instanceof TranslatableContents translatable) {
             return new TextOrigin(
@@ -1075,7 +1137,8 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             TextOrigin origin = componentOrigin(
                 sibling,
                 pageRecords,
-                bookRecords
+                bookRecords,
+                runtimeResource
             );
             if (!origin.equals(TextOrigin.RUNTIME)) {
                 return origin;
@@ -1085,7 +1148,8 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             component.getString(),
             component.getString(),
             pageRecords,
-            bookRecords
+            bookRecords,
+            runtimeResource
         );
     }
 
@@ -1233,6 +1297,16 @@ final class MantleLayoutAdapter implements LayoutEngineAdapter {
             result.add(new SpreadTarget(spread++, firstPage));
         }
         return List.copyOf(result);
+    }
+
+    static int displayedPage(int spread, int side) {
+        if (side < 0 || side > 1) {
+            return -1;
+        }
+        if (spread == 0) {
+            return side == 0 ? -1 : 0;
+        }
+        return (spread - 1) * 2 + 1 + side;
     }
 
     record SpreadTarget(int spread, int firstPage) {

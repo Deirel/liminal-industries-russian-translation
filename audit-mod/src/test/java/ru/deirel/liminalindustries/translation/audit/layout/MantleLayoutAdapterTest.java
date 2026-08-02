@@ -5,15 +5,43 @@ import org.junit.jupiter.api.Test;
 import ru.deirel.liminalindustries.translation.audit.TranslationAuditIndex;
 import slimeknights.mantle.client.book.data.PageData;
 import slimeknights.mantle.client.book.data.SectionData;
+import slimeknights.mantle.client.book.repository.BookRepository;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MantleLayoutAdapterTest {
+    @Test
+    void discoversTinkersBooksWithoutTranslationScreenRecords() {
+        assertEquals(
+            Set.of(
+                ResourceLocation.parse("tconstruct:materials_and_you"),
+                ResourceLocation.parse("tconstruct:mighty_smelting"),
+                ResourceLocation.parse("tconstruct:puny_smelting"),
+                ResourceLocation.parse("tconstruct:tinkers_gadgetry"),
+                ResourceLocation.parse("tconstruct:fantastic_foundry"),
+                ResourceLocation.parse("tconstruct:encyclopedia")
+            ),
+            MantleLayoutAdapter.selectedBooks(List.of())
+        );
+    }
+
+    @Test
+    void keepsIndexedMantleBooksAlongsideTinkersBooks() {
+        ResourceLocation customBook = ResourceLocation.parse("example:guide");
+
+        assertTrue(MantleLayoutAdapter.selectedBooks(List.of(record(
+            customBook,
+            "assets/example/book/guide/ru_ru/intro.json",
+            "intro"
+        ))).contains(customBook));
+    }
+
     @Test
     void keepsGroupAndGeneratedPageRecordsForSourceAttribution() {
         ResourceLocation book = ResourceLocation.parse("tconstruct:encyclopedia");
@@ -42,6 +70,43 @@ class MantleLayoutAdapterTest {
                 List.of(group, generated, unrelated),
                 book,
                 page
+            )
+        );
+    }
+
+    @Test
+    void indexedResourceWinsOverRuntimeResourceForRescriptedAttribution() {
+        ResourceLocation book = ResourceLocation.parse("tconstruct:encyclopedia");
+        TranslationAuditIndex.ScreenRecord indexed = record(
+            book,
+            "assets/tconstruct/book/encyclopedia/ru_ru/tools/small.json",
+            "small"
+        );
+
+        assertEquals(
+            indexed.resource(),
+            MantleLayoutAdapter.preferredResource(
+                List.of(indexed),
+                "assets/tconstruct/book/encyclopedia/en_us/tools/small.json"
+            )
+        );
+    }
+
+    @Test
+    void runtimeResourceFillsOriginalAttributionWithoutAnIndex() {
+        PageData page = new PageData();
+        page.data = "tools/small.json";
+        page.source = new FixedRepository(
+            ResourceLocation.parse(
+                "tconstruct:book/encyclopedia/ru_ru/tools/small.json"
+            )
+        );
+
+        assertEquals(
+            "assets/tconstruct/book/encyclopedia/ru_ru/tools/small.json",
+            MantleLayoutAdapter.preferredResource(
+                List.of(),
+                MantleLayoutAdapter.runtimePageResource(page)
             )
         );
     }
@@ -100,7 +165,17 @@ class MantleLayoutAdapterTest {
     void usesResolvedResourceAsLogicalPageIdentity() {
         assertEquals(
             "mantle:tconstruct:encyclopedia:resource/"
-                + "assets/tconstruct/book/encyclopedia/ru_ru/tools/pickaxe.json",
+                + "assets/tconstruct/book/encyclopedia/<language>/tools/pickaxe.json",
+            MantleLayoutAdapter.resourceLogicalPage(
+                ResourceLocation.parse("tconstruct:encyclopedia"),
+                "assets/tconstruct/book/encyclopedia/ru_ru/tools/pickaxe.json"
+            )
+        );
+        assertEquals(
+            MantleLayoutAdapter.resourceLogicalPage(
+                ResourceLocation.parse("tconstruct:encyclopedia"),
+                "assets/tconstruct/book/encyclopedia/en_us/tools/pickaxe.json"
+            ),
             MantleLayoutAdapter.resourceLogicalPage(
                 ResourceLocation.parse("tconstruct:encyclopedia"),
                 "assets/tconstruct/book/encyclopedia/ru_ru/tools/pickaxe.json"
@@ -124,6 +199,14 @@ class MantleLayoutAdapterTest {
     @Test
     void emptyBookHasNoSpreadTargets() {
         assertEquals(List.of(), MantleLayoutAdapter.spreadTargets(0));
+    }
+
+    @Test
+    void attributesBothDisplayedPagesInsteadOfMantlesStaleRightPageGetter() {
+        assertEquals(-1, MantleLayoutAdapter.displayedPage(0, 0));
+        assertEquals(0, MantleLayoutAdapter.displayedPage(0, 1));
+        assertEquals(9, MantleLayoutAdapter.displayedPage(5, 0));
+        assertEquals(10, MantleLayoutAdapter.displayedPage(5, 1));
     }
 
     @Test
@@ -193,5 +276,37 @@ class MantleLayoutAdapterTest {
             "/text/0/text",
             "English source"
         );
+    }
+
+    private static final class FixedRepository extends BookRepository {
+        private final ResourceLocation location;
+
+        private FixedRepository(ResourceLocation location) {
+            this.location = location;
+        }
+
+        @Override
+        public List<SectionData> getSections() {
+            return List.of();
+        }
+
+        @Override
+        public ResourceLocation getResourceLocation(String path, boolean safe) {
+            return location;
+        }
+
+        @Override
+        public java.util.Optional<net.minecraft.server.packs.resources.Resource>
+            getLocation(ResourceLocation requested) {
+            return java.util.Optional.empty();
+        }
+
+        @Override
+        public String resourceToString(
+            net.minecraft.server.packs.resources.Resource resource,
+            boolean stripComments
+        ) {
+            return "";
+        }
     }
 }

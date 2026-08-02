@@ -229,6 +229,11 @@ public final class LayoutAuditRunner {
             russianIssues,
             englishSubjects
         ));
+        classified.addAll(LayoutIssueClassifier.missingLanguagePages(
+            captures,
+            "en_us",
+            "ru_ru"
+        ));
         try {
             Path output = LayoutReportWriter.write(
                 minecraft.gameDirectory.toPath(),
@@ -244,12 +249,15 @@ public final class LayoutAuditRunner {
                 .count();
             long missingContentFailures =
                 LayoutReportWriter.missingContentErrors(classified);
+            long missingPageFailures =
+                LayoutReportWriter.missingTranslatedPageErrors(classified);
             long failures = LayoutReportWriter.blockingErrors(classified);
             completionMessage = "Аудит верстки [" + adapterScope + "] "
                 + (failures == 0 ? "пройден" : "не пройден")
                 + ": " + captures.size() + " экранов, "
                 + failures + " ошибок (перевод: " + translationFailures
                 + ", содержимое: " + missingContentFailures
+                + ", страницы языка: " + missingPageFailures
                 + "). Отчёт: " + output.toAbsolutePath();
             complete = true;
             restore();

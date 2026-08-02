@@ -1,0 +1,13 @@
+{
+  "modifier_id": "tconstruct:haste",
+  "text": [
+    { "text": "Даёт всем инструментам в руках +10% скорости добычи за уровень." }
+  ],
+  "more_text_space": true,
+  "tool_filter": "tconstruct:modifiable/armor",
+  "effects": [
+    "Можно применять постепенно",
+    "До 5 уровней",
+    "1 слот улучшений за уровень"
+  ]
+}

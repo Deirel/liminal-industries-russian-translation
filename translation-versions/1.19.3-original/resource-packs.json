@@ -21,6 +21,7 @@
     {"id": "create-crafts-additions", "display_name": "Create Crafts & Additions", "target_mod_versions": ["1.3.1"], "namespaces": ["createaddition"]},
     {"id": "create-low-heated", "display_name": "Create Low-Heated", "target_mod_versions": ["6.0.2-3"], "namespaces": ["createlowheated"]},
     {"id": "decorative-blocks", "display_name": "Decorative Blocks", "target_mod_versions": ["4.1.3"], "namespaces": ["decorative_blocks"]},
+    {"id": "dustrial-decor", "display_name": "'Dustrial Decor", "target_mod_versions": ["1.3.5-1.20"], "namespaces": ["dustrial_decor"]},
     {"id": "ender-chests", "display_name": "EnderChests", "target_mod_versions": ["1.4"], "namespaces": ["enderchests"]},
     {"id": "ender-io", "display_name": "Ender IO", "target_mod_versions": ["6.2.11-beta"], "namespaces": ["enderio"]},
     {"id": "eidolon-repraised", "display_name": "Eidolon: Repraised", "target_mod_versions": ["0.3.8.15"], "namespaces": ["eidolon"]},

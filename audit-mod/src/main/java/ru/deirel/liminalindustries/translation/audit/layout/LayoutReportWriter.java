@@ -48,6 +48,7 @@ public final class LayoutReportWriter {
             )
             .count();
         long missingContentErrors = missingContentErrors(issues);
+        long missingLanguagePageErrors = missingLanguagePageErrors(issues);
         long blockingErrors = blockingErrors(issues);
         root.addProperty("schema", 1);
         root.addProperty("result", blockingErrors == 0 ? "PASS" : "FAIL");
@@ -61,6 +62,10 @@ public final class LayoutReportWriter {
         root.addProperty("blocking_errors", blockingErrors);
         root.addProperty("translation_errors", translationErrors);
         root.addProperty("missing_content_errors", missingContentErrors);
+        root.addProperty(
+            "missing_language_page_errors",
+            missingLanguagePageErrors
+        );
         root.addProperty("unpaired_language_errors", unpairedErrors);
 
         JsonArray screens = new JsonArray();
@@ -84,8 +89,13 @@ public final class LayoutReportWriter {
         root.add("screens", screens);
 
         Map<String, LayoutCapture> captureIndex = new LinkedHashMap<>();
+        Map<String, LayoutCapture> captureIndexByScreen = new LinkedHashMap<>();
         captures.forEach(capture -> captureIndex.put(
             captureKey(capture.language(), capture.screenId()),
+            capture
+        ));
+        captures.forEach(capture -> captureIndexByScreen.putIfAbsent(
+            capture.screenId(),
             capture
         ));
         JsonArray issueValues = new JsonArray();
@@ -95,6 +105,9 @@ public final class LayoutReportWriter {
                 issue.language(),
                 issue.screenId()
             ));
+            if (capture == null) {
+                capture = captureIndexByScreen.get(issue.screenId());
+            }
             if (capture != null) {
                 value.addProperty("engine", capture.engine());
                 value.addProperty("book", capture.book());
@@ -144,7 +157,9 @@ public final class LayoutReportWriter {
                 issue.classification() == LayoutIssue.Classification.TRANSLATION_LAYOUT
             )
             .count();
-        return translationErrors + missingContentErrors(issues);
+        return translationErrors
+            + missingContentErrors(issues)
+            + missingTranslatedPageErrors(issues);
     }
 
     static long missingContentErrors(List<LayoutIssue> issues) {
@@ -153,6 +168,25 @@ public final class LayoutReportWriter {
             .filter(issue -> issue.rule() == LayoutIssue.Rule.MISSING_CONTENT)
             .map(LayoutReportWriter::contentIssueKey)
             .distinct()
+            .count();
+    }
+
+    static long missingLanguagePageErrors(List<LayoutIssue> issues) {
+        return issues.stream()
+            .filter(issue -> issue.severity() == LayoutIssue.Severity.ERROR)
+            .filter(issue ->
+                issue.rule() == LayoutIssue.Rule.MISSING_LANGUAGE_PAGE
+            )
+            .count();
+    }
+
+    static long missingTranslatedPageErrors(List<LayoutIssue> issues) {
+        return issues.stream()
+            .filter(issue -> issue.severity() == LayoutIssue.Severity.ERROR)
+            .filter(issue ->
+                issue.rule() == LayoutIssue.Rule.MISSING_LANGUAGE_PAGE
+            )
+            .filter(issue -> issue.language().equals("ru_ru"))
             .count();
     }
 

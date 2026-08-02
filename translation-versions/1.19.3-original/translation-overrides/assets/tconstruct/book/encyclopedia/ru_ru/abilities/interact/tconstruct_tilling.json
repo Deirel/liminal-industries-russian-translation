@@ -1,0 +1,18 @@
+{
+  "effects": [
+    "Максимум 1 уровень",
+    "Требуется 1 слот для умений."
+  ],
+  "modifier_id": "tconstruct:tilling",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Позволяет инструменту вспахивать землю, используя обычную область добычи."
+    },
+    {
+      "paragraph": true,
+      "text": "Срабатывает перед встроенной прокладкой троп или снятием коры."
+    }
+  ],
+  "tool_filter": "tconstruct:modifiable/interactable"
+}

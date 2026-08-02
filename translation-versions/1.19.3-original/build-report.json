@@ -4,13 +4,13 @@
   "errors": 0,
   "manifest_records": 16812,
   "native_ru_coverage": 12612,
-  "output_language_translation_keys": 2711,
+  "output_language_translation_keys": 2715,
   "output_mantle_book_language_strings": 0,
   "output_mantle_book_strings": 0,
   "output_manual_strings": 0,
   "output_patchouli_strings": 50,
   "output_quest_strings": 455,
   "pending": 0,
-  "runtime_audit_translation_keys": 174,
+  "runtime_audit_translation_keys": 178,
   "version": "1.19.3-original"
 }

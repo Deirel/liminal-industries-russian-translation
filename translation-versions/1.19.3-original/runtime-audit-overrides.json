@@ -196,11 +196,15 @@
       "material.tconstruct.bamboo": "Бамбук",
       "material.tconstruct.blazewood": "Огненное дерево",
       "material.tconstruct.cinderslime": "Зольная слизь",
+      "material.tconstruct.cinderslime.encyclopedia": "С 4-го уровня топливо восстанавливает 1 ед. сверхслизи в секунду.",
       "material.tconstruct.glass": "Стекло",
       "material.tconstruct.invar": "Инвар",
       "material.tconstruct.slimeskin": "Слизневая кожа",
       "material.tconstruct.treated_wood": "Обработанная древесина",
-      "material.tconstruct.venombone": "Ядовитая кость"
+      "material.tconstruct.venombone": "Ядовитая кость",
+      "material.tconstruct.queens_slime.encyclopedia": "Снижает прочность на 15% за уровень; 66% потери даёт сверхслизь.",
+      "modifier.tconstruct.overslime": "Сверхслизь",
+      "modifier.tconstruct.zombified_piglin_disguise": "Маскировка пиглина"
     },
     "thermal": {
       "block.thermal.crude_oil_fluid": "Сырая нефть",

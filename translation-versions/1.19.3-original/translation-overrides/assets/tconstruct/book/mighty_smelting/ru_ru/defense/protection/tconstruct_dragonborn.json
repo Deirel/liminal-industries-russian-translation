@@ -1,0 +1,13 @@
+{
+  "modifier_id": "tconstruct:dragonborn",
+  "text": [
+    { "text": "Dovah ko krif dilos ahrk qah." },
+    { "text": "Не читаешь на драконьем, мастер? Здесь сказано: «Летающие драконы смертельны и защищены».", "paragraph": true }
+  ],
+  "more_text_space": true,
+  "effects": [
+    "В воздухе повышает защиту и урон",
+    "Уровни усиливают эффект",
+    "1 слот защиты за уровень"
+  ]
+}
