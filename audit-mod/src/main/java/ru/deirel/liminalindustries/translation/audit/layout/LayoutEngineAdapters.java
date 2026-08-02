@@ -8,7 +8,11 @@ import java.util.function.Supplier;
 public final class LayoutEngineAdapters {
     private static final List<Registration> REGISTRATIONS = List.of(
         new Registration("patchouli", PatchouliLayoutAdapter::new),
-        new Registration("mantle", MantleLayoutAdapter::new)
+        new Registration("mantle", MantleLayoutAdapter::new),
+        new Registration(
+            "immersive_engineering",
+            ImmersiveEngineeringLayoutAdapter::new
+        )
     );
     private static final Map<String, Registration> BY_ENGINE = index();
 

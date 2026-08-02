@@ -96,6 +96,9 @@ dependencies {
     compileOnly fg.deobf(
         "slimeknights.mantle:Mantle:${minecraft_version}-${translationConfig.mantle_version}"
     )
+    compileOnly fg.deobf(
+        "blusunrize.immersiveengineering:ImmersiveEngineering:${minecraft_version}-${translationConfig.immersive_engineering_version}"
+    )
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
     runtimeOnly fg.deobf(
         "vazkii.patchouli:Patchouli:${minecraft_version}-${translationConfig.patchouli_version}-FORGE"
@@ -109,6 +112,9 @@ dependencies {
     testImplementation fg.deobf(
         "slimeknights.mantle:Mantle:${minecraft_version}-${translationConfig.mantle_version}"
     )
+    testImplementation fg.deobf(
+        "blusunrize.immersiveengineering:ImmersiveEngineering:${minecraft_version}-${translationConfig.immersive_engineering_version}"
+    )
 }
 
 tasks.named('processResources', ProcessResources).configure {
@@ -119,6 +125,8 @@ tasks.named('processResources', ProcessResources).configure {
         patchouli_version: translationConfig.patchouli_version,
         mantle_version: translationConfig.mantle_version,
         tconstruct_version: translationConfig.tconstruct_version,
+        immersive_engineering_version:
+            translationConfig.immersive_engineering_version,
         mod_id: mod_id,
         mod_version: translationConfig.version
     ]

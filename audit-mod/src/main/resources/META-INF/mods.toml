@@ -54,6 +54,13 @@ ordering = "AFTER"
 side = "CLIENT"
 
 [[dependencies.${mod_id}]]
+modId = "immersiveengineering"
+mandatory = true
+versionRange = "[${minecraft_version}-${immersive_engineering_version},)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.${mod_id}]]
 modId = "liminal_industries_ru"
 mandatory = true
 versionRange = "[${mod_version}]"

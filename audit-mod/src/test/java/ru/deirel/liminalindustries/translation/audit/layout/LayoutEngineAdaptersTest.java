@@ -11,7 +11,7 @@ class LayoutEngineAdaptersTest {
     @Test
     void exposesRegisteredAdaptersForCommandRegistration() {
         assertEquals(
-            List.of("patchouli", "mantle"),
+            List.of("patchouli", "mantle", "immersive_engineering"),
             LayoutEngineAdapters.engines()
         );
     }
@@ -30,6 +30,11 @@ class LayoutEngineAdaptersTest {
         assertEquals(
             1,
             LayoutEngineAdapters.create("mantle").renderingTolerance()
+        );
+        assertEquals(
+            1,
+            LayoutEngineAdapters.create("immersive_engineering")
+                .renderingTolerance()
         );
     }
 
