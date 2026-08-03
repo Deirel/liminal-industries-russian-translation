@@ -1,0 +1,11 @@
+{
+  "block": [
+    "Explosion breaks blocks",
+    "Explosion causes fires"
+  ],
+  "entity": [
+    "Power 1 explosion",
+    "Up to 2 Explosion Damage"
+  ],
+  "text": "Вам когда-нибудь хотелось стать гастом? Это приблизит вас к цели."
+}

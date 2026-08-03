@@ -1,0 +1,15 @@
+{
+  "category": "thermal:augments",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_cycle_augment",
+  "name": "Циклическая обработка",
+  "pages": [
+    {
+      "A.recipe": "thermal:augments/machine_cycle_augment",
+      "text": "Улучшение «Циклическая обработка» возвращает подходящие выходные предметы механизма во входные слоты. Полезно для автоматизации.",
+      "title": "Циклическая обработка",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

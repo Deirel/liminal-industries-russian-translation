@@ -8,5 +8,6 @@
   "block.thermal.redstone_fluid": "Жидкий редстоун",
   "block.thermal.redstone_mushroom": "Флюсозуб",
   "block.thermal.slime_mushroom": "Слизневый гриб",
+  "thermal.book.landing_text": "Добро пожаловать в руководство по серии Thermal! Надеемся, вам понравится наша работа.",
   "thermal.book.subtitle": "MC 1.20.1"
 }

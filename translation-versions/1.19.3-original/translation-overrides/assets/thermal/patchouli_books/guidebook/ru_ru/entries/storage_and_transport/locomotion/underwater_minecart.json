@@ -1,0 +1,17 @@
+{
+  "category": "thermal:locomotion",
+  "flag": "mod:thermal_locomotion",
+  "icon": "thermal:underwater_minecart",
+  "name": "Подводная вагонетка",
+  "pages": [
+    {
+      "text": "Подводная вагонетка позволяет существам и игрокам ездить по $(l:thermal:storage_and_transport/locomotion/prismarinerails)рельсам$(/l) под водой. До удушья остаётся 4 минуты. Мобы ведут себя как под водой: нежить не горит, ифриты и эндермены получают урон, а зомби превращаются в утопленников. Зачарование «Подводное дыхание» снижает вероятность расхода воздуха каждый тик.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:underwater_minecart",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

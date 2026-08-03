@@ -4,7 +4,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.google.gson.JsonPrimitive;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
@@ -63,9 +62,6 @@ final class MantleBookAuditProvider implements AuditProvider {
             JsonElement russian = russianResource
                 .map(resource -> read(resource, russianId))
                 .orElse(null);
-            boolean structureMatches = russian != null
-                && normalizeStructure(english, null, false)
-                    .equals(normalizeStructure(russian, null, false));
             boolean wholeResourceLocalized = isWholeResourceLocalized(
                 english,
                 russian,
@@ -77,7 +73,6 @@ final class MantleBookAuditProvider implements AuditProvider {
                 null,
                 english,
                 russian,
-                structureMatches,
                 wholeResourceLocalized,
                 subjects
             );
@@ -96,13 +91,12 @@ final class MantleBookAuditProvider implements AuditProvider {
             .toList();
     }
 
-    private void collect(
+    void collect(
         ResourceLocation resourceId,
         String pointer,
         String field,
         JsonElement english,
         JsonElement russian,
-        boolean structureMatches,
         boolean wholeResourceLocalized,
         List<AuditSubject> subjects
     ) {
@@ -124,7 +118,6 @@ final class MantleBookAuditProvider implements AuditProvider {
                     pointer + "/data",
                     englishObject.get("data"),
                     russianData,
-                    structureMatches,
                     wholeResourceLocalized,
                     subjects
                 );
@@ -140,7 +133,6 @@ final class MantleBookAuditProvider implements AuditProvider {
                     key,
                     entry.getValue(),
                     russianChild,
-                    structureMatches,
                     wholeResourceLocalized,
                     subjects
                 );
@@ -161,7 +153,6 @@ final class MantleBookAuditProvider implements AuditProvider {
                     russianArray != null && index < russianArray.size()
                         ? russianArray.get(index)
                         : null,
-                    structureMatches,
                     wholeResourceLocalized,
                     subjects
                 );
@@ -180,7 +171,6 @@ final class MantleBookAuditProvider implements AuditProvider {
             pointer,
             english,
             russian,
-            structureMatches,
             wholeResourceLocalized,
             subjects
         );
@@ -191,12 +181,10 @@ final class MantleBookAuditProvider implements AuditProvider {
         String pointer,
         JsonElement english,
         JsonElement russian,
-        boolean structureMatches,
         boolean wholeResourceLocalized,
         List<AuditSubject> subjects
     ) {
-        boolean fieldLocalized = structureMatches
-            && russian != null
+        boolean fieldLocalized = russian != null
             && russian.isJsonPrimitive()
             && russian.getAsJsonPrimitive().isString()
             && !russian.getAsString().isBlank();
@@ -353,46 +341,6 @@ final class MantleBookAuditProvider implements AuditProvider {
                 exception
             );
         }
-    }
-
-    static JsonElement normalizeStructure(
-        JsonElement value,
-        String field,
-        boolean groupData
-    ) {
-        if (value.isJsonObject()) {
-            JsonObject source = value.getAsJsonObject();
-            JsonObject normalized = new JsonObject();
-            boolean addGroup = source.has("action")
-                && source.get("action").isJsonPrimitive()
-                && "add_group".equals(source.get("action").getAsString());
-            for (Map.Entry<String, JsonElement> entry : source.entrySet()) {
-                String key = entry.getKey();
-                normalized.add(
-                    key,
-                    normalizeStructure(
-                        entry.getValue(),
-                        key,
-                        addGroup && "data".equals(key)
-                    )
-                );
-            }
-            return normalized;
-        }
-        if (value.isJsonArray()) {
-            JsonArray normalized = new JsonArray();
-            for (JsonElement child : value.getAsJsonArray()) {
-                normalized.add(normalizeStructure(child, field, groupData));
-            }
-            return normalized;
-        }
-        if ((groupData || (field != null && TEXT_FIELDS.contains(field)))
-            && value.isJsonPrimitive()
-            && value.getAsJsonPrimitive().isString()
-            && !value.getAsString().isBlank()) {
-            return new JsonPrimitive("<translated>");
-        }
-        return value.deepCopy();
     }
 
     private JsonElement read(Resource resource, ResourceLocation location) {

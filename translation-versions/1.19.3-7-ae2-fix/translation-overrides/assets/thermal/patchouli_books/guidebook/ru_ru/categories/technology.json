@@ -1,0 +1,6 @@
+{
+  "description": "Совет: Alt+Shift+ЛКМ по шкале жидкости или RF в механизме очищает её и уничтожает содержимое.",
+  "icon": "thermal:machine_frame",
+  "name": "Технологии",
+  "sortnum": 1
+}

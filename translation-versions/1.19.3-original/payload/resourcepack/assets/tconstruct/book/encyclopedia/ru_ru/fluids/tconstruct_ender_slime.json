@@ -1,0 +1,10 @@
+{
+  "block": [
+    "Replaces hit block with held block"
+  ],
+  "entity": [
+    "+7 Seconds Returning",
+    "Teleports target if no current Returning"
+  ],
+  "text": "Телепортация ваших проблем в случайное место — это способ их решения."
+}

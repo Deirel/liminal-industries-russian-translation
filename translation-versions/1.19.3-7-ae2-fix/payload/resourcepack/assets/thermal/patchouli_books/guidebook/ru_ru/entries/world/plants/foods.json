@@ -1,0 +1,74 @@
+{
+  "category": "thermal:plants",
+  "flag": "mod:thermal_cultivation",
+  "icon": "thermal:pbj_sandwich",
+  "name": "Продукты",
+  "pages": [
+    {
+      "A.recipe": "thermal:carrot_cake",
+      "text": "Морковный пирог с огромным количеством каротина. После еды даёт ночное зрение.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:chocolate_cake",
+      "text": "Дивный и восхитительный десерт, достойный всяческих похвал. Сытнее обычного торта.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:potion_cake",
+      "text": "Заварное наслаждение! Накладывает эффект зелья, использованного при выпечке.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:spice_cake",
+      "text": "Сытная и восхитительная сладость с пряностями из сади-корня. После еды снимает отрицательные эффекты.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:stuffed_pumpkin",
+      "text": "Пышная тыква, до краёв наполненная урожаем. Её очень много, и она невероятно сытная.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:cheese_wheel",
+      "text": "Сливки, свёрнутые химозином по содержащемуся в них казеину. Кто не любит сыр? Его можно разделить на дольки.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:green_bean_pie",
+      "text": "Целая гора разных овощей. Классическое блюдо урожайной поры в виде пирога.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:pbj_sandwich_2",
+      "text": "Клейкая вкуснятина скрепляет клейковину. Лучшего сочетания вкусов пока не открыли.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:stuffed_pepper",
+      "text": "Перец с пармезаном и отборным мясом. Невероятно сытно и вкусно!",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:sushi_maki_8",
+      "text": "Солёные морепродукты с водорослями и круглозёрным рисом, часто под соевым соусом. Питательно и быстро съедается. Только не говорите Direwolf20.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:spring_salad",
+      "text": "Приготовлен из весенних даров и добавит пружины вашей походке. После еды повышает высоту прыжка.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:hearty_stew",
+      "text": "Питательный бульон из клубнеплодов, укрепляющий организм. После еды увеличивает максимальное здоровье.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:xp_stew",
+      "text": "Бодрящий шипучий эликсир из баклажанов, усиливающий опыт. После употребления ускоряет его получение.",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,28 @@
+{
+  "category": "thermal:armor",
+  "flag": "mod:thermal_innovation",
+  "icon": "thermal:hazmat_chestplate",
+  "name": "Костюм химзащиты",
+  "pages": [
+    {
+      "text": "Костюм химзащиты защищает от огня, урона от падения и эффектов состояния. Для полной защиты нужен весь комплект! При защите от огня и эффектов костюм теряет прочность.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:hazmat_fabric",
+      "text": "$(o)Оранжевое суфле$()",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:armor/hazmat_helmet",
+      "B.recipe": "thermal:armor/hazmat_chestplate",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:armor/hazmat_leggings",
+      "B.recipe": "thermal:armor/hazmat_boots",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,39 @@
+{
+  "category": "thermal:storage_and_transport",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:iron_gear",
+  "name": "Где Dynamics?",
+  "pages": [
+    {
+      "text": "Dynamics пока находится в разработке. Уже доступны энергетические и жидкостные трубы, которых вполне хватит для перевозки энергии и жидкостей. На следующих страницах перечислены рекомендуемые моды для перевозки предметов.",
+      "type": "text"
+    },
+    {
+      "link_text": "Curseforge",
+      "text": "XNet по одному кабелю передаёт предметы, жидкости, RF и многое другое. Каждой сети нужен контроллер: через него по нескольким каналам настраиваются входы, выходы, фильтры, размеры стаков и прочее. Освоиться не сразу легко, зато по возможностям управления XNet почти нет равных.",
+      "title": "XNet",
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/xnet"
+    },
+    {
+      "link_text": "Curseforge",
+      "text": "Если вам нравились трубы Dynamics из 1.12, попробуйте Refined Pipes. Трубы и извлекатели делятся на уровни с разной скоростью. Знакомым с Dynamics 1.12 этот мод покажется родным.",
+      "title": "Refined Pipes",
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/refined-pipes"
+    },
+    {
+      "link_text": "Curseforge",
+      "text": "Integrated Dynamics умеет проверять множество свойств мобов, инвентарей и прочего. Дополнение Tunnels позволяет сетям импортировать и экспортировать предметы из инвентарей. Вместе они дают исключительную точность, гибкую фильтрацию и контроль. Но освоить этот мод труднее большинства.",
+      "title": "Integrated Tunnels",
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels"
+    },
+    {
+      "text": "Следующие моды предлагают разные способы перевозки, а заодно много другого интересного содержимого. Если нужен мод, который добавляет $(o)только$() передачу предметов, жидкостей и энергии, смотрите предыдущие страницы.$(li)$(l:https://www.curseforge.com/minecraft/mc-mods/create)Create$()$(li)$(l:https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)Immersive Engineering$()$(li)$(l:https://www.curseforge.com/minecraft/mc-mods/rats)забавный мод с крысами$()",
+      "title": "Моды с трубами",
+      "type": "text"
+    }
+  ],
+  "read_by_default": true
+}

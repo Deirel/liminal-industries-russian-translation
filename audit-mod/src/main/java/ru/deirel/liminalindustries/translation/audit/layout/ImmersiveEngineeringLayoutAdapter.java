@@ -7,6 +7,7 @@ import blusunrize.lib.manual.ManualUtils;
 import blusunrize.lib.manual.SpecialManualElement;
 import blusunrize.lib.manual.Tree;
 import blusunrize.lib.manual.gui.GuiButtonManualLink;
+import blusunrize.lib.manual.gui.GuiButtonManualNavigation;
 import blusunrize.lib.manual.gui.ManualScreen;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -29,6 +30,7 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
     private static final int PAGE_TOP = 28;
     private static final int PAGE_WIDTH = 120;
     private static final int PAGE_HEIGHT = 148;
+    private static final int MANUAL_WIDTH = 186;
 
     private final List<TranslationAuditIndex.ScreenRecord> records =
         TranslationAuditIndex.screenRecords(ENGINE);
@@ -263,14 +265,20 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
         double left = field(gui, "guiLeft", Integer.class);
         double top = field(gui, "guiTop", Integer.class);
         String logicalPage = target.entry();
+        AbstractWidget list = gui.children().stream()
+            .filter(AbstractWidget.class::isInstance)
+            .map(AbstractWidget.class::cast)
+            .filter(widget -> widget.getClass().getSimpleName().equals("ClickableList"))
+            .findFirst()
+            .orElseThrow(() -> new IllegalStateException("IE manual index is missing"));
         pages.add(region(
             "index-header-page",
             LayoutRegion.Kind.PAGE,
             "index#header",
             -1,
-            left + PAGE_LEFT,
+            left,
             top + 7,
-            PAGE_WIDTH,
+            MANUAL_WIDTH,
             20,
             scale
         ).withLogicalPage(logicalPage));
@@ -279,10 +287,10 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
             LayoutRegion.Kind.PAGE,
             "index#list",
             -1,
-            left + 40,
-            top + 20,
-            100,
-            168,
+            list.getX(),
+            list.getY(),
+            left + MANUAL_WIDTH - list.getX(),
+            list.getHeight(),
             scale
         ).withLogicalPage(logicalPage));
         Font font = gui.getManual().fontRenderer();
@@ -303,12 +311,6 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
             text
         );
 
-        AbstractWidget list = gui.children().stream()
-            .filter(AbstractWidget.class::isInstance)
-            .map(AbstractWidget.class::cast)
-            .filter(widget -> widget.getClass().getSimpleName().equals("ClickableList"))
-            .findFirst()
-            .orElseThrow(() -> new IllegalStateException("IE manual index is missing"));
         String[] headers = field(list, "headers", String[].class);
         boolean[] categories = field(list, "isCategory", boolean[].class);
         int offset = field(list, "offset", Integer.class);
@@ -357,7 +359,7 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
             LayoutRegion.Kind.TEXT,
             page,
             (int) y,
-            left + (186 - width) / 2.0,
+            left + (MANUAL_WIDTH - width) / 2.0,
             y - font.lineHeight / 2.0,
             width,
             font.lineHeight,
@@ -375,6 +377,8 @@ final class ImmersiveEngineeringLayoutAdapter implements LayoutEngineAdapter {
             if (!(child instanceof AbstractWidget widget)
                 || !widget.visible
                 || widget instanceof GuiButtonManualLink
+                || (!gui.currentNode.isLeaf()
+                    && widget instanceof GuiButtonManualNavigation)
                 || widget.getClass().getSimpleName().equals("ClickableList")) {
                 continue;
             }

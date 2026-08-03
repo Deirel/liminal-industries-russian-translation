@@ -1,0 +1,12 @@
+{
+  "category": "thermal:world",
+  "icon": "minecraft:enchanted_book",
+  "name": "Удержание",
+  "pages": [
+    {
+      "text": "Удержание — зачарование для блоков и предметов, хранящих, например, Redstone Flux или жидкости. Каждый уровень увеличивает ёмкость на 50%, вплоть до +200% при Удержании IV (в 3 раза). Эффект сочетается с другими изменениями ёмкости, например $(l:thermal:technology/augments/introduction)улучшениями$(/l). Так, с $(l:thermal:technology/augments/integral_components)резонирующими интегральными компонентами$(/l) и Удержанием IV ёмкость RF вырастет в 12 раз.",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,72 @@
+{
+  "category": "thermal:materials",
+  "icon": "thermal:invar_block",
+  "name": "Хранение материалов",
+  "pages": [
+    {
+      "flag": "!mod:thermal_expansion",
+      "text": "Thermal добавляет блоки хранения для всех своих $(l:thermal:world/ores)руд$(/l) и $(l:thermal:materials/alloys)сплавов$(/l), а также пороха, шлака, обогащённого шлака и древесного угля. Если такие блоки есть в нескольких модах, мод результата определяет центральный предмет рецепта. Например, слиток свинца Thermal, окружённый 8 слитками свинца Immersive Engineering, даст блок свинца Thermal.",
+      "type": "patchouli:text"
+    },
+    {
+      "flag": "mod:thermal_expansion",
+      "text": "Thermal добавляет блоки хранения для всех $(l:thermal:world/ores)руд$(/l) и $(l:thermal:materials/alloys)сплавов$(/l), а также для пороха, шлака, обогащённого шлака, и древесного угля. Они могут быть автоматически упакованы/распакованы $(l:thermal:technology/machines/press)мульти-серво прессом$(/l).",
+      "type": "patchouli:text"
+    },
+    {
+      "flag": "mod:thermal_expansion",
+      "text": "Если блок хранения есть в нескольких модах, мод результата определяет центральный предмет рецепта. Например, слиток свинца Thermal, окружённый 8 слитками свинца Immersive Engineering, даст блок свинца Thermal.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:storage/charcoal_block",
+      "B.recipe": "thermal:storage/gunpowder_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/slag_block",
+      "B.recipe": "thermal:storage/rich_slag_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/apatite_block",
+      "B.recipe": "thermal:storage/cinnabar_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/niter_block",
+      "B.recipe": "thermal:storage/sulfur_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/tin_block",
+      "B.recipe": "thermal:storage/nickel_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/lead_block",
+      "B.recipe": "thermal:storage/silver_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/bronze_block",
+      "B.recipe": "thermal:storage/invar_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/electrum_block",
+      "B.recipe": "thermal:storage/constantan_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:storage/signalum_block",
+      "B.recipe": "thermal:storage/lumium_block",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "recipe": "thermal:storage/enderium_block",
+      "type": "thermal:crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

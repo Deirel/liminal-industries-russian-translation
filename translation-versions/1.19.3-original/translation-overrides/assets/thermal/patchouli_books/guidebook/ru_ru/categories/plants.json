@@ -1,0 +1,7 @@
+{
+  "description": "Урожай и деревья дают множество полезных продуктов и материалов.",
+  "icon": "thermal:rosin",
+  "name": "Растения",
+  "parent": "thermal:world",
+  "sortnum": 2
+}

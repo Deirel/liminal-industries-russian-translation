@@ -1,0 +1,15 @@
+{
+  "category": "thermal:augments",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_speed_augment",
+  "name": "Усилитель магнитной связи",
+  "pages": [
+    {
+      "A.recipe": "thermal:augments/machine_speed_augment",
+      "text": "Улучшение «Усилитель магнитной связи» повышает предельное потребление RF механизмом на 100%, но умножает расход RF на операцию на 1,1.",
+      "title": "Усилитель магнитной связи",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

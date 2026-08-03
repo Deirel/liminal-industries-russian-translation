@@ -1,0 +1,11 @@
+{
+  "block": [
+    "Explosion breaks blocks"
+  ],
+  "entity": [
+    "Power 1.5 explosion",
+    "0 Explosion Damage",
+    "Extra explosion knockback"
+  ],
+  "text": "Слизневая сталь идеально подходит всем, кто хочет летать, если только удалось решить проблему с приземлением."
+}

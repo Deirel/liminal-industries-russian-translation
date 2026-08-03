@@ -1,0 +1,35 @@
+{
+  "category": "thermal:guides",
+  "icon": "minecraft:redstone",
+  "name": "Ответы на частые вопросы",
+  "pages": [
+    {
+      "text": "В: Где предметные трубы?$(br)О: Читайте $(l:thermal:storage_and_transport/dynamics)здесь$(/l).$(br2)В: Где наборы улучшений?$(br)О: Читайте $(l:thermal:technology/augments/integral_components)здесь$(/l).$(br2)В: Как ускорить механизмы? $(br)О: Читайте $(l:thermal:technology/augments/integral_components)здесь$(/l) и $(l:thermal:technology/augments/machine_speed)здесь$(/l).$(br2)В: Эти улучшения складываются?$(br)О: Читайте $(l:thermal:technology/augments/introduction)здесь$(/l).",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "В: Как сменить режим бура или пилы? $(br)О: Чтобы менять радиус добычи, установите $(l:thermal:technology/augments/area_radius)радиальные улучшения$(/l).$(br2)В: Как заряжать и улучшать инструменты?$(br)О: Читайте $(l:thermal:technology/tinker_bench)здесь$(/l).$(br2)В: Почему генератор понемногу теряет RF?$(br)О: По заполнению буфера генератор регулирует мощность. Подробнее $(l:thermal:technology/dynamos/introduction)здесь$(/l).",
+      "type": "patchouli:text"
+    },
+    {
+      "link_text": "Tool's Complement",
+      "text": "В: Можно добавить совместимость с другим модом?$(br)О: Запросите её на нашем $(l:thermal:links/discord)сервере Discord$(/l).$(br2)В: Где обычные инструменты, оружие и броня Thermal, например алмазный заступ и электрумовый лук?$(br)О: Они перенесены в отдельный мод:",
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/tools-complement"
+    },
+    {
+      "text": "В: Куда делись платина, сталь, манонаполненный металл и прочее?$(br)О: По разным причинам их сочли лишними для Thermal Foundation. Если что-то вернётся, то в отдельном моде совместимости.$(br2)В: Почему некоторые жидкости нельзя разлить?$(br)О: Одни почти ничего не добавили бы миру, а другие невозможно разлить из-за ограничений API жидкостей Forge.",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "В: Как изменить генерацию руд? $(br)О: Появление и редкость руд настраиваются наборами данных.$(br2)В: Как изменить настройки?$(br)О: Настройки создаются отдельно для каждого мира в его папке serverconfigs. Для настроек по умолчанию скопируйте файлы оттуда в папку defaultconfigs и измените их.",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "В: Где сообщить об ошибке? $(br)О: Спросите на нашем $(l:thermal:links/discord)сервере Discord$(/l). Перед обращением обновите моды и убедитесь, что Optifine не установлен.$(br2)В: Как изменить рецепты?$(br)О: Thermal использует данные, поэтому рецепты можно менять наборами данных, как показано $(l:thermal:guides/modpack/recipes)здесь$(/l). Также поддерживается CraftTweaker.",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": -3
+}

@@ -1,0 +1,9 @@
+{
+  "description": [
+    {
+      "text": "После крафта вы можете покрасить сундук в любой цвет."
+    }
+  ],
+  "recipe": "tconstruct:tables/tinkers_chest",
+  "title": "Создание литейного ящика"
+}

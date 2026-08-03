@@ -1,0 +1,24 @@
+{
+  "category": "thermal:explosives",
+  "flag": "mod:thermal_innovation",
+  "icon": "thermal:redstone_tnt",
+  "name": "Краснокаменная взрывчатка",
+  "pages": [
+    {
+      "text": "При взрыве краснокаменная взрывчатка на 10 секунд создаёт поле RF, которое включает все редстоуновые компоненты и устройства в зоне действия. Радиус поля от блока взрывчатки — 9 блоков, от гранаты — 5.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:redstone_tnt",
+      "B.recipe": "thermal:redstone_grenade_4",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:redstone_tnt_minecart",
+      "flag": "&mod:thermal_innovation,mod:thermal_locomotion",
+      "title": "Вагонетка с краснокаменным динамитом",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

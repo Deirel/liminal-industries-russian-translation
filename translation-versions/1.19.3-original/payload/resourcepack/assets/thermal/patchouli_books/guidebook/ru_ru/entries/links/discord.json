@@ -1,0 +1,19 @@
+{
+  "category": "thermal:links",
+  "icon": "thermal:signalum_gear",
+  "name": "Дискорд",
+  "pages": [
+    {
+      "link_text": "Discord",
+      "text": "Технические проблемы? Остались вопросы или предложения? Ищете дружелюбное место? Хотите сразу узнавать об обновлениях любимых модов Thermal? Заходите к нам в Discord :D",
+      "type": "patchouli:link",
+      "url": "https://discord.com/invite/uRKrnbH"
+    },
+    {
+      "item": "thermal:signalum_ingot",
+      "text": "Забавный факт! Сигналий получил своё название благодаря способности передавать сигнал красного камня!",
+      "type": "patchouli:spotlight"
+    }
+  ],
+  "read_by_default": true
+}

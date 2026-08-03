@@ -1,0 +1,7 @@
+{
+  "description": "Ресурсы, которые Thermal использует и создаёт.",
+  "icon": "thermal:invar_ingot",
+  "name": "Материалы",
+  "parent": "thermal:world",
+  "sortnum": 1
+}

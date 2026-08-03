@@ -169,6 +169,79 @@ class BookTranslationIndexTest(unittest.TestCase):
             resource["field_ids"],
         )
 
+    def test_allows_exact_translation_to_omit_json_field(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            resourcepack = Path(temp)
+            output = resourcepack / "assets/tconstruct/book/guide/ru_ru/page.json"
+            output.parent.mkdir(parents=True)
+            output.write_bytes(json_bytes({"title": "Страница"}))
+            manifest = {
+                "source_files": [
+                    {
+                        "path": "mods/c.jar!/assets/tconstruct/book/guide/en_us/page.json",
+                        "sha256": "c",
+                    }
+                ],
+                "records": [
+                    self.record(
+                        "mantle_book_json",
+                        "mods/c.jar",
+                        "assets/tconstruct/book/guide/en_us/page.json",
+                        "assets/tconstruct/book/guide/ru_ru/page.json",
+                        "Page",
+                        pointer="/title",
+                    ),
+                    self.record(
+                        "mantle_book_json",
+                        "mods/c.jar",
+                        "assets/tconstruct/book/guide/en_us/page.json",
+                        "assets/tconstruct/book/guide/ru_ru/page.json",
+                        "Hint",
+                        pointer="/tooltip",
+                    ),
+                ],
+            }
+
+            index = build_index(manifest, resourcepack)
+
+        resource = index["resources"][0]
+        self.assertTrue(resource["exact_only"])
+        self.assertEqual([], resource["fields"])
+
+    def test_rejects_missing_mantle_language_key(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            resourcepack = Path(temp)
+            output = (
+                resourcepack
+                / "assets/tconstruct/book/guide/ru_ru/language.lang"
+            )
+            output.parent.mkdir(parents=True)
+            output.write_text("book.title=Книга\n", encoding="utf-8")
+            manifest = {
+                "source_files": [
+                    {
+                        "path": (
+                            "mods/c.jar!/assets/tconstruct/book/guide/"
+                            "en_us/language.lang"
+                        ),
+                        "sha256": "c",
+                    }
+                ],
+                "records": [
+                    self.record(
+                        "mantle_book_language",
+                        "mods/c.jar",
+                        "assets/tconstruct/book/guide/en_us/language.lang",
+                        "assets/tconstruct/book/guide/ru_ru/language.lang",
+                        "Missing",
+                        key="book.missing",
+                    ),
+                ],
+            }
+
+            with self.assertRaises(KeyError):
+                build_index(manifest, resourcepack)
+
     @staticmethod
     def record(
         output_format: str,

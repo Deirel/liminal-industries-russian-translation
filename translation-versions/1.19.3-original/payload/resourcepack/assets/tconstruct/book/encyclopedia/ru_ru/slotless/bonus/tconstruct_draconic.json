@@ -1,0 +1,13 @@
+{
+  "effects": [
+    "Однократное применение",
+    "Бесслотовый"
+  ],
+  "modifier_id": "tconstruct:draconic",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Даёт +1 слот для умений."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "thermal:technology",
+  "flag": "mod:thermal_innovation",
+  "icon": "thermal:charge_bench",
+  "name": "Зарядное устройство",
+  "pages": [
+    {
+      "text": "Зарядное устройство может одновременно заряжать до 9 предметов. По сравнению с $(l:thermal:technology/tinker_bench)верстаком мастеров$(/l) оно быстрее заряжает, а предметы можно автоматически загружать и выгружать, например воронкой.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:charge_bench",
+      "text": "$(o)Древние тексты упоминают механизм с тем же названием, который когда-то наполнял Redstone Flux не только инструменты, но и обычные предметы. Впрочем, это противоречит всякой логике.$()",
+      "title": "Зарядное устройство",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

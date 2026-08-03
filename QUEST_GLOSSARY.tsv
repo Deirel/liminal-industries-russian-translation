@@ -6,7 +6,32 @@ Snad	Snad
 Ars Ecclesia	Ars Ecclesia
 Summoning 101	Summoning 101
 
+# LORE
+Ability Slot	Слот для умений
+Upgrade Slot	Слот для улучшений
+Defense Slot	Слот защиты
+Modifier	Модификатор
+Smeltery	Плавильня
+Foundry	Литейная печь
+Casting Tank	Литейный резервуар
+Traveler's Gear	Снаряжение путешественника
+Slimesuit	Слизневые доспехи
+Manyullyn	Маньюллин
+
 # UI_RU
+Blaze	Всполох
+Part Builder	Конструктор деталей
+Ichor Crystal	Ихоровый кристалл
+Earthslime Crystal	Земной слизневый кристалл
+Slime Crystal	Слизневый кристалл
+Enderslime Crystal	Эндер-слизневый кристалл
+Skyslime Crystal	Небесный слизневый кристалл
+Power (TConstruct modifier)	Сила
+Knockback (TConstruct modifier)	Отдача
+Padded (TConstruct modifier)	Подбитый
+Speedy (TConstruct modifier)	Быстрый
+Insulated (TConstruct trait)	Изолированный
+Tanned (TConstruct trait)	Дублённый
 Carpet Dust	Ковровая пыль
 Soggy Carpet	Мокрый ковёр
 Carpet Fluid	Ковровая жидкость

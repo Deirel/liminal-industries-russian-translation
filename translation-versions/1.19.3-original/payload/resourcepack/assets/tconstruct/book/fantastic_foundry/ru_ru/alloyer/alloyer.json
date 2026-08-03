@@ -1,0 +1,12 @@
+{
+  "image": {
+    "file": "tconstruct:book/images/alloyer.png"
+  },
+  "text": [
+    {
+      "paragraph": true,
+      "text": "Сплавы вперёд!"
+    }
+  ],
+  "title": "Смешиватель"
+}

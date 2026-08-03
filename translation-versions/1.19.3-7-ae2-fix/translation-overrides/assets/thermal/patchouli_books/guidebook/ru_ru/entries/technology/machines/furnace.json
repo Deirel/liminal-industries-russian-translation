@@ -1,0 +1,23 @@
+{
+  "category": "thermal:machines",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_furnace",
+  "name": "Редстоуновая печь",
+  "pages": [
+    {
+      "text": "Редстоуновая печь переплавляет предметы так же, как обычная печь.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:machine_furnace",
+      "title": "Редстоуновая печь",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Концентратор знаний$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Усилитель магнитной связи$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Потоковая эффективность$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

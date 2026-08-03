@@ -1,14 +1,14 @@
 {
-  "name": "Расширитель резервуара",
-  "icon": "thermal:fluid_tank_augment",
   "category": "thermal:augments",
-  "read_by_default": true,
+  "icon": "thermal:fluid_tank_augment",
+  "name": "Расширитель резервуара",
   "pages": [
     {
-      "type": "thermal:double_crafting_page",
       "A.recipe": "thermal:augments/fluid_tank_augment",
+      "text": "Улучшение «Расширенная конструкция резервуара» в 4 раза увеличивает все хранилища жидкости в механизме, устройстве, генераторе или инструменте.",
       "title": "Расширитель резервуара",
-      "text": "Улучшение «Расширитель резервуара» в четыре раза увеличивает вместимость всех резервуаров машины, устройства, динамо или инструмента."
+      "type": "thermal:double_crafting_page"
     }
-  ]
+  ],
+  "read_by_default": true
 }

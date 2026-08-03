@@ -1,0 +1,23 @@
+{
+  "category": "thermal:tools",
+  "flag": "mod:thermal_cultivation",
+  "icon": "thermal:watering_can",
+  "name": "Лейка",
+  "pages": [
+    {
+      "text": "Лейка ускоряет рост политых культур. Её можно наполнить и улучшить на верстаке мастеров. Установив радиальные улучшения, нажмите '$(k:cofh.mode_change_increment)', чтобы сменить радиус полива. Зачарование $(l:thermal:world/holding)Удержание$(/l) увеличивает запас воды.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:watering_can",
+      "title": "Лейка",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширенная конструкция резервуара$(/l)$(li)$(l:thermal:technology/augments/area_radius)Радиальное улучшение$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

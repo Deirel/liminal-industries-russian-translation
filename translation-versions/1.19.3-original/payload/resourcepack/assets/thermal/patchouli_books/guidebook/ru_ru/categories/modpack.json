@@ -1,0 +1,7 @@
+{
+  "description": "Создаёте модпак или просто меняете Thermal? Здесь собраны интересные способы настройки модов серии.",
+  "icon": "thermal:wrench",
+  "name": "Создателям модпаков",
+  "parent": "thermal:guides",
+  "sortnum": 4
+}

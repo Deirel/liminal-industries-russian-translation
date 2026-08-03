@@ -1,0 +1,41 @@
+{
+  "category": "thermal:plants",
+  "flag": "|mod:thermal_cultivation,mod:thermal_expansion",
+  "icon": "thermal:phytogro",
+  "name": "Фито-Гро",
+  "pages": [
+    {
+      "A.recipe": "thermal:phytogro_2",
+      "flag": "&mod:thermal_cultivation,!mod:thermal_expansion",
+      "text": "Фито-Гро — насыщенное всеми нужными растениям веществами удобрение. Его можно внести вручную или разбросать по площади с помощью $(l:thermal:equipment/explosives/phyto_explosives)взрывчатки$(/l).",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:phytogro_2",
+      "flag": "&!mod:thermal_cultivation,mod:thermal_expansion",
+      "text": "Фито-Гро — насыщенное всеми нужными растениям веществами удобрение. Его можно внести вручную или использовать в механизмах как $(l:thermal:world/materials/catalysts)катализатор$(/l).",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:phytogro_2",
+      "flag": "&mod:thermal_cultivation,mod:thermal_expansion",
+      "text": "Фито-Гро — насыщенное всеми нужными растениям веществами удобрение. Его можно внести вручную, разбросать по площади с помощью $(l:thermal:equipment/explosives/phyto_explosives)взрывчатки$(/l) или использовать в механизмах как $(l:thermal:world/materials/catalysts)катализатор$(/l).",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:phytogro_4",
+      "text": "$(o)Старейшины рассказывают об утраченной формуле Фито-Гро, которое насыщали древесным соком и Redstone Flux, поднимая урожайность далеко за естественные пределы. Увы, все попытки воссоздать её провалились.$()",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:phytogro_8",
+      "B.recipe": "thermal:phytosoil",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "Фито-почва - это земля, пропитанная фито-гро, которая удваивает скорость роста растений, выращенных на ней. Скорость может быть дополнительно увеличена в примерно 5 раз с помощью $(l:thermal:technology/devices/soil_infuser)удобрителя$(/l). Как и обычная почва, она должна быть обработана, чтобы на ней росли сельскохозяйственные культуры. В отличие от обычных грядок, обработанная фито-почва не может быть вытоптана и не нуждается в воде поблизости, чтобы оставаться увлажнённой.",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

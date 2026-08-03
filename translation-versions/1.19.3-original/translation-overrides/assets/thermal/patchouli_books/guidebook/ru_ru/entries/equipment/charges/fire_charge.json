@@ -1,0 +1,17 @@
+{
+  "category": "thermal:charges",
+  "icon": "minecraft:fire_charge",
+  "name": "Огненный заряд",
+  "pages": [
+    {
+      "text": "Огненные заряды есть и в обычном Minecraft, но Thermal даёт им новое применение. На верстаке из них и других ресурсов можно создавать некоторые сплавы и блоки.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "minecraft:fire_charge",
+      "title": "Огненный заряд",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

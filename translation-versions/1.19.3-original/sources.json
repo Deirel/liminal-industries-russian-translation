@@ -17,6 +17,20 @@
     {
       "id": "patchouli",
       "adapter": "patchouli"
+    },
+    {
+      "id": "immersive_engineering_manual",
+      "adapter": "immersive_engineering_manual",
+      "namespace": "immersiveengineering",
+      "review_native": true,
+      "audit": true
+    },
+    {
+      "id": "tconstruct_books",
+      "adapter": "mantle_books",
+      "namespace": "tconstruct",
+      "review_native": true,
+      "audit": true
     }
   ]
 }

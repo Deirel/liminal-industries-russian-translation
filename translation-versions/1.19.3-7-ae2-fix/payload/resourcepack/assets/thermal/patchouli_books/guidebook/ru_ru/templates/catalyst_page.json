@@ -1,0 +1,1005 @@
+{
+  "components": [
+    {
+      "guard": "#A_0_enable",
+      "height": 7,
+      "tooltip": [
+        "#A_0_item#->iname",
+        "Первичный модиф.: #A_0_p#x",
+        "Вторичный модиф.: #A_0_s#x",
+        "Энерг. модиф.: #A_0_e#x",
+        "Шанс исп.: #A_0_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 0,
+      "y": 18
+    },
+    {
+      "guard": "#A_0_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 6,
+      "y": 16
+    },
+    {
+      "guard": "#A_0_enable",
+      "item": "#A_0_item",
+      "type": "patchouli:item",
+      "x": 0,
+      "y": 3
+    },
+    {
+      "guard": "#A_1_enable",
+      "height": 7,
+      "tooltip": [
+        "#A_1_item#->iname",
+        "Первичный модиф.: #A_1_p#x",
+        "Вторичный модиф.: #A_1_s#x",
+        "Энерг. модиф.: #A_1_e#x",
+        "Шанс исп.: #A_1_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 19,
+      "y": 18
+    },
+    {
+      "guard": "#A_1_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 25,
+      "y": 16
+    },
+    {
+      "guard": "#A_1_enable",
+      "item": "#A_1_item",
+      "type": "patchouli:item",
+      "x": 19,
+      "y": 3
+    },
+    {
+      "guard": "#A_2_enable",
+      "height": 7,
+      "tooltip": [
+        "#A_2_item#->iname",
+        "Первичный модиф.: #A_2_p#x",
+        "Вторичный модиф.: #A_2_s#x",
+        "Энерг. модиф.: #A_2_e#x",
+        "Шанс исп.: #A_2_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 38,
+      "y": 18
+    },
+    {
+      "guard": "#A_2_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 44,
+      "y": 16
+    },
+    {
+      "guard": "#A_2_enable",
+      "item": "#A_2_item",
+      "type": "patchouli:item",
+      "x": 38,
+      "y": 3
+    },
+    {
+      "guard": "#A_3_enable",
+      "height": 7,
+      "tooltip": [
+        "#A_3_item#->iname",
+        "Первичный модиф.: #A_3_p#x",
+        "Вторичный модиф.: #A_3_s#x",
+        "Энерг. модиф.: #A_3_e#x",
+        "Шанс исп.: #A_3_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 57,
+      "y": 18
+    },
+    {
+      "guard": "#A_3_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 63,
+      "y": 16
+    },
+    {
+      "guard": "#A_3_enable",
+      "item": "#A_3_item",
+      "type": "patchouli:item",
+      "x": 57,
+      "y": 3
+    },
+    {
+      "guard": "#A_4_enable",
+      "height": 7,
+      "tooltip": [
+        "#A_4_item#->iname",
+        "Первичный модиф.: #A_4_p#x",
+        "Вторичный модиф.: #A_4_s#x",
+        "Энерг. модиф.: #A_4_e#x",
+        "Шанс исп.: #A_4_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 76,
+      "y": 18
+    },
+    {
+      "guard": "#A_4_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 82,
+      "y": 16
+    },
+    {
+      "guard": "#A_4_enable",
+      "item": "#A_4_item",
+      "type": "patchouli:item",
+      "x": 76,
+      "y": 3
+    },
+    {
+      "guard": "#A_5_enable",
+      "height": 7,
+      "tooltip": [
+        "#A_5_item#->iname",
+        "Первичный модиф.: #A_5_p#x",
+        "Вторичный модиф.: #A_5_s#x",
+        "Энерг. модиф.: #A_5_e#x",
+        "Шанс исп.: #A_5_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 92,
+      "y": 18
+    },
+    {
+      "guard": "#A_5_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 101,
+      "y": 16
+    },
+    {
+      "guard": "#A_5_enable",
+      "item": "#A_5_item",
+      "type": "patchouli:item",
+      "x": 92,
+      "y": 3
+    },
+    {
+      "text": "#A_machine",
+      "type": "patchouli:text",
+      "x": 0,
+      "y": -5
+    },
+    {
+      "group": "jei",
+      "guard": "#A_enablejei",
+      "text": "и$(br)другие!",
+      "type": "patchouli:text",
+      "x": 92,
+      "y": 5
+    },
+    {
+      "group": "jei",
+      "guard": "#A_enablejei",
+      "height": 22,
+      "tooltip": [
+        "Для более подробной информацией см. JEI!"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 18,
+      "x": 94,
+      "y": 3
+    },
+    {
+      "guard": "#B_0_enable",
+      "height": 7,
+      "tooltip": [
+        "#B_0_item#->iname",
+        "Первичный модиф.: #B_0_p#x",
+        "Вторичный модиф.: #B_0_s#x",
+        "Энерг. модиф.: #B_0_e#x",
+        "Шанс исп.: #B_0_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 0,
+      "y": 48
+    },
+    {
+      "guard": "#B_0_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 6,
+      "y": 46
+    },
+    {
+      "guard": "#B_0_enable",
+      "item": "#B_0_item",
+      "type": "patchouli:item",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "guard": "#B_1_enable",
+      "height": 7,
+      "tooltip": [
+        "#B_1_item#->iname",
+        "Первичный модиф.: #B_1_p#x",
+        "Вторичный модиф.: #B_1_s#x",
+        "Энерг. модиф.: #B_1_e#x",
+        "Шанс исп.: #B_1_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 19,
+      "y": 48
+    },
+    {
+      "guard": "#B_1_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 25,
+      "y": 46
+    },
+    {
+      "guard": "#B_1_enable",
+      "item": "#B_1_item",
+      "type": "patchouli:item",
+      "x": 19,
+      "y": 33
+    },
+    {
+      "guard": "#B_2_enable",
+      "height": 7,
+      "tooltip": [
+        "#B_2_item#->iname",
+        "Первичный модиф.: #B_2_p#x",
+        "Вторичный модиф.: #B_2_s#x",
+        "Энерг. модиф.: #B_2_e#x",
+        "Шанс исп.: #B_2_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 38,
+      "y": 48
+    },
+    {
+      "guard": "#B_2_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 44,
+      "y": 46
+    },
+    {
+      "guard": "#B_2_enable",
+      "item": "#B_2_item",
+      "type": "patchouli:item",
+      "x": 38,
+      "y": 33
+    },
+    {
+      "guard": "#B_3_enable",
+      "height": 7,
+      "tooltip": [
+        "#B_3_item#->iname",
+        "Первичный модиф.: #B_3_p#x",
+        "Вторичный модиф.: #B_3_s#x",
+        "Энерг. модиф.: #B_3_e#x",
+        "Шанс исп.: #B_3_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 57,
+      "y": 48
+    },
+    {
+      "guard": "#B_3_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 63,
+      "y": 46
+    },
+    {
+      "guard": "#B_3_enable",
+      "item": "#B_3_item",
+      "type": "patchouli:item",
+      "x": 57,
+      "y": 33
+    },
+    {
+      "guard": "#B_4_enable",
+      "height": 7,
+      "tooltip": [
+        "#B_4_item#->iname",
+        "Первичный модиф.: #B_4_p#x",
+        "Вторичный модиф.: #B_4_s#x",
+        "Энерг. модиф.: #B_4_e#x",
+        "Шанс исп.: #B_4_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 76,
+      "y": 48
+    },
+    {
+      "guard": "#B_4_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 82,
+      "y": 46
+    },
+    {
+      "guard": "#B_4_enable",
+      "item": "#B_4_item",
+      "type": "patchouli:item",
+      "x": 76,
+      "y": 33
+    },
+    {
+      "guard": "#B_5_enable",
+      "height": 7,
+      "tooltip": [
+        "#B_5_item#->iname",
+        "Первичный модиф.: #B_5_p#x",
+        "Вторичный модиф.: #B_5_s#x",
+        "Энерг. модиф.: #B_5_e#x",
+        "Шанс исп.: #B_5_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 92,
+      "y": 48
+    },
+    {
+      "guard": "#B_5_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 101,
+      "y": 46
+    },
+    {
+      "guard": "#B_5_enable",
+      "item": "#B_5_item",
+      "type": "patchouli:item",
+      "x": 92,
+      "y": 33
+    },
+    {
+      "text": "#B_machine",
+      "type": "patchouli:text",
+      "x": 0,
+      "y": 25
+    },
+    {
+      "group": "jei",
+      "guard": "#B_enablejei",
+      "text": "и$(br)другие!",
+      "type": "patchouli:text",
+      "x": 92,
+      "y": 35
+    },
+    {
+      "group": "jei",
+      "guard": "#B_enablejei",
+      "height": 22,
+      "tooltip": [
+        "Для более подробной информацией см. JEI!"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 18,
+      "x": 94,
+      "y": 33
+    },
+    {
+      "guard": "#C_0_enable",
+      "height": 7,
+      "tooltip": [
+        "#C_0_item#->iname",
+        "Первичный модиф.: #C_0_p#x",
+        "Вторичный модиф.: #C_0_s#x",
+        "Энерг. модиф.: #C_0_e#x",
+        "Шанс исп.: #C_0_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 0,
+      "y": 78
+    },
+    {
+      "guard": "#C_0_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 6,
+      "y": 76
+    },
+    {
+      "guard": "#C_0_enable",
+      "item": "#C_0_item",
+      "type": "patchouli:item",
+      "x": 0,
+      "y": 63
+    },
+    {
+      "guard": "#C_1_enable",
+      "height": 7,
+      "tooltip": [
+        "#C_1_item#->iname",
+        "Первичный модиф.: #C_1_p#x",
+        "Вторичный модиф.: #C_1_s#x",
+        "Энерг. модиф.: #C_1_e#x",
+        "Шанс исп.: #C_1_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 19,
+      "y": 78
+    },
+    {
+      "guard": "#C_1_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 25,
+      "y": 76
+    },
+    {
+      "guard": "#C_1_enable",
+      "item": "#C_1_item",
+      "type": "patchouli:item",
+      "x": 19,
+      "y": 63
+    },
+    {
+      "guard": "#C_2_enable",
+      "height": 7,
+      "tooltip": [
+        "#C_2_item#->iname",
+        "Первичный модиф.: #C_2_p#x",
+        "Вторичный модиф.: #C_2_s#x",
+        "Энерг. модиф.: #C_2_e#x",
+        "Шанс исп.: #C_2_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 38,
+      "y": 78
+    },
+    {
+      "guard": "#C_2_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 44,
+      "y": 76
+    },
+    {
+      "guard": "#C_2_enable",
+      "item": "#C_2_item",
+      "type": "patchouli:item",
+      "x": 38,
+      "y": 63
+    },
+    {
+      "guard": "#C_3_enable",
+      "height": 7,
+      "tooltip": [
+        "#C_3_item#->iname",
+        "Первичный модиф.: #C_3_p#x",
+        "Вторичный модиф.: #C_3_s#x",
+        "Энерг. модиф.: #C_3_e#x",
+        "Шанс исп.: #C_3_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 57,
+      "y": 78
+    },
+    {
+      "guard": "#C_3_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 63,
+      "y": 76
+    },
+    {
+      "guard": "#C_3_enable",
+      "item": "#C_3_item",
+      "type": "patchouli:item",
+      "x": 57,
+      "y": 63
+    },
+    {
+      "guard": "#C_4_enable",
+      "height": 7,
+      "tooltip": [
+        "#C_4_item#->iname",
+        "Первичный модиф.: #C_4_p#x",
+        "Вторичный модиф.: #C_4_s#x",
+        "Энерг. модиф.: #C_4_e#x",
+        "Шанс исп.: #C_4_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 76,
+      "y": 78
+    },
+    {
+      "guard": "#C_4_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 82,
+      "y": 76
+    },
+    {
+      "guard": "#C_4_enable",
+      "item": "#C_4_item",
+      "type": "patchouli:item",
+      "x": 76,
+      "y": 63
+    },
+    {
+      "guard": "#C_5_enable",
+      "height": 7,
+      "tooltip": [
+        "#C_5_item#->iname",
+        "Первичный модиф.: #C_5_p#x",
+        "Вторичный модиф.: #C_5_s#x",
+        "Энерг. модиф.: #C_5_e#x",
+        "Шанс исп.: #C_5_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 92,
+      "y": 78
+    },
+    {
+      "guard": "#C_5_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 101,
+      "y": 76
+    },
+    {
+      "guard": "#C_5_enable",
+      "item": "#C_5_item",
+      "type": "patchouli:item",
+      "x": 92,
+      "y": 63
+    },
+    {
+      "text": "#C_machine",
+      "type": "patchouli:text",
+      "x": 0,
+      "y": 55
+    },
+    {
+      "group": "jei",
+      "guard": "#C_enablejei",
+      "text": "и$(br)другие!",
+      "type": "patchouli:text",
+      "x": 92,
+      "y": 65
+    },
+    {
+      "group": "jei",
+      "guard": "#C_enablejei",
+      "height": 22,
+      "tooltip": [
+        "Для более подробной информацией см. JEI!"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 18,
+      "x": 94,
+      "y": 63
+    },
+    {
+      "guard": "#D_0_enable",
+      "height": 7,
+      "tooltip": [
+        "#D_0_item#->iname",
+        "Первичный модиф.: #D_0_p#x",
+        "Вторичный модиф.: #D_0_s#x",
+        "Энерг. модиф.: #D_0_e#x",
+        "Шанс исп.: #D_0_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 0,
+      "y": 108
+    },
+    {
+      "guard": "#D_0_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 6,
+      "y": 106
+    },
+    {
+      "guard": "#D_0_enable",
+      "item": "#D_0_item",
+      "type": "patchouli:item",
+      "x": 0,
+      "y": 93
+    },
+    {
+      "guard": "#D_1_enable",
+      "height": 7,
+      "tooltip": [
+        "#D_1_item#->iname",
+        "Первичный модиф.: #D_1_p#x",
+        "Вторичный модиф.: #D_1_s#x",
+        "Энерг. модиф.: #D_1_e#x",
+        "Шанс исп.: #D_1_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 19,
+      "y": 108
+    },
+    {
+      "guard": "#D_1_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 25,
+      "y": 106
+    },
+    {
+      "guard": "#D_1_enable",
+      "item": "#D_1_item",
+      "type": "patchouli:item",
+      "x": 19,
+      "y": 93
+    },
+    {
+      "guard": "#D_2_enable",
+      "height": 7,
+      "tooltip": [
+        "#D_2_item#->iname",
+        "Первичный модиф.: #D_2_p#x",
+        "Вторичный модиф.: #D_2_s#x",
+        "Энерг. модиф.: #D_2_e#x",
+        "Шанс исп.: #D_2_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 38,
+      "y": 108
+    },
+    {
+      "guard": "#D_2_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 44,
+      "y": 106
+    },
+    {
+      "guard": "#D_2_enable",
+      "item": "#D_2_item",
+      "type": "patchouli:item",
+      "x": 38,
+      "y": 93
+    },
+    {
+      "guard": "#D_3_enable",
+      "height": 7,
+      "tooltip": [
+        "#D_3_item#->iname",
+        "Первичный модиф.: #D_3_p#x",
+        "Вторичный модиф.: #D_3_s#x",
+        "Энерг. модиф.: #D_3_e#x",
+        "Шанс исп.: #D_3_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 57,
+      "y": 108
+    },
+    {
+      "guard": "#D_3_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 63,
+      "y": 106
+    },
+    {
+      "guard": "#D_3_enable",
+      "item": "#D_3_item",
+      "type": "patchouli:item",
+      "x": 57,
+      "y": 93
+    },
+    {
+      "guard": "#D_4_enable",
+      "height": 7,
+      "tooltip": [
+        "#D_4_item#->iname",
+        "Первичный модиф.: #D_4_p#x",
+        "Вторичный модиф.: #D_4_s#x",
+        "Энерг. модиф.: #D_4_e#x",
+        "Шанс исп.: #D_4_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 76,
+      "y": 108
+    },
+    {
+      "guard": "#D_4_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 82,
+      "y": 106
+    },
+    {
+      "guard": "#D_4_enable",
+      "item": "#D_4_item",
+      "type": "patchouli:item",
+      "x": 76,
+      "y": 93
+    },
+    {
+      "guard": "#D_5_enable",
+      "height": 7,
+      "tooltip": [
+        "#D_5_item#->iname",
+        "Первичный модиф.: #D_5_p#x",
+        "Вторичный модиф.: #D_5_s#x",
+        "Энерг. модиф.: #D_5_e#x",
+        "Шанс исп.: #D_5_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 92,
+      "y": 108
+    },
+    {
+      "guard": "#D_5_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 101,
+      "y": 106
+    },
+    {
+      "guard": "#D_5_enable",
+      "item": "#D_5_item",
+      "type": "patchouli:item",
+      "x": 92,
+      "y": 93
+    },
+    {
+      "text": "#D_machine",
+      "type": "patchouli:text",
+      "x": 0,
+      "y": 85
+    },
+    {
+      "group": "jei",
+      "guard": "#D_enablejei",
+      "text": "и$(br)другие!",
+      "type": "patchouli:text",
+      "x": 92,
+      "y": 95
+    },
+    {
+      "group": "jei",
+      "guard": "#D_enablejei",
+      "height": 22,
+      "tooltip": [
+        "Для более подробной информацией см. JEI!"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 18,
+      "x": 94,
+      "y": 93
+    },
+    {
+      "guard": "#E_0_enable",
+      "height": 7,
+      "tooltip": [
+        "#E_0_item#->iname",
+        "Первичный модиф.: #E_0_p#x",
+        "Вторичный модиф.: #E_0_s#x",
+        "Энерг. модиф.: #E_0_e#x",
+        "Шанс исп.: #E_0_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 0,
+      "y": 138
+    },
+    {
+      "guard": "#E_0_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 6,
+      "y": 136
+    },
+    {
+      "guard": "#E_0_enable",
+      "item": "#E_0_item",
+      "type": "patchouli:item",
+      "x": 0,
+      "y": 123
+    },
+    {
+      "guard": "#E_1_enable",
+      "height": 7,
+      "tooltip": [
+        "#E_1_item#->iname",
+        "Первичный модиф.: #E_1_p#x",
+        "Вторичный модиф.: #E_1_s#x",
+        "Энерг. модиф.: #E_1_e#x",
+        "Шанс исп.: #E_1_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 19,
+      "y": 138
+    },
+    {
+      "guard": "#E_1_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 25,
+      "y": 136
+    },
+    {
+      "guard": "#E_1_enable",
+      "item": "#E_1_item",
+      "type": "patchouli:item",
+      "x": 19,
+      "y": 123
+    },
+    {
+      "guard": "#E_2_enable",
+      "height": 7,
+      "tooltip": [
+        "#E_2_item#->iname",
+        "Первичный модиф.: #E_2_p#x",
+        "Вторичный модиф.: #E_2_s#x",
+        "Энерг. модиф.: #E_2_e#x",
+        "Шанс исп.: #E_2_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 38,
+      "y": 138
+    },
+    {
+      "guard": "#E_2_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 44,
+      "y": 136
+    },
+    {
+      "guard": "#E_2_enable",
+      "item": "#E_2_item",
+      "type": "patchouli:item",
+      "x": 38,
+      "y": 123
+    },
+    {
+      "guard": "#E_3_enable",
+      "height": 7,
+      "tooltip": [
+        "#E_3_item#->iname",
+        "Первичный модиф.: #E_3_p#x",
+        "Вторичный модиф.: #E_3_s#x",
+        "Энерг. модиф.: #E_3_e#x",
+        "Шанс исп.: #E_3_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 57,
+      "y": 138
+    },
+    {
+      "guard": "#E_3_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 63,
+      "y": 136
+    },
+    {
+      "guard": "#E_3_enable",
+      "item": "#E_3_item",
+      "type": "patchouli:item",
+      "x": 57,
+      "y": 123
+    },
+    {
+      "guard": "#E_4_enable",
+      "height": 7,
+      "tooltip": [
+        "#E_4_item#->iname",
+        "Первичный модиф.: #E_4_p#x",
+        "Вторичный модиф.: #E_4_s#x",
+        "Энерг. модиф.: #E_4_e#x",
+        "Шанс исп.: #E_4_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 76,
+      "y": 138
+    },
+    {
+      "guard": "#E_4_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 82,
+      "y": 136
+    },
+    {
+      "guard": "#E_4_enable",
+      "item": "#E_4_item",
+      "type": "patchouli:item",
+      "x": 76,
+      "y": 123
+    },
+    {
+      "guard": "#E_5_enable",
+      "height": 7,
+      "tooltip": [
+        "#E_5_item#->iname",
+        "Первичный модиф.: #E_5_p#x",
+        "Вторичный модиф.: #E_5_s#x",
+        "Энерг. модиф.: #E_5_e#x",
+        "Шанс исп.: #E_5_u#%"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 16,
+      "x": 92,
+      "y": 138
+    },
+    {
+      "guard": "#E_5_enable",
+      "text": "...",
+      "type": "patchouli:text",
+      "x": 101,
+      "y": 136
+    },
+    {
+      "guard": "#E_5_enable",
+      "item": "#E_5_item",
+      "type": "patchouli:item",
+      "x": 92,
+      "y": 123
+    },
+    {
+      "text": "#E_machine",
+      "type": "patchouli:text",
+      "x": 0,
+      "y": 115
+    },
+    {
+      "group": "jei",
+      "guard": "#E_enablejei",
+      "text": "и$(br)другие!",
+      "type": "patchouli:text",
+      "x": 92,
+      "y": 125
+    },
+    {
+      "group": "jei",
+      "guard": "#E_enablejei",
+      "height": 22,
+      "tooltip": [
+        "Для более подробной информацией см. JEI!"
+      ],
+      "type": "patchouli:tooltip",
+      "width": 18,
+      "x": 94,
+      "y": 123
+    }
+  ],
+  "processor": "cofh.thermal.core.compat.patchouli.CatalystProcessor"
+}

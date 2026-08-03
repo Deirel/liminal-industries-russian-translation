@@ -78,5 +78,9 @@
   "item.immersiveengineering.toolupgrade_powerpack_antenna": "Зарядная антенна",
   "item.immersiveengineering.toolupgrade_powerpack_induction": "Индукционное зарядное устройство",
   "item.immersiveengineering.toolupgrade_powerpack_magnet": "Переносной электромагнит",
-  "item.immersiveengineering.toolupgrade_powerpack_tesla": "Миниатюрная катушка Теслы"
+  "item.immersiveengineering.toolupgrade_powerpack_tesla": "Миниатюрная катушка Теслы",
+  "manual.immersiveengineering.early_machines": "Верстаки и печи",
+  "manual.immersiveengineering.general": "Обзор и ресурсы",
+  "manual.immersiveengineering.heavymachines": "Тяжёлые машины",
+  "manual.immersiveengineering.update": "НОВОСТИ ОБНОВЛЕНИЯ!"
 }

@@ -141,6 +141,11 @@ def build_index(
                     output,
                     record["location"],
                 )
+            except KeyError:
+                if output_format != "mantle_book_json":
+                    raise
+                exact_only = True
+                continue
             except IndexError:
                 exact_only = True
                 continue

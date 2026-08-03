@@ -1,0 +1,15 @@
+{
+  "category": "thermal:contributors",
+  "icon": "minecraft:orange_dye",
+  "name": "Drullkus",
+  "pages": [
+    {
+      "item": "minecraft:player_head{SkullOwner:'Drullkus'}",
+      "text": "Очень помог разобраться в работе Patchouli. Помогает с текстурами серии Thermal и многих других модов. Любит ругать собственную работу.",
+      "title": "Drullkus",
+      "type": "patchouli:spotlight"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

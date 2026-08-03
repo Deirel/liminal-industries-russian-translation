@@ -1,0 +1,16 @@
+{
+  "category": "thermal:materials",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:slag",
+  "name": "Шлак и минеральная шерсть",
+  "pages": [
+    {
+      "item1": "thermal:slag",
+      "item2": "tag:thermal:rockwool",
+      "text": "Шлак — богатое минералами вещество, которое получается при плавке гравия в $(l:thermal:technology/machines/smelter)индукционной плавильне$(/l). Минеральную шерсть получают, вытягивая в печи волокна из расплавленных минералов, например шлака. Она не горит и немного лучше обычной шерсти выдерживает взрывы.",
+      "title": "Шлак и минеральная шерсть",
+      "type": "thermal:2_item_page"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,17 @@
+{
+  "category": "thermal:charges",
+  "icon": "thermal:ice_charge",
+  "name": "Ледяной заряд",
+  "pages": [
+    {
+      "text": "Ледяные заряды покрывают блоки снегом, превращают воду в лёд, а лаву — в обсидиан. Последние два действия также доступны в рецептах с вёдрами. Выпущенный из раздатчика заряд летит по прямой, накладывает на мобов эффект $(l:thermal:world/mobs/blizz)Переохлаждение$(/l) и замораживает небольшую область.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:ice_charge_3",
+      "title": "Ледяной заряд",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,13 @@
+{
+  "image": {
+    "file": "tconstruct:book/images/worktable/untoggle_interaction.png",
+    "height": 64,
+    "width": 147
+  },
+  "text": [
+    {
+      "text": "Конечно, модификатор всегда можно переключить обратно. Странно лишь то, что для этого нужен ещё один рычаг."
+    }
+  ],
+  "title": "Возврат взаимодействия"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "thermal:charges",
+  "icon": "thermal:lightning_charge",
+  "name": "Молниеносный заряд",
+  "pages": [
+    {
+      "text": "Молниеносный заряд вызывает один удар молнии. Выпущенный из раздатчика заряд летит по прямой и накладывает на мобов эффект $(l:thermal:world/mobs/blitz)Шок$(/l).",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:lightning_charge_3",
+      "title": "Молниеносный заряд",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

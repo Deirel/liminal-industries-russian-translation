@@ -1,0 +1,23 @@
+{
+  "category": "thermal:technology",
+  "icon": "thermal:tinker_bench",
+  "name": "Верстак мастеров",
+  "pages": [
+    {
+      "text": "Верстак мастеров заряжает и наполняет инструменты и блоки, а также устанавливает в них улучшения. Кнопка под слотом предмета переключает режимы «Зарядка/Заполнение» и «Улучшение». Улучшения окончательно устанавливаются при смене режима или извлечении предмета.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:tinker_bench",
+      "title": "Верстак мастеров",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширенная конструкция резервуара$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": -1
+}

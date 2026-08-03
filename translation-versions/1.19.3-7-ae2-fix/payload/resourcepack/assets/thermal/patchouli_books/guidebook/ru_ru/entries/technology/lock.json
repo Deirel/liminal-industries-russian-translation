@@ -1,0 +1,17 @@
+{
+  "category": "thermal:technology",
+  "icon": "thermal:lock",
+  "name": "Сигналовый замок",
+  "pages": [
+    {
+      "text": "Открывает панель безопасности у механизмов, генераторов и предметов. Пусть ваше имущество остаётся вашим!",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:tools/lock",
+      "title": "Сигналовый замок",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,82 @@
+{
+  "category": "thermal:plants",
+  "icon": "thermal:sawdust",
+  "name": "Древесные продукты",
+  "pages": [
+    {
+      "A.item": "thermal:sap_bucket",
+      "A.text": "Сладкая жидкость, которая когда-то несла воду и питательные вещества по всему $(l:thermal:technology/devices/tree_extractor)тёмному дубу$(/l).",
+      "A.title": "Сок",
+      "B.item": "thermal:resin_bucket",
+      "B.text": "Густая, липкая жидкость,$(l:thermal:technology/devices/tree_extractor)собираемая$(/l) с дуба, берёзы, сосны и акации.",
+      "B.title": "Смола",
+      "flag": "|mod:thermal_expansion,mod:thermal_cultivation",
+      "type": "thermal:1-1_item_page"
+    },
+    {
+      "flag": "|mod:thermal_expansion,mod:thermal_cultivation",
+      "item": "thermal:latex_bucket",
+      "text": "Густая полимерная эмульсия, которую $(l:thermal:technology/devices/tree_extractor)добывают$(/l) из тропических и $(l:thermal:world/plants/trees)каучуковых$(/l) деревьев. Служит для резины.",
+      "title": "Латекс",
+      "type": "thermal:1_item_page"
+    },
+    {
+      "A.recipe": "thermal:rubber_from_dandelion",
+      "B.recipe": "thermal:rubber_from_vine",
+      "flag": "&!mod:thermal_expansion,!mod:thermal_cultivation",
+      "title": "Резина",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "flag": "&!mod:thermal_expansion,!mod:thermal_cultivation",
+      "item1": "thermal:rubber",
+      "item2": "thermal:cured_rubber",
+      "text": "Эластичный водостойкий материал, получаемый свёртыванием латекса. Также создаётся из лиан и одуванчиков. Для повышения прочности и упругости резину можно вулканизировать в печи.",
+      "title": "Резина",
+      "type": "2_item_page"
+    },
+    {
+      "A.recipe": "thermal:rubber_from_dandelion",
+      "B.recipe": "thermal:rubber_3",
+      "flag": "|mod:thermal_expansion,mod:thermal_cultivation",
+      "title": "Резина",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:smelting/cured_rubber_from_smelting",
+      "flag": "&mod:thermal_cultivation,!mod:thermal_expansion",
+      "text": "Эластичный водостойкий материал, получаемый свёртыванием латекса. Можно просто оставить ведро латекса на верстаке либо использовать лианы и одуванчики. Для повышения прочности и упругости резину можно вулканизировать в печи.",
+      "type": "smelting"
+    },
+    {
+      "flag": "mod:thermal_expansion",
+      "recipe": "thermal:machines/smelter/smelter_cured_rubber",
+      "text": "Эластичный водостойкий материал, получаемый свёртыванием латекса. Можно просто оставить ведро латекса на верстаке либо использовать лианы и одуванчики. Для повышения прочности и упругости резину вулканизируют в печи или с серой в индукционной плавильне.",
+      "title": "Резина",
+      "type": "3_alloy_page"
+    },
+    {
+      "A.item1": "thermal:sawdust",
+      "A.item2": "thermal:sawdust_block",
+      "A.text": "Мелкая древесная щепа, получаемая путём $(l:thermal:technology/machines/pulverizer)измельчения$(/l) или $(l:thermal:technology/machines/sawmill)резки$(/l) дерева. Блок опилок используется как топливо.",
+      "A.title": "Опилки",
+      "B.item": "thermal:syrup_bucket",
+      "B.text": "Густая, вкусная жидкость, оправдывающая любые неудачи. Производится $(l:thermal:technology/machines/refinery)дистилляцией$(/l) сока.",
+      "B.title": "Сироп",
+      "flag": "mod:thermal_expansion",
+      "type": "2-1_item_page"
+    },
+    {
+      "A.item1": "thermal:rosin",
+      "A.item2": "thermal:rosin_block",
+      "A.text": "Твёрдая, $(l:thermal:technology/machines/refinery)очищенная$(/l) форма смолы. Может использоваться в качестве топлива.",
+      "A.title": "Канифоль",
+      "B.item": "thermal:tree_oil_bucket",
+      "B.text": "Производится как побочный продукт $(l:thermal:technology/machines/refinery)дистилляции$(/l) смолы. Может использоваться как топливо в $(l:thermal:technology/dynamos/compression)компрессионном генераторе$(/l).",
+      "B.title": "Древесное масло",
+      "flag": "mod:thermal_expansion",
+      "type": "2-1_item_page"
+    }
+  ],
+  "read_by_default": true
+}

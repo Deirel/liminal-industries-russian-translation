@@ -1,0 +1,23 @@
+{
+  "category": "thermal:machines",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_pulverizer",
+  "name": "Измельчитель",
+  "pages": [
+    {
+      "text": "Измельчитель дробит предметы и руды. Он повышает выход из руды, а улучшения и $(l:thermal:world/materials/catalysts)катализаторы$(/l) позволяют увеличить его ещё сильнее.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:machine_pulverizer",
+      "title": "Измельчитель",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Концентратор знаний$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Усилитель магнитной связи$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Потоковая эффективность$(/l)$(li)$(l:thermal:technology/augments/machine_output)Вспомогательное сито$(/l)$(li)$(l:thermal:technology/augments/machine_null)Вспомогательный кактус$(/l)$(li)$(l:thermal:technology/augments/machine_catalyst)Каталитическая мелиоративная камера$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

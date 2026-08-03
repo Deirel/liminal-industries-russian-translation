@@ -1,0 +1,14 @@
+{
+  "effects": [
+    "Максимум 1 уровень",
+    "Требуется 1 слот для умений."
+  ],
+  "modifier_id": "tconstruct:glowing",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Заставляет сторону целевого блока светиться, излучая свет. Установка свечения потребляет 5 единиц прочности."
+    }
+  ],
+  "tool_filter": "tconstruct:modifiable/interactable"
+}

@@ -1,0 +1,24 @@
+{
+  "category": "thermal:devices",
+  "flag": "|mod:thermal_expansion,mod:thermal_dynamics",
+  "icon": "thermal:device_nullifier",
+  "name": "Аннулятор",
+  "pages": [
+    {
+      "text": "Аннулятор уничтожает все поступившие предметы и жидкости. Автоматически введённые предметы и жидкости, например из воронки, исчезают сразу. Добавленные вручную через интерфейс хранятся до нажатия кнопки корзины. Фильтрующие улучшения позволяют ограничить принимаемое содержимое.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:device_nullifier",
+      "text": "Управление красным камнем влияет только на автоматический ввод предметов и жидкостей. Удалять содержимое вручную через интерфейс можно при любой настройке красного камня.",
+      "title": "Аннулятор",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

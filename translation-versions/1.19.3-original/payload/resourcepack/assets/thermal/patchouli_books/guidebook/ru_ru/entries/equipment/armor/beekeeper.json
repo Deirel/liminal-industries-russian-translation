@@ -1,0 +1,28 @@
+{
+  "category": "thermal:armor",
+  "flag": "mod:thermal_cultivation",
+  "icon": "thermal:beekeeper_chestplate",
+  "name": "Костюм пчеловода",
+  "pages": [
+    {
+      "text": "Костюм пчеловода ценой своей прочности защищает от любых жал: кактусов, ягодных кустов и, конечно, пчёл. Для $(o)полной$() защиты нужен весь костюм! $(o)Будьте$() осторожны: даже полный комплект всё равно теряет прочность.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:beekeeper_fabric",
+      "text": "Ткань, используемая во всём костюме пчеловода.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:armor/beekeeper_helmet",
+      "B.recipe": "thermal:armor/beekeeper_chestplate",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:armor/beekeeper_leggings",
+      "B.recipe": "thermal:armor/beekeeper_boots",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

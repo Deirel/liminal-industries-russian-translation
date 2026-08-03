@@ -44511,6 +44511,11 @@
     ],
     "mantle-book-language:tconstruct:encyclopedia:materials_harvest": [
       {
+        "source_hash": "sha256:5acac05f56f33d13c0310cdd8c47fb5628e2d32c2075ade120bd7c0d9d663937",
+        "source": "Melee Harvest Materials",
+        "translation": "Материалы для оружия ближнего боя и добывающих инструментов"
+      },
+      {
         "source_hash": "sha256:957a09ddaa0eb2cdea819044f9a59e57309f55c1930ef4ae5f33c7ee36480fbe",
         "source": "General Materials",
         "translation": "Материалы общего назначения"
@@ -44598,9 +44603,19 @@
         "source_hash": "sha256:64c0aff73032d3c74841faf2f9b8b5a1033dee54ca1be5f0736658f0a998d42c",
         "source": "Ancient",
         "translation": "Древние"
+      },
+      {
+        "source_hash": "sha256:bc9af63998fd09163a0688fba32f31524a09802bd720c1a220d62d38d14d3e56",
+        "source": "Ancient Tools",
+        "translation": "Древние инструменты"
       }
     ],
     "mantle-book-language:tconstruct:encyclopedia:tools.group_large": [
+      {
+        "source_hash": "sha256:382a6187783b59c97d1d82a1b88eee33df79f49e78897e9bfb8edca39918a6eb",
+        "source": "Broad Tools",
+        "translation": "Крупные инструменты"
+      },
       {
         "source_hash": "sha256:3d9c05379c208f25b379920201932253a25bc05e87261e733cf4bc0e7d456ae4",
         "source": "Broad",
@@ -44615,6 +44630,11 @@
       }
     ],
     "mantle-book-language:tconstruct:encyclopedia:tools.group_small": [
+      {
+        "source_hash": "sha256:43b24d8f7a9f4cda49cf0a7937536c9d72cb81a57a40b634e30f2c28cdd721b8",
+        "source": "Small Tools",
+        "translation": "Малые инструменты"
+      },
       {
         "source_hash": "sha256:5263293fc202649bdc8135573ac9cd3b0bcea4355e0d8f0a59f1ddeea8eefc15",
         "source": "Small",
@@ -44780,6 +44800,11 @@
         "source_hash": "sha256:1e3cbda525da1983588f3d07121a157e688b9b88ad85ba9d4b52727dd0340b98",
         "source": "These materials require blazing blood to create, and can be casted into armor and shields.",
         "translation": "Для создания этих материалов требуется огненная кровь. Из них можно отливать броню и щиты."
+      },
+      {
+        "source_hash": "sha256:2e74fe5768ec731579a381f6de95ca20a8184743a2e8454faef2ef4fe678720f",
+        "source": "These materials can be casted into armor and shields.",
+        "translation": "Из этих материалов можно отливать броню и щиты."
       }
     ],
     "mantle-book-language:tconstruct:fantastic_foundry:blazing_blood": [
@@ -44804,6 +44829,11 @@
       }
     ],
     "mantle-book-language:tconstruct:fantastic_foundry:melee_harvest_materials": [
+      {
+        "source_hash": "sha256:b0a14b5578c1e969cf898a23744f725faac7d75712be25ddef00a211c5c77795",
+        "source": "Tier 4 Melee Harvest Materials",
+        "translation": "Материалы 4-го уровня для оружия ближнего боя и добывающих инструментов"
+      },
       {
         "source_hash": "sha256:dfd383c3013855295d3fc005d1024632bdf953cc61a79af755436cc1e9b65947",
         "source": "Tier 4 General Materials",
@@ -44878,6 +44908,11 @@
         "source_hash": "sha256:33a911986ff67352cc2ee5f46ee39b8aae55017b6acf022920abe924601f4ef5",
         "source": "Tier 1 General Materials",
         "translation": "Материалы общего назначения 1-го уровня"
+      },
+      {
+        "source_hash": "sha256:917485af4e06f09196b941690e4f1599ceea88653cf0302603c9e4902b6d7124",
+        "source": "Tier 1 Melee Harvest Materials",
+        "translation": "Материалы 1-го уровня для оружия ближнего боя и добывающих инструментов"
       }
     ],
     "mantle-book-language:tconstruct:materials_and_you:melee_harvest_materials.subtext": [
@@ -45099,6 +45134,11 @@
     ],
     "mantle-book-language:tconstruct:mighty_smelting:melee_harvest_materials": [
       {
+        "source_hash": "sha256:3d5e387f6d7e94afe807dea56285732aa6aca8e54f0a006c15a897279e00bf6e",
+        "source": "Tier 3 Melee Harvest Materials",
+        "translation": "Материалы 3-го уровня для оружия ближнего боя и добывающих инструментов"
+      },
+      {
         "source_hash": "sha256:44678433680f67b3c0e16f6dcdb06f8d7d08ae5a48dc80a5edfad83d782d0ac7",
         "source": "Tier 3 General Materials",
         "translation": "Материалы общего назначения 3-го уровня"
@@ -45228,6 +45268,11 @@
         "source_hash": "sha256:497f0546200bf07e36c942c6933792ae43eb6463b8762f67f26a764b6b2c13f1",
         "source": "Tier 2 General Materials",
         "translation": "Материалы общего назначения 2-го уровня"
+      },
+      {
+        "source_hash": "sha256:e83130c4a264923a65563943db571c64da4be52ef2078c2d04d200fa2e828cac",
+        "source": "Tier 2 Melee Harvest Materials",
+        "translation": "Материалы 2-го уровня для оружия ближнего боя и добывающих инструментов"
       }
     ],
     "mantle-book-language:tconstruct:puny_smelting:melee_harvest_materials.subtext": [
@@ -45291,6 +45336,11 @@
         "source_hash": "sha256:c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
         "source": "General",
         "translation": "Общие"
+      },
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Без слотов"
       }
     ],
     "mantle-book-language:tconstruct:puny_smelting:slotless.subtext": [
@@ -45406,6 +45456,11 @@
       }
     ],
     "mantle-book-language:tconstruct:tinkers_gadgetry:ancient_tools.subtext": [
+      {
+        "source_hash": "sha256:0a82c345246c6fb5f1bd32ea9c0f789a11ded85c72c3e119e1791f4be21aa4fd",
+        "source": "Ancient tools are tools rarely found in loot throughout the world. Their material construction appears to be random and cannot be altered, but they may be modified like any other tool.",
+        "translation": "Древние инструменты изредка встречаются среди добычи по всему миру. Они состоят из случайных материалов, которые нельзя заменить, но сами инструменты можно модифицировать как обычно."
+      },
       {
         "source_hash": "sha256:7ac69673015ccb786215270a209e2f3b4d5a6044a417efed8de7191f451ee557",
         "source": "Ancient tools are tools rarely found in loot throughout the world. Their material construction appears to be random and cannot be altered, but they may be modified like any other tool. Rarely, they may come constructed from a unique material, which is only otherwise seen on armor or tool parts obtained from piglins.",
@@ -45559,6 +45614,13 @@
         "translation": "Эти материалы находят при исследовании далёких мест. Из них можно изготавливать детали инструментов ближнего боя и добывающих инструментов."
       }
     ],
+    "mantle-book-language:tconstruct:tinkers_gadgetry:modifiers": [
+      {
+        "source_hash": "sha256:39c1347413cc2c19b0828de4679a88690c984cfad9bd787e5df2934e42177e62",
+        "source": "Odd Modifiers",
+        "translation": "Странные модификаторы"
+      }
+    ],
     "mantle-book-language:tconstruct:tinkers_gadgetry:ranged_materials": [
       {
         "source_hash": "sha256:2eb4c7d0b69a9ae380f24574ff2dd28ca27283ff2619205af9cd4a5d6f1cb96e",
@@ -45659,6 +45721,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/boots/tconstruct_double_jump.json:/effects/0": [
       {
+        "source_hash": "sha256:153fd3c7c2ab115cb98c40d29ef2ec591051eaae0b4f67ac4a27ca8be6f37e67",
+        "source": "No max level",
+        "translation": "Нет максимального уровня"
+      },
+      {
         "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
         "source": "Maximum of 2 levels",
         "translation": "Макс. уровней: 2"
@@ -45739,6 +45806,34 @@
         "source_hash": "sha256:5fcd4cb3ea98848b638defeb0c59fedba91ec76d2c8db36ef9dc3f373c84b807",
         "source": "As you walk, places glows in dark nearby areas. Placing a glow consumes 5 durability. Range can be expanded using the expanded modifier.",
         "translation": "Когда вы шагаете, в ближайших тёмных местах появляется свечение. Для создания свечения требуется 5 ед. прочности. Область действия можно увеличить модификатором «Расширенный»."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:abilities/armor/boots/tconstruct_long_fall.json:/effects/0": [
+      {
+        "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
+        "source": "Maximum of 1 level",
+        "translation": "Максимум 1 уровень"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:abilities/armor/boots/tconstruct_long_fall.json:/effects/1": [
+      {
+        "source_hash": "sha256:825b5592b5932a8fcdf11cf02e4e78c416895ba0e0ac5266b6ef85f49cede4b2",
+        "source": "Requires Feather Falling IV",
+        "translation": "Требуется «Невесомость IV»"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:abilities/armor/boots/tconstruct_long_fall.json:/effects/2": [
+      {
+        "source_hash": "sha256:9054648401154dbc81e695699f3000a2016b0de218c5d880c2204f187d4105e5",
+        "source": "Requires 1 ability slot",
+        "translation": "Требуется 1 слот для умений"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:abilities/armor/boots/tconstruct_long_fall.json:/text/0/text": [
+      {
+        "source_hash": "sha256:1285a9a30cbd41160c27393a0b066b196d7538b02cc153e8d4acd4b5ed4519f6",
+        "source": "Neutralizes all fall damage.",
+        "translation": "Полностью нейтрализует урон от падения."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/boots/tconstruct_pathing.json:/effects/0": [
@@ -45827,6 +45922,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/chestplate/tconstruct_reach.json:/effects/0": [
       {
+        "source_hash": "sha256:153fd3c7c2ab115cb98c40d29ef2ec591051eaae0b4f67ac4a27ca8be6f37e67",
+        "source": "No max level",
+        "translation": "Нет максимального уровня"
+      },
+      {
         "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
         "source": "Maximum of 2 levels",
         "translation": "Макс. уровней: 2"
@@ -45854,6 +45954,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/chestplate/tconstruct_strength.json:/effects/1": [
+      {
+        "source_hash": "sha256:224c33723654475a5ea88c65031ecb693aea802e4d7a959d58b23fa14a7ef3cc",
+        "source": "Requires 1 ability slot per level",
+        "translation": "Требуется 1 слот для умений за уровень"
+      },
       {
         "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
         "source": "Maximum of 2 levels",
@@ -46040,6 +46145,11 @@
         "source_hash": "sha256:7d808c4ce548cf34af2b79b5e3ec1a574f1fc839a442a315899e39acfbf1da8f",
         "source": "Higher levels consume more fluid to perform stronger effects",
         "translation": "При более высоких уровнях расходуется больше жидкости для достижения более сильного эффекта."
+      },
+      {
+        "source_hash": "sha256:f4af0566838a0b50647b9cbbbef7cb740360103c5d228fc267eb5693d79a09b5",
+        "source": "Tool can be filled with fluid by interacting with a tank or drain while holding it.",
+        "translation": "Инструмент можно наполнить жидкостью, если взять его в руку и применить на резервуаре или сливе."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/leggings/tconstruct_crafting_table.json:/effects/0": [
@@ -46047,6 +46157,11 @@
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Макс. уровень: 1"
+      },
+      {
+        "source_hash": "sha256:a9875ac8991d109dcb62e15a6c2edf4925537322b64dc11266513d9354274d8c",
+        "source": "Single level",
+        "translation": "Один уровень"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/leggings/tconstruct_crafting_table.json:/effects/1": [
@@ -46064,6 +46179,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/leggings/tconstruct_pockets.json:/effects/0": [
+      {
+        "source_hash": "sha256:153fd3c7c2ab115cb98c40d29ef2ec591051eaae0b4f67ac4a27ca8be6f37e67",
+        "source": "No max level",
+        "translation": "Нет максимального уровня"
+      },
       {
         "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
         "source": "Maximum of 2 levels",
@@ -46145,6 +46265,11 @@
         "source_hash": "sha256:ba7e4d13c3def5ab8184fb906694369e7755ca706450868e0a83d1579a8c79a8",
         "source": "Maximum of 1 levels",
         "translation": "Максимум 1 уровень."
+      },
+      {
+        "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
+        "source": "Maximum of 2 levels",
+        "translation": "Максимум 2 уровня"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/shield/tconstruct_boundless.json:/effects/1": [
@@ -46155,6 +46280,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/armor/shield/tconstruct_boundless.json:/text/0/text": [
+      {
+        "source_hash": "sha256:1b2eaa326a537fcbfd4f2a6e1a5fba05dd7a07febe8314c39bcef65e4507eb57",
+        "source": "Increases the  cap from modifiers like protection, dragonborn, or shulking from 80% to 90% at 1 level, and 90% to 95% at 2 levels across. Stacks across multiple shields.",
+        "translation": "Повышает предел эффекта модификаторов «Защита», «Драконорождённый» и «Шалкеровый панцирь» с 80% до 90% на 1-м уровне и с 90% до 95% на 2-м. Эффект суммируется на нескольких щитах."
+      },
       {
         "source_hash": "sha256:7405a1178e71738ee59232dc7efc0e91f0a9bb2ea4b7ec1355730583589a1e74",
         "source": "Increases the  cap from modifiers like protection, dragonborn, or shulking from 80% to 90% at 1 level, and 90% to 95% at 2 levels across multiple shields.",
@@ -46453,9 +46583,19 @@
         "source_hash": "sha256:7d0246b427e2eaf276ae1a0f3617e47a43c4649683ed5009c4c0ed2acda315d3",
         "source": "Charge and release to knockback the targeted mob, consuming 1 durability. If used on a melee weapon, does a melee attack at 150% damage.",
         "translation": "Зарядите и отпустите, чтобы отбросить выбранного моба, потратив 1 ед. прочности. На оружии ближнего боя также выполняет атаку с уроном 150%."
+      },
+      {
+        "source_hash": "sha256:fbe0178045483c468f05edd69f4281ffb7a767eb0d6695290740a4e8da7b5aa6",
+        "source": "Charging up then release to knock the targeted mob away, consuming 1 durability.",
+        "translation": "Зарядите и отпустите, чтобы отбросить выбранного моба, потратив 1 ед. прочности."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/interact/tconstruct_bonking.json:/text/1/text": [
+      {
+        "source_hash": "sha256:430c177d95446527c6ea746323db33eeda71737165d9b5726293a81980cf8f53",
+        "source": " Effect is boosted by 25% per level of power or knockback, and halved by padded. Charge time is reduced by quick charge.",
+        "translation": "Каждый уровень «Силы» или «Отдачи» усиливает эффект на 25%, а «Подбитый» ослабляет его вдвое. «Быстрая зарядка» сокращает время зарядки."
+      },
       {
         "source_hash": "sha256:4c878c2a2044bd67d38c2a28507a1c1414ab283d944110fa0200801a858dc9e6",
         "source": "Effect strength is based on half of power times velocity. Boosted by 25% per knockback level, halved by padded. Quick charge reduces charge time, and target's armor knockback like springy or knockback resistance apply.",
@@ -46579,6 +46719,11 @@
         "source_hash": "sha256:1589701a96270a689efadb37aa9edd5bc1afe7942147b7887b3889a72930ed4f",
         "source": "Charge and release to launch yourself away from the targeted block for 1 durability.",
         "translation": "Зарядите и отпустите, чтобы оттолкнуться от выбранного блока, потратив 1 ед. прочности."
+      },
+      {
+        "source_hash": "sha256:eac586252b99eca07388fb99bb614a9b9fd3d8cae14d55d78d52a4c74367f6c6",
+        "source": "Charging up then release to launch yourself away from the targeted block, consuming 1 durability.",
+        "translation": "Зарядите и отпустите, чтобы оттолкнуться от выбранного блока, потратив 1 ед. прочности."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/interact/tconstruct_flinging.json:/text/1/text": [
@@ -46586,6 +46731,11 @@
         "source_hash": "sha256:31347dc726b4941f2efe18e15cc9e321f5605bbd2f45c96c32f8d84eccca4754",
         "source": "Effect strength is based on half of power times velocity. Boosted by 25% per knockback level, though the knockback effect is halved by padded and multiplied by armor knockback such as springy and knockback resistance. Quick charge reduces charge time.",
         "translation": "Сила эффекта равна половине произведения силы и скорости. Каждый уровень отбрасывания усиливает её на 25%, а «Мягкость» ослабляет вдвое. Также учитываются модификаторы брони, влияющие на отбрасывание, например «Упругость» и сопротивление отбрасыванию. «Быстрая зарядка» сокращает время зарядки."
+      },
+      {
+        "source_hash": "sha256:430c177d95446527c6ea746323db33eeda71737165d9b5726293a81980cf8f53",
+        "source": " Effect is boosted by 25% per level of power or knockback, and halved by padded. Charge time is reduced by quick charge.",
+        "translation": "Каждый уровень «Силы» или «Отдачи» усиливает эффект на 25%, а «Подбитый» ослабляет его вдвое. «Быстрая зарядка» сокращает время зарядки."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/interact/tconstruct_glowing.json:/effects/0": [
@@ -46681,6 +46831,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/interact/tconstruct_spitting.json:/effects/0": [
       {
+        "source_hash": "sha256:153fd3c7c2ab115cb98c40d29ef2ec591051eaae0b4f67ac4a27ca8be6f37e67",
+        "source": "No max level",
+        "translation": "Нет максимального уровня"
+      },
+      {
         "source_hash": "sha256:a5319476fbdb64b586d46514aed7ee03babc61ceba27518cb29b165da3cb0e01",
         "source": "Maximum of 3 levels",
         "translation": "Максимум 3 уровня."
@@ -46694,6 +46849,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/interact/tconstruct_spitting.json:/text/0/text": [
+      {
+        "source_hash": "sha256:06dfb5c02461799d453f66ed90312f981eee3cb51ea09589104f11a8fd251d30",
+        "source": "Charging up then release to launch fluid inflicting effects on the target and consuming 1 durability. Higher levels fire multiple shots and consume more durability.",
+        "translation": "Зарядите и отпустите, чтобы выпустить жидкость, наложить её эффекты на цель и потратить 1 ед. прочности. На высоких уровнях делается несколько выстрелов и тратится больше прочности."
+      },
       {
         "source_hash": "sha256:57c56bcfa233a933fc14aedd5384a5807e1bed6e88e47611a89b1d7fb6bce4fe",
         "source": "Charging up then release to launch fluid inflicting effects on the target and consuming 1 durability. Higher levels fire multiple shots and consume more durability and fluid.",
@@ -46758,12 +46918,22 @@
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/interact/tconstruct_springing.json:/text/0/text": [
       {
+        "source_hash": "sha256:97c5241354a1b92d4f5c5af6f5aba10b06c9a5d7c2aba8e96b8efccd32d74ead",
+        "source": "Charging up then release to launch yourself in the targeted direction, consuming 1 durability.",
+        "translation": "Зарядите и отпустите, чтобы рвануть в выбранном направлении, потратив 1 ед. прочности."
+      },
+      {
         "source_hash": "sha256:e8c6566eb78d3742750f121db889cb1400000d971c4cc2f6ada19d3e84852605",
         "source": "Charge and release to launch yourself in the targeted direction for 1 durability.",
         "translation": "Зарядите и отпустите, чтобы устремиться в выбранном направлении, потратив 1 ед. прочности."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/interact/tconstruct_springing.json:/text/1/text": [
+      {
+        "source_hash": "sha256:430c177d95446527c6ea746323db33eeda71737165d9b5726293a81980cf8f53",
+        "source": " Effect is boosted by 25% per level of power or knockback, and halved by padded. Charge time is reduced by quick charge.",
+        "translation": "Каждый уровень «Силы» или «Отдачи» усиливает эффект на 25%, а «Подбитый» ослабляет его вдвое. «Быстрая зарядка» сокращает время зарядки."
+      },
       {
         "source_hash": "sha256:5f492d8a3acd29ee97799de836c6301e6d541a941732bf2d95a8602af5ed5294",
         "source": "Effect strength is based on half of power times velocity. Boosted by knockback, though the knockback effect is halved by padded and multiplied by armor knockback such as springy and knockback resistance. Quick charge reduces charge time.",
@@ -46996,6 +47166,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/melee/tconstruct_parrying.json:/text/1/text": [
       {
+        "source_hash": "sha256:17dc591ae568bce9af105d573c5de8ec5ac8eb812120f461e5eb012016e1076d",
+        "source": "Most dagger block up to 10 damage, and do not slow the player while using.",
+        "translation": "Большинство кинжалов блокируют до 10 ед. урона и не замедляют игрока при использовании."
+      },
+      {
         "source_hash": "sha256:e844421625f9651fc79b57eb12add35d9a3b1c9793da2b59d72acaec783c7649",
         "source": "Most daggers can block up to 10 damage, and do not slow the player while using.",
         "translation": "Большинство кинжалов могут блокировать до 10 единиц урона и не замедляют игрока во время использования."
@@ -47027,6 +47202,11 @@
         "source_hash": "sha256:a06bb0dbd6e5b35355e36f11e1d6768a58f1fd6c1ccfc60bfb12cda884bef6be",
         "source": "Drains a small amount of fluid (typically between 10 mb to 50 mb) to boost melee and fishing hook attacks with special effects, such as fire, bonus damage, or potion effects. ",
         "translation": "Расходует небольшое количество жидкости (обычно от 10 до 50 мБ), чтобы придать атакам ближнего боя и рыболовного крючка особые эффекты, например поджигание, дополнительный урон или эффекты зелий."
+      },
+      {
+        "source_hash": "sha256:fdb3641392483c441bd642d40cdf6717b932d2c4992dbe9b63f27620b76b234a",
+        "source": "Drains a small amount of fluid (typically between 10 mb to 50 mb) to boost melee attacks with special effects, such as fire, bonus damage, or potion effects. ",
+        "translation": "Расходует немного жидкости (обычно от 10 до 50 мБ), усиливая атаки ближнего боя особыми эффектами: огнём, дополнительным уроном или эффектами зелий."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/melee/tconstruct_spilling.json:/text/1/text": [
@@ -47265,6 +47445,11 @@
         "source_hash": "sha256:153fd3c7c2ab115cb98c40d29ef2ec591051eaae0b4f67ac4a27ca8be6f37e67",
         "source": "No max level",
         "translation": "Нет максимального уровня"
+      },
+      {
+        "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
+        "source": "Maximum of 2 levels",
+        "translation": "Максимум 2 уровня"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/ranged/tconstruct_trick_quiver.json:/effects/1": [
@@ -47279,6 +47464,11 @@
         "source_hash": "sha256:79980fecdc35e4ec598bad5774b3d891854178d2d73d3b4a4e522ff3632a3f03",
         "source": "Gives the bow 3 internal slots per level for holding trick arrows, each slot holding 32 arrows.",
         "translation": "Дает луку 3 внутренних слота на уровень для хранения хитрых стрел, каждый слот вмещает 32 стрелы."
+      },
+      {
+        "source_hash": "sha256:bc92bb29593d4ea95a84bfe24bd5d19edf35efbee0d08b92a45ada1c60f1f5ec",
+        "source": "Gives the bow three internal slots for holding trick arrows, each slot holding 32 arrows (or 64 arrows at level 2).",
+        "translation": "Добавляет луку 3 внутренних слота для особых стрел. Каждый вмещает 32 стрелы, а на 2-м уровне — 64."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:abilities/ranged/tconstruct_trick_quiver.json:/text/1/text": [
@@ -47289,6 +47479,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/info.json:/text/0/text": [
+      {
+        "source_hash": "sha256:439ca30f86403b2e217dc0aada56f19eba0df38fac7c38065cbe0f7e8d3452de",
+        "source": "Armor can be created in a variety of forms. Some armor is created in te crafting station, some in the tinker station, and some is made by casting.",
+        "translation": "Броню можно создавать разными способами: на станции создания, литейной станции или с помощью литья."
+      },
       {
         "source_hash": "sha256:7b23d7c13598e05b826c1294b14af4f23aeaf33eb3e40ec032d75004515c0a69",
         "source": "Armor can be created in a variety of forms. Some armor is created in the crafting station, some in the tinker station, and some is made by casting.",
@@ -47503,9 +47698,19 @@
         "source_hash": "sha256:9a7e003270efd7a93c547087f3c6f33976d8901e8c611c35d1d4a46ead3540fd",
         "source": "3 Defense Slots",
         "translation": "3 слота защиты"
+      },
+      {
+        "source_hash": "sha256:fd65a618ffc8806279712fc983ee05fd7cd229599363457c4201beb06bc1dd00",
+        "source": "4 Defense Slots",
+        "translation": "4 слота защиты"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_plate_shield.json:/properties/6": [
+      {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
       {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
@@ -47780,12 +47985,22 @@
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_boots.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 особенности материала"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_boots.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -47843,12 +48058,22 @@
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_chestplate.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 особенности материала"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_chestplate.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -47899,12 +48124,22 @@
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_helmet.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 особенности материала"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_helmet.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -47955,12 +48190,22 @@
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_leggings.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 особенности материала"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_leggings.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -48007,6 +48252,11 @@
         "source_hash": "sha256:2b81cd5b0166137585fede4626d22120c23777d557baa1bfbd658ba834672436",
         "source": "2 Upgrade Slots",
         "translation": "2 слота для улучшений"
+      },
+      {
+        "source_hash": "sha256:a32fd0ca172734a802d52bc7baa037f7e3562413f37372bee2fdfa73352071f7",
+        "source": "3 Upgrade Slots",
+        "translation": "3 слота для улучшений"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_shield.json:/properties/5": [
@@ -48024,6 +48274,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_travelers_shield.json:/properties/7": [
+      {
+        "source_hash": "sha256:6e72e558ba1dff61a4ce25055b88abeae2b26ff783a3e3ed5e20833ba5beaecd",
+        "source": "Tanned",
+        "translation": "«Дублённый»"
+      },
       {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
@@ -48644,6 +48899,11 @@
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_draconic.json:/effects/1": [
@@ -48707,6 +48967,11 @@
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_harmonious.json:/effects/1": [
@@ -48728,6 +48993,11 @@
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_rebalanced.json:/effects/1": [
@@ -48738,6 +49008,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_rebalanced.json:/text/0/text": [
+      {
+        "source_hash": "sha256:d8cb79b17556fdb3a524ef469b2ea85c743ad33e49fa3bb8afe700054fae8190",
+        "source": "Grants +1 modifier slot; type is determined by the recipe. Applying +1 ability slot makes the tool lose 1 upgrade slot..",
+        "translation": "Даёт +1 слот модификатора; тип слота зависит от рецепта. При добавлении +1 слота для умений инструмент теряет 1 слот для улучшений."
+      },
       {
         "source_hash": "sha256:f7bc58b45f55d7288816144e9d3c037f30a21b98c6881b4b9dd82d5ec1abb7e3",
         "source": "Grants +1 modifier slot; type is determined by the recipe. Applying +1 ability slot makes the tool lose 1 upgrade slot.",
@@ -48756,6 +49031,11 @@
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_recapitated.json:/effects/1": [
@@ -48793,11 +49073,37 @@
         "translation": "Повышает уровень одной из характеристик снаряда, обычно первого наконечника стрелы."
       }
     ],
+    "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_resurrected.json:/effects/0": [
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_resurrected.json:/effects/1": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_resurrected.json:/text/0/text": [
+      {
+        "source_hash": "sha256:d4cc80b53672f924d97c65049f8749a2a9667e740a529b2b8f925fed9cb45c72",
+        "source": "Grants +1 upgrade slot.",
+        "translation": "Даёт +1 слот для улучшений."
+      }
+    ],
     "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_writable.json:/effects/0": [
       {
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/bonus/tconstruct_writable.json:/effects/1": [
@@ -49001,6 +49307,11 @@
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_barebow.json:/effects/1": [
@@ -49022,6 +49333,11 @@
         "source_hash": "sha256:071751bfa81c5cb5092d9faa87f9891b2c6d9fb6c5fd9db8c647b43758203516",
         "source": "No max level, though accuracy minimum is 0.1",
         "translation": "Максимального уровня нет, хотя минимальная точность составляет 0,1."
+      },
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_blindshot.json:/effects/1": [
@@ -49029,6 +49345,13 @@
         "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
         "source": "Slotless",
         "translation": "Без слотов"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_blindshot.json:/effects/2": [
+      {
+        "source_hash": "sha256:071751bfa81c5cb5092d9faa87f9891b2c6d9fb6c5fd9db8c647b43758203516",
+        "source": "No max level, though accuracy minimum is 0.1",
+        "translation": "Нет максимального уровня, но точность не может быть ниже 0,1"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_blindshot.json:/text/0/text": [
@@ -49057,6 +49380,118 @@
         "source_hash": "sha256:ca0c82170039b292979582f2f09294feb3cd51194aaaeb019df4e04aa1a69c39",
         "source": "Prevents the tool from performing melee attacks, performing general interactions instead.",
         "translation": "Не позволяет инструменту выполнять атаки ближнего боя, вместо этого выполняя общие взаимодействия."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_dyed.json:/effects/0": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_dyed.json:/effects/1": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_dyed.json:/text/0/text": [
+      {
+        "source_hash": "sha256:041911ead7a58b202e0c53b51b104e9b26fe3abdb6ac515f0b84654c2527de4d",
+        "source": "Changes the color of the leather or wood parts of travelers's gear, shields, and staffs.",
+        "translation": "Изменяет цвет кожаных или деревянных частей снаряжения путешественника, щитов и посохов."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_dyed.json:/text/1/text": [
+      {
+        "source_hash": "sha256:26c1e97f789e4def81b81228b63edea708b929327e5e771f28de61e3558e214d",
+        "source": "Can mix multiple dyes, along with mixing dyes from the previous gear color.",
+        "translation": "Можно смешивать несколько красителей между собой и с прежним цветом снаряжения."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_embellishment.json:/effects/0": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_embellishment.json:/effects/1": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_embellishment.json:/text/0/text": [
+      {
+        "source_hash": "sha256:ccc5eea6f1d0adb468b309cff23c0b17bd9ede21a4692b959178fe37c4f32284",
+        "source": "Allows changing the appearance of slimesuits, staffs, and shields.",
+        "translation": "Позволяет изменять внешний вид слизневых доспехов, посохов и щитов."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_embellishment.json:/text/1/text": [
+      {
+        "source_hash": "sha256:29ff66657008d63a815eb365adcd8dd19176e6f012c182addc673b3a21d130ce",
+        "source": "Slime uses congealed slime blocks, while staffs and shields use wood embellishments.",
+        "translation": "Для слизневых доспехов используются блоки застывшей слизи, а для посохов и щитов — деревянные украшения."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_farsighted.json:/effects/0": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_farsighted.json:/effects/1": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_farsighted.json:/text/0/text": [
+      {
+        "source_hash": "sha256:a0fb68bc15ae9637dfb546532af4b1db678651562278081002bf39aa59e8b708",
+        "source": "Decreases the FOV by 5% per level while wearing this armor or holding this tool.",
+        "translation": "Снижает FOV на 5% за уровень, пока эта броня надета или этот инструмент находится в руке."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_farsighted.json:/text/1/text": [
+      {
+        "source_hash": "sha256:6a18ab0539176d3ddd6ffaedcbd71b7cffd1ff85d40ce01a51b033b03429b6c3",
+        "source": "This modifier is ideal to cancel out the FOV change from the speedy modifier, but you may find other uses for it.",
+        "translation": "Этот модификатор компенсирует изменение FOV от модификатора «Быстрый», но ему можно найти и другое применение."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_nearsighted.json:/effects/0": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_nearsighted.json:/effects/1": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_nearsighted.json:/text/0/text": [
+      {
+        "source_hash": "sha256:0a65d452205b27315b6f168186d0b645bd4799145ad0e1ee318390aaabc56c58",
+        "source": "Increases the FOV by 5% per level while wearing this armor or holding this tool.",
+        "translation": "Увеличивает FOV на 5% за уровень, пока эта броня надета или этот инструмент находится в руке."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_nearsighted.json:/text/1/text": [
+      {
+        "source_hash": "sha256:4492fa3ffbe49897bbf6374836a4d6c66940cd0ae0d1ee182db1d4c65c3e48a3",
+        "source": "This modifier is ideal to cancel out the FOV change from the heavy tools, but you may find other uses for it.",
+        "translation": "Этот модификатор компенсирует изменение FOV от тяжёлых инструментов, но ему можно найти и другое применение."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_offhanded.json:/effects/0": [
@@ -49092,6 +49527,11 @@
         "source_hash": "sha256:1916f756c58e0eef4268d8b223f216ffb66521fe6001e6161ed03ad278fce451",
         "source": "Non-slimy tools: -10% mining speed and attack damage, -0.5 armor",
         "translation": "Несклизкие инструменты: -10% скорости добычи и урона от атаки, -0,5 брони."
+      },
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_overslime.json:/effects/1": [
@@ -49099,9 +49539,19 @@
         "source_hash": "sha256:153fd3c7c2ab115cb98c40d29ef2ec591051eaae0b4f67ac4a27ca8be6f37e67",
         "source": "No max level",
         "translation": "Нет максимального уровня"
+      },
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_overslime.json:/effects/2": [
+      {
+        "source_hash": "sha256:1916f756c58e0eef4268d8b223f216ffb66521fe6001e6161ed03ad278fce451",
+        "source": "Non-slimy tools: -10% mining speed and attack damage, -0.5 armor",
+        "translation": "Неслизневые инструменты: -10% к скорости добычи и урону от атаки, -0,5 брони"
+      },
       {
         "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
         "source": "Slotless",
@@ -49122,11 +49572,58 @@
         "translation": "Инструменты без «Сверхпрочности» или слизневых материалов имеют сниженные характеристики. Сверхслизь можно восстановить на верстаке с помощью бутылочек слизи."
       }
     ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_shiny.json:/effects/0": [
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_shiny.json:/effects/1": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_shiny.json:/text/0/text": [
+      {
+        "source_hash": "sha256:11b8a773bfe1c11faba5f3fcb8d12e5d39e3deaafcbb87937ff44a026d3b43a0",
+        "source": "Makes the tool glow as if enchanted. That's all, it's just decorative.",
+        "translation": "Заставляет инструмент светиться, как зачарованный. Вот и всё: это просто украшение."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_trim.json:/effects/0": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_trim.json:/effects/1": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_trim.json:/text/0/text": [
+      {
+        "source_hash": "sha256:ff140197e31854e1af89f89baa79c9c8a83dc10ee2dffdcfe4b1e8562e5eff9c",
+        "source": "Combine armor trims with the correct material to add a colored variant of a unique texture to the armor.",
+        "translation": "Сочетайте отделку брони с подходящим материалом, чтобы нанести на броню уникальный узор выбранного цвета."
+      }
+    ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_workbench.json:/effects/0": [
       {
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:a9875ac8991d109dcb62e15a6c2edf4925537322b64dc11266513d9354274d8c",
+        "source": "Single level",
+        "translation": "Один уровень"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_workbench.json:/effects/1": [
@@ -49148,6 +49645,11 @@
         "source_hash": "sha256:4790242817445a0eed06501a9777543cd0aa4b0dc0b936102d62e58503da1099",
         "source": "Maximum of 1 level",
         "translation": "Максимум 1 уровень"
+      },
+      {
+        "source_hash": "sha256:8e6211592b3d82db97d120cae695f86109143b882fd4775d795b01627dffb51e",
+        "source": "Single use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:slotless/general/tconstruct_worldbound.json:/effects/1": [
@@ -49292,6 +49794,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:tools/ancient/tconstruct_melting_pan.json:/text/0/text": [
       {
+        "source_hash": "sha256:da5d8320b5e034e751f7f93b2f9bd8d635ea9952878ee3cdf7bad03d5b10bee9",
+        "source": "The melting pan mines meltable blocks and also functions as a staff. It can be found from dungeons, igloos, husks, and a gift from toolsmiths after defeating a raid.",
+        "translation": "Сковородка добывает блоки, пригодные для плавки, и служит посохом. Её можно найти в подземельях и иглу, получить с кадавров или в подарок от инструментальщика после победы в набеге."
+      },
+      {
         "source_hash": "sha256:e965b369f3d0028711ba0a2acdcc7dcd75412844bb83fdd31bcb85ced79c125a",
         "source": "The melting pan is a staff that mines meltable blocks, producing an extra 6 nuggets per ore (as opposed to the smeltery's extra 3 nuggets). Expanders work like a vein hammer.",
         "translation": "Сковородка — это посох, который добывает блоки, пригодные для плавки, и даёт по 6 дополнительных самородков с каждой руды (вместо 3 дополнительных самородков в плавильне). «Расширение» действует как на жильном молоте."
@@ -49302,6 +49809,11 @@
         "source_hash": "sha256:5841a419b478f3f57df6a29a6d97ff28c7062131049b8cddf9b74ae12aebf25b",
         "source": "Found from zombies, dungeons, igloos, and gifted from armorsmiths after a raid.",
         "translation": "Можно найти у зомби, в подземельях и иглу, а также получить в подарок от бронника после рейда."
+      },
+      {
+        "source_hash": "sha256:72c74cf717fb25f001a50021147d0115a8e1dff2bf433ca2b9033f8331c35639",
+        "source": "Expanders mine multiple blocks of the same type, with range based on the level.",
+        "translation": "«Расширение» позволяет добывать сразу несколько одинаковых блоков. Радиус зависит от уровня."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:tools/ancient/tconstruct_minotaur_axe.json:/properties/0": [
@@ -49400,6 +49912,11 @@
         "source_hash": "sha256:ab4c63c6bf13678d0a330723bcbdaf30ca388e813da595ee5b6d4f98d10070b6",
         "source": "The swasher is a combination of a melee weapon and a handheld fluid pistol.",
         "translation": "Свашер сочетает оружие ближнего боя и ручной жидкостный пистолет."
+      },
+      {
+        "source_hash": "sha256:e28af3dabaf93cc99dc4607309816add9dfa775c4c5ede61ba59ff6d10d25602",
+        "source": "The swasher is a combination of a melee weapon and a handheld fluid pistol. It is often found in buried treasure and shipwrecks, the hands of drowned, and sometimes caught when fishing.",
+        "translation": "Свашер сочетает оружие ближнего боя и ручной жидкостный пистолет. Его часто находят в закопанных кладах и на затонувших кораблях, у утопленников, а иногда вылавливают на рыбалке."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:tools/ancient/tconstruct_swasher.json:/text/1/text": [
@@ -49460,12 +49977,22 @@
     ],
     "mantle-book:tconstruct:encyclopedia:tools/ancient/tconstruct_war_pick.json:/text/0/text": [
       {
+        "source_hash": "sha256:3cd96dc763cce0d4f35217f41a8fef221c879e91ba4bcaac48df110365c21545",
+        "source": "The war pick is a crossbow effective at mining stone, metal, and ores. It is found in mineshafts, pillager posts, zombie villagers, and a gift from weaponsmiths.",
+        "translation": "Боевая кирка — это арбалет, которым можно добывать камень, металлы и руды. Её можно найти в заброшенных шахтах и аванпостах разбойников, у зомби-жителей, а также получить в подарок от оружейников."
+      },
+      {
         "source_hash": "sha256:65e2aae34f4d186d6211c77e9664c103f5d4c67a7725e3b2ad55323d078b215c",
         "source": "The war pick is a pickaxe crossbow found from mineshafts, pillager posts, vindicators, zombie villagers, and weaponsmiths raid gifts.",
         "translation": "Боевая кирка — это кирка-арбалет, которую можно найти в заброшенных шахтах и аванпостах разбойников, у поборников и зомби-жителей, а также получить в подарок от оружейника после рейда."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:tools/ancient/tconstruct_war_pick.json:/text/1/text": [
+      {
+        "source_hash": "sha256:9c32b2ff5959735dad6a33488193ff43a9b1d41a1b1191a0a1f6a10ec76396e7",
+        "source": "Expanders increase the circular radius of the pick.",
+        "translation": "Расширители увеличивают радиус круглой области добычи кирки."
+      },
       {
         "source_hash": "sha256:b79502553c25dca3e6c50d2ed7c66ab21f32073c9f5b575d2da6e04d6eb20ff6",
         "source": "Mining blocks when loaded grants +0.01 velocity per mined block, up to +0.25. Expanders increase circular mining radius.",
@@ -49659,6 +50186,62 @@
         "source_hash": "sha256:ef66452b75444bd8fd704777eeb8feaf064a9c6473cae57cf11a8828a67e412c",
         "source": "Expanders alternate between increasing width and height.",
         "translation": "Расширители поочерёдно увеличивают ширину и высоту области добычи."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/properties/0": [
+      {
+        "source_hash": "sha256:91c713b4a38e161af0e9e9b5f76340d9786b05f5254f3e7d0d18a13a42fcb354",
+        "source": "1.0 Attack Speed",
+        "translation": "Скорость атаки: 1,0"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/properties/1": [
+      {
+        "source_hash": "sha256:56e46c409d7ae0793d59b566e8c17c987292b2f8d0350f0c3ed0669883abf961",
+        "source": "1.0 Draw Speed",
+        "translation": "Скорость натяжения: 1,0"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/properties/2": [
+      {
+        "source_hash": "sha256:db1419b22e6e3eb5809a47d17276fb380c73af92adb0eb9dc123c594086fc540",
+        "source": "1.00 Arrow Velocity",
+        "translation": "Скорость стрелы: 1,00"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/properties/3": [
+      {
+        "source_hash": "sha256:0f22cadfd2ca6166f514923cd9ba67a7795350905a824a905a89c959261cae2c",
+        "source": "0.75 Accuracy",
+        "translation": "Точность: 0,75"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/properties/4": [
+      {
+        "source_hash": "sha256:ae4ef9afe8f95e1c5b74e23fc875d7dd9ae09d71ea1e0ab115e7708b13772aa5",
+        "source": "Sums stats of both limbs",
+        "translation": "Суммирует характеристики обоих плеч лука."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/properties/5": [
+      {
+        "source_hash": "sha256:74302eae19a0e943479ece498c220437ebed50a8ccccc375a7f95f46a872f042",
+        "source": "150% Durability Multiplier",
+        "translation": "Множитель прочности: 150%"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/text/0/text": [
+      {
+        "source_hash": "sha256:ef0bf748b7c6552a9a33c501ae54e1e16a8f6e0ffa41e7142aa5ecd92ab57a56",
+        "source": "The Longbow is a broad ranged weapon that fires arrows. Arrows are launched immediately after releasing the longbow.",
+        "translation": "Длинный лук — это крупное оружие дальнего боя. Стрела вылетает, как только вы отпускаете тетиву."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_longbow.json:/text/1/text": [
+      {
+        "source_hash": "sha256:a3b52ca9dcd6e6b4b576efb14e4c615ac6a291f96d491836940cbb7cf23c7697",
+        "source": "When using interaction modifiers, the longbow acts on left click.",
+        "translation": "Модификаторы взаимодействия на длинном луке срабатывают при нажатии ЛКМ."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:tools/broad/tconstruct_scythe.json:/properties/0": [
@@ -50198,6 +50781,55 @@
         "source_hash": "sha256:43b24d8f7a9f4cda49cf0a7937536c9d72cb81a57a40b634e30f2c28cdd721b8",
         "source": "Small Tools",
         "translation": "Малые инструменты"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_crossbow.json:/properties/0": [
+      {
+        "source_hash": "sha256:91c713b4a38e161af0e9e9b5f76340d9786b05f5254f3e7d0d18a13a42fcb354",
+        "source": "1.0 Attack Speed",
+        "translation": "Скорость атаки: 1,0"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_crossbow.json:/properties/1": [
+      {
+        "source_hash": "sha256:56e46c409d7ae0793d59b566e8c17c987292b2f8d0350f0c3ed0669883abf961",
+        "source": "1.0 Draw Speed",
+        "translation": "Скорость натяжения: 1,0"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_crossbow.json:/properties/2": [
+      {
+        "source_hash": "sha256:db1419b22e6e3eb5809a47d17276fb380c73af92adb0eb9dc123c594086fc540",
+        "source": "1.00 Arrow Velocity",
+        "translation": "Скорость стрелы: 1,00"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_crossbow.json:/properties/3": [
+      {
+        "source_hash": "sha256:0f22cadfd2ca6166f514923cd9ba67a7795350905a824a905a89c959261cae2c",
+        "source": "0.75 Accuracy",
+        "translation": "Точность: 0,75"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_crossbow.json:/properties/4": [
+      {
+        "source_hash": "sha256:f3510747548eb5035a6d8dcfcfbacb63f7af6eda4b86c0ddfe8c421c4a5b7d2b",
+        "source": "200% Durability Multiplier",
+        "translation": "Множитель прочности: 200%"
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_crossbow.json:/text/0/text": [
+      {
+        "source_hash": "sha256:191aa28b22e23442c0b59216dc4d326fce485c087aade56c8ee1a77243a9d7cc",
+        "source": "The Crossbow is a quick ranged weapon, capable of firing both arrows and fireworks. Arrows can be loaded into the bow then fired at a later time.",
+        "translation": "Арбалет — это скорострельное оружие дальнего боя для стрел и фейерверков. Его можно зарядить заранее, а выстрелить позже."
+      }
+    ],
+    "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_crossbow.json:/text/1/text": [
+      {
+        "source_hash": "sha256:f37fe6a9ee394d0bf709e8664113565a3cf6fc643580730ad7c54767b857a50a",
+        "source": "When using interaction modifiers, the crossbow acts on left click.",
+        "translation": "Модификаторы взаимодействия на арбалете срабатывают при нажатии ЛКМ."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:tools/small/tconstruct_dagger.json:/properties/0": [
@@ -50874,6 +51506,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/boots/tconstruct_feather_falling.json:/effects/1": [
       {
+        "source_hash": "sha256:a74a0e442385d44e9b6a90e35e33302328af7c399fda12a8595f19c68aeeacf0",
+        "source": "Maximum of 4 levels",
+        "translation": "Максимум 4 уровня"
+      },
+      {
         "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
         "source": "Maximum of 2 levels",
         "translation": "Максимум 2 уровня."
@@ -50891,6 +51528,11 @@
         "source_hash": "sha256:10d69e074d48d51a2e6342b93de2ef066d6fb74e63fbdfac91fe2ea0db1ac234",
         "source": "Grants +25% resistance to fall damage per level, up to a maximum of +50% at 2 levels.",
         "translation": "Дает +25% сопротивления урону от падения за уровень, максимум до +50% на 2 уровнях."
+      },
+      {
+        "source_hash": "sha256:8ec004f342b35179f58bf76d76fc67316c8b052c3d7452bc098abfe60ec02dae",
+        "source": "Grants +15% resistance to fall damage per level, up to a maximum of +60% at 4 levels.",
+        "translation": "Даёт +15% сопротивления урону от падения за уровень, максимум +60% на 4-м уровне."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/boots/tconstruct_lightspeed.json:/effects/0": [
@@ -50901,6 +51543,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/boots/tconstruct_lightspeed.json:/effects/1": [
+      {
+        "source_hash": "sha256:234c6d456fb3035981513c7d55fdde901dc66d221f95b3bb557443359d6e61da",
+        "source": "Maximum of 5 levels",
+        "translation": "Максимум 5 уровней"
+      },
       {
         "source_hash": "sha256:a5319476fbdb64b586d46514aed7ee03babc61ceba27518cb29b165da3cb0e01",
         "source": "Maximum of 3 levels",
@@ -51168,6 +51815,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/general/tconstruct_ricochet.json:/effects/0": [
       {
+        "source_hash": "sha256:171d23a3a6222819e3b85ee8cdd5d3acd8dd819cf22476950d9b3ebd7d517233",
+        "source": "Maximum of 2 levels per piece",
+        "translation": "Максимум 2 уровня на каждом предмете брони"
+      },
+      {
         "source_hash": "sha256:4d598f2e18a8436b92db588055cf348c623862ec05d0e6222bf76385e9deb4d7",
         "source": "Max 2 levels per piece",
         "translation": "Максимум 2 уровня на одну часть брони"
@@ -51178,6 +51830,11 @@
         "source_hash": "sha256:73924e5359c39c73a0c9739057f5e2d8fc3c0c8ef489b986e6ae4fa6de5d9b15",
         "source": "Stacks across armor",
         "translation": "Сочетает в себе эффект от всех частей брони"
+      },
+      {
+        "source_hash": "sha256:e31cbdcb3c7ac12c04e2a16ab16ce6dc4f77f59a52ba5d592fe6a39837076124",
+        "source": "Combines effect of all pieces",
+        "translation": "Эффекты всех предметов брони суммируются"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/general/tconstruct_ricochet.json:/effects/2": [
@@ -51287,6 +51944,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/helmet/tconstruct_item_frame.json:/text/0/text": [
       {
+        "source_hash": "sha256:8a6fe083ff28095e1adefb057d13bc7c90eb0d1d898533f6e48219f5fa73ad68",
+        "source": "Adds slots to the helmet which will render on the UI when the helmet is worn.",
+        "translation": "Добавляет в шлем слоты, которые отображаются в интерфейсе, пока шлем надет."
+      },
+      {
         "source_hash": "sha256:ec11a1c96d47c5410e3184263bf78ac4b2b75dd7ee97d05291fb648df9ac91a5",
         "source": "Adds 3 slots per level to the helmet which will render on the UI when the helmet is worn.",
         "translation": "Добавляет к шлему 3 слота на каждый уровень, которые отображаются в пользовательском интерфейсе при ношении шлема."
@@ -51353,6 +52015,11 @@
         "source_hash": "sha256:16acfe35a8eef4f15c8bc372e74e79108240b782de0d7a798868b03911311f10",
         "source": "First level requires 1 upgrade slot",
         "translation": "Для первого уровня требуется 1 слот для улучшений."
+      },
+      {
+        "source_hash": "sha256:6986ff1df5b4c2e99417171599bfc4b3a2cbf9fe1b3a22d4cb8db4e3eb1f3f17",
+        "source": "Requires 1 upgrade slot per level",
+        "translation": "Требуется 1 слот для улучшений за уровень"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/leggings/tconstruct_leaping.json:/effects/2": [
@@ -51363,6 +52030,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/armor/leggings/tconstruct_leaping.json:/text/0/text": [
+      {
+        "source_hash": "sha256:6735cae283d008d98b0c969c7d487ee266e24d715287ed5294cb1fa6fa66137b",
+        "source": "Grants +0.5 blocks jump height per level, and increases the safe fall distance by 1 block per level.",
+        "translation": "Даёт +0,5 блока к высоте прыжка и +1 блок к высоте безопасного падения за уровень."
+      },
       {
         "source_hash": "sha256:7911bd5f90c7c60b9233b2cf6f4528fdc163e8808a0cf8b11be6209a4ea91f11",
         "source": "Grants +0.5 blocks jump height at first level, and +1 at second level. Increases the safe fall distance by 1 block per level.",
@@ -51601,6 +52273,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/damage/tconstruct_pierce.json:/text/0/text": [
+      {
+        "source_hash": "sha256:4871105970ca87274c416feddaa2c79f3667987d1b7a6b8726442edef022ecf5",
+        "source": "Adds +0.5 melee damage per level. Melee attacks cancel out 1 point of armor per level.",
+        "translation": "Добавляет +0,5 к урону в ближнем бою за уровень. Атаки в ближнем бою игнорируют 1 единицу брони за уровень."
+      },
       {
         "source_hash": "sha256:ed78047017c4581edcbe4f5d83ef7cda78eaa646239233621cf92ff8fa481ce5",
         "source": "Adds +0.5 melee damage per level. Melee attacks cancel out 2 point of armor per level which lasts for 5 seconds after hit.",
@@ -51847,6 +52524,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/general/tconstruct_magnetic.json:/text/1/text": [
       {
+        "source_hash": "sha256:396d688dfeae6668a2a3d7a33ca2617061a5e794fce2aa4263f6a4a0fb2c895e",
+        "source": "Each level adds 1 extra block of range, and increases the speed.",
+        "translation": "Каждый уровень добавляет 1 блок к дальности и увеличивает скорость."
+      },
+      {
         "source_hash": "sha256:ff3c49e6ca3beae65041072796252fd6d7384ae003e7c50f83f96bb2ff44dbe1",
         "source": "Each level adds 1 extra block of range, and increases the speed. Thrown magnetic tools will pull items during their flight.",
         "translation": "Каждый уровень увеличивает дальность на 1 блок и повышает скорость притягивания. Брошенные магнитные инструменты притягивают предметы во время полёта."
@@ -51959,6 +52641,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/general/tconstruct_smelting.json:/effects/0": [
       {
+        "source_hash": "sha256:6986ff1df5b4c2e99417171599bfc4b3a2cbf9fe1b3a22d4cb8db4e3eb1f3f17",
+        "source": "Requires 1 upgrade slot per level",
+        "translation": "Требуется 1 слот для улучшений за уровень"
+      },
+      {
         "source_hash": "sha256:a74a0e442385d44e9b6a90e35e33302328af7c399fda12a8595f19c68aeeacf0",
         "source": "Maximum of 4 levels",
         "translation": "Максимум 4 уровня."
@@ -51976,6 +52663,11 @@
         "source_hash": "sha256:3464a531a38b87712f8608402f9f1d94c9d8c928d27211e36f379007eba5cfe4",
         "source": "Cooks the items inside the tool when the tool is used to deal melee damage, mine blocks, fire arrows, or block damage. Cooks 1 item per level at a time.",
         "translation": "Готовит предметы внутри инструмента, когда им наносят урон в ближнем бою, добывают блоки, выпускают стрелы или блокируют урон. Одновременно готовит по 1 предмету за уровень."
+      },
+      {
+        "source_hash": "sha256:c9b90b97d27661d32c876e1791c3bcd0f7ec173c26e98f318e1ade7916e9b89d",
+        "source": "Cooks the items inside the tool when the tool is used to deal melee damage, mine blocks, fire arrows, or block damage. Cooks 1 item at a time.",
+        "translation": "Готовит предметы внутри инструмента, когда им наносят урон в ближнем бою, добывают блоки, выпускают стрелы или блокируют урон. За раз готовится 1 предмет."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/general/tconstruct_smelting.json:/text/1/text": [
@@ -52011,6 +52703,11 @@
         "source_hash": "sha256:153fd3c7c2ab115cb98c40d29ef2ec591051eaae0b4f67ac4a27ca8be6f37e67",
         "source": "No max level",
         "translation": "Нет максимального уровня"
+      },
+      {
+        "source_hash": "sha256:234c6d456fb3035981513c7d55fdde901dc66d221f95b3bb557443359d6e61da",
+        "source": "Maximum of 5 levels",
+        "translation": "Максимум 5 уровней"
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/general/tconstruct_tank.json:/effects/1": [
@@ -52224,6 +52921,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/melee.json:/text/2/text": [
+      {
+        "source_hash": "sha256:009b8c6759192027c7efdd54932c04971462b48f490e0b89813794ae74458cfa",
+        "source": "Many of these upgrades can also be applied to chestplates with the unarmed modifier. They will only boost attacks with an empty hand.",
+        "translation": "Многие из этих улучшений также можно наложить на нагрудники с модификатором безоружного боя. Они усиливают только атаки пустой рукой."
+      },
       {
         "source_hash": "sha256:8ff8575af7a406de86fa08dccb87a0229effdc770e99b3891ce076bd1e3fc1d5",
         "source": "Many of these upgrades can also be applied to chestplates, which will boost attacks with an empty hand.",
@@ -52512,6 +53214,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/ranged/tconstruct_fiery.json:/text/0/text": [
       {
+        "source_hash": "sha256:3b7ff3dc6c39c0b52e6ced91333f03d1fc7b83eaaf09011fb25d3822317bb18c",
+        "source": "Causes fired arrows to be ignited, burning targets they hit.",
+        "translation": "Выпущенные стрелы загораются и поджигают поражённые цели."
+      },
+      {
         "source_hash": "sha256:877d7ece18168713ca23a5b3fd0b2419aed46e3349a85a0251c32e861769093e",
         "source": "Causes fired arrows to be ignited, burning targets they hit for 5 seconds per level.",
         "translation": "Вызывает воспламенение выпущенных стрел, поджигая цели, по которым они попали, на 5 секунд за уровень."
@@ -52669,6 +53376,11 @@
         "source_hash": "sha256:8ba396c702b33ba9bb615b4d78a1d90459bfc00fb92d53b44c3bc03979a33e2a",
         "source": "Arrows cancel out 2 point of armor per level which lasts for 5 seconds after hit.",
         "translation": "Стрелы снимают 2 очка брони за уровень, которые действуют в течение 5 секунд после попадания."
+      },
+      {
+        "source_hash": "sha256:a231fe9136185113ec871390f1a7d6d32afc3acdbed2758e40076c1e09b46070",
+        "source": "Arrows cancel out 1 point of armor per level.",
+        "translation": "Стрелы игнорируют 1 единицу брони за уровень."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/ranged/tconstruct_power.json:/effects/0": [
@@ -52708,6 +53420,11 @@
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/ranged/tconstruct_punch.json:/effects/0": [
       {
+        "source_hash": "sha256:234c6d456fb3035981513c7d55fdde901dc66d221f95b3bb557443359d6e61da",
+        "source": "Maximum of 5 levels",
+        "translation": "Максимум 5 уровней"
+      },
+      {
         "source_hash": "sha256:a5319476fbdb64b586d46514aed7ee03babc61ceba27518cb29b165da3cb0e01",
         "source": "Maximum of 3 levels",
         "translation": "Максимум 3 уровня."
@@ -52721,6 +53438,11 @@
       }
     ],
     "mantle-book:tconstruct:encyclopedia:upgrades/ranged/tconstruct_punch.json:/text/0/text": [
+      {
+        "source_hash": "sha256:2713986b57ae0577b5d46c201a970dc8e581312abf6a0f97e8fc2cfd27b4493e",
+        "source": "Increases the knockback dealt by arrows each level.",
+        "translation": "С каждым уровнем стрелы отбрасывают цели сильнее."
+      },
       {
         "source_hash": "sha256:4664c207c98e87963af5e0150798e115ad178bcc41ab1a1214cbd8922ae2099d",
         "source": "Increases the knockback dealt by arrows and the distance fishing rods pull mobs each level.",
@@ -52956,6 +53678,11 @@
         "source_hash": "sha256:3f68bcb439fe2f40e83d80c7483cbcea1457ca08b48cc594ea2b98174a64d014",
         "source": "\"But Nemea, how do I get a blaze into a smeltery?\". If you were that nerd Melvin, you might suggest \"Drink fire resistance then use a piggybackpack or bonking.\" Perfect if you want to get burnt to a crisp.",
         "translation": "«Но, Немея, как мне поместить ифрита в плавильню?» Будь ты тем занудой Мелвином, ты бы предложил выпить зелье огнестойкости, а затем воспользоваться свино-рюкзаком или отбрасыванием. Идеальный способ сгореть дотла."
+      },
+      {
+        "source_hash": "sha256:8a38beac687b326a687a72c0649f2aa49b8e268d732c1e9c7479352c35cc7466",
+        "source": "\"But Nemea, how do I get a blaze into a smeltery?\". If you were that nerd Melvin, you might suggest \"Drink fire resistance then use a piggybackpack or an ichor sling.\" Perfect if you want to get burnt to a crisp.",
+        "translation": "«Но, Немея, как мне поместить всполоха в плавильню?» Будь ты тем занудой Мелвином, ты бы предложил выпить зелье огнестойкости, а затем воспользоваться свино-рюкзаком или ихоровой рогаткой. Идеальный способ сгореть дотла."
       }
     ],
     "mantle-book:tconstruct:fantastic_foundry:blazing_blood/carry.json:/title": [
@@ -53296,6 +54023,11 @@
     ],
     "mantle-book:tconstruct:fantastic_foundry:foundry/scorched_drain.json:/text/1/text": [
       {
+        "source_hash": "sha256:5f8a115decc8a6b625ef6bae2441d938f0a1f093a14d3bc0775768d42cfca76d",
+        "source": "The fluid rendered in the middle of the drain will be the next one to pour out.",
+        "translation": "Жидкость, показанная в центре слива, выльется следующей."
+      },
+      {
         "source_hash": "sha256:f7da56f6ad6e5d8d09acffa5b4ebfa0d69badd3362cdfce4cbb84ad26d8d9bc2",
         "source": "The fluid shown in the middle of the drain will be the next one to pour out.",
         "translation": "Жидкость, оказавшаяся в центре слива, будет следующей, которая выльется."
@@ -53439,6 +54171,11 @@
         "source_hash": "sha256:8c66079a088c752a5952822623b647fc3b2df896fc9e1342846613d97188d360",
         "source": "Tanks are good for storing molten fluids or fuels. If you want to melt metals in your foundry you'll need one! Tanks cannot be used for the floor of the foundry.",
         "translation": "Резервуары подходят для хранения расплавленных жидкостей и топлива. Чтобы плавить металлы в литейной печи, понадобится хотя бы один! Резервуары нельзя использовать в полу литейной печи."
+      },
+      {
+        "source_hash": "sha256:f044c9218d9cd5807574f8c1521485cd6072b0a596a6b54812f214bfa98ef28d",
+        "source": "Tanks are good for storing molten fluids or fuels. If you want to melt metals in your foundry you'll need one! Tanks can also be poured into from the foundry if you want to store stuff for later.",
+        "translation": "Резервуары предназначены для хранения расплавленных жидкостей и топлива. Чтобы плавить металлы в литейной печи, понадобится резервуар! В них также можно переливать жидкость из литейной печи, чтобы сохранить её на потом."
       }
     ],
     "mantle-book:tconstruct:fantastic_foundry:foundry/tanks.json:/text/1/text": [
@@ -53446,6 +54183,11 @@
         "source_hash": "sha256:21722da002923a43e837d5216e77107eb7bc413cf8e5a626a4f849a8913c570d",
         "source": "Tanks can be filled from buckets, potions, and can also be poured into from faucets. They can also be used to cast without a foundry. Pistons break them, and dispensers can place them.",
         "translation": "Резервуары можно наполнять из вёдер и бутылочек с зельями, а также через краны. В них можно отливать предметы без литейной печи. Поршни разбивают резервуары, а раздатчики могут их устанавливать."
+      },
+      {
+        "source_hash": "sha256:d3064700d84d92a533df0bc970989e86f0ccf984e6a44f891685994a70ee6ecc",
+        "source": "Tanks cannot be used for the floor of the foundry.",
+        "translation": "Резервуары нельзя использовать для пола литейной печи."
       }
     ],
     "mantle-book:tconstruct:fantastic_foundry:foundry/tanks.json:/title": [
@@ -53950,6 +54692,11 @@
         "source_hash": "sha256:27972b19dde0d4e8c5a929d4967141d6ab2948a77254702709af16723962ae9b",
         "source": "Change your mind about a tool? You can use some venom to disassemble it in the part builder to salvage one of the tool parts. You can potentially salvage a second part, with a higher chance on repaired tools. Daggers require stacking to 2 in order to recycle.",
         "translation": "Передумали использовать инструмент? Разберите его с помощью яда в конструкторе деталей, чтобы вернуть одну деталь. Иногда удаётся вернуть и вторую; для отремонтированных инструментов шанс выше. Чтобы переработать кинжалы, сложите их по 2."
+      },
+      {
+        "source_hash": "sha256:c1545367485610982ef9596eb65b66bbd2e63e89f8f819f0c672def4cf8e05c0",
+        "source": "If you change your mind about a tool, you can always disassemble it in the part builder to salvage one of the tool parts. You can potentially salvage a second part, with a higher chance on repaired tools. Daggers require stacking to 2 in order to recycle.",
+        "translation": "Передумали использовать инструмент? Разберите его в конструкторе деталей, чтобы вернуть одну деталь. Иногда удаётся вернуть и вторую; для отремонтированных инструментов шанс выше. Чтобы переработать кинжалы, сложите их по 2."
       }
     ],
     "mantle-book:tconstruct:materials_and_you:tools/recycling.json:/title": [
@@ -54617,6 +55364,41 @@
         "translation": "Это блестящая идея."
       }
     ],
+    "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_long_fall.json:/effects/0": [
+      {
+        "source_hash": "sha256:304e38658a90ffdcde93723d79c9f07176361950f9b7393f6f45029f9e7c135a",
+        "source": "Prevents all fall damage",
+        "translation": "Полностью предотвращает урон от падения"
+      }
+    ],
+    "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_long_fall.json:/effects/1": [
+      {
+        "source_hash": "sha256:825b5592b5932a8fcdf11cf02e4e78c416895ba0e0ac5266b6ef85f49cede4b2",
+        "source": "Requires Feather Falling IV",
+        "translation": "Требуется «Невесомость IV»"
+      }
+    ],
+    "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_long_fall.json:/effects/2": [
+      {
+        "source_hash": "sha256:a9875ac8991d109dcb62e15a6c2edf4925537322b64dc11266513d9354274d8c",
+        "source": "Single level",
+        "translation": "Один уровень"
+      }
+    ],
+    "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_long_fall.json:/effects/3": [
+      {
+        "source_hash": "sha256:9054648401154dbc81e695699f3000a2016b0de218c5d880c2204f187d4105e5",
+        "source": "Requires 1 ability slot",
+        "translation": "Требуется 1 слот для умений"
+      }
+    ],
+    "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_long_fall.json:/text/0/text": [
+      {
+        "source_hash": "sha256:32e00ea1765a20196081f6ca215444944e55ad30427924826fbe96a3b1322435",
+        "source": "Go ahead and try to land on your head. Ha! you can't do it!",
+        "translation": "Попробуйте приземлиться на голову. Ха! Не получится!"
+      }
+    ],
     "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_pathing.json:/effects/0": [
       {
         "source_hash": "sha256:32ab9174035796acc4c32602a5838a3fcf57da983a708d3b729334b9260929c6",
@@ -54986,9 +55768,19 @@
         "source_hash": "sha256:224c33723654475a5ea88c65031ecb693aea802e4d7a959d58b23fa14a7ef3cc",
         "source": "Requires 1 ability slot per level",
         "translation": "Требуется 1 слот способностей на каждый уровень."
+      },
+      {
+        "source_hash": "sha256:a9875ac8991d109dcb62e15a6c2edf4925537322b64dc11266513d9354274d8c",
+        "source": "Single level",
+        "translation": "Один уровень"
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/armor/helmet/tconstruct_slurping.json:/effects/3": [
+      {
+        "source_hash": "sha256:9054648401154dbc81e695699f3000a2016b0de218c5d880c2204f187d4105e5",
+        "source": "Requires 1 ability slot",
+        "translation": "Требуется 1 слот для умений"
+      },
       {
         "source_hash": "sha256:c4026f9b3aa580f3ebbaa737b878c4b4f50165c409e1a243b1539d32974f9ca5",
         "source": "Higher levels drink more fluid for stronger effects",
@@ -55000,6 +55792,13 @@
         "source_hash": "sha256:061920a78df6c57b77dc17dbbf3073f06bb72efca148fe1c581654af3d491914",
         "source": "He was number one!",
         "translation": "Он был номером один!"
+      }
+    ],
+    "mantle-book:tconstruct:mighty_smelting:abilities/armor/helmet/tconstruct_slurping.json:/text/1/text": [
+      {
+        "source_hash": "sha256:11991fff8075f5c98132964d14233754b229c51b732f2c59470c41d554d7c598",
+        "source": "Right clicking a tank while holding the tool fills it with fluid.",
+        "translation": "Нажмите ПКМ по резервуару со шлемом в руке, чтобы наполнить шлем жидкостью."
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/armor/leggings/tconstruct_crafting_table.json:/effects/0": [
@@ -55739,12 +56538,22 @@
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/interact/tconstruct_glowing.json:/effects/0": [
       {
+        "source_hash": "sha256:49f817f2e63eba0cc89cb28ed23ade5250ba7c6c3c662715ce74675a3978f7b5",
+        "source": "Interact to place glows",
+        "translation": "При использовании размещает свечение"
+      },
+      {
         "source_hash": "sha256:92937c89ea4d05124afa5a2dc6c22237fdd58d7f7d347623c659380627a2ac59",
         "source": "Interact to place glows, consuming durability",
         "translation": "Взаимодействуйте, чтобы создать свечение, потребляющее прочность."
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/interact/tconstruct_glowing.json:/effects/1": [
+      {
+        "source_hash": "sha256:27756f4cd452edc7805e6b109ebfa95ed96688e4cd90f3bfc569a66617ed910d",
+        "source": "Placing glows consumes durability",
+        "translation": "Размещение свечения расходует прочность"
+      },
       {
         "source_hash": "sha256:872032ee3f3a3e19d560c30e9e0737fca4e61aed1c4f9343299a8aab983745ba",
         "source": "Bows can place glows by consuming arrows",
@@ -56502,6 +57311,11 @@
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/ranged/tconstruct_trick_quiver.json:/effects/3": [
       {
+        "source_hash": "sha256:a9875ac8991d109dcb62e15a6c2edf4925537322b64dc11266513d9354274d8c",
+        "source": "Single level",
+        "translation": "Один уровень"
+      },
+      {
         "source_hash": "sha256:ab87b97701809e4a70ac768847753e79495a0352275bebbdd2f820731338b827",
         "source": "Multiple levels, each level adds more arrows",
         "translation": "Несколько уровней, на каждом уровне добавляется больше стрелок."
@@ -56512,6 +57326,11 @@
         "source_hash": "sha256:224c33723654475a5ea88c65031ecb693aea802e4d7a959d58b23fa14a7ef3cc",
         "source": "Requires 1 ability slot per level",
         "translation": "Требуется 1 слот способностей на каждый уровень."
+      },
+      {
+        "source_hash": "sha256:9054648401154dbc81e695699f3000a2016b0de218c5d880c2204f187d4105e5",
+        "source": "Requires 1 ability slot",
+        "translation": "Требуется 1 слот для умений"
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/ranged/tconstruct_trick_quiver.json:/text/0/text": [
@@ -56834,9 +57653,19 @@
         "source_hash": "sha256:3ff36d111d1fe7510da37e14118d56cf54fe499397f1a5aeaa6cd0f158b18862",
         "source": "Adds 1 heart per level",
         "translation": "Добавляет 1 сердце за уровень."
+      },
+      {
+        "source_hash": "sha256:b6522dc564bcba54a3be4f9d4836c2cb7fd802f8824108bdf3a426bb02455e8b",
+        "source": "Can apply levels incrementally",
+        "translation": "Можно добавлять уровни постепенно"
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:defense/special/tconstruct_revitalizing.json:/effects/1": [
+      {
+        "source_hash": "sha256:234c6d456fb3035981513c7d55fdde901dc66d221f95b3bb557443359d6e61da",
+        "source": "Maximum of 5 levels",
+        "translation": "Максимум 5 уровней"
+      },
       {
         "source_hash": "sha256:b6522dc564bcba54a3be4f9d4836c2cb7fd802f8824108bdf3a426bb02455e8b",
         "source": "Can apply levels incrementally",
@@ -56844,6 +57673,11 @@
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:defense/special/tconstruct_revitalizing.json:/effects/2": [
+      {
+        "source_hash": "sha256:0695727ab31ef3fb8371ff9d71919f4f1b3e0ba959db4620a8ffe51df6d41d1b",
+        "source": "Requires 1 defense slot per level",
+        "translation": "Требуется 1 слот защиты за уровень"
+      },
       {
         "source_hash": "sha256:234c6d456fb3035981513c7d55fdde901dc66d221f95b3bb557443359d6e61da",
         "source": "Maximum of 5 levels",
@@ -57216,6 +58050,11 @@
     ],
     "mantle-book:tconstruct:mighty_smelting:smeltery/seared_drain.json:/text/1/text": [
       {
+        "source_hash": "sha256:5f8a115decc8a6b625ef6bae2441d938f0a1f093a14d3bc0775768d42cfca76d",
+        "source": "The fluid rendered in the middle of the drain will be the next one to pour out.",
+        "translation": "Жидкость, показанная в центре слива, выльется следующей."
+      },
+      {
         "source_hash": "sha256:f7da56f6ad6e5d8d09acffa5b4ebfa0d69badd3362cdfce4cbb84ad26d8d9bc2",
         "source": "The fluid shown in the middle of the drain will be the next one to pour out.",
         "translation": "Жидкость, оказавшаяся в центре слива, будет следующей, которая выльется."
@@ -57349,6 +58188,11 @@
     ],
     "mantle-book:tconstruct:mighty_smelting:smeltery/tanks.json:/text/0/text": [
       {
+        "source_hash": "sha256:635a20508f411f09621c22931fd1ab389321e7de270fce300070be59cee6299e",
+        "source": "Tanks are good for storing molten fluids or fuels. If you want to melt metals in your smeltery you'll need one! Tanks can be filled from buckets, potions, and can also be poured into from the smeltery if you want to store stuff for later or cast without a smeltery.",
+        "translation": "Резервуары предназначены для хранения расплавленных жидкостей и топлива. Чтобы плавить металлы в плавильне, понадобится резервуар! Их можно наполнять из вёдер и бутылочек с зельями, а также переливать в них жидкость из плавильни, чтобы сохранить её на потом или отливать без плавильни."
+      },
+      {
         "source_hash": "sha256:e9475223c54693a548ae418ef8dfffe89c40bc400a3e6155e18bdaf4117c535f",
         "source": "Tanks are good for storing molten fluids or fuels. If you want to melt metals in your smeltery you'll need one! However, they cannot be placed in the smeltery floor.",
         "translation": "Резервуары подходят для хранения расплавленных жидкостей и топлива. Чтобы плавить металлы в плавильне, понадобится хотя бы один! Их нельзя размещать в полу плавильни."
@@ -57359,6 +58203,11 @@
         "source_hash": "sha256:0d31c2b730ad19388dd3798f45fa4692f9c99c82da31686531be7cea30c64941",
         "source": "Tanks can be filled from buckets, potions, and can also be poured into from faucets. They can also be used to cast without a smeltery. Pistons break them, and dispensers can place them.",
         "translation": "Резервуары можно наполнять из вёдер и бутылочек с зельями, а также через краны. В них можно отливать предметы без плавильни. Поршни разбивают резервуары, а раздатчики могут их устанавливать."
+      },
+      {
+        "source_hash": "sha256:6513a0b9884bbb6915b3e2ce06a8964d362daa44be96d7a64927bc019f073585",
+        "source": "Tanks cannot be used for the floor of the smeltery.",
+        "translation": "Резервуары нельзя использовать для пола плавильни."
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:smeltery/tanks.json:/title": [
@@ -58063,12 +58912,22 @@
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_boots.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 свойства материала"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_boots.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -58126,12 +58985,22 @@
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_chestplate.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 свойства материала"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_chestplate.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -58189,12 +59058,22 @@
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_helmet.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 свойства материала"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_helmet.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -58252,12 +59131,22 @@
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_leggings.json:/properties/5": [
       {
+        "source_hash": "sha256:76d4531d6840a48aa74f4276acad42cbe0a3fd3788c06d33e7b4b7dc968a6f54",
+        "source": "1 Material Trait",
+        "translation": "1 свойство материала"
+      },
+      {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
         "translation": "2 свойства материала"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_leggings.json:/properties/6": [
+      {
+        "source_hash": "sha256:1cf6473e0d6b2dfd4e939419fce5cf4d17fb46ee64f0d7017e6dca4413f7bc60",
+        "source": "Insulated & Tanned",
+        "translation": "«Изолированный» и «Дублённый»"
+      },
       {
         "source_hash": "sha256:60e1bedf9bf5bb9ef22ce020e67574f4ecdd52efd458a5216a2d82141376aac4",
         "source": "Insulated",
@@ -58304,6 +59193,11 @@
         "source_hash": "sha256:2b81cd5b0166137585fede4626d22120c23777d557baa1bfbd658ba834672436",
         "source": "2 Upgrade Slots",
         "translation": "2 слота для улучшений"
+      },
+      {
+        "source_hash": "sha256:a32fd0ca172734a802d52bc7baa037f7e3562413f37372bee2fdfa73352071f7",
+        "source": "3 Upgrade Slots",
+        "translation": "3 слота для улучшений"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_shield.json:/properties/4": [
@@ -58321,6 +59215,11 @@
       }
     ],
     "mantle-book:tconstruct:puny_smelting:armor/tconstruct_travelers_shield.json:/properties/6": [
+      {
+        "source_hash": "sha256:6e72e558ba1dff61a4ce25055b88abeae2b26ff783a3e3ed5e20833ba5beaecd",
+        "source": "Tanned",
+        "translation": "«Дублённый»"
+      },
       {
         "source_hash": "sha256:bad15bc9643c0b300067fce46a561dac97981540cad1152777ff24b69eaa92fb",
         "source": "2 Material Traits",
@@ -58654,6 +59553,27 @@
         "source_hash": "sha256:0f044feb6ca7d6764650e6b800425a84b5ea518d6f531ee92c3995d6c3eca11e",
         "source": "Operation",
         "translation": "Функциональность"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:movingfluids/casting_tank.json:/text/0/text": [
+      {
+        "source_hash": "sha256:655c926d2471f6ac9ff709c5353a14455922c524216c70a44be0fbd3bb747e03",
+        "source": "The casting tank is ideal for automatically filling or emptying simple fluid containers such as buckets, bowls, or bottles. Works with hoppers, faucets, and channels.",
+        "translation": "Литейный резервуар идеально подходит для автоматического наполнения и опорожнения простых ёмкостей: вёдер, мисок и бутылочек. Работает с воронками, кранами и каналами."
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:movingfluids/casting_tank.json:/text/1/text": [
+      {
+        "source_hash": "sha256:b28d738b7912dd8e078eadbf6182f5794045f837239b5bdf5dc948ac8ebcf6eb",
+        "source": "Interacting with the top allows placing items inside, and interacting wit the bottom lets you place fluids. Does not work well with tools, the tinker tank may serve you better.",
+        "translation": "Взаимодействие с верхней частью позволяет поместить предмет внутрь, а с нижней — залить жидкость. Для инструментов подходит плохо; лучше воспользуйтесь резервуаром литейщика."
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:movingfluids/casting_tank.json:/title": [
+      {
+        "source_hash": "sha256:5fca3cb3f7b1787a1788de0e6280b410db15c6cb3943dbb711a9e2a6a418bda5",
+        "source": "Casting Tank",
+        "translation": "Литейный резервуар"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:movingfluids/channel.json:/text/0/text": [
@@ -59015,6 +59935,11 @@
     ],
     "mantle-book:tconstruct:puny_smelting:slotless/bonus/tconstruct_rebalanced.json:/text/1/text": [
       {
+        "source_hash": "sha256:7e134a01ca2ebd651cc773ec393aafb47d05ce00de12f1f8d86d458788d7620f",
+        "source": "\nThe balance of power is actually the scale of a dragon. Ancient gilding is surprisingly close though. --Thruul M'Gon.",
+        "translation": "\nБаланс сил — это на самом деле драконья чешуйка. Впрочем, древняя позолота тоже почти подходит. --Труул М'Гон."
+      },
+      {
         "source_hash": "sha256:c5ac074a99bfe3bb11fdc1dad447cdf13361814aa4c1224921e805b3c6d8fe05",
         "source": "\nThe balance of power is actually the scale of a dragon. Well, the life of a dragon, through the crystal that revives it. --Thruul M'Gon.",
         "translation": "Баланс сил на самом деле соответствует масштабу дракона. Ну и жизнь дракона, через кристалл, который его оживляет. --Труул М'Гон."
@@ -59074,6 +59999,27 @@
         "source_hash": "sha256:b5a3175a3e1600207d3d5de1bc50c6c0105507e18f2afcdca59d7a0e9f447494",
         "source": "Direct the arrow back in the direction it was already going.",
         "translation": "Направьте стрелку обратно в том направлении, в котором она уже шла."
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/bonus/tconstruct_resurrected.json:/effects/0": [
+      {
+        "source_hash": "sha256:9b7a380d3ccdcd6ce7c26678b170d54d46889ca0d1775492cb40c3d920553919",
+        "source": "Adds an upgrade slot",
+        "translation": "Добавляет слот для улучшений"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/bonus/tconstruct_resurrected.json:/effects/1": [
+      {
+        "source_hash": "sha256:a9875ac8991d109dcb62e15a6c2edf4925537322b64dc11266513d9354274d8c",
+        "source": "Single level",
+        "translation": "Один уровень"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/bonus/tconstruct_resurrected.json:/text/0/text": [
+      {
+        "source_hash": "sha256:01a1505f33be2c613353ff42ab6cb00cda2f6dd648ae1cd52763a42aefba393d",
+        "source": "The life of the dragon flows through your tool. Well, it would if you used these to summon it. Instead you used it on your tool.",
+        "translation": "Жизненная сила дракона течёт через ваш инструмент. Точнее, текла бы, если бы вы использовали эти предметы для призыва дракона. Но вы применили их к инструменту."
       }
     ],
     "mantle-book:tconstruct:puny_smelting:slotless/bonus/tconstruct_writable.json:/effects/0": [
@@ -59454,7 +60400,138 @@
         "translation": "Для любителей дальнего боя."
       }
     ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_dyed.json:/effects/0": [
+      {
+        "source_hash": "sha256:5d001a7ea3405a24cf32df15c60665e834cbb30fe7fdebd2c6e8f2e39ec217d1",
+        "source": "Can use dyes to change the color of the tool",
+        "translation": "Красители позволяют менять цвет инструмента"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_dyed.json:/effects/1": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_dyed.json:/effects/2": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_dyed.json:/text/0/text": [
+      {
+        "source_hash": "sha256:85cdbc4760f9ccdb60a43219b58edb77a52d0f1a5235091f6a8dce7c6e972b76",
+        "source": "Does it come in black?",
+        "translation": "Он бывает чёрного цвета?"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_embellishment.json:/effects/0": [
+      {
+        "source_hash": "sha256:e3c761f844356f890a00d372acfec644f62528281877160d486ce5390d03b2b3",
+        "source": "Changes the appearance of armor, shields, and staffs",
+        "translation": "Изменяет внешний вид брони, щитов и посохов"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_embellishment.json:/effects/1": [
+      {
+        "source_hash": "sha256:8cbe8b4d2c3afe3464daea295c186df3c099c3d7e3eabff4142b6d2fe7af2763",
+        "source": "Use wood to embellish staffs and shields",
+        "translation": "Используйте древесину для украшения посохов и щитов"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_embellishment.json:/effects/2": [
+      {
+        "source_hash": "sha256:687307db015c3b0bfe5e9e4a11f115f047913c686c02551274bf9721f71b3a79",
+        "source": "Use congealed slime to embellish slime",
+        "translation": "Используйте застывшую слизь для украшения слизневых доспехов"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_embellishment.json:/effects/3": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_embellishment.json:/effects/4": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_embellishment.json:/text/0/text": [
+      {
+        "source_hash": "sha256:56eb002607e319ff9624e8da67da3f5e23a83ae3427738cb9804becd466f41ca",
+        "source": "The original cosmetic to change the appearance of tools and armor!",
+        "translation": "Первый косметический модификатор, изменяющий внешний вид инструментов и брони!"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_farsighted.json:/effects/0": [
+      {
+        "source_hash": "sha256:39b70401a6d5bef9e598aeaae29d3d7191385697445554bd2929276672133663",
+        "source": "Decreases FOV on the held tool or worn armor",
+        "translation": "Уменьшает FOV на удерживаемом инструменте или надетой броне"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_farsighted.json:/effects/1": [
+      {
+        "source_hash": "sha256:be4a533c2172a8671007c1eb08e45857683a2e1717aa6fc500390f509db0e5ab",
+        "source": "Multiple levels",
+        "translation": "Несколько уровней"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_farsighted.json:/effects/2": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_farsighted.json:/text/0/text": [
+      {
+        "source_hash": "sha256:52be1ad19bddae3d04c2b0735ece5cd41ec2bb749aaa8357646dcd1be840f87e",
+        "source": "Manyullyn is a great material, but there are many good materials that are easier to access, take some time and try them out before rushing to the end.",
+        "translation": "Маньюллин — отличный материал, но многие достойные материалы добыть проще. Не спешите в Край: сначала испытайте их."
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_nearsighted.json:/effects/0": [
+      {
+        "source_hash": "sha256:4787285ca2902dcfeb070c1031cfbf4029083bf0406ef8be440ba0116b997966",
+        "source": "Increases FOV on the held tool or worn armor",
+        "translation": "Увеличивает FOV на удерживаемом инструменте или надетой броне"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_nearsighted.json:/effects/1": [
+      {
+        "source_hash": "sha256:be4a533c2172a8671007c1eb08e45857683a2e1717aa6fc500390f509db0e5ab",
+        "source": "Multiple levels",
+        "translation": "Несколько уровней"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_nearsighted.json:/effects/2": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_nearsighted.json:/text/0/text": [
+      {
+        "source_hash": "sha256:88596e52a13b80f580548796d1697798dc90cbbd6f9c4967b5bc0f55616d5383",
+        "source": "You need to move on from cobblestone tools eventually.",
+        "translation": "В конце концов вам придётся отказаться от инструментов из булыжника."
+      }
+    ],
     "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_offhanded.json:/effects/0": [
+      {
+        "source_hash": "sha256:a7b71fc645c4e9b5fa6b7a0c4d69075aa672531b70b5e4487285ddea58aa8911",
+        "source": "Disables tool's interaction when offhand is occupied",
+        "translation": "Отключает взаимодействие инструмента, если занята вторая рука"
+      },
       {
         "source_hash": "sha256:a8d1ab021acc97d2d5d3e734928692fae6e3df709d5cfd8ebcc629f7cb808026",
         "source": "Disables interaction when offhand is occupied",
@@ -59466,6 +60543,11 @@
         "source_hash": "sha256:32472d5947b5da21afeb95d52f0c4dc1fe67f124fb335dea34f70b73cd1d9404",
         "source": "Level 2 fully disables interactions",
         "translation": "Уровень 2 полностью отключает взаимодействие."
+      },
+      {
+        "source_hash": "sha256:cf5cc80bac68364b9543307ff616a4898622d4cfd3f8b5ccee49d3dd7789a746",
+        "source": "Second level fully disables interactions",
+        "translation": "На втором уровне полностью отключает взаимодействия"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_offhanded.json:/effects/2": [
@@ -59473,6 +60555,11 @@
         "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
         "source": "Slotless",
         "translation": "Без слотов"
+      },
+      {
+        "source_hash": "sha256:f9b54a82a08e6a336f8c9a8313eb61cbbb09ac23e4b8c8a6e392d43c2f302be9",
+        "source": "Maximum of 2 levels",
+        "translation": "Максимум 2 уровня"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_offhanded.json:/text/0/text": [
@@ -59524,6 +60611,76 @@
         "translation": "Это обновление немного перебор, не правда ли?"
       }
     ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_shiny.json:/effects/0": [
+      {
+        "source_hash": "sha256:296c3ae4ee010a25f399b14b94f146ca388a23ce55ac31f0257311433cb61530",
+        "source": "It makes your tool glimmer",
+        "translation": "Заставляет инструмент мерцать"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_shiny.json:/effects/1": [
+      {
+        "source_hash": "sha256:d3d8442a5abf19aa75b564489e25b31450644590ac3d272934d5c2775a66bd56",
+        "source": "That's literally it",
+        "translation": "И это буквально всё"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_shiny.json:/effects/2": [
+      {
+        "source_hash": "sha256:c80b041f5d1d11574f40bd79c2ea8f64cfc47a49c6b8846abed3c294931a7946",
+        "source": "Legendary",
+        "translation": "Легендарный"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_shiny.json:/effects/3": [
+      {
+        "source_hash": "sha256:116b2bfe6192d219279d1848a4eada2aef90cf4d9cd05de656f39d65f4c23d49",
+        "source": "Darkosto is §4§lNOT§r legendarily legendary.",
+        "translation": "Darkosto §4§lНЕ§r легендарная легенда."
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_shiny.json:/text/0/text": [
+      {
+        "source_hash": "sha256:4fc8f1c092cbbf0d248ab0b73ef5064495985513adbc6ac9a7b597c3cc6e7e99",
+        "source": "This legendary modifier holds the legendary power of the legendary enchanted golden apple. And with a legendary name such as §dShiny§r, what could possibly go wrong? This will be legendary!",
+        "translation": "Этот легендарный модификатор содержит легендарную силу легендарного зачарованного золотого яблока. А что может пойти не так с таким легендарным именем, как §dБлестящий§r? Это будет легендарно!"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_trim.json:/effects/0": [
+      {
+        "source_hash": "sha256:76cd502b1eac6556dc61319df5430929beb38d8ab5c8fa574915019dca7a989f",
+        "source": "Adds decorative edges to your armor",
+        "translation": "Добавляет декоративную отделку по краям брони"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_trim.json:/effects/1": [
+      {
+        "source_hash": "sha256:f5b520ac097bf6f317579532b18d7610e57764205a7d3d747a7e75cd82fb92eb",
+        "source": "The combination of template and material chooses the design",
+        "translation": "Сочетание шаблона и материала определяет узор"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_trim.json:/effects/2": [
+      {
+        "source_hash": "sha256:fc56159c7d03073c2cf75368369b6cdcdab932e56541ecd715eae1eafc8f24f3",
+        "source": "Multi-use",
+        "translation": "Многоразовый"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_trim.json:/effects/3": [
+      {
+        "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
+        "source": "Slotless",
+        "translation": "Не требует слота"
+      }
+    ],
+    "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_trim.json:/text/0/text": [
+      {
+        "source_hash": "sha256:784d273715993bf6048d36226d5a8f63d39655f5776c47d17b836f674710e889",
+        "source": "An expensive way to really deck out your armor.",
+        "translation": "Недешёвый способ как следует украсить броню."
+      }
+    ],
     "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_workbench.json:/effects/0": [
       {
         "source_hash": "sha256:6e728b6f6c85df3e63700ccefde8af209b98efc56d2b791a7f1e52ca7df9cdbd",
@@ -59571,9 +60728,19 @@
         "source_hash": "sha256:750db518cb8ac7089bd049f4db92f0bb703e4f066da4ef181e1bf642add9fa6e",
         "source": "Single Level",
         "translation": "Один уровень"
+      },
+      {
+        "source_hash": "sha256:879bab3f4213d002f1d7cbbd8d526757ce17e41f7e566611988dd6dd758c6e08",
+        "source": "Single Use",
+        "translation": "Однократное применение"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:slotless/general/tconstruct_worldbound.json:/effects/3": [
+      {
+        "source_hash": "sha256:c9baf72c25b046d4fdb83f0a22d073d1262d377699353e25c55828f11452852f",
+        "source": "Requires no slot",
+        "translation": "Не требует слота"
+      },
       {
         "source_hash": "sha256:ef3ed76fa3649bbddec4a61425c87017a4f537dab539f259133151ca68baf6dd",
         "source": "Slotless",
@@ -60187,6 +61354,11 @@
         "source_hash": "sha256:16acfe35a8eef4f15c8bc372e74e79108240b782de0d7a798868b03911311f10",
         "source": "First level requires 1 upgrade slot",
         "translation": "Для первого уровня требуется 1 слот для улучшений."
+      },
+      {
+        "source_hash": "sha256:6986ff1df5b4c2e99417171599bfc4b3a2cbf9fe1b3a22d4cb8db4e3eb1f3f17",
+        "source": "Requires 1 upgrade slot per level",
+        "translation": "Требуется 1 слот для улучшений за уровень"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/armor/leggings/tconstruct_leaping.json:/effects/3": [
@@ -60891,6 +62063,11 @@
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/general/tconstruct_smelting.json:/effects/2": [
       {
+        "source_hash": "sha256:706edecea36ccbe4e5977e0d928c664d5d1e14a529387decc5a6e92711b26fbd",
+        "source": "Multiple levels, each level adds another slot",
+        "translation": "Несколько уровней, каждый добавляет ещё один слот"
+      },
+      {
         "source_hash": "sha256:7361b5edafbcf5d785057a83e62d6cf683ec45b93b96c5aa04876cfd5df6c0c4",
         "source": "Multiple levels, each smelts more items at once",
         "translation": "Несколько уровней, на каждом из которых одновременно выплавляется больше предметов."
@@ -61559,6 +62736,11 @@
         "source_hash": "sha256:bd1a4bce46651c93b7345ebfd5b99d94196645f5f925975c2f463adf21fd0e36",
         "source": "Allows arrows to keep going after hitting a target",
         "translation": "Позволяет стрелам продолжать движение после попадания в цель."
+      },
+      {
+        "source_hash": "sha256:ca4830bef051d4acbf359d24eb6f1ed4717ba5578d9d1d2970c4a024063fe84e",
+        "source": "Increases damage of projectiles fired from crossbows",
+        "translation": "Увеличивает урон снарядов из арбалетов"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/ranged/tconstruct_impaling.json:/effects/1": [
@@ -61566,6 +62748,11 @@
         "source_hash": "sha256:667c7afa47e2f7d716239a043493f4957287cd3aaa9abf5a7dcd97f0d3d4dbd7",
         "source": "Multiple levels, each can pierce another target",
         "translation": "Несколько уровней, каждый из которых может пробить другую цель."
+      },
+      {
+        "source_hash": "sha256:954b07e00f8d68811c69682077a66157bc6ed0edbe978e5f6c3a13aa9174f5cf",
+        "source": "Multiple levels, each level increases damage further",
+        "translation": "Несколько уровней, каждый ещё сильнее увеличивает урон"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/ranged/tconstruct_impaling.json:/effects/2": [
@@ -61720,9 +62907,19 @@
         "source_hash": "sha256:a8010f5ec427ce9785ebf13e5fd5d4aed9b408bab41abef3a98e8d611d4a2309",
         "source": "Makes fishing rods pull stronger",
         "translation": "Усиливает натяжение удочки."
+      },
+      {
+        "source_hash": "sha256:acd008d6ac1c74e64440499de067db3ab998fa6ff92680a83efcf68cc7710f4f",
+        "source": "Multiple levels, each level increases knockback further",
+        "translation": "Несколько уровней, каждый ещё сильнее увеличивает отбрасывание"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/ranged/tconstruct_punch.json:/effects/2": [
+      {
+        "source_hash": "sha256:6986ff1df5b4c2e99417171599bfc4b3a2cbf9fe1b3a22d4cb8db4e3eb1f3f17",
+        "source": "Requires 1 upgrade slot per level",
+        "translation": "Требуется 1 слот для улучшений за уровень"
+      },
       {
         "source_hash": "sha256:acd008d6ac1c74e64440499de067db3ab998fa6ff92680a83efcf68cc7710f4f",
         "source": "Multiple levels, each level increases knockback further",
@@ -62102,6 +63299,11 @@
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:ancient/tconstruct_melting_pan.json:/text/0/text": [
       {
+        "source_hash": "sha256:cecbb23be1516355bf7ee4625370c3c7d6578dedee4a109dac7ed894ef04c710",
+        "source": "The melting pan will melt your blocks and hold fluid for your staffly goals. It can be found from dungeons, igloos, husks, and as a gift from villagers.",
+        "translation": "Сковородка плавит блоки и хранит жидкость для ваших затей с посохом. Её можно найти в подземельях и иглу, получить с кадавров или в подарок от жителей."
+      },
+      {
         "source_hash": "sha256:ffbc061ce57aee23d287070f2ed7d3d7bf0ebd1c6f60ddb57103c3a6eddc9193",
         "source": "The melting pan will melt your blocks and hold fluid for your staffly goals. It can be found from dungeons, igloos, zombies, and as a gift from villagers.",
         "translation": "Плавильный котел плавит блоки и хранит жидкость для применения посохом. Его можно найти в подземельях и иглу, получить с зомби или в подарок от жителей."
@@ -62186,6 +63388,11 @@
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:ancient/tconstruct_swasher.json:/text/0/text": [
       {
+        "source_hash": "sha256:2132afc1657a4855d432f535f590e3c0bea26124adf0d6c1e2a1c20b8549eb03",
+        "source": "The swasher is a combination of a melee weapon and a handheld fluid pistol found in various ocean locations.",
+        "translation": "Свашер сочетает оружие ближнего боя и ручной жидкостный пистолет. Его можно найти в разных уголках океана."
+      },
+      {
         "source_hash": "sha256:e61efcb82bf8d8cb1cae1cc45e62517add4e39de922ee52cce25e13404955fc3",
         "source": "The swasher is a combination of a melee weapon and a handheld fluid pistol found in various pirate locations.",
         "translation": "Смыватель — это оружие ближнего боя с ручным жидкостным пистолетом; его можно найти в пиратских местах."
@@ -62210,9 +63417,19 @@
         "source_hash": "sha256:60b484a98bc198469955fc4eeafa02efc12101884e486cf70c9c741e619abb9c",
         "source": "Mining blocks boosts velocity of loaded arrow",
         "translation": "Добыча блоков повышает скорость заряженной стрелы"
+      },
+      {
+        "source_hash": "sha256:a32fd0ca172734a802d52bc7baa037f7e3562413f37372bee2fdfa73352071f7",
+        "source": "3 Upgrade Slots",
+        "translation": "3 слота для улучшений"
       }
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:ancient/tconstruct_war_pick.json:/properties/3": [
+      {
+        "source_hash": "sha256:96106035c7b48be6bccf66ea8948c1f10586e20cade6c9933e3cc9aea4416b05",
+        "source": "1 Ability Slot",
+        "translation": "1 слот для умений"
+      },
       {
         "source_hash": "sha256:a32fd0ca172734a802d52bc7baa037f7e3562413f37372bee2fdfa73352071f7",
         "source": "3 Upgrade Slots",
@@ -62501,6 +63718,11 @@
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:exploration/geode/skyslime.json:/text/0/text": [
       {
+        "source_hash": "sha256:271c6d52e85e7abf90e69b8933ae231ffd952d035e71356de8ce8800e76dc825",
+        "source": "Skyslime geodes are found in caves near the surface, and rarely even I have seen one on the surface leading me to believe they might have origins in space. These geodes seem to promote growth of certain varieties of moss nearby.",
+        "translation": "Жеоды небесной слизи встречаются в пещерах у поверхности, а изредка я видел их и на самой поверхности, поэтому думаю, что они могут быть родом из космоса. Рядом с ними хорошо растут некоторые виды мха."
+      },
+      {
         "source_hash": "sha256:3061a0194f794593f967985bf8e069c64e09f205edb338b0d5ba51bff7070285",
         "source": "Skyslime geodes are found underground at higher elevations. They used to be common near the surface suggesting origins in space. These geodes promote moss growth, and sometimes contain bits of steel.",
         "translation": "Жеоды небесной слизи встречаются под землёй на большой высоте. Раньше они были обычны у поверхности, что намекает на космическое происхождение. Эти жеоды способствуют росту мха и иногда содержат сталь."
@@ -62606,6 +63828,11 @@
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:exploration/island/enderslime.json:/text/0/text": [
       {
+        "source_hash": "sha256:4f069cd0e80188c35db9a3eb1e7bc82691e366886439ec48ceb926a607f580f3",
+        "source": "Enderslime islands can be found around the outer islands in the end as a breeding ground for enderslimes. I believe skyslimes and enderslimes were once the same before they came to our world, but living in their separate environments changed them.",
+        "translation": "Острова эндер-слизи встречаются среди дальних островов Края и служат местом размножения эндер-слизней. Думаю, небесные и эндер-слизни были одним видом до попадания в наш мир, но разные условия изменили их."
+      },
+      {
         "source_hash": "sha256:5e45a0511a722a004ede1b6ffbc221611eb866861cc5dc85e7d794de4cbdfceb",
         "source": "Enderslime islands can be found around the outer islands in the end as a breeding ground for enderslimes. I believe they were once the same as skyslimes before their exploration ultimately led to the end. They sometimes are found with a metal from travels.",
         "translation": "Острова эндер-слизи встречаются среди дальних островов Края и служат местом размножения эндер-слизней. Думаю, прежде они были небесными слизнями, пока странствия не привели их в Край. Иногда на островах попадается металл из их путешествий."
@@ -62619,6 +63846,11 @@
       }
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:exploration/island/skyslime.json:/text/0/text": [
+      {
+        "source_hash": "sha256:bd4b5850ed7f7d86fcf53ab91931715d9c5e84fa8a1b18b3b9692c7514e18284",
+        "source": "Skyslime islands can be found around the overworld floating above the terrain, and contain grass which is essential for skyslime breeding. Legend tells that skyslimes were invaders from another realm, though they are mostly confined to areas near the islands.",
+        "translation": "Острова небесной слизи парят над землёй по всему обычному миру. На них растёт трава, необходимая для размножения небесных слизней. По легенде, небесные слизни вторглись из другого мира, но теперь обитают в основном возле островов."
+      },
       {
         "source_hash": "sha256:d4a17bfef5f271e59a7d79ab8e766eecab6ccc002f423186d2750da43c196279",
         "source": "Skyslime islands can be found around the overworld floating above the terrain or in the ocean. Legend tells that skyslimes were invaders from another realm, though these days they are mostly found near skyslime grass. They are experts in forging steel.",
@@ -62688,6 +63920,13 @@
         "translation": "Слизневые торты"
       }
     ],
+    "mantle-book:tconstruct:tinkers_gadgetry:gadgets/efln.json:/title": [
+      {
+        "source_hash": "sha256:6f8003dcc96b66f98a56a1aa6c831a6e74995f8f4a2e6edccb7575c00daf24ca",
+        "source": "EFLN",
+        "translation": "EFLN"
+      }
+    ],
     "mantle-book:tconstruct:tinkers_gadgetry:gadgets/fancy_frame.json:/text/0/text": [
       {
         "source_hash": "sha256:31fd0abd6cb2e4a1dda2276866daae37a7d1b3965cbb3f026325ca8feb78c53b",
@@ -62717,6 +63956,11 @@
       }
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:gadgets/fancy_frame_details.json:/text/4/text": [
+      {
+        "source_hash": "sha256:12be0d28b1c683497ec7eb5bf4f721fc2d409999478a5f44139cc8feff1a14f6",
+        "source": "• Diamond: Gradually reduces the rotation until the item is upright. Supports more rotations than a standard frame.",
+        "translation": "• Алмазная: постепенно уменьшает поворот, пока предмет не окажется вертикально. Поддерживает больше поворотов, чем обычная рамка."
+      },
       {
         "source_hash": "sha256:f6ecf430edc733101683e4fe75e533c9ca89263cf63119d0d59914c2c1247a5c",
         "source": "• Diamond: Gradually reduces the rotation until the item is upright.",
@@ -62749,6 +63993,34 @@
         "source_hash": "sha256:2fe0e63f53a3c399281efe1d7ad2a7dae23df64010135c6f34ed495e7dd5b7f1",
         "source": "Fancy Item Frames",
         "translation": "Необычные рамки для предметов"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:gadgets/flint_shuriken.json:/text/0/text": [
+      {
+        "source_hash": "sha256:cd62a77094e1f7f31a636e80394fdd16689799a818a76e8718d5bdfa02777f0d",
+        "source": "Sharpening flint into a star shape creates a quite effective projectile weapon. While it's nowhere near as good as a bow, it still produces pretty good knockback and damage, which can help you escape from monsters.",
+        "translation": "Если заточить кремень в форме звезды, получится довольно эффективное метательное оружие. Оно сильно уступает луку, но всё же наносит неплохой урон и отбрасывает врагов, что поможет отбиться от монстров и убежать."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:gadgets/flint_shuriken.json:/title": [
+      {
+        "source_hash": "sha256:a87d117559647b4e15fdeb8336a1db0c4a31fa53e0714787f2a3f08f499042f5",
+        "source": "Flint Shuriken",
+        "translation": "Кремневый сюрикен"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:gadgets/glowball.json:/text/0/text": [
+      {
+        "source_hash": "sha256:907b14f4b3a89d271236152fd9d0dcf14ab8022f0963f192d6eed8e116824265",
+        "source": "Combining glowstone and snowballs lets me create a throwable light source. It's effective for lighting up hard to reach areas, or finding danger hiding in a dark space without exposing yourself to harm.",
+        "translation": "Соединив светокамень со снежками, я получил метаемый источник света. Он помогает освещать труднодоступные места и находить опасности в темноте, не подставляясь под удар."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:gadgets/glowball.json:/title": [
+      {
+        "source_hash": "sha256:4136e113cbf1d24788a3e0d609eb3acbda5ca41344812e8b7795f62180386b07",
+        "source": "Glowball",
+        "translation": "Светошарик"
       }
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:gadgets/index.json:/subText": [
@@ -62793,6 +64065,20 @@
         "translation": "Свино-рюкзак"
       }
     ],
+    "mantle-book:tconstruct:tinkers_gadgetry:gadgets/quartz_shuriken.json:/text/0/text": [
+      {
+        "source_hash": "sha256:89d1ae28b93db723aa0ddab2b08110b665c034a4d4a9fc395580c4791d6df022",
+        "source": "Quartz is far lighter than flint, and far sharper. Shurikens carved from quartz I was finding were causing monsters much more damage, though less knockback.",
+        "translation": "Кварц намного легче и острее кремня. Вырезанные из него сюрикены наносят монстрам гораздо больше урона, но слабее отбрасывают."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:gadgets/quartz_shuriken.json:/title": [
+      {
+        "source_hash": "sha256:fa762b19b34084bd1cd5f6763dfcb17fb1e3c79c7de914d6466fc1f379163b2f",
+        "source": "Quartz Shuriken",
+        "translation": "Кварцевый сюрикен"
+      }
+    ],
     "mantle-book:tconstruct:tinkers_gadgetry:intro.json:/text/0/text": [
       {
         "source_hash": "sha256:99a672042d791d2b6ecba39c228ee55e7e78072a5b0fb060badd62be1672d5d7",
@@ -62812,6 +64098,188 @@
         "source_hash": "sha256:b170cf623e497dac0060488fb51182c6fbc0d1109f44c0a310ab0e68d7854c3f",
         "source": "Melvin's Guide to Gadgets",
         "translation": "Руководство Мелвина по гаджетам"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/damage_tools.json:/text/0/text": [
+      {
+        "source_hash": "sha256:f2f7a70050320ffc1710fb8e7b221bb2d6ed873d05c1dbe1bf2d35d2d10d1aa7",
+        "source": "Apparently tools do not react well to certain fluids. Magma depletes a small amount of durability, and venom a larger amount. Lava and blazing blood also appear to damage tools.",
+        "translation": "Похоже, некоторые жидкости вредят инструментам. Магма снимает немного прочности, яд — больше. Лава и огненная кровь тоже повреждают инструменты."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/damage_tools.json:/title": [
+      {
+        "source_hash": "sha256:995c77878e3523d50af28ee47077a141966036f421a8b53c54ee76912472f597",
+        "source": "Damage Tools",
+        "translation": "Повреждение инструментов"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_ability.json:/text/0/text": [
+      {
+        "source_hash": "sha256:09f8e35b2e28c8cfaab9014df89d2aea45c05deebee3a50a06e700ced9ebbe96",
+        "source": "Extracting ability modifiers from enchanted tools is a quite expensive process, requiring not only ichor crystals but also a diamond to help the process. Even with the power of ichor, the tool is still lost, seems you need enderslime if you wish to preserve the tool.",
+        "translation": "Извлечение модификаторов умений из зачарованных инструментов — дорогое дело: помимо ихоровых кристаллов нужен алмаз. Даже сила ихора не спасает инструмент. Похоже, чтобы сохранить его, понадобится эндер-слизь."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_ability.json:/title": [
+      {
+        "source_hash": "sha256:1054318ab36d576313661881c3ff107e842f8d820812ec196dd0589b2251a630",
+        "source": "Extract Ability",
+        "translation": "Извлечение умения"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_defense.json:/text/0/text": [
+      {
+        "source_hash": "sha256:9a70148cd85ed596b562ae2dd6f93f1cb39c537556a5efc465a114477c924b77",
+        "source": "Extracting defense modifiers from enchanted books or tools requires earthslime crystals and gold. The process is similarly unstable casuing loss of the tool.",
+        "translation": "Для извлечения модификаторов защиты из зачарованных книг или инструментов нужны земные слизневые кристаллы и золото. Процесс столь же нестабилен, поэтому инструмент теряется."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_defense.json:/title": [
+      {
+        "source_hash": "sha256:eb44182fd8e4047f50277523a87cccbb1d2b90ee3404c865cbc9e8cefd4f53f1",
+        "source": "Extract Defense",
+        "translation": "Извлечение защиты"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_modifier.json:/text/0/text": [
+      {
+        "source_hash": "sha256:724decacb1e6c1b43309f02e3e899b14a8d8d6c71c455dcc92439e400e3b171d",
+        "source": "While not possible to preserve the modifier items, I have managed to store the essence of the modifier into a crystal while removing it, allowing reuse of the modifier. The process requires a slime crystal of the appropriate type and a wet sponge. This also works on enchanted tools as books if you use dragons breath and enderslime crystals.",
+        "translation": "Предметы, использованные для модификатора, сохранить нельзя, но при удалении мне удалось заключить его сущность в кристалл и затем применить снова. Для этого нужны слизневый кристалл подходящего вида и мокрая губка. Способ также работает с зачарованными инструментами и книгами, если использовать дыхание дракона и эндер-слизневые кристаллы."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_modifier.json:/title": [
+      {
+        "source_hash": "sha256:aac7c9e7b5b84dce14dd9b138894bd53fdafe6cf11e74c2ba2b67c2501be0257",
+        "source": "Extract Modifiers",
+        "translation": "Извлечение модификаторов"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_upgrade.json:/text/0/text": [
+      {
+        "source_hash": "sha256:b3fbca66f8478889535bef45c72c71bb04a21e4b6bc8b8528a813469080cfc64",
+        "source": "This discovery lead me to further experiment with other crystals and enchantments. It turns out that you can extract upgrade modifiers from enchanted books or tools using just skyslime crystals and lapis. The process seems a lot less stable than the enderslime method however, I have been unable to recover the tool.",
+        "translation": "Это открытие подтолкнуло меня к опытам с другими кристаллами и чарами. Оказалось, модификаторы улучшений можно извлекать из зачарованных книг и инструментов с помощью небесных слизневых кристаллов и лазурита. Но этот способ гораздо менее стабилен, чем с эндер-слизью: сохранить инструмент мне не удалось."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/extract_upgrade.json:/title": [
+      {
+        "source_hash": "sha256:56574769310223175bd8b526421531e0502be2e0dd8472ed2b3f630b7dd148ea",
+        "source": "Extract Upgrade",
+        "translation": "Извлечение улучшения"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/index.json:/subText": [
+      {
+        "source_hash": "sha256:01053ca0a9acebf316a34695ca618fbf4451df6d5bf5d4b5a46011181bc35360",
+        "source": "By applying certain odd items to my tools, often on accident, I have discovered a few unique interactions. For some of these, I found it easier to apply if I used a custom worktable.",
+        "translation": "Случайно применяя к инструментам разные необычные предметы, я обнаружил несколько особых взаимодействий. Для некоторых из них удобнее использовать специальный рабочий стол."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/index.json:/title": [
+      {
+        "source_hash": "sha256:39c1347413cc2c19b0828de4679a88690c984cfad9bd787e5df2934e42177e62",
+        "source": "Odd Modifiers",
+        "translation": "Странные модификаторы"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/invisible_ink.json:/text/0/text": [
+      {
+        "source_hash": "sha256:7e422e60aff99aa22d033b23e7cde33262aed62c2d6164590201240b07ab9fe0",
+        "source": "I once accidentally spilled an invisibility potion on my tool, and discovered the potion actually works to hide modifiers from view. The technique does not seem that useful unless a modifier does not go with the tools aesthetic, but maybe a more artistically minded Tinker will find a use for it.",
+        "translation": "Однажды я случайно пролил на инструмент зелье невидимости и обнаружил, что оно скрывает модификаторы. Особой пользы в этом нет, разве что модификатор не сочетается с внешним видом инструмента. Но, возможно, мастер с художественным вкусом найдёт этому применение."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/invisible_ink.json:/title": [
+      {
+        "source_hash": "sha256:15462a97ef59074a758e9adc50570b8148da191d8751d6d7f71ffe1c11068a12",
+        "source": "Invisible Ink",
+        "translation": "Невидимые чернила"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/modifier_worktable.json:/description/0/text": [
+      {
+        "source_hash": "sha256:bf717325ab805e7b9647944d21adc3b46c2098e4e01e7ec6b7ed02ed688fc724",
+        "source": "Arranging seared stone like this makes it easier to target a specific modifier in the recipes.",
+        "translation": "Если выложить обожжённый камень таким образом, в рецептах будет проще выбрать нужный модификатор."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/modifier_worktable.json:/title": [
+      {
+        "source_hash": "sha256:dead182429e72c29f4253a0767969055e98b75116c9f6c389cd4b19b51a56539",
+        "source": "Modifier Worktable",
+        "translation": "Рабочий стол для модификаторов"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/remove_modifiers.json:/text/0/text": [
+      {
+        "source_hash": "sha256:bc00823a06be3078bc58e09bb1cc9566316ecc449c2bd79a53bf7b097c03524a",
+        "source": "I have discovered that it is possible to remove modifiers from tools using a wet sponge. if you don't happen to have one of those, spider venom is also effective. Removing the modifier gives me back space for new modifiers, but unfortunately the items used to apply the modifier are lost. At least I can reuse the sponge.",
+        "translation": "Я обнаружил, что модификаторы можно удалять с инструментов мокрой губкой. Если её нет, подойдёт и паучий яд. После удаления освобождается место для новых модификаторов, но использованные для нанесения предметы пропадают. Зато губку можно использовать снова."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/remove_modifiers.json:/title": [
+      {
+        "source_hash": "sha256:658029909a5f4a937eff29a28955f0ad0d2f1129c7970b69e487902aa2c3298e",
+        "source": "Remove Modifiers",
+        "translation": "Удаление модификаторов"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/sort_modifiers.json:/text/0/text": [
+      {
+        "source_hash": "sha256:ac39a7a06ffe82e7a3768029811014bb16773ff28aaaeb3d34971df93d867c63",
+        "source": "While adding a compass to tools magnetizes the tool, just holding the compass near the tool has an interesting effect on modifiers. You can actually use the compass to rearrange modifiers without removing them from the tool! Unlike invisible ink, this has more applications than art, as it seems conflicts in modifiers is resolved by their position on the tool.",
+        "translation": "Компас на инструменте намагничивает его, но даже если просто поднести компас, с модификаторами происходит нечто интересное. Компас позволяет менять их порядок, не удаляя с инструмента! В отличие от невидимых чернил, это не только украшение: похоже, порядок модификаторов на инструменте разрешает конфликты между ними."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/sort_modifiers.json:/title": [
+      {
+        "source_hash": "sha256:53c1ef583c8e85c4edaa38e64930400dee2f8f59700abf4cd7b196a1799b6420",
+        "source": "Sort Modifiers",
+        "translation": "Сортировка модификаторов"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/toggle_interaction.json:/text/0/text": [
+      {
+        "source_hash": "sha256:7b5476c968ab1d01cc8af77874c87b351080900e3e753f698cd3cf1090467f49",
+        "source": "Levers don't just switch redstone, they also let you switch interaction modifiers on slimestaffs from activing on using the staff to activating on attacking with the staff.",
+        "translation": "Рычаги не только переключают редстоун. С их помощью можно изменить срабатывание модификаторов взаимодействия на слизневых посохах: не при использовании посоха, а при атаке им."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/toggle_interaction.json:/title": [
+      {
+        "source_hash": "sha256:1f56578bed1e8fdf7bc01c094d61bed3ab39229f5a755984587e8d99bcbea3f4",
+        "source": "Toggle Interaction",
+        "translation": "Переключение взаимодействия"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/untoggle_interaction.json:/text/0/text": [
+      {
+        "source_hash": "sha256:91c8cb1caf2243a6b15e740739d77514913e4d8cf155b584c8b4b31f4434989d",
+        "source": "Its always possible to switch the modifier back after toggling it of course, oddly it takes an additional lever to do so.",
+        "translation": "Конечно, модификатор всегда можно переключить обратно. Странно лишь то, что для этого нужен ещё один рычаг."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/untoggle_interaction.json:/title": [
+      {
+        "source_hash": "sha256:e7b31e3a7cde89c75768d77e750222174be74453d126eafed5a46a124f036c31",
+        "source": "Untoggle Interaction",
+        "translation": "Возврат взаимодействия"
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/visible_ink.json:/text/0/text": [
+      {
+        "source_hash": "sha256:9a63527e0aeae8cffc92376a275eaecc154e4a08c8094c19f1d50fdc24f8c0fe",
+        "source": "After some failure using sponges to make the modifier visible again, I remembered milk is effective at neutralizing potions. Sure enough, adding a bit of milk is all it takes to make the modifier once again visible.",
+        "translation": "После неудачных попыток снова сделать модификатор видимым с помощью губок я вспомнил, что молоко нейтрализует зелья. И правда, немного молока — всё, что нужно, чтобы модификатор снова стал видимым."
+      }
+    ],
+    "mantle-book:tconstruct:tinkers_gadgetry:modifiers/visible_ink.json:/title": [
+      {
+        "source_hash": "sha256:b6870485577144525a1b42096f180cb70107033406faa98950370d3ddfdf8161",
+        "source": "Visible Ink",
+        "translation": "Видимые чернила"
       }
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:staffs/tconstruct_earth_staff.json:/properties/0": [

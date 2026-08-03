@@ -1,0 +1,19 @@
+{
+  "category": "thermal:links",
+  "icon": "thermal:lumium_gear",
+  "name": "Кинг в Твиттере",
+  "pages": [
+    {
+      "link_text": "Твиттер",
+      "text": "Хотите следить за самим Кингом? Подпишитесь на него в Twitter!",
+      "type": "patchouli:link",
+      "url": "https://twitter.com/KingLemmingCoFH"
+    },
+    {
+      "item": "thermal:lumium_ingot",
+      "text": "Забавный факт! Люмий получил своё название благодаря своим люминесцентным свойствам!",
+      "type": "patchouli:spotlight"
+    }
+  ],
+  "read_by_default": true
+}

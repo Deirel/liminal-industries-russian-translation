@@ -1,0 +1,23 @@
+{
+  "category": "thermal:tools",
+  "icon": "thermal:satchel",
+  "name": "Сумка",
+  "pages": [
+    {
+      "text": "Сумка хранит предметы — всё просто. Нажмите '$(k:cofh.mode_change_increment)', чтобы включить автосбор: поднятые предметы будут попадать в сумку с учётом настроек фильтра. Сумку можно улучшить на верстаке мастеров.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:tools/satchel",
+      "text": "Она может быть окрашена на верстаке красителем и защищена сигналовым замком.",
+      "title": "Сумка",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

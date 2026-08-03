@@ -1,0 +1,15 @@
+{
+  "category": "thermal:augments",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_output_augment",
+  "name": "Вспомогательное сито",
+  "pages": [
+    {
+      "A.recipe": "thermal:augments/machine_output_augment",
+      "text": "Улучшение «Вспомогательное сито» повышает шанс вторичного результата на 15%, но умножает расход энергии на операцию на 1,25.",
+      "title": "Вспомогательное сито",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

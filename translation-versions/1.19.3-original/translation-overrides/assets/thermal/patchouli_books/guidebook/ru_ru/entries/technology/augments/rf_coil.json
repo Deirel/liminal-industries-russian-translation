@@ -1,0 +1,14 @@
+{
+  "category": "thermal:augments",
+  "icon": "thermal:rf_coil_augment",
+  "name": "Расширенная RF катушка",
+  "pages": [
+    {
+      "A.recipe": "thermal:augments/rf_coil_augment",
+      "text": "Расширенная RF катушка увеличивает ёмкость и передачу RF в 4 раза.",
+      "title": "Расширенная RF катушка",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

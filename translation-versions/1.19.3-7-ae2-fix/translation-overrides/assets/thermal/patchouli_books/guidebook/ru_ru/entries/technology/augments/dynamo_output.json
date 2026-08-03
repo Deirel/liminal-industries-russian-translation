@@ -1,15 +1,15 @@
 {
-  "name": "Доп. реакционная камера",
-  "icon": "thermal:dynamo_output_augment",
   "category": "thermal:augments",
-  "read_by_default": true,
   "flag": "mod:thermal_expansion",
+  "icon": "thermal:dynamo_output_augment",
+  "name": "Доп. реакционная камера",
   "pages": [
     {
-      "type": "thermal:double_crafting_page",
       "A.recipe": "thermal:augments/dynamo_output_augment",
+      "text": "Улучшение «Вспомогательная реакционная камера» повышает предельную выработку генератора на 100%, но умножает эффективность топлива на 0,9.",
       "title": "Доп. реакционная камера",
-      "text": "Улучшение «Доп. реакционная камера» вдвое увеличивает максимальную мощность динамо, но снижает эффективность использования топлива на 10%."
+      "type": "thermal:double_crafting_page"
     }
-  ]
+  ],
+  "read_by_default": true
 }

@@ -1,0 +1,15 @@
+{
+  "category": "thermal:augments",
+  "flag": "mod:thermal_innovation",
+  "icon": "thermal:potion_amplifier_augment",
+  "name": "Алхимический усилитель",
+  "pages": [
+    {
+      "A.recipe": "thermal:augments/potion_amplifier_augment",
+      "text": "Улучшение «Алхимический усилитель» повышает уровень эффекта хранимого зелья на 1, но сокращает длительность на 25%. 4 таких улучшения полностью убирают длительность, отчего многие зелья становятся бесполезны.",
+      "title": "Алхимический усилитель",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

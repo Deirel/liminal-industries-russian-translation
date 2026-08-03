@@ -1,0 +1,13 @@
+{
+  "effects": [
+    "Однократное применение",
+    "Не требует слота"
+  ],
+  "modifier_id": "tconstruct:resurrected",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Даёт +1 слот для улучшений."
+    }
+  ]
+}

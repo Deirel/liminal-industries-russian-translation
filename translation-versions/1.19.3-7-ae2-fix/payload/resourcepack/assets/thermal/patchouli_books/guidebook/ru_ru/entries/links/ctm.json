@@ -1,0 +1,20 @@
+{
+  "category": "thermal:links",
+  "icon": "thermal:enderium_gear",
+  "name": "Connected Textures Mod",
+  "pages": [
+    {
+      "link_text": "CTM",
+      "text": "Знали, что с установленным CTM некоторые текстуры, например эндериевое стекло, соединяются и выглядят красивее? Знали? Отлично. Не знали? Тогда чего ждёте?!",
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ctm"
+    },
+    {
+      "item": "thermal:enderium_ingot",
+      "text": "Забавный факт! Эндерий получил своё название из-за свойств Края, искажающих пространство и время!",
+      "type": "patchouli:spotlight"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

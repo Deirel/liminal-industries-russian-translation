@@ -1,0 +1,25 @@
+{
+  "category": "thermal:contributors",
+  "icon": "minecraft:blue_orchid",
+  "name": "FloofHips",
+  "pages": [
+    {
+      "link_text": "FloofHips' Twitter",
+      "text": "Создал множество прекрасных текстур Thermal, которые радуют глаз. А ещё не раз делал эту книгу ярче.",
+      "type": "patchouli:link",
+      "url": "https://twitter.com/FloofHips"
+    },
+    {
+      "type": "patchouli:empty"
+    },
+    {
+      "border": true,
+      "images": [
+        "thermal:textures/gui/guidebook/guy.png"
+      ],
+      "type": "patchouli:image"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

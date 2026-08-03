@@ -1,0 +1,38 @@
+{
+  "category": "thermal:modpack",
+  "icon": "minecraft:crafting_table",
+  "name": "Пользовательские рецепты",
+  "pages": [
+    {
+      "link_text": "Minecraft Wiki",
+      "text": "Рецепты и катализаторы всех механизмов, устройств и генераторов задаются в JSON, поэтому их можно создавать и менять наборами данных. Если так удобнее, Thermal также поддерживает CraftTweaker. Ниже приведена ссылка на статью Minecraft Wiki о наборах данных.",
+      "type": "patchouli:link",
+      "url": "https://minecraft.fandom.com/ru/wiki/Набор_данных"
+    },
+    {
+      "link_text": "Рецепт механизма",
+      "text": "Ниже дана ссылка на пример рецепта механизма. Первый результат всегда основной, остальные — вторичные. 'count' — целое число, на которое катализаторы не влияют. 'chance' — число с плавающей точкой, на которое катализаторы влияют по умолчанию; параметр 'locked': true отключает это влияние.",
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalExpansion/blob/main/src/main/resources/data/thermal/recipes/machine/smelter/smelter_gold_ore.json"
+    },
+    {
+      "link_text": "Катализатор",
+      "text": "Ниже дана ссылка на пример JSON, добавляющего катализатор механизму. В нём задаются механизм, предмет и все 4 множителя катализатора. Подробнее о катализаторах читайте $(l:thermal:world/materials/catalysts)здесь$(/l).",
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalExpansion/blob/main/src/main/resources/data/thermal/recipes/machine/pulverizer/pulverizer_catalyst_basalz_powder.json"
+    },
+    {
+      "link_text": "Усиление выжимателя",
+      "text": "Ниже дана ссылка на пример JSON, в котором Фито-Гро повышает выход древесного выжимателя. Всё довольно просто.",
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalFoundation/blob/main/src/main/resources/data/thermal/recipes/devices/tree_extractor/tree_extractor_boost_phytogro.json"
+    },
+    {
+      "link_text": "Рецепт генератора",
+      "text": "Ниже дана ссылка на пример JSON для сжигания очищенного топлива в генераторе. Важно: значение энергии должно быть не меньше 10 000 RF!",
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalFoundation/blob/main/src/main/resources/data/thermal/recipes/fuels/compression/compression_refined_fuel.json"
+    }
+  ],
+  "read_by_default": true
+}

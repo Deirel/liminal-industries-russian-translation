@@ -1,0 +1,24 @@
+{
+  "category": "thermal:machines",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_crafter",
+  "name": "Авто-крафтер",
+  "pages": [
+    {
+      "text": "Авто-крафтер автоматически создаёт предметы. Задайте рецепт в сетке, и механизм будет брать предметы и жидкости из внутреннего инвентаря. В рецептах с ведром жидкости, после которых остаётся пустое ведро, можно использовать жидкость из внутреннего резервуара.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:machine_crafter",
+      "text": "Учтите: сейчас механизм не умеет защищаться от переполнения одним ингредиентом! Дозирующее устройство появится в Thermal Dynamics — следите за новостями!",
+      "title": "Авто-крафтер",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Концентратор знаний$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширенная конструкция резервуара$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Усилитель магнитной связи$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Потоковая эффективность$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

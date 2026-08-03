@@ -1,0 +1,17 @@
+{
+  "category": "thermal:locomotion",
+  "flag": "mod:thermal_locomotion",
+  "icon": "thermal:crossover_rail",
+  "name": "Перекрёстные рельсы",
+  "pages": [
+    {
+      "text": "Перекрёстные рельсы позволяют двум перпендикулярным путям пересечься и не мешать друг другу. Вагонетка проедет перекрёсток в прежнем направлении.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:crossover_rail",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

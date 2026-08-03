@@ -31,7 +31,7 @@
       "records": 6589,
       "registry_blocks": 6589,
       "native_ru": 4488,
-      "suggested_translations": 2131
+      "suggested_translations": 2151
     },
     "patchouli": {
       "adapter": "patchouli",
@@ -40,15 +40,35 @@
       "native_ru": 1873,
       "language_records": 1270,
       "json_records": 688
+    },
+    "immersive_engineering_manual": {
+      "adapter": "immersive_engineering_manual",
+      "records": 664,
+      "articles": 84,
+      "missing_native_articles": 11,
+      "stale_native_articles": 34,
+      "native_review_records": 654,
+      "language_records": 10
+    },
+    "tconstruct_books": {
+      "adapter": "mantle_books",
+      "records": 2377,
+      "books": 6,
+      "missing_native_pages": 201,
+      "invalid_native_pages": 0,
+      "stale_native_pages": 105,
+      "language_files": 6,
+      "missing_native_language_entries": 72,
+      "native_review_records": 2377
     }
   },
-  "catalog_hits": 4200,
-  "finalized": 4200,
-  "native_ru_coverage": 12757,
+  "catalog_hits": 7232,
+  "finalized": 7232,
+  "native_ru_coverage": 14035,
   "pending": 0,
   "translation_statuses": {
-    "FINALIZED": 4200,
-    "NATIVE_RU": 12612
+    "FINALIZED": 7232,
+    "NATIVE_RU": 12621
   },
   "pending_by_source": {},
   "errors": 0

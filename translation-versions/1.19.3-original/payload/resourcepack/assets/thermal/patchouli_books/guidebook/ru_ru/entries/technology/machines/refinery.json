@@ -1,0 +1,23 @@
+{
+  "category": "thermal:machines",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_refinery",
+  "name": "Дистиллятор",
+  "pages": [
+    {
+      "text": "Дистиллятор очищает жидкости, например смолу и древесный сок.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:machine_refinery",
+      "title": "Дистиллятор",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Концентратор знаний$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширенная конструкция резервуара$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Усилитель магнитной связи$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Потоковая эффективность$(/l)$(li)$(l:thermal:technology/augments/machine_output)Вспомогательное сито$(/l)$(li)$(l:thermal:technology/augments/machine_null)Вспомогательный кактус$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

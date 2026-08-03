@@ -1,0 +1,7 @@
+{
+  "description": "Бросать весело, ловить — не очень.",
+  "icon": "thermal:explosive_grenade",
+  "name": "Динамит",
+  "parent": "thermal:equipment",
+  "sortnum": 4
+}

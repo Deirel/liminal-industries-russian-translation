@@ -1,0 +1,27 @@
+{
+  "category": "thermal:locomotion",
+  "flag": "mod:thermal_locomotion",
+  "icon": "thermal:prismarine_rail",
+  "name": "Призмариновые рельсы",
+  "pages": [
+    {
+      "text": "Призмариновые рельсы работают как обычные, но допускают затопление и размещаются под водой. Из обычной вагонетки полностью погружённое существо всё равно высадит. Этого можно избежать с помощью $(l:thermal:storage_and_transport/locomotion/underwaterminecart)подводной вагонетки$(/l). Эти рельсы также излучают свет уровня 8.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:prismarine_rail",
+      "B.recipe": "thermal:prismarine_crossover_rail",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:prismarine_powered_rail",
+      "B.recipe": "thermal:prismarine_activator_rail",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:prismarine_detector_rail",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,24 @@
+{
+  "category": "thermal:devices",
+  "flag": "mod:thermal_cultivation",
+  "icon": "thermal:device_fisher",
+  "name": "Рыболов",
+  "pages": [
+    {
+      "text": "Рыболов пассивно ловит рыбу, если стоит в водоёме. Скорость зависит от биома, погоды и улучшений; базово получается 1 улов каждые несколько минут. $(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l) и $(l:thermal:technology/augments/area_radius)радиальные улучшения$(/l) ускоряют ловлю. $(l:thermal:world/materials/bait)Приманка$(/l) может дополнительно ускорить её или изменить улов.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:device_fisher",
+      "text": "С улучшением $(l:thermal:technology/augments/xp_storage)«Концентратор знаний»$(/l) рыболов за каждый улов получает ещё 1–3 единицы опыта.",
+      "title": "Рыболов",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Концентратор знаний$(/l)$(li)$(l:thermal:technology/augments/area_radius)Радиальное улучшение$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

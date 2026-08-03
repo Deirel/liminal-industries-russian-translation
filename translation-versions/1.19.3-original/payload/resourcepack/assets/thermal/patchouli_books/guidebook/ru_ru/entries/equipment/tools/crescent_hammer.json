@@ -1,0 +1,17 @@
+{
+  "category": "thermal:tools",
+  "icon": "thermal:wrench",
+  "name": "Серповидный молот",
+  "pages": [
+    {
+      "text": "Обычный гаечный ключ. Shift+ПКМ позволяет подобрать механизм, а ПКМ — повернуть его. Ещё им можно вправить мозги друзьям, которые не перестают над вами подшучивать!",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:tools/wrench",
+      "title": "Серповидный молот",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,24 @@
+{
+  "category": "thermal:machines",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_smelter",
+  "name": "Индукционная плавильня",
+  "pages": [
+    {
+      "text": "Индукционная плавильня сплавляет несколько предметов и создаёт сплавы. Также она переплавляет руды в слитки и самоцветы; на выход влияют $(l:thermal:world/materials/catalysts)катализаторы$(/l). При плавке руд иногда получается обогащённый шлак: он служит катализатором или компонентом $(l:thermal:world/plants/phytogro)Фито-Гро$(/l). Из гравия получаются кремень и шлак.",
+      "title": "Индукционная плавильня",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:machine_smelter",
+      "title": "Индукционная плавильня",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Концентратор знаний$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Усилитель магнитной связи$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Потоковая эффективность$(/l)$(li)$(l:thermal:technology/augments/machine_output)Вспомогательное сито$(/l)$(li)$(l:thermal:technology/augments/machine_null)Вспомогательный кактус$(/l)$(li)$(l:thermal:technology/augments/machine_catalyst)Каталитическая мелиоративная камера$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

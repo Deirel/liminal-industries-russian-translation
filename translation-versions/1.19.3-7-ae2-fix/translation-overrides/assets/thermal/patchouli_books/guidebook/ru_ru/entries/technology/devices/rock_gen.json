@@ -1,0 +1,24 @@
+{
+  "category": "thermal:devices",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:device_rock_gen",
+  "name": "Вулканический пресс",
+  "pages": [
+    {
+      "text": "Вулканический пресс бесконечно создаёт камень, если окружён подходящими блоками и жидкостями. Сбоку должны находиться источник лавы и охлаждающий блок; также можно использовать блок снизу. Все рецепты доступны в JEI.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:device_rock_gen",
+      "text": "Сначала пресс создаёт 1 блок в секунду, но $(l:thermal:technology/augments/integral_components)интегральные компоненты$(/l) повышают скорость до 4 блоков/с. При смене рецепта блоки в выходном слоте уничтожаются, освобождая место для нового результата.",
+      "title": "Вулканический пресс",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

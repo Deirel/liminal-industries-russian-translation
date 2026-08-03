@@ -1,0 +1,8 @@
+{
+  "description": "Перед «чу-чу» положено шесть «чуга-чуга».",
+  "flag": "mod:thermal_locomotion",
+  "icon": "thermal:lumium_rail",
+  "name": "Передвижение",
+  "parent": "thermal:storage_and_transport",
+  "sortnum": 4
+}

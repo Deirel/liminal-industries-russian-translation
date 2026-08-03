@@ -1,0 +1,27 @@
+{
+  "category": "thermal:storage",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:energy_cell",
+  "name": "Энергетическая ячейка",
+  "pages": [
+    {
+      "text": "Энергетическая ячейка хранит и распределяет Redstone Flux (RF). Каждая сторона настраивается на ввод или вывод, также доступен автоматический ввод и вывод. Базовая ёмкость — 1 000 000 RF, предельная передача — 1 000 RF/т; улучшения повышают оба значения. Сила сигнала компаратора зависит от заполненности ячейки.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:energy_cell_frame",
+      "B.recipe": "thermal:energy_cell",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "Скорость передачи ячейки RF настраивается точно. В интерфейсе по сторонам шкалы RF указаны скорости ввода и вывода. Кнопки '+' и '-' меняют их вручную. ЛКМ/ПКМ меняет скорость на 50/10 RF за тик, Ctrl+ЛКМ/ПКМ — на 5/1, Shift+ЛКМ/ПКМ — на 1000/100, а Ctrl+Shift+ЛКМ/ПКМ — на 10k/1k.",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

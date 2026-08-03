@@ -1,0 +1,55 @@
+{
+  "category": "thermal:materials",
+  "icon": "thermal:obsidian_glass",
+  "name": "Укреплённое стекло",
+  "pages": [
+    {
+      "flag": "mod:thermal_expansion",
+      "text": "Укреплённое стекло устойчиво к взрывам и используется в разных рецептах. Облицовка разными металлами придаёт ему особые свойства. Как и $(l:thermal:world/materials/alloys)сплавы$(/l), стекло и его варианты создаются из компонентов и огненного заряда на верстаке либо напрямую в индукционной плавильне.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.in1": "minecraft:quartz",
+      "A.in2": "minecraft:obsidian",
+      "A.in3": "minecraft:sand",
+      "A.out": "thermal:obsidian_glass#2",
+      "A.text": "Базовая защита от осадков.",
+      "B.in1": "thermal:obsidian_glass#2",
+      "B.in2": "thermal:signalum_ingot",
+      "B.out": "thermal:signalum_glass#2",
+      "B.text": "Сила красной пыли.",
+      "flag": "mod:thermal_expansion",
+      "type": "thermal:3-3_alloy_page"
+    },
+    {
+      "A.in1": "thermal:obsidian_glass#2",
+      "A.in2": "thermal:lumium_ingot",
+      "A.out": "thermal:lumium_glass#2",
+      "A.text": "Излучает интенсивный свет.",
+      "B.in1": "thermal:obsidian_glass#2",
+      "B.in2": "thermal:enderium_ingot",
+      "B.out": "thermal:enderium_glass#2",
+      "B.text": "Позволяет влиять на других.",
+      "flag": "mod:thermal_expansion",
+      "type": "thermal:3-3_alloy_page"
+    },
+    {
+      "flag": "!mod:thermal_expansion",
+      "text": "Укреплённое стекло устойчиво к взрывам и используется в разных рецептах. Облицовка разными металлами придаёт ему особые свойства. Сигналовое стекло даёт сильный сигнал красного камня, люмиевое — яркий свет, а эндериевое позволяет похвастаться перед другими игроками.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:fire_charge/obsidian_glass_2",
+      "B.recipe": "thermal:fire_charge/signalum_glass_2",
+      "flag": "!mod:thermal_expansion",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:fire_charge/lumium_glass_2",
+      "B.recipe": "thermal:fire_charge/enderium_glass_2",
+      "flag": "!mod:thermal_expansion",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

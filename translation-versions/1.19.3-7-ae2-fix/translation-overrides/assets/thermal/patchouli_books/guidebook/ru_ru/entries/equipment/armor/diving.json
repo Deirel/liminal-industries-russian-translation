@@ -1,0 +1,28 @@
+{
+  "category": "thermal:armor",
+  "flag": "mod:thermal_innovation",
+  "icon": "thermal:diving_chestplate",
+  "name": "Водолазный костюм",
+  "pages": [
+    {
+      "text": "Водолазный костюм упрощает исследование подводных глубин: вы быстрее плаваете, дольше дышите и быстрее добываете блоки под водой!",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:diving_fabric",
+      "text": "Ткань, используемая для всего снаряжения водолаза.",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:armor/diving_helmet",
+      "B.recipe": "thermal:armor/diving_chestplate",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:armor/diving_leggings",
+      "B.recipe": "thermal:armor/diving_boots",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true
+}

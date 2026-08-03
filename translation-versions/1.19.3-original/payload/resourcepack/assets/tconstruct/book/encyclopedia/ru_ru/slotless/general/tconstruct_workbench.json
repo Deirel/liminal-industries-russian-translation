@@ -1,0 +1,13 @@
+{
+  "effects": [
+    "Один уровень",
+    "Без слотов"
+  ],
+  "modifier_id": "tconstruct:workbench",
+  "more_text_space": true,
+  "text": [
+    {
+      "text": "Добавляет верстак 2x2 в инвентарь инструмента."
+    }
+  ]
+}

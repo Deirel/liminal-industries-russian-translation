@@ -34,7 +34,9 @@ class AuditSourceConfigTest {
             case "1.19.3-original" -> Set.of(
                 "items",
                 "blocks",
-                "patchouli"
+                "patchouli",
+                "immersive_engineering_manual",
+                "tconstruct_books"
             );
             case "1.19.3-7-ae2-fix" -> Set.of(
                 "items",
@@ -84,21 +86,17 @@ class AuditSourceConfigTest {
                     "block.beachparty.palm_wall_sign"
                 ).verification()
             );
-            assertEquals(
-                "direct",
-                targets.get(
-                    "manual.immersiveengineering.early_machines"
-                ).verification()
-            );
         }
+        assertEquals(
+            "direct",
+            targets.get(
+                "manual.immersiveengineering.early_machines"
+            ).verification()
+        );
     }
 
     @Test
-    void rescriptedIndexContainsEngineerManualNavigation() {
-        if (!TranslationAuditIndex.version().equals("1.19.3-7-ae2-fix")) {
-            return;
-        }
-
+    void indexContainsEngineerManualNavigation() {
         var target = TranslationAuditIndex.languageTargets().get(
             "manual.immersiveengineering.early_machines"
         );
@@ -109,12 +107,10 @@ class AuditSourceConfigTest {
     @Test
     void generatedIndexDescribesBookScreensForEveryEngine() {
         assertFalse(TranslationAuditIndex.screenRecords("patchouli").isEmpty());
-        if (TranslationAuditIndex.version().equals("1.19.3-7-ae2-fix")) {
-            assertFalse(TranslationAuditIndex.screenRecords("mantle").isEmpty());
-            assertFalse(
-                TranslationAuditIndex.screenRecords("immersive_engineering").isEmpty()
-            );
-        }
+        assertFalse(
+            TranslationAuditIndex.screenRecords("immersive_engineering").isEmpty()
+        );
+        assertFalse(TranslationAuditIndex.screenRecords("mantle").isEmpty());
     }
 
     @Test
@@ -127,7 +123,14 @@ class AuditSourceConfigTest {
                 "patchouli=actuallyadditions:booklet",
                 "patchouli=botania:lexicon",
                 "patchouli=enderio:guide",
-                "patchouli=thermal:guidebook"
+                "patchouli=thermal:guidebook",
+                "immersive_engineering_manual=immersiveengineering:manual",
+                "tconstruct_books=tconstruct:encyclopedia",
+                "tconstruct_books=tconstruct:fantastic_foundry",
+                "tconstruct_books=tconstruct:materials_and_you",
+                "tconstruct_books=tconstruct:mighty_smelting",
+                "tconstruct_books=tconstruct:puny_smelting",
+                "tconstruct_books=tconstruct:tinkers_gadgetry"
             );
             case "1.19.3-7-ae2-fix" -> Set.of(
                 "patchouli=actuallyadditions:booklet",

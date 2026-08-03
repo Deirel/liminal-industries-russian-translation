@@ -1,0 +1,26 @@
+{
+  "category": "thermal:augments",
+  "icon": "thermal:upgrade_augment_3",
+  "name": "Интегральные компоненты",
+  "pages": [
+    {
+      "text": "Интегральные компоненты улучшают общие характеристики механизмов, устройств, генераторов и инструментов: базовую ёмкость и передачу RF, ёмкость и передачу жидкостей, а также потребление или выработку RF/т. Этот общий множитель сочетается с другими модификаторами улучшений, даже подчёркнутыми. Но, как и у прочих подчёркнутых модификаторов, действует только наибольший множитель.",
+      "type": "patchouli:text"
+    },
+    {
+      "text": "Например, $(l:thermal:technology/machines/furnace)редстоуновая печь$(/l) с резонирующими и укреплёнными интегральными компонентами и $(l:thermal:technology/augments/rf_coil_storage)стабилизированной RF катушкой$(/l) получит 24x ёмкость RF, 8x передачу RF и 4x базовое потребление RF/т.$(br2)Укреплённые, усиленные и резонирующие интегральные компоненты дают множители 2x, 3x и 4x соответственно.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:augments/upgrade_augment_1",
+      "B.recipe": "thermal:augments/upgrade_augment_2",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "A.recipe": "thermal:augments/upgrade_augment_3",
+      "type": "thermal:double_crafting_page"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": -1
+}

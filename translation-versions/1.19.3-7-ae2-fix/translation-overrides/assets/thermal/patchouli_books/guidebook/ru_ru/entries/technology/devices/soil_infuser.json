@@ -1,0 +1,23 @@
+{
+  "category": "thermal:devices",
+  "flag": "mod:thermal_cultivation",
+  "icon": "thermal:device_soil_infuser",
+  "name": "Удобритель",
+  "pages": [
+    {
+      "text": "Использует RF, чтобы ускорять рост культур на соседней $(l:thermal:world/plants/phytogro)фито-почве$(/l). Базовая область — 3x3x3; $(l:thermal:technology/augments/area_radius)радиальные улучшения$(/l) расширяют её до 7x3x7. $(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l) усиливают ускорение роста.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:device_soil_infuser",
+      "title": "Удобритель",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/area_radius)Радиальное улучшение$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

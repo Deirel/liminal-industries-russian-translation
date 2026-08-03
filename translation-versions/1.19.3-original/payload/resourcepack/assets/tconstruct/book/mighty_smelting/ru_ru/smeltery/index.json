@@ -1,0 +1,24 @@
+{
+  "hidden": [
+    "structurereq",
+    "sgui2"
+  ],
+  "operations": [
+    {
+      "action": "add_group",
+      "before": "features",
+      "data": "Подробности"
+    },
+    {
+      "action": "column_break",
+      "before": "seared_tanks"
+    },
+    {
+      "action": "add_group",
+      "before": "seared_tanks",
+      "data": "Блоки"
+    }
+  ],
+  "subText": "Могучая плавильня находится под вашим контролем.",
+  "title": "Плавильня"
+}
