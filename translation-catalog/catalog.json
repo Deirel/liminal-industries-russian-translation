@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "entries_hash": "sha256:1fa46ce9f73e01bd7136885e1bc1b44dbbd80f58ccdef099bbd4fa26c7314b6b",
+  "entries_hash": "sha256:161523fd9604c36152b7fceb937f4968f96267cced191105b3b5058cab6773cd",
   "corrections": [
     {
       "id": "ie-manual:immersiveengineering:conveyors.txt:line:13",
@@ -280,6 +280,30 @@
       "old_translation": "Вы также можете устранить нанесённый Backrooms ущерб:",
       "new_translation": "Вы также можете устранить ущерб, нанесённый Backrooms:",
       "reason": "Неестественный порядок слов.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:encyclopedia:armor/tconstruct_slime_boots.json:/text/1/text",
+      "source_hash": "sha256:f7952682826d080f070f10f64482d6cbe98fa2c584abe7a246f7cc34107bf655",
+      "old_translation": "Их можно создать, вылив эндер-слизь на кроличью лапку, а починить кроличьей шкуркой.",
+      "new_translation": "Их можно создать вылив эндер-слизь на кроличью лапку, а починить с  помощью кроличьей шкурки.",
+      "reason": "Общий каталог возвращён к проверенному Rescripted-тексту: контекст Original отличается; новая формулировка остаётся Original-only override.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:fantastic_foundry:blazing_blood/piglin_bartering.json:/text/0/text",
+      "source_hash": "sha256:96bbe047daa52db81def99b6ec520ef80cae2d6adfc35cdb7ee7636dac0d43c3",
+      "old_translation": "Что, не склонны к насилию? Что ж, я видел, как некоторые пиглины несли фонари с какой-то огненной жидкостью; кажется, они используют её для освещения. Возможно, они отдадут её за плату.",
+      "new_translation": "А Вы не склонны к насилию?  Ну, я видел, как некоторые из этих пиглинов несли фонари, наполненные какой-то огненной жидкостью, думаю, они используют её для освещения. Они могут расстаться с ними за определённую плату.",
+      "reason": "Общий каталог возвращён к проверенному Rescripted-тексту: контекст Original отличается; новая формулировка остаётся Original-only override.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:mighty_smelting:abilities/general/tconstruct_unbreakable.json:/effects/3",
+      "source_hash": "sha256:8190a3687a0cddb81003da5cced46e609d5517cb6eac4c947450ebfa529afef5",
+      "old_translation": "Бесполезен, если попытаться съесть инструмент",
+      "new_translation": "Не эффективен, если Вы пытаетесь съесть свой инструмент",
+      "reason": "Общий каталог возвращён к проверенному Rescripted-тексту: контекст Original отличается; новая формулировка остаётся Original-only override.",
       "independent_review": "APPROVED"
     }
   ],
@@ -48060,7 +48084,7 @@
       {
         "source_hash": "sha256:f7952682826d080f070f10f64482d6cbe98fa2c584abe7a246f7cc34107bf655",
         "source": "They can be created by pouring enderslime on a rabbits foot, and are repaired with rabbit hide.",
-        "translation": "Их можно создать, вылив эндер-слизь на кроличью лапку, а починить кроличьей шкуркой."
+        "translation": "Их можно создать вылив эндер-слизь на кроличью лапку, а починить с  помощью кроличьей шкурки."
       }
     ],
     "mantle-book:tconstruct:encyclopedia:armor/tconstruct_slime_chestplate.json:/properties/0": [
@@ -54084,7 +54108,7 @@
       {
         "source_hash": "sha256:96bbe047daa52db81def99b6ec520ef80cae2d6adfc35cdb7ee7636dac0d43c3",
         "source": "What, you a non-violent type? Well, I have seen some of those piglins carrying lanterns filled with some blazing liquid, think they use it for lighting. They might part with it for a price.",
-        "translation": "Что, не склонны к насилию? Что ж, я видел, как некоторые пиглины несли фонари с какой-то огненной жидкостью; кажется, они используют её для освещения. Возможно, они отдадут её за плату."
+        "translation": "А Вы не склонны к насилию?  Ну, я видел, как некоторые из этих пиглинов несли фонари, наполненные какой-то огненной жидкостью, думаю, они используют её для освещения. Они могут расстаться с ними за определённую плату."
       }
     ],
     "mantle-book:tconstruct:fantastic_foundry:blazing_blood/piglin_bartering.json:/title": [
@@ -56459,7 +56483,7 @@
       {
         "source_hash": "sha256:8190a3687a0cddb81003da5cced46e609d5517cb6eac4c947450ebfa529afef5",
         "source": "Not effective if you try to eat your tool",
-        "translation": "Бесполезен, если попытаться съесть инструмент"
+        "translation": "Не эффективен, если Вы пытаетесь съесть свой инструмент"
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/general/tconstruct_unbreakable.json:/text/0/text": [

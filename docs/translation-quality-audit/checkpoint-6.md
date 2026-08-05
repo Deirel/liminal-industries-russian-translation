@@ -8,20 +8,24 @@
 | Версия | Решений `CHANGE` | Коррекций каталога | Версионных overrides |
 | --- | ---: | ---: | ---: |
 | Rescripted | 195 | 1 | 194 |
-| Original | 279 | 34 новых | 244 |
+| Original | 280, включая 1 связанную | 31 новых итоговых | 248 |
 
 Общая каталожная правка руководства Immersive Engineering присутствовала в
 обеих версиях с одинаковыми `ID`, `source_hash`, английским и русским текстом и
-контекстом. Она записана в общий каталог один раз. Поэтому 474 версионных
-решения образуют 473 фактически применённые правки: 35 коррекций каталога и
-438 версионных overrides.
+контекстом. Она записана в общий каталог один раз. После свежей последовательной
+пересборки три Original-коррекции книг с отличающимся archive-контекстом были
+возвращены в каталоге к Rescripted `PASS` и перенесены в Original overrides.
+Кроме того, изменение item `spring_launcher_head` явно распространено на block
+с тем же source, source_hash и translation key. Ревьюер одобрил все четыре
+решения в единственной fix-итерации. Поэтому 475 версионных решений образуют
+474 фактически применённые правки: 32 итоговые коррекции каталога и 442 строки
+версионных overrides.
 
 Воспроизводимые входы применения сохранены рядом с материалами ревью:
 
-- Original: `application/catalog-corrections.tsv` (34 строки, SHA-256
-  `323452f03219455e3480227a259b96ddccfdf5c1c610343c661d9612affde8b4`) и
-  `application/overrides/override-changes.tsv` (244 строки, SHA-256
-  `fb5e42a94a4700aea418c4687320e5423fb331385a97d1af5670cf5cc9964c89`);
+- Original: исходные `application/catalog-corrections.tsv` (34 строки), три
+  проверенные обратные коррекции, `application/overrides/override-changes.tsv`
+  (248 строк) и `application/derived-changes.tsv` (1 строка);
 - Rescripted: `application/catalog-corrections.tsv` (1 строка, SHA-256
   `f8bf50ea8c856af162b0d4991c639dba334d30b314f33dcccd16851c8524b8b5`) и
   `application/overrides/override-changes.tsv` (194 строки, SHA-256
@@ -35,18 +39,20 @@
 
 ## Проверки
 
-- Все 474 решения повторно сопоставлены с манифестом по `ID`, `source_hash` и
+- Все 475 решений повторно сопоставлены с манифестом по `ID`, `source_hash` и
   английскому источнику; каждое имеет `independent_review=APPROVED`.
 - Для всех новых текстов повторно проверено сохранение технических токенов.
 - После последовательной пересборки оба payload проходят
   `build_version_resources.py --check`.
 - Повторная выгрузка содержит новый текст во всех 195 строках Rescripted и во
-  всех 279 строках Original; `export_effective_translations.py --check`
+  всех 280 строках Original с учётом связанного block; три отличающиеся
+  Rescripted-строки сохранили свой проверенный `PASS`.
+  `export_effective_translations.py --check`
   проходит для обеих версий.
-- SHA-256 новых выгрузок: Rescripted
-  `5568dbc1f3d3123c319074db9be6e495f719970d10fc545349ee60ed34c61629`,
+- SHA-256 итоговых выгрузок после fix-итерации: Rescripted
+  `447888650818683165ebaba104c743286f134215bd2fea24d16d927d33c5f64a`,
   Original
-  `c4be4937d0f033111df1c2e3acb84d543eb1dfe7e9580b12bd236704008f1251`.
+  `f4636762d57238e6a81c6d1e7d5e3359eae6316f2f8b90110a533b52f0f54a1f`.
 - `python3 -m unittest discover -s scripts/tests`: 62 теста, `OK`.
 
 Изменения вне каталога, версионных overrides, производных payload/выгрузок,

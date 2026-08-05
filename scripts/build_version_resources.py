@@ -54,8 +54,31 @@ def catalog_has(catalog: dict[str, Any], record: dict[str, Any]) -> bool:
 def record_needs_catalog(record: dict[str, Any]) -> bool:
     status = record.get("translation_status")
     if status is not None:
-        return status != "NATIVE_RU"
+        if status == "NATIVE_RU":
+            return False
+        return not (
+            status == "FINALIZED"
+            and record.get("effective_translation_origin")
+            in {"native_ru", "translation-overrides"}
+        )
     return not record.get("native_ru_present", False)
+
+
+def unresolved_translation_ids(
+    manifest: dict[str, Any], catalog: dict[str, Any]
+) -> list[str]:
+    return [
+        record["id"]
+        for record in manifest["records"]
+        if (
+            record.get("translation_status")
+            not in {None, "FINALIZED", "NATIVE_RU"}
+            or (
+                record_needs_catalog(record)
+                and not catalog_has(catalog, record)
+            )
+        )
+    ]
 
 
 def mask_visible_fields(value: Any) -> Any:
@@ -600,11 +623,7 @@ def main() -> int:
         raise ValueError("translation source configuration changed")
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     validate_catalog(catalog)
-    unresolved = [
-        record["id"]
-        for record in manifest["records"]
-        if record_needs_catalog(record) and not catalog_has(catalog, record)
-    ]
+    unresolved = unresolved_translation_ids(manifest, catalog)
     if unresolved:
         raise ValueError(
             f"manifest has {len(unresolved)} pending translations: {unresolved[:3]}"

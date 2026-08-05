@@ -740,9 +740,11 @@ def catalog_has(catalog: dict[str, Any], record: dict[str, Any]) -> bool:
 
 
 def classify_translation_record(
-    catalog: dict[str, Any], record: dict[str, Any]
+    catalog: dict[str, Any], record: dict[str, Any], approved_effective: bool = False
 ) -> str:
     if catalog_has(catalog, record):
+        return "FINALIZED"
+    if approved_effective:
         return "FINALIZED"
     if record.get("review_native", False):
         return record.get(
@@ -752,8 +754,167 @@ def classify_translation_record(
             else "MISSING_NATIVE",
         )
     if record.get("native_ru_present", False):
-        return "NATIVE_RU"
+        return "REVIEW_NATIVE"
     return "PENDING"
+
+
+def review_identity(record: dict[str, Any], state: str = "visible") -> tuple[Any, ...]:
+    from export_effective_translations import record_context
+
+    return (
+        record.get("id"),
+        record.get("source_hash"),
+        record.get("source"),
+        record_context(record, state),
+    )
+
+
+def load_approved_records(output_root: Path) -> dict[tuple[Any, ...], list[dict[str, Any]]]:
+    approved: dict[tuple[Any, ...], list[dict[str, Any]]] = {}
+    for path in sorted(output_root.glob("*/manifest.json")):
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        for record in manifest.get("records", []):
+            if record.get("effective_translation_approved"):
+                context = record.get("effective_translation_context")
+                if not isinstance(context, str):
+                    continue
+                approved.setdefault(
+                    (
+                        record.get("id"),
+                        record.get("source_hash"),
+                        record.get("source"),
+                        context,
+                    ),
+                    [],
+                ).append(record)
+    return approved
+
+
+def configured_override(
+    version_root: Path, record: dict[str, Any]
+) -> tuple[str, str] | None:
+    from export_effective_translations import output_member, payload_value
+
+    runtime_path = version_root / "runtime-audit-overrides.json"
+    if runtime_path.exists() and record.get("output_format") == "lang":
+        runtime = json.loads(runtime_path.read_text(encoding="utf-8"))
+        value = runtime.get("translations", {}).get(record.get("namespace"), {}).get(
+            record.get("translation_key")
+        )
+        if isinstance(value, str) and value:
+            state: tuple[str, str] | None = (value, "translation-overrides")
+        else:
+            state = None
+    else:
+        state = None
+
+    for root in (
+        version_root / "compatibility-resourcepack",
+        version_root / "translation-overrides",
+    ):
+        value = payload_value(root, record)
+        if value is not None:
+            state = (value, "translation-overrides")
+        elif (
+            record.get("output_format") != "lang"
+            and (member := output_member(record)) is not None
+            and (root / member).exists()
+        ):
+            state = ("", "translation-overrides")
+    return state
+
+
+def annotate_translation_state(
+    record: dict[str, Any],
+    catalog: dict[str, Any],
+    approved_records: dict[tuple[Any, ...], list[dict[str, Any]]],
+    version_root: Path,
+    language_catalog: dict[tuple[str, str], str] | None = None,
+) -> str:
+    from export_effective_translations import output_member, payload_value
+
+    override = configured_override(version_root, record)
+    catalog_translation = next(
+        (
+            variant["translation"]
+            for variant in catalog["entries"].get(record["id"], [])
+            if variant["source_hash"] == record["source_hash"]
+            and variant["source"] == record["source"]
+        ),
+        None,
+    )
+    shared_language = None
+    if record.get("output_format") == "lang" and language_catalog is not None:
+        shared_language = language_catalog.get(
+            (record["namespace"], record["translation_key"])
+        )
+    if override is not None:
+        value, origin = override
+    elif catalog_translation is not None:
+        if (
+            record.get("output_format") == "lang"
+            and record.get("native_translation") == catalog_translation
+            and not record.get("force_output", False)
+        ):
+            value, origin = catalog_translation, "native_ru"
+        else:
+            value, origin = catalog_translation, "catalog"
+    elif shared_language is not None:
+        value, origin = shared_language, "translation-overrides"
+    elif record.get("native_translation"):
+        value, origin = record["native_translation"], "native_ru"
+    else:
+        value, origin = "", "missing"
+
+    explicit_root = version_root / "translation-overrides"
+    explicit_value = payload_value(explicit_root, record)
+    explicit = explicit_value is not None or (
+        record.get("output_format") != "lang"
+        and (member := output_member(record)) is not None
+        and (explicit_root / member).exists()
+    )
+    if not explicit and record.get("source_id") != "quests":
+        built_value = payload_value(
+            version_root / "payload/resourcepack", record
+        )
+        if built_value is not None:
+            value = built_value
+            origin = (
+                "catalog"
+                if catalog_translation is not None
+                and built_value == catalog_translation
+                else "translation-overrides"
+            )
+
+    approved = any(
+        previous.get("effective_translation") == value
+        for previous in approved_records.get(
+            review_identity(
+                record,
+                "suppressed_by_override"
+                if override is not None and value == ""
+                else "visible",
+            ),
+            [],
+        )
+    )
+    if catalog_translation is not None and override is None:
+        approved = True
+    record["effective_translation"] = value
+    record["effective_translation_origin"] = origin
+    from export_effective_translations import record_context
+
+    record["effective_translation_context"] = record_context(
+        record,
+        "suppressed_by_override"
+        if override is not None and value == ""
+        else "visible",
+    )
+    record["effective_translation_approved"] = approved
+    status = classify_translation_record(catalog, record, approved)
+    if override is not None and not approved:
+        status = "REVIEW_NATIVE" if value else "PENDING"
+    return status
 
 
 def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]]]:
@@ -763,6 +924,7 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
         args.instance_root, args.launcher_root, args.sklauncher_manifest
     )
     version_root = args.output_root.resolve() / args.version_slug
+    approved_records = load_approved_records(args.output_root.resolve())
     definitions = load_source_definitions(version_root / "sources.json")
 
     def quests_collector(definition: SourceDefinition) -> SourceResult:
@@ -856,8 +1018,36 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
 
     pending: list[dict[str, Any]] = []
     categories: Counter[str] = Counter()
+    language_catalog: dict[tuple[str, str], str] = {}
     for record in records:
-        status = classify_translation_record(catalog, record)
+        if record.get("output_format") != "lang":
+            continue
+        for variant in catalog["entries"].get(record["id"], []):
+            if (
+                variant["source_hash"] == record["source_hash"]
+                and variant["source"] == record["source"]
+            ):
+                if (
+                    record.get("native_ru_present", False)
+                    and not record.get("force_output", False)
+                    and (
+                        variant["translation"] == record.get("native_translation")
+                        or (
+                            "native_translation" not in record
+                            and not record.get("native_ru_same_as_source", False)
+                        )
+                    )
+                ):
+                    continue
+                key = (record["namespace"], record["translation_key"])
+                previous = language_catalog.get(key)
+                if previous is not None and previous != variant["translation"]:
+                    raise ValueError(f"{record['translation_key']}: conflicting catalog values")
+                language_catalog[key] = variant["translation"]
+    for record in records:
+        status = annotate_translation_state(
+            record, catalog, approved_records, version_root, language_catalog
+        )
         record["translation_status"] = status
         categories[status] += 1
         if status not in {"FINALIZED", "NATIVE_RU"}:
@@ -878,7 +1068,7 @@ def build(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any], lis
         "version": args.version_slug,
         "modpack": metadata,
         **collected.report,
-        "catalog_hits": categories["FINALIZED"],
+        "catalog_hits": sum(catalog_has(catalog, record) for record in records),
         "finalized": categories["FINALIZED"],
         "native_ru_coverage": sum(
             record.get("native_ru_present", False) for record in records

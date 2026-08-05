@@ -36,11 +36,12 @@ python3 scripts/build_version_delta.py \
 [`TRANSLATION_SOURCES.md`](TRANSLATION_SOURCES.md).
 
 Результат записывается в `manifest.json`, `migration-report.json` и
-`work/pending.tsv`. Источники книг с `review_native: true` включают в дельту
-штатные переводы со статусами `REVIEW_NATIVE`, `MISSING_NATIVE`,
-`INVALID_NATIVE` и `STALE_NATIVE`. Точная утверждённая пара
-`ID + source_hash` всегда получает `FINALIZED` и при повторном сканировании в
-дельту не возвращается.
+`work/pending.tsv`. Манифест также хранит фактические
+`effective_translation`, `effective_translation_origin` и признак
+`effective_translation_approved`. Точная утверждённая запись переиспользуется
+из предыдущих версионных манифестов только при совпадении `ID`, `source_hash`,
+английского текста и контекста. Новый ID, новый хеш и новый штатный русский
+текст получают `REVIEW_NATIVE` или `PENDING` и возвращаются в дельту.
 
 ## 2. Перевод дельты
 
@@ -55,6 +56,19 @@ python3 scripts/approve_version_translations.py --version <version>
 
 Для миграции или ревью части большой дельты можно добавить `--allow-partial`.
 
+После полного редакционного ревью и сборки payload зафиксируйте эффективные
+тексты в манифесте. Команда сверяет каждый итоговый текст с индивидуальным
+вердиктом и не переносит признак утверждения на изменившуюся строку:
+
+```sh
+python3 scripts/export_effective_translations.py \
+  --version <version> \
+  --quality-review translation-versions/<version>/work/quality-review.tsv
+```
+
+Редкие производные изменения общего translation key передаются отдельным
+проверенным TSV через `--derived-changes`.
+
 Повторное построение манифеста должно дать нулевую дельту.
 
 ## 3. Построение payload
@@ -65,8 +79,10 @@ python3 scripts/build_version_resources.py \
   --instance-root "/path/to/clean/modpack"
 ```
 
-Сборщик полностью заменяет `translation-versions/<version>/payload`, поэтому
-в нём не остаются ресурсы другой версии. Затем проверьте результат:
+Сборщик блокирует любой статус кроме `FINALIZED` (и старого совместимого
+`NATIVE_RU`) и полностью заменяет `translation-versions/<version>/payload`,
+поэтому удалённые из нового манифеста записи в payload не остаются. Затем
+проверьте результат:
 
 ```sh
 python3 scripts/build_version_resources.py \

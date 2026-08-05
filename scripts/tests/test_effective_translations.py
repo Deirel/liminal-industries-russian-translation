@@ -7,11 +7,81 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from export_effective_translations import effective_row
-from build_version_resources import build_language_files
+from export_effective_translations import annotate_manifest, effective_row
+from build_version_resources import build_language_files, unresolved_translation_ids
 
 
 class EffectiveTranslationTest(unittest.TestCase):
+    def test_build_blocks_unreviewed_native_translation(self) -> None:
+        record = {
+            "id": "item:item.test.new",
+            "translation_status": "REVIEW_NATIVE",
+            "native_ru_present": True,
+        }
+        self.assertEqual(
+            [record["id"]],
+            unresolved_translation_ids({"records": [record]}, {"entries": {}}),
+        )
+
+    def test_language_rebuild_drops_removed_payload_resource(self) -> None:
+        record = {
+            "id": "item:item.test.kept",
+            "source": "Kept",
+            "source_hash": "kept-hash",
+            "namespace": "test",
+            "translation_key": "item.test.kept",
+            "output_format": "lang",
+            "native_ru_present": False,
+        }
+        catalog = {
+            "entries": {
+                record["id"]: [
+                    {
+                        "source": record["source"],
+                        "source_hash": record["source_hash"],
+                        "translation": "Сохранено",
+                    }
+                ]
+            }
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            stale = output / "assets/deleted/lang/ru_ru.json"
+            stale.parent.mkdir(parents=True)
+            stale.write_text('{"item.deleted": "Удалено"}', encoding="utf-8")
+
+            build_language_files({"records": [record]}, catalog, {}, output)
+
+            self.assertFalse(stale.exists())
+            self.assertTrue((output / "assets/test/lang/ru_ru.json").exists())
+
+    def test_manifest_approval_requires_matching_reviewed_effective_text(self) -> None:
+        row = {
+            "id": "item:item.test.widget",
+            "source_hash": "hash",
+            "source": "Widget",
+            "effective_translation": "Виджет",
+            "context": '{"kind":"item_name"}',
+            "version": "test",
+            "origin": "native_ru",
+        }
+        manifest = {"records": [{"id": row["id"]}]}
+        review = {
+            **row,
+            "verdict": "PASS",
+            "recommendation": "",
+            "independent_review": "",
+        }
+
+        annotated = annotate_manifest(manifest, [row], [review])
+
+        self.assertTrue(
+            annotated["records"][0]["effective_translation_approved"]
+        )
+        changed = [{**row, "effective_translation": "Другой текст"}]
+        with self.assertRaisesRegex(ValueError, "reviewed translation changed"):
+            annotate_manifest(manifest, changed, [review])
+
     def test_outputs_only_catalog_translation_that_differs_from_native(self) -> None:
         records = [
             {

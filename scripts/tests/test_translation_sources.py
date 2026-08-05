@@ -19,7 +19,11 @@ from translation_sources import (
     load_source_definitions,
     parse_mantle_language,
 )
-from build_version_delta import classify_translation_record
+from build_version_delta import (
+    annotate_translation_state,
+    classify_translation_record,
+    review_identity,
+)
 from build_version_resources import (
     build_manual_files,
     build_mantle_book_files,
@@ -412,6 +416,96 @@ class ReviewedNativeBookSourceTest(unittest.TestCase):
         self.assertEqual(
             "REVIEW_NATIVE", classify_translation_record(catalog, changed)
         )
+
+    def test_update_reuses_only_exact_approved_effective_records(self) -> None:
+        current = {
+            "id": "item:item.test.kept",
+            "kind": "item_name",
+            "source_id": "items",
+            "source": "Kept",
+            "source_hash": source_hash("Kept"),
+            "native_ru_present": True,
+            "native_translation": "Сохранено",
+            "namespace": "test",
+            "translation_key": "item.test.kept",
+            "output_format": "lang",
+        }
+        previous = {
+            **current,
+            "effective_translation": "Сохранено",
+            "effective_translation_origin": "native_ru",
+            "effective_translation_approved": True,
+        }
+        deleted = {
+            **previous,
+            "id": "item:item.test.deleted",
+            "translation_key": "item.test.deleted",
+        }
+        approved = {
+            review_identity(previous): [previous],
+            review_identity(deleted): [deleted],
+        }
+        changed = {
+            **current,
+            "source": "Changed",
+            "source_hash": source_hash("Changed"),
+        }
+        new = {
+            **current,
+            "id": "item:item.test.new",
+            "translation_key": "item.test.new",
+        }
+        catalog = {"entries": {}}
+        with tempfile.TemporaryDirectory() as directory:
+            version_root = Path(directory)
+            kept_status = annotate_translation_state(
+                current, catalog, approved, version_root
+            )
+            changed_status = annotate_translation_state(
+                changed, catalog, approved, version_root
+            )
+            new_status = annotate_translation_state(
+                new, catalog, approved, version_root
+            )
+
+        self.assertEqual("FINALIZED", kept_status)
+        self.assertEqual("REVIEW_NATIVE", changed_status)
+        self.assertEqual("REVIEW_NATIVE", new_status)
+        self.assertNotIn(deleted["id"], {current["id"], new["id"]})
+
+        suppressed = {
+            "id": "patchouli:test:entry:/text",
+            "kind": "patchouli_text",
+            "source_id": "patchouli",
+            "source": "Text",
+            "source_hash": source_hash("Text"),
+            "output_format": "patchouli_json",
+            "location": {
+                "output_member": "assets/test/book/ru_ru/entry.json",
+                "pointer": "/text",
+            },
+        }
+        previously_visible = {
+            **suppressed,
+            "effective_translation": "",
+            "effective_translation_origin": "translation-overrides",
+            "effective_translation_approved": True,
+        }
+        approved_visible = {
+            review_identity(previously_visible): [previously_visible]
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            version_root = Path(directory)
+            override = (
+                version_root
+                / "translation-overrides/assets/test/book/ru_ru/entry.json"
+            )
+            override.parent.mkdir(parents=True)
+            override.write_text("{}", encoding="utf-8")
+            suppressed_status = annotate_translation_state(
+                suppressed, catalog, approved_visible, version_root
+            )
+        self.assertEqual("PENDING", suppressed_status)
 
     def test_collects_and_rebuilds_ie_manual_from_english_structure(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

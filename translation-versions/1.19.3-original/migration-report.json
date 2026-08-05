@@ -31,7 +31,7 @@
       "records": 6589,
       "registry_blocks": 6589,
       "native_ru": 4488,
-      "suggested_translations": 2151
+      "suggested_translations": 2291
     },
     "patchouli": {
       "adapter": "patchouli",
@@ -63,12 +63,11 @@
     }
   },
   "catalog_hits": 7232,
-  "finalized": 7232,
+  "finalized": 19853,
   "native_ru_coverage": 14035,
   "pending": 0,
   "translation_statuses": {
-    "FINALIZED": 7232,
-    "NATIVE_RU": 12621
+    "FINALIZED": 19853
   },
   "pending_by_source": {},
   "errors": 0

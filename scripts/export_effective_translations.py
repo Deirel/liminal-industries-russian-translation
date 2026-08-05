@@ -7,6 +7,7 @@ import argparse
 import csv
 import hashlib
 import json
+from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
@@ -24,6 +25,19 @@ FIELDS = (
     "version",
     "origin",
 )
+
+
+def record_context(record: dict[str, Any], state: str) -> str:
+    return json.dumps(
+        {
+            "kind": record["kind"],
+            "source_id": record["source_id"],
+            "location": record.get("location", {}),
+            "state": state,
+        },
+        ensure_ascii=False,
+        sort_keys=True,
+    )
 
 
 def output_member(record: dict[str, Any]) -> str | None:
@@ -102,18 +116,14 @@ def effective_row(
     else:
         value = record.get("native_translation")
         origin = "native_ru" if value else "missing"
-    context = {
-        "kind": record["kind"],
-        "source_id": record["source_id"],
-        "location": record.get("location", {}),
-        "state": "suppressed_by_override" if suppressed else "visible",
-    }
     return {
         "id": record["id"],
         "source_hash": record["source_hash"],
         "source": record["source"],
         "effective_translation": value or "",
-        "context": json.dumps(context, ensure_ascii=False, sort_keys=True),
+        "context": record_context(
+            record, "suppressed_by_override" if suppressed else "visible"
+        ),
         "version": version,
         "origin": origin,
     }
@@ -184,6 +194,63 @@ def render_runtime_sample(rows: list[dict[str, str]]) -> str:
     return output.getvalue()
 
 
+def annotate_manifest(
+    manifest: dict[str, Any],
+    rows: list[dict[str, str]],
+    review_rows: list[dict[str, str]] | None = None,
+    derived_changes: list[dict[str, str]] | None = None,
+) -> dict[str, Any]:
+    result = deepcopy(manifest)
+    by_id = {row["id"]: row for row in rows}
+    reviews = {row["id"]: row for row in review_rows or []}
+    derived = {row["id"]: row for row in derived_changes or []}
+    if len(by_id) != len(rows) or len(reviews) != len(review_rows or []):
+        raise ValueError("effective or review rows contain duplicate IDs")
+
+    for record in result["records"]:
+        row = by_id[record["id"]]
+        approved = False
+        if review_rows is not None:
+            review = reviews.get(record["id"])
+            if review is None:
+                raise ValueError(f"{record['id']}: missing quality-review verdict")
+            if any(
+                review[key] != row[key]
+                for key in ("source_hash", "source", "context")
+            ):
+                raise ValueError(f"{record['id']}: quality-review identity changed")
+            expected = (
+                review["recommendation"]
+                if review["verdict"] == "CHANGE"
+                else review["effective_translation"]
+            )
+            if change := derived.get(record["id"]):
+                if (
+                    change["old_translation"] != expected
+                    or change["new_translation"] != row["effective_translation"]
+                    or change["independent_review"] != "APPROVED"
+                ):
+                    raise ValueError(f"{record['id']}: invalid derived change")
+                expected = change["new_translation"]
+            if expected != row["effective_translation"]:
+                raise ValueError(f"{record['id']}: reviewed translation changed")
+            if review["verdict"] == "CHANGE" and review["independent_review"] != "APPROVED":
+                raise ValueError(f"{record['id']}: change lacks independent review")
+            approved = True
+        elif (
+            record.get("effective_translation") == row["effective_translation"]
+            and record.get("effective_translation_origin") == row["origin"]
+            and record.get("effective_translation_context") == row["context"]
+        ):
+            approved = bool(record.get("effective_translation_approved", False))
+
+        record["effective_translation"] = row["effective_translation"]
+        record["effective_translation_origin"] = row["origin"]
+        record["effective_translation_context"] = row["context"]
+        record["effective_translation_approved"] = approved
+    return result
+
+
 def parse_args() -> argparse.Namespace:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
@@ -197,6 +264,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--runtime-report", type=Path)
     parser.add_argument("--sample-size", type=int, default=10)
+    parser.add_argument("--quality-review", type=Path)
+    parser.add_argument("--derived-changes", type=Path, action="append", default=[])
     return parser.parse_args()
 
 
@@ -221,11 +290,28 @@ def main() -> int:
         raise ValueError(f"{len(missing)} records have no effective translation: {missing[:3]}")
     target = version_root / "work/effective-translations.tsv"
     content = render(rows)
+    review_rows = None
+    if args.quality_review is not None:
+        with args.quality_review.open(encoding="utf-8", newline="") as handle:
+            review_rows = list(csv.DictReader(handle, delimiter="\t"))
+    derived_changes: list[dict[str, str]] = []
+    for path in args.derived_changes:
+        with path.open(encoding="utf-8", newline="") as handle:
+            derived_changes.extend(csv.DictReader(handle, delimiter="\t"))
+    annotated_manifest = annotate_manifest(
+        manifest, rows, review_rows, derived_changes
+    )
     if args.check:
+        if manifest != annotated_manifest:
+            raise ValueError("manifest effective translations are not current")
         if not target.exists() or target.read_text(encoding="utf-8") != content:
             raise ValueError("effective translation export is not current")
         print(f"Effective translations are current for {args.version}: {len(rows)} rows")
     else:
+        (version_root / "manifest.json").write_text(
+            json.dumps(annotated_manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(content, encoding="utf-8", newline="")
         print(f"Wrote {len(rows)} effective translations for {args.version}")

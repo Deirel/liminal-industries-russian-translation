@@ -1,0 +1,2 @@
+"id"	"source_hash"	"old_translation"	"new_translation"	"reason"	"independent_review"	"reviewer"	"initial_new_translation"	"review_notes"
+"block:block.supplementaries.spring_launcher_head"	"sha256:e9e08823947597aaf9a0c31b375cfc85f05ab3d38df45d54564a22dd31026799"	"Запускатель"	"Пружинный пускатель"	"Связано с independently approved item:block.supplementaries.spring_launcher_head: block и item используют один source, source_hash и translation key."	"APPROVED"	"/root/checkpoint6_review"	"Пружинный пускатель"	"APPROVED_DERIVED_FROM_SHARED_TRANSLATION_KEY"

@@ -1,0 +1,2 @@
+id	source_hash	old_translation	new_translation	reason	independent_review
+mantle-book:tconstruct:mighty_smelting:abilities/general/tconstruct_unbreakable.json:/effects/3	sha256:8190a3687a0cddb81003da5cced46e609d5517cb6eac4c947450ebfa529afef5	Бесполезен, если попытаться съесть инструмент	Не эффективен, если Вы пытаетесь съесть свой инструмент	Общий каталог возвращён к проверенному Rescripted-тексту: контекст Original отличается; новая формулировка остаётся Original-only override.	APPROVED
