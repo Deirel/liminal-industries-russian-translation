@@ -1,0 +1,21 @@
+{
+  "version": "1.19.3-original",
+  "records": 19853,
+  "sources": {
+    "blocks": 6589,
+    "immersive_engineering_manual": 664,
+    "items": 7810,
+    "patchouli": 1958,
+    "quests": 455,
+    "tconstruct_books": 2377
+  },
+  "states": {
+    "suppressed_by_override": 6,
+    "visible": 19847
+  },
+  "verdicts": {
+    "CHANGE": 279,
+    "PASS": 19574
+  },
+  "unreviewed_changes": 0
+}

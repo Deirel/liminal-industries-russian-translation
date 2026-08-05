@@ -1,0 +1,13 @@
+{
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "reviewed": 109,
+  "approved": 109,
+  "rejected": 0,
+  "revised": 3,
+  "revised_ids": [
+    "mantle-book:tconstruct:fantastic_foundry:blazing_blood/piglin_bartering.json:/text/0/text",
+    "patchouli-lang:botania:botania.page.spellCloth0",
+    "item:item.storagedrawers.drawer_puller"
+  ]
+}

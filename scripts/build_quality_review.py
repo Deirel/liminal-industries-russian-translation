@@ -150,7 +150,7 @@ def parse_args() -> argparse.Namespace:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--version", required=True)
-    parser.add_argument("--changes", type=Path, required=True)
+    parser.add_argument("--changes", type=Path, action="append", required=True)
     parser.add_argument("--verdicts", type=Path, action="append", required=True)
     parser.add_argument(
         "--versions-root", type=Path, default=root / "translation-versions"
@@ -164,7 +164,7 @@ def main() -> int:
     version_root = args.versions_root.resolve() / args.version
     rows = build_review(
         read_tsv(version_root / "work/effective-translations.tsv"),
-        read_tsv(args.changes),
+        [row for path in args.changes for row in read_tsv(path)],
         [row for path in args.verdicts for row in read_tsv(path)],
     )
     target = version_root / "work/quality-review.tsv"
