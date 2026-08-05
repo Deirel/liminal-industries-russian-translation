@@ -1,0 +1,14 @@
+{
+  "input_sha256": "43150ba8617db11f00e9aae787d0fbaf6005596187331681da43eb276bc06396",
+  "input_rows": 22656,
+  "output_rows": 22656,
+  "counts": {
+    "PASS": 22643,
+    "CHANGE": 13,
+    "UNCERTAIN": 0
+  },
+  "reviewer": "/root/rescripted_language_editor_a",
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "blind": true
+}
