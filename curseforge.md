@@ -11,19 +11,11 @@ The mod translates:
 * Item and block names from the modpack
 * In-game guidebooks
 
-Missing translations have been added throughout the modpack. Books created with **Patchouli** and **Tinkers' Construct** have been translated, reviewed, and validated. Issues with clipped text, missing lines, broken recipe pages, and links to missing recipes have also been fixed.
-
-The **Immersive Engineering** guidebook is translated, but its translation has not yet been fully reviewed.
+Missing translations have been added throughout the modpack. All in-game guidebooks have been translated and reviewed, including corrections to errors in official Russian translations. Issues with clipped text, missing lines, broken recipe pages, and links to missing recipes have also been fixed.
 
 The translations are applied **client-side and in memory only**. The mod does not replace or modify FTB Quests configuration files, create backups, or change quest/books/achievements progress. Removing the mod restores the original text.
 
 User-provided Russian translations take priority. If the source text of a supported quest or book changes, the mod does not overwrite it with an outdated translation.
-
-## Translation Update Coming Soon
-
-A future update will provide a corrected and fully reviewed Russian translation of the **Immersive Engineering** guidebook.
-
-***
 
 ## Compatibility
 
