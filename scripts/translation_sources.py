@@ -348,6 +348,8 @@ def collect_patchouli(
             "output_format": "lang",
             "location": location,
         }
+        if key in native_ru:
+            record["native_translation"] = native_ru[key]
         if key in native_ru and native_ru[key] == source:
             record["native_ru_same_as_source"] = True
         if key in project_ru:
@@ -399,12 +401,13 @@ def collect_patchouli(
                     "patchouli_language_text",
                 )
                 continue
-            native_present = False
+            native_translation = None
             if native_document is not None:
                 try:
-                    native_present = bool(json_pointer_get(native_document, pointer))
+                    value = json_pointer_get(native_document, pointer)
+                    native_translation = value if isinstance(value, str) and value else None
                 except (KeyError, IndexError, TypeError, ValueError):
-                    native_present = False
+                    pass
             logical_id = (
                 f"patchouli-json:{namespace}:{book}:{relative}:{pointer}"
             )
@@ -414,10 +417,12 @@ def collect_patchouli(
                 "source": text,
                 "source_hash": source_hash(text),
                 "namespace": namespace,
-                "native_ru_present": native_present,
+                "native_ru_present": native_translation is not None,
                 "output_format": "patchouli_json",
                 "location": location,
             }
+            if native_translation is not None:
+                record["native_translation"] = native_translation
             previous = records_by_id.get(logical_id)
             if previous is not None and (
                 previous["source"] != text
@@ -658,6 +663,8 @@ def collect_immersive_engineering_manual(
                     "key": key,
                 },
             }
+            if key in native_ru:
+                record["native_translation"] = native_ru[key]
             if key in native_ru and native_ru[key] == source:
                 record["native_ru_same_as_source"] = True
             if key in project_ru:

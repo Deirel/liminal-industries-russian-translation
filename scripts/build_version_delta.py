@@ -457,6 +457,8 @@ def extract_item_records(
                 else "runtime_generated"
             ),
         }
+        if key in native_ru:
+            record["native_translation"] = native_ru[key]
         if key in native_ru and native_ru[key] == source:
             record["native_ru_same_as_source"] = True
         aliases = (
@@ -628,6 +630,8 @@ def extract_block_records(
             ),
             "output_format": "lang",
         }
+        if key in native_ru:
+            record["native_translation"] = native_ru[key]
         if key in native_ru and native_ru[key] == source:
             record["native_ru_same_as_source"] = True
         suggested = project_ru.get(key)
