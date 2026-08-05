@@ -1,0 +1,25 @@
+{
+  "source": "effective-translations.tsv",
+  "selection": {
+    "source_id": ["items", "blocks"],
+    "state": "visible",
+    "location": {},
+    "namespace_from": "id translation key component after kind and before first dot",
+    "namespace_initial_range": ["a", "m"]
+  },
+  "counts": {
+    "selected_rows": 11868,
+    "namespaces_a_to_l": 8897,
+    "namespaces_starting_m": 2971,
+    "exact_item_block_duplicate_rows": 0
+  },
+  "namespace_counts_starting_m": {
+    "mekanism": 578,
+    "mekanismgenerators": 61,
+    "minecraft": 2258,
+    "miners_delight": 64,
+    "moonlight": 1,
+    "moyai": 2,
+    "musketmod": 7
+  }
+}
