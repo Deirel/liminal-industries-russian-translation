@@ -1,0 +1,16 @@
+{
+  "version": "1.19.3-original",
+  "visible_records": 19847,
+  "classes": {
+    "NAME": 14399,
+    "PROSE": 5246,
+    "SHORT_LABEL": 202
+  },
+  "groups": 1202,
+  "control_ids": [
+    "patchouli-lang:botania:botania.page.itemFinder0",
+    "patchouli-lang:botania:botania.page.welcome0"
+  ],
+  "control_ids_complete": true,
+  "prior_verdicts_exposed": false
+}
