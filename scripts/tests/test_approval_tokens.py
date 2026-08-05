@@ -9,7 +9,10 @@ from approve_version_translations import (
     TOKEN_RE,
     technical_tokens,
     validate_block_item_consistency,
+    apply_corrections,
+    add_translations,
 )
+from catalog_utils import catalog_entries_hash, source_hash, validate_catalog
 
 
 class ApprovalTokenTest(unittest.TestCase):
@@ -125,6 +128,96 @@ class BlockItemConsistencyTest(unittest.TestCase):
                 self.records, translations, {"entries": {}}
             )
 
+
+class CatalogCorrectionTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.record = {
+            "id": "item:item.example.machine",
+            "source": "Machine",
+            "source_hash": source_hash("Machine"),
+        }
+        self.catalog = {
+            "schema_version": 1,
+            "entries": {
+                self.record["id"]: [
+                    {
+                        "source": "Machine",
+                        "source_hash": source_hash("Machine"),
+                        "translation": "Механизм",
+                    }
+                ]
+            },
+            "corrections": [],
+        }
+        self.catalog["entries_hash"] = catalog_entries_hash(self.catalog["entries"])
+
+    def correction(self, **changes: str) -> dict[str, str]:
+        row = {
+            "id": self.record["id"],
+            "source_hash": self.record["source_hash"],
+            "old_translation": "Механизм",
+            "new_translation": "Машина",
+            "reason": "Точнее соответствует контексту",
+            "independent_review": "APPROVED",
+        }
+        row.update(changes)
+        return row
+
+    def test_applies_independently_reviewed_correction(self) -> None:
+        self.assertEqual(
+            1,
+            apply_corrections(
+                self.catalog,
+                {self.record["id"]: self.record},
+                [self.correction()],
+            ),
+        )
+        self.assertEqual(
+            "Машина",
+            self.catalog["entries"][self.record["id"]][0]["translation"],
+        )
+
+    def test_adds_new_approved_translation(self) -> None:
+        self.catalog["entries"] = {}
+        self.assertEqual(
+            1,
+            add_translations(
+                self.catalog,
+                {self.record["id"]: self.record},
+                {
+                    self.record["id"]: {
+                        "source_hash": self.record["source_hash"],
+                        "translation": "Машина",
+                    }
+                },
+            ),
+        )
+        self.assertEqual(
+            "Машина",
+            self.catalog["entries"][self.record["id"]][0]["translation"],
+        )
+
+    def test_rejects_correction_without_review(self) -> None:
+        with self.assertRaisesRegex(ValueError, "lacks independent approval"):
+            apply_corrections(
+                self.catalog,
+                {self.record["id"]: self.record},
+                [self.correction(independent_review="")],
+            )
+
+    def test_rejects_invalid_manifest_source_hash(self) -> None:
+        broken = dict(self.record, source_hash="sha256:broken")
+        with self.assertRaisesRegex(ValueError, "invalid manifest source hash"):
+            apply_corrections(
+                self.catalog,
+                {broken["id"]: broken},
+                [self.correction(source_hash="sha256:broken")],
+            )
+
+    def test_rejects_silent_catalog_edit(self) -> None:
+        self.catalog["entries"][self.record["id"]][0]["translation"] = "Тихая правка"
+        with self.assertRaisesRegex(ValueError, "without an approval operation"):
+            validate_catalog(self.catalog)
 
 if __name__ == "__main__":
     unittest.main()

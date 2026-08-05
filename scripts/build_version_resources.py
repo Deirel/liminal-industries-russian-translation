@@ -192,9 +192,15 @@ def build_language_files(
             record.get("native_ru_present", False)
             and not record.get("force_output", False)
             and (
-                not record.get("native_ru_same_as_source", False)
-                or value is None
-                or value == record["source"]
+                value is None
+                or value == record.get("native_translation")
+                or (
+                    "native_translation" not in record
+                    and (
+                        not record.get("native_ru_same_as_source", False)
+                        or value == record["source"]
+                    )
+                )
             )
         ):
             continue

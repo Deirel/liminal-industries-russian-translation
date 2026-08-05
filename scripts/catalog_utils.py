@@ -24,6 +24,17 @@ def source_hash(source: str) -> str:
     return sha256_bytes(source.encode("utf-8"))
 
 
+def catalog_entries_hash(entries: dict[str, Any]) -> str:
+    return sha256_bytes(
+        json.dumps(
+            entries,
+            ensure_ascii=False,
+            sort_keys=True,
+            separators=(",", ":"),
+        ).encode("utf-8")
+    )
+
+
 @dataclass
 class SnbtParser:
     text: str
@@ -182,8 +193,11 @@ def require_string(owner: dict[str, Any], key: str, context: str) -> str:
 def validate_catalog(catalog: dict[str, Any]) -> None:
     if catalog.get("schema_version") != SCHEMA_VERSION:
         raise ValueError("wrong catalog schema version")
+    entries = catalog.get("entries", {})
+    if catalog.get("entries_hash") != catalog_entries_hash(entries):
+        raise ValueError("catalog entries changed without an approval operation")
     seen: set[tuple[str, str]] = set()
-    for logical_id, variants in catalog.get("entries", {}).items():
+    for logical_id, variants in entries.items():
         if not isinstance(variants, list) or not variants:
             raise ValueError(f"{logical_id}: variants must be a non-empty list")
         for variant in variants:
@@ -204,3 +218,33 @@ def validate_catalog(catalog: dict[str, Any]) -> None:
             if pair in seen:
                 raise ValueError(f"{logical_id}: duplicate ID + source_hash")
             seen.add(pair)
+    corrections = catalog.get("corrections", [])
+    if not isinstance(corrections, list):
+        raise ValueError("catalog corrections must be a list")
+    latest: dict[tuple[str, str], str] = {}
+    for correction in corrections:
+        required = {
+            "id",
+            "source_hash",
+            "old_translation",
+            "new_translation",
+            "reason",
+            "independent_review",
+        }
+        if not isinstance(correction, dict) or not required <= correction.keys():
+            raise ValueError("invalid catalog correction entry")
+        if correction["independent_review"] != "APPROVED" or not correction["reason"]:
+            raise ValueError("catalog correction lacks independent approval")
+        pair = (correction["id"], correction["source_hash"])
+        previous = latest.get(pair, correction["old_translation"])
+        if previous != correction["old_translation"]:
+            raise ValueError(f"{correction['id']}: broken correction history")
+        latest[pair] = correction["new_translation"]
+    for (logical_id, digest), expected in latest.items():
+        matches = [
+            variant["translation"]
+            for variant in entries.get(logical_id, [])
+            if variant["source_hash"] == digest
+        ]
+        if matches != [expected]:
+            raise ValueError(f"{logical_id}: correction history differs from catalog")

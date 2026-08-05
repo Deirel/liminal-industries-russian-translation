@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "entries_hash": "sha256:38fd668fb0bd5597ebe179398bbabfed0df413e5905ea11c2195aec97be430a9",
+  "corrections": [],
   "entries": {
     "block:block.actuallyadditions.atomic_reconstructor": [
       {
