@@ -1,8 +1,21 @@
 {
   "<i>To be perfectly honest, I never actually realized how much content Actually Additions has before.<r><n> - Ellpeck": "<i>Признаться честно, я и сам не представлял, сколько всего есть в Actually Additions.<r><n> - Ellpeck",
+  "block.actuallyadditions.black_quartz_brick_slab": "Плита из чёрных кварцевых кирпичей",
+  "block.actuallyadditions.black_quartz_brick_stair": "Ступеньки из чёрных кварцевых кирпичей",
+  "block.actuallyadditions.black_quartz_brick_wall": "Ограда из чёрных кварцевых кирпичей",
   "block.actuallyadditions.coffee": "Кофейный куст",
   "block.actuallyadditions.crystallized_oil": "Кристаллизованное масло",
+  "block.actuallyadditions.empowered_diamatine_crystal_block": "Усиленный кристальный блок Диаматина",
+  "block.actuallyadditions.empowered_emeradic_crystal_block": "Усиленный кристальный блок Эмерадиса",
+  "block.actuallyadditions.empowered_palis_crystal_block": "Усиленный кристальный блок Палиса",
+  "block.actuallyadditions.empowered_restonia_crystal_block": "Усиленный кристальный блок Рестонии",
+  "block.actuallyadditions.empowered_void_crystal_block": "Усиленный кристальный блок Пустоты",
+  "block.actuallyadditions.ethetic_green_stairs": "Декоративные ступеньки из зелёного кварца",
+  "block.actuallyadditions.ethetic_white_stairs": "Декоративные ступеньки из кварца",
   "block.actuallyadditions.refined_canola_oil": "Рафинированное масло канолы",
+  "block.actuallyadditions.smooth_black_quartz_slab": "Плита из гладкого чёрного кварца",
+  "block.actuallyadditions.smooth_black_quartz_stair": "Ступеньки из гладкого чёрного кварца",
+  "block.actuallyadditions.smooth_black_quartz_wall": "Ограда из гладкого чёрного кварца",
   "booklet.actuallyadditions.chapter.book_tutorial": "Как пользоваться руководством",
   "booklet.actuallyadditions.chapter.book_tutorial.text.1": "<item>Руководство Actually Additions<r>, которое вы сейчас читаете, содержит множество <imp>полезных сведений о предметах мода<r>. <n>Разобраться в нём совсем несложно. Вот самое главное: <n><n>В <item>главе<r>, например в этой, перелистывайте страницы <imp>белыми кнопками внизу<r> или с помощью <imp>колёсика мыши<r>. <n>Но руководство состоит не только из глав.",
   "booklet.actuallyadditions.chapter.book_tutorial.text.2": "Нажмите <imp>кнопку в левом верхнем углу<r> или щёлкните правой кнопкой мыши, чтобы <imp>перейти на предыдущий уровень<r>. Так вы попадёте в <item>раздел<r>. В каждом разделе собраны главы по <imp>одной теме<r>. Здесь тоже можно <imp>листать страницы<r> и выбирать указанные на них предметы. <n><n>Тем же способом перейдите ещё на один уровень выше, чтобы открыть <item>главную страницу<r> руководства. <n><n><i>Теперь перелистните страницу кнопкой в правом нижнем углу.",
@@ -37,5 +50,7 @@
   "booklet.actuallyadditions.item.actuallyadditions.booklet": "Руководство Actually Additions",
   "booklet.actuallyadditions.reconstructor_recipe": "Рецепт атомного реконструктора",
   "booklet.actuallyadditions.shapeless_recipe": "Бесформенный рецепт",
-  "item.actuallyadditions.booklet": "Руководство Actually Additions"
+  "item.actuallyadditions.booklet": "Руководство Actually Additions",
+  "item.actuallyadditions.crystallized_canola_seed": "Кристаллизированные семена канолы",
+  "item.actuallyadditions.drill_light_blue": "Светло-синяя дрель"
 }

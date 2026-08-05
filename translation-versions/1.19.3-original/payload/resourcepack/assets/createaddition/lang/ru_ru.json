@@ -3,5 +3,9 @@
   "block.createaddition.connector_old": "Старый соединитель",
   "block.createaddition.copper_wire_casing": "Корпус медного провода",
   "block.createaddition.electrum_block": "Блок электрума",
-  "block.createaddition.small_light_connector": "Малый светящийся соединитель"
+  "block.createaddition.small_light_connector": "Малый светящийся соединитель",
+  "item.createaddition.electrum_rod": "Электрумовый стержень",
+  "item.createaddition.electrum_sheet": "Электрумовый лист",
+  "item.createaddition.electrum_spool": "Электрумовая катушка",
+  "item.createaddition.electrum_wire": "Электрумовый провод"
 }

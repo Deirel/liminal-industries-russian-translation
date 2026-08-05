@@ -1,4 +1,7 @@
 {
+  "block.mekanism.antiprotonic_nucleosynthesizer": "Антипротонный нуклеосинтезатор",
+  "block.mekanism.resistive_heater": "Резистивный нагреватель",
+  "block.mekanism.steam": "Жидкий пар",
   "item.mekanism.module_attack_amplification_unit": "Модуль усиления атаки",
   "item.mekanism.module_blasting_unit": "Модуль взрывных работ",
   "item.mekanism.module_charge_distribution_unit": "Модуль распределения заряда",
@@ -28,5 +31,7 @@
   "item.mekanism.module_silk_touch_unit": "Модуль шёлкового касания",
   "item.mekanism.module_teleportation_unit": "Модуль телепортации",
   "item.mekanism.module_vein_mining_unit": "Модуль жильной добычи",
-  "item.mekanism.module_vision_enhancement_unit": "Модуль улучшения зрения"
+  "item.mekanism.module_vision_enhancement_unit": "Модуль улучшения зрения",
+  "item.mekanism.uranium_hexafluoride_bucket": "Ведро жидкого гексафторида урана",
+  "item.mekanism.uranium_oxide_bucket": "Ведро жидкого оксида урана"
 }

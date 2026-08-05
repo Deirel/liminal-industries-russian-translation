@@ -1,5 +1,20 @@
 {
+  "block.actuallyadditions.black_quartz_brick_slab": "Плита из чёрных кварцевых кирпичей",
+  "block.actuallyadditions.black_quartz_brick_stair": "Ступеньки из чёрных кварцевых кирпичей",
+  "block.actuallyadditions.black_quartz_brick_wall": "Ограда из чёрных кварцевых кирпичей",
+  "block.actuallyadditions.empowered_diamatine_crystal_block": "Усиленный кристальный блок Диаматина",
+  "block.actuallyadditions.empowered_emeradic_crystal_block": "Усиленный кристальный блок Эмерадиса",
+  "block.actuallyadditions.empowered_palis_crystal_block": "Усиленный кристальный блок Палиса",
+  "block.actuallyadditions.empowered_restonia_crystal_block": "Усиленный кристальный блок Рестонии",
+  "block.actuallyadditions.empowered_void_crystal_block": "Усиленный кристальный блок Пустоты",
+  "block.actuallyadditions.ethetic_green_stairs": "Декоративные ступеньки из зелёного кварца",
+  "block.actuallyadditions.ethetic_white_stairs": "Декоративные ступеньки из кварца",
+  "block.actuallyadditions.smooth_black_quartz_slab": "Плита из гладкого чёрного кварца",
+  "block.actuallyadditions.smooth_black_quartz_stair": "Ступеньки из гладкого чёрного кварца",
+  "block.actuallyadditions.smooth_black_quartz_wall": "Ограда из гладкого чёрного кварца",
   "booklet.actuallyadditions.chapter.empowerer.text.1": "<item>Усилитель<r> — устройство средней стадии развития для <imp>усиления<r> кристаллов и других предметов. <n><imp>Щёлкните правой кнопкой мыши по усилителю<r> с усиливаемым предметом, а необходимые компоненты разместите на <item>выставочных стендах<r> <imp>в двух блоках от него<r>, как на <imp>следующей странице<r>. <n>Для запуска подайте <imp>много CF на каждый выставочный стенд<r>. Эта энергия уйдёт на усиление предмета в усилителе.",
   "booklet.actuallyadditions.chapter.empowerer.text.2": "<i>Расположение <item>выставочных стендов<r>",
-  "booklet.actuallyadditions.chapter.empowerer.text.4": "<item>Выставочный стенд<r> пригодится и для других целей! Подробнее — в разделе <imp>«Устройства, потребляющие CF»<r>."
+  "booklet.actuallyadditions.chapter.empowerer.text.4": "<item>Выставочный стенд<r> пригодится и для других целей! Подробнее — в разделе <imp>«Устройства, потребляющие CF»<r>.",
+  "item.actuallyadditions.crystallized_canola_seed": "Кристаллизированные семена канолы",
+  "item.actuallyadditions.drill_light_blue": "Светло-синяя дрель"
 }

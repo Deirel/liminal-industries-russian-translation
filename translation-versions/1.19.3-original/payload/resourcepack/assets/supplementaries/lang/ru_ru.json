@@ -6,6 +6,9 @@
   "block.supplementaries.drawers": "Ящики",
   "block.supplementaries.edelwood_stick": "Эдельвудовая палка",
   "block.supplementaries.enderman_wall_head": "Настенная голова эндермена",
+  "block.supplementaries.fine_wood": "Благородная древесина",
+  "block.supplementaries.fine_wood_slab": "Плита из благородной древесины",
+  "block.supplementaries.fine_wood_stairs": "Ступеньки из благородной древесины",
   "block.supplementaries.label": "Этикетка",
   "block.supplementaries.mob_jar": "Банка с мобом",
   "block.supplementaries.moving_slidy_block": "Передвижной блок в движении",
@@ -25,6 +28,7 @@
   "block.supplementaries.sconce_wall_soul": "Настенное бра душ",
   "block.supplementaries.sign_post_wall": "Настенный указатель",
   "block.supplementaries.soul_jar": "Банка с душой",
+  "block.supplementaries.spring_launcher_head": "Пружинный пускатель",
   "block.supplementaries.stick_tomatoes": "Помидоры на опоре",
   "item.supplementaries.bubble_blower": "Палочка для мыльных пузырей"
 }

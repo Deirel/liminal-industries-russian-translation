@@ -1,0 +1,13 @@
+{
+  "block.tconstruct.greenheart_planks_slab": "Плита из зелёного сердца",
+  "block.tconstruct.molten_signalum_fluid": "Расплавленный сигналий",
+  "block.tconstruct.scorched_road": "Выжженное дорожное покрытие",
+  "block.tconstruct.seared_stone_stairs": "Ступеньки из обожжённого камня",
+  "block.tconstruct.sky_congealed_slime": "Застывший блок небесной слизи",
+  "item.tconstruct.molten_gold_bucket": "Ведро расплавленного золота",
+  "item.tconstruct.molten_pewter_bucket": "Ведро расплавленного пьютера",
+  "item.tconstruct.molten_signalum_bucket": "Ведро расплавленного сигналия",
+  "item.tconstruct.repair_kit_cast": "Золотая литейная форма: Ремонтный комплект",
+  "item.tconstruct.repair_kit_red_sand_cast": "Красная песочная литейная форма: Ремонтный комплект",
+  "item.tconstruct.repair_kit_sand_cast": "Песочная литейная форма: Ремонтный комплект"
+}

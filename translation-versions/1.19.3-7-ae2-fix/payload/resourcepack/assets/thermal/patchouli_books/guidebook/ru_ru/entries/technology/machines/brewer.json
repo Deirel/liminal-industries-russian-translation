@@ -1,0 +1,23 @@
+{
+  "category": "thermal:machines",
+  "flag": "mod:thermal_expansion",
+  "icon": "thermal:machine_brewer",
+  "name": "Алхимическая зельеварка",
+  "pages": [
+    {
+      "text": "Алхимическая зельеварка варит зелья. Она создаёт $(l:thermal:technology/potion_fluid)жидкое зелье$(/l) вместо того, чтобы варить его сразу в бутылочке. Одного ингредиента хватает на ведро зелья, которым можно наполнить 4 бутылочки.",
+      "type": "patchouli:text"
+    },
+    {
+      "A.recipe": "thermal:machine_brewer",
+      "title": "Алхимическая зельеварка",
+      "type": "thermal:double_crafting_page"
+    },
+    {
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)Интегральные компоненты$(/l)$(li)$(l:thermal:technology/augments/item_filter)Предметный фильтр$(/l)$(li)$(l:thermal:technology/augments/xp_storage)Концентратор знаний$(/l)$(li)$(l:thermal:technology/augments/rf_coil)Расширенная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)Стабилизированная RF катушка$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)Многопоточная RF катушка$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)Расширенная конструкция резервуара$(/l)$(li)$(l:thermal:technology/augments/machine_speed)Усилитель магнитной связи$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)Потоковая эффективность$(/l)",
+      "title": "Улучшения",
+      "type": "patchouli:text"
+    }
+  ],
+  "read_by_default": true
+}

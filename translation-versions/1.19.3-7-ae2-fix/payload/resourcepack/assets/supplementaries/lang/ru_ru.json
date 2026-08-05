@@ -1,6 +1,10 @@
 {
   "block.supplementaries.block_generator": "Генератор блоков",
   "block.supplementaries.enderman_wall_head": "Настенная голова эндермена",
+  "block.supplementaries.fine_wood": "Благородная древесина",
+  "block.supplementaries.fine_wood_slab": "Плита из благородной древесины",
+  "block.supplementaries.fine_wood_stairs": "Ступеньки из благородной древесины",
+  "block.supplementaries.item_shelf": "Полка для предметов",
   "block.supplementaries.moving_slidy_block": "Передвижной блок в движении",
   "block.supplementaries.moving_slidy_block_source": "Источник передвижного блока",
   "block.supplementaries.rope_buntings": "Флажки на верёвке",

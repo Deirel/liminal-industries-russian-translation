@@ -19,7 +19,7 @@ from translation_sources import json_pointer_set
 
 VERDICT_HEADERS = ("verdict", "verdict(PASS|CHANGE|LENGTH_EXCEPTION)")
 VERDICTS = {"PASS", "CHANGE", "LENGTH_EXCEPTION"}
-SUPPORTED_FORMATS = {"lang", "patchouli_json"}
+SUPPORTED_FORMATS = {"lang", "patchouli_json", "mantle_book_json"}
 
 
 @dataclass(frozen=True)
@@ -185,10 +185,10 @@ def expected_override_files(
         else:
             location = record.get("location")
             if not isinstance(location, dict):
-                raise ValueError(f"{record['id']}: missing Patchouli location")
+                raise ValueError(f"{record['id']}: missing book location")
             relative = _relative_output(location.get("output_member", ""))
             if not relative.parts or relative.parts[0] != "assets":
-                raise ValueError(f"{record['id']}: invalid Patchouli output member")
+                raise ValueError(f"{record['id']}: invalid book output member")
             patchouli[relative].append((record, recommendation))
 
     expected: dict[Path, bytes] = {}
@@ -221,7 +221,7 @@ def expected_override_files(
                 }
                 if len(bases) != 1:
                     raise ValueError(
-                        f"{relative}: conflicting Patchouli source locations"
+                        f"{relative}: conflicting book source locations"
                     )
                 document = _native_patchouli_document(
                     instance_root, locations[0]

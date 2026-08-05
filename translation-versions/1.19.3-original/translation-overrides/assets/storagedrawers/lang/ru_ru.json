@@ -1,0 +1,21 @@
+{
+  "item.storagedrawers.balance_fill_upgrade": "Улучшение сбалансированного заполнения",
+  "item.storagedrawers.conversion_upgrade": "Улучшение преобразования",
+  "item.storagedrawers.creative_storage_upgrade": "Творческое улучшение хранилища",
+  "item.storagedrawers.creative_vending_upgrade": "Творческое улучшение торговли",
+  "item.storagedrawers.diamond_storage_upgrade": "Улучшение хранилища (IV)",
+  "item.storagedrawers.drawer_puller": "Извлекатель ящиков",
+  "item.storagedrawers.emerald_storage_upgrade": "Улучшение хранилища (V)",
+  "item.storagedrawers.fill_level_upgrade": "Улучшение уровня заполнения",
+  "item.storagedrawers.gold_storage_upgrade": "Улучшение хранилища (III)",
+  "item.storagedrawers.illumination_upgrade": "Улучшение освещения",
+  "item.storagedrawers.iron_storage_upgrade": "Улучшение хранилища (II)",
+  "item.storagedrawers.max_redstone_upgrade": "Максимальное улучшение редстоуна",
+  "item.storagedrawers.min_redstone_upgrade": "Минимальное улучшение редстоуна",
+  "item.storagedrawers.obsidian_storage_upgrade": "Улучшение хранилища (I)",
+  "item.storagedrawers.portability_upgrade": "Улучшение портативности",
+  "item.storagedrawers.redstone_upgrade": "Улучшение редстоуна",
+  "item.storagedrawers.remote_group_upgrade": "Улучшение удалённой группы",
+  "item.storagedrawers.upgrade_template": "Шаблон улучшения",
+  "item.storagedrawers.void_upgrade": "Улучшение пустоты"
+}

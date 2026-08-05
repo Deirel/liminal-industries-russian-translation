@@ -656,5 +656,6 @@
   "item.enderio.redstone_toggle_filter": "Редстоуновый фильтр-переключатель",
   "item.enderio.redstone_xnor_filter": "Редстоуновый фильтр XNOR",
   "item.enderio.redstone_xor_filter": "Редстоуновый фильтр XOR",
+  "item.enderio.refined_storage_conduit": "Труба Refined Storage",
   "item.enderio.staff_of_travelling": "Посох перемещения"
 }

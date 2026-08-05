@@ -1,0 +1,8 @@
+{
+  "block.storagedrawers.compacting_drawers_2": "Спрессовывающий ящик (2 уровня)",
+  "block.storagedrawers.compacting_half_drawers_2": "Спрессовывающий полуящик (2 уровня)",
+  "block.storagedrawers.framed_compacting_half_drawers_2": "Обрамлённый спрессовывающий полуящик (2 уровня)",
+  "item.storagedrawers.detached_drawer": "Отсоединённый ящик",
+  "item.storagedrawers.drawer_puller": "Съёмник ящика",
+  "item.storagedrawers.remote_group_upgrade_bound": "Улучшение \"Удалённый доступ (Группа)\" (привязанное)"
+}

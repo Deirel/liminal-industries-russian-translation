@@ -308,6 +308,34 @@ class ApplyNativeBookReviewTest(unittest.TestCase):
         self.assertEqual(before, target.read_bytes())
         self.assertEqual(1, counts.files)
 
+    def test_applies_mantle_json_override(self) -> None:
+        record = self.record(
+            "mantle:text",
+            "Source",
+            "mantle_book_json",
+            location={
+                "output_member": "assets/example/book/ru_ru/page.json",
+                "pointer": "/text/0",
+            },
+        )
+        self.write_manifest([record])
+        self.write_review([self.row(record, "CHANGE", "Новый текст")])
+        relative = Path(record["location"]["output_member"])
+        built = self.version_root / "payload/resourcepack" / relative
+        built.parent.mkdir(parents=True)
+        built.write_bytes(json_bytes({"text": ["Старый текст"]}))
+
+        counts = apply_review(
+            self.version_root, self.instance_root, self.review_dir
+        )
+
+        self.assertEqual(1, counts.applied)
+        target = self.version_root / "translation-overrides" / relative
+        self.assertEqual(
+            "Новый текст",
+            json.loads(target.read_text(encoding="utf-8"))["text"][0],
+        )
+
     def test_rejects_invalid_review_rows_before_writing(self) -> None:
         record = self.record(
             "manual:text",
