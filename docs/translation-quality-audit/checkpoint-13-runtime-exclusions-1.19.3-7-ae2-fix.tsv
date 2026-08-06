@@ -1,0 +1,4 @@
+id	reason
+patchouli-lang:botania:botania.entry.gardenOfGlass	Runtime-inaccessible: Botania entry flag |debug,mod:gardenofglass; the installed pack is not a development environment and has no Garden of Glass mod.
+patchouli-lang:botania:botania.page.gardenOfGlass0	Runtime-inaccessible: Botania entry flag |debug,mod:gardenofglass; the installed pack is not a development environment and has no Garden of Glass mod.
+patchouli-lang:botania:botania.page.gardenOfGlass14	Runtime-inaccessible: Botania entry flag |debug,mod:gardenofglass; the installed pack is not a development environment and has no Garden of Glass mod.

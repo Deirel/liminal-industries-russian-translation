@@ -1,0 +1,72 @@
+id	resource	source	screen
+ie-manual:immersiveengineering:lightning_rod.txt:line:4	assets/immersiveengineering/manual/ru_ru/lightning_rod.txt		/1
+patchouli-lang:botania:botania.page.elfMessage1	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/elf_message.json	translation_key:botania.page.elfMessage1	/0
+patchouli-lang:botania:botania.page.elfMessage2	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/elf_message.json	translation_key:botania.page.elfMessage2	/2
+patchouli-lang:botania:botania.page.elfMessage3	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/elf_message.json	translation_key:botania.page.elfMessage3	/2
+patchouli-lang:botania:botania.page.elfMessage5	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/elf_message.json	translation_key:botania.page.elfMessage5	/4
+patchouli-lang:botania:botania.page.elfResources0	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/elf_resources.json	translation_key:botania.page.elfResources0	/0
+patchouli-lang:botania:botania.page.elfResources6	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/elf_resources.json	translation_key:botania.page.elfResources6	/6
+patchouli-lang:botania:botania.page.gaiaRitual3	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/gaia_ritual.json	translation_key:botania.page.gaiaRitual3	/2
+patchouli-lang:botania:botania.page.kingKey0	assets/botania/patchouli_books/lexicon/ru_ru/entries/alfhomancy/king_key.json	translation_key:botania.page.kingKey0	/0
+patchouli-lang:botania:botania.page.lexicon0	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/lexicon.json	translation_key:botania.page.lexicon0	/0
+patchouli-lang:botania:botania.page.pureDaisy0	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/pure_daisy.json	translation_key:botania.page.pureDaisy0	/0
+patchouli-lang:botania:botania.page.runeAltar21	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/rune_altar.json	translation_key:botania.page.runeAltar21	/0
+patchouli-lang:botania:botania.page.runeAltar0	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/rune_altar.json	translation_key:botania.page.runeAltar0	/0
+patchouli-lang:botania:botania.page.runeAltar22	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/rune_altar.json	translation_key:botania.page.runeAltar22	/6
+patchouli-lang:botania:botania.page.terrasteel0	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/terrasteel.json	translation_key:botania.page.terrasteel0	/0
+patchouli-lang:botania:botania.page.terrasteel2	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/terrasteel.json	translation_key:botania.page.terrasteel2	/2
+patchouli-lang:botania:botania.page.wand1	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/wand.json	translation_key:botania.page.wand1	/0
+patchouli-lang:botania:botania.page.welcome0	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/welcome.json	translation_key:botania.page.welcome0	/0
+patchouli-lang:botania:botania.page.auraRing0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/aura_ring.json	translation_key:botania.page.auraRing0	/0
+patchouli-lang:botania:botania.page.cosmeticBaubles32	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/cosmetic_baubles.json	translation_key:botania.page.cosmeticBaubles32	/32
+patchouli-lang:botania:botania.page.goddessCharm0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/goddess_charm.json	translation_key:botania.page.goddessCharm0	/0
+patchouli-lang:botania:botania.page.invisibilityCloak0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/invisibility_cloak.json	translation_key:botania.page.invisibilityCloak0	/0
+patchouli-lang:botania:botania.page.itemFinder0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/item_finder.json	translation_key:botania.page.itemFinder0	/0
+patchouli-lang:botania:botania.page.itemFinder1	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/item_finder.json	translation_key:botania.page.itemFinder1	/0
+patchouli-lang:botania:botania.page.monocle0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/monocle.json	translation_key:botania.page.monocle0	/0
+patchouli-lang:botania:botania.page.speedUpBelt0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/speed_up_belt.json	translation_key:botania.page.speedUpBelt0	/0
+patchouli-lang:botania:botania.page.speedUpBelt1	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/speed_up_belt.json	translation_key:botania.page.speedUpBelt1	/0
+patchouli-lang:botania:botania.page.superLavaPendant1	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/super_lava_pendant.json	translation_key:botania.page.superLavaPendant1	/0
+patchouli-lang:botania:botania.page.swapRing0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/swap_ring.json	translation_key:botania.page.swapRing0	/0
+patchouli-lang:botania:botania.page.tinyPlanet0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/tiny_planet.json	translation_key:botania.page.tinyPlanet0	/0
+patchouli-lang:botania:botania.page.forestEye0	assets/botania/patchouli_books/lexicon/ru_ru/entries/devices/forest_eye.json	translation_key:botania.page.forestEye0	/0
+patchouli-lang:botania:botania.page.hourglass4	assets/botania/patchouli_books/lexicon/ru_ru/entries/devices/hourglass.json	translation_key:botania.page.hourglass4	/4
+patchouli-lang:botania:botania.page.blackHoleTalisman2	assets/botania/patchouli_books/lexicon/ru_ru/entries/ender/black_hole_talisman.json	translation_key:botania.page.blackHoleTalisman2	/2
+patchouli-lang:botania:botania.page.dreadthorne1	assets/botania/patchouli_books/lexicon/ru_ru/entries/functional_flowers/dreadthorne.json	translation_key:botania.page.dreadthorne1	/0
+patchouli-lang:botania:botania.page.flowerShrinking0	assets/botania/patchouli_books/lexicon/ru_ru/entries/functional_flowers/flower_shrinking.json	translation_key:botania.page.flowerShrinking0	/0
+patchouli-lang:botania:botania.page.dandelifeon1	assets/botania/patchouli_books/lexicon/ru_ru/entries/generating_flowers/dandelifeon.json	translation_key:botania.page.dandelifeon1	/0
+patchouli-lang:botania:botania.page.gIntro3	assets/botania/patchouli_books/lexicon/ru_ru/entries/generating_flowers/intro.json	translation_key:botania.page.gIntro3	/2
+patchouli-lang:botania:botania.page.munchdew2	assets/botania/patchouli_books/lexicon/ru_ru/entries/generating_flowers/munchdew.json	translation_key:botania.page.munchdew2	/2
+patchouli-lang:botania:botania.page.dreamwoodSpreader0	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/dreamwood_spreader.json	translation_key:botania.page.dreamwoodSpreader0	/0
+patchouli-lang:botania:botania.page.mIntro1	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/intro.json	translation_key:botania.page.mIntro1	/0
+patchouli-lang:botania:botania.page.manaMirror0	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/mana_mirror.json	translation_key:botania.page.manaMirror0	/0
+patchouli-lang:botania:botania.page.manaTablet1	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/mana_tablet.json	translation_key:botania.page.manaTablet1	/0
+patchouli-lang:botania:botania.page.manaVoid0	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/mana_void.json	translation_key:botania.page.manaVoid0	/0
+patchouli-lang:botania:botania.page.manastar0	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/manastar.json	translation_key:botania.page.manastar0	/0
+patchouli-lang:botania:botania.page.sparkChanger0	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/spark_changer.json	translation_key:botania.page.sparkChanger0	/0
+patchouli-lang:botania:botania.page.sparks3	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/sparks.json	translation_key:botania.page.sparks3	/2
+patchouli-lang:botania:botania.page.spreader0	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/spreader.json	translation_key:botania.page.spreader0	/0
+patchouli-lang:botania:botania.page.spreader10	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/spreader.json	translation_key:botania.page.spreader10	/6
+patchouli-lang:botania:botania.page.cacophonium2	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/cacophonium.json	translation_key:botania.page.cacophonium2	/2
+patchouli-lang:botania:botania.page.decorativeBlocks0	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/decorative_blocks.json	translation_key:botania.page.decorativeBlocks0	/0
+patchouli-lang:botania:botania.page.decorativeBlocks10	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/decorative_blocks.json	translation_key:botania.page.decorativeBlocks10	/10
+patchouli-lang:botania:botania.page.dispenserTweaks0	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/dispenser_tweaks.json	translation_key:botania.page.dispenserTweaks0	/0
+patchouli-lang:botania:botania.page.headCreating1	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/head_creating.json	translation_key:botania.page.headCreating1	/2
+patchouli-lang:botania:botania.page.mushrooms1	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/mushrooms.json	translation_key:botania.page.mushrooms1	/0
+patchouli-lang:botania:botania.page.phantomInk1	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/phantom_ink.json	translation_key:botania.page.phantomInk1	/0
+patchouli-lang:botania:botania.page.shinyFlowers0	assets/botania/patchouli_books/lexicon/ru_ru/entries/misc/shiny_flowers.json	translation_key:botania.page.shinyFlowers0	/0
+patchouli-lang:botania:botania.page.exchangeRod2	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/exchange_rod.json	translation_key:botania.page.exchangeRod2	/2
+mantle-book:tconstruct:materials_and_you:intro/storage.json:/text/1/text	assets/tconstruct/book/materials_and_you/ru_ru/intro/storage.json	json_pointer:/text/1/text	
+mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_double_jump.json:/text/0/text	assets/tconstruct/book/mighty_smelting/ru_ru/abilities/armor/boots/tconstruct_double_jump.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_pathing.json:/effects/0	assets/tconstruct/book/mighty_smelting/ru_ru/abilities/armor/boots/tconstruct_pathing.json	json_pointer:/effects/0	
+mantle-book:tconstruct:puny_smelting:introduction/thruul.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/introduction/thruul.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:melting/meltergui2.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/melting/meltergui2.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:movingfluids/channel2.json:/text/1/text	assets/tconstruct/book/puny_smelting/ru_ru/movingfluids/channel2.json	json_pointer:/text/1/text	
+mantle-book:tconstruct:puny_smelting:slotless/slotless.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/slotless/slotless.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/armor/general/tconstruct_springy.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/armor/general/tconstruct_springy.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/general/tconstruct_emerald.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/general/tconstruct_emerald.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/harvest/tconstruct_hydraulic.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/harvest/tconstruct_hydraulic.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/melee.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/text/1/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/melee.json	json_pointer:/text/1/text	
+mantle-book:tconstruct:tinkers_gadgetry:exploration/grass_seeds.json:/text/0/text	assets/tconstruct/book/tinkers_gadgetry/ru_ru/exploration/grass_seeds.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:tinkers_gadgetry:gadgets/piggybackpack.json:/text/0/text	assets/tconstruct/book/tinkers_gadgetry/ru_ru/gadgets/piggybackpack.json	json_pointer:/text/0/text	

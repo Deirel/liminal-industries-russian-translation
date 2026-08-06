@@ -1,0 +1,31 @@
+id	resource	source	screen
+ie-manual:immersiveengineering:lightning_rod.txt:line:4	assets/immersiveengineering/manual/ru_ru/lightning_rod.txt		/1
+patchouli-lang:botania:botania.page.runeAltar20	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/rune_altar.json	translation_key:botania.page.runeAltar20	/4
+patchouli-lang:botania:botania.page.runeAltar22	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/rune_altar.json	translation_key:botania.page.runeAltar22	/6
+patchouli-lang:botania:botania.page.welcome0	assets/botania/patchouli_books/lexicon/ru_ru/entries/basics/welcome.json	translation_key:botania.page.welcome0	/0
+patchouli-lang:botania:botania.page.itemFinder0	assets/botania/patchouli_books/lexicon/ru_ru/entries/baubles/item_finder.json	translation_key:botania.page.itemFinder0	/0
+patchouli-lang:botania:botania.challenge.spectrolusSetup	assets/botania/patchouli_books/lexicon/ru_ru/entries/challenges/spectrolus_setup.json	translation_key:botania.challenge.spectrolusSetup	
+patchouli-lang:botania:botania.entry.spectranthemum	assets/botania/patchouli_books/lexicon/ru_ru/entries/functional_flowers/spectranthemum.json	translation_key:botania.entry.spectranthemum	
+patchouli-lang:botania:botania.page.dandelifeon7	assets/botania/patchouli_books/lexicon/ru_ru/entries/generating_flowers/dandelifeon.json	translation_key:botania.page.dandelifeon7	/8
+patchouli-lang:botania:botania.page.elvenLenses1	assets/botania/patchouli_books/lexicon/ru_ru/entries/mana/elven_lenses.json	translation_key:botania.page.elvenLenses1	/2
+patchouli-lang:botania:botania.page.spellCloth0	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/spell_cloth.json	translation_key:botania.page.spellCloth0	/0
+patchouli-lang:botania:botania.page.temperanceStone0	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/temperance_stone.json	translation_key:botania.page.temperanceStone0	/0
+patchouli-lang:botania:botania.page.temperanceStone2	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/temperance_stone.json	translation_key:botania.page.temperanceStone2	/0
+patchouli-lang:botania:botania.page.terraAxe0	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/terra_axe.json	translation_key:botania.page.terraAxe0	/0
+patchouli-lang:botania:botania.page.terraformRod0	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/terraform_rod.json	translation_key:botania.page.terraformRod0	/0
+patchouli-lang:botania:botania.page.terraformRod1	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/terraform_rod.json	translation_key:botania.page.terraformRod1	/0
+patchouli-lang:botania:botania.page.tornadoRod0	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/tornado_rod.json	translation_key:botania.page.tornadoRod0	/0
+patchouli-lang:botania:botania.page.virus0	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/virus.json	translation_key:botania.page.virus0	/0
+patchouli-lang:botania:botania.page.worldSeed0	assets/botania/patchouli_books/lexicon/ru_ru/entries/tools/world_seed.json	translation_key:botania.page.worldSeed0	/0
+mantle-book:tconstruct:materials_and_you:intro/storage.json:/text/1/text	assets/tconstruct/book/materials_and_you/ru_ru/intro/storage.json	json_pointer:/text/1/text	
+mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_double_jump.json:/text/0/text	assets/tconstruct/book/mighty_smelting/ru_ru/abilities/armor/boots/tconstruct_double_jump.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_pathing.json:/effects/0	assets/tconstruct/book/mighty_smelting/ru_ru/abilities/armor/boots/tconstruct_pathing.json	json_pointer:/effects/0	
+mantle-book:tconstruct:puny_smelting:introduction/thruul.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/introduction/thruul.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:movingfluids/channel2.json:/text/1/text	assets/tconstruct/book/puny_smelting/ru_ru/movingfluids/channel2.json	json_pointer:/text/1/text	
+mantle-book:tconstruct:puny_smelting:slotless/slotless.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/slotless/slotless.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/armor/general/tconstruct_springy.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/armor/general/tconstruct_springy.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/harvest/tconstruct_hydraulic.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/harvest/tconstruct_hydraulic.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/text/0/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/melee.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/text/1/text	assets/tconstruct/book/puny_smelting/ru_ru/upgrades/melee.json	json_pointer:/text/1/text	
+mantle-book:tconstruct:tinkers_gadgetry:exploration/grass_seeds.json:/text/0/text	assets/tconstruct/book/tinkers_gadgetry/ru_ru/exploration/grass_seeds.json	json_pointer:/text/0/text	
+mantle-book:tconstruct:tinkers_gadgetry:gadgets/piggybackpack.json:/text/0/text	assets/tconstruct/book/tinkers_gadgetry/ru_ru/gadgets/piggybackpack.json	json_pointer:/text/0/text	

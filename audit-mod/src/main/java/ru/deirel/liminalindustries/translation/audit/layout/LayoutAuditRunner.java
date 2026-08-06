@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import ru.deirel.liminalindustries.translation.audit.LiminalIndustriesTranslationAuditMod;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -33,6 +34,8 @@ public final class LayoutAuditRunner {
     private final List<LayoutCapture> captures = new ArrayList<>();
     private final List<LayoutIssue> englishIssues = new ArrayList<>();
     private final List<LayoutIssue> russianIssues = new ArrayList<>();
+    private final List<VisualTarget> visualTargets = new ArrayList<>();
+    private final Map<String, VisualMatch> visualMatches = new LinkedHashMap<>();
     private List<LayoutScreen> targets = List.of();
     private int targetIndex;
     private int stableFrames;
@@ -192,6 +195,7 @@ public final class LayoutAuditRunner {
                 takeScreenshot(screenshot);
                 issues.replaceAll(issue -> issue.withScreenshot("screenshots/" + screenshot));
             }
+            captureVisualTargets(capture);
             (language.equals("en_us") ? englishIssues : russianIssues).addAll(issues);
         } catch (RuntimeException exception) {
             fail("Ошибка захвата экрана " + target.id(), exception);
@@ -240,6 +244,7 @@ public final class LayoutAuditRunner {
                 captures,
                 classified
             );
+            writeVisualChecks(output.resolveSibling("visual-checks.tsv"));
             long translationFailures = classified.stream()
                 .filter(issue ->
                     issue.classification()
@@ -295,11 +300,13 @@ public final class LayoutAuditRunner {
     private void prepareOutput() {
         Path report = minecraft.gameDirectory.toPath()
             .resolve(LayoutReportWriter.REPORT_PATH);
+        loadVisualTargets(report.resolveSibling("visual-audit-targets.tsv"));
         Path directory = report.getParent()
             .resolve("screenshots");
         try {
             Files.deleteIfExists(report);
             Files.deleteIfExists(report.resolveSibling("book-layout-audit.html"));
+            Files.deleteIfExists(report.resolveSibling("visual-checks.tsv"));
         } catch (IOException exception) {
             throw new IllegalStateException(
                 "Could not remove stale layout audit report",
@@ -332,6 +339,104 @@ public final class LayoutAuditRunner {
         return (capture.language() + "-" + capture.screenId())
             .replaceAll("[^a-zA-Z0-9._-]+", "_")
             + ".png";
+    }
+
+    private void loadVisualTargets(Path path) {
+        if (!Files.isRegularFile(path)) {
+            return;
+        }
+        try {
+            List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+            for (int index = 1; index < lines.size(); index++) {
+                if (lines.get(index).isBlank()) {
+                    continue;
+                }
+                String[] columns = lines.get(index).split("\\t", -1);
+                if (columns.length != 4) {
+                    throw new IllegalArgumentException(
+                        "Invalid visual target at line " + (index + 1)
+                    );
+                }
+                visualTargets.add(new VisualTarget(
+                    columns[0], columns[1], columns[2], columns[3]
+                ));
+            }
+        } catch (IOException exception) {
+            throw new IllegalStateException("Could not read visual audit targets", exception);
+        }
+    }
+
+    private void captureVisualTargets(LayoutCapture capture) {
+        if (!capture.language().equals("ru_ru")) {
+            return;
+        }
+        for (VisualTarget target : visualTargets) {
+            if (visualMatches.containsKey(target.id())
+                || !matchesVisualTarget(
+                    capture, target.resource(), target.source(), target.screen()
+                )) {
+                continue;
+            }
+            String screenshot = "visual-"
+                + target.id().replaceAll("[^a-zA-Z0-9._-]+", "_")
+                + ".png";
+            takeScreenshot(screenshot);
+            visualMatches.put(
+                target.id(),
+                new VisualMatch(capture.screenId(), "screenshots/" + screenshot)
+            );
+        }
+    }
+
+    static boolean matchesVisualTarget(
+        LayoutCapture capture,
+        String resource,
+        String source,
+        String screen
+    ) {
+        if (!screen.isEmpty() && !capture.screenId().endsWith(screen)) {
+            return false;
+        }
+        boolean captureResource = resource.isEmpty()
+            || resource.equals(capture.resource())
+            || capture.resource().endsWith(resource);
+        if (source.isEmpty() || (!screen.isEmpty() && captureResource)) {
+            return captureResource;
+        }
+        return capture.text().stream().anyMatch(region -> {
+            boolean regionResource = resource.isEmpty()
+                || resource.equals(region.resource())
+                || (region.resource() != null && region.resource().endsWith(resource));
+            return source.equals(region.source()) && (captureResource || regionResource);
+        });
+    }
+
+    private void writeVisualChecks(Path path) throws IOException {
+        StringBuilder output = new StringBuilder(
+            "id\tstatus\tscreenshot\tscreen\tresource\tsource\ttarget_screen\n"
+        );
+        for (VisualTarget target : visualTargets) {
+            VisualMatch match = visualMatches.get(target.id());
+            output.append(target.id()).append('\t')
+                .append(match == null ? "UNMATCHED" : "MATCHED").append('\t')
+                .append(match == null ? "" : match.screenshot()).append('\t')
+                .append(match == null ? "" : match.screen()).append('\t')
+                .append(target.resource()).append('\t')
+                .append(target.source()).append('\t')
+                .append(target.screen()).append('\n');
+        }
+        Files.writeString(path, output, StandardCharsets.UTF_8);
+    }
+
+    private record VisualTarget(
+        String id,
+        String resource,
+        String source,
+        String screen
+    ) {
+    }
+
+    private record VisualMatch(String screen, String screenshot) {
     }
 
     private void fail(String message, Throwable exception) {
