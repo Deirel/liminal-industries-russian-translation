@@ -1,0 +1,14 @@
+{
+  "input_sha256": "bba0bb3139a69bd47154a4b36bf990b89c3d4288f1ecfa0f195cf95453c5f2d6",
+  "input_rows": 5148,
+  "output_rows": 5148,
+  "counts": {
+    "PASS": 5145,
+    "CHANGE": 3,
+    "UNCERTAIN": 0
+  },
+  "reviewer": "/root/original_language_editor_a",
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "blind": true
+}

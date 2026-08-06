@@ -1,0 +1,11 @@
+{
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "reviewer": "/root/checkpoint11_second_review",
+  "findings": 71,
+  "fixed": 71,
+  "status": "APPROVED",
+  "findings_sha256": "8491ba9795385ca0cb2b16afb6b5e9009fd81b4d5a6fda0b1282c953aca9afe6",
+  "proposals_sha256": "e0249064241a416db7b07f75d6bbf3f77526321b5a52cf8a90a5a7ae95e7811e",
+  "full_review_consensus_sha256": "05f6e094007f300cf0d4426b087494f4d761641c2d1e679354a18eb1a560b4b9"
+}

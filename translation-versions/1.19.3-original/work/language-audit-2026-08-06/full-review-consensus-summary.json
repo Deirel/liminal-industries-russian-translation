@@ -1,0 +1,11 @@
+{
+  "records": 19847,
+  "reused": 14699,
+  "reviewed_original": 5148,
+  "review_fixes": 71,
+  "verdicts": {
+    "CHANGE": 71,
+    "PASS": 19776
+  },
+  "uncertain": 0
+}

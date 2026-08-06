@@ -1,0 +1,21 @@
+{
+  "target_records": 19847,
+  "reused": 14699,
+  "pending": 5148,
+  "reused_verdicts": {
+    "PASS": 14699
+  },
+  "pending_classes": {
+    "NAME": 1437,
+    "PROSE": 3690,
+    "SHORT_LABEL": 21
+  },
+  "exact_identity": [
+    "id",
+    "source_hash",
+    "source",
+    "effective_translation",
+    "context"
+  ],
+  "requires_two_agreed_source_verdicts": true
+}

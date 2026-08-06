@@ -1,0 +1,12 @@
+{
+  "corpus_rows": 5148,
+  "review_a_rows": 5148,
+  "review_b_rows": 5148,
+  "consensus_rows": 5148,
+  "disagreements": 69,
+  "adjudicated": 69,
+  "verdicts": {
+    "CHANGE": 69,
+    "PASS": 5079
+  }
+}
