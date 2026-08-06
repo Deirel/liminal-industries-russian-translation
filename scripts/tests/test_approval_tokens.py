@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from approve_version_translations import (
     TOKEN_RE,
     technical_tokens,
+    technical_tokens_compatible,
     validate_block_item_consistency,
     apply_corrections,
     add_translations,
@@ -16,6 +17,15 @@ from catalog_utils import catalog_entries_hash, source_hash, validate_catalog
 
 
 class ApprovalTokenTest(unittest.TestCase):
+    def test_allows_existing_tokens_or_terminal_style_reset(self) -> None:
+        self.assertTrue(technical_tokens_compatible("$(o)Source", "$(o)Перевод$(0)"))
+        self.assertTrue(
+            technical_tokens_compatible(
+                "$(l:path)Source$(/l)", "$(item)Новый$(0)", "$(item)Старый$(0)"
+            )
+        )
+        self.assertFalse(technical_tokens_compatible("Source", "$(item)Новый$(0)"))
+
     def test_preserves_patchouli_markup(self) -> None:
         source = "$(l:guide/start)Open$(/l) <item>Manual<r><n>"
         translation = "$(l:guide/start)Открыть$(/l) <item>Руководство<r><n>"

@@ -1,0 +1,13 @@
+{
+  "reviewer": "/root/checkpoint12_second_review",
+  "original_changes": 71,
+  "rescripted_changes": 47,
+  "shared_catalog_corrections": 13,
+  "propagated_to_rescripted": 13,
+  "original_overrides": 58,
+  "rescripted_overrides": 35,
+  "rescripted_final_verdicts": {
+    "CHANGE": 47,
+    "PASS": 22609
+  }
+}

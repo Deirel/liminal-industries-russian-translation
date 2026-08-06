@@ -10,7 +10,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from approve_version_translations import technical_tokens
+from approve_version_translations import technical_tokens_compatible
 
 
 REVIEW_FIELDS = {
@@ -130,11 +130,9 @@ def validate_review(
         if row["verdict"] == "CHANGE":
             if not row["recommendation"] or not row["reason"]:
                 raise ValueError(f"{row['id']}: CHANGE lacks recommendation or reason")
-            recommendation_tokens = tuple(technical_tokens(row["recommendation"]))
-            if recommendation_tokens not in {
-                tuple(technical_tokens(source["effective_translation"])),
-                tuple(technical_tokens(source["source"])),
-            }:
+            if not technical_tokens_compatible(
+                source["source"], row["recommendation"], source["effective_translation"]
+            ):
                 raise ValueError(f"{row['id']}: {label} changed technical tokens")
         if row["verdict"] == "UNCERTAIN" and not row["reason"]:
             raise ValueError(f"{row['id']}: UNCERTAIN lacks reason")
@@ -230,11 +228,9 @@ def build_consensus(
         if row["verdict"] == "CHANGE":
             if not row["recommendation"] or not row["reason"]:
                 raise ValueError(f"{source['id']}: adjudicated CHANGE is incomplete")
-            recommendation_tokens = tuple(technical_tokens(row["recommendation"]))
-            if recommendation_tokens not in {
-                tuple(technical_tokens(source["effective_translation"])),
-                tuple(technical_tokens(source["source"])),
-            }:
+            if not technical_tokens_compatible(
+                source["source"], row["recommendation"], source["effective_translation"]
+            ):
                 raise ValueError(f"{source['id']}: adjudication changed technical tokens")
         elif row["recommendation"] or row["reason"]:
             raise ValueError(f"{source['id']}: adjudicated PASS contains a recommendation")

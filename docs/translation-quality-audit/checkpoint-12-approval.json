@@ -1,0 +1,22 @@
+{
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "reviewer": "/root/checkpoint12_second_review",
+  "status": "APPROVED",
+  "scope": {
+    "original_changes": 71,
+    "rescripted_changes": 47,
+    "shared_catalog_corrections": 13,
+    "original_overrides": 58,
+    "rescripted_overrides": 35
+  },
+  "sha256": {
+    "original_approved_changes": "f87c948c112c408eee58e7b659ea203aebc9879ac1b5be4bb0a9afdfcaf3af37",
+    "rescripted_approved_changes": "5084a010b33e8a6c351799d42981a192af5f780411a14db9508817d120233d62",
+    "catalog_corrections": "a8b8480fee475bed85ae1f795eb7cc798b3e3f4f32f6fc15cab72bd9c86bca01",
+    "original_override_ledger": "621110318694c009d243dd5c91e0d82bec2f9cea976b08fddc97c3df42e19773",
+    "rescripted_override_ledger": "87db04fa0e3ad1c9e3043c9c22c0dc8e458887d0ec902cde0d8b96f13cbbf722",
+    "original_effective_translations": "2862999bb843c3d22ff6f2b182528c2298984a165237edb3dc21db730aa27c29",
+    "rescripted_effective_translations": "9fedbeb640cecbc0fa9ef04afcccbd8863ef3fdc9c9522a55cbaf0c451ad342e"
+  }
+}

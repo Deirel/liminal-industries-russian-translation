@@ -9,7 +9,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from approve_version_translations import technical_tokens
+from approve_version_translations import technical_tokens_compatible
 
 
 FIELDS = (
@@ -87,7 +87,9 @@ def build_review(
             raise ValueError(f"{logical_id}: CHANGE lacks independent review")
         if not row["reviewer"] or not row["initial_new_translation"] or not row["review_notes"]:
             raise ValueError(f"{logical_id}: CHANGE lacks review provenance")
-        if technical_tokens(current["source"]) != technical_tokens(row["new_translation"]):
+        if not technical_tokens_compatible(
+            current["source"], row["new_translation"], row["old_translation"]
+        ):
             raise ValueError(f"{logical_id}: formatting or technical tokens changed")
         changes[logical_id] = row
 

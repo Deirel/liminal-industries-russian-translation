@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "entries_hash": "sha256:161523fd9604c36152b7fceb937f4968f96267cced191105b3b5058cab6773cd",
+  "entries_hash": "sha256:386446a482f91bc40b4c2aea39ec76de745effec61d10624d397534e93ca72ce",
   "corrections": [
     {
       "id": "ie-manual:immersiveengineering:conveyors.txt:line:13",
@@ -304,6 +304,110 @@
       "old_translation": "Бесполезен, если попытаться съесть инструмент",
       "new_translation": "Не эффективен, если Вы пытаетесь съесть свой инструмент",
       "reason": "Общий каталог возвращён к проверенному Rescripted-тексту: контекст Original отличается; новая формулировка остаётся Original-only override.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "ie-manual:immersiveengineering:lightning_rod.txt:line:4",
+      "source_hash": "sha256:8815ad4cf0316879c54495fc73102e95428afdf090db700cffa59b091f20292c",
+      "old_translation": "При ударе по стальному столбу огромное количество энергии накапливается в основании Молниеотвода, а затем медленно распределяется по энергетическим выходам по бокам.",
+      "new_translation": "При ударе по стальному столбу огромное количество энергии накапливается в основании Молниеотвода, а затем медленно распределяется по боковым энергетическим выходам.",
+      "reason": "Ошибочный PASS: повтор «по ... по» ухудшает естественность.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:materials_and_you:intro/storage.json:/text/1/text",
+      "source_hash": "sha256:26563f8e0274aedfe344bcdd4a71c38b3925f19b0cc384adc1078259aa951b4a",
+      "old_translation": "Ящики для частей позволяют хранить множество дополнительных частей, которые у Вас могут быть. В каждом слоте можно хранить не более 8 частей. Если Вам нужно больше, значит, Вы что-то делаете неправильно или у Вас очень запутанные рецепты.",
+      "new_translation": "Ящики для частей позволяют хранить множество дополнительных частей, которые у вас могут быть. В каждом слоте можно хранить не более 8 частей. Если вам нужно больше, значит, вы что-то делаете неправильно или у вас очень запутанные рецепты.",
+      "reason": "Полное повторное редакторское чтение: исправлены смысл, грамматика, пунктуация и неестественные обороты; технические токены сохранены.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_double_jump.json:/text/0/text",
+      "source_hash": "sha256:3212d740535f43f0d3446f24bcf55fc30f74aef654e0848d10d1ffa0f1780e9d",
+      "old_translation": "Распрыжка повысит Ваши навыки и сделает Вас намного лучше в игре. Для достижения максимального эффекта не забудьте немного попрыгать.",
+      "new_translation": "Распрыжка прокачивает ваши навыки и делает вас гораздо лучше в игре. Для максимального эффекта не забывайте иногда полежать.",
+      "reason": "Исправлено по исчерпывающему заключению checkpoint-review.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_pathing.json:/effects/0",
+      "source_hash": "sha256:32ab9174035796acc4c32602a5838a3fcf57da983a708d3b729334b9260929c6",
+      "old_translation": "Создает дорожки во время ходьбы.",
+      "new_translation": "Создаёт дорожки, пока вы идёте.",
+      "reason": "Ошибочный PASS: неестественная формулировка и пропущено ё.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:puny_smelting:introduction/thruul.json:/text/0/text",
+      "source_hash": "sha256:779530d4c38e5a33da0c5e40a601e9038f4658858df8aaa1520c13c453c21ab2",
+      "old_translation": "Ладно, теперь, когда Вы закончили возиться с этими слабыми материалами, которые, по мнению Селены вы должны были использовать, настало время для НАСТОЯЩИХ ЛИТЕЙНЫХ МАТЕРИАЛОВ, ТАКИХ КАК МЕТАЛЛ.",
+      "new_translation": "Ладно, теперь, когда вы закончили возиться со слабыми материалами, которыми, по мнению Селены, вам следовало пользоваться, пора перейти к НАСТОЯЩИМ ЛИТЕЙНЫМ МАТЕРИАЛАМ, ТАКИМ КАК МЕТАЛЛ.",
+      "reason": "Полное повторное редакторское чтение: исправлены смысл, грамматика, пунктуация и неестественные обороты; технические токены сохранены.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:puny_smelting:movingfluids/channel2.json:/text/1/text",
+      "source_hash": "sha256:cf4f878637a09fc12b35f71a08f73f301ad902e169622d9452f34774d206b2d3",
+      "old_translation": "Внутри каналов есть стрелочки, которые показывают направление движения жидкости. Нажатием ПКМ по сторонам каналов, можно переключить их между режимами входа, выхода или заблокировать. Нажав ПКМ по середине канала, Вы установите его на выход, непосредственно, под себя, если там имеется ёмкость для жидкостей.  Каналы не могут перемещать жидкость вверх.",
+      "new_translation": "Внутри каналов есть стрелки, показывающие направление движения жидкости. Нажимая ПКМ по сторонам канала, можно переключать его между входом, выходом и отключённым состоянием. Нажмите ПКМ по середине канала, чтобы направить жидкость прямо вниз, если под ним есть подходящая ёмкость. Каналы не передают жидкость вверх.",
+      "reason": "Лишний пробел, неверное управление и неестественный порядок слов.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:puny_smelting:slotless/slotless.json:/text/0/text",
+      "source_hash": "sha256:6417aa942cf8e3b3f670811d0ac6f44ac68bd052fa4d8c1bb3a28b9809131f5d",
+      "old_translation": "Закончились слоты? Хорошие новости: все модификаторы в этом разделе не требуют слотов для применения, а некоторые даже могут дать Вам ещё больше слотов!",
+      "new_translation": "Закончились слоты? Хорошие новости: все модификаторы в этом разделе не требуют слотов для применения, а некоторые даже могут дать вам ещё больше слотов!",
+      "reason": "Полное повторное редакторское чтение: исправлены смысл, грамматика, пунктуация и неестественные обороты; технические токены сохранены.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:puny_smelting:upgrades/armor/general/tconstruct_springy.json:/text/0/text",
+      "source_hash": "sha256:ef69a4bf2853c405e447d954aca06da6989b84a6d73aff42ce436e088ecfa42f",
+      "old_translation": "Отлетая, враги дают Вам достаточно времени, чтобы развернуться и убежать, или подлечиться",
+      "new_translation": "Отбрасывая врагов, вы получаете достаточно времени, чтобы развернуться, убежать или подлечиться.",
+      "reason": "Деепричастный оборот без естественной связи и пропущена точка.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:puny_smelting:upgrades/harvest/tconstruct_hydraulic.json:/text/0/text",
+      "source_hash": "sha256:2da90422464c9505bcc9c34be091b9ba8d4a6c84e7bbe423b85f90e022448172",
+      "old_translation": "Используя магию насосов и жидкостей, Вы можете с лёгкостью перемещать предметы. Я имею в виду, что это возможно, но не в вашем случае.",
+      "new_translation": "Используя магию насосов и жидкостей, вы можете с лёгкостью перемещать предметы. Я имею в виду, что это возможно, но не в вашем случае.",
+      "reason": "Полное повторное редакторское чтение: исправлены смысл, грамматика, пунктуация и неестественные обороты; технические токены сохранены.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/text/0/text",
+      "source_hash": "sha256:7fa30eb16c386104b2459d26b1bcbff7d576ca8572679a792c48d21aa4933f69",
+      "old_translation": "Возможно, с помощью этих улучшений Вы сможете выковать самое сильное оружие из всех существующих. Конечно, какое оружие Вы выберете, зависит только от Вас.",
+      "new_translation": "Возможно, с помощью этих улучшений вы сможете выковать самое сильное оружие из всех существующих. Конечно, какое оружие вы выберете, зависит только от вас.",
+      "reason": "Полное повторное редакторское чтение: исправлены смысл, грамматика, пунктуация и неестественные обороты; технические токены сохранены.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/text/1/text",
+      "source_hash": "sha256:62c4863916bceff9cd57d797b2c9a7552dbf567f0de878a74db7b4dbe77b4fde",
+      "old_translation": "Эти улучшения могут расширить возможности вашего оружия, увеличить урон, наносимый вами в целом, конкретным мобам или и тем, и другим. Выбор за Вами.",
+      "new_translation": "Эти улучшения могут раскрыть потенциал оружия ближнего боя, увеличить общий урон, урон по определённым мобам или и то и другое. Выбор за вами.",
+      "reason": "Исправлено по исчерпывающему заключению checkpoint-review.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:tinkers_gadgetry:exploration/grass_seeds.json:/text/0/text",
+      "source_hash": "sha256:49bff5d976a080b96315a4b573e6c85044e98d6905014d938fb3bacbdb76c4db",
+      "old_translation": "Иногда, исследуя подземелья или крепости в Незере, я находил в сундуках слизневые семена. Я не знаю их происхождения, но если посадить их на обычный или слизневый дёрн, получится слизневый дёрн такого же качества, как если бы Вы пересадили его с одного из островов. Я также видел в этих сундуках слизневые саженцы, так что, возможно, Вы можете получить всю флору островов, ни разу не побывав на одном из них.",
+      "new_translation": "Иногда, исследуя подземелья или крепости в Незере, я находил в сундуках слизневые семена. Я не знаю их происхождения, но если посадить их на обычный или слизневый дёрн, получится слизневый дёрн такого же качества, как если бы вы пересадили его с одного из островов. Я также видел в этих сундуках слизневые саженцы, так что, возможно, вы можете получить всю флору островов, ни разу не побывав на одном из них.",
+      "reason": "Полное повторное редакторское чтение: исправлены смысл, грамматика, пунктуация и неестественные обороты; технические токены сохранены.",
+      "independent_review": "APPROVED"
+    },
+    {
+      "id": "mantle-book:tconstruct:tinkers_gadgetry:gadgets/piggybackpack.json:/text/0/text",
+      "source_hash": "sha256:bfb21f54bed5a3043ff5ddb6f4598ada981af81884a5212b20fbcbbefb8a399a",
+      "old_translation": "Используя свино-рюкзак на мобе, вы можете поднять его, чтобы он прокатился на Вас, что идеально подходит, когда ваша свинья устает во время долгих путешествий. В них также удобно подбрасывать монстров в плавильню. Я успешно носил до 3 свин-рюкзаков одновременно, хотя с таким количеством наездников трудно ходить.",
+      "new_translation": "Свино-рюкзак позволяет поднять моба и посадить его себе на спину — удобно, когда свинья устала в долгом пути. В такие рюкзаки также удобно бросать монстров в плавильню. Мне удавалось носить до трёх свино-рюкзаков сразу, хотя ходить с таким количеством седоков непросто.",
+      "reason": "Неверное управление «используя ... на мобе» и неестественная фраза.",
       "independent_review": "APPROVED"
     }
   ],
@@ -21092,7 +21196,7 @@
       {
         "source_hash": "sha256:8815ad4cf0316879c54495fc73102e95428afdf090db700cffa59b091f20292c",
         "source": "When the steel pole is struck, the huge amounts of energy created are stored in the base of the lightning rod and then slowly distributed to the energy connections at the sides.",
-        "translation": "При ударе по стальному столбу огромное количество энергии накапливается в основании Молниеотвода, а затем медленно распределяется по энергетическим выходам по бокам."
+        "translation": "При ударе по стальному столбу огромное количество энергии накапливается в основании Молниеотвода, а затем медленно распределяется по боковым энергетическим выходам."
       }
     ],
     "ie-manual:immersiveengineering:lightning_rod.txt:line:6": [
@@ -54690,7 +54794,7 @@
       {
         "source_hash": "sha256:26563f8e0274aedfe344bcdd4a71c38b3925f19b0cc384adc1078259aa951b4a",
         "source": "Part chests allow you to store an abundance of extra parts you may have. Each slot can hold a stack of 8 parts max. If you need more than that, you're doing something wrong or have very convoluted recipes.",
-        "translation": "Ящики для частей позволяют хранить множество дополнительных частей, которые у Вас могут быть. В каждом слоте можно хранить не более 8 частей. Если Вам нужно больше, значит, Вы что-то делаете неправильно или у Вас очень запутанные рецепты."
+        "translation": "Ящики для частей позволяют хранить множество дополнительных частей, которые у вас могут быть. В каждом слоте можно хранить не более 8 частей. Если вам нужно больше, значит, вы что-то делаете неправильно или у вас очень запутанные рецепты."
       }
     ],
     "mantle-book:tconstruct:materials_and_you:intro/storage.json:/text/2/text": [
@@ -55563,7 +55667,7 @@
       {
         "source_hash": "sha256:3212d740535f43f0d3446f24bcf55fc30f74aef654e0848d10d1ffa0f1780e9d",
         "source": "Bunny hopping increases your skills and makes you way better at the game. Don't forget to throw in some proning for maximum effect.",
-        "translation": "Распрыжка повысит Ваши навыки и сделает Вас намного лучше в игре. Для достижения максимального эффекта не забудьте немного попрыгать."
+        "translation": "Распрыжка прокачивает ваши навыки и делает вас гораздо лучше в игре. Для максимального эффекта не забывайте иногда полежать."
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_flamewake.json:/effects/0": [
@@ -55710,7 +55814,7 @@
       {
         "source_hash": "sha256:32ab9174035796acc4c32602a5838a3fcf57da983a708d3b729334b9260929c6",
         "source": "Creates paths as you walk",
-        "translation": "Создает дорожки во время ходьбы."
+        "translation": "Создаёт дорожки, пока вы идёте."
       }
     ],
     "mantle-book:tconstruct:mighty_smelting:abilities/armor/boots/tconstruct_pathing.json:/effects/1": [
@@ -59726,7 +59830,7 @@
       {
         "source_hash": "sha256:779530d4c38e5a33da0c5e40a601e9038f4658858df8aaa1520c13c453c21ab2",
         "source": "Alright, now that you are done tinkering with those wimpy materials Selena thinks you should use, it's time for some REAL TINKER MATERIALS LIKE I USE. METAL",
-        "translation": "Ладно, теперь, когда Вы закончили возиться с этими слабыми материалами, которые, по мнению Селены вы должны были использовать, настало время для НАСТОЯЩИХ ЛИТЕЙНЫХ МАТЕРИАЛОВ, ТАКИХ КАК МЕТАЛЛ."
+        "translation": "Ладно, теперь, когда вы закончили возиться со слабыми материалами, которыми, по мнению Селены, вам следовало пользоваться, пора перейти к НАСТОЯЩИМ ЛИТЕЙНЫМ МАТЕРИАЛАМ, ТАКИМ КАК МЕТАЛЛ."
       }
     ],
     "mantle-book:tconstruct:puny_smelting:introduction/thruul.json:/text/1/text": [
@@ -59908,7 +60012,7 @@
       {
         "source_hash": "sha256:cf4f878637a09fc12b35f71a08f73f301ad902e169622d9452f34774d206b2d3",
         "source": "Channels have arrows inside them that show the direction that fluid will travel. Right clicking the sides of channels will switch them between input, output, and none. Right clicking the middle of the channel will set it to output to directly below if there is a valid fluid container underneath. Channels cannot transfer upwards.",
-        "translation": "Внутри каналов есть стрелочки, которые показывают направление движения жидкости. Нажатием ПКМ по сторонам каналов, можно переключить их между режимами входа, выхода или заблокировать. Нажав ПКМ по середине канала, Вы установите его на выход, непосредственно, под себя, если там имеется ёмкость для жидкостей.  Каналы не могут перемещать жидкость вверх."
+        "translation": "Внутри каналов есть стрелки, показывающие направление движения жидкости. Нажимая ПКМ по сторонам канала, можно переключать его между входом, выходом и отключённым состоянием. Нажмите ПКМ по середине канала, чтобы направить жидкость прямо вниз, если под ним есть подходящая ёмкость. Каналы не передают жидкость вверх."
       }
     ],
     "mantle-book:tconstruct:puny_smelting:movingfluids/channel2.json:/text/2/text": [
@@ -61065,7 +61169,7 @@
       {
         "source_hash": "sha256:6417aa942cf8e3b3f670811d0ac6f44ac68bd052fa4d8c1bb3a28b9809131f5d",
         "source": "Run out of slots? Well good news, all of the modifiers in this section need no slots to apply, perhaps some may even give you more slots!",
-        "translation": "Закончились слоты? Хорошие новости: все модификаторы в этом разделе не требуют слотов для применения, а некоторые даже могут дать Вам ещё больше слотов!"
+        "translation": "Закончились слоты? Хорошие новости: все модификаторы в этом разделе не требуют слотов для применения, а некоторые даже могут дать вам ещё больше слотов!"
       }
     ],
     "mantle-book:tconstruct:puny_smelting:slotless/slotless.json:/text/1/text": [
@@ -61492,7 +61596,7 @@
       {
         "source_hash": "sha256:ef69a4bf2853c405e447d954aca06da6989b84a6d73aff42ce436e088ecfa42f",
         "source": "Away your foes go, giving you enough time to turn heels and run, or heal.",
-        "translation": "Отлетая, враги дают Вам достаточно времени, чтобы развернуться и убежать, или подлечиться"
+        "translation": "Отбрасывая врагов, вы получаете достаточно времени, чтобы развернуться, убежать или подлечиться."
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/armor/general/tconstruct_thorns.json:/effects/0": [
@@ -62629,7 +62733,7 @@
       {
         "source_hash": "sha256:2da90422464c9505bcc9c34be091b9ba8d4a6c84e7bbe423b85f90e022448172",
         "source": "Using the magic of pumps and fluids you can move things with ease. I mean you can just not in this case.",
-        "translation": "Используя магию насосов и жидкостей, Вы можете с лёгкостью перемещать предметы. Я имею в виду, что это возможно, но не в вашем случае."
+        "translation": "Используя магию насосов и жидкостей, вы можете с лёгкостью перемещать предметы. Я имею в виду, что это возможно, но не в вашем случае."
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/harvest/tconstruct_lightspeed.json:/effects/0": [
@@ -62664,14 +62768,14 @@
       {
         "source_hash": "sha256:7fa30eb16c386104b2459d26b1bcbff7d576ca8572679a792c48d21aa4933f69",
         "source": "With these upgrades perhaps you could forge the strongest weapon of all. Of course what weapon you choose is up to you.",
-        "translation": "Возможно, с помощью этих улучшений Вы сможете выковать самое сильное оружие из всех существующих. Конечно, какое оружие Вы выберете, зависит только от Вас."
+        "translation": "Возможно, с помощью этих улучшений вы сможете выковать самое сильное оружие из всех существующих. Конечно, какое оружие вы выберете, зависит только от вас."
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/text/1/text": [
       {
         "source_hash": "sha256:62c4863916bceff9cd57d797b2c9a7552dbf567f0de878a74db7b4dbe77b4fde",
         "source": "These upgrades can help increase your melee weapon's potential, increase the damage you do overall, to specific mobs, or to both. The choice is yours.",
-        "translation": "Эти улучшения могут расширить возможности вашего оружия, увеличить урон, наносимый вами в целом, конкретным мобам или и тем, и другим. Выбор за Вами."
+        "translation": "Эти улучшения могут раскрыть потенциал оружия ближнего боя, увеличить общий урон, урон по определённым мобам или и то и другое. Выбор за вами."
       }
     ],
     "mantle-book:tconstruct:puny_smelting:upgrades/melee.json:/title": [
@@ -64046,7 +64150,7 @@
       {
         "source_hash": "sha256:49bff5d976a080b96315a4b573e6c85044e98d6905014d938fb3bacbdb76c4db",
         "source": "Occasionally when exploring dungeons or nether fortresses, I have found slimy seeds in the chests. I am unsure of their origin, but planting them on either regular or slimy dirt produces slimy grass of the same quality as if you transplanted it from one of the islands. I have also seen slimy saplings in these chests, so it's possible you could get all the flora of the islands without ever visiting one.",
-        "translation": "Иногда, исследуя подземелья или крепости в Незере, я находил в сундуках слизневые семена. Я не знаю их происхождения, но если посадить их на обычный или слизневый дёрн, получится слизневый дёрн такого же качества, как если бы Вы пересадили его с одного из островов. Я также видел в этих сундуках слизневые саженцы, так что, возможно, Вы можете получить всю флору островов, ни разу не побывав на одном из них."
+        "translation": "Иногда, исследуя подземелья или крепости в Незере, я находил в сундуках слизневые семена. Я не знаю их происхождения, но если посадить их на обычный или слизневый дёрн, получится слизневый дёрн такого же качества, как если бы вы пересадили его с одного из островов. Я также видел в этих сундуках слизневые саженцы, так что, возможно, вы можете получить всю флору островов, ни разу не побывав на одном из них."
       }
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:exploration/grass_seeds.json:/title": [
@@ -64362,7 +64466,7 @@
       {
         "source_hash": "sha256:bfb21f54bed5a3043ff5ddb6f4598ada981af81884a5212b20fbcbbefb8a399a",
         "source": "Using a piggybackpack on a mob lets you pick them up to ride you, perfect for when your pig gets tired on long journeys. They are also good for tossing monsters into your smeltery. I have successfully worn up to 3 piggybackpacks at one time, though it's hard to walk with so many riders.",
-        "translation": "Используя свино-рюкзак на мобе, вы можете поднять его, чтобы он прокатился на Вас, что идеально подходит, когда ваша свинья устает во время долгих путешествий. В них также удобно подбрасывать монстров в плавильню. Я успешно носил до 3 свин-рюкзаков одновременно, хотя с таким количеством наездников трудно ходить."
+        "translation": "Свино-рюкзак позволяет поднять моба и посадить его себе на спину — удобно, когда свинья устала в долгом пути. В такие рюкзаки также удобно бросать монстров в плавильню. Мне удавалось носить до трёх свино-рюкзаков сразу, хотя ходить с таким количеством седоков непросто."
       }
     ],
     "mantle-book:tconstruct:tinkers_gadgetry:gadgets/piggybackpack.json:/title": [

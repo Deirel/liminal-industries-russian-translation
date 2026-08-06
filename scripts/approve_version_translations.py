@@ -51,6 +51,18 @@ def technical_tokens(value: str) -> list[str]:
     return result
 
 
+def technical_tokens_compatible(
+    source: str, candidate: str, previous: str | None = None
+) -> bool:
+    accepted = {tuple(technical_tokens(source))}
+    if previous is not None:
+        accepted.add(tuple(technical_tokens(previous)))
+    tokens = technical_tokens(candidate)
+    return tuple(tokens) in accepted or (
+        tokens[-1:] == ["$(0)"] and tuple(tokens[:-1]) in accepted
+    )
+
+
 def load_translations(paths: list[Path]) -> dict[str, dict[str, str]]:
     result: dict[str, dict[str, str]] = {}
     for path in paths:
@@ -172,7 +184,9 @@ def apply_corrections(
         new_translation = row["new_translation"]
         if not new_translation or new_translation == row["old_translation"]:
             raise ValueError(f"{logical_id}: correction must change the translation")
-        if technical_tokens(record["source"]) != technical_tokens(new_translation):
+        if not technical_tokens_compatible(
+            record["source"], new_translation, row["old_translation"]
+        ):
             raise ValueError(f"{logical_id}: formatting or technical tokens changed")
         variant["translation"] = new_translation
         corrections.append({key: row[key] for key in CORRECTION_FIELDS})
@@ -261,9 +275,7 @@ def main() -> int:
             raise ValueError(f"{logical_id}: source hash does not match manifest")
         if source_hash(record["source"]) != record["source_hash"]:
             raise ValueError(f"{logical_id}: invalid manifest source hash")
-        if technical_tokens(record["source"]) != technical_tokens(
-            translation["translation"]
-        ):
+        if not technical_tokens_compatible(record["source"], translation["translation"]):
             raise ValueError(f"{logical_id}: formatting or technical tokens changed")
 
     validate_block_item_consistency(manifest_records, translations, catalog)
